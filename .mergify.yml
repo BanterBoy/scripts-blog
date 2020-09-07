@@ -7,23 +7,22 @@ pull_request_rules:
           method: merge
 
     - name: automatic merge for ImgBot pull requests
-    conditions:
-    - author=imgbot[bot]
-    - status-success=Travis CI - Pull Request
-    actions:
-    merge:
+      conditions:
+        - author=imgbot[bot]
+        - status-success=Travis CI - Pull Request
+      actions:
+      merge:
         method: merge
     
     - name: ask to resolve conflict
-    conditions:
+      conditions:
         - conflict
-    actions:
+      actions:
         comment:
-            message: This pull request is now in conflicts. Could you fix it @{{author}}? 🙏
+          message: This pull request is now in conflicts. Could you fix it @{{author}}? 🙏
     
     - name: delete head branch after merge
-    conditions:
+      conditions:
         - merged
-    actions:
+      actions:
         delete_head_branch: {}
-
