@@ -1,9 +1,21 @@
 # Dependencies
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
 # Permalinks
-permalink: pretty
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
+timezone: GB
 
 # Setup
 title: Maintenance Scripts
@@ -15,12 +27,8 @@ baseurl: /
 author:
   name: 'Luke Leigh'
   url: https://www.linkedin.com/in/lukeleigh/
+
   
-paginate: 5
-
-# Custom vars
-version: 2.1.0
-
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -30,7 +38,7 @@ exclude:
   - "vendor/gems/"
   - "vendor/ruby/"
   - [vendor]
-
+  
 plugins:
   - jekyll-include-cache
   - jekyll-feed
@@ -40,4 +48,10 @@ plugins:
   - jekyll-json-feed
   - jekyll-algolia
 
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
 github: [metadata]
+
+# Custom vars
+version: 2.1.0
