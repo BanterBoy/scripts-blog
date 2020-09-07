@@ -1,4 +1,5 @@
 ---
 layout: page
-title: Posts
+title: Resources
 ---
+

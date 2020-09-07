@@ -12,9 +12,7 @@ kramdown:
   enable_coderay: false
 
 # Permalinks
-permalink: /:categories/:title/
 paginate: 5
-paginate_path: /page:num/
 timezone: GB
 
 # Setup
@@ -28,7 +26,6 @@ author:
   name: 'Luke Leigh'
   url: https://www.linkedin.com/in/lukeleigh/
 
-  
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -38,7 +35,7 @@ exclude:
   - "vendor/gems/"
   - "vendor/ruby/"
   - [vendor]
-  
+
 plugins:
   - jekyll-include-cache
   - jekyll-feed
