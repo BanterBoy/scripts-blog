@@ -1,11 +1,8 @@
 ---
-layout: default
+layout: page
 title: Posts
 date: 2019-11-23T05:07:30
-last_modified_at: 2020-08-31T08:30:00
 ---
-
-{{ site.related_posts }}
 
 <div class="posts">
   {% for post in paginator.posts %}
