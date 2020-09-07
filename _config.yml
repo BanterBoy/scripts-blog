@@ -7,8 +7,8 @@ permalink: pretty
 
 # Setup
 title: Maintenance Scripts
-tagline: 'Repository of Maintenance Scripts for a variety of tasks.'
-description: ' '
+tagline: ''
+description: 'Repository of Maintenance Scripts for a variety of tasks.'
 url: https://scripts.lukeleigh.com
 baseurl: /
 
