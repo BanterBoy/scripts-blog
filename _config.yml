@@ -1,26 +1,43 @@
 # Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+markdown: kramdown
+highlighter: rouge
 
 # Permalinks
-permalink:        pretty
-relative_permalinks: true
+permalink: pretty
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
-baseurl:          /
+title: Maintenance Scripts
+tagline: 'Repository of Maintenance Scripts for a variety of tasks.'
+description: ' '
+url: https://scripts.lukeleigh.com
+baseurl: /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
-
-paginate:         5
+  name: 'Luke Leigh'
+  url: https://www.linkedin.com/in/lukeleigh/
+  
+paginate: 5
 
 # Custom vars
-version:          2.1.0
+version: 2.1.0
 
-github:
-  repo:           https://github.com/poole/hyde
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - "vendor/bundle/"
+  - "vendor/cache/"
+  - "vendor/gems/"
+  - "vendor/ruby/"
+  - [vendor]
+
+plugins:
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-json-feed
+  - jekyll-algolia
+
+github: [metadata]
