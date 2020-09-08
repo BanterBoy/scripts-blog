@@ -51,7 +51,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 github: [metadata]
 
 github:
-  repo: https://github.com/BanterBoy/hyde-theme
+  repo: https://github.com/BanterBoy/maintenance
 
 # Custom vars
 version: 1.0.0
