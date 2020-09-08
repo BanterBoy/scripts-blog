@@ -49,7 +49,9 @@ encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 github: [metadata]
+
+github:
   repo: https://github.com/BanterBoy/hyde-theme
 
 # Custom vars
-version: 2.1.0
+version: 1.0.0
