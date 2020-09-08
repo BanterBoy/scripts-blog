@@ -16,6 +16,10 @@ description: 'A repository of PowerShell Scripts to automate a variety of IT rel
 url: https://scripts.lukeleigh.com
 baseurl: /
 
+author:
+  name: 'Luke Leigh'
+  url: https://twitter.com/luke_leighs
+
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -41,4 +45,4 @@ version: 1.0.1
 github:
   repo: https://github.com/BanterBoy/maintenance
 
-# github: [metadata]
+github: [metadata]
