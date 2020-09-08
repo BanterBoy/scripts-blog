@@ -1,0 +1,68 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20190802125806
+Username: 6DG\luke.leigh
+RunAs User: 6DG\luke.leigh
+Machine: UKDTP03143 (Microsoft Windows NT 10.0.15063.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 1988
+PSVersion: 5.1.15063.1805
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.15063.1805
+BuildVersion: 10.0.15063.1805
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\GitRepos\PowerShellScripts\CapitalSupport\BitLocker\bitlockertranscript.txt
+Module Exists, enabling BitLocker Encryption
+What if: Performing the operation "Invoke-CimMethod: GetLockStatus" on target "Win32_EncryptableVolume (DeviceID = "\\?\Volume{37865435-42cc-49f2-8317-97f3...)".
+PS C:\GitRepos> TerminatingError(Write-Error): "Cannot bind argument to parameter 'Exception' because it is null."
+Write-Error : Cannot bind argument to parameter 'Exception' because it is null.
+At C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\BitLocker\BitLocker.psm1:394 char:36
++             Write-Error -Exception $ExceptionForHr
++                                    ~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Write-Error], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.WriteErrorCommand
+Write-Error : Cannot bind argument to parameter 'Exception' because it is null.
+At C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\BitLocker\BitLocker.psm1:394 char:36
++             Write-Error -Exception $ExceptionForHr
++                                    ~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Write-Error], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.WriteErrorCommand
+
+Cannot index into a null array.
+At C:\GitRepos\PowerShellScripts\CapitalSupport\BitLocker\MannyBitlocker.ps1:20 char:5
++     Backup-BitLockerKeyProtector -MountPoint $OSDrive -KeyProtectorId ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+Cannot index into a null array.
+At C:\GitRepos\PowerShellScripts\CapitalSupport\BitLocker\MannyBitlocker.ps1:20 char:5
++     Backup-BitLockerKeyProtector -MountPoint $OSDrive -KeyProtectorId ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArray
+
+What if: Performing the operation "Invoke-CimMethod: GetLockStatus" on target "Win32_EncryptableVolume (DeviceID = "\\?\Volume{37865435-42cc-49f2-8317-97f3...)".
+PS C:\GitRepos> TerminatingError(Write-Error): "Cannot bind argument to parameter 'Exception' because it is null."
+Write-Error : Cannot bind argument to parameter 'Exception' because it is null.
+At C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\BitLocker\BitLocker.psm1:394 char:36
++             Write-Error -Exception $ExceptionForHr
++                                    ~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Write-Error], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.WriteErrorCommand
+Write-Error : Cannot bind argument to parameter 'Exception' because it is null.
+At C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\BitLocker\BitLocker.psm1:394 char:36
++             Write-Error -Exception $ExceptionForHr
++                                    ~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Write-Error], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.WriteErrorCommand
+
+**********************
+Windows PowerShell transcript end
+End time: 20190802125808
+**********************
