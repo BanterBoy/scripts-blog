@@ -12,7 +12,7 @@ kramdown:
   enable_coderay: false
 
 # Permalinks
-paginate: 5
+paginate: 2
 timezone: GB
 
 # Setup
