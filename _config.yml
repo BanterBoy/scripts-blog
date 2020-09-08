@@ -15,7 +15,7 @@ encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Permalinks
-permalink: /:categories/:title/
+permalink: /:title/
 paginate: 4
 paginate_path: /page:num/
 timezone: GB
@@ -28,8 +28,8 @@ url: https://scripts.lukeleigh.com
 baseurl: /
 
 author:
-  name: 'Luke Leigh'
-  url: https://twitter.com/luke_leighs
+name: 'Luke Leigh'
+url: https://twitter.com/luke_leighs
 
 exclude:
   - Gemfile
