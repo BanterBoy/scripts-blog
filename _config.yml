@@ -28,8 +28,8 @@ url: https://scripts.lukeleigh.com
 baseurl: /
 
 author:
-name: 'Luke Leigh'
-url: https://twitter.com/luke_leighs
+  name: 'Luke Leigh'
+  url: https://twitter.com/luke_leighs
 
 exclude:
   - Gemfile
@@ -56,6 +56,6 @@ plugins:
 version: 1.0.1
 
 github:
-  repo: https://github.com/BanterBoy/maintenance
+  repo: https://github.com/BanterBoy/scripts-blog
 
 # github: [metadata]
