@@ -16,10 +16,6 @@ description: 'A repository of PowerShell Scripts to automate a variety of IT rel
 url: https://scripts.lukeleigh.com
 baseurl: /
 
-author:
-  name: 'Luke Leigh'
-  url: https://www.linkedin.com/in/lukeleigh/
-
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -39,10 +35,10 @@ plugins:
   - jekyll-json-feed
   - jekyll-algolia
 
-github:
-  repo: https://github.com/BanterBoy/maintenance
-
 # Custom vars
 version: 1.0.1
 
-github: [metadata]
+github:
+  repo: https://github.com/BanterBoy/maintenance
+
+# github: [metadata]
