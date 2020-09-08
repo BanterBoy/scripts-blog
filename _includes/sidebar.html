@@ -25,7 +25,7 @@
           {% if node.layout == "page" %}
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
           {% elsif node.layout == "post" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ page.url }}">{{ page.title }}</a>
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ page.title }}</a>
           {% endif %}
         {% endif %}
       {% endfor %}
