@@ -4,7 +4,6 @@ title: Script Link
 ---
 
 <div class="page">
-  <h1 class="page-title">Script Link</h1>
   <p class="lead"><a href="{{ site.baseurl }}">Head back home.</a></p>
 </div>
 
