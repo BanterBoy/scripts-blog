@@ -13,7 +13,7 @@ timezone: GB
 title: 'Maintenance Scripts'
 tagline: 'ITAdmin PowerShell Maintenance Scripts'
 description: 'A repository of PowerShell Scripts to automate a variety of IT related maintenance tasks.'
-url: https://scripts.lukeleigh.com/index.html
+url: https://scripts.lukeleigh.com
 baseurl: /
 
 author:
