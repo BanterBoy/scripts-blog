@@ -16,8 +16,8 @@ paginate: 2
 timezone: GB
 
 # Setup
-title: Maintenance Scripts
-tagline: ''
+title: 'Maintenance Scripts'
+tagline: 'More PowerShell Scripts'
 description: 'Repository of Maintenance Scripts for a variety of tasks.'
 url: https://scripts.lukeleigh.com
 baseurl: /
@@ -49,6 +49,7 @@ encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 github: [metadata]
+repo: https://github.com/BanterBoy/hyde-theme
 
 # Custom vars
 version: 2.1.0
