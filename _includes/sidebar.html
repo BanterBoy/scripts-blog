@@ -3,7 +3,10 @@
     <div class="sidebar-about">
       <h1>
         <!-- <img src="{{ site.baseurl }}assets/images/bio-photo.png" alt="hi" class="inline"/> -->
-        <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/6AFldi5xJQYIo" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/container-6AFldi5xJQYIo"></a></p>
+        <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe
+            src="https://giphy.com/embed/6AFldi5xJQYIo" width="100%" height="100%" style="position:absolute"
+            frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+        <p><a href="https://giphy.com/gifs/container-6AFldi5xJQYIo"></a></p>
         <a href="{{ site.baseurl }}">
           {{ site.title }}
         </a>
@@ -14,9 +17,10 @@
     <nav class="sidebar-nav">
       <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
 
+
       {% comment %}
-        The code below dynamically generates a sidebar nav of pages with
-        `layout: page` in the front-matter. See readme for usage.
+      The code below dynamically generates a sidebar nav of pages with
+      `layout: page` in the front-matter. See readme for usage.
       {% endcomment %}
 
       {% assign pages_list = site.pages %}
@@ -25,14 +29,14 @@
           {% if node.layout == "page" %}
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
           {% elsif node.layout == "post" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} inactive{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+            <a class="sidebar-nav-item{% if page.url == node.url %} inactive{% endif %}"  href="{{ node.url }}">{{ node.title }}</a>
           {% elsif node.layout == "page" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} inactive {% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+            <a class="sidebar-nav-item{% if page.url == node.url %} inactive{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
           {% endif %}
         {% endif %}
       {% endfor %}
 
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
+      <a class="sidebar-nav-item" href="{{ site.github.repo }}" target="_blank">GitHub project</a>
       <a class="sidebar-nav-item" href="{{ site.github.repo }}/releases/latest/PowerShellv{{ site.version }}.zip">Download</a>
       <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
     </nav>
