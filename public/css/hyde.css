@@ -32,7 +32,7 @@
  */
 
 html {
-  font-family: "Cascadia Code", Helvetica, Arial, sans-serif;
+  font-family: 'Exo 2', sans-serif;
 }
 @media (min-width: 58em) {
   html {
@@ -79,7 +79,7 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Cascadia Code", serif;
+  font-family: 'Exo 2', sans-serif;
   font-size: 2rem;
 }
 
