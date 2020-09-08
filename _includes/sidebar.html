@@ -30,8 +30,8 @@
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
           {% elsif node.layout == "post" %}
             <a class="sidebar-nav-item{% if page.url == node.url %} inactive{% endif %}"  href="{{ node.url }}">{{ node.title }}</a>
-          {% elsif node.page == "index.html" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} inactive{% endif %}" href="{{ site.baseurl }}">{{ node.title }}</a>
+          {% elsif node.target == "index.html" %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}">{{ node.title }}</a>
           {% endif %}
         {% endif %}
       {% endfor %}
