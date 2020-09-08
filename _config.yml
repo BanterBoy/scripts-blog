@@ -39,11 +39,10 @@ plugins:
   - jekyll-json-feed
   - jekyll-algolia
 
-
-github: [metadata]
-
 github:
   repo: https://github.com/BanterBoy/maintenance
 
 # Custom vars
 version: 1.0.1
+
+github: [metadata]
