@@ -1,0 +1,3 @@
+function Test-ScriptRoot {
+    $PSScriptRoot
+}
