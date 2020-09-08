@@ -9,4 +9,4 @@ This repository contains PowerShell Scripts that can be used to maintain your IT
 
 Site contains GitHub Pages - https://scripts.lukeleigh.com/
 
-Please visit the website for more information regarding the scripts and their usage.
+Please visit the website for more information regarding the scripts and their uses.
