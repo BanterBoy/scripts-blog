@@ -5,7 +5,7 @@ encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Permalinks
-paginate: 5
+paginate: 4
 timezone: GB
 
 # Setup
