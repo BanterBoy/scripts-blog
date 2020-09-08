@@ -47,4 +47,4 @@ version: 1.0.1
 github:
   repo: https://github.com/BanterBoy/maintenance
 
-github: [metadata]
+# github: [metadata]
