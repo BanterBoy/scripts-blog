@@ -31,13 +31,15 @@ exclude:
   - [vendor]
 
 plugins:
-  - jekyll-include-cache
+  - rouge
+  - github-pages
+  - jekyll-algolia
   - jekyll-feed
   - jekyll-gist
+  - jekyll-include-cache
+  - jekyll-json-feed
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-json-feed
-  - jekyll-algolia
 
 # Custom vars
 version: 1.0.1
