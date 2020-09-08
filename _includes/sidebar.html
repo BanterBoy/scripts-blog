@@ -15,8 +15,6 @@
     </div>
 
     <nav class="sidebar-nav">
-      <!-- <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a> -->
-
 
       {% comment %}
       The code below dynamically generates a sidebar nav of pages with
@@ -26,16 +24,15 @@
       {% assign pages_list = site.pages %}
       {% for node in pages_list %}
         {% if node.title != null %}
-          {% if node.title == "Home" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}">{{ node.title }}</a>
-          {% elsif node.layout == "page" %}
+          {% if node.layout == "page" %}
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
           {% elsif node.layout == "post" %}
             <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
           {% endif %}
         {% endif %}
       {% endfor %}
-
+      
+      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
       <a class="sidebar-nav-item" href="{{ site.github.repo }}" target="_blank">GitHub project</a>
       <a class="sidebar-nav-item" href="{{ site.github.repo }}/releases/latest/PowerShellv{{ site.version }}.zip">Download</a>
       <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
