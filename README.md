@@ -5,8 +5,6 @@
 
 # Maintenance Scripts
 
-{{ page.path }}
-
 This repository contains PowerShell Scripts that can be used to maintain your IT Infrastructure.
 
 Site contains GitHub Pages - https://scripts.lukeleigh.com/
