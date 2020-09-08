@@ -17,7 +17,7 @@ timezone: GB
 
 # Setup
 title: 'Maintenance Scripts'
-tagline: 'More PowerShell Scripts'
+tagline: 'ITAdmin PowerShell Maintenance Scripts'
 description: 'Repository of Maintenance Scripts for a variety of tasks.'
 url: https://scripts.lukeleigh.com
 baseurl: /
