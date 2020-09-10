@@ -175,17 +175,22 @@ function Connect-Transmission {
     }
 }
 
-function Show-QNAPTorrentStats {
-    Write-Host("")
-    Write-Host("=====================================================================================")
-    Write-Host("Current torrents in Transmission")
-
-    Get-TransmissionTorrents | 
-    Format-Table Id, 
-    @{Label = "Name"; Expression = { PadOrTruncate -length 50 -s $_.Name } }, 
-    @{Label = "% complete"; Expression = { Get-DownloadPercent -d $_.PercentDone } }, 
-    @{Label = "Downloaded"; Expression = { Get-FriendlySize -bytes $_.DownloadedEver } }, 
-    @{Label = "Total"; Expression = { Get-FriendlySize -bytes $_.TotalSize } }
-        
-    Write-Host("=====================================================================================")
+function Show-TorrentInfo {
+    try {
+        Write-Host("")
+        Write-Host("=====================================================================================")
+        Write-Host("Current torrents in Transmission")
+		
+        Get-TransmissionTorrents -ErrorAction Stop | 
+        Format-Table Id, 
+        @{Label = "Name"; Expression = { PadOrTruncate -length 50 -s $_.Name } }, 
+        @{Label = "% complete"; Expression = { Get-DownloadPercent -d $_.PercentDone } }, 
+        @{Label = "Downloaded"; Expression = { Get-FriendlySize -bytes $_.DownloadedEver } }, 
+        @{Label = "Total"; Expression = { Get-FriendlySize -bytes $_.TotalSize } }
+				
+        Write-Host("=====================================================================================")
+    }
+    catch {
+        Write-Warning -Message "$_"
+    }
 }
