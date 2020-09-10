@@ -66,42 +66,35 @@ BEGIN {
     Add-Type -AssemblyName System.Web
     Add-Type -AssemblyName System.Net
     $webclient = New-Object System.Net.WebClient
-    $webclient.Credentials = New-Object System.Net.NetworkCredential($user,$pass)
-    $UploadFiles = Get-ChildItem $UploadFolder | Where-Object{!$_.PSIsContainer } | Sort-Object LastAccessTime,name -Descending | Select-Object -First 5 | Select-Object -ExpandProperty  fullname
+    $webclient.Credentials = New-Object System.Net.NetworkCredential($user, $pass)
+    $UploadFiles = Get-ChildItem $UploadFolder | Where-Object { !$_.PSIsContainer } | Sort-Object LastAccessTime, name -Descending | Select-Object -First 5 | Select-Object -ExpandProperty  fullname
 }
 
 PROCESS {
 
-    foreach($UploadFile in $UploadFiles){
+    foreach ($UploadFile in $UploadFiles) {
         "Uploading $UploadFile..."
-        $name=$UploadFile
-        $name=[System.Uri]::EscapeDataString($name)
-        $uri = New-Object System.Uri($FTPServer+"/"+$name+"")
+        $name = $UploadFile
+        $name = [System.Uri]::EscapeDataString($name)
+        $uri = New-Object System.Uri($FTPServer + "/" + $name + "")
         $webclient.UploadFile($uri, $UploadFile)
 
-    #     try {
-    #         $properties = @{
-    #             Email              = $Validation.email
-    #         }
-    #     }
-    #     catch {
-    #         $properties = @{
-    #             Email              = $Validation.email
-    #         }
-    #     }
-    #     Finally {
-    #         $obj = New-Object -TypeName PSObject -Property $properties
-    #         Write-Output $obj
-    #     }
+        #     try {
+        #         $properties = @{
+        #             Email              = $Validation.email
+        #         }
+        #     }
+        #     catch {
+        #         $properties = @{
+        #             Email              = $Validation.email
+        #         }
+        #     }
+        #     Finally {
+        #         $obj = New-Object -TypeName PSObject -Property $properties
+        #         Write-Output $obj
+        #     }
     }
 
 }
 
 END {}
-
-
-
-
-
-
-

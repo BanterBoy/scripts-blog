@@ -41,7 +41,7 @@
 
     #>
 
-    [CmdletBinding(HelpURI = 'https://github.com/BanterBoy/adminToolkit/wiki',
+[CmdletBinding(HelpURI = 'https://github.com/BanterBoy/adminToolkit/wiki',
     SupportsShouldProcess = $true)]
 param (
     [Parameter(

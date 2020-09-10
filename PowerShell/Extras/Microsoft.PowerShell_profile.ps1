@@ -2,6 +2,7 @@
 	Script Name   : Microsoft.PowerShell_profile.ps1
 	Author        : Luke Leigh
 	Created       : 16/03/2019
+	Amended		  :	09/09/2020
 	Notes         : This script has been created in order pre-configure the following setting:-
 					- Shell Title - Rebranded
 					- Shell Dimensions configured to 170 Width x 45 Height
@@ -50,8 +51,6 @@ each new PowerShell session, is configured at run and disposed of on exit)
 # Start
 $Stopwatch = [system.diagnostics.stopwatch]::startNew()
 
-
-# Function        Get-ContainedCommand
 function Get-ContainedCommand {
 	param
 	(
@@ -68,7 +67,6 @@ function Get-ContainedCommand {
 	$ast.FindAll( { $args[0].GetType(). Name -eq "${ItemType}Ast" }, $true )
 
 }
-
 
 # Function        New-Password
 function New-Password {
@@ -319,6 +317,88 @@ function Stop-Outlook {
 }
 
 
+# Function        New-AdminShell
+function New-AdminShell {
+	<#
+	.Synopsis
+	Starts an Elevated PowerShell Console.
+
+	.Description
+	Opens a new PowerShell Console Elevated as Administrator. If the user is already running an elevated
+	administrator shell, a message is displayed in the console session.
+
+	.Example
+	New-AdminShell
+
+	#>
+
+	$Process = Get-Process | Where-Object { $_.Id -eq "$($PID)" }
+	if (Test-IsAdmin = $True) {
+		Write-Warning -Message "Admin Shell already running!"
+	}
+	else {
+		if ($Process.Name -eq "powershell") {
+			Start-Process -FilePath "powershell.exe" -Verb runas -PassThru
+		}
+		if ($Process.Name -eq "pwsh") {
+			Start-Process -FilePath "pwsh.exe" -Verb runas -PassThru
+		}
+	}
+}
+
+
+# Function        New-AdminTerminal
+function New-AdminTerminal {
+	<#
+	.Synopsis
+	Starts an Elevated Microsoft Terminal.
+
+	.Description
+	Opens a new Microsoft Terminal Elevated as Administrator. If the user is already running an elevated
+	Microsoft Terminal, a message is displayed in the console session.
+
+	.Example
+	New-AdminShell
+
+	#>
+
+	if (Test-IsAdmin = $True) {
+		Write-Warning -Message "Admin Shell already running!"
+	}
+	else {
+		Start-Process "wt.exe" -ArgumentList "-p pwsh" -Verb runas -PassThru
+	}
+}
+
+
+# Function		New-O365Session
+function New-O365Session {
+	$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential (Get-Credential) -Authentication Basic -AllowRedirection
+	Import-PSSession $Session
+}
+
+
+# Function		Remove-O365Session
+function Remove-O365Session {
+	Get-PSSession | Remove-PSSession
+}
+
+function Google-Search {
+	Start-Process "https://www.google.co.uk/search?q=$args"
+}
+
+function Google-Directions {
+	param([string] $From, [String] $To)
+
+	process {
+		Start-Process "https://www.google.com/maps/dir/$From/$To/"
+	}
+}
+
+function DuckDuckGo-Search {
+	Start-Process "https://duckduckgo.com/?q=$args"
+}
+
 # Function        Test-IsAdmin
 function Test-IsAdmin {
 	<#
@@ -334,43 +414,129 @@ function Test-IsAdmin {
 	$principal.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
 }
 
+function Select-DockerFile {
+	[Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") | Out-Null
+	[System.Windows.Forms.Application]::EnableVisualStyles()
+	$browse = New-Object System.Windows.Forms.OpenFileDialog
+	$browse.InitialDirectory = "C:\"
+	$browse.Filter = "Docker Compose Files (docker-compose.yml)|docker-compose.yml"
+	$browse.FileName = "docker-compose.yml"
+	$loop = $true
+	while ($loop) {
+		if ($browse.ShowDialog() -eq "OK") {
+			$loop = $false
+		}    
+		else {
+			$res = [System.Windows.Forms.MessageBox]::Show("You clicked Cancel. Would you like to try again or exit?", "Select a location", [System.Windows.Forms.MessageBoxButtons]::RetryCancel)
+			if ($res -eq "Cancel") {
+				#Ends script
+				return
+			}    
+		}    
+	}    
+	$browse.FileName
+	$browse.Dispose()
+}      
 
-# Function        New-AdminShell
-function New-AdminShell {
-	<#
-	.Synopsis
-	Starts an Elevated PowerShell Console.
-	.Description
-	Opens a new PowerShell Console Elevated as Administrator. If the user is already running and elevated
-	administrator shell, a message is printed to the screen.
-	.Example
-	New-AdminShell
-	#>
-	$Process = Get-Process | Where-Object { $_.Id -eq "$($PID)" }
+function Start-Blogging {
 	if (Test-IsAdmin = $True) {
-		Write-Warning -Message "Admin Shell already running!"
+		New-BloggingServer
 	}
 	else {
-		if ($Process.Name -eq "powershell") {
-			Start-Process -FilePath "powershell.exe" -Verb runas -PassThru
-		}
-		else {
-			Start-Process -FilePath "pwsh.exe" -Verb runas -PassThru
-		}
+		Write-Warning -message "Starting Admin Shell"
+		Start-Process -FilePath "pwsh.exe" -Verb runas -PassThru
 	}
 }
 
-
-# Function		New-O365Session
-function New-O365Session {
-	$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential (Get-Credential) -Authentication Basic -AllowRedirection
-	Import-PSSession $Session
+function New-BloggingServer {
+	$SelectedDockerFile = Select-DockerFile
+	$PSRootFolder = Select-FolderLocation
+	New-PSDrive -Name BlogDrive -PSProvider "FileSystem" -Root $PSRootFolder
+	Set-Location -Path BlogDrive:
+	docker-compose.exe -f ($SelectedDockerFile) up
 }
 
+function New-BloggingSession {
+	$PSRootFolder = Select-FolderLocation
+	New-PSDrive -Name BlogDrive -PSProvider "FileSystem" -Root $PSRootFolder
+	code ($PSRootFolder) -n
+}
 
-# Function		Remove-O365Session
-function Remove-O365Session {
-	Get-PSSession | Remove-PSSession
+function Get-DockerStatsSnapshot {
+	$running = docker images -q
+	if ($null -eq $running) {
+		Write-Warning -Message "No Docker Containers are running"
+	}
+	else {
+		docker container stats --no-stream
+	}
+}
+
+function Remove-BlogServer {
+	$title = 'Clean Blog Environment'
+	$question = 'Are you sure you want to proceed?'
+	$choices = '&Yes', '&No'
+	$decision = $Host.UI.PromptForChoice($title, $question, $choices, 1)
+	if ($decision -eq 0) {
+		$PSRootFolder = Select-FolderLocation
+		New-PSDrive -Name BlogDrive -PSProvider "FileSystem" -Root $PSRootFolder
+		Set-Location -Path BlogDrive:
+		Write-Host 'Cleaning Environment - Removing Images'
+		$images = docker images -q
+		foreach ($image in $images) {
+			docker rmi $image -f
+			docker rm $(docker ps -a -f status=exited -q)
+		}
+		$vendor = Test-Path $PSRootFolder\vendor
+		$site = Test-Path $PSRootFolder\_site
+		$gemfile = Test-Path -Path $psrootfolder\gemfile.lock
+		$jekyllmetadata = Test-Path -Path $psrootfolder\.jekyll-metadata
+		Write-Warning -Message 'Cleaning Environment - Removing Vendor Bundle'
+		if ($vendor = $true) {
+			try {
+				Remove-Item -Path $PSRootFolder\vendor -Recurse -Force -ErrorAction Stop
+				Write-Verbose -Message 'Vendor Bundle removed.' -Verbose
+			}
+			catch [System.Management.Automation.ItemNotFoundException] {
+				Write-Verbose -Message 'Vendor Bundle does not exist.' -Verbose
+			}
+		}
+		Write-Warning -Message 'Cleaning Environment - Removing _site Folder'
+		if ($site = $true) {
+			try {
+				Remove-Item -Path $psrootfolder\_site -Recurse -Force -ErrorAction Stop
+				Write-Verbose -Message '_site folder removed.' -Verbose
+			}
+			catch [System.Management.Automation.ItemNotFoundException] {
+				Write-Verbose -Message '_site folder does not exist.' -Verbose
+			}
+		}
+		Write-Warning -Message 'Cleaning Environment - Removing Gemfile.lock File'
+		if ($gemfile = $true) {
+			try {
+				Remove-Item -Path $psrootfolder\gemfile.lock -Force -ErrorAction Stop
+				Write-Verbose -Message 'gemfile.lock removed.' -Verbose
+			}
+			catch [System.Management.Automation.ItemNotFoundException] {
+				Write-Verbose -Message 'gemfile.lock does not exist.' -Verbose
+			}
+		}
+		Write-Warning -Message 'Cleaning Environment - Removing .jekyll-metadata File'
+		if ($jekyllmetadata = $true) {
+			try {
+				Remove-Item -Path $psrootfolder\.jekyll-metadata -Force -ErrorAction Stop
+				Write-Verbose -Message '.jekyll-metadata removed.' -Verbose
+			}
+			catch [System.Management.Automation.ItemNotFoundException] {
+				Write-Verbose -Message '.jekyll-metadata does not exist.' -Verbose
+	
+			}
+			Set-Location -Path C:\GitRepos
+		}
+	}
+	else {
+		Write-Warning -Message 'Images left intact.'
+	}
 }
 
 

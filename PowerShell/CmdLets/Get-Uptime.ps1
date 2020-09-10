@@ -20,11 +20,11 @@
 
 [cmdletbinding(DefaultParameterSetName = 'default')]
 param([Parameter(Mandatory = $True,
-HelpMessage = "Please enter a ComputerName",
-ValueFromPipeline = $false,
-ValueFromPipelineByPropertyName = $True)]
-[Alias('cn', 'ComputerName')]
-[string[]]$ComputerName
+        HelpMessage = "Please enter a ComputerName",
+        ValueFromPipeline = $false,
+        ValueFromPipelineByPropertyName = $True)]
+    [Alias('cn', 'ComputerName')]
+    [string[]]$ComputerName
 )
 
 BEGIN {}
@@ -44,10 +44,10 @@ PROCESS {
         $d = $Uptime.Days
         $h = $Uptime.Hours
         $m = $uptime.Minutes
-        $ms= $uptime.Milliseconds
-        "System Up for: {0} days, {1} hours, {2}.{3} minutes" -f $d,$h,$m,$ms
+        $ms = $uptime.Milliseconds
+        "System Up for: {0} days, {1} hours, {2}.{3} minutes" -f $d, $h, $m, $ms
     }
 
-END {
+    END {
 
-}
+    }

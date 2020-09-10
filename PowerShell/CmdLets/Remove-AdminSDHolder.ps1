@@ -16,10 +16,10 @@ Param (
 BEGIN {}
 
 PROCESS {
-Set-ADUser $SamAccountName -remove @{adminCount = 1 }
-$user = get-aduser $SamAccountName -properties ntsecuritydescriptor
-$user.ntsecuritydescriptor.SetAccessRuleProtection($false, $true)
-set-aduser $SamAccountName -replace @{ntsecuritydescriptor = $user.ntsecuritydescriptor }
+    Set-ADUser $SamAccountName -remove @{adminCount = 1 }
+    $user = get-aduser $SamAccountName -properties ntsecuritydescriptor
+    $user.ntsecuritydescriptor.SetAccessRuleProtection($false, $true)
+    set-aduser $SamAccountName -replace @{ntsecuritydescriptor = $user.ntsecuritydescriptor }
 }
 
 END {}

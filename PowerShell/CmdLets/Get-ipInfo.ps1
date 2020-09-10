@@ -118,24 +118,24 @@ PROCESS {
 
         try {
             $properties = @{
-                ip = $ipCheck.ip
+                ip       = $ipCheck.ip
                 hostname = $ipCheck.hostname
-                city = $ipCheck.city
-                region = $ipCheck.region
-                country = $ipCheck.country
-                loc = $ipCheck.loc
-                postal = $ipCheck.postal
+                city     = $ipCheck.city
+                region   = $ipCheck.region
+                country  = $ipCheck.country
+                loc      = $ipCheck.loc
+                postal   = $ipCheck.postal
             }
         }
         catch {
             $properties = @{
-                ip = $ipCheck.ip
+                ip       = $ipCheck.ip
                 hostname = $ipCheck.hostname
-                city = $ipCheck.city
-                region = $ipCheck.region
-                country = $ipCheck.country
-                loc = $ipCheck.loc
-                postal = $ipCheck.postal
+                city     = $ipCheck.city
+                region   = $ipCheck.region
+                country  = $ipCheck.country
+                loc      = $ipCheck.loc
+                postal   = $ipCheck.postal
             }
         }
         Finally {
