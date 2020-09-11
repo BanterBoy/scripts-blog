@@ -15,10 +15,8 @@ encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Permalinks
-permalink: /:title/
-paginate: 10
-paginate_path: /page:num/
-timezone: GB
+permalink: pretty
+paginate: 3
 
 # Setup
 title: 'Maintenance Scripts'
@@ -35,6 +33,9 @@ author:
   email: me@lukeleigh.com
 
 linkedin_username: lukeleigh
+
+# include:
+#   - _posts
 
 exclude:
   - [Gemfile]
