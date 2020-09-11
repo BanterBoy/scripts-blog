@@ -364,3 +364,7 @@ FodyWeavers.xsd
 _site
 .sass-cache
 .jekyll-metadata
+.jekyll-cache
+Gemfile
+Gemfile.lock
+vendor
