@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Scripts
+permalink: scripts.html
 ---
 
 #### [ExchangeServerConnections.ps1](/_posts/ExchangeServerConnections.ps1.md)
