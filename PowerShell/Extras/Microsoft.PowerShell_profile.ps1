@@ -1,35 +1,35 @@
 <#
-	Script Name   : Microsoft.PowerShell_profile.ps1
-	Author        : Luke Leigh
-	Created       : 16/03/2019
-	Amended		  :	09/09/2020
-	Notes         : This script has been created in order pre-configure the following setting:-
-					- Shell Title - Rebranded
-					- Shell Dimensions configured to 170 Width x 45 Height
-					- Buffer configured to 9000 lines
+	Script Name		: Microsoft.PowerShell_profile.ps1
+	Author			: Luke Leigh
+	Created			: 16/03/2019
+	Amended			: 10/09/2020
+	Notes			: This script has been created in order pre-configure the following setting:-
+						- Shell Title - Rebranded
+						- Shell Dimensions configured to 170 Width x 45 Height
+						- Buffer configured to 9000 lines
 
 - Loads the following Functions
 
-	CommandType     Name
-	-----------     ----
-	Function        Format-Console
-	Function        Get-ContainedCommand
-	Function        Get-Password
-	Function        Get-PatchTue
-	Function        New-AdminShell
-	Function        New-GitDrives
-	Function        New-Greeting
-	Function        New-O365Session
-	Function        New-ObjectToHashTable
-	Function        New-Password
-	Function        New-PSDrives
-	Function        Remove-O365Session
-	Function        Restart-Profile
-	Function        Select-FolderLocation
-	Function        Show-IsAdminOrNot
-	Function        Show-ProfileFunctions
-	Function        Show-PSDrive
-	Function        Test-IsAdmin
+	CommandType		Name
+	-----------		----
+	Function		Format-Console
+	Function		Get-ContainedCommand
+	Function		Get-Password
+	Function		Get-PatchTue
+	Function		New-AdminShell
+	Function		New-GitDrives
+	Function		New-Greeting
+	Function		New-O365Session
+	Function		New-ObjectToHashTable
+	Function		New-Password
+	Function		New-PSDrives
+	Function		Remove-O365Session
+	Function		Restart-Profile
+	Function		Select-FolderLocation
+	Function		Show-IsAdminOrNot
+	Function		Show-ProfileFunctions
+	Function		Show-PSDrive
+	Function		Test-IsAdmin
 
 Displays
 - whether or not running as Administrator in the WindowTitle
@@ -68,7 +68,7 @@ function Get-ContainedCommand {
 
 }
 
-# Function        New-Password
+# Function		New-Password
 function New-Password {
 	<# Example
 
@@ -93,7 +93,7 @@ function New-Password {
 }
 
 
-# Function        Get-Password
+# Function		Get-Password
 function Get-Password {
 	<#
 	.EXAMPLE
@@ -140,7 +140,7 @@ function Get-Password {
 }
 
 
-# Function        Get-PatchTue
+# Function		Get-PatchTue
 function Get-PatchTue {
 	<#
 	.SYNOPSIS
@@ -167,7 +167,7 @@ function Get-PatchTue {
 }
 
 
-# Function        Restart-Profile
+# Function		Restart-Profile
 function Restart-Profile {
 	@(
 		$Profile.AllUsersAllHosts,
@@ -184,7 +184,7 @@ function Restart-Profile {
 }
 
 
-# Function        New-GitDrives
+# Function		New-GitDrives
 function New-GitDrives {
 	$PSRootFolder = Select-FolderLocation
 	$Exist = Test-Path -Path $PSRootFolder
@@ -200,7 +200,7 @@ function New-GitDrives {
 }
 
 
-# Function        New-Greeting
+# Function		New-Greeting
 function New-Greeting {
 	$Today = $(Get-Date)
 	Write-Host "   Day of Week  -"$Today.DayOfWeek " - Today's Date -"$Today.ToShortDateString() "- Current Time -"$Today.ToShortTimeString()
@@ -214,7 +214,7 @@ function New-Greeting {
 }
 
 
-# Function        New-ObjectToHashTable
+# Function		New-ObjectToHashTable
 function New-ObjectToHashTable {
 	param([
 		Parameter(Mandatory , ValueFromPipeline)]
@@ -233,7 +233,7 @@ function New-ObjectToHashTable {
 }
 
 
-# Function        New-PSDrives
+# Function		New-PSDrives
 function New-PSDrives {
 	$PSRootFolder = Select-FolderLocation
 	$PSDrivePaths = Get-ChildItem -Path "$PSRootFolder\"
@@ -246,7 +246,7 @@ function New-PSDrives {
 }
 
 
-# Function        Select-FolderLocation
+# Function		Select-FolderLocation
 function Select-FolderLocation {
 	<#
         Example.
@@ -282,7 +282,7 @@ function Select-FolderLocation {
 }
 
 
-# Function        Show-IsAdminOrNot
+# Function		Show-IsAdminOrNot
 function Show-IsAdminOrNot {
 	$IsAdmin = Test-IsAdmin
 	if ( $IsAdmin -eq "False") {
@@ -294,7 +294,7 @@ function Show-IsAdminOrNot {
 }
 
 
-# Function        Show-ProfileFunctions
+# Function		Show-ProfileFunctions
 function Show-ProfileFunctions {
 	$Path = $profile
 	$functionNames = Get-ContainedCommand $Path -ItemType FunctionDefinition |	Select-Object -ExpandProperty Name
@@ -302,13 +302,13 @@ function Show-ProfileFunctions {
 }
 
 
-# Function        Show-PSDrive
+# Function		Show-PSDrive
 function Show-PSDrive {
 	Get-PSDrive | Format-Table -AutoSize
 }
 
 
-# Function        Stop-Outlook
+# Function		Stop-Outlook
 function Stop-Outlook {
 	$OutlookRunning = Get-Process -ProcessName "Outlook"
 	if (($OutlookRunning) = $true) {
@@ -317,7 +317,7 @@ function Stop-Outlook {
 }
 
 
-# Function        New-AdminShell
+# Function		New-AdminShell
 function New-AdminShell {
 	<#
 	.Synopsis
@@ -347,7 +347,7 @@ function New-AdminShell {
 }
 
 
-# Function        New-AdminTerminal
+# Function		New-AdminTerminal
 function New-AdminTerminal {
 	<#
 	.Synopsis
@@ -383,11 +383,11 @@ function Remove-O365Session {
 	Get-PSSession | Remove-PSSession
 }
 
-function Google-Search {
+function Get-GoogleSearch {
 	Start-Process "https://www.google.co.uk/search?q=$args"
 }
 
-function Google-Directions {
+function Get-GoogleDirections {
 	param([string] $From, [String] $To)
 
 	process {
@@ -395,11 +395,11 @@ function Google-Directions {
 	}
 }
 
-function DuckDuckGo-Search {
+function Get-DuckDuckGoSearch {
 	Start-Process "https://duckduckgo.com/?q=$args"
 }
 
-# Function        Test-IsAdmin
+# Function		Test-IsAdmin
 function Test-IsAdmin {
 	<#
 	.Synopsis
@@ -414,29 +414,29 @@ function Test-IsAdmin {
 	$principal.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
 }
 
-function Select-DockerFile {
-	[Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") | Out-Null
-	[System.Windows.Forms.Application]::EnableVisualStyles()
-	$browse = New-Object System.Windows.Forms.OpenFileDialog
-	$browse.InitialDirectory = "C:\"
-	$browse.Filter = "Docker Compose Files (docker-compose.yml)|docker-compose.yml"
-	$browse.FileName = "docker-compose.yml"
-	$loop = $true
-	while ($loop) {
-		if ($browse.ShowDialog() -eq "OK") {
-			$loop = $false
-		}    
-		else {
-			$res = [System.Windows.Forms.MessageBox]::Show("You clicked Cancel. Would you like to try again or exit?", "Select a location", [System.Windows.Forms.MessageBoxButtons]::RetryCancel)
-			if ($res -eq "Cancel") {
-				#Ends script
-				return
-			}    
-		}    
-	}    
-	$browse.FileName
-	$browse.Dispose()
-}      
+# function Select-DockerFile {
+# 	[Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") | Out-Null
+# 	[System.Windows.Forms.Application]::EnableVisualStyles()
+# 	$browse = New-Object System.Windows.Forms.OpenFileDialog
+# 	$browse.InitialDirectory = "C:\"
+# 	$browse.Filter = "Docker Compose Files (docker-compose.yml)|docker-compose.yml"
+# 	$browse.FileName = "docker-compose.yml"
+# 	$loop = $true
+# 	while ($loop) {
+# 		if ($browse.ShowDialog() -eq "OK") {
+# 			$loop = $false
+# 		}    
+# 		else {
+# 			$res = [System.Windows.Forms.MessageBox]::Show("You clicked Cancel. Would you like to try again or exit?", "Select a location", [System.Windows.Forms.MessageBoxButtons]::RetryCancel)
+# 			if ($res -eq "Cancel") {
+# 				#Ends script
+# 				return
+# 			}    
+# 		}    
+# 	}    
+# 	$browse.FileName
+# 	$browse.Dispose()
+# }      
 
 function Start-Blogging {
 	if (Test-IsAdmin = $True) {
@@ -449,8 +449,8 @@ function Start-Blogging {
 }
 
 function New-BloggingServer {
-	$SelectedDockerFile = Select-DockerFile
 	$PSRootFolder = Select-FolderLocation
+	$SelectedDockerFile = "$PSRootFolder\docker-compose.yml"
 	New-PSDrive -Name BlogDrive -PSProvider "FileSystem" -Root $PSRootFolder
 	Set-Location -Path BlogDrive:
 	docker-compose.exe -f ($SelectedDockerFile) up
@@ -460,6 +460,10 @@ function New-BloggingSession {
 	$PSRootFolder = Select-FolderLocation
 	New-PSDrive -Name BlogDrive -PSProvider "FileSystem" -Root $PSRootFolder
 	code ($PSRootFolder) -n
+}
+
+function Show-LocalBlogSite {
+	Start-Process 'http://darthvader.domain.leigh-services.com:4000'
 }
 
 function Get-DockerStatsSnapshot {
@@ -511,16 +515,16 @@ function Remove-BlogServer {
 				Write-Verbose -Message '_site folder does not exist.' -Verbose
 			}
 		}
-		Write-Warning -Message 'Cleaning Environment - Removing Gemfile.lock File'
-		if ($gemfile = $true) {
-			try {
-				Remove-Item -Path $psrootfolder\gemfile.lock -Force -ErrorAction Stop
-				Write-Verbose -Message 'gemfile.lock removed.' -Verbose
-			}
-			catch [System.Management.Automation.ItemNotFoundException] {
-				Write-Verbose -Message 'gemfile.lock does not exist.' -Verbose
-			}
-		}
+		# Write-Warning -Message 'Cleaning Environment - Removing Gemfile.lock File'
+		# if ($gemfile = $true) {
+		# 	try {
+		# 		Remove-Item -Path $psrootfolder\gemfile.lock -Force -ErrorAction Stop
+		# 		Write-Verbose -Message 'gemfile.lock removed.' -Verbose
+		# 	}
+		# 	catch [System.Management.Automation.ItemNotFoundException] {
+		# 		Write-Verbose -Message 'gemfile.lock does not exist.' -Verbose
+		# 	}
+		# }
 		Write-Warning -Message 'Cleaning Environment - Removing .jekyll-metadata File'
 		if ($jekyllmetadata = $true) {
 			try {
@@ -539,6 +543,171 @@ function Remove-BlogServer {
 	}
 }
 
+
+Import-Module -Name Transmission
+
+function PadOrTruncate([string]$s, [int]$length) {
+	if ($s.length -le $length) {
+		return $s.PadRight($length, " ")
+	}
+
+	$truncated = $s.Substring(0, ($length - 3))
+
+	return "$truncated..."
+}
+
+
+function Get-FriendlySize {
+	param($Bytes)
+	$sizes = 'Bytes,KB,MB,GB,TB,PB,EB,ZB' -split ','
+	for ($i = 0; ($Bytes -ge 1kb) -and
+		($i -lt $sizes.Count); $i++) { $Bytes /= 1kb }
+	$N = 2; if ($i -eq 0) { $N = 0 }
+	"{0:N$($N)} {1}" -f $Bytes, $sizes[$i]
+}
+
+function Get-DownloadPercent([decimal]$d) {
+	$p = [math]::Round($d * 100)
+	return "$p%"
+}
+
+function Save-PasswordFile {
+    <# Example
+
+	.EXAMPLE
+	Save-Password -Label UserName
+
+	.EXAMPLE
+	Save-Password -Label Password
+
+	#>
+    param(
+        [Parameter(Mandatory = $true,
+            HelpMessage = "Enter password label")]
+        [string]$Label,
+
+        [Parameter(Mandatory = $false,
+            HelpMessage = "Enter file path.")]
+        [ValidateSet('Profile', 'Select') ]
+        [string]$Path
+    )
+
+    switch ($Path) {
+        Profile {
+            $ProfilePath = ($PROFILE).Split('\Microsoft.PowerShell_profile.ps1')[0]
+            $filePath = "$ProfilePath" + "\$Label.txt"
+            $securePassword = Read-host -Prompt 'Input password' -AsSecureString | ConvertFrom-SecureString
+            $securePassword | Out-File -FilePath "$filePath"
+        }
+        Select {
+            $directoryPath = Select-FolderLocation
+            $securePassword = Read-host -Prompt 'Input password' -AsSecureString | ConvertFrom-SecureString
+            $securePassword | Out-File -FilePath "$directoryPath\$Label.txt"
+        
+        }
+        Default {
+            $ProfilePath = ($PROFILE).Split('\Microsoft.PowerShell_profile.ps1')[0]
+            $filePath = "$ProfilePath" + "\$Label.txt"
+            $securePassword = Read-host -Prompt 'Input password' -AsSecureString | ConvertFrom-SecureString
+            $securePassword | Out-File -FilePath "$filePath"
+        }
+    }
+}
+
+function Connect-Transmission {
+    
+	param(
+		[Parameter(Mandatory = $True,
+			ValueFromPipeline = $True,
+			HelpMessage = "Enter password label")]
+		[string]$Label,
+
+		[Parameter(Mandatory = $false,
+			ValueFromPipeline = $True,
+			HelpMessage = "Toggle - Browse / Exists / Create - for your credentials file")]
+		[ValidateSet('Browse', 'Exists', 'Create') ]
+		[string[]]$Path
+
+	)
+
+	switch ($Path) {
+        
+		Browse {
+			$directoryPath = Select-FolderLocation
+			$filePath = "$directoryPath\$Label.txt"
+			try {
+				$password = Get-Content -Path "$filePath" -ErrorAction Stop | ConvertTo-SecureString
+				$decPassword = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($password))
+				Set-TransmissionCredentials -Host 'http://deathstar.domain.leigh-services.com:49091/transmission/rpc' -User $Label -Password $decPassword
+			}
+			catch [System.Management.Automation.ItemNotFoundException] {
+				Write-Warning -Message "$_"
+			}
+		}
+
+		Exists {
+			try {
+				$ProfilePath = ($PROFILE).Split('\Microsoft.PowerShell_profile.ps1')[0]
+				$filePath = "$ProfilePath" + "\$Label.txt"
+				$password = Get-Content -Path "$filePath" -ErrorAction Stop | ConvertTo-SecureString
+				$decPassword = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($password))
+				Set-TransmissionCredentials -Host 'http://deathstar.domain.leigh-services.com:49091/transmission/rpc' -User $Label -Password $decPassword
+			}
+			catch [System.Management.Automation.ItemNotFoundException] {
+				Write-Warning -Message "$_"
+			}
+		}
+
+		Create {
+			Save-PasswordFile -Label $Label
+		}
+        
+		Default {
+			try {
+				$ProfilePath = ($PROFILE).Split('\Microsoft.PowerShell_profile.ps1')[0]
+				$filePath = "$ProfilePath" + "\$Label.txt"
+				$password = Get-Content -Path "$filePath" -ErrorAction Stop | ConvertTo-SecureString
+				$decPassword = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($password))
+				Set-TransmissionCredentials -Host 'http://deathstar.domain.leigh-services.com:49091/transmission/rpc' -User $Label -Password $decPassword
+			}
+			catch [System.Management.Automation.ItemNotFoundException] {
+				Write-Warning -Message "$_"
+			}
+		}
+	}
+}
+
+
+function Show-TorrentInfo {
+	try {
+		Write-Host("")
+		Write-Host("=====================================================================================")
+		Write-Host("Current torrents in Transmission")
+		
+		Get-TransmissionTorrents -ErrorAction Stop | 
+		Format-Table Id, 
+		@{Label = "Name"; Expression = { PadOrTruncate -length 50 -s $_.Name } }, 
+		@{Label = "% complete"; Expression = { Get-DownloadPercent -d $_.PercentDone } }, 
+		@{Label = "Downloaded"; Expression = { Get-FriendlySize -bytes $_.DownloadedEver } }, 
+		@{Label = "Total"; Expression = { Get-FriendlySize -bytes $_.TotalSize } }
+				
+		Write-Host("=====================================================================================")
+	}
+	catch {
+		Write-Warning -Message "$_"
+	}
+}
+
+function Format-Console {
+	param (
+		[int]$WindowHeight,
+		[int]$WindowWidth,
+		[int]$BufferHeight,
+		[int]$BufferWidth
+	)
+	[System.Console]::SetWindowSize($WindowWidth, $WindowHeight)
+	[System.Console]::SetBufferSize($BufferWidth, $BufferHeight)
+}
 
 # Set-ExecutionPolicy
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process -Force
@@ -574,16 +743,6 @@ else {
 
 #--------------------
 # Configure Powershell Console Window Size/Preferences
-function Format-Console {
-	param (
-		[int]$WindowHeight,
-		[int]$WindowWidth,
-		[int]$BufferHeight,
-		[int]$BufferWidth
-	)
-	[System.Console]::SetWindowSize($WindowWidth, $WindowHeight)
-	[System.Console]::SetBufferSize($BufferWidth, $BufferHeight)
-}
 Format-Console -WindowHeight 45 -WindowWidth 170 -BufferHeight 9000 -BufferWidth 170
 
 
