@@ -16,7 +16,6 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Permalinks
 permalink: pretty
-relative_permalinks: true
 paginate: 3
 
 # Setup
