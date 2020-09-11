@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: default
 title: Get-ipInfo.ps1
 ---
+
+# Get-ipInfo.ps1
 
 ### something exciting
 

@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: default
 title: Test-EmailAddress.ps1
 ---
+
+# Test-EmailAddress.ps1
 
 ### something exciting
 

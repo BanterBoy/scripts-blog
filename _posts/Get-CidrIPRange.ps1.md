@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: default
 title: Get-CidrIPRange.ps1
 ---
+
+# Get-CidrIPRange.ps1
 
 ### something exciting
 

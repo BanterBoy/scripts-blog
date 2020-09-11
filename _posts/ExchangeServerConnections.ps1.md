@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: default
 title: ExchangeServerConnections.ps1
 ---
+
+# ExchangeServerConnections.ps1
 
 ### something exciting
 

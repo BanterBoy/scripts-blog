@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: default
 title: Get-UpTime.ps1
 ---
+
+# Get-UpTime.ps1
 
 ### something exciting
 

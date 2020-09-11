@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: default
 title: Get-LatestFiles.ps1
 ---
+
+# Get-LatestFiles.ps1
 
 ### something exciting
 
