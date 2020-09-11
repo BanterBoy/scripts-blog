@@ -1,11 +1,24 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en-us">
 
-<div class="page">
-  <h1 class="page-title">{{ page.title }}</h1>
-  <span class="page-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
-</div>
+{% include head.html %}
 
+<body>
 
+  {% include sidebar.html %}
+
+  <div class="content container">
+
+    {{ content }}
+
+  </div>
+
+  <div class="page">
+  
+    <a href="{{ site.baseurl }}">Head back home.</a>
+  
+  </div>
+
+</body>
+
+</html>
