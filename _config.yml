@@ -34,8 +34,9 @@ author:
 
 linkedin_username: lukeleigh
 
-# include:
-#   - _posts
+include:
+  - _pages
+  - _posts
 
 exclude:
   - [Gemfile]
