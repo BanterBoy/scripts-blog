@@ -4,21 +4,21 @@ title: Scripts
 permalink: scripts.html
 ---
 
-#### [ExchangeServerConnections.ps1]({{ absolute_url }}/ExchangeServerConnections.md)
+#### [ExchangeServerConnections.ps1]({{ absolute_url }}/_posts/ExchangeServerConnections.md)
 Brief overview of script
 
-#### [Get-CidrIPRange.ps1]({{ absolute_url }}/Get-CidrIPRange.md)
+#### [Get-CidrIPRange.ps1]({{ absolute_url }}/_posts/Get-CidrIPRange.md)
 Brief overview of script
 
-#### [Get-ipInfo.ps1]({{ absolute_url }}/Get-ipInfo.md)
+#### [Get-ipInfo.ps1]({{ absolute_url }}/_posts/Get-ipInfo.md)
 Brief overview of script
 
-#### [Get-LatestFiles.ps1]({{ absolute_url }}/Get-LatestFiles.md)
+#### [Get-LatestFiles.ps1]({{ absolute_url }}/_posts/Get-LatestFiles.md)
 Brief overview of script
 
-#### [Get-UpTime.ps1]({{ absolute_url }}/Get-UpTime.md)
+#### [Get-UpTime.ps1]({{ absolute_url }}/_posts/Get-UpTime.md)
 Brief overview of script
 
-#### [Test-EmailAddress.ps1]({{ absolute_url }}//Test-EmailAddress.md)
+#### [Test-EmailAddress.ps1]({{ absolute_url }}/_posts/Test-EmailAddress.md)
 Brief overview of script
 

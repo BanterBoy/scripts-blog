@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-ipInfo.ps1
+permalink: /
 ---
 
 # Get-ipInfo.ps1

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Test-EmailAddress.ps1
+permalink: /
 ---
 
 # Test-EmailAddress.ps1

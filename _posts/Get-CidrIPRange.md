@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-CidrIPRange.ps1
+permalink: /
 ---
 
 # Get-CidrIPRange.ps1
