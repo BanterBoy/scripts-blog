@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Get-ipInfo.ps1
 ---
 
