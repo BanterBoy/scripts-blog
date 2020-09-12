@@ -4,7 +4,7 @@ title: Scripts
 permalink: scripts.html
 ---
 
-#### [ExchangeServerConnections.ps1]("{{ absolute_url }}/_posts/ExchangeServerConnections.md")
+#### [ExchangeServerConnections.ps1]({{ absolute_url }}/_posts/ExchangeServerConnections.md)
 Brief overview of script
 
 #### [Get-CidrIPRange.ps1](/_posts/Get-CidrIPRange.md)
