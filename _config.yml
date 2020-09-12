@@ -23,7 +23,7 @@ title: 'Maintenance Scripts'
 tagline: 'ITAdmin PowerShell Maintenance Scripts'
 description: 'A repository of PowerShell Scripts to automate a variety of IT related maintenance tasks.'
 url: https://scripts.lukeleigh.com
-baseurl: ""
+baseurl: "/"
 
 # Build settings
 markdown: kramdown
