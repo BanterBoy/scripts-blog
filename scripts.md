@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Scripts
-permalink: scripts.html
 ---
 
 #### [ExchangeServerConnections.ps1]({{ absolute_url }}/_posts/ExchangeServerConnections.md)
