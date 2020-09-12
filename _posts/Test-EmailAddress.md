@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Test-EmailAddress.ps1
 ---
 

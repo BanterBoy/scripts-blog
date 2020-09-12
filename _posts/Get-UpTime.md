@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Get-UpTime.ps1
 ---
 
