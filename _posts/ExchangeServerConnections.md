@@ -1,7 +1,6 @@
 ---
 layout: post
 title: ExchangeServerConnections.ps1
-permalink: /_posts
 ---
 
 # ExchangeServerConnections.ps1

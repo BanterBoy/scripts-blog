@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Get-LatestFiles.ps1
-permalink: /
 ---
 
 # Get-LatestFiles.ps1

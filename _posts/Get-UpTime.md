@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Get-UpTime.ps1
-permalink: /
 ---
 
 # Get-UpTime.ps1
