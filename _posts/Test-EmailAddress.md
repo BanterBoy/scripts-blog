@@ -3,8 +3,6 @@ layout: post
 title: Test-EmailAddress.ps1
 ---
 
-# Test-EmailAddress.ps1
-
 ### something exciting
 
 Some information about the exciting thing

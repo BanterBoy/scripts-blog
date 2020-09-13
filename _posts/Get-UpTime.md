@@ -3,8 +3,6 @@ layout: post
 title: Get-UpTime.ps1
 ---
 
-# Get-UpTime.ps1
-
 ### something exciting
 
 Some information about the exciting thing

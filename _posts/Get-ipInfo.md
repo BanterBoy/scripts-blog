@@ -3,8 +3,6 @@ layout: post
 title: Get-ipInfo.ps1
 ---
 
-# Get-ipInfo.ps1
-
 ### something exciting
 
 Some information about the exciting thing

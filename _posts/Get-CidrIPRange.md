@@ -3,8 +3,6 @@ layout: post
 title: Get-CidrIPRange.ps1
 ---
 
-# Get-CidrIPRange.ps1
-
 ### something exciting
 
 Some information about the exciting thing

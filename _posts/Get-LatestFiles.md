@@ -3,8 +3,6 @@ layout: post
 title: Get-LatestFiles.ps1
 ---
 
-# Get-LatestFiles.ps1
-
 ### something exciting
 
 Some information about the exciting thing
