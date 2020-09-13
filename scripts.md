@@ -26,6 +26,7 @@ Brief overview of script
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
+  <!-- {{ content }} -->
 </div>
 
 <div class="related">
