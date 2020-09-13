@@ -4,7 +4,7 @@ title: Scripts
 permalink: scripts.html
 ---
 
-#### [ExchangeServerConnections.ps1](/_posts/ExchangeServerConnections.md)
+<!-- #### [ExchangeServerConnections.ps1](/_posts/ExchangeServerConnections.md)
 Brief overview of script
 
 #### [Get-CidrIPRange.ps1](/_posts/Get-CidrIPRange.md)
@@ -21,4 +21,12 @@ Brief overview of script
 
 #### [Test-EmailAddress.ps1](/_posts/Test-EmailAddress.md)
 Brief overview of script
+ -->
 
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
