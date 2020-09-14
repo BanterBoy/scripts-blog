@@ -4,7 +4,9 @@ title: About
 permalink: about.html
 ---
 
-**Get-ChildItem -Directory \| Select-Object -Property FullName,BaseName,Parent,LastAccessTime \| Format-MarkdownTableTableStyle -HideStandardOutput -ShowMarkdown**
+**Get-ChildItem -Directory \|**<br>
+**Select-Object -Property FullName,BaseName,Parent,LastAccessTime \|**<br>
+**Format-MarkdownTableTableStyle -HideStandardOutput**
 
 |BaseName|FullName|LastAccessTime|Parent|
 |:--|:--|:--|:--|
