@@ -4,28 +4,21 @@ title: About
 permalink: about.html
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+**Get-ChildItem -Directory \| Select-Object -Property FullName,BaseName,Parent,LastAccessTime \| Format-MarkdownTableTableStyle -HideStandardOutput -ShowMarkdown**
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+|BaseName|FullName|LastAccessTime|Parent|
+|:--|:--|:--|:--|
+|.vscode|C:\\GitRepos\\.vscode|14/09/2020 17:30:23|C:\\GitRepos|
+|BanterBoy|C:\\GitRepos\\BanterBoy|14/09/2020 18:19:32|C:\\GitRepos|
+|BanterBoy.github.io|C:\\GitRepos\\BanterBoy.github.io|14/09/2020 18:19:32|C:\\GitRepos|
+|CapitalSupport|C:\\GitRepos\\CapitalSupport|14/09/2020 18:19:29|C:\\GitRepos|
+|NewClient|C:\\GitRepos\\NewClient|14/09/2020 18:19:31|C:\\GitRepos|
+|PowerShellScripts|C:\\GitRepos\\PowerShellScripts|14/09/2020 18:19:31|C:\\GitRepos|
+|primer-theme|C:\\GitRepos\\primer-theme|14/09/2020 18:14:36|C:\\GitRepos|
+|PSCiscoMeraki|C:\\GitRepos\\PSCiscoMeraki|14/09/2020 18:19:30|C:\\GitRepos|
+|PSCovid19Stats|C:\\GitRepos\\PSCovid19Stats|14/09/2020 18:19:33|C:\\GitRepos|
+|sacc-midgard|C:\\GitRepos\\sacc-midgard|14/09/2020 18:19:30|C:\\GitRepos|
+|scripts-blog|C:\\GitRepos\\scripts-blog|14/09/2020 18:17:14|C:\\GitRepos|
+|Ventrica|C:\\GitRepos\\Ventrica|14/09/2020 18:19:28|C:\\GitRepos|
 
-There are currently two themes built on Poole:
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
