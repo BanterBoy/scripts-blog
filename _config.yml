@@ -24,9 +24,6 @@ tagline: 'ITAdmin PowerShell Maintenance Scripts'
 description: 'A repository of PowerShell Scripts to automate a variety of IT related maintenance tasks.'
 baseurl: "/"
 
-# Build settings
-markdown: kramdown
-
 author:
   name: 'Luke Leigh'
   email: me@lukeleigh.com
