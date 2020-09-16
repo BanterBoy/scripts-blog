@@ -6,6 +6,7 @@
         "markdown",
         "latex",
         "plaintext",
-        "yaml"
+        "yaml",
+        "powershell"
     ]
 }
