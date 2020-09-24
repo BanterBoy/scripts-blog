@@ -362,6 +362,7 @@ MigrationBackup/
 FodyWeavers.xsd
 
 _site
+.vscode
 .sass-cache
 .jekyll-metadata
 .jekyll-cache
