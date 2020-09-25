@@ -45,7 +45,10 @@ permalink: /content/_pages/info.html
 ```powershell
 <#
   .Something
+  Some help info
+
   .SomethingElse
+  Some more help info
 #>
 
 Get-Something
