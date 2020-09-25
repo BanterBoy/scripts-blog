@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: New-Topic
 permalink: /content/_pages/New-Topic.html
 # This template provides a basic structure for Dynamics 365 articles.
