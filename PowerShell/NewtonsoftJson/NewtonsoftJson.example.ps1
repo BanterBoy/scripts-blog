@@ -20,8 +20,8 @@ Add-Type -Path C:\Users\juan\Desktop\Automatizacion\Windows\packages\Newtonsoft.
 
 $json = [Newtonsoft.Json.JsonConvert]::SerializeXmlNode($members) | ConvertFrom-Json
 
-$json.members.member | %{
-    $_.user
-    $_.group
+$json.members.member | ForEach-Object {
+	$_.user
+	$_.group
 }
 
