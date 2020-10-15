@@ -33,11 +33,11 @@ Some information about the exciting thing
 
 <script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/CmdLets/Get-CidrIPRange.ps1"></script>
 
-<a href="/menu/_pages/functions.html">Back to Scripts</a>
+<a href="/menu/_pages/functions.html">Back to Functions</a>
 
 <script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/Extras/ExchangeServerConnections.ps1"></script>
 
-<a href="/menu/_pages/functions.html">Back to Scripts</a>
+<a href="/menu/_pages/functions.html">Back to Functions</a>
 
 ---
 
