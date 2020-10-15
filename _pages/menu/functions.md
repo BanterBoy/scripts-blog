@@ -4,25 +4,215 @@ title: Functions
 permalink: /menu/_pages/functions.html
 ---
 
-#### [ExchangeServerConnections.ps1](/_posts/ExchangeServerConnections.md)
-Brief overview of script
-
-#### [Get-CidrIPRange.ps1](/_posts/Get-CidrIPRange.md)
-Brief overview of script
-
-#### [Get-ipInfo.ps1](/_posts/Get-ipInfo.md)
-Brief overview of script
-
-#### [Get-LatestFiles.ps1](/_posts/Get-LatestFiles.md)
-Brief overview of script
-
-#### [Get-UpTime.ps1](/_posts/Get-UpTime.md)
-Brief overview of script
-
-#### [Test-EmailAddress.ps1](/_posts/Test-EmailAddress.md)
-Brief overview of script
-
-<video width="262" height="518" controls>
-  <source src="/assets/video/9nLoBt9dej.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+| Section           | FileName                                                                                                          |
+| :---------------- | :---------------------------------------------------------------------------------------------------------------- |
+| activeDirectory   | [Add-ADUsertoLocalGroup.ps1](/_posts/functions/Add-ADUsertoLocalGroup.md)                                         |
+| activeDirectory   | [ADUserAccountFunctions.ps1](/_posts/functions/ADUserAccountFunctions.md)                                         |
+| activeDirectory   | [Amend-pwdLastSet.ps1](/_posts/functions/Amend-pwdLastSet.md)                                                     |
+| activeDirectory   | [Copy-AdGroupMemberShip.ps1](/_posts/functions/Copy-AdGroupMemberShip.md)                                         |
+| activeDirectory   | [Find-localAdmins.ps1](/_posts/functions/Find-localAdmins.md)                                                     |
+| activeDirectory   | [FSMOFunctions.ps1](/_posts/functions/FSMOFunctions.md)                                                           |
+| activeDirectory   | [Get-ActiveDirectoryTombstonePeriod.ps1](/_posts/functions/Get-ActiveDirectoryTombstonePeriod.md)                 |
+| activeDirectory   | [Get-ADDeletedUsers.ps1](/_posts/functions/Get-ADDeletedUsers.md)                                                 |
+| activeDirectory   | [Get-ADUserLastLogon.ps1](/_posts/functions/Get-ADUserLastLogon.md)                                               |
+| activeDirectory   | [Get-DomainControllers.ps1](/_posts/functions/Get-DomainControllers.md)                                           |
+| activeDirectory   | [Get-ElevatedUsers.ps1](/_posts/functions/Get-ElevatedUsers.md)                                                   |
+| activeDirectory   | [Get-FSMORoleOwner.ps1](/_posts/functions/Get-FSMORoleOwner.md)                                                   |
+| activeDirectory   | [Get-LocalGroupMembership.ps1](/_posts/functions/Get-LocalGroupMembership.md)                                     |
+| activeDirectory   | [Get-LockedOutUser.ps1](/_posts/functions/Get-LockedOutUser.md)                                                   |
+| activeDirectory   | [Get-LoggedOnUser.ps1](/_posts/functions/Get-LoggedOnUser.md)                                                     |
+| activeDirectory   | [Get-LogonHistory.ps1](/_posts/functions/Get-LogonHistory.md)                                                     |
+| activeDirectory   | [GetMailboxPermission.ps1](/_posts/functions/GetMailboxPermission.md)                                             |
+| activeDirectory   | [Get-NestedGroupMember.ps1](/_posts/functions/Get-NestedGroupMember.md)                                           |
+| activeDirectory   | [Get-O365LastLogonTime.ps1](/_posts/functions/Get-O365LastLogonTime.md)                                           |
+| activeDirectory   | [Get-PrimaryGroupsReport.ps1](/_posts/functions/Get-PrimaryGroupsReport.md)                                       |
+| activeDirectory   | [Get-RDPUserReport.ps1](/_posts/functions/Get-RDPUserReport.md)                                                   |
+| activeDirectory   | [Get-RemoteServiceAccount.ps1](/_posts/functions/Get-RemoteServiceAccount.md)                                     |
+| activeDirectory   | [Get-ServiceDetails.ps1](/_posts/functions/Get-ServiceDetails.md)                                                 |
+| activeDirectory   | [Get-ServiceLogonAccount.ps1](/_posts/functions/Get-ServiceLogonAccount.md)                                       |
+| activeDirectory   | [Get-ServicePrivilege.ps1](/_posts/functions/Get-ServicePrivilege.md)                                             |
+| activeDirectory   | [Get-UnlinkedGPO.ps1](/_posts/functions/Get-UnlinkedGPO.md)                                                       |
+| activeDirectory   | [GetUserLoggedOnto.ps1](/_posts/functions/GetUserLoggedOnto.md)                                                   |
+| activeDirectory   | [Get-UserLogon.ps1](/_posts/functions/Get-UserLogon.md)                                                           |
+| activeDirectory   | [get-usermembership.ps1](/_posts/functions/get-usermembership.md)                                                 |
+| activeDirectory   | [Get-UserReport.ps1](/_posts/functions/Get-UserReport.md)                                                         |
+| activeDirectory   | [Get-UsersGroupMemberShips.ps1](/_posts/functions/Get-UsersGroupMemberShips.md)                                   |
+| activeDirectory   | [Get-UserSupportedEncryptionTypes.ps1](/_posts/functions/Get-UserSupportedEncryptionTypes.md)                     |
+| activeDirectory   | [Move-FSMORolestoPDCEmulator.ps1](/_posts/functions/Move-FSMORolestoPDCEmulator.md)                               |
+| activeDirectory   | [Provision_Home_Folder.ps1](/_posts/functions/Provision_Home_Folder.md)                                           |
+| activeDirectory   | [Remove-AdminSDHolder.ps1](/_posts/functions/Remove-AdminSDHolder.md)                                             |
+| activeDirectory   | [Restore-ADDeletedUsers.ps1](/_posts/functions/Restore-ADDeletedUsers.md)                                         |
+| activeDirectory   | [Search-GPO.ps1](/_posts/functions/Search-GPO.md)                                                                 |
+| activeDirectory   | [Search-GPOsForString.ps1](/_posts/functions/Search-GPOsForString.md)                                             |
+| activeDirectory   | [Search-GPOsForStringOrig.ps1](/_posts/functions/Search-GPOsForStringOrig.md)                                     |
+| activeDirectory   | [Set-FSMORoleOwner.ps1](/_posts/functions/Set-FSMORoleOwner.md)                                                   |
+| activeDirectory   | [Sync-DomainController.ps1](/_posts/functions/Sync-DomainController.md)                                           |
+| activeDirectory   | [Sync-Office365ToADDS.ps1](/_posts/functions/Sync-Office365ToADDS.md)                                             |
+| activeDirectory   | [Test-ADUserCredentials.ps1](/_posts/functions/Test-ADUserCredentials.md)                                         |
+| activeDirectory   | [Test-ADUserHighPrivilegeGroupMembership.ps1](/_posts/functions/Test-ADUserHighPrivilegeGroupMembership.md)       |
+| activeDirectory   | [Test-UserExists.ps1](/_posts/functions/Test-UserExists.md)                                                       |
+| activeDirectory   | [Unlock-UserAccount.ps1](/_posts/functions/Unlock-UserAccount.md)                                                 |
+| bitLocker         | [Export-Bitlocker.ps1](/_posts/functions/Export-Bitlocker.md)                                                     |
+| bitLocker         | [Export-BitlockerComp.ps1](/_posts/functions/Export-BitlockerComp.md)                                             |
+| bitLocker         | [Export-BitlockerParams.ps1](/_posts/functions/Export-BitlockerParams.md)                                         |
+| compression       | [New-FileArchive.ps1](/_posts/functions/New-FileArchive.md)                                                       |
+| compression       | [New-ZipFile.ps1](/_posts/functions/New-ZipFile.md)                                                               |
+| compression       | [UncompressZip-SameDestination.ps1](/_posts/functions/UncompressZip-SameDestination.md)                           |
+| compression       | [zipArchiveTool_recursive.ps1](/_posts/functions/zipArchiveTool_recursive.md)                                     |
+| dns               | [Get-DKIMRecord.ps1](/_posts/functions/Get-DKIMRecord.md)                                                         |
+| dns               | [Get-DMARCRecord.ps1](/_posts/functions/Get-DMARCRecord.md)                                                       |
+| dns               | [Get-PublicDnsRecord.ps1](/_posts/functions/Get-PublicDnsRecord.md)                                               |
+| dns               | [Get-SPFRecord.ps1](/_posts/functions/Get-SPFRecord.md)                                                           |
+| dns               | [Resolve-DnsDomain.ps1](/_posts/functions/Resolve-DnsDomain.md)                                                   |
+| dns               | [Resolve-DNSList.ps1](/_posts/functions/Resolve-DNSList.md)                                                       |
+| dns               | [Resolve-DomainDNS.ps1](/_posts/functions/Resolve-DomainDNS.md)                                                   |
+| dns               | [Test-DNSPropagation.ps1](/_posts/functions/Test-DNSPropagation.md)                                               |
+| exchange          | [Connect-ExchangeServer.ps1](/_posts/functions/Connect-ExchangeServer.md)                                         |
+| exchange          | [Connect-O365Session.ps1](/_posts/functions/Connect-O365Session.md)                                               |
+| exchange          | [Connect-Office365Services.ps1](/_posts/functions/Connect-Office365Services.md)                                   |
+| exchange          | [Copy-ReceiveConnector.ps1](/_posts/functions/Copy-ReceiveConnector.md)                                           |
+| exchange          | [Enter-O365Session.ps1](/_posts/functions/Enter-O365Session.md)                                                   |
+| exchange          | [ExchangeFunctions.ps1](/_posts/functions/ExchangeFunctions.md)                                                   |
+| exchange          | [Export-CalendarPermissions.ps1](/_posts/functions/Export-CalendarPermissions.md)                                 |
+| exchange          | [Get-ADExchangeServer.ps1](/_posts/functions/Get-ADExchangeServer.md)                                             |
+| exchange          | [Get-ExchangeServer.ps1](/_posts/functions/Get-ExchangeServer.md)                                                 |
+| exchange          | [Get-ExchangeVersion.ps1](/_posts/functions/Get-ExchangeVersion.md)                                               |
+| exchange          | [Get-MailboxAccessPerms.ps1](/_posts/functions/Get-MailboxAccessPerms.md)                                         |
+| exchange          | [Get-MailboxPermissions.ps1](/_posts/functions/Get-MailboxPermissions.md)                                         |
+| exchange          | [Get-MailboxPermissionsExport.ps1](/_posts/functions/Get-MailboxPermissionsExport.md)                             |
+| exchange          | [Get-MailboxPermissionsReport.ps1](/_posts/functions/Get-MailboxPermissionsReport.md)                             |
+| exchange          | [Get-MailboxPermissionsReport2.ps1](/_posts/functions/Get-MailboxPermissionsReport2.md)                           |
+| exchange          | [Get-MailboxReport.ps1](/_posts/functions/Get-MailboxReport.md)                                                   |
+| exchange          | [Get-MailboxStatistics.ps1](/_posts/functions/Get-MailboxStatistics.md)                                           |
+| exchange          | [Get-MBAccessPerms.ps1](/_posts/functions/Get-MBAccessPerms.md)                                                   |
+| exchange          | [O365Session.ps1](/_posts/functions/O365Session.md)                                                               |
+| exchange          | [Office365PasswordReminderEmail.ps1](/_posts/functions/Office365PasswordReminderEmail.md)                         |
+| exchange          | [OnPremExchangeFunctions.ps1](/_posts/functions/OnPremExchangeFunctions.md)                                       |
+| exchange          | [PasswordChangeNotification.ps1](/_posts/functions/PasswordChangeNotification.md)                                 |
+| exchange          | [PasswordChangeNotificationO365.ps1](/_posts/functions/PasswordChangeNotificationO365.md)                         |
+| exchange          | [PasswordReminder.ps1](/_posts/functions/PasswordReminder.md)                                                     |
+| exchange          | [PasswordReminderAlso.ps1](/_posts/functions/PasswordReminderAlso.md)                                             |
+| exchange          | [Remove-MailboxFolderPermissions.ps1](/_posts/functions/Remove-MailboxFolderPermissions.md)                       |
+| exchange          | [Remove-UsersfromGAL.ps1](/_posts/functions/Remove-UsersfromGAL.md)                                               |
+| exchange          | [Replicate-AllDomainControllers.ps1](/_posts/functions/Replicate-AllDomainControllers.md)                         |
+| exchange          | [Restart-ExchangeServices.ps1](/_posts/functions/Restart-ExchangeServices.md)                                     |
+| exchange          | [Set-AutoDiscover.ps1](/_posts/functions/Set-AutoDiscover.md)                                                     |
+| exchange          | [Set-CalendarPermsScript.ps1](/_posts/functions/Set-CalendarPermsScript.md)                                       |
+| exchange          | [Set-DefaultReceiveConnector.ps1](/_posts/functions/Set-DefaultReceiveConnector.md)                               |
+| exchange          | [Update-CalendarPermissions.ps1](/_posts/functions/Update-CalendarPermissions.md)                                 |
+| fileManagement    | [Format-FileSize.ps1](/_posts/functions/Format-FileSize.md)                                                       |
+| fileManagement    | [Get-FileOwner.ps1](/_posts/functions/Get-FileOwner.md)                                                           |
+| fileManagement    | [Get-FriendlySize.ps1](/_posts/functions/Get-FriendlySize.md)                                                     |
+| fileManagement    | [Get-IniContent.ps1](/_posts/functions/Get-IniContent.md)                                                         |
+| fileManagement    | [Get-LatestFiles.ps1](/_posts/functions/Get-LatestFiles.md)                                                       |
+| fileManagement    | [Get-MediaDetails.ps1](/_posts/functions/Get-MediaDetails.md)                                                     |
+| fileManagement    | [Get-NeglectedFiles.ps1](/_posts/functions/Get-NeglectedFiles.md)                                                 |
+| fileManagement    | [Get-PathPermissions.ps1](/_posts/functions/Get-PathPermissions.md)                                               |
+| fileManagement    | [New-FolderCompare.ps1](/_posts/functions/New-FolderCompare.md)                                                   |
+| information       | [Get-CPUTemperature.ps1](/_posts/functions/Get-CPUTemperature.md)                                                 |
+| information       | [get-DotNetVersion.ps1](/_posts/functions/get-DotNetVersion.md)                                                   |
+| information       | [Get-ErrorInfo.ps1](/_posts/functions/Get-ErrorInfo.md)                                                           |
+| information       | [Get-InfoBadService.ps1](/_posts/functions/Get-InfoBadService.md)                                                 |
+| information       | [Get-InfoCompSystem.ps1](/_posts/functions/Get-InfoCompSystem.md)                                                 |
+| information       | [Get-InfoDisk.ps1](/_posts/functions/Get-InfoDisk.md)                                                             |
+| information       | [Get-InfoNIC.ps1](/_posts/functions/Get-InfoNIC.md)                                                               |
+| information       | [Get-InfoOS.ps1](/_posts/functions/Get-InfoOS.md)                                                                 |
+| information       | [Get-InfoProc.ps1](/_posts/functions/Get-InfoProc.md)                                                             |
+| ip                | [Get-CidrIPRange.ps1](/_posts/functions/Get-CidrIPRange.md)                                                       |
+| ip                | [Get-IPConfig.ps1](/_posts/functions/Get-IPConfig.md)                                                             |
+| ip                | [Get-ipInfo.ps1](/_posts/functions/Get-ipInfo.md)                                                                 |
+| ip                | [Get-PingMonitor.ps1](/_posts/functions/Get-PingMonitor.md)                                                       |
+| other             | [Get-ChuckNorrisJoke.ps1](/_posts/functions/Get-ChuckNorrisJoke.md)                                               |
+| powerShellProfile | [personalProfiles\Connect-Office365Services.ps1](/_posts/functions/personalProfiles\Connect-Office365Services.md) |
+| powerShellProfile | [personalProfiles\HomePowerShell_profile.ps1](/_posts/functions/personalProfiles\HomePowerShell_profile.md)       |
+| powerShellProfile | [personalProfiles\WorkPowerShell_profile.ps1](/_posts/functions/personalProfiles\WorkPowerShell_profile.md)       |
+| powerShellProfile | [Microsoft.PowerShell_profile.ps1](/_posts/functions/Microsoft.PowerShell_profile.md)                             |
+| powerShellProfile | [Restart-PowershellProfile.ps1](/_posts/functions/Restart-PowershellProfile.md)                                   |
+| time              | [Get-2amOfThirdMondayInMonth.ps1](/_posts/functions/Get-2amOfThirdMondayInMonth.md)                               |
+| time              | [Get-LastxOfMonth.ps1](/_posts/functions/Get-LastxOfMonth.md)                                                     |
+| time              | [Get-NTPStatusFromHost.ps1](/_posts/functions/Get-NTPStatusFromHost.md)                                           |
+| time              | [Get-Ntptime.ps1](/_posts/functions/Get-Ntptime.md)                                                               |
+| time              | [Get-PatchTuesday.ps1](/_posts/functions/Get-PatchTuesday.md)                                                     |
+| time              | [Get-RemoteTime.ps1](/_posts/functions/Get-RemoteTime.md)                                                         |
+| time              | [Get-Time.ps1](/_posts/functions/Get-Time.md)                                                                     |
+| time              | [Get-TimeServer.ps1](/_posts/functions/Get-TimeServer.md)                                                         |
+| time              | [Get-WeekDayInMonth.ps1](/_posts/functions/Get-WeekDayInMonth.md)                                                 |
+| windowsUpdates    | [Get-InstalledUpdates.ps1](/_posts/functions/Get-InstalledUpdates.md)                                             |
+| windowsUpdates    | [Get-PendingUpdate.ps1](/_posts/functions/Get-PendingUpdate.md)                                                   |
+| windowsUpdates    | [Get-PendingUpdates.ps1](/_posts/functions/Get-PendingUpdates.md)                                                 |
+| windowsUpdates    | [Start-WindowsUpdate.ps1](/_posts/functions/Start-WindowsUpdate.md)                                               |
+| miscellaneous     | [ConvertFrom-ErrorRecord.ps1](/_posts/functions/ConvertFrom-ErrorRecord.md)                                       |
+| miscellaneous     | [ConvertObject-ToHashTable.ps1](/_posts/functions/ConvertObject-ToHashTable.md)                                   |
+| miscellaneous     | [Copy-History.ps1](/_posts/functions/Copy-History.md)                                                             |
+| miscellaneous     | [createRealFakeNames.ps1](/_posts/functions/createRealFakeNames.md)                                               |
+| miscellaneous     | [Disable-PrintSpooler.ps1](/_posts/functions/Disable-PrintSpooler.md)                                             |
+| miscellaneous     | [domainresults.hostio.ps1](/_posts/functions/domainresults.hostio.md)                                             |
+| miscellaneous     | [Get-FriendlySize.ps1](/_posts/functions/Get-FriendlySize.md)                                                     |
+| miscellaneous     | [Get-FTPFile-empty.ps1](/_posts/functions/Get-FTPFile-empty.md)                                                   |
+| miscellaneous     | [Get-Icon.ps1](/_posts/functions/Get-Icon.md)                                                                     |
+| miscellaneous     | [Get-LastCommands.ps1](/_posts/functions/Get-LastCommands.md)                                                     |
+| miscellaneous     | [Get-PendingReboot.ps1](/_posts/functions/Get-PendingReboot.md)                                                   |
+| miscellaneous     | [Get-PortInfo.ps1](/_posts/functions/Get-PortInfo.md)                                                             |
+| miscellaneous     | [Get-ProcessandServicePID.ps1](/_posts/functions/Get-ProcessandServicePID.md)                                     |
+| miscellaneous     | [Get-ProductKey.ps1](/_posts/functions/Get-ProductKey.md)                                                         |
+| miscellaneous     | [Get-RebootReport.ps1](/_posts/functions/Get-RebootReport.md)                                                     |
+| miscellaneous     | [Get-Resources.ps1](/_posts/functions/Get-Resources.md)                                                           |
+| miscellaneous     | [Get-SettingsWithCPassword.ps1](/_posts/functions/Get-SettingsWithCPassword.md)                                   |
+| miscellaneous     | [Get-SSLlabsScore.ps1](/_posts/functions/Get-SSLlabsScore.md)                                                     |
+| miscellaneous     | [Get-TokenSizeReport.ps1](/_posts/functions/Get-TokenSizeReport.md)                                               |
+| miscellaneous     | [Get-UnknownDevices.ps1](/_posts/functions/Get-UnknownDevices.md)                                                 |
+| miscellaneous     | [Get-Uptime.ps1](/_posts/functions/Get-Uptime.md)                                                                 |
+| miscellaneous     | [Get-UptimeV1.ps1](/_posts/functions/Get-UptimeV1.md)                                                             |
+| miscellaneous     | [Get-UserAccountControlReport.ps1](/_posts/functions/Get-UserAccountControlReport.md)                             |
+| miscellaneous     | [Get-Weather.ps1](/_posts/functions/Get-Weather.md)                                                               |
+| miscellaneous     | [GetWindowsFeatures.ps1](/_posts/functions/GetWindowsFeatures.md)                                                 |
+| miscellaneous     | [Invoke-CDRomDrive.ps1](/_posts/functions/Invoke-CDRomDrive.md)                                                   |
+| miscellaneous     | [Invoke-FTPUpload.ps1](/_posts/functions/Invoke-FTPUpload.md)                                                     |
+| miscellaneous     | [Invoke-PasswordRoll.ps1](/_posts/functions/Invoke-PasswordRoll.md)                                               |
+| miscellaneous     | [Invoke-UrlScan.ps1](/_posts/functions/Invoke-UrlScan.md)                                                         |
+| miscellaneous     | [Invoke-WebrequestCookie.ps1](/_posts/functions/Invoke-WebrequestCookie.md)                                       |
+| miscellaneous     | [Lock-Screen.ps1](/_posts/functions/Lock-Screen.md)                                                               |
+| miscellaneous     | [Lock-UserInput.ps1](/_posts/functions/Lock-UserInput.md)                                                         |
+| miscellaneous     | [MoveOU.ps1](/_posts/functions/MoveOU.md)                                                                         |
+| miscellaneous     | [New-AdminShell.ps1](/_posts/functions/New-AdminShell.md)                                                         |
+| miscellaneous     | [New-BlogServer.ps1](/_posts/functions/New-BlogServer.md)                                                         |
+| miscellaneous     | [New-EncryptedUser.ps1](/_posts/functions/New-EncryptedUser.md)                                                   |
+| miscellaneous     | [New-PassPhrase.ps1](/_posts/functions/New-PassPhrase.md)                                                         |
+| miscellaneous     | [New-Password.ps1](/_posts/functions/New-Password.md)                                                             |
+| miscellaneous     | [New-QotD.ps1](/_posts/functions/New-QotD.md)                                                                     |
+| miscellaneous     | [New-ScheduledScript.ps1](/_posts/functions/New-ScheduledScript.md)                                               |
+| miscellaneous     | [New-ScheduledTask.ps1](/_posts/functions/New-ScheduledTask.md)                                                   |
+| miscellaneous     | [New-UrlScan.ps1](/_posts/functions/New-UrlScan.md)                                                               |
+| miscellaneous     | [Open-CDTray.ps1](/_posts/functions/Open-CDTray.md)                                                               |
+| miscellaneous     | [Out-Excel.ps1](/_posts/functions/Out-Excel.md)                                                                   |
+| miscellaneous     | [parse_NTFS.ps1](/_posts/functions/parse_NTFS.md)                                                                 |
+| miscellaneous     | [PasswordFunctions.ps1](/_posts/functions/PasswordFunctions.md)                                                   |
+| miscellaneous     | [Prerequisites.ps1](/_posts/functions/Prerequisites.md)                                                           |
+| miscellaneous     | [ProgressBar.ps1](/_posts/functions/ProgressBar.md)                                                               |
+| miscellaneous     | [Query-UserAccountControl.ps1](/_posts/functions/Query-UserAccountControl.md)                                     |
+| miscellaneous     | [remove-ADM.PS1](/_posts/functions/remove-ADM.PS1)                                                                |
+| miscellaneous     | [RemoveLocalUserProfile.ps1](/_posts/functions/RemoveLocalUserProfile.md)                                         |
+| miscellaneous     | [Remove-UserProfile.ps1](/_posts/functions/Remove-UserProfile.md)                                                 |
+| miscellaneous     | [ScreenPassword.ps1](/_posts/functions/ScreenPassword.md)                                                         |
+| miscellaneous     | [Script4logging.ps1](/_posts/functions/Script4logging.md)                                                         |
+| miscellaneous     | [Search-Google.ps1](/_posts/functions/Search-Google.md)                                                           |
+| miscellaneous     | [Search-KerbDelegatedAccounts.ps1](/_posts/functions/Search-KerbDelegatedAccounts.md)                             |
+| miscellaneous     | [Search-RoadWorks.ps1](/_posts/functions/Search-RoadWorks.md)                                                     |
+| miscellaneous     | [Select-FolderLocation.ps1](/_posts/functions/Select-FolderLocation.md)                                           |
+| miscellaneous     | [Send-OutlookMail.ps1](/_posts/functions/Send-OutlookMail.md)                                                     |
+| miscellaneous     | [Show-IsAdminOrNot.ps1](/_posts/functions/Show-IsAdminOrNot.md)                                                   |
+| miscellaneous     | [SiteNameConsistencyReport.ps1](/_posts/functions/SiteNameConsistencyReport.md)                                   |
+| miscellaneous     | [Start-DownloadFileToTemp.ps1](/_posts/functions/Start-DownloadFileToTemp.md)                                     |
+| miscellaneous     | [Start-PSCountdown.ps1](/_posts/functions/Start-PSCountdown.md)                                                   |
+| miscellaneous     | [Start-Stream.ps1](/_posts/functions/Start-Stream.md)                                                             |
+| miscellaneous     | [Test-ComputerName.ps1](/_posts/functions/Test-ComputerName.md)                                                   |
+| miscellaneous     | [Test-EmailAddress.ps1](/_posts/functions/Test-EmailAddress.md)                                                   |
+| miscellaneous     | [Test-IsAdmin.ps1](/_posts/functions/Test-IsAdmin.md)                                                             |
+| miscellaneous     | [Test-NetworkPort.ps1](/_posts/functions/Test-NetworkPort.md)                                                     |
+| miscellaneous     | [Test-OnlineFast.ps1](/_posts/functions/Test-OnlineFast.md)                                                       |
+| miscellaneous     | [Test-ProfileExists.ps1](/_posts/functions/Test-ProfileExists.md)                                                 |
+| miscellaneous     | [Test-ServerExists.ps1](/_posts/functions/Test-ServerExists.md)                                                   |
+| miscellaneous     | [Test-SMB1Enabled.ps1](/_posts/functions/Test-SMB1Enabled.md)                                                     |
+| miscellaneous     | [Test-TLSConnection.ps1](/_posts/functions/Test-TLSConnection.md)                                                 |
+| miscellaneous     | [Test-WebsiteStatus.ps1](/_posts/functions/Test-WebsiteStatus.md)                                                 |
+| miscellaneous     | [Test-WebSiteUp.ps1](/_posts/functions/Test-WebSiteUp.md)                                                         |

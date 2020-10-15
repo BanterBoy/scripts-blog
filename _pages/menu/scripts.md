@@ -4,22 +4,135 @@ title: Scripts
 permalink: /menu/_pages/scripts.html
 ---
 
-#### [ExchangeServerConnections.ps1](/_posts/ExchangeServerConnections.md)
-Brief overview of script
 
-#### [Get-CidrIPRange.ps1](/_posts/Get-CidrIPRange.md)
-Brief overview of script
-
-#### [Get-ipInfo.ps1](/_posts/Get-ipInfo.md)
-Brief overview of script
-
-#### [Get-LatestFiles.ps1](/_posts/Get-LatestFiles.md)
-Brief overview of script
-
-#### [Get-UpTime.ps1](/_posts/Get-UpTime.md)
-Brief overview of script
-
-#### [Test-EmailAddress.ps1](/_posts/Test-EmailAddress.md)
-Brief overview of script
-
-![alt](/assets/images/brandicons/smartwatch.svg)
+| Section | FileName                                                            |
+| :------ | :------------------------------------------------------------------ |
+| scripts | activeDirectory\\Active\_Directory\_Information.ps1                 |
+| scripts | activeDirectory\\ActiveDirectoryDocument.ps1                        |
+| scripts | activeDirectory\\ActiveDirectorySitesandSubnetsReport.ps1           |
+| scripts | activeDirectory\\ActiveDirectorySitesLinksReport.ps1                |
+| scripts | activeDirectory\\Ad\_Report\_Generator\_Community.ps1               |
+| scripts | activeDirectory\\ADACLScan1.3.3.ps1                                 |
+| scripts | activeDirectory\\ADChangeReport.ps1                                 |
+| scripts | activeDirectory\\ADDS\_Inventory.ps1                                |
+| scripts | activeDirectory\\AD-Find\_missing\_subnets\_in\_ActiveDirectory.ps1 |
+| scripts | activeDirectory\\AD-Reporting.ps1                                   |
+| scripts | activeDirectory\\Audit-ADSubnets.ps1                                |
+| scripts | activeDirectory\\Audit-ADTrusts.ps1                                 |
+| scripts | activeDirectory\\CheckActiveDirectorySites.ps1                      |
+| scripts | activeDirectory\\CheckProtectedFromAccidentalDeletion.ps1           |
+| scripts | activeDirectory\\CheckRecycleBinStatus.ps1                          |
+| scripts | activeDirectory\\CheckW32TimeSource.ps1                             |
+| scripts | activeDirectory\\CircularNestedGroups.ps1                           |
+| scripts | activeDirectory\\Cleanup-AdminSDHolder.ps1                          |
+| scripts | activeDirectory\\CreateUser.ps1                                     |
+| scripts | activeDirectory\\dhcp\_inventory.ps1                                |
+| scripts | activeDirectory\\Export-ADUserInfo.ps1                              |
+| scripts | activeDirectory\\Export-PSWNOTREQD.ps1                              |
+| scripts | activeDirectory\\Find\_missing\_subnets\_in\_ActiveDirectory.ps1    |
+| scripts | activeDirectory\\FindDHCPServers.ps1                                |
+| scripts | activeDirectory\\FindDNSServersAndLocalZones.ps1                    |
+| scripts | activeDirectory\\FindDuplicateEmployeeIDs.ps1                       |
+| scripts | activeDirectory\\Find-InactiveUsers.ps1                             |
+| scripts | activeDirectory\\FindOrphanedGPOs.ps1                               |
+| scripts | activeDirectory\\Find-SPNs.ps1                                      |
+| scripts | activeDirectory\\Force-LoggedOnUsertoLogOff.ps1                     |
+| scripts | activeDirectory\\GenerateBPAReports.ps1                             |
+| scripts | activeDirectory\\Get\_AD\_Users\_Logon\_History.ps1                 |
+| scripts | activeDirectory\\Get-ADCount.ps1                                    |
+| scripts | activeDirectory\\Get-ADGroupNesting.ps1                             |
+| scripts | activeDirectory\\Get-ADSchemaReport.ps1                             |
+| scripts | activeDirectory\\Get-AllComputerAccounts.ps1                        |
+| scripts | activeDirectory\\Get-AlternateMailboxes.ps1                         |
+| scripts | activeDirectory\\Get-AuthorizedDHCPServers.ps1                      |
+| scripts | activeDirectory\\Get-CalendarPermissionsReport.ps1                  |
+| scripts | activeDirectory\\Get-DFSNameSpaceReport.ps1                         |
+| scripts | activeDirectory\\Get-dhcpscope.ps1                                  |
+| scripts | activeDirectory\\Get-DHCPServers.ps1                                |
+| scripts | activeDirectory\\Get-GPOLogonScriptReport.ps1                       |
+| scripts | activeDirectory\\Get-GPProcessingTime.ps1                           |
+| scripts | activeDirectory\\Get-LastLogonToCSV.ps1                             |
+| scripts | activeDirectory\\Get-NoSettingsGPO.ps1                              |
+| scripts | activeDirectory\\Get-RODCPasswordRPs.ps1                            |
+| scripts | activeDirectory\\gPLink\_Report.ps1                                 |
+| scripts | activeDirectory\\Move-DisabledUsers.ps1                             |
+| scripts | activeDirectory\\New-ADAssetReport.ps1                              |
+| scripts | activeDirectory\\New-ADAssetReportGUI.ps1                           |
+| scripts | activeDirectory\\New-Computer.ps1                                   |
+| scripts | activeDirectory\\newuserimport.ps1                                  |
+| scripts | activeDirectory\\OU\_permissions.ps1                                |
+| scripts | activeDirectory\\privilegedUsersV2.ps1                              |
+| scripts | activeDirectory\\RaiseActiveDirectoryFunctionalLevel.ps1            |
+| scripts | activeDirectory\\Show-OUStructure.ps1                               |
+| scripts | activeDirectory\\Start-ADSyncCycle.ps1                              |
+| scripts | EventLogs\\Evaluate-EventLog.ps1                                    |
+| scripts | EventLogs\\EventLogs.ps1                                            |
+| scripts | EventLogs\\EventLogsExported.ps1                                    |
+| scripts | EventLogs\\EventsToEmail.ps1                                        |
+| scripts | EventLogs\\EventTest.ps1                                            |
+| scripts | Exchange\\Exch\_AdminAuditReport.ps1                                |
+| scripts | Exchange\\Exch-AgentLogs.ps1                                        |
+| scripts | Exchange\\ExchangeVersions.ps1                                      |
+| scripts | Exchange\\Export-MailboxSizetoCSV.ps1                               |
+| scripts | Exchange\\Get-MailboxPermissionsScript.ps1                          |
+| scripts | Exchange\\HideUsersfromAddressBook.ps1                              |
+| scripts | Exchange\\Locate-Exchange.ps1                                       |
+| scripts | Exchange\\mailbox.ps1                                               |
+| scripts | Exchange\\New-DistributionList.ps1                                  |
+| scripts | Exchange\\New-HistoricalSearch.ps1                                  |
+| scripts | Exchange\\Test-ExchangeServerHealth.ps1                             |
+| scripts | fileManagement\\Compare-Folder.ps1                                  |
+| scripts | fileManagement\\copyFilestoServers.PS1                              |
+| scripts | fileManagement\\DataDriveSizes.ps1                                  |
+| scripts | fileManagement\\Delete-UnusedHomeFolders.ps1                        |
+| scripts | fileManagement\\Export-FilePermissions.ps1                          |
+| scripts | fileManagement\\Export-FilePermsAcc.ps1                             |
+| scripts | fileManagement\\FileSizes.ps1                                       |
+| scripts | fileManagement\\Find-DuplicateFiles.ps1                             |
+| scripts | fileManagement\\Find-MissingFiles.ps1                               |
+| scripts | fileManagement\\Get-FileDownload.ps1                                |
+| scripts | fileManagement\\LastAccess.ps1                                      |
+| scripts | fileManagement\\New-dummyFile.ps1                                   |
+| scripts | fileManagement\\SyncFoldersScript.ps1                               |
+| scripts | information\\Collect-ServerInfo.ps1                                 |
+| scripts | information\\ExportFirewallRules.ps1                                |
+| scripts | information\\Export-PrinterQueues.ps1                               |
+| scripts | information\\GetComputerHTMLReport.ps1                              |
+| scripts | information\\GetComputerInventory.ps1                               |
+| scripts | information\\Get-DiskSpace.ps1                                      |
+| scripts | information\\Get-ReportDownload.ps1                                 |
+| scripts | information\\Get-WifiPassword.ps1                                   |
+| scripts | information\\Hardware-Report.ps1                                    |
+| scripts | information\\htmlreport.PS1                                         |
+| scripts | information\\O365UserLicenseReport.ps1                              |
+| scripts | information\\Office365HTMLReport.ps1                                |
+| scripts | installScripts\\InstallADDocsModules.ps1                            |
+| scripts | installScripts\\Install-O365Modules.ps1                             |
+| scripts | installScripts\\Install-PoshBot.ps1                                 |
+| scripts | installScripts\\InstallPwnedPasswordDLL.ps1                         |
+| scripts | installScripts\\Install-RSATonline.ps1                              |
+| scripts | ping\\Dotnetping.ps1                                                |
+| scripts | ping\\PingAllComputers.ps1                                          |
+| scripts | ping\\Ping-DNSServers.ps1                                           |
+| scripts | time\\Get-BankHolidays.ps1                                          |
+| scripts | time\\Get-CurrentWorldTime.ps1                                      |
+| scripts | time\\Get-TimeZoneInformation.ps1                                   |
+| scripts | time\\Worldtimeclock.ps1                                            |
+| scripts | windowsUpdates\\Export-WindowsUpdates.ps1                           |
+| scripts | windowsUpdates\\Export-WUpdateHistory.ps1                           |
+| scripts | windowsUpdates\\Get-HotFixReport.ps1                                |
+| scripts | windowsUpdates\\Get-WindowsUpdatesInstalled.ps1                     |
+| scripts | windowsUpdates\\Get-WindowsUpdatesInstalledList.ps1                 |
+| scripts | windowsUpdates\\WindowsUpdates-InstalledList.ps1                    |
+| scripts | AutoBitlocker.ps1                                                   |
+| scripts | chart-driveSpace.V2.ps1                                             |
+| scripts | Config-Psmodulepath.ps1                                             |
+| scripts | ConfigureWinrm.ps1                                                  |
+| scripts | DiskCleanup.ps1                                                     |
+| scripts | diskmonitor1.PS1                                                    |
+| scripts | Encrypt-Laptop.ps1                                                  |
+| scripts | HyperVGoldenImage.ps1                                               |
+| scripts | Stop-FailedServiceScript.ps1                                        |
+| scripts | Update-DynamicDNSTemplate.ps1                                       |
+| scripts | VMWareGoldenImage.ps1                                               |
+| scripts | Write-MatrixMessage.ps1                                             |
