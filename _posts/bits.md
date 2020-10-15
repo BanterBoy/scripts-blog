@@ -3,19 +3,43 @@ layout: post
 title: Get-CidrIPRange.ps1
 ---
 
-### something exciting
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [something exciting](#something-exciting)
+  - [Script](#script)
+    - [Test-EmailAddress.ps1](#test-emailaddressps1)
+- [Example](#example)
+- [Information](#information)
+- [FAQ](#faq)
+- [Support](#support)
+- [Tips](#tips)
+- [Information](#information-1)
+- [Command](#command)
+- [Output](#output)
+- [Notice](#notice)
+
+<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+
+---
+
+## something exciting
 
 Some information about the exciting thing
 
-#### Script
+---
+
+### Script
 
 <script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/CmdLets/Get-CidrIPRange.ps1"></script>
 
-<a href="/scripts.html">Back to Scripts</a>
+<a href="/menu/_pages/functions.html">Back to Scripts</a>
 
 <script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/Extras/ExchangeServerConnections.ps1"></script>
 
-<a href="/scripts.html">Back to Scripts</a>
+<a href="/menu/_pages/functions.html">Back to Scripts</a>
+
+---
 
 #### [Test-EmailAddress.ps1](/_posts/Test-EmailAddress.md)
 Brief overview of script
@@ -25,27 +49,6 @@ Brief overview of script
   Your browser does not support the video tag.
 </video>
 
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Example](#example)
-- [Information](#information)
-- [FAQ](#faq)
-- [Support](#support)
-- [Tips](#tips)
-- [Table of Contents](#table-of-contents-1)
-- [Example](#example-1)
-- [Information](#information-1)
-- [FAQ](#faq-1)
-- [Support](#support-1)
-- [Tips](#tips-1)
-- [Information](#information-2)
-- [Command](#command)
-- [Output](#output)
-- [Notice](#notice)
-
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
-
 ---
 
 ## Example
@@ -103,97 +106,20 @@ Reach out to me at one of the following places!
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
-
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [Example](#example)
-- [Information](#information)
-- [FAQ](#faq)
-- [Support](#support)
-- [Tips](#tips)
-- [Table of Contents](#table-of-contents-1)
-- [Example](#example-1)
-- [Information](#information-1)
-- [FAQ](#faq-1)
-- [Support](#support-1)
-- [Tips](#tips-1)
-- [Information](#information-2)
-- [Command](#command)
-- [Output](#output)
-- [Notice](#notice)
-
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
-
----
-
-## Example
-
-```powershell
-<#
-  .Something
-  Some help info
-
-  .SomethingElse
-  Some more help info
-#>
-
-Get-Something
-- HAVE WHITE SPACE
-Get-SomethingElse
-- MAKE IT PRETTY
-```
-
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
-
----
-
-## Information
-
-- All the `code` required to get started
-- Images of what it should look like
-
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
-
----
-
-## FAQ
-
-- **How do I do *specifically* so and so?**
-  - No problem! Just do this.
-
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
-
----
-
-## Support
-
-Reach out to me at one of the following places!
-
-|---|---|
-| <a class="sidebar-nav-item" href="https://blog.lukeleigh.com/"><img src="https://img.shields.io/badge/Blog-blog.lukeleigh.com-2A6496.svg"></a> | <a class="sidebar-nav-item" href="https://www.linkedin.com/in/lukeleigh"><img src="https://img.shields.io/badge/LinkedIn-lukeleigh-0077B5.svg?logo=LinkedIn"></a> |
-
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
-
----
-
-## Tips
-
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
-
----
-
-
 
 ## Information
 
 <p class="lead">In the novel, *The Strange Case of Dr. Jekyll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).</p>
+
+---
 
 ## Command
 
 *Get-ChildItem -Directory \|*<br>
 *Select-Object -Property FullName,BaseName,Parent,LastAccessTime \|*<br>
 *Format-MarkdownTableTableStyle -HideStandardOutput*<br>
+
+---
 
 ## Output
 
@@ -209,6 +135,8 @@ Reach out to me at one of the following places!
 | Scripts        | C:\\GitRepos\\scripts-blog\\PowerShell\\Scripts        | 14/09/2020 20:19:34 | C:\\GitRepos\\scripts-blog\\PowerShell |
 | snippets       | C:\\GitRepos\\scripts-blog\\PowerShell\\snippets       | 14/09/2020 20:19:34 | C:\\GitRepos\\scripts-blog\\PowerShell |
 | Tools          | C:\\GitRepos\\scripts-blog\\PowerShell\\Tools          | 14/09/2020 20:19:34 | C:\\GitRepos\\scripts-blog\\PowerShell |
+
+---
 
 ## Notice
 <p class="message">
