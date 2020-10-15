@@ -1,0 +1,4 @@
+Create Folder with same name as Function Filename
+Move file into folder
+Copy folder/file to users module folder (any folder contained in $env:psmodulepath)
+Import module if session open or open new PowerShell session for function to be loaded as a module

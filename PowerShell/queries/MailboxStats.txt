@@ -1,0 +1,4 @@
+Get-Mailbox | Where-Object { $_.WindowsEmailAddress -like '*SOMETHING*' } | Get-MailboxStatistics | Sort-Object -Property DisplayName | Select-Object DisplayName,IsArchiveMailbox,ItemCount,TotalItemSize | Format-Table -AutoSize | Export-CSV –Path 'C:\Temp\SOMETHING-export.csv'
+
+
+Mailbox9_00e4de02@ssyco.onmicrosoft.com

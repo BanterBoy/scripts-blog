@@ -1,0 +1,26 @@
+Create Recovery Database and connect to restored EDB
+
+New-MailboxDatabase -Recovery -EdbFilePath "I:\TempRestore\Exchange Server\Overseas and Back Office\File\Overseas and Back Office.edb" -LogFolderPath "I:\TempRestore\Exchange Server\Overseas and Back Office\File" -Name RDB_661234
+
+Get-MailboxDatabase RDB*
+
+Get-MailboxDatabase RDB* | Mount-Database
+
+
+
+Due to Database recovery being in "Dirty Shutdown" dbase should be repaired
+
+https://alexvoropaev.jimdo.com/my-articles/exchange/repair-exchange-db-after-dirty-shutdown/
+http://msexchangeguru.com/2009/07/12/exchange-database-recovery-using-eseutil-commands/
+http://blog.shiraj.com/2011/08/exchange-database-recovery-using-eseutil-commands/
+
+
+Once Dbase has recovered, run New-MailboxRestoreRequest
+https://technet.microsoft.com/en-us/library/ff829875(v=exchg.160).aspx
+
+Restore calendar to users mailbox.
+
+New-MailboxRestoreRequest -SourceDatabase "RDB_661234" -SourceStoreMailbox "Lane, Alexandra" -IncludeFolders Calendar/* -T
+argetMailbox "Lane, Alexandra"
+
+(Use "DisplayName" as the alias does not appear in the restored dbase)

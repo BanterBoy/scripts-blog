@@ -1,0 +1,3 @@
+cd %userprofile%
+wmic qfe list full /format:htable > hotfixes.htm
+start iexplore %userprofile%\hotfixes.htm

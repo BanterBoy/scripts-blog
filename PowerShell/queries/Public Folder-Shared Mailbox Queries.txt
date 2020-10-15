@@ -1,0 +1,97 @@
+Public Folder/Shared Mailbox Queries
+
+CommandLine
+-----------
+.\PowerShellScripts\CapitalSupport\Functions\Connect-Office365Services.ps1
+Connect-ExchangeOnline
+Get-Mailbox
+(Get-Mailbox).count
+$mailBoxes = Get-Mailbox
+$mailBoxes[0] | Get-Member
+$mailBoxes[0] | Get-Member -MemberType Properties
+$mailBoxes[0] | Get-Member -MemberType Properties -Name *archive*
+$mailBoxes | Select-Object -Property Identity,*archive*
+$mailBoxes | Select-Object -Property Identity,*archive* | Format-Table -AutoSize
+$mailBoxes | Select-Object -Property Identity,ArchiveDatabase,ArchiveName,ArchiveQuota,ArchiveWarningQuota,ArchiveStatus,ArchiveState | Format-Table -AutoSize
+$mailBoxes | Select-Object -Property Identity,ArchiveDatabase,ArchiveName,ArchiveQuota,ArchiveWarningQuota,ArchiveStatus,ArchiveState
+$mailBoxes | Select-Object -Property Identity,ArchiveDatabase,ArchiveName,ArchiveQuota,ArchiveWarningQuota,ArchiveStatus,ArchiveState | ConvertTo-Csv -Delimiter ','
+-NoTypeInformation | Out-File C:\Clients\SimpsonSpenceYoung\MailboxArchiveInfo.csv
+$mailBoxes | Select-Object -Property RecipentType
+$mailBoxes | Get-Member *recipient*
+$mailBoxes | Select-Object -Property RecipentTypeDetails
+$mailBoxes | Select-Object -Property *recipient*
+$mailBoxes | Select-Object -Property Identity,RecipientTypeDetails,ArchiveDatabase,ArchiveName,ArchiveQuota,ArchiveWarningQuota,ArchiveStatus,ArchiveState |
+ConvertTo-Csv -Delimiter ',' -NoTypeInformation | Out-File C:\Clients\SimpsonSpenceYoung\MailboxArchiveInfo.csv
+Get-Command *soft*
+Connect-ComplianceCenter
+Get-Mailbox -SoftDeletedMailbox | Select-Object Name,ExchangeGuid
+Get-Mailbox -SoftDeletedMailbox | Sort-Object Name | Select-Object Name,ExchangeGuid
+Get-Mailbox -SoftDeletedMailbox | Select-Object Name
+Get-Mailbox -SoftDeletedMailbox | Select-Object Name,Identity,Alias
+Get-Mailbox -SoftDeletedMailbox | Select-Object Name,Identity,Alias | Sort-Object Name
+Get-Mailbox -Identity Fix@ssychems.com
+Get-Mailbox -Identity *@ssychems.com
+Get-Mailbox -SoftDeletedMailbox
+Get-Mailbox -SoftDeletedMailbox | Sort-Object Name
+Get-Mailbox -SoftDeletedMailbox | Get-Member
+Get-Mailbox -SoftDeletedMailbox | Get-Member | Select-Object -Property UserPrincipalName
+Get-Mailbox -SoftDeletedMailbox | Select-Object -Property UserPrincipalName
+Get-Mailbox -SoftDeletedMailbox | Select-Object -Property UserPrincipalName | Where-Object { $_.UserPrincipalName -like '*fix*' }
+Get-Mailbox | Select-Object -Property UserPrincipalName | Where-Object { $_.UserPrincipalName -like '*fix*' }
+Get-Mailbox | Select-Object -Property UserPrincipalName | Where-Object { $_.UserPrincipalName -like '*fix*' } | Format-Table -AutoSize
+Get-Mailbox | Select-Object -Property Name,Alias,Identity,UserPrincipalName | Where-Object { $_.UserPrincipalName -like '*fix*' } | Format-Table -AutoSize
+Get-Mailbox -SoftDeletedMailbox | Select-Object -Property Name,Alias,Identity,UserPrincipalName | Where-Object { $_.UserPrincipalName -like '*fix*' } | Format-Table
+-AutoSize
+Get-Mailbox | Select-Object -Property Name,Alias,Identity,UserPrincipalName | Where-Object { $_.UserPrincipalName -like '*fix*' } | Format-Table -AutoSizeclsa
+cls
+Get-Command *public*
+Get-MailPublicFolder
+Get-MailPublicFolder | Get-Member
+Get-MailPublicFolder | Select-Object *mail*
+Get-MailPublicFolder | Select-Object *mail* | Format-Table -AutoSize
+cls
+Get-MailPublicFolder | Select-Object *mail*
+Get-MailPublicFolder | Select-Object *mail* | Where-Object { $_ -like '*fix*' }
+Get-Mailbox -PublicFolder -SoftDeletedMailbox
+Get-PublicFolder
+Get-PublicFolder -GetChildren
+Get-PublicFolder -LostAndFound
+Get-PublicFolder -Mailbox
+Get-PublicFolder -Recurse
+Get-PublicFolder -Recurse | Get-Member
+Get-PublicFolder | Get-Member
+Get-PublicFolder -GetChildren
+Get-PublicFolder -ResidentFolders
+$publicFolders = Get-PublicFolder -Recurse
+$publicFolders.Count
+$publicFolders = Get-PublicFolder -Recurse | Where-Object { $_.Name -like '*fix*' }
+$publicFolders.Count
+$publicFolders
+$publicFolders = Get-PublicFolder -Recurse -ResultSize Unlimited | Where-Object { $_.Name -like '*fix*' }
+$publicFolders.Count
+$publicFolders
+$publicFolders | Get-Member
+$publicFolders.lastmovedtime
+$publicFolders | Select-Object -Property Name,LastMovedTime
+$publicFolders | Select-Object -Property Name,DumpsterEntryId
+cls
+$publicFolders | Get-Member
+$publicFolders | Select-Object -Property Name,MailEnabled
+$publicFoldersMailEnabled = Get-PublicFolder | Where-Object { $_.MailEnabled -eq 'True' }
+$publicFoldersMailEnabled
+$publicFoldersMailEnabled = Get-PublicFolder-Recurse -ResultSize Unlimited | Where-Object { $_.MailEnabled -eq 'True' }
+$publicFoldersMailEnabled = Get-PublicFolder -Recurse -ResultSize Unlimited | Where-Object { $_.MailEnabled -eq 'True' }
+$publicFoldersMailEnabled.Count
+$publicFoldersMailEnabled
+$publicFolders
+$publicFoldersMailEnabled
+Get-History | Format-Table -Property CommandLine -AutoSize -Wrap
+$fixMailbox = Get-Mailbox | Select-Object *mail* | Where-Object { $_ -like '*fix*' }
+$fixMailbox.Count
+$fixMailbox
+$fixMailbox | Format-Table
+$fixMailbox | Select-Object Name,Alias,EmailAddresses
+$fixMailbox | Select-Object Name,Alias,EmailAddresses | Format-List
+$fixMailbox | Get-Member
+$fixMailbox = Get-Mailbox | Where-Object { $_ -like '*fix*' }
+$fixMailbox

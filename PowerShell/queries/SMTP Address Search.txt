@@ -1,0 +1,21 @@
+Get-Mailbox -ResultSize Unlimited | Where-Object { $_.Name -ne 'Oliver Stocken - home' }
+Select-Object DisplayName,PrimarySmtpAddress, @{Name=“EmailAddresses”;Expression={$_.EmailAddresses | Where-Object {$_.PrefixString -ceq “smtp”} |
+ForEach-Object {$_.SmtpAddress}}} |
+Export-CSV c:\exportMailboxSMTP.csv -NoTypeInformation
+
+Get-MailContact -ResultSize Unlimited |
+Select-Object DisplayName,PrimarySmtpAddress, @{Name=“EmailAddresses”;Expression={$_.EmailAddresses | Where-Object {$_.PrefixString -ceq “smtp”} |
+ForEach-Object {$_.SmtpAddress}}} |
+Export-CSV c:\exportMailContactSMTP.csv -NoTypeInformation
+
+Mailbox9_00e4de02@ssyco.onmicrosoft.com
+
+
+
+Get-Mailbox | Where-Object { $_.UserPrincipalName -eq 'Mailbox9_00e4de02@ssyco.onmicrosoft.com' }
+
+
+
+Get-MailContact -ResultSize Unlimited |
+Select-Object DisplayName,PrimarySmtpAddress |
+Export-CSV c:\exportMailContactSMTP.csv -NoTypeInformation

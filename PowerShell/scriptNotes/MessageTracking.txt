@@ -1,0 +1,36 @@
+Get-MessageTrackingLog -EventId Receive -Start "01/23/2018 08:00:00" | Where-Object { $_.recipients -like '*she
+lleysandzer.co.uk' } | Format-List
+
+
+RunspaceId              : badd033d-2e78-43bd-a7b0-1c11e4be3a9e
+Timestamp               : 23/01/2018 09:08:00
+ClientIp                : fe80::5095:62e3:7da5:dce8
+ClientHostname          : TSL-LN-EX1v.TSL.local
+ServerIp                : fe80::5095:62e3:7da5:dce8%12
+ServerHostname          : TSL-LN-EX1v
+SourceContext           : 08D53F73C8E17E52
+ConnectorId             :
+Source                  : STOREDRIVER
+EventId                 : RECEIVE
+InternalMessageId       : 0
+MessageId               : <b1b5a3345bfa4485b3bed13dd13f04bd@TSL-LN-EX1v.TSL.local>
+Recipients              : {dlillie@shelleysandzer.co.uk}
+RecipientStatus         : {To}
+TotalBytes              : 22894
+RecipientCount          : 1
+RelatedRecipientAddress :
+Reference               :
+MessageSubject          : RE: My email
+Sender                  : JP.Dib@trispanllp.com
+ReturnPath              : JP.Dib@trispanllp.com
+Directionality          : Originating
+TenantId                :
+OriginalClientIp        : 172.29.39.78
+MessageInfo             : 04I:
+MessageLatency          :
+MessageLatencyType      : None
+EventData               : {[MailboxDatabaseGuid, c9d33a14-1c7c-44b3-a3d9-76fd9de844f9], [ItemEntryId, 00-00-00-00-79-09
+                          -16-4D-CF-8D-3C-46-B7-8F-F8-36-7F-B9-38-C3-07-00-19-75-E5-76-E4-57-8F-4A-9D-37-44-43-51-EE-EF
+                          -A6-00-00-00-00-01-0C-00-00-19-75-E5-76-E4-57-8F-4A-9D-37-44-43-51-EE-EF-A6-00-01-FE-85-7C-A0
+                          -00-00], [DeliveryPriority, Normal]}
+						  

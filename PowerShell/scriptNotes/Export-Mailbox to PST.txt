@@ -1,0 +1,32 @@
+Peter Murphy
+
+Peter.Murphy
+MBD01
+106372952
+
+Peter.Murphy1
+MBD02
+9054757
+
+
+Search-Mailbox -Identity "Peter.Murphy" -TargetMailbox "csadmin" -TargetFolder "2014" -SearchQuery 'Received:(01.01.2014..31.12.2014)'
+Search-Mailbox -Identity "Peter.Murphy" -TargetMailbox "csadmin" -TargetFolder "2015" -SearchQuery {Received:01.01.2015...31.12.2015}
+Search-Mailbox -Identity "Peter.Murphy" -TargetMailbox "csadmin" -TargetFolder "2016" -SearchQuery {Received:01.01.2016..31.12.2016}
+Search-Mailbox -Identity "Peter.Murphy" -TargetMailbox "csadmin" -TargetFolder "2016" -SearchQuery {Received:01.01.2016..12.31.2016}
+
+
+Search-Mailbox -ContentFilter {((Received -lt ’12/01/2016) -and (Received -ge ’01/01/2016'))} 
+
+New-MailboxExportRequest -Identity csadmin -IncludeFolders "2014/*" -FilePath \\servername\d$\temp\pst2014.pst
+
+
+Search-Mailbox  <Peter's Username> -SearchQuery: "Received:(01.01.2014...31.12.2014)" -deletecontent -confirm:$false
+
+
+New-MailboxDatabase -Recovery -Identity RDB_ticket661449 -LogFolderPath <path> -EdbFilePath <path>.FILENAME.edb 
+
+
+Get-MailboxDatabase -Identity RDB_ticket661449 | Mount-Database
+
+
+

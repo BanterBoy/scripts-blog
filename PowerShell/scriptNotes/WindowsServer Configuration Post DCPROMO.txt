@@ -1,0 +1,129 @@
+﻿NetDOM /query FSMO
+w32tm /query /source
+
+
+$AutoUpdates = New-Object -ComObject "Microsoft.Update.AutoUpdate"
+$AutoUpdates.DetectNow()
+
+Get-ADOrganizationalUnit -filter * -Properties ProtectedFromAccidentalDeletion | where {$_.ProtectedFromAccidentalDeletion -eq $false} | Format-Table
+
+Get-ADOrganizationalUnit -filter * -Properties ProtectedFromAccidentalDeletion | where {$_.ProtectedFromAccidentalDeletion -eq $false} | Set-ADOrganizationalUnit -ProtectedFromAccidentalDeletion $true
+
+Get-ADOrganizationalUnit -filter * -Properties ProtectedFromAccidentalDeletion | where {$_.ProtectedFromAccidentalDeletion -eq $false} | ft
+
+$recycleBin = Get-ADOptionalFeature -Filter { Name -like "Recycle Bin Feature" }
+$recycleBin.EnabledScopes
+
+
+w32tm /debug /enable /file:C:\Windows\Temp\w32time-test.log /size:10000000 /entries:0-73,103,107,110
+
+	w32tm /config /manualpeerlist:"0.pool.ntp.org 1.pool.ntp.org 2.pool.ntp.org 3.pool.ntp.org" /syncfromflags:manual /reliable:yes /update
+OR
+	w32tm /config /syncfromflags:DOMHIER /update
+
+w32tm /config /update
+
+w32tm /resync /force
+
+w32tm /query /configuration
+
+w32tm /stripchart /computer:$env:computername /period:2 /dataonly /samples:4 /packetinfo /ipprotocol:4
+
+w32tm /monitor /domain:$env:USERDNSDOMAIN
+
+Get-NetAdapter | Enable-NetAdapterIPsecOffload
+
+fsutil behavior set disable8dot3 1
+
+Set-SmbServerConfiguration -Smb2CreditsMin 128 -Smb2CreditsMax 2048 -AutoDisconnectTimeout 0 -CachedOpenLimit 5 -AsynchronousCredits 64 -DurableHandleV2TimeoutInSeconds 30
+
+Get-SmbClientConfiguration | Select EnableMultichannel
+
+Get-Netadapter | Enable-NetAdapterRss
+
+Get-SmbConnection
+
+Get-SmbMultichannelConnection
+
+Get-Service -Name MapsBroker
+
+Get-Service -Name MapsBroker | Set-Service -StartupType Disabled
+
+Get-Service -Name MapsBroker
+
+Remove-WindowsFeature FS-SMB1 (SERVER COMMAND)
+
+Disable-WindowsOptionalFeature -Online -FeatureName smb1protocol (CLIENT COMMAND)
+
+Restart-Computer -Force
+
+Set-DnsServerScavenging -ApplyOnAllZones -NoRefreshInterval 7.00:00:00 -ScavengingState $True -Verbose -PassThru
+
+Set-DnsServerForwarder -IPAddress '8.8.4.4','208.67.220.220','64.6.65.6','8.8.8.8','208.67.222.222','64.6.64.6'
+
+$AutoUpdates = New-Object -ComObject "Microsoft.Update.AutoUpdate"
+$AutoUpdates.DetectNow()
+
+Add-WindowsFeature Windows-Server-Backup
+
+wbadmin start systemstatebackup -backuptarget:\\DARTHVADER\Torrents\Temp -quiet
+
+repadmin /removelingeringobjects /advisory_mode 
+
+============================
+
+PDC Script
+
+Get-ADOrganizationalUnit -filter * -Properties ProtectedFromAccidentalDeletion | where {$_.ProtectedFromAccidentalDeletion -eq $false} | ft
+Get-ADOrganizationalUnit -filter * -Properties ProtectedFromAccidentalDeletion | where {$_.ProtectedFromAccidentalDeletion -eq $false} | Set-ADOrganizationalUnit -ProtectedFromAccidentalDeletion $true
+Get-ADOrganizationalUnit -filter * -Properties ProtectedFromAccidentalDeletion | where {$_.ProtectedFromAccidentalDeletion -eq $false} | ft
+Set-SmbServerConfiguration -Smb2CreditsMin 128 -Smb2CreditsMax 2048 -AutoDisconnectTimeout 0 -CachedOpenLimit 5 -AsynchronousCredits 64 -DurableHandleV2TimeoutInSeconds 30
+Get-Service -Name MapsBroker | Set-Service -StartupType Disabled
+Get-Service -Name MapsBroker
+w32tm /config /manualpeerlist:"0.pool.ntp.org 1.pool.ntp.org 2.pool.ntp.org 3.pool.ntp.org" /syncfromflags:manual /reliable:yes /update
+w32tm /debug /enable /file:C:\Windows\Temp\w32time-test.log /size:10000000 /entries:0-73,103,107,110
+net stop w32time
+net start w32time
+w32tm /resync /force
+fsutil behavior set disable8dot3 1
+fsutil 8dot3name strip /s /v C:\
+fsutil 8dot3name query C:
+Set-ItemProperty "HKLM:System\CurrentControlSet\Control\FileSystem\" -Name LongPathsEnabled -Value 1
+(Get-ItemProperty "HKLM:System\CurrentControlSet\Control\FileSystem").LongPathsEnabled
+
+============================
+
+Domain Member DC
+
+Get-ADOrganizationalUnit -filter * -Properties ProtectedFromAccidentalDeletion | where {$_.ProtectedFromAccidentalDeletion -eq $false} | Set-ADOrganizationalUnit -ProtectedFromAccidentalDeletion $true
+Get-ADOrganizationalUnit -filter * -Properties ProtectedFromAccidentalDeletion | where {$_.ProtectedFromAccidentalDeletion -eq $false} | ft
+Set-SmbServerConfiguration -Smb2CreditsMin 128 -Smb2CreditsMax 2048 -AutoDisconnectTimeout 0 -CachedOpenLimit 5 -AsynchronousCredits 64 -DurableHandleV2TimeoutInSeconds 30
+Get-Service -Name MapsBroker | Set-Service -StartupType Disabled
+Get-Service -Name MapsBroker
+Set-DnsServerScavenging -ApplyOnAllZones -NoRefreshInterval 7.00:00:00 -ScavengingState $True -Verbose -PassThru
+Get-DnsServerScavenging | Set-DnsServerScavenging -ApplyOnAllZones
+w32tm /config /syncfromflags:DOMHIER /update
+w32tm /debug /enable /file:C:\Windows\Temp\w32time-test.log /size:10000000 /entries:0-73,103,107,110
+net stop w32time
+net start w32time
+w32tm /resync /force
+fsutil behavior set disable8dot3 1
+
+============================
+
+Get-NetAdapterBinding –InterfaceAlias "Ethernet0" | Disable-NetAdapterBinding –ComponentID ms_tcpip
+$nics=Get-WmiObject "Win32_NetworkAdapterConfiguration where IPEnabled='TRUE'"
+foreach($nic in $nics)
+{
+$nic.SetDynamicDNSRegistration($true)
+}
+
+
+
+repadmin /removelingeringobjects /advisory_mode
+repadmin /removelingeringobjects
+
+
+
+Virtual Environments
+reg add HKLM\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\VMICTimeProvider /v Enabled /t reg_dword /d 0

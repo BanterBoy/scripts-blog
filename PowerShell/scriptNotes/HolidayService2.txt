@@ -1,0 +1,38 @@
+HolidayService2
+
+
+Web service that calculates holiday dates. (Version 2.0.1)
+
+The following operations are supported. For a formal definition, please review the Service Description.
+
+GetCountriesAvailable 
+Get the available countries.
+
+GetHolidayDate 
+Get the date of a specific holiday.
+
+GetHolidaysAvailable 
+Get the available holidays for a specified country.
+
+GetHolidaysForDateRange 
+Get the holidays for a date range.
+
+GetHolidaysForMonth 
+Get the holidays for a specific month.
+
+GetHolidaysForYear
+Get the holidays for an entire year.
+
+http://www.holidaywebservice.com/HolidayService_v2/HolidayService2.asmx
+
+$URI = "http://www.holidaywebservice.com/HolidayService_v2/HolidayService2.asmx"
+$proxy = New-WebServiceProxy -Uri $URI -Class holiday -Namespace webservice
+
+
+$proxy.GetCountriesAvailable()
+$proxy.GetHolidaysAvailable("GreatBritain")
+$proxy.GetHolidayDate("UnitedStates","LABOR-DAY",2013)
+$proxy.GetHolidaysForYear("GreatBritain","2018")
+
+New-TimeSpan -Start (get-date) -End ($proxy.GetHolidayDate("UnitedStates","LABOR-DAY",2013))
+

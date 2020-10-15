@@ -1,0 +1,23 @@
+Powershell 6 Roadmap
+https://blogs.msdn.microsoft.com/powershell/2017/07/14/powershell-6-0-roadmap-coreclr-backwards-compatibility-and-more/
+
+Group Policy Management
+https://getadmx.com/
+
+https://blogs.technet.microsoft.com/networking/2015/05/12/split-brain-dns-deployment-using-windows-dns-server-policies/
+https://blogs.technet.microsoft.com/networking/2015/05/11/geo-location-based-traffic-management-using-dns-policies/
+
+
+https://improvingsoftware.com/2013/09/09/how-to-diff-two-folders-from-a-windows-command-prompt/
+http://improve.dk/simple-file-synchronization-using-robocopy/
+
+http://yakupkorkmaz.info/?p=12
+
+DNS Root Hints 2016 Busted
+https://social.technet.microsoft.com/Forums/en-US/6c3d6278-0fa2-46b0-a19e-6fd652db972c/root-hints-defaulting-to-ipv6-only?forum=winserveripamdhcpdns
+
+Exchange Admin
+https://www.slipstick.com/
+https://www.slipstick.com/exchange/save-items-shared-mailbox-exchange-server-cmdlet/
+
+https://blogs.msdn.microsoft.com/mast/2015/05/18/what-is-the-ip-address-168-63-129-16/

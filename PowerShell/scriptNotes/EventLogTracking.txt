@@ -1,0 +1,10 @@
+Get-EventLog -LogName System -Newest 100 -After "24/01/2018 00:00:00" | select-object Index,TimeGenerated,EntryType,Source,InstanceID,Message
+
+Get-EventLog -LogName System -After "25/01/2018 14:16:32" -source "Windows File Protection" | select-object Index,TimeGenerated,EntryType,Source,InstanceID,Message | Measure-Object
+
+Count    : 100
+Average  :
+Sum      :
+Maximum  :
+Minimum  :
+Property :
