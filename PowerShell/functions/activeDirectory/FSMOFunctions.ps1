@@ -26,59 +26,59 @@
     .EXAMPLE
     PS C:\> Get-FSMORoleOwner
 
-    PDCEmulator          : LSERV-DC01.example.com
-    DomainNamingMaster   : LSERV-DC01.example.com
-    InfrastructureMaster : LSERV-DC01.example.com
-    RIDMaster            : LSERV-DC01.example.com
-    SchemaMaster         : LSERV-DC01.example.com
+    PDCEmulator          : DOMAINCONTROLLERNAME.example.com
+    DomainNamingMaster   : DOMAINCONTROLLERNAME.example.com
+    InfrastructureMaster : DOMAINCONTROLLERNAME.example.com
+    RIDMaster            : DOMAINCONTROLLERNAME.example.com
+    SchemaMaster         : DOMAINCONTROLLERNAME.example.com
 
     .EXAMPLE
     PS C:\> Get-FSMORoleOwner | Select-Object RIDMaster
 
     RIDMaster
     ---------
-    LSERV-DC01.example.com
+    DOMAINCONTROLLERNAME.example.com
 
     .EXAMPLE
-    PS C:\> Set-FSMORolePDCEmulator -PDCEmulator LSERV-DC02
+    PS C:\> Set-FSMORolePDCEmulator -PDCEmulator DOMAINCONTROLLERNAME
 
     Move Operation Master Role
-    Do you want to move role 'PDCEmulator' to server 'lserv-dc02.example.com' ?
+    Do you want to move role 'PDCEmulator' to server 'DOMAINCONTROLLERNAME.example.com' ?
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): Y
     
     .EXAMPLE
-    PS C:\> Set-FSMORoleRIDMaster -RIDMaster LSERV-DC02
+    PS C:\> Set-FSMORoleRIDMaster -RIDMaster DOMAINCONTROLLERNAME
 
     Move Operation Master Role
-    Do you want to move role 'RIDMaster' to server 'lserv-dc02.example.com' ?
+    Do you want to move role 'RIDMaster' to server 'DOMAINCONTROLLERNAME.example.com' ?
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): Y
     
     .EXAMPLE
-    PS C:\> Set-FSMORoleInfrastructureMaster -InfrastructureMaster LSERV-DC02
+    PS C:\> Set-FSMORoleInfrastructureMaster -InfrastructureMaster DOMAINCONTROLLERNAME
 
     Move Operation Master Role
-    Do you want to move role 'InfrastructureMaster' to server 'lserv-dc02.example.com' ?
+    Do you want to move role 'InfrastructureMaster' to server 'DOMAINCONTROLLERNAME.example.com' ?
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): Y
     
     .EXAMPLE
-    PS C:\> Set-FSMORoleSchemaMaster -SchemaMaster LSERV-DC02
+    PS C:\> Set-FSMORoleSchemaMaster -SchemaMaster DOMAINCONTROLLERNAME
 
     Move Operation Master Role
-    Do you want to move role 'SchemaMaster' to server 'lserv-dc02.example.com' ?
+    Do you want to move role 'SchemaMaster' to server 'DOMAINCONTROLLERNAME.example.com' ?
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): Y
     
     .EXAMPLE
-    PS C:\> Set-FSMORoleDomainNamingMaster -DomainNamingMaster LSERV-DC02
+    PS C:\> Set-FSMORoleDomainNamingMaster -DomainNamingMaster DOMAINCONTROLLERNAME
 
     Move Operation Master Role
-    Do you want to move role 'DomainNamingMaster' to server 'lserv-dc02.example.com' ?
+    Do you want to move role 'DomainNamingMaster' to server 'DOMAINCONTROLLERNAME.example.com' ?
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): Y
     
     .EXAMPLE
     PS C:\> Move-FSMORolestoPDCEmulator
 
     Move Operation Master Role
-    Do you want to move role 'InfrastructureMaster' to server 'LSERV-DC01.example.com' ?
+    Do you want to move role 'InfrastructureMaster' to server 'DOMAINCONTROLLERNAME.example.com' ?
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): Y
 
     .INPUTS
@@ -92,11 +92,11 @@
     .OUTPUTS
     Get-FSMORoleOwner
 
-    PDCEmulator          : LSERV-DC01.example.com
-    DomainNamingMaster   : LSERV-DC01.example.com
-    InfrastructureMaster : LSERV-DC01.example.com
-    RIDMaster            : LSERV-DC01.example.com
-    SchemaMaster         : LSERV-DC01.example.com
+    PDCEmulator          : DOMAINCONTROLLERNAME.example.com
+    DomainNamingMaster   : DOMAINCONTROLLERNAME.example.com
+    InfrastructureMaster : DOMAINCONTROLLERNAME.example.com
+    RIDMaster            : DOMAINCONTROLLERNAME.example.com
+    SchemaMaster         : DOMAINCONTROLLERNAME.example.com
 
 
     .NOTES
