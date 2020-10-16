@@ -14,18 +14,18 @@
     .EXAMPLE
     PS C:\> Get-FSMORoleOwner
 
-    PDCEmulator          : LSERV-DC01.example.com
-    DomainNamingMaster   : LSERV-DC01.example.com
-    InfrastructureMaster : LSERV-DC01.example.com
-    RIDMaster            : LSERV-DC01.example.com
-    SchemaMaster         : LSERV-DC01.example.com
+    PDCEmulator          : DOMAINCONTROLLERNAME.example.com
+    DomainNamingMaster   : DOMAINCONTROLLERNAME.example.com
+    InfrastructureMaster : DOMAINCONTROLLERNAME.example.com
+    RIDMaster            : DOMAINCONTROLLERNAME.example.com
+    SchemaMaster         : DOMAINCONTROLLERNAME.example.com
 
     .EXAMPLE
     PS C:\> Get-FSMORoleOwner | Select-Object RIDMaster
 
     RIDMaster
     ---------
-    LSERV-DC01.example.com
+    DOMAINCONTROLLERNAME.example.com
 
     .INPUTS
 
@@ -33,11 +33,11 @@
     .OUTPUTS
     Get-FSMORoleOwner
 
-    PDCEmulator          : LSERV-DC01.example.com
-    DomainNamingMaster   : LSERV-DC01.example.com
-    InfrastructureMaster : LSERV-DC01.example.com
-    RIDMaster            : LSERV-DC01.example.com
-    SchemaMaster         : LSERV-DC01.example.com
+    PDCEmulator          : DOMAINCONTROLLERNAME.example.com
+    DomainNamingMaster   : DOMAINCONTROLLERNAME.example.com
+    InfrastructureMaster : DOMAINCONTROLLERNAME.example.com
+    RIDMaster            : DOMAINCONTROLLERNAME.example.com
+    SchemaMaster         : DOMAINCONTROLLERNAME.example.com
 
 
     .NOTES
@@ -48,7 +48,7 @@
     GitHubGist: https://gist.github.com/BanterBoy
 
     .LINK
-    https://github.com/BanterBoy/MSPTech
+    https://github.com/BanterBoy/scripts-blog
 
 
 #>
@@ -57,7 +57,7 @@
 #Requires -RunAsAdministrator
 
 [CmdletBinding(DefaultParameterSetName = 'Default',
-    HelpURI = 'https://github.com/BanterBoy/MSPTech/wiki')]
+    HelpURI = 'https://github.com/BanterBoy/scripts-blog')]
 param (
 	
 )
