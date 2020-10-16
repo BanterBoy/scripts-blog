@@ -17,7 +17,7 @@ permalink: /menu/_pages/tools.html
 
 | Section | FileName                                                                 |
 | :------ | :----------------------------------------------------------------------- |
-| tools   | [New-ADAssetReport.ps1](/_posts/tools/New-ADAssetReportGUI/)             |
+| tools   | [New-ADAssetReport.ps1](/_posts/tools/New-ADAssetReport/)                |
 | tools   | [Cleanup\_MSPKI\_Cert\_v1.2.ps1](/_posts/tools/Cleanup_MSPKI_Cert_v1.2/) |
 | tools   | [CreateADMXCentralStore.ps1](/_posts/tools/CreateADMXCentralStore/)      |
 | tools   | [CreateTimeServerGPOs.ps1](/_posts/tools/CreateTimeServerGPOs/)          |
