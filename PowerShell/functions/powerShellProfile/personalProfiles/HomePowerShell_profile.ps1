@@ -686,7 +686,7 @@ function global:Connect-Transmission {
 			try {
 				$password = Get-Content -Path "$filePath" -ErrorAction Stop | ConvertTo-SecureString
 				$decPassword = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($password))
-				Set-TransmissionCredentials -Host 'http://deathstar.domain.leigh-services.com:49091/transmission/rpc' -User $Label -Password $decPassword
+				Set-TransmissionCredentials -Host 'http://DEATHSTAR.domain.leigh-services.com:49091/transmission/rpc' -User $Label -Password $decPassword
 			}
 			catch [System.Management.Automation.ItemNotFoundException] {
 				Write-Warning -Message "$_"
@@ -699,7 +699,7 @@ function global:Connect-Transmission {
 				$filePath = "$ProfilePath" + "\$Label.txt"
 				$password = Get-Content -Path "$filePath" -ErrorAction Stop | ConvertTo-SecureString
 				$decPassword = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($password))
-				Set-TransmissionCredentials -Host 'http://deathstar.domain.leigh-services.com:49091/transmission/rpc' -User $Label -Password $decPassword
+				Set-TransmissionCredentials -Host 'http://DEATHSTAR.domain.leigh-services.com:49091/transmission/rpc' -User $Label -Password $decPassword
 			}
 			catch [System.Management.Automation.ItemNotFoundException] {
 				Write-Warning -Message "$_"
@@ -716,7 +716,7 @@ function global:Connect-Transmission {
 				$filePath = "$ProfilePath" + "\$Label.txt"
 				$password = Get-Content -Path "$filePath" -ErrorAction Stop | ConvertTo-SecureString
 				$decPassword = [Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($password))
-				Set-TransmissionCredentials -Host 'http://deathstar.domain.leigh-services.com:49091/transmission/rpc' -User $Label -Password $decPassword
+				Set-TransmissionCredentials -Host 'http://DEATHSTAR.domain.leigh-services.com:49091/transmission/rpc' -User $Label -Password $decPassword
 			}
 			catch [System.Management.Automation.ItemNotFoundException] {
 				Write-Warning -Message "$_"
