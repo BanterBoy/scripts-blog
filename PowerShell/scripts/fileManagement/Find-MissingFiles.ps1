@@ -6,8 +6,8 @@
 Find-MissingFiles.ps1 | Out-File MissingSource.txt
 #>
 
-$SourcePath = '\\DEATHSTAR\TVShows\Filed'
-$DestPath = '\\LSERV-DC01\d$\TVSeries'
+$SourcePath = '\\SERVERNAME\TVShows\Filed'
+$DestPath = '\\DOMAINCONTROLLERNAME\d$\TVSeries'
 
 #Equivalent cmd for 'dir /b /s'
 $Source = (Get-ChildItem $SourcePath -Recurse).FullName
