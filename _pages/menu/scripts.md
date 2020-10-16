@@ -11,7 +11,7 @@ permalink: /menu/_pages/scripts.html
 - [Table of Contents](#table-of-contents)
   - [activeDirectory](#activeDirectory)
   - [EventLogs](#EventLogs)
-  - [Exchange](#Exchange)
+  - [exchange](#exchange)
   - [fileManagement](#fileManagement)
   - [information](#information)
   - [installScripts](#installScripts)
@@ -89,35 +89,35 @@ permalink: /menu/_pages/scripts.html
 
 ---
 
-## EventLogs
+## eventLogs
 
 | Section   | FileName                                                    |
 | :-------- | :---------------------------------------------------------- |
-| EventLogs | [Evaluate-EventLog.ps1](/_posts/scripts/Evaluate-EventLog/) |
-| EventLogs | [EventLogs.ps1](/_posts/scripts/EventLogs/)                 |
-| EventLogs | [EventLogsExported.ps1](/_posts/scripts/EventLogsExported/) |
-| EventLogs | [EventsToEmail.ps1](/_posts/scripts/EventsToEmail/)         |
-| EventLogs | [EventTest.ps1](/_posts/scripts/EventTest/)                 |
+| eventLogs | [Evaluate-EventLog.ps1](/_posts/scripts/Evaluate-EventLog/) |
+| eventLogs | [EventLogs.ps1](/_posts/scripts/EventLogs/)                 |
+| eventLogs | [EventLogsExported.ps1](/_posts/scripts/EventLogsExported/) |
+| eventLogs | [EventsToEmail.ps1](/_posts/scripts/EventsToEmail/)         |
+| eventLogs | [EventTest.ps1](/_posts/scripts/EventTest/)                 |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
-## Exchange
+## exchange
 
 | Section  | FileName                                                                          |
 | :------- | :-------------------------------------------------------------------------------- |
-| Exchange | [Exch_AdminAuditReport.ps1](/_posts/scripts/Exch_AdminAuditReport/)               |
-| Exchange | [Exch-AgentLogs.ps1](/_posts/scripts/Exch-AgentLogs/)                             |
-| Exchange | [ExchangeVersions.ps1](/_posts/scripts/ExchangeVersions/)                         |
-| Exchange | [Export-MailboxSizetoCSV.ps1](/_posts/scripts/Export-MailboxSizetoCSV/)           |
-| Exchange | [Get-MailboxPermissionsScript.ps1](/_posts/scripts/Get-MailboxPermissionsScript/) |
-| Exchange | [HideUsersfromAddressBook.ps1](/_posts/scripts/HideUsersfromAddressBook/)         |
-| Exchange | [Locate-Exchange.ps1](/_posts/scripts/Locate-Exchange/)                           |
-| Exchange | [mailbox.ps1](/_posts/scripts/mailbox/)                                           |
-| Exchange | [New-DistributionList.ps1](/_posts/scripts/New-DistributionList/)                 |
-| Exchange | [New-HistoricalSearch.ps1](/_posts/scripts/New-HistoricalSearch/)                 |
-| Exchange | [Test-ExchangeServerHealth.ps1](/_posts/scripts/Test-ExchangeServerHealth/)       |
+| exchange | [Exch_AdminAuditReport.ps1](/_posts/scripts/Exch_AdminAuditReport/)               |
+| exchange | [Exch-AgentLogs.ps1](/_posts/scripts/Exch-AgentLogs/)                             |
+| exchange | [ExchangeVersions.ps1](/_posts/scripts/ExchangeVersions/)                         |
+| exchange | [Export-MailboxSizetoCSV.ps1](/_posts/scripts/Export-MailboxSizetoCSV/)           |
+| exchange | [Get-MailboxPermissionsScript.ps1](/_posts/scripts/Get-MailboxPermissionsScript/) |
+| exchange | [HideUsersfromAddressBook.ps1](/_posts/scripts/HideUsersfromAddressBook/)         |
+| exchange | [Locate-Exchange.ps1](/_posts/scripts/Locate-Exchange/)                           |
+| exchange | [mailbox.ps1](/_posts/scripts/mailbox/)                                           |
+| exchange | [New-DistributionList.ps1](/_posts/scripts/New-DistributionList/)                 |
+| exchange | [New-HistoricalSearch.ps1](/_posts/scripts/New-HistoricalSearch/)                 |
+| exchange | [Test-ExchangeServerHealth.ps1](/_posts/scripts/Test-ExchangeServerHealth/)       |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
