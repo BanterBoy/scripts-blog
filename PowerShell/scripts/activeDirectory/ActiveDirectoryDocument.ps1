@@ -3,7 +3,7 @@ Import-Module Documentimo -Force
 if ($null -eq $ADForest) {
     $ADForest = Get-WinADForestInformation -Verbose -PasswordQuality -DontRemoveEmpty
 }
-$CompanyName = 'Ventrica Ltd'
+$CompanyName = 'Example Ltd'
 Documentimo -FilePath "$PSScriptRoot\Starter-AD.docx" {
     DocTOC -Title 'Table of content'
     DocPageBreak
