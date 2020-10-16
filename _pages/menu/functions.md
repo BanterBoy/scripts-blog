@@ -90,7 +90,6 @@ permalink: /menu/_pages/functions.html
 | exchange          | [OnPremExchangeFunctions.ps1](/_posts/functions/OnPremExchangeFunctions/)                                       |
 | exchange          | [PasswordChangeNotification.ps1](/_posts/functions/PasswordChangeNotification/)                                 |
 | exchange          | [PasswordChangeNotificationO365.ps1](/_posts/functions/PasswordChangeNotificationO365/)                         |
-| exchange          | [PasswordReminder.ps1](/_posts/functions/PasswordReminder/)                                                     |
 | exchange          | [PasswordReminderAlso.ps1](/_posts/functions/PasswordReminderAlso/)                                             |
 | exchange          | [Remove-MailboxFolderPermissions.ps1](/_posts/functions/Remove-MailboxFolderPermissions/)                       |
 | exchange          | [Remove-UsersfromGAL.ps1](/_posts/functions/Remove-UsersfromGAL/)                                               |
