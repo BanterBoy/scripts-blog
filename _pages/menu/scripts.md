@@ -235,6 +235,5 @@ permalink: /menu/_pages/scripts.html
 | windowsUpdates | [Get-HotFixReport.ps1](/_posts/scripts/Get-HotFixReport/)                               |
 | windowsUpdates | [Get-WindowsUpdatesInstalled.ps1](/_posts/scripts/Get-WindowsUpdatesInstalled/)         |
 | windowsUpdates | [Get-WindowsUpdatesInstalledList.ps1](/_posts/scripts/Get-WindowsUpdatesInstalledList/) |
-| windowsUpdates | [WindowsUpdates-InstalledList.ps1](/_posts/scripts/WindowsUpdates-InstalledList/)       |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
