@@ -3,7 +3,7 @@
 <#
 Establish Secure Remote Session
 Create Script
-- Create new directory - SoloScripts
+- Create new directory - DIRECTORYNAME
 - Create new file - ScheduledRestart.ps1
 - Populate contents of new file with reboot script
 Write Event Log message confirming creation of files
@@ -19,7 +19,7 @@ Write-Output "Q: Press 'Q' to quit."
 
 $NewEvent = [PSCustomObject]@{
     LogName   = 'Application'
-    Source    = 'Solopress'
+    Source    = 'YourSourceName'
     EntryType = 'Information'
     EventId   = '4668', '4666', '6006'
     Message   = 'The daily PC Restart has taken place in order to update starter and leaver changes', 'The daily PC Restart folder/files have been created.', 'The daily PC Restart Scheduled task has been created.'
@@ -27,12 +27,12 @@ $NewEvent = [PSCustomObject]@{
 
 New-EventLog -LogName $NewEvent.LogName -Source $NewEvent.Source
 Set-Location "C:\"
-New-Item -Path "C:" -Name SoloScripts -ItemType Directory
-New-Item -Path "C:\SoloScripts" -Name ScheduledRestart.ps1 -ItemType File
+New-Item -Path "C:" -Name DIRECTORYNAME -ItemType Directory
+New-Item -Path "C:\DIRECTORYNAME" -Name ScheduledRestart.ps1 -ItemType File
 
 $Content = { $params = [PSCustomObject]@{
         LogName   = 'Application'
-        Source    = 'Solopress'
+        Source    = 'YourSourceName'
         EntryType = 'Information'
         EventId   = '4668', '4666', '6006'
         Message   = 'The daily PC Restart folder/files have been created.', 'The daily PC Restart Scheduled task has been created.', 'The daily PC Restart has taken place in order to update starter and leaver changes'
@@ -41,11 +41,11 @@ $Content = { $params = [PSCustomObject]@{
     Restart-Computer -Force
 }
 
-Set-Content -Path "C:\SoloScripts\ScheduledRestart.ps1" -Value $Content
+Set-Content -Path "C:\DIRECTORYNAME\ScheduledRestart.ps1" -Value $Content
 Write-EventLog -LogName $NewEvent.LogName -Source $NewEvent.Source -EntryType $NewEvent.EntryType -EventId $NewEvent.EventId[2] -Message $NewEvent.Message[0]
 
-$taskName = 'Solo Restart'
-$scriptPath = "C:\SoloScripts\ScheduledRestart.ps1"
+$taskName = 'ScheduledRestart'
+$scriptPath = "C:\DIRECTORYNAME\ScheduledRestart.ps1"
 
 do {
     $selection = Read-Host "Please make a selection"
