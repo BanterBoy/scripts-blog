@@ -1,6 +1,6 @@
 ---
 layout: post
-title: IISLogsCleanup.ps1
+title: Detect-Keypress.ps1
 ---
 
 ### something exciting
@@ -9,6 +9,6 @@ Some information about the exciting thing
 
 #### Snippet
 
-<script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/tools/IISLogsCleanup.ps1"></script>
+<script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/tools/Detect-Keypress.ps1"></script>
 
 <a href="/menu/_pages/snippets.html">Back to Snippets</a>
