@@ -20,7 +20,7 @@
     PS C:\> Move-FSMORolestoPDCEmulator
 
     Move Operation Master Role
-    Do you want to move role 'InfrastructureMaster' to server 'LSERV-DC01.example.com' ?
+    Do you want to move role 'InfrastructureMaster' to server 'DOMAINCONTROLLERNAME.example.com' ?
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): Y
 
     .INPUTS
@@ -35,7 +35,7 @@
     GitHubGist: https://gist.github.com/BanterBoy
 
     .LINK
-    https://github.com/BanterBoy/MSPTech
+    https://github.com/BanterBoy/scripts-blog
 
 #>
 
@@ -43,38 +43,31 @@
 #Requires -RunAsAdministrator
 
 [CmdletBinding(DefaultParameterSetName = 'Default',
-			   HelpURI = 'https://github.com/BanterBoy/MSPTech/wiki')]
+    HelpURI = 'https://github.com/BanterBoy/scripts-blog/wiki')]
 param (
 	
 )
 
-BEGIN
-{
-	$ForestInfo = Get-ADForest | Select-Object DomainNamingMaster, SchemaMaster
-	$DomainInfo = Get-ADDomain | Select-Object InfrastructureMaster, PDCEmulator, RIDMaster
-	$PrimaryDC = Get-ADDomainController -Discover -DomainName $Env:USERDNSDOMAIN -Service 'PrimaryDC'
+BEGIN {
+    $ForestInfo = Get-ADForest | Select-Object DomainNamingMaster, SchemaMaster
+    $DomainInfo = Get-ADDomain | Select-Object InfrastructureMaster, PDCEmulator, RIDMaster
+    $PrimaryDC = Get-ADDomainController -Discover -DomainName $Env:USERDNSDOMAIN -Service 'PrimaryDC'
 }
-PROCESS
-{
-	if ($DomainInfo.RIDMaster -notmatch $PrimaryDC)
-	{
-		Move-ADDirectoryServerOperationMasterRole -Identity $PrimaryDC -OperationMasterRole 1
-	}
-	if ($DomainInfo.InfrastructureMaster -notmatch $PrimaryDC)
-	{
-		Move-ADDirectoryServerOperationMasterRole -Identity $PrimaryDC -OperationMasterRole 2
-	}
-	if ($ForestInfo.SchemaMaster -notmatch $PrimaryDC)
-	{
-		Move-ADDirectoryServerOperationMasterRole -Identity $PrimaryDC -OperationMasterRole 3
-	}
-	if ($ForestInfo.DomainNamingMaster -notmatch $PrimaryDC)
-	{
-		Move-ADDirectoryServerOperationMasterRole -Identity $PrimaryDC -OperationMasterRole 4
-	}
+PROCESS {
+    if ($DomainInfo.RIDMaster -notmatch $PrimaryDC) {
+        Move-ADDirectoryServerOperationMasterRole -Identity $PrimaryDC -OperationMasterRole 1
+    }
+    if ($DomainInfo.InfrastructureMaster -notmatch $PrimaryDC) {
+        Move-ADDirectoryServerOperationMasterRole -Identity $PrimaryDC -OperationMasterRole 2
+    }
+    if ($ForestInfo.SchemaMaster -notmatch $PrimaryDC) {
+        Move-ADDirectoryServerOperationMasterRole -Identity $PrimaryDC -OperationMasterRole 3
+    }
+    if ($ForestInfo.DomainNamingMaster -notmatch $PrimaryDC) {
+        Move-ADDirectoryServerOperationMasterRole -Identity $PrimaryDC -OperationMasterRole 4
+    }
 }
-END
-{
+END {
 	
 }
 
