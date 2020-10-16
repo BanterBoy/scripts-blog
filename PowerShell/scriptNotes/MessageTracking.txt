@@ -1,28 +1,27 @@
-Get-MessageTrackingLog -EventId Receive -Start "01/23/2018 08:00:00" | Where-Object { $_.recipients -like '*she
-lleysandzer.co.uk' } | Format-List
+Get-MessageTrackingLog -EventId Receive -Start "01/23/2018 08:00:00" | Where-Object { $_.recipients -like '*example.com' } | Format-List
 
 
 RunspaceId              : badd033d-2e78-43bd-a7b0-1c11e4be3a9e
 Timestamp               : 23/01/2018 09:08:00
 ClientIp                : fe80::5095:62e3:7da5:dce8
-ClientHostname          : TSL-LN-EX1v.TSL.local
+ClientHostname          : EXCHANGESERVERNAME.domain.local
 ServerIp                : fe80::5095:62e3:7da5:dce8%12
-ServerHostname          : TSL-LN-EX1v
+ServerHostname          : EXCHANGESERVERNAME
 SourceContext           : 08D53F73C8E17E52
 ConnectorId             :
 Source                  : STOREDRIVER
 EventId                 : RECEIVE
 InternalMessageId       : 0
-MessageId               : <b1b5a3345bfa4485b3bed13dd13f04bd@TSL-LN-EX1v.TSL.local>
-Recipients              : {dlillie@shelleysandzer.co.uk}
+MessageId               : <b1b5a3345bfa4485b3bed13dd13f04bd@EXCHANGESERVERNAME.domain.local>
+Recipients              : {user@example.com}
 RecipientStatus         : {To}
 TotalBytes              : 22894
 RecipientCount          : 1
 RelatedRecipientAddress :
 Reference               :
 MessageSubject          : RE: My email
-Sender                  : JP.Dib@trispanllp.com
-ReturnPath              : JP.Dib@trispanllp.com
+Sender                  : user@example.com
+ReturnPath              : user@example
 Directionality          : Originating
 TenantId                :
 OriginalClientIp        : 172.29.39.78
