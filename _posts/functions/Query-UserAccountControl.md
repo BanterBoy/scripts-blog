@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add-ADUsertoLocalGroup.ps1
+title: Query-UserAccountControl.ps1
 ---
 
 ### something exciting
@@ -9,20 +9,6 @@ Some information about the exciting thing
 
 #### Script
 
-<script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/activeDirectory/Add-ADUsertoLocalGroup.ps1"></script>
-
-<a href="/menu/_pages/functions.html">Back to Functions</a>
----
-layout: post
-title: Add-ADUsertoLocalGroup.ps1
----
-
-### something exciting
-
-Some information about the exciting thing
-
-#### Script
-
-<script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/activeDirectory/Add-ADUsertoLocalGroup.ps1"></script>
+<script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/Query-UserAccountControl.ps1"></script>
 
 <a href="/menu/_pages/functions.html">Back to Functions</a>
