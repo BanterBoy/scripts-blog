@@ -17,11 +17,11 @@ permalink: /menu/_pages/functions.html
   - [fileManagement](#fileManagement)
   - [information](#information)
   - [ip](#ip)
+  - [miscellaneous](#miscellaneous)
   - [other](#other)
   - [powerShellProfile](#powerShellProfile)
   - [time](#time)
   - [windowsUpdates](#windowsUpdates)
-  - [miscellaneous](#miscellaneous)
 
 ---
 
@@ -211,61 +211,6 @@ permalink: /menu/_pages/functions.html
 
 ---
 
-## other
-
-| Section | FileName                                                          |
-| :------ | :---------------------------------------------------------------- |
-| other   | [Get-ChuckNorrisJoke.ps1](/_posts/functions/Get-ChuckNorrisJoke/) |
-
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
-
----
-
-## powerShellProfile
-
-| Section           | FileName                                                                                                        |
-| :---------------- | :-------------------------------------------------------------------------------------------------------------- |
-| powerShellProfile | [personalProfiles\Connect-Office365Services.ps1](/_posts/functions/personalProfiles\Connect-Office365Services/) |
-| powerShellProfile | [personalProfiles\HomePowerShell_profile.ps1](/_posts/functions/personalProfiles\HomePowerShell_profile/)       |
-| powerShellProfile | [personalProfiles\WorkPowerShell_profile.ps1](/_posts/functions/personalProfiles\WorkPowerShell_profile/)       |
-| powerShellProfile | [Microsoft.PowerShell_profile.ps1](/_posts/functions/Microsoft.PowerShell_profile/)                             |
-| powerShellProfile | [Restart-PowershellProfile.ps1](/_posts/functions/Restart-PowershellProfile/)                                   |
-
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
-
----
-
-## time
-
-| Section | FileName                                                                          |
-| :------ | :-------------------------------------------------------------------------------- |
-| time    | [Get-2amOfThirdMondayInMonth.ps1](/_posts/functions/Get-2amOfThirdMondayInMonth/) |
-| time    | [Get-LastxOfMonth.ps1](/_posts/functions/Get-LastxOfMonth/)                       |
-| time    | [Get-NTPStatusFromHost.ps1](/_posts/functions/Get-NTPStatusFromHost/)             |
-| time    | [Get-Ntptime.ps1](/_posts/functions/Get-Ntptime/)                                 |
-| time    | [Get-PatchTuesday.ps1](/_posts/functions/Get-PatchTuesday/)                       |
-| time    | [Get-RemoteTime.ps1](/_posts/functions/Get-RemoteTime/)                           |
-| time    | [Get-Time.ps1](/_posts/functions/Get-Time/)                                       |
-| time    | [Get-TimeServer.ps1](/_posts/functions/Get-TimeServer/)                           |
-| time    | [Get-WeekDayInMonth.ps1](/_posts/functions/Get-WeekDayInMonth/)                   |
-
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
-
----
-
-## windowsUpdates
-
-| Section        | FileName                                                            |
-| :------------- | :------------------------------------------------------------------ |
-| windowsUpdates | [Get-InstalledUpdates.ps1](/_posts/functions/Get-InstalledUpdates/) |
-| windowsUpdates | [Get-PendingUpdate.ps1](/_posts/functions/Get-PendingUpdate/)       |
-| windowsUpdates | [Get-PendingUpdates.ps1](/_posts/functions/Get-PendingUpdates/)     |
-| windowsUpdates | [Start-WindowsUpdate.ps1](/_posts/functions/Start-WindowsUpdate/)   |
-
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
-
----
-
 ## miscellaneous
 
 | Section       | FileName                                                                            |
@@ -345,5 +290,60 @@ permalink: /menu/_pages/functions.html
 | miscellaneous | [Test-TLSConnection.ps1](/_posts/functions/Test-TLSConnection/)                     |
 | miscellaneous | [Test-WebsiteStatus.ps1](/_posts/functions/Test-WebsiteStatus/)                     |
 | miscellaneous | [Test-WebSiteUp.ps1](/_posts/functions/Test-WebSiteUp/)                             |
+
+<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+
+---
+
+## other
+
+| Section | FileName                                                          |
+| :------ | :---------------------------------------------------------------- |
+| other   | [Get-ChuckNorrisJoke.ps1](/_posts/functions/Get-ChuckNorrisJoke/) |
+
+<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+
+---
+
+## powerShellProfile
+
+| Section           | FileName                                                                                                        |
+| :---------------- | :-------------------------------------------------------------------------------------------------------------- |
+| powerShellProfile | [personalProfiles\Connect-Office365Services.ps1](/_posts/functions/personalProfiles\Connect-Office365Services/) |
+| powerShellProfile | [personalProfiles\HomePowerShell_profile.ps1](/_posts/functions/personalProfiles\HomePowerShell_profile/)       |
+| powerShellProfile | [personalProfiles\WorkPowerShell_profile.ps1](/_posts/functions/personalProfiles\WorkPowerShell_profile/)       |
+| powerShellProfile | [Microsoft.PowerShell_profile.ps1](/_posts/functions/Microsoft.PowerShell_profile/)                             |
+| powerShellProfile | [Restart-PowershellProfile.ps1](/_posts/functions/Restart-PowershellProfile/)                                   |
+
+<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+
+---
+
+## time
+
+| Section | FileName                                                                          |
+| :------ | :-------------------------------------------------------------------------------- |
+| time    | [Get-2amOfThirdMondayInMonth.ps1](/_posts/functions/Get-2amOfThirdMondayInMonth/) |
+| time    | [Get-LastxOfMonth.ps1](/_posts/functions/Get-LastxOfMonth/)                       |
+| time    | [Get-NTPStatusFromHost.ps1](/_posts/functions/Get-NTPStatusFromHost/)             |
+| time    | [Get-Ntptime.ps1](/_posts/functions/Get-Ntptime/)                                 |
+| time    | [Get-PatchTuesday.ps1](/_posts/functions/Get-PatchTuesday/)                       |
+| time    | [Get-RemoteTime.ps1](/_posts/functions/Get-RemoteTime/)                           |
+| time    | [Get-Time.ps1](/_posts/functions/Get-Time/)                                       |
+| time    | [Get-TimeServer.ps1](/_posts/functions/Get-TimeServer/)                           |
+| time    | [Get-WeekDayInMonth.ps1](/_posts/functions/Get-WeekDayInMonth/)                   |
+
+<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+
+---
+
+## windowsUpdates
+
+| Section        | FileName                                                            |
+| :------------- | :------------------------------------------------------------------ |
+| windowsUpdates | [Get-InstalledUpdates.ps1](/_posts/functions/Get-InstalledUpdates/) |
+| windowsUpdates | [Get-PendingUpdate.ps1](/_posts/functions/Get-PendingUpdate/)       |
+| windowsUpdates | [Get-PendingUpdates.ps1](/_posts/functions/Get-PendingUpdates/)     |
+| windowsUpdates | [Start-WindowsUpdate.ps1](/_posts/functions/Start-WindowsUpdate/)   |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
