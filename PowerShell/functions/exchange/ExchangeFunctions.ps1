@@ -1,6 +1,6 @@
 ﻿function New-OnPremExchangeSession {
     $creds = Get-Credential
-    $OnPremSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri http://mail01.ventrica.local/PowerShell/ -Authentication Kerberos -Credential $creds
+    $OnPremSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri http://mail01.example.local/PowerShell/ -Authentication Kerberos -Credential $creds
     Import-PSSession $OnPremSession -DisableNameChecking
 }
 
