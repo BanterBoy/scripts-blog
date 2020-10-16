@@ -29,5 +29,5 @@ function ProcessingAnimation($scriptBlock) {
 
 
 $scriptBlock = @{
-    $Items = Get-ChildItem -Path \\DEATHSTAR\Movies -Include *.mkv -Recurse
+    $Items = Get-ChildItem -Path \\SERVERNAME\Movies -Include *.mkv -Recurse
 }
