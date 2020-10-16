@@ -18,12 +18,12 @@ function New-ZipFile {
     GitHubGist: https://gist.github.com/BanterBoy
 
     .LINK
-    https://github.com/BanterBoy/ScriptFixing
+    https://github.com/BanterBoy/scripts-blog
 
 #>
     [CmdletBinding(DefaultParameterSetName = 'Default',
         SupportsShouldProcess = $true,
-        HelpURI = 'https://github.com/BanterBoy/ScriptFixing')]
+        HelpURI = 'https://github.com/BanterBoy/scripts-blog')]
     param(
         [Parameter(Mandatory = $True,
             HelpMessage = "Please enter your source filename e.g. example.txt",
