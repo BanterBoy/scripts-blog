@@ -116,7 +116,7 @@
 
 function Get-FSMORoleOwner {
     [CmdletBinding(DefaultParameterSetName = 'Default',
-        HelpURI = 'https://github.com/BanterBoy/MSPTech/wiki',
+        HelpURI = 'https://github.com/BanterBoy/scripts-blog',
         SupportsShouldProcess = $true)]
 
     $ForestInfo = Get-ADForest | Select-Object DomainNamingMaster, SchemaMaster
@@ -148,7 +148,7 @@ function Get-FSMORoleOwner {
 
 function Set-FSMORolePDCEmulator {
     [CmdletBinding(DefaultParameterSetName = 'Default',
-        HelpURI = 'https://github.com/BanterBoy/MSPTech/wiki')]
+        HelpURI = 'https://github.com/BanterBoy/scripts-blog')]
     param(
         [Parameter(Mandatory = $True,
             ValueFromPipeline = $True,
@@ -161,7 +161,7 @@ function Set-FSMORolePDCEmulator {
 
 function Set-FSMORoleRIDMaster {
     [CmdletBinding(DefaultParameterSetName = 'Default',
-        HelpURI = 'https://github.com/BanterBoy/MSPTech/wiki')]
+        HelpURI = 'https://github.com/BanterBoy/scripts-blog')]
     param(
         [Parameter(Mandatory = $True,
             ValueFromPipeline = $True,
@@ -174,7 +174,7 @@ function Set-FSMORoleRIDMaster {
 
 function Set-FSMORoleInfrastructureMaster {
     [CmdletBinding(DefaultParameterSetName = 'Default',
-        HelpURI = 'https://github.com/BanterBoy/MSPTech/wiki')]
+        HelpURI = 'https://github.com/BanterBoy/scripts-blog')]
     param(
         [Parameter(Mandatory = $True,
             ValueFromPipeline = $True,
@@ -187,7 +187,7 @@ function Set-FSMORoleInfrastructureMaster {
 
 function Set-FSMORoleSchemaMaster {
     [CmdletBinding(DefaultParameterSetName = 'Default',
-        HelpURI = 'https://github.com/BanterBoy/MSPTech/wiki')]
+        HelpURI = 'https://github.com/BanterBoy/scripts-blog')]
     param(
         [Parameter(Mandatory = $True,
             ValueFromPipeline = $True,
@@ -200,7 +200,7 @@ function Set-FSMORoleSchemaMaster {
 
 function Set-FSMORoleDomainNamingMaster {
     [CmdletBinding(DefaultParameterSetName = 'Default',
-        HelpURI = 'https://github.com/BanterBoy/MSPTech/wiki')]
+        HelpURI = 'https://github.com/BanterBoy/scripts-blog')]
     param(
         [Parameter(Mandatory = $True,
             ValueFromPipeline = $True,
@@ -213,7 +213,7 @@ function Set-FSMORoleDomainNamingMaster {
 
 function Move-FSMORolestoPDCEmulator {
     [CmdletBinding(DefaultParameterSetName = 'Default',
-        HelpURI = 'https://github.com/BanterBoy/MSPTech/wiki')]
+        HelpURI = 'https://github.com/BanterBoy/scripts-blog')]
     $ForestInfo = Get-ADForest | Select-Object DomainNamingMaster, SchemaMaster
     $DomainInfo = Get-ADDomain | Select-Object InfrastructureMaster, PDCEmulator, RIDMaster
     $PrimaryDC = Get-ADDomainController -Discover -Domain $Env:USERDNSDOMAIN -Service 'PrimaryDC'
