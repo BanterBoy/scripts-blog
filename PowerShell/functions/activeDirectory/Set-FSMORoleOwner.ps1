@@ -19,7 +19,7 @@
     PS C:\> Move-FSMORolestoPDCEmulator
 
     Move Operation Master Role
-    Do you want to move role 'InfrastructureMaster' to server 'LSERV-DC01.example.com' ?
+    Do you want to move role 'InfrastructureMaster' to server 'DOMAINCONTROLLERNAME.example.com' ?
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): Y
 
     .INPUTS
@@ -32,7 +32,7 @@
 
     .OUTPUTS
     Move Operation Master Role
-    Do you want to move role 'InfrastructureMaster' to server 'LSERV-DC01.example.com' ?
+    Do you want to move role 'InfrastructureMaster' to server 'DOMAINCONTROLLERNAME.example.com' ?
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"):
 
     .NOTES
@@ -43,7 +43,7 @@
     GitHubGist: https://gist.github.com/BanterBoy
 
     .LINK
-    https://github.com/BanterBoy/MSPTech
+    https://github.com/BanterBoy/scripts-blog
 
 #>
 
@@ -51,7 +51,7 @@
 #Requires -RunAsAdministrator
 
 [CmdletBinding(DefaultParameterSetName = 'Default',
-    HelpURI = 'https://github.com/BanterBoy/MSPTech/wiki')]
+    HelpURI = 'https://github.com/BanterBoy/scripts-blog/wiki')]
 
 param (
     [parameter(Mandatory = $true, HelpMessage = "Select the Operation Master Role that you want to move.")]
