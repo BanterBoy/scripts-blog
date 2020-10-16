@@ -74,4 +74,4 @@ function Test-DNSPropagation {
     }
 }
 
-# Test-DNSPropagation -Records "mail.ventrica.co.uk", "mail2.ventrica.co.uk", "mail3.ventrica.co.uk" -Type A
+# Test-DNSPropagation -Records "mail.example.co.uk", "mail2.example.co.uk", "mail3.example.co.uk" -Type A
