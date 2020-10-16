@@ -107,7 +107,7 @@
     GitHubGist: https://gist.github.com/BanterBoy
 
     .LINK
-    https://github.com/BanterBoy/MSPTech
+    https://github.com/BanterBoy/scripts-blog
 
 #>
 
