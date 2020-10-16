@@ -7,7 +7,7 @@ title: Get-ElevatedUsers.ps1
 
 Some information about the exciting thing
 
-#### Script
+#### Function
 
 <script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/activeDirectory/Get-ElevatedUsers.ps1"></script>
 

@@ -1,13 +1,13 @@
--- -
+---
 layout: post
 title: remove-ADM.ps1
--- -
+---
 
 ### something exciting
 
 Some information about the exciting thing
 
-#### Script
+#### Function
 
 <script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/remove-ADM.ps1"></script>
 

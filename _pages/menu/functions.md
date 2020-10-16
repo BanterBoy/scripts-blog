@@ -4,21 +4,26 @@ title: Functions
 permalink: /menu/_pages/functions.html
 ---
 
+---
+
 ## Table of Contents
 
-- [activeDirectory](#activeDirectory)
-- [bitLocker](#bitLocker)
-- [compression](#compression)
-- [dns](#dns)
-- [exchange](#exchange)
-- [fileManagement](#fileManagement)
-- [information](#information)
-- [ip](#ip)
-- [other](#other)
-- [powerShellProfile](#powerShellProfile)
-- [time](#time)
-- [windowsUpdates](#windowsUpdates)
-- [miscellaneous](#miscellaneous)
+- [Table of Contents](#table-of-contents)
+  - [activeDirectory](#activeDirectory)
+  - [bitLocker](#bitLocker)
+  - [compression](#compression)
+  - [dns](#dns)
+  - [exchange](#exchange)
+  - [fileManagement](#fileManagement)
+  - [information](#information)
+  - [ip](#ip)
+  - [other](#other)
+  - [powerShellProfile](#powerShellProfile)
+  - [time](#time)
+  - [windowsUpdates](#windowsUpdates)
+  - [miscellaneous](#miscellaneous)
+
+---
 
 ## activeDirectory
 

@@ -7,7 +7,7 @@ title: Provision_Home_Folder.ps1
 
 Some information about the exciting thing
 
-#### Script
+#### Function
 
 <script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/activeDirectory/Provision_Home_Folder.ps1"></script>
 

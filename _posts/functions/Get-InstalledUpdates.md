@@ -7,7 +7,7 @@ title: Get-InstalledUpdates.ps1
 
 Some information about the exciting thing
 
-#### Script
+#### Function
 
 <script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/windowsUpdates/Get-InstalledUpdates.ps1"></script>
 

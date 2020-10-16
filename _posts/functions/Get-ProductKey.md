@@ -7,7 +7,7 @@ title: Get-ProductKey.ps1
 
 Some information about the exciting thing
 
-#### Script
+#### Function
 
 <script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/Get-ProductKey.ps1"></script>
 
