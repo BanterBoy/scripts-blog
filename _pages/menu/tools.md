@@ -4,14 +4,27 @@ title: Tools
 permalink: /menu/_pages/tools.html
 ---
 
-| Section | FileName                                    |
-| :------ | :------------------------------------------ |
-| tools   | New-ADAssetReportGUI\\New-ADAssetReport.ps1 |
-| tools   | Cleanup\_MSPKI\_Cert\_v1.2.ps1              |
-| tools   | CreateADMXCentralStore.ps1                  |
-| tools   | CreateTimeServerGPOs.ps1                    |
-| tools   | IISLogsCleanup.ps1                          |
-| tools   | New-CtmADKrbtgtKeys.ps1                     |
-| tools   | Reset-UsersPassword.ps1                     |
-| tools   | VMWareHealthcheck.ps1                       |
-| tools   | Write-Log.ps1                               |
+---
+
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+  - [tools](#tools)
+
+---
+
+## tools
+
+| Section | FileName                                                                 |
+| :------ | :----------------------------------------------------------------------- |
+| tools   | [New-ADAssetReport.ps1](/_posts/tools/New-ADAssetReportGUI/)             |
+| tools   | [Cleanup\_MSPKI\_Cert\_v1.2.ps1](/_posts/tools/Cleanup_MSPKI_Cert_v1.2/) |
+| tools   | [CreateADMXCentralStore.ps1](/_posts/tools/CreateADMXCentralStore/)      |
+| tools   | [CreateTimeServerGPOs.ps1](/_posts/tools/CreateTimeServerGPOs/)          |
+| tools   | [IISLogsCleanup.ps1](/_posts/tools/IISLogsCleanup/)                      |
+| tools   | [New-CtmADKrbtgtKeys.ps1](/_posts/tools/New-CtmADKrbtgtKeys/)            |
+| tools   | [Reset-UsersPassword.ps1](/_posts/tools/Reset-UsersPassword/)            |
+| tools   | [VMWareHealthcheck.ps1](/_posts/tools/VMWareHealthcheck/)                |
+| tools   | [Write-Log.ps1](/_posts/tools/Write-Log/)                                |
+
+<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
