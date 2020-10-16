@@ -143,7 +143,6 @@ permalink: /menu/_pages/functions.html
 | exchange | [Office365PasswordReminderEmail.ps1](/_posts/functions/Office365PasswordReminderEmail/)   |
 | exchange | [OnPremExchangeFunctions.ps1](/_posts/functions/OnPremExchangeFunctions/)                 |
 | exchange | [PasswordChangeNotification.ps1](/_posts/functions/PasswordChangeNotification/)           |
-| exchange | [PasswordChangeNotificationO365.ps1](/_posts/functions/PasswordChangeNotificationO365/)   |
 | exchange | [PasswordReminderAlso.ps1](/_posts/functions/PasswordReminderAlso/)                       |
 | exchange | [Remove-MailboxFolderPermissions.ps1](/_posts/functions/Remove-MailboxFolderPermissions/) |
 | exchange | [Remove-UsersfromGAL.ps1](/_posts/functions/Remove-UsersfromGAL/)                         |
