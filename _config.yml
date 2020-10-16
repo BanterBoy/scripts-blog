@@ -19,13 +19,13 @@ permalink: pretty
 paginate: 3
 
 # Setup
-title: 'Maintenance Scripts'
-tagline: 'ITAdmin PowerShell Maintenance Scripts'
-description: 'A repository of PowerShell Scripts to automate a variety of IT related maintenance tasks.'
+title: "Maintenance Scripts"
+tagline: "ITAdmin PowerShell Maintenance Scripts"
+description: "A repository of PowerShell Scripts to automate a variety of IT related maintenance tasks."
 baseurl: "/"
 
 author:
-  name: 'Luke Leigh'
+  name: "Luke Leigh"
   email: me@lukeleigh.com
 
 linkedin_username: lukeleigh
@@ -56,10 +56,9 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
-  
 github: [metadata]
 github_username: BanterBoy
 repository: scripts-blog/BanterBoy.github.io
 
 # Custom vars
-version: 1.0.1
+version: 1.1.1
