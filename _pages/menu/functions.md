@@ -9,19 +9,19 @@ permalink: /menu/_pages/functions.html
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-  - [activeDirectory](#activeDirectory)
-  - [bitLocker](#bitLocker)
+  - [activeDirectory](#activedirectory)
+  - [bitLocker](#bitlocker)
   - [compression](#compression)
   - [dns](#dns)
   - [exchange](#exchange)
-  - [fileManagement](#fileManagement)
+  - [fileManagement](#filemanagement)
   - [information](#information)
   - [ip](#ip)
   - [miscellaneous](#miscellaneous)
   - [other](#other)
-  - [powerShellProfile](#powerShellProfile)
+  - [powerShellProfile](#powershellprofile)
   - [time](#time)
-  - [windowsUpdates](#windowsUpdates)
+  - [windowsUpdates](#windowsupdates)
 
 ---
 
