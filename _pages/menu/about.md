@@ -1,6 +1,5 @@
 ---
 layout: page
-title: About
 permalink: /menu/_pages/about.html
 ---
 
@@ -13,7 +12,7 @@ permalink: /menu/_pages/about.html
 
 ---
 
-# SCRIPTS-BLOG
+# About
 
 - Most people will glance at your [README](https://github.com/BanterBoy/scripts-blog/blob/master/README.md), *maybe* star it, and leave<br>
 - Ergo, people should understand instantly what your project is about based on your repo
@@ -22,7 +21,7 @@ permalink: /menu/_pages/about.html
 
 ## Table of Contents
 
-- [SCRIPTS-BLOG](#scripts-blog)
+- [About](#about)
   - [Table of Contents](#table-of-contents)
   - [Example](#example)
   - [Information](#information)
@@ -35,7 +34,7 @@ permalink: /menu/_pages/about.html
 ---
 
 | :---: | :--- |
-| <br><a href="/menu/_pages/about.html"><img src="/assets/images/hangout_profile_pic_circle.jpg" title="About Me" alt="About Me" width="76" height="66"></a> | ***If you came here thinking you would find out more about me, please click my face for some obviously interesting facts. I am after all `VERY` interesting 😆*** |
+| <br><a href="https://www.linkedin.com/in/lukeleigh"><img src="/assets/images/hangout_profile_pic_circle.jpg" title="About Me" alt="About Me" width="76" height="66"></a> | ***If you came here thinking you would find out more about me, please click my face for some obviously interesting facts. I am after all `VERY` interesting 😆*** |
 
 ---
 
