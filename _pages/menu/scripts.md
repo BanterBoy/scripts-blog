@@ -9,16 +9,16 @@ permalink: /menu/_pages/scripts.html
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-  - [activeDirectory](#activeDirectory)
-  - [EventLogs](#EventLogs)
+  - [activeDirectory](#activedirectory)
+  - [EventLogs](#eventlogs)
   - [exchange](#exchange)
-  - [fileManagement](#fileManagement)
+  - [fileManagement](#filemanagement)
   - [information](#information)
-  - [installScripts](#installScripts)
+  - [installScripts](#installscripts)
   - [miscellaneous](#miscellaneous)
   - [ping](#ping)
   - [time](#time)
-  - [windowsUpdates](#windowsUpdates)
+  - [windowsUpdates](#windowsupdates)
 
 ---
 
