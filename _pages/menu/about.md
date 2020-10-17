@@ -1,5 +1,6 @@
 ---
 layout: page
+title: About
 permalink: /menu/_pages/about.html
 ---
 
