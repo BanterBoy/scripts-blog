@@ -4,62 +4,40 @@ title: About
 permalink: /menu/_pages/about.html
 ---
 
-| :---: | :---: | :---: |
-| [![Build Status](https://dev.azure.com/luke-leigh/github-repo/_apis/build/status/BanterBoy.scripts-blog?branchName=master)](https://dev.azure.com/luke-leigh/github-repo/_build/latest?definitionId=2&branchName=master) | [![Mergify Status][mergify-status]][mergify] | [![GitHub license](https://img.shields.io/github/license/BanterBoy/scripts-blog?color=orange&label=GitHub%20License&logo=github&style=plastic)](https://github.com/BanterBoy/scripts-blog/blob/master/LICENSE) |
+---
 
-[mergify]: https://mergify.io
-
-[mergify-status]: https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges/BanterBoy/scripts-blog&style=plastic
+| :---: | :--- |
+| <br><a href="https://www.linkedin.com/in/lukeleigh"><img src="/assets/images/hangout_profile_pic_circle.jpg" title="About Me" alt="About Me" height="65" width="80"></a> | ***If you came here thinking you would find out more about me, please click my face for some obviously interesting facts. I am after all `VERY` interesting 😆*** |
 
 ---
 
-# About
+# What's it all about
 
-- Most people will glance at your [README](https://github.com/BanterBoy/scripts-blog/blob/master/README.md), *maybe* star it, and leave<br>
-- Ergo, people should understand instantly what your project is about based on your repo
+This site came about as a consequence of having too much time on my hands and the need to catalogue all the scripts, functions, tools and snippets that I have written, downloaded or amended while learning how to automate tasks and to develop PowerShell tools.
+
+Over the years I had accumulated a large store of PowerShell code that TBH wasn't really filed all that well. Much of the filing was done in haste, mostly during a complicated project of some sort or another. As a result of sloppy filing, it was becoming increasingly difficult to navigate and locate a script I knew I already had and sometimes the search ended with me writing it again (sometimes better than the last time).
+
+I have read, paginated and expanded all of the aliases in every script to ensure they are easier to read and that they all function as designed, some of which only work in version 5 of PowerShell. They have been catalogued by use case as best I can. Any not fitting in a specific category can be found under miscellaneous. The aim is to provide a brief overview of the script and where possible some examples.
 
 ---
 
 ## Table of Contents
 
-- [About](#about)
+- [What's it all about](#whats-it-all-about)
   - [Table of Contents](#table-of-contents)
-  - [Example](#example)
-  - [Information](#information)
-  - [FAQ](#faq)
-  - [Support](#support)
-  - [Tips](#tips)
+    - [Example](#example)
+    - [Information](#information)
+    - [FAQ](#faq)
+    - [Support](#support)
+    - [Tips](#tips)
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
-| :---: | :--- |
-| <br><a href="https://www.linkedin.com/in/lukeleigh"><img src="/assets/images/hangout_profile_pic_circle.jpg" title="About Me" alt="About Me" width="76" height="66"></a> | ***If you came here thinking you would find out more about me, please click my face for some obviously interesting facts. I am after all `VERY` interesting 😆*** |
-
----
-
-| :--- | ---: |
-| write a short paragraph, ideally several sentences<br> explain why this blog<br> what's it for? / why did you bother | <br><a href="https://github.com/BanterBoy/scripts-blog"><img src="/assets/images/pslogo88x88.png" title="scripts-blog" alt="scripts-blog"></a> |
-
----
-
 ## Example
 
-```powershell
-<#
-  .Something
-  Some help info
-
-  .SomethingElse
-  Some more help info
-#>
-
-Get-Something
-- HAVE WHITE SPACE
-Get-SomethingElse
-- MAKE IT PRETTY
-```
+[![Example](/assets/images/About/example1.png)](/_posts/functions/FSMOFunctions/)
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -88,8 +66,8 @@ Get-SomethingElse
 Reach out to me at one of the following places!
 
 | --- | --- |
-| <a class="sidebar-nav-item" href="https://blog.lukeleigh.com/"><img src="https://img.shields.io/badge/Blog-blog.lukeleigh.com-2A6496.svg"></a> | My blog site, full of what I hope can be considered interesting articles and many PowerShell related things. |
-| <a class="sidebar-nav-item" href="https://www.linkedin.com/in/lukeleigh"><img src="https://img.shields.io/badge/LinkedIn-lukeleigh-0077B5.svg?logo=LinkedIn"></a> | My profile on LinkedIn. |
+| <br><a class="sidebar-nav-item" href="https://blog.lukeleigh.com/"><img src="https://img.shields.io/badge/Blog-blog.lukeleigh.com-2A6496.svg"></a> | My blog site, full of what I hope can be considered interesting articles and many PowerShell related things. |
+| <br><a class="sidebar-nav-item" href="https://www.linkedin.com/in/lukeleigh"><img src="https://img.shields.io/badge/LinkedIn-lukeleigh-0077B5.svg?logo=LinkedIn"></a> | My profile on LinkedIn. |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -97,4 +75,15 @@ Reach out to me at one of the following places!
 
 ## Tips
 
+ - You can contribute to this site on <a href="https://github.com/BanterBoy/scripts-blog/issues">GitHub</a> by raising an issue.
+ - Something else here.
+
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+
+
+| :---: | :---: | :---: |
+| <br>[![Build Status](https://dev.azure.com/luke-leigh/github-repo/_apis/build/status/BanterBoy.scripts-blog?branchName=master)](https://dev.azure.com/luke-leigh/github-repo/_build/latest?definitionId=2&branchName=master) | <br>[![Mergify Status][mergify-status]][mergify] | <br>[![GitHub license](https://img.shields.io/github/license/BanterBoy/scripts-blog?color=orange&label=GitHub%20License&logo=github&style=plastic)](https://github.com/BanterBoy/scripts-blog/blob/master/LICENSE) |
+
+[mergify]: https://mergify.io
+
+[mergify-status]: https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges/BanterBoy/scripts-blog&style=plastic
