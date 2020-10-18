@@ -17,8 +17,6 @@ This site came about as a consequence of having too much time on my hands and th
 
 Over the years I had accumulated a large store of PowerShell code that TBH wasn't really filed all that well. Much of the filing was done in haste, mostly during a complicated project of some sort or another. As a result of sloppy filing, it was becoming increasingly difficult to navigate and locate a script I knew I already had and sometimes the search ended with me writing it again (sometimes better than the last time).
 
-I have read, paginated and expanded all of the aliases in every script to ensure they are easier to read and that they all function as designed, some of which only work in version 5 of PowerShell. They have been catalogued by use case as best I can. Any not fitting in a specific category can be found under miscellaneous. The aim is to provide a brief overview of the script and where possible some examples.
-
 ---
 
 ## Table of Contents
@@ -27,9 +25,8 @@ I have read, paginated and expanded all of the aliases in every script to ensure
   - [Table of Contents](#table-of-contents)
     - [Example](#example)
     - [Information](#information)
-    - [FAQ](#faq)
-    - [Support](#support)
     - [Tips](#tips)
+    - [Support](#support)
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -39,23 +36,24 @@ I have read, paginated and expanded all of the aliases in every script to ensure
 
 [![Example](/assets/images/About/example1.png)](/_posts/functions/FSMOFunctions/)
 
+I plan to provide a brief overview of the script and where possible some examples for their use.
+
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
 ## Information
 
-- All the `code` required to get started
-- Images of what it should look like
+I have expanded any aliases that were in each script to ensure they are easier to read and I have also tested to ensure they all function as designed. Some require an earlier version and will only work in PowerShell 5. They have been catalogued by use case as best I can. Any not fitting in a specific category can be found under miscellaneous.
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
-## FAQ
+## Tips
 
-- **How do I do *specifically* so and so?**
-  - No problem! Just do this.
+- **Can I report any problems?**
+  - You can report an issue or contribute to this site on <a href="https://github.com/BanterBoy/scripts-blog/issues">GitHub</a>.
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -72,14 +70,6 @@ Reach out to me at one of the following places!
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
-
-## Tips
-
- - You can contribute to this site on <a href="https://github.com/BanterBoy/scripts-blog/issues">GitHub</a> by raising an issue.
- - Something else here.
-
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
-
 
 | :---: | :---: | :---: |
 | <br>[![Build Status](https://dev.azure.com/luke-leigh/github-repo/_apis/build/status/BanterBoy.scripts-blog?branchName=master)](https://dev.azure.com/luke-leigh/github-repo/_build/latest?definitionId=2&branchName=master) | <br>[![Mergify Status][mergify-status]][mergify] | <br>[![GitHub license](https://img.shields.io/github/license/BanterBoy/scripts-blog?color=orange&label=GitHub%20License&logo=github&style=plastic)](https://github.com/BanterBoy/scripts-blog/blob/master/LICENSE) |
