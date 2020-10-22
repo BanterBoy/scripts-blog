@@ -4,7 +4,7 @@ title: about
 permalink: /menu/_pages/about.html
 ---
 
-<img src="/assets/about.gif" alt="about-intro" width="400" height="160">
+<img src="/assets/menu/about.gif" alt="about-intro" width="400" height="160">
 
 ---
 
