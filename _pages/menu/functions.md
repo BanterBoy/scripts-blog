@@ -4,7 +4,7 @@ title: functions
 permalink: /menu/_pages/functions.html
 ---
 
-<img src="/assets/functions.gif" alt="functions-intro" width="400" height="160">
+<img src="/assets/menu/functions.gif" alt="functions-intro" width="400" height="160">
 
 ---
 
