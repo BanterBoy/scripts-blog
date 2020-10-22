@@ -1,24 +1,26 @@
 ---
 layout: page
-title: Scripts
+title: scripts
 permalink: /menu/_pages/scripts.html
 ---
+
+<img src="/assets/scripts.gif" alt="scripts-intro" width="400" height="160">
 
 ---
 
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-  - [activeDirectory](#activedirectory)
-  - [EventLogs](#eventlogs)
-  - [exchange](#exchange)
-  - [fileManagement](#filemanagement)
-  - [information](#information)
-  - [installScripts](#installscripts)
-  - [miscellaneous](#miscellaneous)
-  - [ping](#ping)
-  - [time](#time)
-  - [windowsUpdates](#windowsupdates)
+- [activeDirectory](#activedirectory)
+- [eventLogs](#eventlogs)
+- [exchange](#exchange)
+- [fileManagement](#filemanagement)
+- [information](#information)
+- [installScripts](#installscripts)
+- [miscellaneous](#miscellaneous)
+- [ping](#ping)
+- [time](#time)
+- [windowsUpdates](#windowsupdates)
 
 ---
 
