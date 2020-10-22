@@ -8,11 +8,21 @@
 
   <title>
     {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
+    {{ site.title }} &middot; {{ site.tagline }}
     {% else %}
-      {{ page.title }} &middot; {{ site.title }}
+    {{ page.title }} &middot; {{ site.title }}
     {% endif %}
   </title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3T94X6S0QF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3T94X6S0QF');
+  </script>
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ "/public/css/poole.css" }}">
@@ -25,4 +35,5 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
 </head>
