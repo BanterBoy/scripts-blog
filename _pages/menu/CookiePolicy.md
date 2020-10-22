@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Cookie Policy"
+title: "cookie policy"
 permalink: /menu/_pages/CookiePolicy.html
 ---
 
