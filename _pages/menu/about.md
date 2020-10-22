@@ -1,8 +1,10 @@
 ---
 layout: page
-title: About
+title: about
 permalink: /menu/_pages/about.html
 ---
+
+<img src="/assets/about.gif" alt="about-intro" width="400" height="160">
 
 ---
 
@@ -23,10 +25,10 @@ Over the years I had accumulated a large store of PowerShell code that TBH wasn'
 
 - [What's it all about](#whats-it-all-about)
   - [Table of Contents](#table-of-contents)
-    - [Example](#example)
-    - [Information](#information)
-    - [Tips](#tips)
-    - [Support](#support)
+  - [Example](#example)
+  - [Information](#information)
+  - [Tips](#tips)
+  - [Support](#support)
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
