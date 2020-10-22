@@ -1,15 +1,17 @@
 ---
 layout: page
-title: Tools
+title: tools
 permalink: /menu/_pages/tools.html
 ---
+
+<img src="/assets/tools.gif" alt="tools-intro" width="400" height="160">
 
 ---
 
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-  - [tools](#tools)
+- [tools](#tools)
 
 ---
 
