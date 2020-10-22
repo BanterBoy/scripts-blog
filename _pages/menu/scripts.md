@@ -4,7 +4,7 @@ title: scripts
 permalink: /menu/_pages/scripts.html
 ---
 
-<img src="/assets/scripts.gif" alt="scripts-intro" width="400" height="160">
+<img src="/assets/menu/scripts.gif" alt="scripts-intro" width="400" height="160">
 
 ---
 
