@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Snippets
+title: snippets
 permalink: /menu/_pages/snippets.html
 ---
+
+<img src="/assets/snippets.gif" alt="snippets-intro" width="400" height="160">
 
 ---
 
