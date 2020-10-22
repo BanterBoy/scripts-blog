@@ -1,27 +1,29 @@
 ---
 layout: page
-title: Functions
+title: functions
 permalink: /menu/_pages/functions.html
 ---
+
+<img src="/assets/functions.gif" alt="functions-intro" width="400" height="160">
 
 ---
 
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-  - [activeDirectory](#activedirectory)
-  - [bitLocker](#bitlocker)
-  - [compression](#compression)
-  - [dns](#dns)
-  - [exchange](#exchange)
-  - [fileManagement](#filemanagement)
-  - [information](#information)
-  - [ip](#ip)
-  - [miscellaneous](#miscellaneous)
-  - [other](#other)
-  - [powerShellProfile](#powershellprofile)
-  - [time](#time)
-  - [windowsUpdates](#windowsupdates)
+- [activeDirectory](#activedirectory)
+- [bitLocker](#bitlocker)
+- [compression](#compression)
+- [dns](#dns)
+- [exchange](#exchange)
+- [fileManagement](#filemanagement)
+- [information](#information)
+- [ip](#ip)
+- [miscellaneous](#miscellaneous)
+- [other](#other)
+- [powerShellProfile](#powershellprofile)
+- [time](#time)
+- [windowsUpdates](#windowsupdates)
 
 ---
 
