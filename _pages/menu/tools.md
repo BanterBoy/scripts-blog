@@ -4,7 +4,7 @@ title: tools
 permalink: /menu/_pages/tools.html
 ---
 
-<img src="/assets/tools.gif" alt="tools-intro" width="400" height="160">
+<img src="/assets/menu/tools.gif" alt="tools-intro" width="400" height="160">
 
 ---
 
