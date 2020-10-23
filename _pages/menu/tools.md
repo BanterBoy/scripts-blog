@@ -3,8 +3,14 @@ layout: page
 title: tools
 permalink: /menu/_pages/tools.html
 ---
-
+<!--
 <img src="/assets/menu/tools.gif" alt="tools-intro" width="400" height="160">
+-->
+
+<video width="400" height="160" controls autoplay loop muted>
+    <source src="/assets/menu/tools.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
 
 ---
 
