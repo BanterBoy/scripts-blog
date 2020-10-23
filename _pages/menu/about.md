@@ -8,7 +8,7 @@ permalink: /menu/_pages/about.html
   <img src="/assets/menu/about.gif" alt="about-intro" width="400" height="160">
 -->
 
-<video width="320" height="190" controls autoplay loop muted>
+<video width="400" height="160" controls autoplay loop muted>
     <source src="/assets/menu/about.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
