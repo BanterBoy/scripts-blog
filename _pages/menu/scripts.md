@@ -130,7 +130,7 @@ permalink: /menu/_pages/scripts.html
 | Section        | FileName                                                                  |
 | :------------- | :------------------------------------------------------------------------ |
 | fileManagement | [Compare-Folder.ps1](/_posts/scripts/Compare-Folder/)                     |
-| fileManagement | [copyFilestoServers.PS1](/_posts/scripts/copyFilestoServers.PS1/)         |
+| fileManagement | [copyFilestoServers.PS1](/_posts/scripts/copyFilestoServers/)             |
 | fileManagement | [DataDriveSizes.ps1](/_posts/scripts/DataDriveSizes/)                     |
 | fileManagement | [Delete-UnusedHomeFolders.ps1](/_posts/scripts/Delete-UnusedHomeFolders/) |
 | fileManagement | [Export-FilePermissions.ps1](/_posts/scripts/Export-FilePermissions/)     |
