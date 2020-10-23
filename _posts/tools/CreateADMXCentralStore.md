@@ -11,4 +11,4 @@ Some information about the exciting thing
 
 <script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/tools/CreateADMXCentralStore.ps1"></script>
 
-<a href="/menu/_pages/Tools.html">Back to Tools</a>
+<a href="/menu/_pages/tools.html">Back to Tools</a>
