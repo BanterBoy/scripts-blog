@@ -3,9 +3,14 @@ layout: page
 title: resources
 permalink: /menu/_pages/resources.html
 ---
-
+<!--
 <img src="/assets/menu/resources.gif" alt="resources-intro" width="400" height="160">
+-->
 
+<video width="400" height="160" controls autoplay loop muted>
+    <source src="/assets/menu/resources.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
 ---
 
 | URLs                                                                                                                                                                                                 |
