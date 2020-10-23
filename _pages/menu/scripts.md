@@ -7,7 +7,7 @@ permalink: /menu/_pages/scripts.html
 <img src="/assets/menu/scripts.gif" alt="scripts-intro" width="400" height="160">
 -->
 
-<video width="400" height="160" controls autoplay loop muted>
+<video width="380" height="160" controls autoplay loop muted>
     <source src="/assets/menu/scripts.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
