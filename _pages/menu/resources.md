@@ -99,6 +99,8 @@ permalink: /menu/_pages/resources.html
 | [https://www.simple-talk.com/sysadmin/powershell/][95]{:target="\_blank"}                                                                                                                            |
 | [https://www.thelazyadministrator.com][96]{:target="\_blank"}                                                                                                                                        |
 
+<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+
 [1]: https://4sysops.com
 [2]: https://adsecurity.org/
 [3]: https://blogs.technet.com/b/heyscriptingguy/archive/2010/07/20/hey-scripting-guy-how-can-i-use-windows-powershell-to-identify-inactive-user-accounts-in-active-directory-ÔÇª
