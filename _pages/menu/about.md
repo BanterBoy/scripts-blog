@@ -1,6 +1,7 @@
 ---
 layout: page
 title: about
+description: "This site was created as a catalogue for all the scripts, functions, tools and snippets I have written, downloaded or amended while learning how to automate and develop PowerShell tools."
 permalink: /menu/_pages/about.html
 ---
 
