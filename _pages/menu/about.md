@@ -5,10 +5,6 @@ description: "This site was created as a catalogue for all the scripts, function
 permalink: /menu/_pages/about.html
 ---
 
-<!-- 
-  <img src="/assets/menu/about.gif" alt="about-intro" width="400" height="160">
--->
-
 <video width="380" height="160" controls autoplay loop muted>
     <source src="/assets/menu/about.mp4" type="video/mp4">
     Your browser does not support the video tag.
@@ -21,24 +17,23 @@ permalink: /menu/_pages/about.html
 
 ---
 
-# What's it all about
-
-This site came about as a consequence of having too much time on my hands and the need to catalogue all the scripts, functions, tools and snippets that I have written, downloaded or amended while learning how to automate tasks and to develop PowerShell tools.
-
-Over the years I had accumulated a large store of PowerShell code that TBH wasn't really filed all that well. Much of the filing was done in haste, mostly during a complicated project of some sort or another. As a result of sloppy filing, it was becoming increasingly difficult to navigate and locate a script I knew I already had and sometimes the search ended with me writing it again (sometimes better than the last time).
-
----
-
 ## Table of Contents
 
 - [What's it all about](#whats-it-all-about)
-  - [Table of Contents](#table-of-contents)
   - [Example](#example)
   - [Information](#information)
   - [Tips](#tips)
   - [Support](#support)
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+
+---
+
+# What's it all about
+
+This site came about as a consequence of having too much time on my hands and the need to catalogue all the scripts, functions, tools and snippets that I have written, downloaded or amended while learning how to automate tasks and to develop PowerShell tools.
+
+Over the years I had accumulated a large store of PowerShell code that TBH wasn't really filed all that well. Much of the filing was done in haste, mostly during a complicated project of some sort or another. As a result of sloppy filing, it was becoming increasingly difficult to navigate and locate a script I knew I already had and sometimes the search ended with me writing it again (sometimes better than the last time).
 
 ---
 
