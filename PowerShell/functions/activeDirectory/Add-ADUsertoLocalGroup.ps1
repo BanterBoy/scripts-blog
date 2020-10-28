@@ -1,6 +1,6 @@
 function Add-ADUsertoLocalGroup {
-	[CmdletBinding(DefaultParameterSetName = 'Default',
-		HelpURI = 'https://github.com/BanterBoy/AdminToolkit/wiki')]
+    [CmdletBinding(DefaultParameterSetName = 'Default',
+        HelpURI = 'https://scripts.lukeleigh.com/_posts/functions/Add-ADUsertoLocalGroup/')]
     param (
         [string[]]$ComputerName,
         [string[]]$UserName,
