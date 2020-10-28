@@ -3,9 +3,6 @@ layout: page
 title: snippets
 permalink: /menu/_pages/snippets.html
 ---
-<!--
-<img src="/assets/menu/snippets.gif" alt="snippets-intro" width="400" height="160">
--->
 
 <video width="380" height="160" controls autoplay loop muted>
     <source src="/assets/menu/snippets.mp4" type="video/mp4">
