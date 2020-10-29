@@ -56,13 +56,13 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<button class="btn">
-    <a href="./menu/_pages/functions.html">
-    </a>
-    <i class='fas fa-reply'>
-    </i>
-        Back to Functions
-</button>
+<a href="/menu/_pages/functions.html">
+    <button class="btn">
+        <i class='fas fa-reply'>
+        </i>
+            Back to Functions
+    </button>
+</a>
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://gist-it.appspot.com/
