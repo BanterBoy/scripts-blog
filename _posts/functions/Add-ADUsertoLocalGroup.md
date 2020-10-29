@@ -8,12 +8,26 @@ title: Add-ADUsertoLocalGroup.ps1
 Some information about the exciting thing
 
 - [something exciting](#something-exciting)
+  - [Example](#example)
+  - [OutPut](#output)
   - [Download](#download)
   - [Script](#script)
   - [gist-it](#gist-it)
   - [Report Issues](#report-issues)
 
 <small><i>[Table of contents generated with markdown-toc][1]{:target="_blank"}</i></small>
+
+---
+
+#### Example
+
+Some sort of example of the script/function/tool/snippet in use
+
+---
+
+#### OutPut
+
+Some sort of example of the script/function/tool/snippet output.
 
 ---
 
@@ -31,7 +45,7 @@ Some information about why this button exists and how you can download the compl
 
 #### Script
 
-Details about the script/function/tool/snippet
+Details about the script/function/tool/snippet file.
 
 <script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/activeDirectory/Add-ADUsertoLocalGroup.ps1"></script>
 
