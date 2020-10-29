@@ -7,11 +7,11 @@ permalink: /menu/_pages/gists.html
 <video width="380" height="160" controls autoplay loop muted>
     <source src="/assets/menu/github-gists.mp4" type="video/mp4">
     Your browser does not support the video tag.
-</video>
-
----
+</video><br>
 
 ### something exciting
+
+---
 
 <details>
 <summary>Test-IsAdmin.PS1</summary>
