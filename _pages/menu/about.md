@@ -1,7 +1,6 @@
 ---
 layout: page
 title: about
-description: "This site was created as a catalogue for all the scripts, functions, tools and snippets I have written, downloaded or amended while learning how to automate and develop PowerShell tools."
 permalink: /menu/_pages/about.html
 ---
 
@@ -58,7 +57,9 @@ I have expanded any aliases that were in each script to ensure they are easier t
 ## Tips
 
 - **Can I report any problems?**
-  - You can report an issue or contribute to this site on <a href="https://github.com/BanterBoy/scripts-blog/issues">GitHub</a>.
+  - You can report an issue or contribute to this site on <a href="https://github.com/BanterBoy/scripts-blog/issues">GitHub</a>. Simply click the button below and add any relevant notes
+
+<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=Enter Title&body=Please add a description of the issue." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -71,6 +72,8 @@ Reach out to me at one of the following places!
 | --- | --- |
 | <br><a class="sidebar-nav-item" href="https://blog.lukeleigh.com/"><img src="https://img.shields.io/badge/Blog-blog.lukeleigh.com-2A6496.svg" alt="Blog Link Shield"></a> | My blog site, full of what I hope can be considered interesting articles and many PowerShell related things. |
 | <br><a class="sidebar-nav-item" href="https://www.linkedin.com/in/lukeleigh"><img src="https://img.shields.io/badge/LinkedIn-lukeleigh-0077B5.svg?logo=LinkedIn" alt="LinkedIn Shield"></a> | My profile on LinkedIn. |
+| <br><a class="sidebar-nav-item" href="https://github.com/BanterBoy"><img src="https://img.shields.io/badge/GitHub-BanterBoy-blue?logo=GitHub" alt="GitHub Shield"></a> | My profile on GitHub. |
+
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
