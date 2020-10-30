@@ -72,8 +72,6 @@ permalink: /menu/_pages/resources.html
 | [https://deployhappiness.com][62]{:target="\_blank"}                                                                                                                                                 |
 | [https://dougfinke.com/][64]{:target="\_blank"}                                                                                                                                                      |
 | [https://eightwone.com/][65]{:target="\_blank"}                                                                                                                                                      |
-| [https://en.get-mailbox.org/using-powershell-background-jobs-can-help-you-speed-up-exchange-tasks-part-1/][66]{:target="\_blank"}                                                                    |
-| [https://en.get-mailbox.org/using-powershell-background-jobs-can-help-you-speed-up-exchange-tasks-part-2/][67]{:target="\_blank"}                                                                    |
 | [https://evotec.xyz][68]{:target="\_blank"}                                                                                                                                                          |
 | [https://exchangeserverpro.com/powershell-how-to-send-email/][69]{:target="\_blank"}                                                                                                                 |
 | [https://exchangeserverpro.com/powershell-send-html-email/][70]{:target="\_blank"}                                                                                                                   |
@@ -93,7 +91,6 @@ permalink: /menu/_pages/resources.html
 | [https://www.petri.co.il/powershell][87]{:target="\_blank"}                                                                                                                                          |
 | [https://www.planetpowershell.com/][89]{:target="\_blank"}                                                                                                                                           |
 | [https://www.powershellgallery.com][90]{:target="\_blank"}                                                                                                                                           |
-| [https://www.powershelljunkie.com/][92]{:target="\_blank"}                                                                                                                                           |
 | [https://www.simple-talk.com/sysadmin/powershell/][95]{:target="\_blank"}                                                                                                                            |
 | [https://www.thelazyadministrator.com][96]{:target="\_blank"}                                                                                                                                        |
 
@@ -160,8 +157,6 @@ permalink: /menu/_pages/resources.html
 [62]: https://deployhappiness.com
 [64]: https://dougfinke.com/
 [65]: https://eightwone.com/
-[66]: https://en.get-mailbox.org/using-powershell-background-jobs-can-help-you-speed-up-exchange-tasks-part-1/
-[67]: https://en.get-mailbox.org/using-powershell-background-jobs-can-help-you-speed-up-exchange-tasks-part-2/
 [68]: https://evotec.xyz
 [69]: https://exchangeserverpro.com/powershell-how-to-send-email/
 [70]: https://exchangeserverpro.com/powershell-send-html-email/
@@ -181,6 +176,5 @@ permalink: /menu/_pages/resources.html
 [87]: https://www.petri.co.il/powershell
 [89]: https://www.planetpowershell.com/
 [90]: https://www.powershellgallery.com
-[92]: https://www.powershelljunkie.com/
 [95]: https://www.simple-talk.com/sysadmin/powershell/
 [96]: https://www.thelazyadministrator.com
