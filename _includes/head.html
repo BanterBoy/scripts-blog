@@ -13,14 +13,6 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>
-    {% if page.title == "Home" %}
-    {{ site.title }} &middot; {{ site.tagline }}
-    {% else %}
-    {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
-  </title>
-
   <!-- buttons.github.io -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
 
@@ -38,6 +30,14 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <title>
+    {% if page.title == "Home" %}
+    {{ site.title }} &middot; {{ site.tagline }}
+    {% else %}
+    {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+  </title>
 
   <!-- Cookiebot Cookie Consent -->
   <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="799c8a70-a663-4855-90dd-6534fd8c7c15"
