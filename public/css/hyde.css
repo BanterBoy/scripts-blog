@@ -120,6 +120,20 @@ a.sidebar-nav-item:focus {
  * with a 25%-wide `.sidebar`.
  */
 
+ .btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
 .content {
   padding-top:    4rem;
   padding-bottom: 4rem;
@@ -140,6 +154,12 @@ a.sidebar-nav-item:focus {
   }
 }
 
+/*
+ * Reverse layout
+ *
+ * Flip the orientation of the page by placing the `.sidebar` on the right.
+ */
+
 .btn {
   background-color: DodgerBlue;
   border: none;
@@ -153,12 +173,6 @@ a.sidebar-nav-item:focus {
 .btn:hover {
   background-color: RoyalBlue;
 }
-
-/*
- * Reverse layout
- *
- * Flip the orientation of the page by placing the `.sidebar` on the right.
- */
 
 @media (min-width: 68em) {
   .layout-reverse .sidebar {
@@ -176,20 +190,6 @@ a.sidebar-nav-item:focus {
     margin-left: 4rem;
     margin-right: 22rem;
   }
-}
-
-.btn {
-  background-color: DodgerBlue;
-  border: none;
-  color: white;
-  padding: 5px 10px;
-  cursor: pointer;
-  font-size: 12px;
-}
-
-/* Darker background on mouse-over */
-.btn:hover {
-  background-color: RoyalBlue;
 }
 
 /*
