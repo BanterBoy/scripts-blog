@@ -47,7 +47,7 @@ Some information about why this button exists and how you can download the compl
 
 Details about the script/function/tool/snippet file.
 
-<script async src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/exchange/ExchangeFunctions.ps1" crossorigin="anonymous"></script>
+<script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/exchange/ExchangeFunctions.ps1" crossorigin="anonymous"></script>
 
 ---
 

@@ -35,7 +35,7 @@ Some sort of example of the script/function/tool/snippet output.
 
 Details about the script/function/tool/snippet file.
 
-<script async src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/activeDirectory/ADUserAccountFunctions.ps1" crossorigin="anonymous"></script>
+<script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/activeDirectory/ADUserAccountFunctions.ps1" crossorigin="anonymous"></script>
 
 ---
 

@@ -9,6 +9,6 @@ Some information about the exciting thing
 
 #### Tool
 
-<script async src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/tools/Reset-UsersPassword.ps1" crossorigin="anonymous"></script>
+<script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/tools/Reset-UsersPassword.ps1" crossorigin="anonymous"></script>
 
 <a href="/menu/_pages/tools.html">Back to Tools</a>
