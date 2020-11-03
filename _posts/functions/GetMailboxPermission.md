@@ -9,6 +9,6 @@ Some information about the exciting thing
 
 #### Function
 
-<script async src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/activeDirectory/GetMailboxPermission.ps1"></script>
+<script async src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/activeDirectory/GetMailboxPermission.ps1" crossorigin="anonymous"></script>
 
 <a href="/menu/_pages/functions.html">Back to Functions</a>
