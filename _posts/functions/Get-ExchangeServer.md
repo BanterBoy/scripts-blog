@@ -10,8 +10,8 @@ Some information about the exciting thing
 - [something exciting](#something-exciting)
   - [Example](#example)
   - [OutPut](#output)
-  - [Download](#download)
   - [Script](#script)
+  - [Download](#download)
   - [gist-it](#gist-it)
   - [Report Issues](#report-issues)
 
@@ -31,6 +31,14 @@ Some sort of example of the script/function/tool/snippet output.
 
 ---
 
+#### Script
+
+Details about the script/function/tool/snippet file.
+
+<script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/exchange/Get-ExchangeServer.ps1"></script>
+
+---
+
 #### Download
 
 Some information about why this button exists and how you can download the complete repository.
@@ -40,14 +48,6 @@ Some information about why this button exists and how you can download the compl
     </i>
         Download
 </button>
-
----
-
-#### Script
-
-Details about the script/function/tool/snippet file.
-
-<script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/exchange/Get-ExchangeServer.ps1"></script>
 
 ---
 

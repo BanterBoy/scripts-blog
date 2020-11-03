@@ -66,7 +66,7 @@ The `view raw` link at the bottom right of the script will take you to a raw tex
 You can report an issue or contribute to this site on <a href="https://github.com/BanterBoy/scripts-blog/issues">GitHub</a>. Simply click the button below and add any relevant notes.
 
 <!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=get-Invoke-UrlScan.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
+<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=Invoke-UrlScan.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
 
 ---
 

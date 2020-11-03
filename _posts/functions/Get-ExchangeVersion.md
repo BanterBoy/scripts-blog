@@ -12,6 +12,7 @@ Some information about the exciting thing
   - [OutPut](#output)
   - [Download](#download)
   - [Script](#script)
+  - [Download](#download-1)
   - [gist-it](#gist-it)
   - [Report Issues](#report-issues)
 
@@ -48,6 +49,18 @@ Some information about why this button exists and how you can download the compl
 Details about the script/function/tool/snippet file.
 
 <script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/exchange/Get-ExchangeVersion.ps1"></script>
+
+---
+
+#### Download
+
+Some information about why this button exists and how you can download the complete repository.
+
+<button class="btn" type="submit" onclick="window.open('/PowerShell/functions/exchange/Get-ExchangeVersion.ps1')">
+    <i class="fa fa-cloud-download-alt">
+    </i>
+        Download
+</button>
 
 ---
 
