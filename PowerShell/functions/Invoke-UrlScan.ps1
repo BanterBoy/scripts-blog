@@ -11,13 +11,7 @@ param(
         ValueFromPipeline = $True,
         HelpMessage = "Enter your website uri.")]
     [Alias('ws')]
-    [string[]]$Website,
-
-    [Parameter(Mandatory = $false,
-        ValueFromPipeline = $True,
-        HelpMessage = "Make public.")]
-    [Alias('pub')]
-    [switch[]]$Public
+    [string[]]$Website
 
 )
 
@@ -26,40 +20,29 @@ BEGIN {}
 PROCESS {
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-    $Uri = @{
-        "urlscan" = "https://urlscan.io/api/v1/scan/"
-    }
-
-    $Header = @{
-        'API-Key' = "$ApiKey"
-        'Content-Type' = 'application/json'
-    }
-
-
-    $url = "\$Website\"
-    $public = "\$Public\"
-    $urlscan = Invoke-RestMethod -Uri $Uri.urlscan -Method Post -Headers $Header -Body $Body
+    $Uri = "https://urlscan.io/api/v1/scan/"
+    $urlscan = Invoke-RestMethod -Method Post -Uri $Uri -ContentType "application/json" -Headers @{"API-Key" = "$ApiKey" } -Body "{`"url`":`"$Website`"}"
 
     foreach ( $scan in $urlscan ) {
         $item = $scan | Select-Object -Property *
         try {
             $scanProperties = @{
-                message = $item.message
-                uuid = $item.uuid
-                result = $item.result
-                api = $item.api
+                message    = $item.message
+                uuid       = $item.uuid
+                result     = $item.result
+                api        = $item.api
                 visibility = $item.visibility
-                url = $item.url
+                url        = $item.url
             }
         }
         catch {
             $scanProperties = @{
-                message = $item.message
-                uuid = $item.uuid
-                result = $item.result
-                api = $item.api
+                message    = $item.message
+                uuid       = $item.uuid
+                result     = $item.result
+                api        = $item.api
                 visibility = $item.visibility
-                url = $item.url
+                url        = $item.url
             }
         }
         finally {
