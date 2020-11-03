@@ -3,10 +3,10 @@ function Get-Resources {
         $ComputerName = $env:ComputerName
     )  
     # Processor utilization 
-    #Get-WmiObject -ComputerName $computer -Class win32_processor -ErrorAction Stop | Measure-Object -Property LoadPercentage -Average | Select-Object * 
-    $cpu = gwmi win32_perfformatteddata_perfos_processor -ComputerName $ComputerName | Where-Object { $_.name -eq "_total" } | Select-Object -ExpandProperty PercentProcessorTime  -ea silentlycontinue  
+    # Get-WmiObject -ComputerName $computer -Class win32_processor -ErrorAction Stop | Measure-Object -Property LoadPercentage -Average | Select-Object * 
+    $cpu = Get-WmiObject win32_perfformatteddata_perfos_processor -ComputerName $ComputerName | Where-Object { $_.name -eq "_total" } | Select-Object -ExpandProperty PercentProcessorTime -ErrorAction silentlycontinue  
     # Memory utilization 
-    $ComputerMemory = Get-WmiObject -ComputerName $ComputerName  -Class win32_operatingsystem -ErrorAction Stop 
+    $ComputerMemory = Get-WmiObject -ComputerName $ComputerName -Class win32_operatingsystem -ErrorAction Stop 
     $Memory = ((($ComputerMemory.TotalVisibleMemorySize - $ComputerMemory.FreePhysicalMemory) * 100) / $ComputerMemory.TotalVisibleMemorySize) 
     $RoundMemory = [math]::Round($Memory, 2) 
     # Free disk space 
