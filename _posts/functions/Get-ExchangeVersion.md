@@ -10,9 +10,8 @@ Some information about the exciting thing
 - [something exciting](#something-exciting)
   - [Example](#example)
   - [OutPut](#output)
-  - [Download](#download)
   - [Script](#script)
-  - [Download](#download-1)
+  - [Download](#download)
   - [gist-it](#gist-it)
   - [Report Issues](#report-issues)
 
@@ -29,18 +28,6 @@ Some sort of example of the script/function/tool/snippet in use
 #### OutPut
 
 Some sort of example of the script/function/tool/snippet output.
-
----
-
-#### Download
-
-Some information about why this button exists and how you can download the complete repository.
-
-<button class="btn" type="submit" onclick="window.open('/PowerShell/functions/exchange/Get-ExchangeVersion.ps1')">
-    <i class="fa fa-cloud-download-alt">
-    </i>
-        Download
-</button>
 
 ---
 
