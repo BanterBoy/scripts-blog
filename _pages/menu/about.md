@@ -12,7 +12,7 @@ permalink: /menu/_pages/about.html
 ---
 
 | :---: | :--- |
-| <br><a href="https://www.linkedin.com/in/lukeleigh"><img src="/assets/images/hangout_profile_pic_circle.jpg" title="About Me" alt="About Me" height="65" width="80"></a> | ***If you came here thinking you would find out more about me, please click my face for some obviously interesting facts. I am after all `VERY` interesting 😆*** |
+| <br><a href="https://www.linkedin.com/in/lukeleigh"><img src="/assets/images/hangout_profile_pic_circle.jpg" title="About Me" alt="About Me" height="65" width="70"></a> | ***If you came here thinking you would find out more about me, please click my face for some obviously interesting facts. I am after all `VERY` interesting 😆*** |
 
 ---
 
