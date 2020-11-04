@@ -87,4 +87,9 @@ You can report an issue or contribute to this site on <a href="https://github.co
 [3]: https://gist.github.com
 [4]: https://github.com/googlearchive/code-prettify
 
+*[Back to Top]: Click to go back to the top of the page
+*[        Download]: Click this button to Download the script.
+*[Back to Functions]: Click here to go back to the Functions Index
+*[Table of contents generated with markdown-toc]: Click here to create your own.
+
 <a href="/menu/_pages/snippets.html">Back to Snippets</a>
