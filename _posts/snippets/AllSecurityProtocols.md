@@ -91,5 +91,3 @@ You can report an issue or contribute to this site on <a href="https://github.co
 *[        Download]: Click this button to Download the script.
 *[Back to Snippets]: Click here to go back to the Snippets Index
 *[Table of contents generated with markdown-toc]: Click here to create your own.
-
-<a href="/menu/_pages/snippets.html">Back to Snippets</a>
