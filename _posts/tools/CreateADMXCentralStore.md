@@ -55,7 +55,7 @@ More information can be found on the owners website - [jhouseconsulting.com][5]{
 
 #### Download
 
-Some information about why this button exists and how you can download the complete repository.
+<small><i>CreateADMXCentralStore.ps1</i></small>
 
 <button class="btn" type="submit" onclick="window.open('/PowerShell/tools/CreateADMXCentralStore.ps1')">
     <i class="fa fa-cloud-download-alt">
