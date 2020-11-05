@@ -1,50 +1,6 @@
 <#
-	Script Name		: Microsoft.PowerShell_profile.ps1
+	Script Name		: HomePowerShell_profile.ps1
 	Author			: Luke Leigh
-	Created			: 16/03/2019
-	Amended			: 10/09/2020
-	Notes			: This script has been created in order pre-configure the following setting:-
-						- Shell Title - Rebranded
-						- Shell Dimensions configured to 170 Width x 45 Height
-						- Buffer configured to 9000 lines
-
-	- Loads the following Functions
-
-	CommandType		Name
-	-----------		----
-	Function		Format-Console
-	Function		Get-ContainedCommand
-	Function		Get-Password
-	Function		Get-PatchTue
-	Function		New-AdminShell
-	Function		New-GitDrives
-	Function		New-Greeting
-	Function		New-O365Session
-	Function		New-ObjectToHashTable
-	Function		New-Password
-	Function		New-PSDrives
-	Function		Remove-O365Session
-	Function		Restart-Profile
-	Function		Select-FolderLocation
-	Function		Show-IsAdminOrNot
-	Function		Show-ProfileFunctions
-	Function		Show-PSDrive
-	Function		Test-IsAdmin
-
-	Displays
-	- whether or not running as Administrator in the WindowTitle
-	- the Date and Time in the Console Window
-	- a Greeting based on day of week
-	- whether or not running as Administrator in the Console Window
-
-	When run from Elevated Prompt
-	- Preconfigures Executionpolicy settings per PowerShell Process Unrestricted
-	(un-necessary to configure execution policy manually
-	each new PowerShell session, is configured at run and disposed of on exit)
-	- Amend PSModulePath variable to include 'OneDrive\PowerShellModules'
-	- Configure LocalHost TrustedHosts value
-	- Measures script running performance and displays time upon completion
-
 #>
 
 
