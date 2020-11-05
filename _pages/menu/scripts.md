@@ -163,7 +163,7 @@ permalink: /menu/_pages/scripts.html
 | information | [Get-ReportDownload.ps1](/_posts/scripts/Get-ReportDownload/)       |
 | information | [Get-WifiPassword.ps1](/_posts/scripts/Get-WifiPassword/)           |
 | information | [Hardware-Report.ps1](/_posts/scripts/Hardware-Report/)             |
-| information | [htmlreport.PS1](/_posts/scripts/htmlreport.PS1/)                   |
+| information | [htmlreport.PS1](/_posts/scripts/htmlreport/)                       |
 | information | [O365UserLicenseReport.ps1](/_posts/scripts/O365UserLicenseReport/) |
 | information | [Office365HTMLReport.ps1](/_posts/scripts/Office365HTMLReport/)     |
 
@@ -194,7 +194,7 @@ permalink: /menu/_pages/scripts.html
 | miscellaneous | [Config-Psmodulepath.ps1](/_posts/scripts/Config-Psmodulepath/)             |
 | miscellaneous | [ConfigureWinrm.ps1](/_posts/scripts/ConfigureWinrm/)                       |
 | miscellaneous | [DiskCleanup.ps1](/_posts/scripts/DiskCleanup/)                             |
-| miscellaneous | [diskmonitor1.PS1](/_posts/scripts/diskmonitor1.PS1/)                       |
+| miscellaneous | [diskmonitor1.PS1](/_posts/scripts/diskmonitor1/)                           |
 | miscellaneous | [Encrypt-Laptop.ps1](/_posts/scripts/Encrypt-Laptop/)                       |
 | miscellaneous | [HyperVGoldenImage.ps1](/_posts/scripts/HyperVGoldenImage/)                 |
 | miscellaneous | [Stop-FailedServiceScript.ps1](/_posts/scripts/Stop-FailedServiceScript/)   |
