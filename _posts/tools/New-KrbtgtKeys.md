@@ -28,7 +28,7 @@ This is a Microsoft script and is maintained at at the following GitHub Reposito
 #### OutPut
 
 <div>
-<a href="/assets/images/functions/New-KrbtgtKeys-example.png" data-lightbox="New-KrbtgtKeys" data-title="New-KrbtgtKeys"><img src="/assets/images/functions/New-KrbtgtKeys-example.png" alt="New-KrbtgtKeys" width="940" height="159"/></a>
+<a href="/assets/images/functions/New-KrbtgtKeys-example.png" data-lightbox="New-KrbtgtKeys" data-title="New-KrbtgtKeys"><img src="/assets/images/tools/New-KrbtgtKeys-example.png" alt="New-KrbtgtKeys" width="940" height="159"/></a>
 </div>
 
 ---
