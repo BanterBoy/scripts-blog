@@ -150,7 +150,6 @@ permalink: /menu/_pages/functions.html
 | exchange | [Get-MailboxStatistics.ps1](/_posts/functions/Get-MailboxStatistics/)                     |
 | exchange | [Get-MBAccessPerms.ps1](/_posts/functions/Get-MBAccessPerms/)                             |
 | exchange | [O365Session.ps1](/_posts/functions/O365Session/)                                         |
-| exchange | [Office365PasswordReminderEmail.ps1](/_posts/functions/Office365PasswordReminderEmail/)   |
 | exchange | [OnPremExchangeFunctions.ps1](/_posts/functions/OnPremExchangeFunctions/)                 |
 | exchange | [PasswordChangeNotification.ps1](/_posts/functions/PasswordChangeNotification/)           |
 | exchange | [PasswordReminderAlso.ps1](/_posts/functions/PasswordReminderAlso/)                       |
