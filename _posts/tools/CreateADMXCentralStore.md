@@ -8,7 +8,7 @@ title: CreateADMXCentralStore.ps1
 Some information about the exciting thing
 
 - [something exciting](#something-exciting)
-  - [Example](#example)
+  - [Information](#information)
   - [OutPut](#output)
   - [Script](#script)
   - [Download](#download)
@@ -19,21 +19,31 @@ Some information about the exciting thing
 
 ---
 
-#### Example
+#### Information
 
-Some sort of example of the script/function/tool/snippet in use
+This PowerShell script will create the ADMX Central Store for you by copying the ADMX files from several source locations, such as a master source on an Administrative share and/or several management servers, including IT Pro workstations.
+
+The script has 3 variables which you will need to configure:-
+
+- `$MasterReferenceLocation` – This is the location where you may store your ADMX master files, or 3rd party ADMX files. If you use a relative path, the script will prepend the script path to create an absolute path.
+- `$languages` – This is an array of languages you use so that we copy across the relevant ADML files, such as “en-us” for example. Setting this to an * (asterix) will copy the ADML files from ALL language folders.
+- `$SourceServers` – This is an array of servers and workstations that you want to use to build the ADMX Central Store. They are typically the servers and workstations that contain the latest versions of ADMX files, as well as the customised and 3rd party ones you’re currently referencing in any GPOs.
 
 ---
 
 #### OutPut
 
-Some sort of example of the script/function/tool/snippet output.
+The screen shot below shows the output from the script running for the first time
+
+<div>
+<a href="/assets/images/functions/CreateADMXCentralStore-Script-Output.png" data-lightbox="CreateADMXCentralStore" data-title="CreateADMXCentralStore"><img src="/assets/images/tools/CreateADMXCentralStore-Script-Output.png" alt="CreateADMXCentralStore" width="828" height="800"/></a>
+</div>
+
+More information can be found on the owners website - [jhouseconsulting.com][5]{:target="_blank"}
 
 ---
 
 #### Script
-
-Details about the script/function/tool/snippet file.
 
 <script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/tools/CreateADMXCentralStore.ps1"></script>
 
@@ -86,6 +96,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 [2]: https://gist-it.appspot.com/
 [3]: https://gist.github.com
 [4]: https://github.com/googlearchive/code-prettify
+[5]: http://www.jhouseconsulting.com/2014/02/25/script-to-create-the-admx-central-store-1224
 
 *[Back to Top]: Click to go back to the top of the page
 *[        Download]: Click this button to Download the file.
