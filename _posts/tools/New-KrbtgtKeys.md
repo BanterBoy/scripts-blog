@@ -52,7 +52,7 @@ This document is a supplemental guide to the interactive krbtgt reset script (Ne
 
 <small><i>Guide to Running New-CtmADKrbtgtKeys.docx</i></small>
 
-<button class="btn" type="submit" onclick="window.open('/asset/files/Guide to Running New-CtmADKrbtgtKeys.docx')">
+<button class="btn" type="submit" onclick="window.open('/assets/files/Guide to Running New-CtmADKrbtgtKeys.docx')">
     <i class="fa fa-cloud-download-alt">
     </i>
         Download
