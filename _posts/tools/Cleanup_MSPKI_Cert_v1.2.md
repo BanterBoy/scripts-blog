@@ -27,13 +27,18 @@ Some sort of example of the script/function/tool/snippet in use
 
 #### OutPut
 
-Some sort of example of the script/function/tool/snippet output.
+<div>
+<a href="/assets/images/functions/Clear-MSPKIcert-example.png" data-lightbox="Clear-MSPKIcert" data-title="Clear-MSPKIcert"><img src="/assets/images/functions/Clear-MSPKIcert-example.png" alt="Clear-MSPKIcert" width="940" height="159"/></a>
+</div>
 
 ---
 
 #### Script
 
-Details about the script/function/tool/snippet file.
+This script will enable you to: (1) perform a single reset of the krbtgt account password hash and related keys (it can be run multiple times for subsequent resets), (2) immediately replicate the krbtgt account and its new keys to all writable DCs in the domain, and (3) validate that all writable DC's in the domain have successfully replicated the new keys, so they can decrypt any TGTs that are presented by clients and were encrypted with the new key(s).  These capabilities help to perform the reset in a manner which minimizes the likelihood of Kerberos authentication issues due to the operation.
+
+The script is designed to be self-documenting and includes an interactive menu and screen output that will guide you through its execution.  Because it requires user input to select the execution mode and confirm before any changes are made, it is safe to begin by simply executing the script and reading the guidance throughout.
+
 
 <script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/tools/Cleanup_MSPKI_Cert_v1.2.ps1"></script>
 
