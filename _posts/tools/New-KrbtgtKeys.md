@@ -48,7 +48,7 @@ The script is designed to be self-documenting and includes an interactive menu a
 
 #### Download
 
-This document is a supplemental guide to the interactive krbtgt reset script (New-CtmADKrbtgtKeys.ps1). This guide describes the operating modes of the script and how to execute each of them.
+This document is a supplemental guide to the interactive krbtgt reset script (New-KrbtgtKeys.ps1). This guide describes the operating modes of the script and how to execute each of them.
 
 <small><i>Guide to Running New-CtmADKrbtgtKeys.docx</i></small>
 
