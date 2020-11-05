@@ -38,6 +38,7 @@
 #         -Restore: This switch tells the script to restore based on the contentsn of the file specified in the -logfile parameter.
 #
 ################################################################
+
 param([string]$backupPath,
     [string]$logPath,        
     [switch]$WhatIf,
