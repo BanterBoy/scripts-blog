@@ -269,7 +269,7 @@ permalink: /menu/_pages/functions.html
 | miscellaneous | [Prerequisites.ps1](/_posts/functions/Prerequisites/)                               |
 | miscellaneous | [ProgressBar.ps1](/_posts/functions/ProgressBar/)                                   |
 | miscellaneous | [Query-UserAccountControl.ps1](/_posts/functions/Query-UserAccountControl/)         |
-| miscellaneous | [remove-ADM.PS1](/_posts/functions/remove-ADM.PS1)                                  |
+| miscellaneous | [remove-ADM.PS1](/_posts/functions/remove-ADM/)                                     |
 | miscellaneous | [RemoveLocalUserProfile.ps1](/_posts/functions/RemoveLocalUserProfile/)             |
 | miscellaneous | [Remove-UserProfile.ps1](/_posts/functions/Remove-UserProfile/)                     |
 | miscellaneous | [ScreenPassword.ps1](/_posts/functions/ScreenPassword/)                             |
@@ -314,9 +314,9 @@ permalink: /menu/_pages/functions.html
 
 | Section           | FileName                                                                                                        |
 | :---------------- | :-------------------------------------------------------------------------------------------------------------- |
-| powerShellProfile | [personalProfiles\Connect-Office365Services.ps1](/_posts/functions/personalProfiles\Connect-Office365Services/) |
-| powerShellProfile | [personalProfiles\HomePowerShell_profile.ps1](/_posts/functions/personalProfiles\HomePowerShell_profile/)       |
-| powerShellProfile | [personalProfiles\WorkPowerShell_profile.ps1](/_posts/functions/personalProfiles\WorkPowerShell_profile/)       |
+| powerShellProfile | [personalProfiles\Connect-Office365Services.ps1](/_posts/functions/personalProfiles/Connect-Office365Services/) |
+| powerShellProfile | [personalProfiles\HomePowerShell_profile.ps1](/_posts/functions/personalProfiles/HomePowerShell_profile/)       |
+| powerShellProfile | [personalProfiles\WorkPowerShell_profile.ps1](/_posts/functions/personalProfiles/WorkPowerShell_profile/)       |
 | powerShellProfile | [Microsoft.PowerShell_profile.ps1](/_posts/functions/Microsoft.PowerShell_profile/)                             |
 | powerShellProfile | [Restart-PowershellProfile.ps1](/_posts/functions/Restart-PowershellProfile/)                                   |
 
