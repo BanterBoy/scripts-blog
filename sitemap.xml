@@ -8,1822 +8,1822 @@
 
 <url>
    <loc>https://scripts.lukeleigh.com/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>1.0000</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/atom.xml</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.8000</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/menu/_pages/about.html</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.8000</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/menu/_pages/functions.html</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.8000</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/menu/_pages/gists.html</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.8000</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/menu/_pages/resources.html</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.8000</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/menu/_pages/scripts.html</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.8000</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/menu/_pages/snippets.html</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.8000</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/menu/_pages/tools.html</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.8000</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/FSMOFunctions/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Add-ADUsertoLocalGroup/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/ADUserAccountFunctions/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Amend-pwdLastSet/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Copy-AdGroupMemberShip/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Find-localAdmins/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-ActiveDirectoryTombstonePeriod/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-ADDeletedUsers/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-ADUserLastLogon/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-DomainControllers/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-ElevatedUsers/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-FSMORoleOwner/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-LocalGroupMembership/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-LockedOutUser/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-LoggedOnUser/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-LogonHistory/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/GetMailboxPermission/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-NestedGroupMember/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-O365LastLogonTime/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-PrimaryGroupsReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-RDPUserReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-RemoteServiceAccount/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-ServiceDetails/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-ServiceLogonAccount/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-ServicePrivilege/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-UnlinkedGPO/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/GetUserLoggedOnto/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-UserLogon/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/get-usermembership/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-UserReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-UsersGroupMemberShips/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-UserSupportedEncryptionTypes/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Move-FSMORolestoPDCEmulator/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Provision_Home_Folder/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Remove-AdminSDHolder/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Restore-ADDeletedUsers/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Search-GPO/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Search-GPOsForString/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Search-GPOsForStringOrig/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Set-FSMORoleOwner/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Sync-DomainController/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Sync-Office365ToADDS/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Test-ADUserCredentials/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Test-ADUserHighPrivilegeGroupMembership/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Test-UserExists/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Unlock-UserAccount/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Export-Bitlocker/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Export-BitlockerComp/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Export-BitlockerParams/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/New-FileArchive/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/New-ZipFile/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/UncompressZip-SameDestination/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/zipArchiveTool_recursive/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-DKIMRecord/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-DMARCRecord/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-PublicDnsRecord/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-SPFRecord/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Resolve-DnsDomain/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Resolve-DNSList/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Resolve-DomainDNS/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Test-DNSPropagation/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Connect-ExchangeServer/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Connect-O365Session/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Connect-Office365Services/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Copy-ReceiveConnector/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Enter-O365Session/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/ExchangeFunctions/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Export-CalendarPermissions/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-ADExchangeServer/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-ExchangeServer/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-ExchangeVersion/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-MailboxAccessPerms/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-MailboxPermissions/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-MailboxPermissionsExport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-MailboxPermissionsReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-MailboxPermissionsReport2/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-MailboxReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-MailboxStatistics/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-MBAccessPerms/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/O365Session/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/OnPremExchangeFunctions/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/PasswordChangeNotification/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/PasswordReminderAlso/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Remove-MailboxFolderPermissions/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Remove-UsersfromGAL/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Replicate-AllDomainControllers/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Restart-ExchangeServices/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Set-AutoDiscover/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Set-CalendarPermsScript/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Set-DefaultReceiveConnector/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Update-CalendarPermissions/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Format-FileSize/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-FileOwner/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-FriendlySize/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-IniContent/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-LatestFiles/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-MediaDetails/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-NeglectedFiles/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-PathPermissions/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/New-FolderCompare/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-CPUTemperature/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/get-DotNetVersion/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-ErrorInfo/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-InfoBadService/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-InfoCompSystem/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-InfoDisk/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-InfoNIC/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-InfoOS/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-InfoProc/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-CidrIPRange/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-IPConfig/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-ipInfo/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-PingMonitor/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/ConvertFrom-ErrorRecord/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/ConvertObject-ToHashTable/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Copy-History/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/createRealFakeNames/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Disable-PrintSpooler/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/domainresults.hostio/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-FTPFile-empty/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-Icon/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-LastCommands/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-PendingReboot/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-PortInfo/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-ProcessandServicePID/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-ProductKey/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-RebootReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-Resources/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-SettingsWithCPassword/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-SSLlabsScore/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-TokenSizeReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-UnknownDevices/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-Uptime/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-UptimeV1/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-UserAccountControlReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-Weather/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/GetWindowsFeatures/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Invoke-CDRomDrive/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Invoke-FTPUpload/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Invoke-PasswordRoll/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Invoke-UrlScan/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Invoke-WebrequestCookie/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Lock-Screen/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Lock-UserInput/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/MoveOU/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/New-AdminShell/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/New-BlogServer/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/New-EncryptedUser/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/New-PassPhrase/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/New-Password/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/New-QotD/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/New-ScheduledScript/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/New-ScheduledTask/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/New-UrlScan/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Open-CDTray/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Out-Excel/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/parse_NTFS/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/PasswordFunctions/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Prerequisites/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/ProgressBar/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Query-UserAccountControl/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/remove-ADM/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/RemoveLocalUserProfile/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Remove-UserProfile/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/ScreenPassword/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Script4logging/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Search-Google/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Search-KerbDelegatedAccounts/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Search-RoadWorks/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Select-FolderLocation/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Send-OutlookMail/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Show-IsAdminOrNot/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/SiteNameConsistencyReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Start-DownloadFileToTemp/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Start-PSCountdown/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Start-Stream/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Test-ComputerName/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Test-EmailAddress/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Test-IsAdmin/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Test-NetworkPort/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Test-OnlineFast/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Test-ProfileExists/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Test-ServerExists/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Test-SMB1Enabled/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Test-TLSConnection/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Test-WebsiteStatus/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Test-WebSiteUp/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-ChuckNorrisJoke/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/HomePowerShell_profile/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/WorkPowerShell_profile/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Microsoft.PowerShell_profile/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Restart-PowershellProfile/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-2amOfThirdMondayInMonth/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-LastxOfMonth/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-NTPStatusFromHost/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-Ntptime/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-PatchTuesday/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-RemoteTime/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-Time/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-TimeServer/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-WeekDayInMonth/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-InstalledUpdates/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-PendingUpdate/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Get-PendingUpdates/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/functions/Start-WindowsUpdate/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Active_Directory_Information/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/ActiveDirectoryDocument/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/ActiveDirectorySitesandSubnetsReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/ActiveDirectorySitesLinksReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Ad_Report_Generator_Community/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/ADACLScan1.3.3/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/ADChangeReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/ADDS_Inventory/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/AD-Find_missing_subnets_in_ActiveDirectory/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/AD-Reporting/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Audit-ADSubnets/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Audit-ADTrusts/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/CheckActiveDirectorySites/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/CheckProtectedFromAccidentalDeletion/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/CheckRecycleBinStatus/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/CheckW32TimeSource/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/CircularNestedGroups/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Cleanup-AdminSDHolder/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/CreateUser/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/dhcp_inventory/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Export-ADUserInfo/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Export-PSWNOTREQD/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Find_missing_subnets_in_ActiveDirectory/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/FindDHCPServers/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/FindDNSServersAndLocalZones/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/FindDuplicateEmployeeIDs/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Find-InactiveUsers/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/FindOrphanedGPOs/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Find-SPNs/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Force-LoggedOnUsertoLogOff/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/GenerateBPAReports/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get_AD_Users_Logon_History/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-ADCount/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-ADGroupNesting/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-ADSchemaReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-AllComputerAccounts/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-AlternateMailboxes/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-AuthorizedDHCPServers/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-CalendarPermissionsReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-DFSNameSpaceReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-dhcpscope/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-DHCPServers/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-GPOLogonScriptReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-GPProcessingTime/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-LastLogonToCSV/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-NoSettingsGPO/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-RODCPasswordRPs/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/gPLink_Report/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Move-DisabledUsers/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/New-ADAssetReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/New-ADAssetReportGUI/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/New-Computer/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/newuserimport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/OU_permissions/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/privilegedUsersV2/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/RaiseActiveDirectoryFunctionalLevel/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Show-OUStructure/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Start-ADSyncCycle/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Evaluate-EventLog/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/EventLogs/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/EventLogsExported/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/EventsToEmail/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/EventTest/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Exch_AdminAuditReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Exch-AgentLogs/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/ExchangeVersions/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Export-MailboxSizetoCSV/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-MailboxPermissionsScript/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/HideUsersfromAddressBook/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Locate-Exchange/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/mailbox/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/New-DistributionList/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/New-HistoricalSearch/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Test-ExchangeServerHealth/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Compare-Folder/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/copyFilestoServers/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/DataDriveSizes/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Delete-UnusedHomeFolders/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Export-FilePermissions/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Export-FilePermsAcc/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/FileSizes/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Find-DuplicateFiles/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Find-MissingFiles/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-FileDownload/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/LastAccess/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/New-dummyFile/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/SyncFoldersScript/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Collect-ServerInfo/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/ExportFirewallRules/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Export-PrinterQueues/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/GetComputerHTMLReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/GetComputerInventory/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-DiskSpace/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-ReportDownload/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-WifiPassword/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Hardware-Report/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/htmlreport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/O365UserLicenseReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Office365HTMLReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/InstallADDocsModules/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Install-O365Modules/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Install-PoshBot/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/InstallPwnedPasswordDLL/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Install-RSATonline/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/AutoBitlocker/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/chart-driveSpace.V2/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Config-Psmodulepath/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/ConfigureWinrm/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/DiskCleanup/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/diskmonitor1/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Encrypt-Laptop/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/HyperVGoldenImage/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Stop-FailedServiceScript/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Update-DynamicDNSTemplate/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/VMWareGoldenImage/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Write-MatrixMessage/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Dotnetping/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/PingAllComputers/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Ping-DNSServers/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-BankHolidays/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-CurrentWorldTime/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-TimeZoneInformation/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Worldtimeclock/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Export-WindowsUpdates/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Export-WUpdateHistory/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-HotFixReport/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-WindowsUpdatesInstalled/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/scripts/Get-WindowsUpdatesInstalledList/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/snippets/AllSecurityProtocols/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/snippets/Cmdlet-API-Template/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/snippets/Detect-KeyInput/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/snippets/Detect-KeyInput2/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/snippets/Detect-Keypress/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/snippets/Elevate-ScriptPermissions/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/snippets/Enter-SecureSession/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/snippets/Exam-CertDets/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/snippets/ExampleHTMLOutput/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/snippets/GenericHelpSnippet/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/snippets/InvokeHTTPS-SSL/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/snippets/PermissionsTest/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/snippets/Run-RemoteScript/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/snippets/SomeScriptFile/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/tools/Cleanup_MSPKI_Cert_v1.2/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/tools/CreateADMXCentralStore/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/tools/CreateTimeServerGPOs/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/tools/IISLogsCleanup/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/tools/New-CtmADKrbtgtKeys/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/tools/Reset-UsersPassword/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/tools/VMWareHealthcheck/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 <url>
    <loc>https://scripts.lukeleigh.com/_posts/tools/Write-Log/</loc>
-   <changefreq>weekly</changefreq>
+   <changefreq>hourly</changefreq>
    <priority>0.6400</priority>
 </url>
 </urlset>
