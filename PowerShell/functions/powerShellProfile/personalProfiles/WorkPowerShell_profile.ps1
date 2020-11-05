@@ -1,5 +1,5 @@
 <#
-	Script Name		: HomePowerShell_profile.ps1
+	Script Name		: WorkPowerShell_profile.ps1
 	Author			: Luke Leigh
 #>
 
