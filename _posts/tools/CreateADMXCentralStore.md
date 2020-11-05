@@ -41,6 +41,8 @@ The screen shot below shows the output from the script running for the first tim
 
 More information can be found on the owners website - [jhouseconsulting.com][5]{:target="_blank"}
 
+<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+
 ---
 
 #### Script
