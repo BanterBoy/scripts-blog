@@ -1,3 +1,8 @@
+<#
+	Script Name		: HomePowerShell_profile.ps1
+	Author			: Luke Leigh
+#>
+
 # Function		Restart-Profile
 function global:Restart-Profile {
 	@(
