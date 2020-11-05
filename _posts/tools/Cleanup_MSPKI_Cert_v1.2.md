@@ -43,7 +43,17 @@ Details about the script/function/tool/snippet file.
 
 #### Download
 
-Some information about why this button exists and how you can download the complete repository.
+This document is a supplemental guide to the interactive krbtgt reset script (New-CtmADKrbtgtKeys.ps1). This guide describes the operating modes of the script and how to execute each of them.
+
+<small><i>Guide to Running New-CtmADKrbtgtKeys.docx</i></small>
+
+<button class="btn" type="submit" onclick="window.open('/asset/files/Guide to Running New-CtmADKrbtgtKeys.docx')">
+    <i class="fa fa-cloud-download-alt">
+    </i>
+        Download
+</button>
+
+<small><i>Cleanup_MSPKI_Cert_v1.2.ps1</i></small>
 
 <button class="btn" type="submit" onclick="window.open('/PowerShell/tools/Cleanup_MSPKI_Cert_v1.2.ps1')">
     <i class="fa fa-cloud-download-alt">
@@ -88,6 +98,6 @@ You can report an issue or contribute to this site on <a href="https://github.co
 [4]: https://github.com/googlearchive/code-prettify
 
 *[Back to Top]: Click to go back to the top of the page
-*[        Download]: Click this button to Download the script.
+*[        Download]: Click this button to Download the file.
 *[Back to Tools]: Click here to go back to the Tools Index
 *[Table of contents generated with markdown-toc]: Click here to create your own.
