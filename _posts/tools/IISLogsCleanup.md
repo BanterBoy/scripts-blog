@@ -21,7 +21,7 @@ Some information about the exciting thing
 
 #### Example
 
-Some sort of example of the script/function/tool/snippet in use
+Some sort of example of the script/function/tool/snippet in use.
 
 ---
 
