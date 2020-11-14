@@ -1,4 +1,4 @@
-﻿# This script was created to extract the contents of multiple ZIP files located in a directory
+# This script was created to extract the contents of multiple ZIP files located in a directory
 # structure. Each ZIP files is extracted within the folder it resides.
 
 # File path
@@ -11,8 +11,7 @@ $shell = new-object -com shell.application
 #
 foreach ($file in $filepath) {
     $zip = $shell.NameSpace($file.FullName)
-    foreach ($item in $zip.items())
-    {
+    foreach ($item in $zip.items()) {
         $shell.Namespace($file.DirectoryName).copyhere($item)
     }
 

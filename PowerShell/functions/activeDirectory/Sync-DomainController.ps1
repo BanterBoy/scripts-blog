@@ -1,4 +1,4 @@
-﻿function Sync-DomainController {
+function Sync-DomainController {
     [CmdletBinding()]
     param(
         [string] $Domain = $Env:USERDNSDOMAIN

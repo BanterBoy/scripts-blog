@@ -1,4 +1,4 @@
-﻿$isSummer = (Get-Date).IsDaylightSavingTime()
+$isSummer = (Get-Date).IsDaylightSavingTime()
 Get-TimeZone -ListAvailable | ForEach-Object {
     $dateTime = [DateTime]::UtcNow + $_.BaseUtcOffset
     $cities = $_.DisplayName.Split(')')[-1].Trim()

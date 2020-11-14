@@ -1,4 +1,4 @@
-﻿$Folder = "$HOME\desktop\testing"
+$Folder = "$HOME\desktop\testing"
 $User = Read-Host "Input the sAMAccountName of user"
 $permission = (Get-Acl $Folder).Access | Where-Object { $_.IdentityReference -match $User } | Select-Object IdentityReference, FileSystemRights
 If ($permission) {

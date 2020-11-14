@@ -1,4 +1,4 @@
-﻿<#
+<#
 .Synopsis
    Write-Log writes a message to a specified log file with the current time stamp.
 .DESCRIPTION

@@ -1,4 +1,4 @@
-﻿import-module grouppolicy
+import-module grouppolicy
 
 function IsNotLinked($xmldata) {
     if ($null -eq $xmldata.GPO.LinksTo) {

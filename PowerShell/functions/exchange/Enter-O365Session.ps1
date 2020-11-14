@@ -1,4 +1,4 @@
-﻿<#
+<#
 Enter-O365Session.ps1
 #>
 

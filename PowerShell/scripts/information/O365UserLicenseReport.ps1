@@ -1,4 +1,4 @@
-﻿#Using this script administrator can identify all licensed users with their assigned licenses, services, and its status. 
+#Using this script administrator can identify all licensed users with their assigned licenses, services, and its status. 
 #Connect AzureAD from PowerShell 
 Connect-MsolService  
 #Set output file 

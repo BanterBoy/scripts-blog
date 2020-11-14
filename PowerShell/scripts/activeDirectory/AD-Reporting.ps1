@@ -1,4 +1,4 @@
-﻿
+
 <#
 .Synopsis
    Powershell Script to get details AD reports

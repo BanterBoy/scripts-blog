@@ -1,4 +1,4 @@
-﻿function ScreenPassword($instance) {
+function ScreenPassword($instance) {
     if (!($instance.screensaversecure)) { return $instance.name }
     <additional statements>
 }

@@ -1,4 +1,4 @@
-﻿<#
+<#
 Get-WmiObject –ComputerName IGULAMNABY –Class Win32_ComputerSystem | Select-Object UserName
 
 Get-CimInstance –ComputerName CLIENT1 –ClassName Win32_ComputerSystem | Select-Object UserName

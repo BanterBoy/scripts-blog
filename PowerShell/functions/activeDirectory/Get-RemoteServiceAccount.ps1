@@ -1,4 +1,4 @@
-﻿<#
+<#
     $Servers = Get-ADComputer -Filter { OperatingSystem -Like '*Windows Server*' } | Select-Object Name
     $ServiceName = Read-Host "Enter ServiceName"
     foreach ($Server in $Servers) {

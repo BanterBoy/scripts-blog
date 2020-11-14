@@ -1,9 +1,9 @@
-﻿function Get-FriendlySize {
+function Get-FriendlySize {
     param($Bytes)
-    $sizes='Bytes,KB,MB,GB,TB,PB,EB,ZB' -split ','
-    for($i=0; ($Bytes -ge 1kb) -and
-        ($i -lt $sizes.Count); $i++) {$Bytes/=1kb}
-    $N=2; if($i -eq 0) {$N=0}
+    $sizes = 'Bytes,KB,MB,GB,TB,PB,EB,ZB' -split ','
+    for ($i = 0; ($Bytes -ge 1kb) -and
+        ($i -lt $sizes.Count); $i++) { $Bytes /= 1kb }
+    $N = 2; if ($i -eq 0) { $N = 0 }
     "{0:N$($N)} {1}" -f $Bytes, $sizes[$i]
 }
 
@@ -12,7 +12,7 @@ $Start = (Get-Date).AddDays(-$DaysPast)
 $Path = 'S:'
 Get-ChildItem -Path $Path -Recurse |
 Where-Object { $_.LastWriteTime -ge "$Start" } |
-Select-Object Fullname,LastWriteTime,@{N='FriendlySize';E={Get-FriendlySize -Bytes $_.Length}} |
+Select-Object Fullname, LastWriteTime, @{N = 'FriendlySize'; E = { Get-FriendlySize -Bytes $_.Length } } |
 ConvertTo-Csv |
 Out-file -FilePath 'FILEPATH\Output.csv'
 

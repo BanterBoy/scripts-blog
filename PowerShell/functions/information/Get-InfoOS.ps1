@@ -1,4 +1,4 @@
-﻿function Get-InfoOS {
+function Get-InfoOS {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory = $True)]

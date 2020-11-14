@@ -1,4 +1,4 @@
-﻿function Import-GivenNames {
+function Import-GivenNames {
 	<#
 	.SYNOPSIS
 		This function will create a list of peoples given names in USA, UK or Sweden

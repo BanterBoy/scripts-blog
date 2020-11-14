@@ -1,4 +1,4 @@
-﻿<#
+<#
     .SYNOPSIS
     Copies, saves or restores receive connector information on Exchange 2010 servers
    

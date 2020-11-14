@@ -1,4 +1,4 @@
-﻿import-module grouppolicy
+import-module grouppolicy
 
 function HasNoSettings {
     $cExtNodes = $xmldata.DocumentElement.SelectNodes($cQueryString, $XmlNameSpaceMgr)

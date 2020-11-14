@@ -1,4 +1,4 @@
-﻿<# 
+<# 
     .SYNOPSIS 
     Dump mailbox folder permissions to CSV file 
     

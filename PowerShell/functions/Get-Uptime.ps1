@@ -1,7 +1,6 @@
-﻿#Requires -Version 4
+#Requires -Version 4
 
-function Get-Uptime
-{
+function Get-Uptime {
 	<#
 	.SYNOPSIS
 		This function queries a local or remote computer to find the time it was started up and calculates how long it has
@@ -51,30 +50,25 @@ function Get-Uptime
 		[Parameter(ValueFromPipeline)]
 		[string[]]$ComputerName = $env:COMPUTERNAME
 	)
-	begin ## Use a begin block to only process this code one time if names passed from the pipeline
-	{
+	begin { ## Use a begin block to only process this code one time if names passed from the pipeline
 		$today = Get-Date ## Get the current date/time in the begin block to prevent executing Get-Date numerous times
 	}
-	process
-	{
-		foreach ($computer in $ComputerName) ## ComputerName is a string collection so we must be able to process each object
-		{
-			try ## Wrap all code in a try/catch block to catch exceptions and to control code execution
-			{
+	process {
+		foreach ($computer in $ComputerName) { ## ComputerName is a string collection so we must be able to process each object
+			try { ## Wrap all code in a try/catch block to catch exceptions and to control code execution
 				## Build the soon-to-be object to output so all the properties are already here to populate
 				$output = [Ordered]@{
-					'ComputerName' = $computer
-					'StartTime' = $null
-					'Uptime (Months)' = $null
-					'Uptime (Days)' = $null
-					'Status' = $null
+					'ComputerName'     = $computer
+					'StartTime'        = $null
+					'Uptime (Months)'  = $null
+					'Uptime (Days)'    = $null
+					'Status'           = $null
 					'MightNeedPatched' = $false
 				}
 				
 				## Test to ensure the computer is online. If not, set the Status to OFFLINE and throw an exception with terminates
 				## the rest of the code.
-				if (-not (Test-Connection -ComputerName $computer -Count 1 -Quiet))
-				{
+				if (-not (Test-Connection -ComputerName $computer -Count 1 -Quiet)) {
 					$output.Status = 'OFFLINE'
 					throw "The computer [$($computer)] is offline."
 				}
@@ -82,14 +76,13 @@ function Get-Uptime
 				## Bild the hashtable for the -FilterHashTable parameter. We're querying the System event log for event ID 6005
 				$filterHt = @{
 					'LogName' = 'System'
-					'ID' = 6005
+					'ID'      = 6005
 				}
 				## Find the first event (which will always be the most recent)
 				$startEvent = Get-WinEvent -ComputerName $computer -FilterHashtable $filterHt | select -First 1
 				
 				## Set the status to be ERROR and throw an exception if we can't find the start event for some reason.
-				if (-not $startEvent)
-				{
+				if (-not $startEvent) {
 					$output.Status = 'ERROR'
 					throw "Unable to determine uptime for computer [$($computer)]"
 				}
@@ -104,18 +97,15 @@ function Get-Uptime
 				$output.'Uptime (Days)' = $daysUp
 				
 				## If it's been up for longer than 30 days, set the MightNeedPatched property to $true.
-				if ($daysUp -gt 30)
-				{
+				if ($daysUp -gt 30) {
 					$output.'MightNeedPatched' = $true
 				}
 			}
-			catch
-			{
+			catch {
 				## Write a warning to the console with the message thrown
 				Write-Warning $_.Exception.Message
 			}
-			finally
-			{
+			finally {
 				## Regardless of an exception thrown or not, always output a PSCustomObject to show computer results.
 				[pscustomobject]$output
 			}

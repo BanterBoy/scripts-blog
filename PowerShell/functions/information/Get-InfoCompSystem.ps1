@@ -1,4 +1,4 @@
-﻿function Get-InfoCompSystem {
+function Get-InfoCompSystem {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory = $True)]

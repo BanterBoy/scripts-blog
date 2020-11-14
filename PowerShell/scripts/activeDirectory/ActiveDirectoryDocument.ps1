@@ -1,4 +1,4 @@
-﻿Import-Module PSWinDocumentation.AD -Force
+Import-Module PSWinDocumentation.AD -Force
 Import-Module Documentimo -Force
 if ($null -eq $ADForest) {
     $ADForest = Get-WinADForestInformation -Verbose -PasswordQuality -DontRemoveEmpty

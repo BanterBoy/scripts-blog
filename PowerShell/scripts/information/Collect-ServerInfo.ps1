@@ -1,4 +1,4 @@
-﻿<#
+<#
     .SYNOPSIS
     Collect-ServerInfo.ps1 - PowerShell script to collect information about Windows servers
 

@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
     Get-LockedOutUser.ps1 returns a list of users who were locked out in Active Directory.
  

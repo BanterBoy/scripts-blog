@@ -1,4 +1,4 @@
-﻿[cmdletbinding()]
+[cmdletbinding()]
 param (
     [parameter(ValueFromPipeline = $true,
         ValueFromPipelineByPropertyName = $true)]

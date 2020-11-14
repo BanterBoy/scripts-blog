@@ -1,4 +1,4 @@
-﻿# This script creates graphical Report by using logparser and WMI
+# This script creates graphical Report by using logparser and WMI
 # for a set of remote server and localhost
 
 # usage :

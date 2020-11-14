@@ -1,4 +1,4 @@
-﻿function Get-InfoDisk {
+function Get-InfoDisk {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory = $True)]

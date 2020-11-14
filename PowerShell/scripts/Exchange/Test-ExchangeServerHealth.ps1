@@ -1,4 +1,4 @@
-﻿<#
+<#
     .SYNOPSIS
     Test-ExchangeServerHealth.ps1 - Exchange Server Health Check Script.
 

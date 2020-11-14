@@ -1,4 +1,4 @@
-﻿<#
+<#
 .Synopsis
    Script to Automated Email Reminders when Users Passwords due to Expire.
 .DESCRIPTION

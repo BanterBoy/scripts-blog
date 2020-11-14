@@ -1,4 +1,4 @@
-﻿# Add required assemblies
+# Add required assemblies
 Add-Type -AssemblyName WindowsBase
 Add-Type -AssemblyName PresentationCore
  

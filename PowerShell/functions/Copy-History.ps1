@@ -1,4 +1,4 @@
-﻿#--------------------
+#--------------------
 # History Function
 Function Copy-History {
     Get-History |

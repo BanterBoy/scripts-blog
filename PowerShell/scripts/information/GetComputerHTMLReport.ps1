@@ -1,4 +1,4 @@
-﻿#requires -module EnhancedHTML2
+#requires -module EnhancedHTML2
 <#
 .SYNOPSIS
 Generates an HTML-based system report for one or more computers.

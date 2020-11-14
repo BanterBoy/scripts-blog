@@ -1,4 +1,4 @@
-﻿<#
+<#
 Script Name   : Get-NestedGroupMember.ps1
 Author        : By Adam Bertram - 03/15/2016
 Compiled from : https://redmondmag.com/articles/2016/03/15/nested-active-directory-group-memberships.aspx

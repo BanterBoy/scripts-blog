@@ -1,4 +1,4 @@
-﻿<#
+<#
 .Synopsis
 Check connectivity of a system
 

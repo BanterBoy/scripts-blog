@@ -1,4 +1,4 @@
-﻿function Get-GPProcessingtime {
+function Get-GPProcessingtime {
     <#
     .Synopsis
     Get Group Policy Processing time from the Group Policy event log on local and remote computers

@@ -1,4 +1,4 @@
-﻿function ConvertFrom-ErrorRecord {
+function ConvertFrom-ErrorRecord {
     [CmdletBinding(DefaultParameterSetName = "ErrorRecord")]
     param
     (

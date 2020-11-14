@@ -1,4 +1,4 @@
-﻿#Author: Kent Yeabower
+#Author: Kent Yeabower
 #Date: 12-13-17
 
 #This script takes certain functions from Oisin Grehan's Matrix.psm1 module and introduces functionality and code that 

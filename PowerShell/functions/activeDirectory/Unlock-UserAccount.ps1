@@ -1,4 +1,4 @@
-﻿function Unlock-UserAccount {
+function Unlock-UserAccount {
     <#
     .SYNOPSIS
     Unlock AD User Accounts for user who are currently locked out.

@@ -1,4 +1,4 @@
-﻿#Requires -RunAsAdministrator
+#Requires -RunAsAdministrator
 #Requires -Modules @{ModuleName="BitLocker";ModuleVersion="1.0.0.0"}
 
 [CmdletBinding(

@@ -1,4 +1,4 @@
-﻿
+
 function Get-FTPFile ($Source, $Target, $UserName, $Password) {
 
     # Create a FTPWebRequest object to handle the connection to the ftp server

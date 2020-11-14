@@ -1,4 +1,4 @@
-﻿$computers = Get-ADComputer -filter *
+$computers = Get-ADComputer -filter *
 
 Foreach ($computer in $computers) {
     

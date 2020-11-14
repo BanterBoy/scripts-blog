@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
     NAME Find-SPNs.ps1
     This script provides a list of objects configured with a provided Service Principal Name (SPN) or search for all 

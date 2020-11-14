@@ -1,4 +1,4 @@
-﻿function Get-InfoBadService {
+function Get-InfoBadService {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory = $True)]

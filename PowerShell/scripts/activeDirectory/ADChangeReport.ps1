@@ -1,4 +1,4 @@
-﻿Import-Module Dashimo # Install-Module Dashimo -Force
+Import-Module Dashimo # Install-Module Dashimo -Force
 Import-Module PSWinReportingV2 # Install-Module PSWinReportingV2 -Force
 
 $Reports = @(

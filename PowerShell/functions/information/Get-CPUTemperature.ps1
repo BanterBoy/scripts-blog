@@ -1,4 +1,4 @@
-﻿function Get-CPUTemperature {
+function Get-CPUTemperature {
     $t = @( Get-WmiObject MSAcpi_ThermalZoneTemperature -Namespace "root/wmi" )
     $returntemp = @()
 

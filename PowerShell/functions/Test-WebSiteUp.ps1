@@ -1,4 +1,4 @@
-﻿function Test-WebsiteUp {
+function Test-WebsiteUp {
 
     [CmdletBinding()]
     

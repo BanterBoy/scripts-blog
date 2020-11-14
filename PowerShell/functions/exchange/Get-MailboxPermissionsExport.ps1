@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 PowerShell script to export Exchange Mailbox permissions.
 

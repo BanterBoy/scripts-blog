@@ -1,4 +1,4 @@
-﻿# this could be part of your profile script
+# this could be part of your profile script
  
 Add-Type -AssemblyName WindowsBase
 Add-Type -AssemblyName PresentationCore

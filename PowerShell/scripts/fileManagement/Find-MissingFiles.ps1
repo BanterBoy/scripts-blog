@@ -1,4 +1,4 @@
-﻿<#Find-Missingfiles.ps1
+<#Find-Missingfiles.ps1
 #File/folder comparison tool to check a source and destination for missing files/folders
 #Reports missing source files, ignores extra files on the destination
 

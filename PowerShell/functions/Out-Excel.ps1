@@ -1,4 +1,4 @@
-﻿function Out-Excel {
+function Out-Excel {
     param(
         $path = "$env:temp\report$(Get-Date -Format yyyyMMddHHmmss).csv"
     )

@@ -1,4 +1,4 @@
-﻿<#
+<#
 This script will update the DynamicDNS record:-
     "myhome.example.com"
 
@@ -15,7 +15,7 @@ Import-Module GoogleDynamicDNSTools
 # Credential Parameters
 $Username = 'GiU1VJSbtxKL0HQX'
 $Password = 'HpBPJGfm2wcx4Oby' | ConvertTo-SecureString -asPlainText -Force
-$Credentials = New-Object System.Management.Automation.PSCredential($Username,$Password)
+$Credentials = New-Object System.Management.Automation.PSCredential($Username, $Password)
 
 # IP Parameters
 $ipinfo = Invoke-RestMethod "https://ipinfo.io"

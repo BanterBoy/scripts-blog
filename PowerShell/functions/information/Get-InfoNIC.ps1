@@ -1,4 +1,4 @@
-﻿function Get-InfoNIC {
+function Get-InfoNIC {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory = $True)]

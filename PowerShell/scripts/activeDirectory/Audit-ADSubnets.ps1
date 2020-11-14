@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	The script is exporting all Active Directory subnets to a CSV file with the following datas:
 		Name		: subnet name

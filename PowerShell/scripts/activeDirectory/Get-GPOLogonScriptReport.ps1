@@ -1,4 +1,4 @@
-﻿<#
+<#
     .SYSNOPSIS
         Generates a report showing all logon scripts being used in a GPO.
 

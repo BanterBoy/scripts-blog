@@ -1,4 +1,4 @@
-﻿function Update-CalendarPermission {
+function Update-CalendarPermission {
 
 	<#
 	Update-CalendarPermission -Identify <mailbox> -User <xxx> -Permission <permission>

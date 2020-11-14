@@ -1,4 +1,4 @@
-﻿#region Source: Startup.pfs
+#region Source: Startup.pfs
 #----------------------------------------------
 #region Import Assemblies
 #----------------------------------------------
@@ -12,115 +12,106 @@
 #endregion Import Assemblies
 
 function Main {
-    Param ([String]$Commandline)
-    if((Call-ExampleOutputForm_pff) -eq "OK")
-    {}
-    $global:ExitCode = 0
+	Param ([String]$Commandline)
+	if ((Call-ExampleOutputForm_pff) -eq "OK")
+ {}
+	$global:ExitCode = 0
 }
 #endregion Source: Startup.pfs
 
 #region Source: Globals.ps1
-	# Global Variables
-	$OutputToGrid = $false
-	$FunctionName = 'YourFunction'
-	$FunctionPath = '.\New-ADAssetReport.ps1'
-	$FunctionIsExternal = $true
+# Global Variables
+$OutputToGrid = $false
+$FunctionName = 'YourFunction'
+$FunctionPath = '.\New-ADAssetReport.ps1'
+$FunctionIsExternal = $true
 	
-	$FunctionParamTypes = @{}
-	$FunctionParamTypes.Add("combobox_ReportFormat","combobox")
-	$FunctionParamTypes.Add("combobox_ReportType","combobox")
-	$FunctionParamTypes.Add("checkbox_ExportAllUsers","checkbox")
-	$FunctionParamTypes.Add("checkbox_ExportPrivilegedUsers","checkbox")
-	$FunctionParamTypes.Add("checkbox_ExportGraphvizDefinitionFiles","checkbox")
-	$FunctionParamTypes.Add("checkbox_SaveData","checkbox")
-	$FunctionParamTypes.Add("checkbox_LoadData","checkbox")
-	$FunctionParamTypes.Add("textbox_DataFile","string")
-	$FunctionParamTypes.Add("checkbox_Verbose","checkbox")
+$FunctionParamTypes = @{}
+$FunctionParamTypes.Add("combobox_ReportFormat", "combobox")
+$FunctionParamTypes.Add("combobox_ReportType", "combobox")
+$FunctionParamTypes.Add("checkbox_ExportAllUsers", "checkbox")
+$FunctionParamTypes.Add("checkbox_ExportPrivilegedUsers", "checkbox")
+$FunctionParamTypes.Add("checkbox_ExportGraphvizDefinitionFiles", "checkbox")
+$FunctionParamTypes.Add("checkbox_SaveData", "checkbox")
+$FunctionParamTypes.Add("checkbox_LoadData", "checkbox")
+$FunctionParamTypes.Add("textbox_DataFile", "string")
+$FunctionParamTypes.Add("checkbox_Verbose", "checkbox")
 	
-	$MandatoryParams = @{}
-	$MandatoryParams.Add("ReportFormat",$False)
-	$MandatoryParams.Add("ReportType",$False)
-	$MandatoryParams.Add("ExportAllUsers",$False)
-	$MandatoryParams.Add("ExportPrivilegedUsers",$False)
-	$MandatoryParams.Add("ExportGraphvizDefinitionFiles",$False)
-	$MandatoryParams.Add("SaveData",$False)
-	$MandatoryParams.Add("LoadData",$False)
-	$MandatoryParams.Add("DataFile",$False)
-	$MandatoryParams.Add("Verbose",$False)
+$MandatoryParams = @{}
+$MandatoryParams.Add("ReportFormat", $False)
+$MandatoryParams.Add("ReportType", $False)
+$MandatoryParams.Add("ExportAllUsers", $False)
+$MandatoryParams.Add("ExportPrivilegedUsers", $False)
+$MandatoryParams.Add("ExportGraphvizDefinitionFiles", $False)
+$MandatoryParams.Add("SaveData", $False)
+$MandatoryParams.Add("LoadData", $False)
+$MandatoryParams.Add("DataFile", $False)
+$MandatoryParams.Add("Verbose", $False)
 	
-	# Global functions
-	Function Convert-SplatToString ($Splat)
-	{
-	    BEGIN
-	    {
-	        Function Escape-PowershellString ([string]$InputString)
-	        {
-	            $replacements = @{
-	                '!' = '`!' 
-	                '"' = '`"'
-	                '$' = '`$'
-	                '%' = '`%'
-	                '*' = '`*'
-	                "'" = "`'"
-	                ' ' = '` '
-	                '#' = '`#'
-	                '@' = '`@'
-	                '.' = '`.'
-	                '=' = '`='
-	                ',' = '`,'
-	            }
+# Global functions
+Function Convert-SplatToString ($Splat) {
+	BEGIN {
+		Function Escape-PowershellString ([string]$InputString) {
+			$replacements = @{
+				'!' = '`!' 
+				'"' = '`"'
+				'$' = '`$'
+				'%' = '`%'
+				'*' = '`*'
+				"'" = "`'"
+				' ' = '` '
+				'#' = '`#'
+				'@' = '`@'
+				'.' = '`.'
+				'=' = '`='
+				',' = '`,'
+			}
 	
-	            # Join all (escaped) keys from the hashtable into one regular expression.
-	            [regex]$r = @($replacements.Keys | foreach { [regex]::Escape( $_ ) }) -join '|'
+			# Join all (escaped) keys from the hashtable into one regular expression.
+			[regex]$r = @($replacements.Keys | foreach { [regex]::Escape( $_ ) }) -join '|'
 	
-	            $matchEval = { param( [Text.RegularExpressions.Match]$matchInfo )
-	              # Return replacement value for each matched value.
-	              $matchedValue = $matchInfo.Groups[0].Value
-	              $replacements[$matchedValue]
-	            }
+			$matchEval = { param( [Text.RegularExpressions.Match]$matchInfo )
+				# Return replacement value for each matched value.
+				$matchedValue = $matchInfo.Groups[0].Value
+				$replacements[$matchedValue]
+			}
 	
-	            $InputString | Foreach { $r.Replace( $_, $matchEval ) }
-	        }
-	    }
-	    PROCESS
-	    {
-	    }
-	    END
-	    {
-	        $ResultSplat = ''
-	        Foreach ($SplatName in $Splat.Keys)
-	        {
-	            switch ((($Splat[$SplatName]).GetType()).Name) {
-	            	'Boolean' {
-	            		if ($Splat[$SplatName] -eq $true)
-	                    {
-	                        $SplatVal = '$true'
-	                    }
-	                    else
-	                    {
-	                        $SplatVal = '$false'
-	                    }
-	            		break
-	            	}
-	            	'String' {
-	            		$SplatVal = '"' + $(Escape-PowershellString $Splat[$SplatName]) + '"'
-	                    break
-	            	}
-	            	default {
-	                    $SplatVal = $Splat[$SplatName]
-	            		break
-	            	}
-	            }
-	            $ResultSplat = $ResultSplat + '-' + $SplatName + ':' + $SplatVal + ' '
-	        }
-	        $ResultSplat
-	    }
+			$InputString | Foreach { $r.Replace( $_, $matchEval ) }
+		}
 	}
+	PROCESS {
+	}
+	END {
+		$ResultSplat = ''
+		Foreach ($SplatName in $Splat.Keys) {
+			switch ((($Splat[$SplatName]).GetType()).Name) {
+				'Boolean' {
+					if ($Splat[$SplatName] -eq $true) {
+						$SplatVal = '$true'
+					}
+					else {
+						$SplatVal = '$false'
+					}
+					break
+				}
+				'String' {
+					$SplatVal = '"' + $(Escape-PowershellString $Splat[$SplatName]) + '"'
+					break
+				}
+				default {
+					$SplatVal = $Splat[$SplatName]
+					break
+				}
+			}
+			$ResultSplat = $ResultSplat + '-' + $SplatName + ':' + $SplatVal + ' '
+		}
+		$ResultSplat
+	}
+}
 #endregion Source: Globals.ps1
 
 #region Source: ExampleOutputForm.pff
-function Call-ExampleOutputForm_pff
-{
+function Call-ExampleOutputForm_pff {
 	#----------------------------------------------
 	#region Import the Assemblies
 	#----------------------------------------------
@@ -160,110 +151,98 @@ function Call-ExampleOutputForm_pff
 	#----------------------------------------------
 	# User Generated Script
 	#----------------------------------------------
-	$OnLoadFormEvent={
-	    $combobox_ReportFormat.Text = 'HTML'
-	    $combobox_ReportType.Text = 'ForestAndDomain'
+	$OnLoadFormEvent = {
+		$combobox_ReportFormat.Text = 'HTML'
+		$combobox_ReportType.Text = 'ForestAndDomain'
 	}
 	
-	$buttonExecute_Click={
-	    # Create our function splat
-	    $ValidParamSplat = $true
-	    $FunctionCallSplat = @{}
-	    Foreach ($funcparam in $FunctionParamTypes.keys)
-	    {
-	        switch ($FunctionParamTypes[$funcparam]) {
-	            'switch' {
-	                $ParamName = $funcparam -replace 'switch_',''
-	                $ControlString = '$' + $funcparam
-	                $ControlName = [Scriptblock]::Create($ControlString)
-	                $FunctionCallSplat.[string]$ParamName = $(Invoke-Command  $ControlName).Checked
-	            }
-	            'checkbox' {
-	                $ParamName = $funcparam -replace 'checkbox_',''
-	                $ControlString = '$' + $funcparam
-	                $ControlName = [Scriptblock]::Create($ControlString)
-	                $FunctionCallSplat.[string]$ParamName = $(Invoke-Command  $ControlName).Checked
-	            }
-	            'bool' {
-	                $ParamName = $funcparam -replace 'bool_',''
-	                $ControlString = '$' + $funcparam
-	                $ControlName = [Scriptblock]::Create($ControlString)
-	                $FunctionCallSplat.[string]$ParamName = $(Invoke-Command  $ControlName).Checked
-	            }
-	            'int' {
-	                $ParamName = $funcparam -replace 'dial_',''
-	                $ControlString = '$' + $funcparam
-	                $ControlName = [Scriptblock]::Create($ControlString)
-	                $FunctionCallSplat.[string]$ParamName = $(Invoke-Command $ControlName).Value
-	            }
-	            'string' {
-	                $ParamName = $funcparam -replace 'textbox_',''
-	                $ControlString = '$' + $funcparam
-	                $ControlName = [Scriptblock]::Create($ControlString)
-	                $FunctionCallSplat.[string]$ParamName = $(Invoke-Command  $ControlName).Text
-	            }
-	            'combobox' {
-	                $ParamName = $funcparam -replace 'combobox_',''
-	                $ControlString = '$' + $funcparam
-	                $ControlName = [Scriptblock]::Create($ControlString)
-	                $ComboValue = $(Invoke-Command  $ControlName).Text
-	                if ($ComboValue -eq '')
-	                {
-	                    $ValidParamSplat = $false
-	                    #[void][reflection.assembly]::Load("System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")
-	                    [void][System.Windows.Forms.MessageBox]::Show("Missing Mandatory Parameter: $ParamName","Error!")
-	                }
-	                else
-	                {
-	                    $FunctionCallSplat.[string]$ParamName = $ComboValue
-	                }
-	            }
-	        }         
-	    }
+	$buttonExecute_Click = {
+		# Create our function splat
+		$ValidParamSplat = $true
+		$FunctionCallSplat = @{}
+		Foreach ($funcparam in $FunctionParamTypes.keys) {
+			switch ($FunctionParamTypes[$funcparam]) {
+				'switch' {
+					$ParamName = $funcparam -replace 'switch_', ''
+					$ControlString = '$' + $funcparam
+					$ControlName = [Scriptblock]::Create($ControlString)
+					$FunctionCallSplat.[string]$ParamName = $(Invoke-Command  $ControlName).Checked
+				}
+				'checkbox' {
+					$ParamName = $funcparam -replace 'checkbox_', ''
+					$ControlString = '$' + $funcparam
+					$ControlName = [Scriptblock]::Create($ControlString)
+					$FunctionCallSplat.[string]$ParamName = $(Invoke-Command  $ControlName).Checked
+				}
+				'bool' {
+					$ParamName = $funcparam -replace 'bool_', ''
+					$ControlString = '$' + $funcparam
+					$ControlName = [Scriptblock]::Create($ControlString)
+					$FunctionCallSplat.[string]$ParamName = $(Invoke-Command  $ControlName).Checked
+				}
+				'int' {
+					$ParamName = $funcparam -replace 'dial_', ''
+					$ControlString = '$' + $funcparam
+					$ControlName = [Scriptblock]::Create($ControlString)
+					$FunctionCallSplat.[string]$ParamName = $(Invoke-Command $ControlName).Value
+				}
+				'string' {
+					$ParamName = $funcparam -replace 'textbox_', ''
+					$ControlString = '$' + $funcparam
+					$ControlName = [Scriptblock]::Create($ControlString)
+					$FunctionCallSplat.[string]$ParamName = $(Invoke-Command  $ControlName).Text
+				}
+				'combobox' {
+					$ParamName = $funcparam -replace 'combobox_', ''
+					$ControlString = '$' + $funcparam
+					$ControlName = [Scriptblock]::Create($ControlString)
+					$ComboValue = $(Invoke-Command  $ControlName).Text
+					if ($ComboValue -eq '') {
+						$ValidParamSplat = $false
+						#[void][reflection.assembly]::Load("System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")
+						[void][System.Windows.Forms.MessageBox]::Show("Missing Mandatory Parameter: $ParamName", "Error!")
+					}
+					else {
+						$FunctionCallSplat.[string]$ParamName = $ComboValue
+					}
+				}
+			}         
+		}
 	
-	    # Validate all mandatory parameters are present
-	    if ($ValidParamSplat)
-	    {
-	        foreach ($MParam in $MandatoryParams.keys)
-	        {
-	            if ($MandatoryParams[$MParam])
-	            {
-	                If (! $FunctionCallSplat.ContainsKey($MParam))
-	                {
-	                    $ValidParamSplat = $false
-	                    #[void][reflection.assembly]::Load("System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")
-	                    [void][System.Windows.Forms.MessageBox]::Show("Missing Mandatory Parameter: $MParam","Error!")
-	                }
-	            }
-	        }
-	    }
+		# Validate all mandatory parameters are present
+		if ($ValidParamSplat) {
+			foreach ($MParam in $MandatoryParams.keys) {
+				if ($MandatoryParams[$MParam]) {
+					If (! $FunctionCallSplat.ContainsKey($MParam)) {
+						$ValidParamSplat = $false
+						#[void][reflection.assembly]::Load("System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089")
+						[void][System.Windows.Forms.MessageBox]::Show("Missing Mandatory Parameter: $MParam", "Error!")
+					}
+				}
+			}
+		}
 	    
-	    if ($ValidParamSplat)
-	    {
-	        if ($FunctionIsExternal)
-	        {
-	            $FunctionCallSplatString = Convert-SplatToString $FunctionCallSplat
+		if ($ValidParamSplat) {
+			if ($FunctionIsExternal) {
+				$FunctionCallSplatString = Convert-SplatToString $FunctionCallSplat
 				#$FunctionCommand = $FunctionPath + " @FunctionCallSplat"
 				$FunctionCommand = "Start-Process powershell.exe -ArgumentList '-NoExit -c " + $FunctionPath + " $FunctionCallSplatString" + "'"
-	        }
-	        else
-	        {
-	            $FunctionCommand = $FunctionName + " @FunctionCallSplat"
-	        }
+			}
+			else {
+				$FunctionCommand = $FunctionName + " @FunctionCallSplat"
+			}
 	        
-	        if ($OutputToGrid)
-	        {
-	            $FunctionCommand = $FunctionCommand + ' | Out-GridViewForm'
-	        }
+			if ($OutputToGrid) {
+				$FunctionCommand = $FunctionCommand + ' | Out-GridViewForm'
+			}
 	
-	        $FunctionToCall = [Scriptblock]::Create($FunctionCommand)
-	        Invoke-Command $FunctionToCall
-	    }
+			$FunctionToCall = [Scriptblock]::Create($FunctionCommand)
+			Invoke-Command $FunctionToCall
+		}
 	}
 	#region Control Helper Functions
-	function Load-ListBox 
-	{
-	<#
+	function Load-ListBox {
+		<#
 	    .SYNOPSIS
 	        This functions helps you load items into a ListBox or CheckedListBox.
 	
@@ -293,47 +272,41 @@ function Call-ExampleOutputForm_pff
 	    .EXAMPLE
 	        Load-ListBox $listBox1 (Get-Process) "ProcessName"
 	#>
-	    Param (
-	        [ValidateNotNull()]
-	        [Parameter(Mandatory=$true)]
-	        [System.Windows.Forms.ListBox]$ListBox,
-	        [ValidateNotNull()]
-	        [Parameter(Mandatory=$true)]
-	        $Items,
-	        [Parameter(Mandatory=$false)]
-	        [string]$DisplayMember,
-	        [switch]$Append
-	    )
+		Param (
+			[ValidateNotNull()]
+			[Parameter(Mandatory = $true)]
+			[System.Windows.Forms.ListBox]$ListBox,
+			[ValidateNotNull()]
+			[Parameter(Mandatory = $true)]
+			$Items,
+			[Parameter(Mandatory = $false)]
+			[string]$DisplayMember,
+			[switch]$Append
+		)
 	    
-	    if(-not $Append)
-	    {
-	        $listBox.Items.Clear()    
-	    }
+		if (-not $Append) {
+			$listBox.Items.Clear()    
+		}
 	    
-	    if($Items -is [System.Windows.Forms.ListBox+ObjectCollection])
-	    {
-	        $listBox.Items.AddRange($Items)
-	    }
-	    elseif ($Items -is [Array])
-	    {
-	        $listBox.BeginUpdate()
-	        foreach($obj in $Items)
-	        {
-	            $listBox.Items.Add($obj)
-	        }
-	        $listBox.EndUpdate()
-	    }
-	    else
-	    {
-	        $listBox.Items.Add($Items)    
-	    }
+		if ($Items -is [System.Windows.Forms.ListBox+ObjectCollection]) {
+			$listBox.Items.AddRange($Items)
+		}
+		elseif ($Items -is [Array]) {
+			$listBox.BeginUpdate()
+			foreach ($obj in $Items) {
+				$listBox.Items.Add($obj)
+			}
+			$listBox.EndUpdate()
+		}
+		else {
+			$listBox.Items.Add($Items)    
+		}
 	
-	    $listBox.DisplayMember = $DisplayMember    
+		$listBox.DisplayMember = $DisplayMember    
 	}
 	
-	function Load-ComboBox 
-	{
-	<#
+	function Load-ComboBox {
+		<#
 	    .SYNOPSIS
 	        This functions helps you load items into a ComboBox.
 	
@@ -363,105 +336,96 @@ function Call-ExampleOutputForm_pff
 	    .EXAMPLE
 	        Load-ComboBox $combobox1 (Get-Process) "ProcessName"
 	#>
-	    Param (
-	        [ValidateNotNull()]
-	        [Parameter(Mandatory=$true)]
-	        [System.Windows.Forms.ComboBox]$ComboBox,
-	        [ValidateNotNull()]
-	        [Parameter(Mandatory=$true)]
-	        $Items,
-	        [Parameter(Mandatory=$false)]
-	        [string]$DisplayMember,
-	        [switch]$Append
-	    )
+		Param (
+			[ValidateNotNull()]
+			[Parameter(Mandatory = $true)]
+			[System.Windows.Forms.ComboBox]$ComboBox,
+			[ValidateNotNull()]
+			[Parameter(Mandatory = $true)]
+			$Items,
+			[Parameter(Mandatory = $false)]
+			[string]$DisplayMember,
+			[switch]$Append
+		)
 	    
-	    if(-not $Append)
-	    {
-	        $ComboBox.Items.Clear()    
-	    }
+		if (-not $Append) {
+			$ComboBox.Items.Clear()    
+		}
 	    
-	    if($Items -is [Object[]])
-	    {
-	        $ComboBox.Items.AddRange($Items)
-	    }
-	    elseif ($Items -is [Array])
-	    {
-	        $ComboBox.BeginUpdate()
-	        foreach($obj in $Items)
-	        {
-	            $ComboBox.Items.Add($obj)    
-	        }
-	        $ComboBox.EndUpdate()
-	    }
-	    else
-	    {
-	        $ComboBox.Items.Add($Items)    
-	    }
+		if ($Items -is [Object[]]) {
+			$ComboBox.Items.AddRange($Items)
+		}
+		elseif ($Items -is [Array]) {
+			$ComboBox.BeginUpdate()
+			foreach ($obj in $Items) {
+				$ComboBox.Items.Add($obj)    
+			}
+			$ComboBox.EndUpdate()
+		}
+		else {
+			$ComboBox.Items.Add($Items)    
+		}
 	
-	    $ComboBox.DisplayMember = $DisplayMember    
+		$ComboBox.DisplayMember = $DisplayMember    
 	}
 	#endregion
-	$combobox_ReportType_TextChanged={
+	$combobox_ReportType_TextChanged = {
 		switch ($combobox_ReportType.Text) {
-	    	'Forest' {
-	    		$checkbox_ExportAllUsers.Checked = $false
-	            $checkbox_ExportAllUsers.Enabled = $false
-	            $checkbox_ExportPrivilegedUsers.Checked = $false
-	            $checkbox_ExportPrivilegedUsers.Enabled = $false
-	            $checkbox_ExportGraphvizDefinitionFiles.Enabled = $true
-	    	}
-	    	'Domain' {
-	    		$checkbox_ExportAllUsers.Enabled = $true
-	            $checkbox_ExportPrivilegedUsers.Enabled = $true
-	            $checkbox_ExportGraphvizDefinitionFiles.Enabled = $false
-	            $checkbox_ExportGraphvizDefinitionFiles.Checked = $false
-	    	}
-	    	'ForestAndDomain' {
-	    		$checkbox_ExportAllUsers.Enabled = $true
-	            $checkbox_ExportPrivilegedUsers.Enabled = $true
-	            $checkbox_ExportGraphvizDefinitionFiles.Enabled = $true
-	    	}
-	    	default {
-	    		#<code>
-	    	}
-	    } 
+			'Forest' {
+				$checkbox_ExportAllUsers.Checked = $false
+				$checkbox_ExportAllUsers.Enabled = $false
+				$checkbox_ExportPrivilegedUsers.Checked = $false
+				$checkbox_ExportPrivilegedUsers.Enabled = $false
+				$checkbox_ExportGraphvizDefinitionFiles.Enabled = $true
+			}
+			'Domain' {
+				$checkbox_ExportAllUsers.Enabled = $true
+				$checkbox_ExportPrivilegedUsers.Enabled = $true
+				$checkbox_ExportGraphvizDefinitionFiles.Enabled = $false
+				$checkbox_ExportGraphvizDefinitionFiles.Checked = $false
+			}
+			'ForestAndDomain' {
+				$checkbox_ExportAllUsers.Enabled = $true
+				$checkbox_ExportPrivilegedUsers.Enabled = $true
+				$checkbox_ExportGraphvizDefinitionFiles.Enabled = $true
+			}
+			default {
+				#<code>
+			}
+		} 
 	}
 	
-	$checkbox_SaveData_CheckedChanged={
-		if ($checkbox_SaveData.Checked)
-	    {
-	        $checkbox_LoadData.Checked = $false
-	        $checkbox_LoadData.Enabled = $false
+	$checkbox_SaveData_CheckedChanged = {
+		if ($checkbox_SaveData.Checked) {
+			$checkbox_LoadData.Checked = $false
+			$checkbox_LoadData.Enabled = $false
 		}
-	    else
-	    {
-	        $checkbox_LoadData.Enabled = $true
+		else {
+			$checkbox_LoadData.Enabled = $true
 		}
 	}
 	
-	$checkbox_LoadData_CheckedChanged={
-		if ($checkbox_LoadData.Checked)
-	    {
-	        $checkbox_SaveData.Checked = $false
-	        $checkbox_SaveData.Enabled = $false
+	$checkbox_LoadData_CheckedChanged = {
+		if ($checkbox_LoadData.Checked) {
+			$checkbox_SaveData.Checked = $false
+			$checkbox_SaveData.Enabled = $false
 		}
-	    else
-	    {
-	        $checkbox_SaveData.Enabled = $true
+		else {
+			$checkbox_SaveData.Enabled = $true
 		}
 	}
-		# --End User Generated Script--
+	# --End User Generated Script--
 	#----------------------------------------------
 	#region Generated Events
 	#----------------------------------------------
 	
-	$Form_StateCorrection_Load=
+	$Form_StateCorrection_Load =
 	{
 		#Correct the initial state of the form to prevent the .Net maximized form issue
 		$YourFunction_Form.WindowState = $InitialFormWindowState
 	}
 	
-	$Form_StoreValues_Closing=
+	$Form_StoreValues_Closing =
 	{
 		#Store the control values
 		$script:ExampleOutputForm_combobox_ReportFormat = $combobox_ReportFormat.Text
@@ -477,11 +441,10 @@ function Call-ExampleOutputForm_pff
 	}
 
 	
-	$Form_Cleanup_FormClosed=
+	$Form_Cleanup_FormClosed =
 	{
 		#Remove all event handlers from the controls
-		try
-		{
+		try {
 			$combobox_ReportType.remove_TextChanged($combobox_ReportType_TextChanged)
 			$checkbox_SaveData.remove_CheckedChanged($checkbox_SaveData_CheckedChanged)
 			$checkbox_LoadData.remove_CheckedChanged($checkbox_LoadData_CheckedChanged)

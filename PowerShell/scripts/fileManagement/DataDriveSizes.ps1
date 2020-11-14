@@ -1,4 +1,4 @@
-﻿function Get-FriendlySize {
+function Get-FriendlySize {
     param($Bytes)
     $sizes = 'Bytes,KB,MB,GB,TB,PB,EB,ZB' -split ','
     for ($i = 0; ($Bytes -ge 1kb) -and

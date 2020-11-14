@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 Get-MailboxReport.ps1 - Mailbox report generation script.
 

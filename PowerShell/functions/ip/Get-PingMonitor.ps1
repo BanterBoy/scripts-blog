@@ -1,4 +1,4 @@
-﻿[CmdletBinding()]
+[CmdletBinding()]
 Param (
     [int32]$Count = 5,
     [Parameter(ValueFromPipeline = $true)]

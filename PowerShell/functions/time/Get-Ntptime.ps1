@@ -1,4 +1,4 @@
-﻿Function Get-NtpTime ( [String]$NTPServer ) {
+Function Get-NtpTime ( [String]$NTPServer ) {
     # Build NTP request packet. We'll reuse this variable for the response packet
     $NTPData = New-Object byte[] 48  # Array of 48 bytes set to zero
     $NTPData[0] = 27                    # Request header: 00 = No Leap Warning; 011 = Version 3; 011 = Client Mode; 00011011 = 27

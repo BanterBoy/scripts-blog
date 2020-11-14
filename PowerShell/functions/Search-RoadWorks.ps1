@@ -1,4 +1,4 @@
-﻿# http://api.hatrafficinfo.dft.gov.uk/Mtf.aspx?road=M5
+# http://api.hatrafficinfo.dft.gov.uk/Mtf.aspx?road=M5
 
 function Search-RoadWorks {
 	param(

@@ -1,4 +1,4 @@
-﻿function Get-LogonHistory {
+function Get-LogonHistory {
     Param (
         [Parameter(Mandatory = $true)]
         [string]

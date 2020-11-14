@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 	The script collect and verify Active Directory trusts of the current forest or a specified domain.
 	

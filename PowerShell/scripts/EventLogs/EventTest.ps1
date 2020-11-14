@@ -1,4 +1,4 @@
-﻿<#
+<#
 .Synopsis
 	Compare event log access using Get-EventLog and Get-WinEvent.
 

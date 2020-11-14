@@ -1,4 +1,4 @@
-﻿$downloadToPath = "c:\somewhere\on\disk\file.zip"
+$downloadToPath = "c:\somewhere\on\disk\file.zip"
 $remoteFileLocation = "http://somewhere/on/the/internet"
 
 $session = New-Object Microsoft.PowerShell.Commands.WebRequestSession

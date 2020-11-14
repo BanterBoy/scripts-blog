@@ -1,4 +1,4 @@
-﻿#--------------------------------------------------------------------------------- 
+#--------------------------------------------------------------------------------- 
 #The sample scripts are not supported under any Microsoft standard support 
 #program or service. The sample scripts are provided AS IS without warranty  
 #of any kind. Microsoft further disclaims all implied warranties including,  

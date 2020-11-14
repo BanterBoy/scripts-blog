@@ -1,4 +1,4 @@
-﻿<#
+<#
 				"Satnaam WaheGuru Ji"
 
 	Author  : Aman Dhally

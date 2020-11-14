@@ -1,4 +1,4 @@
-﻿function Test-OnlineFast {
+function Test-OnlineFast {
     param
     (
         # make parameter pipeline-aware

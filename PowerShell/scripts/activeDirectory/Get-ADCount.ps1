@@ -1,4 +1,4 @@
-﻿<#
+<#
 ================================================================================
 PURPOSE:	Count AD Files Size and Objects
 AUTHOR:		Axel Limousin

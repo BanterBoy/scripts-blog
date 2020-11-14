@@ -1,4 +1,4 @@
-﻿Function Test-ADUserHighPrivilegeGroupMembership {
+Function Test-ADUserHighPrivilegeGroupMembership {
 
     ##########################################################################################################
     <#

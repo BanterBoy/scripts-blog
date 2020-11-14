@@ -1,4 +1,4 @@
-﻿function Get-InfoProc {
+function Get-InfoProc {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory = $True)]

@@ -1,4 +1,4 @@
-﻿function Get-InstalledUpdates {
+function Get-InstalledUpdates {
     [cmdletbinding()]            
     $Session = New-Object -ComObject "Microsoft.Update.Session"
     $Searcher = $Session.CreateUpdateSearcher()

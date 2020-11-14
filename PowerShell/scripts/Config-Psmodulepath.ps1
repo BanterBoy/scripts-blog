@@ -1,4 +1,4 @@
-﻿<# Import OneDrive to PSModulePath
+<# Import OneDrive to PSModulePath
 The following commands will:-
 Test/Check current module path
 #>

@@ -1,4 +1,4 @@
-﻿Function Get-Icon {
+Function Get-Icon {
     <#
         .SYNOPSIS
             Gets the icon from a file
@@ -137,7 +137,7 @@
         DefaultParameterSetName = '__DefaultParameterSetName'
     )]
     Param (
-        [parameter(ValueFromPipelineByPropertyName=$True)]
+        [parameter(ValueFromPipelineByPropertyName = $True)]
         [ValidateNotNullorEmpty()]
         [string]$Path,
         [parameter(ParameterSetName = 'Bytes')]
@@ -157,7 +157,7 @@
         $Path = Convert-Path -Path $Path
         Write-Debug $Path
         If (Test-Path -Path $Path) {
-            $Icon = [System.Drawing.Icon]::ExtractAssociatedIcon($Path)| 
+            $Icon = [System.Drawing.Icon]::ExtractAssociatedIcon($Path) | 
             Add-Member -MemberType NoteProperty -Name FullName -Value $Path -PassThru
             If ($PSBoundParameters.ContainsKey('ToBytes')) {
                 Write-Verbose "Retrieving bytes"
@@ -167,9 +167,11 @@
                 $MemoryStream.ToArray()   
                 $MemoryStream.Flush()  
                 $MemoryStream.Dispose()           
-            } ElseIf ($PSBoundParameters.ContainsKey('ToBitmap')) {
+            }
+            ElseIf ($PSBoundParameters.ContainsKey('ToBitmap')) {
                 $Icon.ToBitMap()
-            } ElseIf ($PSBoundParameters.ContainsKey('ToBase64')) {
+            }
+            ElseIf ($PSBoundParameters.ContainsKey('ToBase64')) {
                 $MemoryStream = New-Object System.IO.MemoryStream
                 $Icon.save($MemoryStream)
                 Write-Debug ($MemoryStream | Out-String)
@@ -177,10 +179,12 @@
                 $MemoryStream.Flush() 
                 $MemoryStream.Dispose()
                 [convert]::ToBase64String($Bytes)
-            }  Else {
+            }
+            Else {
                 $Icon
             }
-        } Else {
+        }
+        Else {
             Write-Warning "$Path does not exist!"
             Continue
         }
