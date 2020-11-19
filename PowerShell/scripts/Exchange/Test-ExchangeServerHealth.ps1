@@ -1,132 +1,126 @@
 <#
-    .SYNOPSIS
-    Test-ExchangeServerHealth.ps1 - Exchange Server Health Check Script.
+.SYNOPSIS
+Test-ExchangeServerHealth.ps1 - Exchange Server Health Check Script.
 
-    .DESCRIPTION 
-    Performs a series of health checks on Exchange servers and DAGs
-    and outputs the results to screen, and optionally to log file, HTML report,
-    and HTML email.
+.DESCRIPTION 
+Performs a series of health checks on Exchange servers and DAGs
+and outputs the results to screen, and optionally to log file, HTML report,
+and HTML email.
 
-    Use the ignorelist.txt file to specify any servers, DAGs, or databases you
-    want the script to ignore (eg test/dev servers).
+Use the ignorelist.txt file to specify any servers, DAGs, or databases you
+want the script to ignore (eg test/dev servers).
 
-    .OUTPUTS
-    Results are output to screen, as well as optional log file, HTML report, and HTML email
+.OUTPUTS
+Results are output to screen, as well as optional log file, HTML report, and HTML email
 
-    .PARAMETER Server
-    Perform a health check of a single server
+.PARAMETER Server
+Perform a health check of a single server
 
-    .PARAMETER ReportMode
-    Set to $true to generate a HTML report. A default file name is used if none is specified.
+.PARAMETER ReportMode
+Set to $true to generate a HTML report. A default file name is used if none is specified.
 
-    .PARAMETER ReportFile
-    Allows you to specify a different HTML report file name than the default.
+.PARAMETER ReportFile
+Allows you to specify a different HTML report file name than the default.
 
-    .PARAMETER SendEmail
-    Sends the HTML report via email using the SMTP configuration within the script.
+.PARAMETER SendEmail
+Sends the HTML report via email using the SMTP configuration within the script.
 
-    .PARAMETER AlertsOnly
-    Only sends the email report if at least one error or warning was detected.
+.PARAMETER AlertsOnly
+Only sends the email report if at least one error or warning was detected.
 
-    .PARAMETER Log
-    Writes a log file to help with troubleshooting.
+.PARAMETER Log
+Writes a log file to help with troubleshooting.
 
-    .EXAMPLE
-    .\Test-ExchangeServerHealth.ps1
-    Checks all servers in the organization and outputs the results to the shell window.
+.EXAMPLE
+.\Test-ExchangeServerHealth.ps1
+Checks all servers in the organization and outputs the results to the shell window.
 
-    .EXAMPLE
-    .\Test-ExchangeServerHealth.ps1 -Server HO-EX2010-MB1
-    Checks the server HO-EX2010-MB1 and outputs the results to the shell window.
+.EXAMPLE
+.\Test-ExchangeServerHealth.ps1 -Server HO-EX2010-MB1
+Checks the server HO-EX2010-MB1 and outputs the results to the shell window.
 
-    .EXAMPLE
-    .\Test-ExchangeServerHealth.ps1 -ReportMode -SendEmail
-    Checks all servers in the organization, outputs the results to the shell window, a HTML report, and
-    emails the HTML report to the address configured in the script.
+.EXAMPLE
+.\Test-ExchangeServerHealth.ps1 -ReportMode -SendEmail
+Checks all servers in the organization, outputs the results to the shell window, a HTML report, and
+emails the HTML report to the address configured in the script.
 
-    .LINK
-    https://practical365.com/exchange-server/powershell-script-exchange-server-health-check-report/
+.LINK
+https://practical365.com/exchange-server/powershell-script-exchange-server-health-check-report/
 
-    .NOTES
-    Written by: Paul Cunningham
+.NOTES
+Written by: Paul Cunningham
 
-    Find me on:
+Find me on:
 
-    * My Blog:	http://paulcunningham.me
-    * Twitter:	https://twitter.com/paulcunningham
-    * LinkedIn:	http://au.linkedin.com/in/cunninghamp/
-    * Github:	https://github.com/cunninghamp
+* My Blog:	https://paulcunningham.me
+* Twitter:	https://twitter.com/paulcunningham
+* LinkedIn:	https://au.linkedin.com/in/cunninghamp/
+* Github:	https://github.com/cunninghamp
 
-    For more Exchange Server tips, tricks and news
-    check out Exchange Server Pro.
+Additional Credits (code contributions and testing):
+- Chris Brown, http://twitter.com/chrisbrownie
+- Ingmar Brückner
+- John A. Eppright
+- Jonas Borelius
+- Thomas Helmdach
+- Bruce McKay
+- Tony Holdgate
+- Ryan
+- Rob Silver
+- andrewcr7, https://github.com/andrewcr7
 
-    * Website:	https://practical365.com
-    * Twitter:	https://twitter.com/practical365
+License:
 
-    Additional Credits (code contributions and testing):
-    - Chris Brown, http://twitter.com/chrisbrownie
-    - Ingmar Brückner
-    - John A. Eppright
-    - Jonas Borelius
-    - Thomas Helmdach
-    - Bruce McKay
-    - Tony Holdgate
-    - Ryan
-    - Rob Silver
-    - andrewcr7, https://github.com/andrewcr7
+The MIT License (MIT)
 
-    License:
+Copyright (c) 2017 Paul Cunningham
 
-    The MIT License (MIT)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-    Copyright (c) 2017 Paul Cunningham
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-    The above copyright notice and this permission notice shall be included in all
-    copies or substantial portions of the Software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-    SOFTWARE.
-
-    Change Log
-    V1.00, 05/07/2012 - Initial version
-    V1.01, 05/08/2012 - Minor bug fixes and removed Edge Tranport checks
-    V1.02, 05/05/2013 - A lot of bug fixes, updated SMTP to use Send-MailMessage, added DAG health check.
-    V1.03, 04/08/2013 - Minor bug fixes
-    V1.04, 19/08/2013 - Added Exchange 2013 compatibility, added option to output a log file, converted many
-                        sections of code to use pre-defined strings, fixed -AlertsOnly parameter, improved summary 
-                        sections of report to be more readable and include DAG summary
-    V1.05, 23/08/2013 - Added workaround for Test-ServiceHealth error for Exchange 2013 CAS-only servers
-    V1.06, 28/10/2013 - Added workaround for Test-Mailflow error for Exchange 2013 Mailbox servers.
-                    - Added workaround for Exchange 2013 mail test.
-                    - Added localization strings for service health check errors for non-English systems.
-                    - Fixed an uptime calculation bug for some regional settings.
-                    - Excluded recovery databases from active database calculation.
-                    - Fixed bug where high transport queues would not count as an alert.
-                    - Fixed error thrown when Site attribute can't be found for Exchange 2003 servers.
-                    - Fixed bug causing Exchange 2003 servers to be added to the report twice.
-    V1.07, 24/11/2013 - Fixed bug where disabled content indexes were counted as failed.
-    V1.08, 29/06/2014 - Fixed bug with DAG reporting in mixed Exchange 2010/2013 orgs.
-    V1.09, 06/07/2014 - Fixed bug with DAG member replication health reporting for mixed Exchange 2010/2013 orgs.
-    V1.10, 19/08/2014 - Fixed bug with E14 replication health not testing correct server.
-    V1.11, 11/02/2015 - Added queue length to Transport queue result in report.
-    V1.12, 05/03/2015 - Fixed bug with color-coding in report for Transport Queue length.
-    V1.13, 07/03/2015 - Fixed bug with incorrect function name used sometimes when trying to call Write-LogFile
-    V1.14, 21/05/2015 - Fixed bug with color-coding in report for Transport Queue length on CAS-only Exchange 2013 servers.
-    V1.15, 18/11/2015 - Fixed bug with Exchange 2016 version detection.
-    V1.16, 13/04/2017 - Fixed bugs with recovery DB detection, invalid variables, shadow redundancy queues, and lagged copy detection.
-    V1.17, 17/05/2017 - Fixed bug with auto-suspended content index detection
+Change Log
+V1.00, 05/07/2012 - Initial version
+V1.01, 05/08/2012 - Minor bug fixes and removed Edge Tranport checks
+V1.02, 05/05/2013 - A lot of bug fixes, updated SMTP to use Send-MailMessage, added DAG health check.
+V1.03, 04/08/2013 - Minor bug fixes
+V1.04, 19/08/2013 - Added Exchange 2013 compatibility, added option to output a log file, converted many
+                    sections of code to use pre-defined strings, fixed -AlertsOnly parameter, improved summary 
+                    sections of report to be more readable and include DAG summary
+V1.05, 23/08/2013 - Added workaround for Test-ServiceHealth error for Exchange 2013 CAS-only servers
+V1.06, 28/10/2013 - Added workaround for Test-Mailflow error for Exchange 2013 Mailbox servers.
+                  - Added workaround for Exchange 2013 mail test.
+				  - Added localization strings for service health check errors for non-English systems.
+				  - Fixed an uptime calculation bug for some regional settings.
+				  - Excluded recovery databases from active database calculation.
+				  - Fixed bug where high transport queues would not count as an alert.
+                  - Fixed error thrown when Site attribute can't be found for Exchange 2003 servers.
+                  - Fixed bug causing Exchange 2003 servers to be added to the report twice.
+V1.07, 24/11/2013 - Fixed bug where disabled content indexes were counted as failed.
+V1.08, 29/06/2014 - Fixed bug with DAG reporting in mixed Exchange 2010/2013 orgs.
+V1.09, 06/07/2014 - Fixed bug with DAG member replication health reporting for mixed Exchange 2010/2013 orgs.
+V1.10, 19/08/2014 - Fixed bug with E14 replication health not testing correct server.
+V1.11, 11/02/2015 - Added queue length to Transport queue result in report.
+V1.12, 05/03/2015 - Fixed bug with color-coding in report for Transport Queue length.
+V1.13, 07/03/2015 - Fixed bug with incorrect function name used sometimes when trying to call Write-LogFile
+V1.14, 21/05/2015 - Fixed bug with color-coding in report for Transport Queue length on CAS-only Exchange 2013 servers.
+V1.15, 18/11/2015 - Fixed bug with Exchange 2016 version detection.
+V1.16, 13/04/2017 - Fixed bugs with recovery DB detection, invalid variables, shadow redundancy queues, and lagged copy detection.
+V1.17, 17/05/2017 - Fixed bug with auto-suspended content index detection
 #>
 
 #requires -version 2
@@ -194,10 +188,10 @@ $logfile = "$myDir\exchangeserverhealth.log"
 #...................................
 
 $smtpsettings = @{
-    To         = "nessage@company.com"
-    From       = "ExchangeHealth@company.com"
+    To         = "administrator@exchangeserverpro.net"
+    From       = "exchangeserver@exchangeserverpro.net"
     Subject    = "$reportemailsubject - $now"
-    SmtpServer = "exchange.server"
+    SmtpServer = "smtp.exchangeserverpro.net"
 }
 
 
@@ -297,6 +291,8 @@ $string66 = ")"
 $string67 = "unhealthy content index count is"
 $string68 = "DAGs to check:"
 $string69 = "DAG databases to check"
+
+
 
 #...................................
 # Functions
@@ -402,7 +398,7 @@ Function Test-E15MailFlow() {
     
     Write-Verbose "Creating PSSession for $e15mailboxserver"
     $url = (Get-PowerShellVirtualDirectory -Server $e15mailboxserver -AdPropertiesOnly | Where-Object { $_.Name -eq "Powershell (Default Web Site)" }).InternalURL.AbsoluteUri
-    if ($null -eq $url) {
+    if ($url -eq $null) {
         $url = "http://$e15mailboxserver/powershell"
     }
 
@@ -447,7 +443,7 @@ Function Test-E14ReplicationHealth() {
 
     Write-Verbose "Creating PSSession for $e14cas"
     $url = (Get-PowerShellVirtualDirectory -Server $e14cas -AdPropertiesOnly | Where-Object { $_.Name -eq "Powershell (Default Web Site)" }).InternalURL.AbsoluteUri
-    if ($null -eq $url) {
+    if ($url -eq $null) {
         $url = "http://$e14cas/powershell"
     }
 
@@ -518,12 +514,14 @@ if (!(Get-PSSnapin | Where-Object { $_.Name -eq "Microsoft.Exchange.Management.P
     Connect-ExchangeServer -auto -AllowClobber
 }
 
+
 #Set scope to include entire forest
 Write-Verbose $initstring3
 if ($Log) { Write-Logfile $initstring3 }
 if (!(Get-ADServerSettings).ViewEntireForest) {
     Set-ADServerSettings -ViewEntireForest $true -WarningAction SilentlyContinue
 }
+
 
 #...................................
 # Script
@@ -628,7 +626,7 @@ foreach ($server in $exchangeservers) {
         $serverinfo = $null
     }
 
-    if ($null -eq $serverinfo) {
+    if ($serverinfo -eq $null ) {
         #Server is not an Exchange server
         Write-Host -ForegroundColor $warn $string0
         if ($Log) { Write-Logfile $string0 }
@@ -682,7 +680,7 @@ foreach ($server in $exchangeservers) {
             $ip = $null
         }
 
-        if ( $null -ne $ip ) {
+        if ( $ip -ne $null ) {
             Write-Host -ForegroundColor $pass "Pass"
             if ($Log) { Write-Logfile $string31 }
             $serverObj | Add-Member NoteProperty -Name "DNS" -Value "Pass" -Force
@@ -731,7 +729,7 @@ foreach ($server in $exchangeservers) {
             
             Write-Host "Uptime (hrs): " -NoNewline
 
-            if ($null -eq $OS) {
+            if ($OS -eq $null) {
                 [string]$uptime = $string17
                 if ($Log) { Write-Logfile $string17 }
                 switch ($ping) {
@@ -1004,7 +1002,7 @@ foreach ($server in $exchangeservers) {
                             Write-Host "MAPI connectivity: " -NoNewline;
                             foreach ($db in $mbdbs) {
                                 $mapistatus = Test-MapiConnectivity -Database $db.Identity -PerConnectionTimeout $mapitimeout
-                                if ($null -eq $mapistatus.Result.Value) {
+                                if ($mapistatus.Result.Value -eq $null) {
                                     $mapiresult = $mapistatus.Result
                                 }
                                 else {
@@ -1434,7 +1432,7 @@ if ($($dags.count) -gt 0) {
             }
             
             foreach ($healthitem in $replicationhealth) {
-                if ($null -eq $($healthitem.Result)) {
+                if ($($healthitem.Result) -eq $null) {
                     $healthitemresult = "n/a"
                 }
                 else {
