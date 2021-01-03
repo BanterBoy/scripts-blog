@@ -1,72 +1,98 @@
 <#
-    .SYNOPSIS
-    IISLogsCleanup.ps1 - IIS Log File Cleanup Script
+.SYNOPSIS
+IISLogsCleanup.ps1 - IIS Log File Cleanup Script
 
-    .DESCRIPTION 
-    A PowerShell script to compress and archive IIS log files.
+.DESCRIPTION 
+A PowerShell script to compress and archive IIS log files.
 
-    This script will check the folder that you specify, and any files older
-    than the first day of the previous month will be compressed into a
-    zip file. If you specify an archive path as well the zip file will be
-    moved to that location.
+This script will check the folder that you specify, and any files older
+than the first day of the previous month will be compressed into a
+zip file. If you specify an archive path as well the zip file will be
+moved to that location.
 
-    The recommended use for this script is a once-monthly scheduled task
-    run on the first day of each month. This will compress all files older
-    than the first day of the previous month, resulting in only 1-2 months
-    of log files being stored on the server.
+The recommended use for this script is a once-monthly scheduled task
+run on the first day of each month. This will compress all files older
+than the first day of the previous month, resulting in only 1-2 months
+of log files being stored on the server.
 
-    If the script detects any issues with the archive process that may
-    indicate that a file was missed it will not delete the log files from
-    the folder.
+If the script detects any issues with the archive process that may
+indicate that a file was missed it will not delete the log files from
+the folder.
 
-    The script also writes a log file each time it is run so you can check
-    the results or troubleshoot any issues.
+The script also writes a log file each time it is run so you can check
+the results or troubleshoot any issues.
 
-    .PARAMETER Logpath
-    The IIS log directory to cleanup.
+.PARAMETER Logpath
+The IIS log directory to cleanup.
 
-    .PARAMETER ArchivePath
-    The path to a location where zip files are moved to, for example
-    a central log repository stored on a NAS.
+.PARAMETER ArchivePath
+The path to a location where zip files are moved to, for example
+a central log repository stored on a NAS.
 
-    .EXAMPLE
-    .\IISLogsCleanup.ps1 -Logpath "D:\IIS Logs\W3SVC1"
-    This example will compress the log files in "D:\IIS Logs\W3SVC1" and leave
-    the zip files in that location.
+.EXAMPLE
+.\IISLogsCleanup.ps1 -Logpath "D:\IIS Logs\W3SVC1"
+This example will compress the log files in "D:\IIS Logs\W3SVC1" and leave
+the zip files in that location.
 
-    .EXAMPLE
-    .\IISLogsCleanup.ps1 -Logpath "D:\IIS Logs\W3SVC1" -ArchivePath "\\nas01\archives\iislogs"
-    This example will compress the log files in "D:\IIS Logs\W3SVC1" and move
-    the zip files to the archive path.
+.EXAMPLE
+.\IISLogsCleanup.ps1 -Logpath "D:\IIS Logs\W3SVC1" -ArchivePath "\\nas01\archives\iislogs"
+This example will compress the log files in "D:\IIS Logs\W3SVC1" and move
+the zip files to the archive path.
 
-    .LINK
-    http://exchangeserverpro.com/powershell-script-iis-logs-cleanup
+.LINK
+http://exchangeserverpro.com/powershell-script-iis-logs-cleanup
 
-    .NOTES
-    Written by: Paul Cunningham
+.NOTES
+Written by: Paul Cunningham
 
-    Find me on:
+Find Paul Cunningham on:
 
-    * My Blog:	http://paulcunningham.me
-    * Twitter:	https://twitter.com/paulcunningham
-    * LinkedIn:	http://au.linkedin.com/in/cunninghamp/
-    * Github:	https://github.com/cunninghamp
+* My Blog:      https://paulcunningham.me
+* Twitter:      https://twitter.com/paulcunningham
+* LinkedIn:     https://au.linkedin.com/in/cunninghamp/
+* Github:       https://github.com/cunninghamp
 
-    For more Exchange Server tips, tricks and news
-    check out Exchange Server Pro.
-
-    * Website:	http://exchangeserverpro.com
-    * Twitter:	http://twitter.com/exchservpro
-
-    Additional Credits:
-    Filip Kasaj - http://ficility.net/2013/02/25/ps-2-0-remove-and-compress-iis-logs-automatically/
-    Rob Pettigrew - regional date issues
-    Alain Arnould - Zip file locking issues
+Amendments by Luke Leigh
+* My Blog:      https://blog.lukeleigh.com
+* Scripts Site: https://scripts.lukeleigh.com
+* Twitter:      https://twitter.com/luke_leighs
+* LinkedIn:     https://www.linkedin.com/in/lukeleigh/
+* Github:	    https://github.com/BanterBoy
 
 
-    Change Log
-    V1.00, 7/04/2014, Initial version
-    V1.01, 8/08/2015, Fix for regional date format issues, Zip file locking issues.
+Additional Credits:
+Filip Kasaj - http://ficility.net/2013/02/25/ps-2-0-remove-and-compress-iis-logs-automatically/
+Rob Pettigrew - regional date issues
+Alain Arnould - Zip file locking issues
+
+License:
+
+The MIT License (MIT)
+
+Copyright (c) 2015 Paul Cunningham
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Change Log
+V1.00, 7/04/2014, Initial version
+V1.01, 8/08/2015, Fix for regional date format issues, Zip file locking issues.
+V1.02, 25/08/2015, Fixed typo in a variable
 #>
 
 
@@ -96,7 +122,8 @@ $firstdayofpreviousmonth = (Get-Date -Year $currentyear -Month $currentmonth -Da
 
 $myDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $output = "$myDir\IISLogsCleanup.log"
-$logpathfoldername = $logpath.Split("\")[-1]
+$logpathfoldername = Split-Path $logpath -Leaf
+# amended $logpathfoldername = $logpath.Split("\")[-1] - Luke Leigh
 
 #...................................
 # Logfile Strings
@@ -121,13 +148,13 @@ Function Write-Logfile() {
 # Function provided by Alain Arnould
 function IsFileLocked( [string]$path) {
     If ([string]::IsNullOrEmpty($path) -eq $true) {
-        Throw “The path must be specified.”
+        Throw "The path must be specified."
     }
 
     [bool] $fileExists = Test-Path $path
 
     If ($fileExists -eq $false) {
-        Throw “File does not exist (” + $path + “)”
+        Throw "File does not exist (" + $path + ")"
     }
 
     [bool] $isFileLocked = $true
@@ -143,7 +170,7 @@ function IsFileLocked( [string]$path) {
         $isFileLocked = $false
     }
     Catch [IO.IOException] {
-        If ($_.Exception.Message.EndsWith(“it is being used by another process.”) -eq $false) {
+        If ($_.Exception.Message.EndsWith("it is being used by another process.") -eq $false) {
             # Throw $_.Exception
             [bool] $isFileLocked = $true
         }
@@ -168,7 +195,7 @@ function IsFileLocked( [string]$path) {
 $timestamp = Get-Date -DisplayHint Time
 "$timestamp $logstring0" | Out-File $output
 Write-Logfile $logstring1
-Write-Logfile "  $no"
+Write-Logfile "  $now"
 Write-Logfile $logstring0w
 
 
@@ -222,7 +249,7 @@ $dates = @($hashtable | Group-Object -Property:Value | Select-Object Name)
 
 #For each yyyy-MM date add those logfiles to a zip file
 foreach ($date in $dates) {
-    $zipfilename = "$Logpath\$computername-$logpathfoldername-$($date.Name).zip"
+    $zipfilename = "$Logpath" + "$computername-$logpathfoldername-$($date.Name).zip"
 
     if (-not (test-path($zipfilename))) {
         set-content $zipfilename ("PK" + [char]5 + [char]6 + ("$([char]0)" * 18))
