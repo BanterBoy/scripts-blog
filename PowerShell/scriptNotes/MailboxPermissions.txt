@@ -8,7 +8,7 @@ UserName                                Calendar                                
 Administrator                           Calendar                                {PublishingEditor}
 
 
-PS C:\> Get-ADGroupMember -Identity 'Administrator' | Sort-Object Name | Format-Table -Property Name
+PS C:\> Get-ADGroupMember -Identity 'Administrator' | Sort-Object -Property Name | Select-Object -Property Name
 
 Name
 ----
