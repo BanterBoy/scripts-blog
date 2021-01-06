@@ -6,15 +6,13 @@ PS C:\> Get-Service | Out-GridView
 However, with a little trick Out-GridView becomes even more versatile. You can pipe information to the same output window whenever you want to.
 
 First, get yourself an instance of Out-GridView that thinks it is running in a pipeline:
+Now, you can output whatever you want by calling “Process”. Each call to Process() is like piping an element to the cmdlet:
+When you are done, call End() to end the pipeline:
+This way, you could log information to a grid view or use it as a generic output window that shows results to the user.
 
 $pipeline = { Out-GridView }.GetSteppablePipeline()
 $pipeline.Begin($true)
-Now, you can output whatever you want by calling “Process”. Each call to Process() is like piping an element to the cmdlet:
-
 $pipeline.Process('Hello this is awesome!')
 Start-Sleep -Seconds 4
 $pipeline.Process('You can output any time...')
-When you are done, call End() to end the pipeline:
-
 $pipeline.End()
-This way, you could log information to a grid view or use it as a generic output window that shows results to the user.
