@@ -21,3 +21,14 @@ https://www.slipstick.com/
 https://www.slipstick.com/exchange/save-items-shared-mailbox-exchange-server-cmdlet/
 
 https://blogs.msdn.microsoft.com/mast/2015/05/18/what-is-the-ip-address-168-63-129-16/
+
+Redirect user to Microsoft login screen with scopes and required parameters
+https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id={0}&redirect_uri={1}&response_type=code&scope=openid+Calendars.ReadWrite+Mail.Send+offline_access
+
+
+
+
+https://blog.moneysavingexpert.com/2020/04/martin-lewis--working-from-home-due-to-coronavirus--claim-p6-wk-/
+
+https://static.ventrica.co.uk/itfaq/index.htm
+
