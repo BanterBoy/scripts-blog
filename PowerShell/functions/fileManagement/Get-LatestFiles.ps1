@@ -15,7 +15,7 @@ function Get-LatestFiles {
     Outputs inlcude the Directory,Filename and LastWriteTime
 
     .EXAMPLE
-    -DaysPast 7 -Path 'C:\GitRepos\AdminToolkit\PowerShell' -FileType *.*
+    Get-LatestFiles -DaysPast 7 -Path 'C:\GitRepos\AdminToolkit\PowerShell' -FileType *.*
     
     Recursively scans the folder 'C:\GitRepos\AdminToolkit\PowerShell' looking for all files that have been
     amended in the last 7 days
