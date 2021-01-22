@@ -27,35 +27,35 @@ function Test-DNSPropagation {
 
         foreach ($Record in $Records) {
             Try {
-                # Google
+                Write-Warning -Message "Testing Google Public DNS"
                 Resolve-DnsName -Name $Record -Type $Type -ErrorAction Stop -Server 8.8.8.8
                 Resolve-DnsName -Name $Record -Type $Type -ErrorAction Stop -Server 8.8.4.4
         
-                # Quad9
+                Write-Warning -Message "Testing Quad9 Public DNS"
                 Resolve-DnsName -Name $Record -Type $Type -ErrorAction Stop -Server 9.9.9.9
                 Resolve-DnsName -Name $Record -Type $Type -ErrorAction Stop -Server 149.112.112.112
         
-                # OpenDNS Home
+                Write-Warning -Message "Testing OpenDNS Home Public DNS"
                 Resolve-DnsName -Name $Record -Type $Type -ErrorAction Stop -Server 208.67.222.222
                 Resolve-DnsName -Name $Record -Type $Type -ErrorAction Stop -Server 208.67.220.220
         
-                # Cloudflare
+                Write-Warning -Message "Testing Cloudflare Public DNS"
                 Resolve-DnsName -Name $Record -Type $Type -ErrorAction Stop -Server 1.1.1.1
                 Resolve-DnsName -Name $Record -Type $Type -ErrorAction Stop -Server 1.0.0.1
         
-                # CleanBrowsing
+                Write-Warning -Message "Testing CleanBrowsing Public DNS"
                 Resolve-DnsName -Name $Record -Type $Type -ErrorAction Stop -Server 185.228.168.9
                 Resolve-DnsName -Name $Record -Type $Type -ErrorAction Stop -Server 185.228.169.9
         
-                # Verisign
+                Write-Warning -Message "Testing Verisign Public DNS"
                 Resolve-DnsName -Name $Record -Type $Type -ErrorAction Stop -Server 64.6.64.6
                 Resolve-DnsName -Name $Record -Type $Type -ErrorAction Stop -Server 64.6.65.6
         
-                # Alternate DNS
+                Write-Warning -Message "Testing Alternate DNS Public DNS"
                 Resolve-DnsName -Name $Record -Type $Type -ErrorAction Stop -Server 198.101.242.72
                 Resolve-DnsName -Name $Record -Type $Type -ErrorAction Stop -Server 23.253.163.53
         
-                # AdGuard DNS
+                Write-Warning -Message "Testing AdGuardDNS Public DNS"
                 Resolve-DnsName -Name $Record -Type $Type -ErrorAction Stop -Server 176.103.130.130
                 Resolve-DnsName -Name $Record -Type $Type -ErrorAction Stop -Server 176.103.130.131
             }
