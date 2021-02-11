@@ -1,0 +1,20 @@
+dcdiag /c /e /v > "YOUR FILE PATH HERE\AD-dcdiag-report.txt"
+dsquery server -o rdn > "YOUR FILE PATH HERE\list-all-DCs.txt"
+repadmin /showrepl * > "YOUR FILE PATH HERE\all-dc-replication-summary.txt"
+repadmin /replsummary > "YOUR FILE PATH HERE\replication-health-summary.txt"
+repadmin /showbackup * > "YOUR FILE PATH HERE\DC-backup.txt"
+repadmin /queue * > "YOUR FILE PATH HERE\replication-queue.txt"
+repadmin /bridgeheads * /verbose > "YOUR FILE PATH HERE\topology-summary.txt"
+repadmin /istg * /verbose > "YOUR FILE PATH HERE\site-topology-summary.txt"
+repadmin /failcache * > "YOUR FILE PATH HERE\failed-replication-kcc.txt"
+repadmin /showtrust * > "YOUR FILE PATH HERE\show-trusts.txt"
+repadmin /bind * > "YOUR FILE PATH HERE\ad-partition-info.txt"
+repadmin /kcc * > "YOUR FILE PATH HERE\recalculate-kcc.txt"
+
+This one should only be run if you are tying to force replication and can also obviously be run without exporting to a text file.
+repadmin /syncall /APed > "YOUR FILE PATH HERE\forced-push-replication.txt"
+
+
+Get-ADReplicationUpToDatenessVectorTable -Target "$env:USERDNSDOMAIN"
+Get-ADReplicationUpToDatenessVectorTable -Target "$env:USERDNSDOMAIN" | Sort-Object LastReplicationSuccess
+

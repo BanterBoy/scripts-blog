@@ -1,0 +1,326 @@
+Hello Steve,
+
+As discussed this morning in the meeting, here are the details of the investigation into why the “Time Drifts” in both Data Centre’s in the current configuration.
+
+
+
+
+NTP Sources & Time Drift
+
+Assessment
+
+The bods at Microsoft have performed some intensive testing using some newly created tools in order to establish the best methodology in configuring your environment to utilise an external “UTC Time Source”.
+
+Moving on, here are links to the reference documents providing details on how this should now work.
+
+
+Windows Server 2016 Accurate Time
+https://docs.microsoft.com/en-gb/windows-server/identity/ad-ds/get-started/windows-time-service/windows-2016-accurate-time (contains a number of links providing additional information)
+
+
+Ben Armstrong’s Virtualization Blog
+Hyper-V Program Manager (TechNet)
+https://blogs.msdn.microsoft.com/virtual_pc_guy/2010/11/19/time-synchronization-in-hyper-v/
+(Detailed Blog post from Microsoft regarding the methodology behind managing Virtual Machine Time Synchronisation and used as source for Time Sync Settings)
+
+
+Time sync and Windows
+https://www.lyquidity.com/devblog/?p=95
+(Blogpost source for Time Sync Settings)
+
+
+Completely Disable Time Synchronization for your VM
+Posted on January 6, 2016 by Deji
+https://blogs.vmware.com/apps/2016/01/completely-disable-time-synchronization-for-your-vm.html
+(VMWare Blogpost describing current VMware recommendations on time configuration and used as source for VMWare methodology)
+
+
+Best Practices: Time synchronization with virtual Domain Controllers
+https://www.itpromentor.com/time-sync/
+https://windowshell.wordpress.com/2012/01/02/configuring-an-authoritative-time-source-for-your-windows-domain/
+https://support.microsoft.com/en-gb/help/816042/how-to-configure-an-authoritative-time-server-in-windows-server
+http://www.pool.ntp.org/en/use.html
+
+(Blogpost source for Time Sync Settings)
+
+
+Documentation and Links - Network Time Foundation
+http://nwtime.org/documentationandlinks/
+
+
+A list of the Simple Network Time Protocol (SNTP) time servers that are available on the Internet
+https://support.microsoft.com/en-gb/help/262680/a-list-of-the-simple-network-time-protocol-sntp-time-servers-that-are-available-on-the-internet
+(Microsoft recommendations for internet time sources)
+
+
+Recommendations
+
+NTP Time Server: LANTIME Stratum 1 Server for all Networks
+https://www.meinbergglobal.com/english/products/ntp-time-server.htm
+
+Sadly costs are approx £2000 for something like this but fortunately we do not rely on time that much it warrants the purchase of a Time Server, synchronising from the internet will be sufficient.
+
+C4L DDoS NTP Amplification Attacks
+https://www.htl.london/images/ddos-ntp-amplification-attacks.pdf
+(C4L Recommendations to mitigate against DDoS using forged time server requests)
+
+
+
+Suggested configurations
+
+
+
+
+DC with PDC Role should be configured with the following command
+
+w32tm /config /syncfromflags:manual /manualpeerlist:"0.pool.ntp.org 1.pool.ntp.org 2.pool.ntp.org 3.pool.ntp.org" /reliable:yes /update
+
+
+reg add HKLM\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\VMICTimeProvider /v Enabled /t reg_dword /d 0
+
+w32tm /config /syncfromflags:DOMHIER /update
+
+net stop w32time & net start w32time
+
+w32tm /resync /force
+
+
+
+
+http://www.galsys.co.uk/time-server/uk-time-server.html
+
+
+UK Stratum 1 Time Servers
+http://www.timetools.co.uk/2013/07/25/ntp-server-uk/
+
+Stratum 1 NTP Time Servers
+Hostname	IP Address	 DNS	Location and Type
+chronos.csr.net	194.35.252.7	Yes	Computing Systems Research Ltd.
+
+UKNTP V4 primary (Odetics GPS), Sun/Sparc Solaris 2.6
+ntp.my-inbox.co.uk	81.168.77.149	No	Falmouth, Cornwall, UK
+NTP V4.2.0 primary (MSF Radio Clock Receiver), Trustix Linux
+
+
+
+
+NTP Time Server: LANTIME Stratum 1 Server for all Networks
+https://www.meinbergglobal.com/english/products/ntp-time-server.htm
+
+Sadly costs are approx £2000 for something like this but fortunately we do not rely on time that much it warrants the purchase of a Time Server, synchronising from the internet will be sufficient.
+
+
+
+
+Discovering the Hierarchy
+
+Troubleshoot a specific client; the first step is to understand its time source by using this w32tm command.
+
+w32tm /query /status /verbose
+
+(Example)
+PS Scripts:\> w32tm /query /status /verbose
+Leap Indicator: 0(no warning)
+Stratum: 4 (secondary reference - syncd by (S)NTP)
+Precision: -6 (15.625ms per tick)
+Root Delay: 0.0743462s
+Root Dispersion: 0.4685089s
+ReferenceId: 0x0A00011C (source IP:  10.0.1.28)
+Last Successful Sync Time: 28/04/2017 08:11:06
+Source: FSI-AD01.fsi.co.uk
+Poll Interval: 15 (32768s)
+
+Phase Offset: 0.0003753s
+ClockRate: 0.0156251s
+State Machine: 2 (Sync)
+Time Source Flags: 2 (Authenticated )
+Server Role: 0 (None)
+Last Sync Error: 0 (The command completed successfully.)
+Time since Last Good Sync Time: 27087.6940441s
+
+
+
+
+Next use Source entry from above and use the /StripChart parameter to find the next time source in the chain.
+
+(Example)
+PS Scripts:\> w32tm /stripchart /computer:10.0.1.28 /packetinfo /samples:1
+Tracking 10.0.1.28 [10.0.1.28:123].
+Collecting 1 samples.
+The current time is 28/04/2017 15:59:55.
+15:59:55, d:+00.0066666s o:-00.0052707s  [                           *                           ]
+[NTP Packet]
+Leap Indicator: 0(no warning)
+Version Number: 3
+Mode: 4 (Server)
+Stratum: 3 (secondary reference - syncd by (S)NTP)
+Poll Interval: 0 (unspecified)
+Precision: -6 (15.625ms per tick)
+Root Delay: 0x0000.1132 (+00.0671692s)
+Root Dispersion: 0x0000.5794 (0.3421021s)
+ReferenceId: 0xB03A6DC7 (source IP:  176.58.109.199)
+Reference Timestamp: 0xDCADD379A914211F (152058 14:43:05.6604634s - 28/04/2017 15:43:05)
+Originate Timestamp: 0xDCADD76B0120692C (152058 14:59:55.0044008s - 28/04/2017 15:59:55)
+Receive Timestamp: 0xDCADD76B00A170FE (152058 14:59:55.0024634s - 28/04/2017 15:59:55)
+Transmit Timestamp: 0xDCADD76B00A170FE (152058 14:59:55.0024634s - 28/04/2017 15:59:55)
+[non-NTP Packet]
+Destination Timestamp: Roundtrip Delay: 6666600 (+00.0066666s)
+Local Clock Offset: -5270700 (-00.0052707s)
+
+
+Also useful, the following command lists each domain controller it can find in the specified domain and prints a result which lets you determine each partner. This command will include machines that have been configured manually.
+
+
+(Example)
+PS Scripts:\> w32tm /monitor /domain:fsi.co.uk
+DC4FSIAD01.fsi.co.uk[192.168.22.100:123]:
+    ICMP: 10ms delay
+    NTP: error ERROR_TIMEOUT - no response from server in 1000ms
+FSI-AD01.fsi.co.uk *** PDC ***[10.0.1.28:123]:
+    ICMP: 6ms delay
+    NTP: +0.0000000s offset from FSI-AD01.fsi.co.uk
+        RefID: time.videxio.net [176.58.109.199]
+        Stratum: 3
+DC5FSIAD01.fsi.co.uk[192.168.43.100:123]:
+    ICMP: error IP_REQ_TIMED_OUT - no response in 1000ms
+    NTP: +0.0099610s offset from FSI-AD01.fsi.co.uk
+        RefID: FSI-AD01.fsi.co.uk [10.0.1.28]
+        Stratum: 4
+
+Warning:
+Reverse name resolution is best effort. It may not be
+correct since RefID field in time packets differs across
+NTP implementations and may not be using IP addresses.
+
+
+Virtualized Domains
+
+Virtualized Domains - In order to control Virtualized Domain Controllers in Windows 2012R2 so that they synchronize time with their domain, rather than with the Hyper-V host, you can disable this registry entry. For the PDC, you don’t want to disable the entry as the Hyper-V host will deliver the most stable time source. The registry entry requires that you restart the w32time service after it is changed.
+
+reg add HKLM\SYSTEM\CurrentControlSet\Services\W32Time\TimeProviders\VMICTimeProvider /v Enabled /t reg_dword /d 0
+
+
+
+Current DC4 and DC5 Tests
+
+DC4 Tests - DC4VLADM01
+
+PS C:\> NETDOM QUERY FSMO
+Schema master               DC4VLADM01.fsifmhosting.local
+Domain naming master        DC4VLADM02.fsifmhosting.local
+PDC                         DC4VLADM01.fsifmhosting.local
+RID pool manager            DC4VLADM01.fsifmhosting.local
+Infrastructure master       DC4VLADM01.fsifmhosting.local
+The command completed successfully.
+
+
+PS C:\> w32tm /query /status
+The following error occurred: The service has not been started. (0x80070426)
+
+PS C:\> w32tm /query /configuration
+The following error occurred: The service has not been started. (0x80070426)
+
+PS C:\> w32tm /monitor /domain:fsifmhosting.local
+DC4VLADM01.fsifmhosting.local *** PDC ***[[::1]:123]:
+    ICMP: 0ms delay
+    NTP: error WSAECONNRESET - no server listening on NTP port
+DC4VLADM02.fsifmhosting.local[192.168.21.101:123]:
+    ICMP: 0ms delay
+    NTP: error WSAECONNRESET - no server listening on NTP port
+DC5VLADM01.fsifmhosting.local[192.168.41.100:123]:
+    ICMP: 1ms delay
+    NTP: -0.1796680s offset from DC4VLADM01.fsifmhosting.local
+        RefID: (unspecified / unsynchronized) [0x00000000]
+        Stratum: 0
+DC5VLADM02.fsifmhosting.local[192.168.41.101:123]:
+    ICMP: 1ms delay
+    NTP: -0.2551682s offset from DC4VLADM01.fsifmhosting.local
+        RefID: (unspecified / unsynchronized) [0x00000000]
+        Stratum: 0
+
+Warning:
+Reverse name resolution is best effort. It may not be
+correct since RefID field in time packets differs across
+NTP implementations and may not be using IP addresses.
+
+
+DC5 Tests - DC5MANAD01
+
+PS C:\> NETDOM QUERY FSMO
+Schema master               DC5MANAD01.cloud.hosted
+Domain naming master        DC5MANAD01.cloud.hosted
+PDC                         DC5MANAD01.cloud.hosted
+RID pool manager            DC5MANAD01.cloud.hosted
+Infrastructure master       DC5MANAD01.cloud.hosted
+The command completed successfully.
+
+PS C:\> w32tm /query /status /verbose
+Leap Indicator: 0(no warning)
+Stratum: 3 (secondary reference - syncd by (S)NTP)
+Precision: -6 (15.625ms per tick)
+Root Delay: 0.1381989s
+Root Dispersion: 7.7774874s
+ReferenceId: 0x81FA23FA (source IP:  129.250.35.250)
+Last Successful Sync Time: 28/04/2017 16:19:56
+Source: 0.uk.pool.ntp.org
+Poll Interval: 10 (1024s)
+
+Phase Offset: 0.0000689s
+ClockRate: 0.0156249s
+State Machine: 2 (Sync)
+Time Source Flags: 0 (None)
+Server Role: 576 (Reliable Time Service)
+Last Sync Error: 0 (The command completed successfully.)
+Time since Last Good Sync Time: 589.2722293s
+
+PS C:\> w32tm /monitor /domain:cloud.hosted
+DC5MANAD01.cloud.hosted *** PDC ***[[::1]:123]:
+    ICMP: 0ms delay
+    NTP: +0.0000000s offset from DC5MANAD01.cloud.hosted
+        RefID: x.ns.gin.ntt.net [129.250.35.250]
+        Stratum: 3
+DC5MANAD02.cloud.hosted[192.168.40.151:123]:
+    ICMP: 0ms delay
+    NTP: +0.0076762s offset from DC5MANAD01.cloud.hosted
+        RefID: lon.jonesey.net [46.101.52.119]
+        Stratum: 3
+
+Warning:
+Reverse name resolution is best effort. It may not be
+correct since RefID field in time packets differs across
+NTP implementations and may not be using IP addresses.
+PS C:\> w32tm /query /status
+Leap Indicator: 0(no warning)
+Stratum: 3 (secondary reference - syncd by (S)NTP)
+Precision: -6 (15.625ms per tick)
+Root Delay: 0.1381989s
+Root Dispersion: 7.7774874s
+ReferenceId: 0x81FA23FA (source IP:  129.250.35.250)
+Last Successful Sync Time: 28/04/2017 16:19:56
+Source: 0.uk.pool.ntp.org
+Poll Interval: 10 (1024s)
+
+PS C:\> w32tm /stripchart /computer:129.250.35.250 /packetinfo /samples:1
+Tracking 129.250.35.250 [129.250.35.250:123].
+Collecting 1 samples.
+The current time is 28/04/2017 16:28:32.
+16:28:32 error: 0x800705B4
+[NTP Packet]
+Leap Indicator: 0(no warning)
+Version Number: 1
+Mode: 3 (Client)
+Stratum: 0 (unspecified)
+Poll Interval: 0 (unspecified)
+Precision: 0 (unspecified)
+Root Delay: 0x0000.0000 (unspecified)
+Root Dispersion: 0x0000.0000 (unspecified)
+ReferenceId: 0x00000000 (unspecified)
+Reference Timestamp: 0x0000000000000000 (unspecified)
+Originate Timestamp: 0x0000000000000000 (unspecified)
+Receive Timestamp: 0x0000000000000000 (unspecified)
+Transmit Timestamp: 0xDCADDE2009057661 (152058 15:28:32.0352396s - 28/04/2017 16:28:32)
+[non-NTP Packet]
+Destination Timestamp: Roundtrip Delay: -13137834951398782000 (-13137834951.3987820s)
+Local Clock Offset: 6568917475699391000 (+6568917475.6993910s)
+
+

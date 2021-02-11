@@ -1,0 +1,10 @@
+$Address.Split("@")[1]
+
+
+$pipeline = { Out-GridView }.GetSteppablePipeline()
+$pipeline.Begin($true)
+$pipeline.Process('Hello this is awesome!')
+Start-Sleep -Seconds 10
+$pipeline.Process('You can output any time...')
+$pipeline.End()
+

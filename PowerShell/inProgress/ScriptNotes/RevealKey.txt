@@ -1,0 +1,3 @@
+Click Command Prompt (Admin) 
+At the command prompt, type wmic path SoftwareLicensingService get OA3xOriginalProductKey
+This will reveal the product key. 

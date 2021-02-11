@@ -1,0 +1,13 @@
+Get-Help Get-ADReplicationUpToDatenessVectorTable -Examples
+Get-ADReplicationUpToDatenessVectorTable -Target "$env:USERDNSDOMAIN"
+Get-ADReplicationUpToDatenessVectorTable -Target "$env:USERDNSDOMAIN" | Sort-Object LastReplicationSuccess
+
+
+$ID = 234
+"Server${ID}Rack12"
+
+
+$ID1 = 234
+$ID2 = 156
+"Server${ID1}${ID2}Rack12"
+

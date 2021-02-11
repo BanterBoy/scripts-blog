@@ -1,0 +1,3 @@
+Empty Recoverable Items after emptying the OWA Recycle Bin
+
+Search-Mailbox -Identity csadmin -SearchDumpsterOnly -DeleteContent

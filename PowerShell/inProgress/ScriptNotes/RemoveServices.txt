@@ -1,0 +1,7 @@
+Open CMD
+Enter Powershell
+Get-Service -Name * | Format-Table -Property Name
+Locate Service Names
+Enter exit to return to CMD shell
+
+(Get-WmiObject win32_service -Filter "name='SERVICE TO REMOVE'").delete()

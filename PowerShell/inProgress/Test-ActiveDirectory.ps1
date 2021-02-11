@@ -1,0 +1,13 @@
+
+dcdiag /c /e /v > "C:\Temp\ADDiag\AD-dcdiag-report.txt"
+dsquery server -o rdn > "C:\Temp\ADDiag\list-all-DCs.txt"
+repadmin /showrepl * > "C:\Temp\ADDiag\all-dc-replication-summary.txt"
+repadmin /replsummary > "C:\Temp\ADDiag\replication-health-summary.txt"
+repadmin /showbackup * > "C:\Temp\ADDiag\DC-backup.txt"
+repadmin /queue * > "C:\Temp\ADDiag\replication-queue.txt"
+repadmin /bridgeheads * /verbose > "C:\Temp\ADDiag\topology-summary.txt"
+repadmin /istg * /verbose > "C:\Temp\ADDiag\site-topology-summary.txt"
+repadmin /failcache * > "C:\Temp\ADDiag\failed-replication-kcc.txt"
+repadmin /showtrust * > "C:\Temp\ADDiag\show-trusts.txt"
+repadmin /bind * > "C:\Temp\ADDiag\ad-partition-info.txt"
+repadmin /kcc * > "C:\Temp\ADDiag\recalculate-kcc.txt"

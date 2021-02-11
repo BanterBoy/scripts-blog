@@ -1,0 +1,25 @@
+--------------------
+Copy XML to root of C: on PC containing Word and SYDI tools
+
+
+Generate Documentation (XML)
+
+cscript C:\sydi-server-2.4\sydi-server.vbs -oC:\SERVERNAME.xml -ex -sh
+
+
+Convert to Word
+
+cscript.exe "C:\sydi-server-2.4\tools\ss-xml2word.vbs" -x"C:\SERVERNAME.xml" -l"C:\sydi-server-2.4\language\lang_english.xml" -s"C:\SERVERNAME.xml"
+
+--------------------
+
+
+Generate Documentation (XML) Example
+
+cscript C:\Users\leigh_l\Desktop\sydi-server-2.4\sydi-server.vbs -oC:\Users\leigh_l\Desktop\DC4FSIBAK01.xml -ex -sh
+
+
+Convert to Word Example
+
+cscript.exe "C:\GitRepos\PowerShellScripts\ProfileFunctions\sydi-server-2.4\tools\ss-xml2word.vbs" -x"C:\Clients\RWCPartners\RWC-AD-Fixes\RWC-DR-DC2V-2019051409_5911.xml" -l"C:\GitRepos\PowerShellScripts\ProfileFunctions\sydi-server-2.4\language\lang_english.xml" -s":\Clients\RWCPartners\RWC-AD-Fixes\RWC-DR-DC2V-2019051409_5911.xml"
+

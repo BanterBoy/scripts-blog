@@ -1,0 +1,136 @@
+----------------------------------------
+ Querying MAIL01
+----------------------------------------
+Outlook Anywhere
+ - Internal: mail.ventrica.co.uk
+ - External: mail.ventrica.co.uk
+
+Outlook Web App
+ - Internal: https://mail.ventrica.co.uk/owa https://eacex1.ventrica.co.uk/
+ - External: https://mail.ventrica.co.uk/owa https://mail.ventrica.co.uk/owa
+
+Exchange Control Panel
+ - Internal: https://mail.ventrica.co.uk/ecp https://eacex1.ventrica.co.uk/
+ - External: https://mail.ventrica.co.uk/ecp https://mail.ventrica.co.uk/ecp
+
+Offline Address Book
+ - Internal: https://mail.ventrica.co.uk/OAB
+ - External: https://mail.ventrica.co.uk/OAB
+
+Exchange Web Services
+ - Internal: https://mail.ventrica.co.uk/ews/exchange.asmx
+ - External: https://mail.ventrica.co.uk/ews/exchange.asmx
+
+MAPI
+ - Internal: https://mail01.ventrica.local/mapi
+ - External:
+
+ActiveSync
+ - Internal: https://mail.ventrica.co.uk/Microsoft-Server-ActiveSync
+ - External: https://mail.ventrica.co.uk/Microsoft-Server-ActiveSync
+
+Autodiscover
+ - Internal SCP: https://autodiscover.ventrica.co.uk/Autodiscover/Autodiscover.xml
+
+----------------------------------------
+ Querying MAIL02
+----------------------------------------
+Outlook Anywhere
+ - Internal: mail.ventrica.co.uk
+ - External: mail.ventrica.co.uk
+
+Outlook Web App
+ - Internal: https://mail.ventrica.co.uk/owa https://eacex2.ventrica.co.uk/
+ - External: https://mail.ventrica.co.uk/owa
+
+Exchange Control Panel
+ - Internal: https://mail.ventrica.co.uk/ecp https://eacex2.ventrica.co.uk/
+ - External: https://mail.ventrica.co.uk/ecp
+
+Offline Address Book
+ - Internal: https://mail.ventrica.co.uk/OAB
+ - External: https://mail.ventrica.co.uk/OAB
+
+Exchange Web Services
+ - Internal: https://mail02.ventrica.local/ews/exchange.asmx
+ - External:
+
+MAPI
+ - Internal: https://mail02.ventrica.local/mapi
+ - External:
+
+ActiveSync
+ - Internal: https://mail02.ventrica.local/Microsoft-Server-ActiveSync
+ - External:
+
+Autodiscover
+ - Internal SCP: https://autodiscover.ventrica.co.uk/Autodiscover/Autodiscover.xml
+
+----------------------------------------
+ Querying MAIL03
+----------------------------------------
+Outlook Anywhere
+ - Internal: mail03.ventrica.local
+ - External:
+
+Outlook Web App
+ - Internal: https://mail03.ventrica.local/owa
+ - External:
+
+Exchange Control Panel
+ - Internal: https://mail03.ventrica.local/ecp
+ - External:
+
+Offline Address Book
+ - Internal: https://mail03.ventrica.local/OAB
+ - External:
+
+Exchange Web Services
+ - Internal: https://mail03.ventrica.local/EWS/Exchange.asmx
+ - External:
+
+MAPI
+ - Internal: https://mail03.ventrica.local/mapi
+ - External:
+
+ActiveSync
+ - Internal: https://mail03.ventrica.local/Microsoft-Server-ActiveSync
+ - External:
+
+Autodiscover
+ - Internal SCP: https://mail03.ventrica.local/Autodiscover/Autodiscover.xml
+
+----------------------------------------
+ Querying MAIL04
+----------------------------------------
+Outlook Anywhere
+ - Internal: mail04.ventrica.local
+ - External:
+
+Outlook Web App
+ - Internal: https://mail04.ventrica.local/owa
+ - External:
+
+Exchange Control Panel
+ - Internal: https://mail04.ventrica.local/ecp
+ - External:
+
+Offline Address Book
+ - Internal: https://mail04.ventrica.local/OAB
+ - External:
+
+Exchange Web Services
+ - Internal: https://mail04.ventrica.local/EWS/Exchange.asmx
+ - External:
+
+MAPI
+ - Internal: https://mail04.ventrica.local/mapi
+ - External:
+
+ActiveSync
+ - Internal: https://mail04.ventrica.local/Microsoft-Server-ActiveSync
+ - External:
+
+Autodiscover
+ - Internal SCP: https://mail04.ventrica.local/Autodiscover/Autodiscover.xml
+

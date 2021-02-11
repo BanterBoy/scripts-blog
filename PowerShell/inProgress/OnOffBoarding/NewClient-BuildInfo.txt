@@ -1,0 +1,54 @@
+Get-ADGroup -Filter { Name -like '*donald*' } -Properties *
+
+
+New-ADOrganizationalUnit
+New-ADGroup
+Add-ADGroupMember
+New-SmbShare
+
+
+ventrica.local\Ventrica\Users\
+
+\\fs03\Desktops\McDonalds
+
+$ClientName
+
+
+
+OUName
+Groups
+GroupMembers
+Sharename
+Users
+
+New-ADOrganizationalUnit
+   [-DisplayName <String>]
+   [-Name] <String>
+   [-Path <String>]
+   [-ProtectedFromAccidentalDeletion <Boolean>]
+   [-Server <String>]
+New-ADGroup "Quality" -Path "OU=Production,DC=enterprise,dc=com" -GroupCategory Security -GroupScope Global -PassThru –Verbose
+
+
+McDonaldsGrp (Users Group)
+AbsenceMcDonalds
+McDonaldsZendesk
+
+
+_SG SDMMcDonalds
+CN=_SG TrainingDriveAccess,OU=NestedGroups,OU=Groups,OU=Ventrica,DC=ventrica,DC=local
+CN=_SG Staff Contact List,OU=NestedGroups,OU=Groups,OU=Ventrica,DC=ventrica,DC=local
+CN=SDM,OU=DistributionGroups,OU=Groups,OU=Ventrica,DC=ventrica,DC=local
+CN=_SG QualityDriveAccess,OU=NestedGroups,OU=Groups,OU=Ventrica,DC=ventrica,DC=local
+CN=_SG AccountsDriveAccess,OU=NestedGroups,OU=Groups,OU=Ventrica,DC=ventrica,DC=local
+CN=_SG SDM,OU=NestedGroups,OU=Groups,OU=Ventrica,DC=ventrica,DC=local
+
+
+_SGSeniorsMcDonalds
+CN=_SG Staff Contact List,OU=NestedGroups,OU=Groups,OU=Ventrica,DC=ventrica,DC=local
+CN=_SG AccountsDriveAccess,OU=NestedGroups,OU=Groups,OU=Ventrica,DC=ventrica,DC=local
+CN=_SG RegistersAccess,OU=NestedGroups,OU=Groups,OU=Ventrica,DC=ventrica,DC=local
+CN=AbsenceMcDonalds,OU=AbsenceGroups,OU=Groups,OU=Ventrica,DC=ventrica,DC=local
+
+
+

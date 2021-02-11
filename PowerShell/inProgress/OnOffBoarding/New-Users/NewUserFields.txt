@@ -1,0 +1,10 @@
+SamAccountName $Username
+UserPrincipalName "$Username@ventrica.co.uk"
+Name "$Firstname $Lastname"
+GivenName $Firstname
+Surname $Lastname
+Enabled $True
+DisplayName "$Firstname $Lastname"
+Path $OU
+AccountPassword (convertto-securestring $Password -AsPlainText -Force)
+ChangePasswordAtLogon $True

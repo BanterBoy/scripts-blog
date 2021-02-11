@@ -1,0 +1,47 @@
+[PS] C:\Windows\system32>Get-MailboxServer| Get-MailboxStatistics | Sort-Object TotalItemSize -Descending | ft DisplayName,Database,TotalItemSize,Tot
+lDeletedItemSize,ItemCount,storagelimitstatus -AutoSize
+
+DisplayName                                         Database TotalItemSize                   TotalDeletedItemSize           ItemCount StorageLimitSta
+                                                                                                                                                  tus
+-----------                                         -------- -------------                   --------------------           --------- ---------------
+Henry Wang                                          MDB01    16.38 GB (17,590,444,796 bytes) 13.89 MB (14,563,385 bytes)        86385      NoChecking
+Firat Erel                                          MDB01    9.992 GB (10,729,087,825 bytes) 16.88 MB (17,702,507 bytes)        75211      NoChecking
+Rod Graham                                          MDB01    5.286 GB (5,675,703,400 bytes)  5.226 MB (5,480,301 bytes)         56774      NoChecking
+Saoirse Vereker                                     MDB01    5.252 GB (5,638,930,440 bytes)  12.27 MB (12,870,667 bytes)        53361      NoChecking
+Plamen Dokov                                        MDB01    4.873 GB (5,232,327,283 bytes)  12.65 MB (13,260,187 bytes)        37657      NoChecking
+Rob Kirkwood                                        MDB01    4.664 GB (5,008,350,172 bytes)  53.12 MB (55,700,994 bytes)        54776      NoChecking
+Adrian Headon                                       MDB01    3.738 GB (4,013,689,222 bytes)  161.2 MB (169,019,040 bytes)       40146      NoChecking
+Anne Fedoroff                                       MDB01    3.469 GB (3,725,162,471 bytes)  91.7 MB (96,156,460 bytes)         38516      NoChecking
+Rodson Heringer                                     MDB01    3.142 GB (3,374,060,442 bytes)  19.4 MB (20,344,071 bytes)         25402      NoChecking
+Natassia Snell                                      MDB01    2.727 GB (2,928,537,508 bytes)  49.63 MB (52,039,972 bytes)         9148      NoChecking
+Adrian Sunter                                       MDB01    2.55 GB (2,737,672,018 bytes)   1.7 GB (1,824,953,508 bytes)       46658      NoChecking
+Ali Akay                                            MDB01    2.252 GB (2,417,664,030 bytes)  777.7 MB (815,452,682 bytes)       26496      NoChecking
+Paul Takla                                          MDB01    1.606 GB (1,724,844,853 bytes)  1.12 MB (1,173,952 bytes)          19858      NoChecking
+Confirmations                                       MDB01    918 MB (962,562,897 bytes)      13.02 MB (13,656,913 bytes)        33256      NoChecking
+Compliance                                          MDB01    140.2 MB (147,047,727 bytes)    1015 KB (1,039,544 bytes)            414      NoChecking
+post                                                MDB01    122.9 MB (128,842,147 bytes)    1.382 MB (1,449,467 bytes)          2715      NoChecking
+Carrhae                                             MDB01    74.11 MB (77,713,739 bytes)     4.964 MB (5,205,558 bytes)          3545      NoChecking
+Breakout  Room                                      MDB01    15.47 MB (16,216,469 bytes)     347.6 KB (355,988 bytes)             854      NoChecking
+Cannae                                              MDB01    15.36 MB (16,107,046 bytes)     3.709 MB (3,889,283 bytes)          2627      NoChecking
+temp admin                                          MDB01    7.773 MB (8,150,921 bytes)      6.312 MB (6,618,935 bytes)           263      NoChecking
+HazelTree Admin                                     MDB01    5.563 MB (5,832,808 bytes)      0 B (0 bytes)                        509      NoChecking
+SystemMailbox{e639fb08-3ea2-4864-bc5c-e60d4a5a8663} MDB01    3.546 MB (3,718,200 bytes)      0 B (0 bytes)                         73      NoChecking
+csadmin                                             MDB01    2.381 MB (2,496,348 bytes)      0 B (0 bytes)                       1818      NoChecking
+Carrhae Team                                        MDB01    890.1 KB (911,471 bytes)        0 B (0 bytes)                        156      NoChecking
+Ingrid Teigland                                     MDB01    210 KB (215,060 bytes)          0 B (0 bytes)                         16      NoChecking
+Entadmin                                            MDB01    171.7 KB (175,821 bytes)        0 B (0 bytes)                         10      NoChecking
+mimejourn                                           MDB01    156.6 KB (160,326 bytes)        4.468 GB (4,797,731,335 bytes)         8      NoChecking
+Tradar PMS                                          MDB01    142.5 KB (145,943 bytes)        0 B (0 bytes)                         20      NoChecking
+besadmin                                            MDB01    135.8 KB (139,061 bytes)        0 B (0 bytes)                          7      NoChecking
+Discovery Search Mailbox                            MDB01    127.2 KB (130,273 bytes)        0 B (0 bytes)                          6      BelowLimit
+BDS Admin                                           MDB01    115 KB (117,743 bytes)          0 B (0 bytes)                          6      NoChecking
+Mimecast Sync Engine                                MDB01    107.4 KB (109,986 bytes)        0 B (0 bytes)                          5      NoChecking
+Microsoft Exchange Approval Assistant               MDB01    106.6 KB (109,162 bytes)        0 B (0 bytes)                          4      NoChecking
+Microsoft Exchange Approval Assistant               MDB01    106.2 KB (108,741 bytes)        0 B (0 bytes)                          4      BelowLimit
+Microsoft Exchange                                  MDB01    105.3 KB (107,836 bytes)        3.119 MB (3,270,634 bytes)             4      NoChecking
+Plamen Dokov Research                               MDB01    104.9 KB (107,382 bytes)        0 B (0 bytes)                          7      NoChecking
+Disclosures                                         MDB01    103.9 KB (106,383 bytes)        0 B (0 bytes)                          7      NoChecking
+tester                                              MDB01    103.1 KB (105,585 bytes)        0 B (0 bytes)                          6      NoChecking
+
+
+[PS] C:\Windows\system32>

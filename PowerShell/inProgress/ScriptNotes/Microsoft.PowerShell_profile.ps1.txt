@@ -1,0 +1,195 @@
+<#
+Script Name   : Microsoft.PowerShellISE_profile.ps1
+Author        : Luke Leigh
+Created       : 31/03/2017
+Notes         : This script has been created in order pre-configure the following setting:-
+				- Shell Title - Rebranded
+				- Shell Dimensions configured to 140 Width x 40 Height
+				- Buffer configured to 5000 lines
+				- Creates Scripts PSDrive linked to Env:OneDrive locale
+				- Sets starting file path to Scripts folder on OneDrive
+				- Clears the display
+				- Preconfigure Executionpolicy settings Unrestricted
+				- Amend PSModulePath variable to include 'OneDrive\PowerShellModules'
+				- Measures script running performance and displays time upon completion
+				- Configure LocalHost TrustedHosts value
+				- Load Test-IsAdmin Function from 'PowerShellScripts\ProfileFunctions' folder
+				- Display whether or not running as Administrator in the WindowTitle
+				- Display Date and Time in the Console Windows
+				- Display whether or not running as Administrator in the Console Window
+				- Script Greeting based on day of week
+Additional    : Also created entries to select colors
+				- Default Script Settings these sections are disabled
+				- Sections labelled with "# Not in use"
+				- Should you perform any edits, don't forget to # out the Clear-Host
+				  line near the bottom of the script
+				- Added audio section for Will
+#>
+
+
+#--------------------
+# Start
+
+
+#--------------------
+# Measure Script Time
+$Stopwatch = [system.diagnostics.stopwatch]::startNew()
+
+
+#--------------------
+# This section has been added for Will
+# It plays an audio file of your choice.....well, my choice ;-)
+
+<#
+Add-Type -AssemblyName presentationCore
+ $filepath = [uri] "http://www.thesoundarchive.com/starwars/disturbence.mp3"
+ $wmplayer = New-Object System.Windows.Media.MediaPlayer
+ $wmplayer.Open($filepath)
+ Start-Sleep 3 # This allows the $wmplayer time to load the audio file
+ $duration = $wmplayer.NaturalDuration.TimeSpan.TotalSeconds
+ $wmplayer.Play()
+ Start-Sleep $duration
+ $wmplayer.Stop()
+ $wmplayer.Close()
+#>
+
+
+#--------------------
+# Configure Execution Policy
+# Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser -Force
+
+
+#--------------------
+# Configure LocalHost TrustedHosts value for remote WMI access over http/https
+# Set-Item WSMAN:\localhost\Client\TrustedHosts -value *
+
+
+#--------------------
+# Create PSDrive for Scripts
+$Path = $env:OneDrive
+$MyDrive = Join-Path -Resolve -Path $Path -ChildPath .\PowerShellScripts
+New-PSDrive -Name "Scripts" -PSProvider "FileSystem" -Root $MyDrive
+
+
+#--------------------
+# Configure Default Path
+Set-Location -Path Scripts:
+
+
+#--------------------
+<# Import onedrive
+The following commands will:-
+Test/Check current module path
+#>
+[Environment]::GetEnvironmentVariable("PSModulePath")
+
+#Save the current value in the $p variable.
+$p = [Environment]::GetEnvironmentVariable("PSModulePath")
+
+#Add the new path to the $p variable. Begin with a semi-colon separator.
+$Path = $env:OneDrive
+$ModuleDrive = Join-Path -Resolve -Path $Path -ChildPath .\PowerShellModules
+$p += ";$ModuleDrive"
+
+#Add the paths in $p to the PSModulePath value.
+[Environment]::SetEnvironmentVariable("PSModulePath",$p)
+
+#Test/Check current module path
+[Environment]::GetEnvironmentVariable("PSModulePath")
+
+
+#--------------------
+# Display running as Administrator in WindowTitle
+# - Load ProfileFunctions
+.$mydrive\ProfileFunctions\Test-IsAdmin.ps1
+
+# - Run Admin Test
+if(Test-IsAdmin)
+	{ $host.UI.RawUI.WindowTitle = "$($env:USERNAME) Elevated Shell" }
+else
+	{ $host.UI.RawUI.WindowTitle = "$($env:USERNAME) Non-elevated Shell" }
+
+<# Not in use
+#--------------------
+# Configure Shell Default Parameters
+$console = $host.UI.RawUI
+
+$buffer = $console.BufferSize
+$buffer.Width = 140
+$buffer.Height = 5000
+$console.BufferSize = $buffer
+
+$size = $console.WindowSize
+$size.Width = 140
+$size.Height = 40
+$console.WindowSize = $size
+
+$console.ForegroundColor = "White"
+$console.BackgroundColor = "Black"
+$colors = $host.PrivateData
+$colors.VerboseForegroundColor = "Blue"
+$colors.VerboseBackgroundColor = "Black"
+$colors.WarningForegroundColor = "Yellow"
+$colors.WarningBackgroundColor = "Black"
+$colors.ErrorForegroundColor = "Red"
+$colors.ErrorBackgroundColor = "Black"
+#>
+
+
+#--------------------
+# Personal Alias List
+New-Item alias:np -Value C:\WINDOWS\system32\notepad.exe
+New-Item alias:n+ -Value "C:\Program Files\Notepad++\notepad++.exe"
+$Path = $env:OneDrive
+$MyDrive = Join-Path -Resolve -Path $Path -ChildPath '\PowerShellScripts\ProfileFunctions\LazyWinAdmin-v0.4'
+New-Alias -Name LazyWinAdmin -Value $MyDrive\LazyWinAdmin.ps1
+
+
+#--------------------
+# Fresh Start
+Clear-Host
+
+
+<#--------------------
+# Display Banner for Personal Profile
+Write-Host "--------------------------------------------------------------------------------" -ForegroundColor Yellow
+Write-Host "-------------------- All personalisations have been loaded ---------------------" -ForegroundColor Yellow
+Write-Host "--------------------------------------------------------------------------------" -ForegroundColor Yellow
+#>
+	
+#--------------------
+# Display week day schedule extracted from Outlook Calendar
+$Date = $(Get-Date)
+Write-Host "Day of Week  -"$Date.DayOfWeek
+
+$Date = Get-Date
+Write-Host "Today's Date -"$Date.ToShortDateString()
+Write-Host "Current Time -"$Date.ToShortTimeString()
+
+
+<# $Path = $env:OneDrive
+$MyDrive = Join-Path -Resolve -Path $Path -ChildPath .\PowerShellScripts\ProfileFunctions
+Write-Host "--------------------------------------------------------------------------------"
+.$MyDrive\Get-OutlookAppointments.ps1
+Write-Host "--------------------------------------------------------------------------------"
+#>
+
+#--------------------
+# Scripted Greeting based on day of week
+$today = get-date
+Switch ($today.dayofweek)
+{
+	Monday { Write-host "Don’t want to work today" }
+	Friday { Write-host "Almost the weekend" }
+	Saturday { Write-host "Everyone loves a Saturday ;-)" }
+	Sunday { Write-host "A good day to rest, or so I hear." }
+	Default { Write-host "Business as usual." }
+}
+
+
+#--------------------
+# Display time and Stop the timer
+Write-Host "Personal Profile took" $Stopwatch.Elapsed.Milliseconds"ms."
+$Stopwatch.Stop()
+
+# End --------------#>

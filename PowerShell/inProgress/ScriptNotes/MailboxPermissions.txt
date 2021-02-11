@@ -1,0 +1,38 @@
+[PS] C:\>Get-MailboxFolderPermission -Identity 'Luuk Remmen:\Calendar' | Select-Object User,Foldername,AccessRights
+
+User                                    FolderName                              AccessRights
+----                                    ----------                              ------------
+Default                                 Calendar                                {Reviewer}
+Anonymous                               Calendar                                {None}
+Luuk Remmen                             Calendar                                {Owner}
+Administrator                           Calendar                                {PublishingEditor}
+Vitruvian Admin                         Calendar                                {PublishingEditor}
+
+PS C:\> Get-ADGroupMember -Identity 'Vitruvian Admin' | Sort-Object Name | Format-Table -Property Name
+
+Name
+----
+Alex Blyde
+Allison Cook
+Caroline Moore
+Ellie Williams
+Emma Toberman
+Gemma Sandean
+Isabelle Fischer
+Kate Plaza-Cornish
+Laura McIntyre
+Laura-Anna Thomas
+Samantha Hawtin
+Stella De Paiva
+Support
+Support 3
+Support2
+Support4
+Support5
+
+
+
+
+
+
+Set-MailboxFolderPermission -Identity 'ALIAS-OF-USER:\Calendar' -User "ALIAS-OF-USER" -AccessRights Editor

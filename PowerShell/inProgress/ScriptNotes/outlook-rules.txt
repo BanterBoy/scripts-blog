@@ -1,0 +1,26 @@
+Hello Brad,
+
+Please find to follow answers to your questions as requested.
+
+Please review the information in the following link for additional information regarding Outlook rules.
+
+https://blogs.technet.microsoft.com/outlooking/2015/05/01/client-side-vs-server-side-rules/
+
+In order for this rule to exist, it would have been created in your profile.
+
+The type of rule created in this instance is called a client-side rule and is processed by the Outlook client running locally on your machine. The most important thing to know about a client-side rule is that Outlook must be running in order for the rule to work. If Outlook is not running, a client-side rule cannot be processed. Client rules also will not run unless the same user who created the rule logs into Outlook.
+
+It is also possible that multiple rules for the same folder were created, each rule performing a different task (one moving them to your sub-folder within your mailbox and one archiving to the sub-folder within the Historicalmails mailbox.
+
+If these are both client-side rules, the rule listed first in the rules list will take precedence.
+
+For me to advise further on why this rule was moving emails, it would be necessary to review the rules within your outlook client. These rules, however, have been deleted so it is not possible to perform a post assessment of the rules as the client does not back up this information. A backup would be a manual process, requiring you to export the current rule-set.
+
+There is an option within Outlook to perform additional logging which may have shown the information required but by default, this is disabled to prevent the logging from taking up too much space. This is frequently enabled using Group Policies but I have checked and this has not been configured in your environment.
+
+As previously advised, due to the lack of evidence to prove that this is the actual reason which caused the behaviour. We are unable to perform further troubleshooting on this issue to provide and accurate picture of why this was occurring.
+
+I apologise but I am unable to provide any additional information than this.
+
+Kind regards
+
