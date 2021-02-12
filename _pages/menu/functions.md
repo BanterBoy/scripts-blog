@@ -122,6 +122,7 @@ permalink: /menu/_pages/functions.html
 | dns     | [Resolve-DNSList.ps1](/_posts/functions/Resolve-DNSList/)         |
 | dns     | [Resolve-DomainDNS.ps1](/_posts/functions/Resolve-DomainDNS/)     |
 | dns     | [Test-DNSPropagation.ps1](/_posts/functions/Test-DNSPropagation/) |
+| dns     | [Test-DNSRecord.ps1](/_posts/functions/Test-DNSRecord/)           |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
