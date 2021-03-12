@@ -1,6 +1,6 @@
 ---
 layout: post
-title: get-usermembership.ps1
+title: Get-UserMembership.ps1
 ---
 
 ### something exciting
@@ -35,7 +35,7 @@ Some sort of example of the script/function/tool/snippet output.
 
 Details about the script/function/tool/snippet file.
 
-<script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/activeDirectory/get-usermembership.ps1"></script>
+<script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/activeDirectory/Get-UserMembership.ps1"></script>
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -45,7 +45,7 @@ Details about the script/function/tool/snippet file.
 
 Some information about why this button exists and how you can download the complete repository.
 
-<button class="btn" type="submit" onclick="window.open('/PowerShell/functions/activeDirectory/Get-UserLogon.ps1')">
+<button class="btn" type="submit" onclick="window.open('/PowerShell/functions/activeDirectory/Get-UserMembership.ps1')">
     <i class="fa fa-cloud-download-alt">
     </i>
         Download
@@ -68,7 +68,7 @@ The `view raw` link at the bottom right of the script will take you to a raw tex
 You can report an issue or contribute to this site on <a href="https://github.com/BanterBoy/scripts-blog/issues">GitHub</a>. Simply click the button below and add any relevant notes.
 
 <!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=Get-UserLogon.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
+<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=Get-UserMembership.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
 
 ---
 
