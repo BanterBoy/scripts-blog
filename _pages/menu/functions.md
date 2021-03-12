@@ -278,6 +278,7 @@ permalink: /menu/_pages/functions.html
 | miscellaneous | [Search-Google.ps1](/_posts/functions/Search-Google/)                               |
 | miscellaneous | [Search-KerbDelegatedAccounts.ps1](/_posts/functions/Search-KerbDelegatedAccounts/) |
 | miscellaneous | [Search-RoadWorks.ps1](/_posts/functions/Search-RoadWorks/)                         |
+| miscellaneous | [Search-Scripts.ps1](/_posts/functions/search-scripts/)                             |
 | miscellaneous | [Select-FolderLocation.ps1](/_posts/functions/Select-FolderLocation/)               |
 | miscellaneous | [Send-OutlookMail.ps1](/_posts/functions/Send-OutlookMail/)                         |
 | miscellaneous | [Show-IsAdminOrNot.ps1](/_posts/functions/Show-IsAdminOrNot/)                       |
