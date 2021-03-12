@@ -163,7 +163,7 @@ permalink: /menu/_pages/scripts.html
 | information | [Get-ReportDownload.ps1](/_posts/scripts/Get-ReportDownload/)       |
 | information | [Get-WifiPassword.ps1](/_posts/scripts/Get-WifiPassword/)           |
 | information | [Hardware-Report.ps1](/_posts/scripts/Hardware-Report/)             |
-| information | [htmlreport.PS1](/_posts/scripts/htmlreport/)                       |
+| information | [htmlreport.PS1](/_posts/scripts/html-report/)                      |
 | information | [O365UserLicenseReport.ps1](/_posts/scripts/O365UserLicenseReport/) |
 | information | [Office365HTMLReport.ps1](/_posts/scripts/Office365HTMLReport/)     |
 
