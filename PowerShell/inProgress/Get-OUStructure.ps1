@@ -18,7 +18,7 @@ function Get-OUStructure {
 
     Begin {
         try {
-            Import-Module ActiveDirectory
+            Import-Module ActiveDirectory -SkipEditionCheck
         }
         catch {
         }
