@@ -14,12 +14,15 @@ function Update-PowerShell {
         Write-Warning "Installing $Module"
         $execpol = Get-ExecutionPolicy -List
         if ( $execpol -ne 'Unrestricted' ) {
-            Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
+            Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
         }
         Install-Module -Name $Module -Scope CurrentUser
     }
 
     Set-PSRepository -Name PSGallery -InstallationPolicy Untrusted
+
+    $GitRelease = (Get-GitHubRelease -OwnerName PowerShell -RepositoryName PowerShell -Latest -ErrorAction Continue).tag_name
+    $LocalVersion = $PSVersionTable.GitCommitId
 
     # Test current version installed and update if not latest release
     if ($GitRelease -like "*" + $LocalVersion) {
