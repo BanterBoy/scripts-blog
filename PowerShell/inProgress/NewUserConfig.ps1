@@ -1,4 +1,4 @@
-function Get-UserConfig {
+function New-ADUserConfig {
     [CmdletBinding()]
     param (
         [Parameter(Mandatory = $true,
