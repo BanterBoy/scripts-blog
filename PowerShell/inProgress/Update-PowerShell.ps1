@@ -12,7 +12,7 @@ function Update-PowerShell {
 
     else {
         Write-Warning "Installing $Module"
-        $execpol = Get-ExecutionPolicy -List
+        $execpol = Get-ExecutionPolicy -Scope Process
         if ( $execpol -ne 'Unrestricted' ) {
             Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
         }
