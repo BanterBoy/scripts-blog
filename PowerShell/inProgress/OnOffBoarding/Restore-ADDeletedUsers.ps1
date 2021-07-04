@@ -15,7 +15,7 @@
 Function Restore-ADDeletedUsers {
     [CmdletBinding()]
     Param(
-        [Parameter(ValueFromPipeline = $True)]$usertorestore
+        [Parameter(ValueFromPipeline = $True)]$UsertoRestore
     )
-    Restore-ADObject -Credential $PSCredential -Confirm:$false -Identity $usertorestore
+    Restore-ADObject -Credential $PSCredential -Confirm:$false -Identity $UsertoRestore
 }
