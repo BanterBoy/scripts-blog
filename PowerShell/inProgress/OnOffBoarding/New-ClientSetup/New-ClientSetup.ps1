@@ -8,7 +8,7 @@ function New-SDMADGroup {
     param (
         
     )
-    $OUPath = "OU=SeniorGroups,OU=Groups,OU=Ventrica,DC=ventrica,DC=local"
+    $OUPath = "OU=SeniorGroups,OU=Groups,OU=Company,DC=Domain,DC=local"
     $GroupName = "_SGSeniors" + $CampaignName
     New-ADGroup -Name $GroupName -Path $OUPath -GroupCategory Distribution -GroupScope Universal
     Add-ADGroupMember -Identity '_SG Staff Contact List' -Members "$GroupName"
