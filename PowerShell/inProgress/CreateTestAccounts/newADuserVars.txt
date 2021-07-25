@@ -1,0 +1,78 @@
+New-ADUser Variables
+
+Department                            AuthenticationPolicy                  CannotChangePassword                  Description
+Enabled                               PrincipalsAllowedToDelegateToAccount  OtherAttributes                       DisplayName
+Server                                SmartcardLogonRequired                PassThru                              WhatIf
+Path                                  CompoundIdentitySupported             OfficePhone                           AllowReversiblePasswordEncryption
+EmailAddress                          AuthenticationPolicySilo              ProfilePath                           PasswordNotRequired
+PasswordNeverExpires                  Initials                              Organization                          HomePhone
+Title                                 Country                               PostalCode                            AsJob
+HomeDirectory                         LogonWorkstations                     ChangePasswordAtLogon                 Verbose
+MobilePhone                           Confirm                               SamAccountName                        ErrorAction
+POBox                                 AccountExpirationDate                 City                                  OutVariable
+ScriptPath                            UserPrincipalName                     AccountNotDelegated                   OutBuffer
+StreetAddress                         Manager                               Type                                  ErrorVariable
+Fax                                   Company                               TrustedForDelegation                  InformationVariable
+Name                                  OtherName                             ServicePrincipalNames                 PipelineVariable
+KerberosEncryptionType                Instance                              HomePage                              WarningAction
+Division                              AccountPassword                       AuthType                              Debug
+Surname                               Office                                Credential                            InformationAction
+State                                 EmployeeID                            EmployeeNumber                        WarningVariable
+HomeDrive                             Certificates                          GivenName
+
+
+
+$User.AccountExpirationDate
+$User.AccountNotDelegated
+$User.AllowReversiblePasswordEncryption
+$User.AuthenticationPolicy
+$User.AuthenticationPolicySilo
+$User.CannotChangePassword
+$User.Certificates
+$User.City
+$User.Company
+$User.CompoundIdentitySupported
+$User.Country
+$User.Department
+$User.Description
+$User.DisplayName
+$User.Division
+$User.EmailAddress
+$User.EmployeeID
+$User.EmployeeNumber
+$User.Enabled
+$User.Fax
+$User.GivenName
+$User.HomeDirectory
+$User.HomeDrive
+$User.HomePage
+$User.HomePhone
+$User.Initials
+$User.KerberosEncryptionType
+$User.LogonWorkstations
+$User.Manager
+$User.MobilePhone
+$User.Name
+$User.Office
+$User.OfficePhone
+$User.Organization
+$User.otherMobile
+$User.OtherName
+$User.PasswordExpired
+$User.PasswordLastSet
+$User.PasswordNeverExpires
+$User.PasswordNotRequired
+$User.POBox
+$User.PostalCode
+$User.PrincipalsAllowedToDelegateToAccount
+$User.ProfilePath
+$User.SamAccountName
+$User.ScriptPath
+$User.ServicePrincipalNames
+$User.SmartcardLogonRequired
+$User.State
+$User.StreetAddress
+$User.Surname
+$User.Title
+$User.TrustedForDelegation
+$User.UserPrincipalName
