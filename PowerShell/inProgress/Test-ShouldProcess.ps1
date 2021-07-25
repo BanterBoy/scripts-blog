@@ -1,5 +1,3 @@
-Function New-Something {}
-
 Function Test-ShouldProcess {
     [CmdletBinding(SupportsShouldProcess, ConfirmImpact = 'Medium')]
 
