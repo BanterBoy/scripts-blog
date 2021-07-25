@@ -14,11 +14,11 @@ function Test-ProfileExists {
 
     $profprec | ForEach-Object {
         if (Test-Path $profhash.$_) {
-            Write-Verbose -Message "$_ - Exists!"
-            Write-Verbose -Message "Path - $($profhash.$_)"
+            Write-Output "$_ - Exists!"
+            Write-Output "Path - $($profhash.$_)"
         }
         else {
-            Write-Verbose -Message "$_ - Not Found!"
+            Write-Output "$_ - Not Found!"
         }
     }
 }
