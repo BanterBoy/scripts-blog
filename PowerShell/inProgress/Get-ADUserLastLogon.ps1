@@ -34,7 +34,7 @@ function Get-ADUserLastLogon {
     Write-Output $obj
 }
 
-Get-ADUserLastLogon -SamAccountName lukeleigh
-$Logon = Get-ADUserLastLogon -SamAccountName lukeleigh
-$logon.HostName
-$logon.Date
+# Get-ADUserLastLogon -SamAccountName lukeleigh
+# $Logon = Get-ADUserLastLogon -SamAccountName lukeleigh
+# $logon.HostName
+# $logon.Date
