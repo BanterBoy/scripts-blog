@@ -72,11 +72,7 @@ function Search-Scripts {
         Select-Object
     
     #>
-    [CmdletBinding(DefaultParameterSetName = 'Default',
-        SupportsShouldProcess = $true,
-        ConfirmImpact = 'Medium')]
-    [Alias()]
-    [OutputType([String])]
+    [cmdletbinding(DefaultParameterSetName = "Default")]
     Param(
         [Parameter(
             Mandatory,
@@ -108,8 +104,8 @@ function Search-Scripts {
             ValueFromPipeline,
             ValueFromPipelineByPropertyName,
             HelpMessage = "Select the file extension you are looking for. Defaults to '*.ps1' files.")]
-        [ValidateSet('.csv', '.docx', '.json', '.log', '.ps1', '.txt', '.xlsx') ]
-        [string]$Extension = '.ps1',
+        [ValidateSet( '.*', '.csv', '.json', '.log', '.ps1', '.psd1', '.psm1', '.txt', '.xls', '.xlsx') ]
+        [string]$Extension = '.*',
 
         [Parameter(
             Mandatory = $false,
@@ -125,52 +121,24 @@ function Search-Scripts {
 
     switch ($SearchType) {
         Start {
-            if ($pscmdlet.ShouldProcess("Target", "Operation")) {
-                try {
-                    $FileName = "$SearchTerm*" + $Extension
-                    Get-ChildItem -Path $Path -Include $FileName -Recurse |
-                    Select-Object -Property Name, DirectoryName, FullName
-                }
-                catch {
-                    Write-Warning "Catch all"
-                }
-            }
+            $FileName = "$SearchTerm*" + $Extension
+            Get-ChildItem -Path $Path -Include $FileName -Recurse |
+            Select-Object -Property Name, DirectoryName, FullName
         }
         End {
-            if ($pscmdlet.ShouldProcess("Target", "Operation")) {
-                try {
-                    $FileName = "*$SearchTerm" + $Extension
-                    Get-ChildItem -Path $Path -Include $FileName -Recurse |
-                    Select-Object -Property Name, DirectoryName, FullName
-                }
-                catch {
-                    Write-Warning "Catch all"
-                }
-            }
+            $FileName = "*$SearchTerm" + $Extension
+            Get-ChildItem -Path $Path -Include $FileName -Recurse |
+            Select-Object -Property Name, DirectoryName, FullName
         }
         Wild {
-            if ($pscmdlet.ShouldProcess("Target", "Operation")) {
-                try {
-                    $FileName = "*$SearchTerm*" + $Extension
-                    Get-ChildItem -Path $Path -Include $FileName -Recurse |
-                    Select-Object -Property Name, DirectoryName, FullName
-                }
-                catch {
-                    Write-Warning "Catch all"
-                }
-            }
+            $FileName = "*$SearchTerm*" + $Extension
+            Get-ChildItem -Path $Path -Include $FileName -Recurse |
+            Select-Object -Property Name, DirectoryName, FullName
         }
         Default {
-            if ($pscmdlet.ShouldProcess("Target", "Operation")) {
-                try {
-                    $FileName = "*$SearchTerm*" + $Extension
-                    Get-ChildItem -Path $Path -Include $FileName -Recurse |
-                    Select-Object -Property Name, DirectoryName, FullName
-                }
-                catch {
-                    Write-Warning "Catch all"
-                }
-            }
+            $FileName = "*$SearchTerm*" + $Extension
+            Get-ChildItem -Path $Path -Include $FileName -Recurse |
+            Select-Object -Property Name, DirectoryName, FullName
         }
     }
 }
