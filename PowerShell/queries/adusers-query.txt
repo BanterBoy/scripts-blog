@@ -1,0 +1,5 @@
+Get-ADUser -filter * -searchbase "ou=DomainUsers,dc=contoso,dc=com" | Set-ADUser -replace @{ExtensionAttribute2="New Value"}
+
+$users = get-aduser -Filter{(c -eq "de") -and (enabled -eq $true)} -Properties c,co,countrycode | Where-Object{$_.co -eq $null}
+$users | Set-ADUser -Replace @{c="DE";co="GERMANY";countrycode=49}
+
