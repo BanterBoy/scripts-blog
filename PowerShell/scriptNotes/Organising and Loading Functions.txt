@@ -1,0 +1,11 @@
+Organising and Loading Functions
+
+I put each of my functions in a single file and store those files within a single directory.
+I use a naming convention for each file that ends with -Function.ps1.
+Using this convention I can edit my PowerShell profile once to load all functions in that directory.
+The obvious downside to this, is that anyone with access to your PowerShell function directory could drop code in there to be run each time you open PowerShell.
+
+Inside my $Home\Documents\PowerShell\Profile.ps1 I added this line to dot source all my function files.
+
+Get-ChildItem C:\Users\larntz\Documents\Scripts\functions\*Function.ps1 | %{. $_ }
+
