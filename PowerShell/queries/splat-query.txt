@@ -1,0 +1,9 @@
+$displayName = @{
+    Expression = "DisplayName"
+    Descending = $false
+}
+ 
+Get-Service | Sort-Object -Property Status, $displayName -Descending 
+
+https://ipinfo.io/92.238.54.202/json?token=53437bba34a9e9
+
