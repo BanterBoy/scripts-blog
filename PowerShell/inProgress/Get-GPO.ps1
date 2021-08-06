@@ -10,9 +10,12 @@ ForEach-Object {
     ) {
         "$GPO" 
     } 
-} |
-Out-File GPOs.txt
+}
 
 
-Get-ADObject -LDAPFilter "(cn=*cnf:*)"
-Get-ADObject -LDAPFilter "(sAMAccountName=$duplicate)"
+# |
+# Out-File GPOs.txt
+
+
+# Get-ADObject -LDAPFilter "(cn=*cnf:*)"
+# Get-ADObject -LDAPFilter "(sAMAccountName=$duplicate)"
