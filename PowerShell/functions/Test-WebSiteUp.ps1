@@ -21,38 +21,30 @@ function Test-WebsiteUp {
 
         try {
             if ($Test.StatusCode -eq '200') {
-                try {
-                    $Test = Invoke-WebRequest -Uri $webAddress -ErrorAction Stop
-                    $properties = @{
-                        Code    = [int]$Test.StatusCode
-                        Status  = [string]$Test.StatusDescription
-                        Website = [string]$webAddress
-                        Message = "Website Status"
-                    }
-                }
-                finally {
-
+                $Test = Invoke-WebRequest -Uri $webAddress -ErrorAction Stop -TimeoutSec 10
+                $properties = @{
+                    Code    = [int]$Test.StatusCode
+                    Status  = [string]$Test.StatusDescription
+                    Website = [string]$webAddress
+                    Message = "Website Status"
                 }
             }
             elseif ($Test.StatusCode -ne '200') {
-                try {
-                    $Test = Invoke-WebRequest -Uri $webAddress -ErrorAction Stop
-                    $properties = @{
-                        Code    = [int]$Test.StatusCode
-                        Status  = [string]$Test.StatusDescription
-                        Website = [string]$webAddress
-                        Message = "Website Status"
-                    }
-                }
-                catch [System.Net.Http.HttpRequestException] {
-                    Write-Warning -Message  "Website Unavailable"
+                $Test = Invoke-WebRequest -Uri $webAddress -ErrorAction Stop -TimeoutSec 30
+                $properties = @{
+                    Code    = [int]$Test.StatusCode
+                    Status  = [string]$Test.StatusDescription
+                    Website = [string]$webAddress
+                    Message = "Website Status"
                 }
             }
+        }
+        catch [System.Net.Http.HttpRequestException] {
+            Write-Warning -Message  "Website Unavailable"
         }
         finally {
             $obj = New-Object -TypeName PSObject -Property $properties
             Write-Output $obj
-            Write-Warning -Message "Test Complete!"
         }
     }
     
