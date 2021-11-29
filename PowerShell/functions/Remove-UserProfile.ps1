@@ -10,9 +10,9 @@ Param(
     [int]$Days = 3
 )
 
-$Logging = "C:\CSScripts\Logging"
+$Logging = "C:\Logging"
 If ((Test-Path $Logging) –eq $false) {
-    New-Item -Path C:\CSScripts\ -Name Logging -ItemType Directory
+    New-Item -Path C:\ -Name Logging -ItemType Directory
 }
 Start-Transcript -Path $Logging\ProfileCleanup.txt -Append
 
