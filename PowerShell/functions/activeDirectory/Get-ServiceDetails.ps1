@@ -1,6 +1,3 @@
-# WMI query to list all properties and values of the root/CIMV2:Win32_Service class.
-# This PowerShell code was generated using the WMI Code Generator, Version 10.0.13.0
-# https://www.robvanderwoude.com/wmigen.php
 function Get-ServiceDetails {
     [cmdletbinding(DefaultParameterSetName = 'default')]
 
@@ -25,7 +22,7 @@ function Get-ServiceDetails {
     }
 
     PROCESS {
-        $instances = Get-WMIObject -Query "SELECT * FROM Win32_Service" -Namespace "root/CIMV2" -Computername $ComputerName | Where-Object { $_.DisplayName -like "$DisplayName" }
+        $instances = Get-CimInstance -Query "SELECT * FROM Win32_Service" -Namespace "root/CIMV2" -Computername $ComputerName | Where-Object { $_.DisplayName -like "$DisplayName" }
 
         foreach ( $item in $instances ) {
             try {

@@ -1,3 +1,4 @@
+Function Restore-ADDeletedUsers {
 <#
     .SYNOPSIS
     Restores Users from the AD Recycle Bin.
@@ -11,8 +12,6 @@
     .EXAMPLE
     Restore-ADDeletedUsers -Usertorestore ATest
 #>
-
-Function Restore-ADDeletedUsers {
     [CmdletBinding()]
     Param(
         [Parameter(ValueFromPipeline = $True)]$UsertoRestore

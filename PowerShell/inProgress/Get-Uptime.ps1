@@ -6,7 +6,7 @@ function Get-Uptime {
     )
  
     foreach ($Computer in $ComputerName) {
-        $date = (Get-CimInstance -ComputerName $Computer -Class Win32_OperatingSystem).LastBootUpTime
+        $date = (Get-CimInstance -ClassName Win32_OperatingSystem | Select-Object -Property LastBootUpTime).LastBootUpTime
         if ($Since) {
             return $date
         }
