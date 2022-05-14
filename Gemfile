@@ -1,7 +1,8 @@
 source "https://rubygems.org"
 
 gem 'rouge'
-gem "jekyll-include-cache"
+gem 'webrick'
+gem 'jekyll-include-cache'
 gem 'jekyll-paginate'
 gem 'github-pages', group: :jekyll_plugins
 group :jekyll_plugins do
