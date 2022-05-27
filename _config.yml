@@ -48,6 +48,7 @@ exclude:
 plugins:
   - rouge
   - github-pages
+  - github-embed
   - jekyll-algolia
   - jekyll-feed
   - jekyll-gist
