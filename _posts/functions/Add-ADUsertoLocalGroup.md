@@ -63,7 +63,7 @@ Some information about why this button exists and how you can download the compl
             {
                 "type": "powershell",
                 "label": "PowerShell Script",
-                "url": ".\PowerShell\functions\activeDirectory\Add-ADUsertoLocalGroup.ps1"
+                "url": "https://rawgithubusercontent.com/BanterBoy/scripts-blog/master/PowerShell/functions/activeDirectory/ADUserAccountFunctions.ps1"
             }
         ]
     }
