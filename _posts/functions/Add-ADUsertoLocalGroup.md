@@ -8,32 +8,35 @@ title: Add-ADUsertoLocalGroup.ps1
 Some information about the exciting thing
 
 - [something exciting](#something-exciting)
-  - [Example](#example)
-  - [OutPut](#output)
   - [Script](#script)
   - [Download](#download)
-  - [gist-it](#gist-it)
   - [Report Issues](#report-issues)
 
-<small><i>[Table of contents generated with markdown-toc][1]{:target="\_blank"}</i></small>
-
----
-
-#### Example
-
-Some sort of example of the script/function/tool/snippet in use
-
----
-
-#### OutPut
-
-Some sort of example of the script/function/tool/snippet output.
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ---
 
 #### Script
 
-Details about the script/function/tool/snippet file.
+```powershell
+function Add-ADUsertoLocalGroup {
+    [CmdletBinding(DefaultParameterSetName = 'Default',
+        HelpURI = 'https://scripts.lukeleigh.com/_posts/functions/Add-ADUsertoLocalGroup/')]
+    param (
+        [string[]]
+        $ComputerName,
+        [string[]]
+        $UserName,
+        [string[]]
+        $LocalGroupName
+    )
+    if ($ComputerName -eq "") {
+        $ComputerName = "$env:COMPUTERNAME"
+        }
+    [string]$domainName = ([ADSI]'').name
+    ([ADSI]"WinNT://$ComputerName/$LocalGroupName,group").Add("WinNT://$domainName/
+}
+```
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -43,32 +46,11 @@ Details about the script/function/tool/snippet file.
 
 Some information about why this button exists and how you can download the complete repository.
 
-<button class="btn" type="submit" onclick="window.open('/PowerShell/functions/activeDirectory/Add-ADUsertoLocalGroup.ps1')">
+<button class="btn" type="submit" onclick="window.open('http://agamar.domain.leigh-services.com:4000/powershell/functions/activeDirectory/ADUserAccountFunctions.ps1')">
     <i class="fa fa-cloud-download-alt">
     </i>
         Download
 </button>
-
----
-
-#### Complete Script
-
-<script src="github-embed.min.js"></script>
-<script>
-    githubEmbed('#root', {
-        "owner": "finom",
-        "repo": "github-embed",
-        "ref": "master",
-        "embed": [
-            {
-                "type": "powershell",
-                "label": "PowerShell Script",
-                "url": "https://rawgithubusercontent.com/BanterBoy/scripts-blog/master/PowerShell/functions/activeDirectory/ADUserAccountFunctions.ps1"
-            }
-        ]
-    }
-)
-</script>
 
 ---
 
@@ -93,11 +75,4 @@ You can report an issue or contribute to this site on <a href="https://github.co
 </a>
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
-[2]: https://gist-it.appspot.com/
-[3]: https://gist.github.com
-[4]: https://github.com/googlearchive/code-prettify
-
-_[Back to Top]: Click to go back to the top of the page
-_[ Download]: Click this button to Download the file.
-_[Back to Functions]: Click here to go back to the Functions Index
-_[Table of contents generated with markdown-toc]: Click here to create your own.
+[2]: https://github.com/googlearchive/code-prettify
