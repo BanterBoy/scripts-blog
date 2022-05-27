@@ -15,7 +15,7 @@ Some information about the exciting thing
   - [gist-it](#gist-it)
   - [Report Issues](#report-issues)
 
-<small><i>[Table of contents generated with markdown-toc][1]{:target="_blank"}</i></small>
+<small><i>[Table of contents generated with markdown-toc][1]{:target="\_blank"}</i></small>
 
 ---
 
@@ -35,8 +35,6 @@ Some sort of example of the script/function/tool/snippet output.
 
 Details about the script/function/tool/snippet file.
 
-<script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/activeDirectory/Add-ADUsertoLocalGroup.ps1"></script>
-
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
@@ -53,13 +51,24 @@ Some information about why this button exists and how you can download the compl
 
 ---
 
-#### gist-it
+#### Complete Script
 
-I have used <i>[gist-it][2]{:target="_blank"}</i> to display the files from my GitHub repository and embed it into the web page. This is very similar to <i>[GitHub Gists][3]{:target="_blank"}</i>
-
-Gist-it uses <i>[google-code-prettify][4]{:target="_blank"}</i> for Syntax highlighting.
-
-The `view raw` link at the bottom right of the script will take you to a raw text version of the script which you can copy and paste.
+<script src="github-embed.min.js"></script>
+<script>
+    githubEmbed('#root', {
+        "owner": "finom",
+        "repo": "github-embed",
+        "ref": "master",
+        "embed": [
+            {
+                "type": "powershell",
+                "label": "PowerShell Script",
+                "url": ".\PowerShell\functions\activeDirectory\Add-ADUsertoLocalGroup.ps1"
+            }
+        ]
+    }
+)
+</script>
 
 ---
 
@@ -68,6 +77,7 @@ The `view raw` link at the bottom right of the script will take you to a raw tex
 You can report an issue or contribute to this site on <a href="https://github.com/BanterBoy/scripts-blog/issues">GitHub</a>. Simply click the button below and add any relevant notes.
 
 <!-- Place this tag where you want the button to render. -->
+
 <a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=Add-ADUsertoLocalGroup.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
 
 ---
@@ -87,7 +97,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 [3]: https://gist.github.com
 [4]: https://github.com/googlearchive/code-prettify
 
-*[Back to Top]: Click to go back to the top of the page
-*[        Download]: Click this button to Download the file.
-*[Back to Functions]: Click here to go back to the Functions Index
-*[Table of contents generated with markdown-toc]: Click here to create your own.
+_[Back to Top]: Click to go back to the top of the page
+_[ Download]: Click this button to Download the file.
+_[Back to Functions]: Click here to go back to the Functions Index
+_[Table of contents generated with markdown-toc]: Click here to create your own.
