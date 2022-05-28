@@ -19,7 +19,17 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+# Create a secure string for the password
+$Username = Read-Host "Enter Username (domain\username)"
+$Password = Read-Host "Enter Password" -AsSecureString
 
+# Create the PSCredential object
+$Credentials = New-Object System.Management.Automation.PSCredential($Username, $Password)
+
+# Server Variable
+$Server = Read-Host "Enter Server (FQDN or IP)"
+
+Invoke-Command -ComputerName $Server -Credential $Credentials -Authentication Negotiate -FilePath "C:\Users\Luke Leigh\Documents\GitHub\PowerRepo\Scripts\SomeScriptFile.ps1"
 ```
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

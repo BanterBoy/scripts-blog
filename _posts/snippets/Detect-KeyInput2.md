@@ -19,7 +19,22 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+# this could be part of your profile script
 
+Add-Type -AssemblyName WindowsBase
+Add-Type -AssemblyName PresentationCore
+
+# assume the script is doing something
+# (so you can get ready to press and hold left Ctrl!)
+Start-Sleep -Seconds 2
+
+# choose the key you are after
+$key = [System.Windows.Input.Key]::LeftCtrl
+$isCtrl = [System.Windows.Input.Keyboard]::IsKeyDown($key)
+
+if ($isCtrl) {
+    'You pressed left CTRL, so I am now doing extra stuff'
+}
 ```
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -19,7 +19,24 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+Add-Type -AssemblyName WindowsBase
+Add-Type -AssemblyName PresentationCore
 
+# choose the abort key
+$key = [System.Windows.Input.Key]::LeftCtrl
+
+Write-Warning "PRESS $key TO ABORT!"
+
+do {
+    $isCtrl = [System.Windows.Input.Keyboard]::IsKeyDown($key)
+    if ($isCtrl) {
+        Write-Host
+        Write-Host "You pressed $key, so exiting!" -ForegroundColor Green
+        break
+    }
+    Write-Host "." -NoNewline
+    Start-Sleep -Milliseconds 100
+} while ($true)
 ```
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
