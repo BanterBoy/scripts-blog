@@ -8,26 +8,11 @@ title: InstallPwnedPasswordDLL.ps1
 Some information about the exciting thing
 
 - [something exciting](#something-exciting)
-  - [Example](#example)
-  - [OutPut](#output)
   - [Script](#script)
   - [Download](#download)
-  - [gist-it](#gist-it)
   - [Report Issues](#report-issues)
 
-<small><i>[Table of contents generated with markdown-toc][1]{:target="_blank"}</i></small>
-
----
-
-#### Example
-
-Some sort of example of the script/function/tool/snippet in use
-
----
-
-#### OutPut
-
-Some sort of example of the script/function/tool/snippet output.
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ---
 
@@ -55,9 +40,9 @@ Some information about why this button exists and how you can download the compl
 
 #### gist-it
 
-I have used <i>[gist-it][2]{:target="_blank"}</i> to display the files from my GitHub repository and embed it into the web page. This is very similar to <i>[GitHub Gists][3]{:target="_blank"}</i>
+I have used <i>[gist-it][2]{:target="\_blank"}</i> to display the files from my GitHub repository and embed it into the web page. This is very similar to <i>[GitHub Gists][3]{:target="\_blank"}</i>
 
-Gist-it uses <i>[google-code-prettify][4]{:target="_blank"}</i> for Syntax highlighting.
+Gist-it uses <i>[google-code-prettify][4]{:target="\_blank"}</i> for Syntax highlighting.
 
 The `view raw` link at the bottom right of the script will take you to a raw text version of the script which you can copy and paste.
 
@@ -68,6 +53,7 @@ The `view raw` link at the bottom right of the script will take you to a raw tex
 You can report an issue or contribute to this site on <a href="https://github.com/BanterBoy/scripts-blog/issues">GitHub</a>. Simply click the button below and add any relevant notes.
 
 <!-- Place this tag where you want the button to render. -->
+
 <a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=InstallPwnedPasswordDLL.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
 
 ---
@@ -87,7 +73,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 [3]: https://gist.github.com
 [4]: https://github.com/googlearchive/code-prettify
 
-*[Back to Top]: Click to go back to the top of the page
-*[        Download]: Click this button to Download the file.
-*[Back to Scripts]: Click here to go back to the Scripts Index
-*[Table of contents generated with markdown-toc]: Click here to create your own.
+_[Back to Top]: Click to go back to the top of the page
+_[ Download]: Click this button to Download the file.
+_[Back to Scripts]: Click here to go back to the Scripts Index
+_[Table of contents generated with markdown-toc]: Click here to create your own.
