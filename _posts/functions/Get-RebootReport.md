@@ -19,10 +19,54 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+function Get-RebootReport {
+    [cmdletbinding(DefaultParameterSetName = 'default')]
 
+    param(
+        [Parameter(Mandatory = $True,
+            ParameterSetName = 'Default',
+            ValueFromPipeline = $True,
+            ValueFromPipelineByPropertyName = $True,
+            HelpMessage = "Please enter a ComputerName or Pipe in from another command.")]
+        [string[]]$Computer
+    )
+
+    BEGIN {}
+
+    PROCESS {
+        $collection = Get-WinEvent -ComputerName "$Computer" -FilterHashtable @{logname = 'System'; id = 1074 }
+
+        foreach ($item in $collection) {
+            try {
+                $properties = @{
+                    "Date"        = $item.TimeCreated
+                    "User"        = $item.Properties[6].Value
+                    "Process"     = $item.Properties[0].Value
+                    "Action"      = $item.Properties[4].Value
+                    "Reason"      = $item.Properties[2].Value
+                    "Reason Code" = $item.Properties[3].Value
+                    "Comment"     = $item.Properties[5].Value
+                }
+            }
+            catch {
+                $properties = @{
+                    "Date"        = $item.TimeCreated
+                    "User"        = $item.Properties[6].Value
+                    "Process"     = $item.Properties[0].Value
+                    "Action"      = $item.Properties[4].Value
+                    "Reason"      = $item.Properties[2].Value
+                    "Reason Code" = $item.Properties[3].Value
+                    "Comment"     = $item.Properties[5].Value
+                }
+            }
+            Finally {
+                $obj = New-Object -TypeName PSObject -Property $properties
+                Write-Output $obj
+            }
+        }
+    }
+}
 ```
-
-functions/Get-RebootReport.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

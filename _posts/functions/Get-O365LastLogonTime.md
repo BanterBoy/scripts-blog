@@ -19,10 +19,40 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+function Get-O365LastLogonTime {
 
+    [CmdletBinding()]
+    param (
+        [Parameter()]
+        [string]
+        $Identity
+    )
+    $Result = @()
+    $mailboxes = Get-Mailbox -ResultSize Unlimited | Where-Object { $_ -like $Identity }
+    $totalmbx = $mailboxes.Count
+    $i = 1
+    $mailboxes | ForEach-Object {
+        $i++
+        $mbx = $_
+        $mbs = Get-MailboxStatistics -Identity $mbx.UserPrincipalName | Select-Object LastLogonTime
+        if ($null -eq $mbs.LastLogonTime) {
+            $lt = "Never Logged In"
+        }
+        else {
+            $lt = $mbs.LastLogonTime
+        }
+
+        Write-Progress -activity "Processing $mbx" -status "$i out of $totalmbx completed"
+
+        $Result += New-Object PSObject -property @{
+            Name              = $mbx.DisplayName
+            UserPrincipalName = $mbx.UserPrincipalName
+            LastLogonTime     = $lt
+        }
+    }
+    $Result
+}
 ```
-
-functions/activeDirectory/Get-O365LastLogonTime.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

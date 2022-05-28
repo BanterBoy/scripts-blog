@@ -18,11 +18,43 @@ Some information about the exciting thing
 
 #### Script
 
-````powershell
+```powershell
+function Get-PatchTuesday {
 
-```Details about the script/function/tool/snippet file.
+    <#
 
- <script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/time/Get-PatchTuesday.ps1
+  .SYNOPSIS
+    Get the Patch Tuesday of a month
+  .PARAMETER month
+   The month to check
+  .PARAMETER year
+   The year to check
+  .EXAMPLE
+   Get-PatchTue -month 6 -year 2015
+  .EXAMPLE
+   Get-PatchTue June 2015
+
+   #>
+
+    [CmdletBinding()]
+    param (
+        [Parameter()]
+        [string]
+        $month = (Get-Date).month,
+
+        [string]
+        $year = (Get-Date).year
+    )
+
+    $firstdayofmonth = [datetime] ([string]$month + "/1/" + [string]$year)
+    (0..30 | ForEach-Object {
+            $firstdayofmonth.adddays($_)
+        } | Where-Object {
+            $_.dayofweek -like "Tue*"
+        }
+    )[1]
+}
+```
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -62,4 +94,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
-````
+
+```
+
+```

@@ -19,10 +19,16 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-
+function Get-LastCommands {
+    [CmdletBinding()]
+    param (
+        [Parameter()]
+        [int]
+        $Number
+    )
+    Get-History | Select-Object -Last $Number | Format-Table -Property CommandLine -AutoSize -Wrap
+}
 ```
-
-functions/Get-LastCommands.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

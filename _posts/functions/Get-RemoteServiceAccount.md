@@ -19,10 +19,33 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+<#
+    $Servers = Get-ADComputer -Filter { OperatingSystem -Like '*Windows Server*' } | Select-Object Name
+    $ServiceName = Read-Host "Enter ServiceName"
+    foreach ($Server in $Servers) {
+        Get-ServiceLogonAccount -ComputerName $Server |
+        Where-Object { $_.DisplayName -like "backup exec*" }
+    }
+#>
 
+function Get-ServiceLogonAccount {
+    [cmdletbinding()]
+
+    param (
+        [string]$ComputerName,
+        [string]$LogonAccount
+    )
+    if ($logonAccount) {
+        Get-WmiObject -Class Win32_Service -ComputerName $ComputerName |
+        Where-Object { $_.StartName -match $LogonAccount } |
+        Select-Object DisplayName, StartName, State
+    }
+    else {
+        Get-WmiObject -Class Win32_Service -ComputerName $ComputerName |
+        Select-Object DisplayName, StartName, State
+    }
+}
 ```
-
-functions/activeDirectory/Get-RemoteServiceAccount.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

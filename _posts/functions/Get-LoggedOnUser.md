@@ -19,10 +19,40 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+<#
+Get-WmiObject –ComputerName IGULAMNABY –Class Win32_ComputerSystem | Select-Object UserName
 
+Get-CimInstance –ComputerName CLIENT1 –ClassName Win32_ComputerSystem | Select-Object UserName
+
+function Get-LoggedOnUser {
+    [CmdletBinding()]
+    param
+    (
+        [Parameter()]
+        [ValidateScript( { Test-Connection -ComputerName $_ -Quiet -Count 1 })]
+        [ValidateNotNullOrEmpty()]
+        [string[]]$ComputerName = $env:COMPUTERNAME
+    )
+}
+
+#>
+function Get-LoggedOnUser {
+    [CmdletBinding()]
+    param
+    (
+        [Parameter()]
+        [ValidateScript( { Test-Connection -ComputerName $_ -Quiet -Count 1 })]
+        [ValidateNotNullOrEmpty()]
+        [string[]]
+        $ComputerName = $env:COMPUTERNAME
+    )
+    foreach ($comp in $ComputerName) {
+        $output = @{ 'ComputerName' = $comp }
+        $output.UserName = (Get-WmiObject -Class win32_computersystem -ComputerName $comp).UserName
+        [PSCustomObject]$output
+    }
+}
 ```
-
-functions/activeDirectory/Get-LoggedOnUser.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

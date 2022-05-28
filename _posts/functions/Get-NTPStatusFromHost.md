@@ -19,10 +19,37 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+function Get-NTPStatusFromHost {
+    Param(
+        [Parameter(Mandatory = $true,
+            ValueFromPipeline = $true,
+            ValueFromPipelineByPropertyName = $true,
+            Position = 0)]
+        [string[]]
+        $ComputerName
+    )
+    Process {
+        Write-Output "NTP Source for $ComputerName"
+        w32tm /query /computer:$ComputerName /source
+    }
+}
 
+$ADQuery = Get-ADComputer -Filter { Name -like '*' } -Properties *
+$ServerList = $ADQuery |
+Sort-Object -Property Name |
+Select-Object Name, OperatingSystem, DistinguishedName |
+Where-Object { ( $_.OperatingSystem -like 'Windows Server*' ) -and ( $_.DistinguishedName -like '*Server*' ) }
+
+foreach ( $Server in $ServerList ) {
+    $TestServer = Test-ComputerAvailability -Servers $Server.Name
+    if ($TestServer.Pingable -eq $true) {
+        Get-NTPStatusFromHost -ComputerName $Server.Name
+    }
+    else {
+        Write-Warning -Message "$($Server.Name) is Unavailable"
+    }
+}
 ```
-
-functions/time/Get-NTPStatusFromHost.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

@@ -19,10 +19,13 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+# Paul Flaherty
+# http://blogs.flaphead.dns2go.com/archive/2008/11/14/get-mailboxstatistics-with-totalitemsize-in-mb-to-a-csv-file.aspx
+# Create a csv file from Get-MailboxStatistics, but with the TotalItemSize in MB
 
+"DisplayName,TotalItemSize(MB),ItemCount,StorageLimitSize,Database,LegacyDN" | out-file GMS.csv; get-mailbox -resultsize unlimited | Get-MailboxStatistics | ForEach-Object { $a = $_.DisplayName; $b = $_.TotalItemSize.Value.ToMB(); $c = $_.itemcount; $d = $_.storagelimitstatus; $e = $_.database; $f = $_.legacydn; "$a,$b,$c,$d,$e,$f"
+} | out-file GMS.csv -Append
 ```
-
-functions/exchange/Get-MailboxStatistics.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

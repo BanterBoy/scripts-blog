@@ -19,10 +19,27 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+# $TagLib = "S:\tag\Libraries\taglib-sharp.dll"
+# [System.Reflection.Assembly]::LoadFile($TagLib)
 
+Filter Get-MediaDetails {
+    param($mediaItem)
+    if ($null -eq $mediaItem) { $mediaItem = $_ }
+
+    0..($mediaItem.attributeCount - 1) |
+
+    foreach -begin {
+        $MediaObj = New-Object -TypeName System.Object
+    } -process {
+        $attributeName = $mediaItem.GetattributeName($_)
+        if ($mediaItem.GetitemInfo($attributeName
+            )) {
+            Add-Member -inputObject $mediaObj -MemberType NoteProperty -Name $AttributeName -Value $mediaItem.GetitemInfo($attributeName)
+        }
+        -end { $MediaObj }
+    }
+}
 ```
-
-functions/fileManagement/Get-MediaDetails.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

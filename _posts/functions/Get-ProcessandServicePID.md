@@ -19,10 +19,13 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-
+function Get-ProcessandServicePID {
+    $ServicePids = (Get-Wmiobject win32_service).ProcessId | Sort-Object -Unique
+    $ProcessPids = (Get-Process).Id | Sort-Object -Unique
+    $Pids = Compare-Object $ServicePids $ProcessPids -PassThru
+    Get-Process -Id $Pids | Select-Object Id, Name
+}
 ```
-
-functions/Get-ProcessandServicePID.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
