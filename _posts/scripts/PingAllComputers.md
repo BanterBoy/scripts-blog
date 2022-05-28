@@ -19,10 +19,18 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+$computers = Get-ADComputer -filter *
 
+Foreach ($computer in $computers) {
+
+    $ping = Test-NetConnection -ComputerName $computer.Name
+
+    if ($ping.PingSucceeded -eq "True") {
+        $computer.Name | Export-Csv -Path C:\Temp\test.csv -Append
+    }
+    else { Write-Host $v.ComputerName "Ping failed" }
+}
 ```
-
-scripts/ping/PingAllComputers.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

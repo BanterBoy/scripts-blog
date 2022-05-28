@@ -19,10 +19,13 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-
+$StartDate = (Get-Date).AddDays(-730)
+$Location = "D:\Shares\Images"
+Get-ChildItem -Path $Location -Recurse |
+Where-Object { $_.LastAccessTime -le $StartDate } |
+Select-Object Directory, Name, LastAccessTime |
+Out-File "D:\lastaccess.txt"
 ```
-
-scripts/fileManagement/LastAccess.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

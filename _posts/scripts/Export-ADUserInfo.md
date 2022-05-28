@@ -19,10 +19,22 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+$ADUserParams = @{
+    'Server'      = 'remote.domain.com'
+    'Searchbase'  = 'OU=users,DC=remote,DC=domain,DC=com'
+    'Searchscope' = 'Subtree'
+    'Filter'      = '*'
+    'Properties'  = '*'
+}
 
+#This is where to change if different properties are required.
+
+$SelectParams = @{
+    'Property' = 'SAMAccountname', 'CN', 'title', 'DisplayName', 'Description', 'EmailAddress', 'mobilephone', @{name = 'businesscategory'; expression = { $_.businesscategory -join '; ' } }, 'office', 'officephone', 'state', 'streetaddress', 'city', 'employeeID', 'Employeenumber', 'enabled', 'lockedout', 'lastlogondate', 'badpwdcount', 'passwordlastset', 'created'
+}
+
+Get-ADUser @ADUserParams | Select-Object @SelectParams  | Export-Csv "$HOME\desktop\users.csv"
 ```
-
-scripts/activeDirectory/Export-ADUserInfo.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

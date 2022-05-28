@@ -19,10 +19,12 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-
+Get-Mailbox |
+Get-MailboxPermission |
+Where-Object {$_.user.tostring() -ne "NT AUTHORITY\SELF" -and $_.IsInherited -eq $false} |
+Select-Object Identity,User,@{Name='Access Rights';Expression={[string]::join(', ', $_.AccessRights)}} |
+Export-Csv -NoTypeInformation C:\temp\mailboxpermissions.csv
 ```
-
-scripts/Exchange/mailbox.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

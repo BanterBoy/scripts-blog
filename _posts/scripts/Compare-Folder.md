@@ -19,10 +19,14 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+$LiveSource = Get-ChildItem -Recurse -path 'C:\Users\Lleigh\Desktop\Testing\Folder1' | Select-Object -Property Directory, Name
+$FinalDestination = Get-ChildItem -Recurse -path 'C:\Users\Lleigh\Desktop\Testing\Folder2' | Select-Object -Property Directory, Name
+Compare-Object -ReferenceObject $LiveSource -DifferenceObject $FinalDestination
 
+$LiveSource = Get-ChildItem -Recurse -path 'C:\Users\Lleigh\Desktop\Testing\Folder1'
+$FinalDestination = Get-ChildItem -Recurse -path 'C:\Users\Lleigh\Desktop\Testing\Folder2'
+Compare-Object -ReferenceObject $LiveSource -DifferenceObject $FinalDestination
 ```
-
-scripts/fileManagement/Compare-Folder.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

@@ -19,10 +19,18 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+# This script will list all the authorized DHCP servers in Active Directory.
 
+# http://blogs.technet.com/b/heyscriptingguy/archive/2013/01/10/use-powershell-to-query-ad-ds-for-dhcp-servers.aspx
+
+import-module ActiveDirectory
+
+$defaultNC = ([ADSI]"LDAP://RootDSE").defaultNamingContext.Value
+
+$configurationNC = "cn=configuration," + $defaultNC
+
+Get-ADObject -SearchBase $configurationNC -Filter "objectclass -eq 'dhcpclass' -AND Name -ne 'dhcproot'"
 ```
-
-scripts/activeDirectory/Get-AuthorizedDHCPServers.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

@@ -19,10 +19,18 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-
+function Show-OUStructure ([string]$dn, $level = 1) {
+    if ($level -eq 1) { $dn }
+    Get-ADOrganizationalUnit -Filter * -SearchBase $dn -SearchScope OneLevel |
+    Sort-Object -Property distinguishedName |
+    ForEach-Object {
+        $components = ($_.distinguishedname).split(',')
+        "$('--' * $level) $($components[0])"
+        Export-OUStructure -dn $_.distinguishedname -level ($level + 1)
+    }
+}
+Show-OUStructure -dn (Get-ADDomain).DistinguishedName
 ```
-
-scripts/activeDirectory/Show-OUStructure.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

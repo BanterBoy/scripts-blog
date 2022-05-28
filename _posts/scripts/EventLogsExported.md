@@ -19,10 +19,13 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+$after = (Get-Date).AddDays(-2)
+$before = (Get-Date).AddDays(-3)
 
+Get-EventLog -LogName Application -EntryType Error -Newest 50 -After $after -Before $before | Format-List EntryType, TimeGenerated, Message, InstanceId
+
+Get-EventLog -LogName System -EntryType Error -Newest 50 | Where-Object { $_.Message -like "The previous system shutdown*" }
 ```
-
-scripts/EventLogs/EventLogsExported.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

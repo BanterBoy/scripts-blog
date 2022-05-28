@@ -19,10 +19,25 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+Get-ADComputer -Filter * -SearchBase 'DC=company,DC=co,DC=uk' -Properties * |
+Where-Object { $_.serviceprincipalname -like '*exchange*' } |
+Select-Object  Name, DNSHostName, DistinguishedName
 
+
+<#
+# List of Properties from Get-Member
+
+DistinguishedName
+DNSHostName
+Enabled
+Name
+ObjectClass
+ObjectGUID
+SamAccountName
+SID
+UserPrincipalName
+#>
 ```
-
-scripts/Exchange/Locate-Exchange.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

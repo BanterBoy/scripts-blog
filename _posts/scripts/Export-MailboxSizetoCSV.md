@@ -19,10 +19,49 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+Get-Mailbox |
+Get-MailboxStatistics |
+Sort-Object TotalItemSize -Descending |
+Select-Object -Property DisplayName, DeletedItemCount, TotalItemSize, LastLogonTime |
+ConvertTo-Csv |
+Out-File C:\Temp\Mailboxes.csv
 
+
+<#
+Get-Mailbox | Get-MailboxStatistics | Get-Member
+
+AssociatedItemCount
+Database
+DatabaseName
+DeletedItemCount
+DisconnectDate
+DisconnectReason
+DisplayName
+Identity
+IsArchiveMailbox
+IsQuarantined
+IsValid
+ItemCount
+LastLoggedOnUserAccount
+LastLogoffTime
+LastLogonTime
+LegacyDN
+MailboxGuid
+MailboxTableIdentifier
+MapiIdentity
+MoveHistory
+ObjectClass
+OriginatingServer
+ServerName
+StorageLimitStatus
+TotalDeletedItemSize
+TotalItemSize
+
+
+Get-Mailbox | Get-MailboxStatistics | Sort-Object TotalItemSize | Format-Table -Property DisplayName,DeletedItemCount,TotalItemSize,LastLogonTime -AutoSize
+
+#>
 ```
-
-scripts/Exchange/Export-MailboxSizetoCSV.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

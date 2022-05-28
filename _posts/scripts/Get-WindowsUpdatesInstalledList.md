@@ -19,10 +19,11 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-
+Get-WmiObject -Class "win32_quickfixengineering" |
+Select-Object -Property "Description", "HotfixID", "InstalledBy", @{Name="InstalledOn"; Expression={([DateTime]($_.InstalledOn)).ToLocalTime()}} |
+Sort-Object InstalledOn |
+Out-File $HOME\Desktop\InstalledUpdatesReport.txt
 ```
-
-scripts/windowsUpdates/Get-WindowsUpdatesInstalledList.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

@@ -1,4 +1,3 @@
-<#
 This script will update the DynamicDNS record:-
     "myhome.example.com"
 

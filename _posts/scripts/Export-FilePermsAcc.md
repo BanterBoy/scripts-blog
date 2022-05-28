@@ -19,10 +19,20 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+$FolderPath = Get-ChildItem -Directory -Path "FILEPATH" -Recurse -Force
 
+$Output = @()
+
+ForEach ($Folder in $FolderPath) {
+    $Acl = Get-Acl -Path $Folder.FullName
+    ForEach ($Access in $Acl.Access) {
+        $Properties = [ordered]@{'Folder Name' = $Folder.FullName; 'Group/User' = $Access.IdentityReference; 'Permissions' = $Access.FileSystemRights; 'Inherited' = $Access.IsInherited }
+        $Output += New-Object -TypeName PSObject -Property $Properties
+    }
+}
+
+$Output | ConvertTo-Csv -Delimiter ',' -NoTypeInformation | Out-File "FILEPATH"\FILENAMEFilePermissions.csv
 ```
-
-scripts/fileManagement/Export-FilePermsAcc.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

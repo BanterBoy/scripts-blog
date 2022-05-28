@@ -19,10 +19,14 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+[System.Reflection.Assembly]::LoadWithPartialName('Microsoft.VisualBasic') | Out-Null
+$computer = [Microsoft.VisualBasic.Interaction]::InputBox("Enter the ComputerName ", "ComputerName ")
 
+Get-WMIobject win32_LogicalDisk -computername $computer -filter "DriveType=3" |
+Select-Object SystemName, DeviceID, @{Name = "DriveCapacity"; Expression = { "{0:N1}" -f ($_.size / 1gb) } }, `
+@{Name = "FreeSpace(GB)"; Expression = { "{0:N1}" -f ($_.freespace / 1gb) } }, `
+@{Name = "% FreeSpace(GB)"; Expression = { "{0:N2}%" -f (($_.freespace / $_.size) * 100) } }
 ```
-
-scripts/information/Get-DiskSpace.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

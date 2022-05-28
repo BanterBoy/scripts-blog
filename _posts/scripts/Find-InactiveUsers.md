@@ -19,10 +19,12 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+$inactiveUsers = Search-ADAccount -AccountInactive -UsersOnly -SearchBase "OU=Users,OU=example,DC=example,DC=local"  | Where-Object { $null -eq $_.LastLogonDate }
 
+foreach ($inactiveUser in $inactiveUsers) {
+    Get-ADUser -Filter { SamAccountName -eq $inactiveUser.SamAccountName } -Properties *
+} Out-File C:\MoreInactiveUsers.txt
 ```
-
-scripts/activeDirectory/Find-InactiveUsers.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

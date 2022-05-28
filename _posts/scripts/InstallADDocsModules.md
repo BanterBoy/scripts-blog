@@ -19,10 +19,12 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-
+Install-Module PSWriteHTML -Force -Scope CurrentUser
+Install-Module PSWinReportingV2 -Force -Scope CurrentUser
+Install-Module Dashimo -Force -Scope CurrentUser
+Install-Module Documentimo -Force -Scope CurrentUser
+Install-Module PSWinDocumentation.AD -Force -Scope CurrentUser
 ```
-
-scripts/installScripts/InstallADDocsModules.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

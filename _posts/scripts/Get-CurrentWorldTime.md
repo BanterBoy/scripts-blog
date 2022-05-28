@@ -19,10 +19,19 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+# World Time Clock
 
+$isSummer = (Get-Date).IsDaylightSavingTime()
+
+Get-TimeZone -ListAvailable | ForEach-Object {
+    $dateTime = [DateTime]::UtcNow + $_.BaseUtcOffset
+    $cities = $_.DisplayName.Split(')')[-1].Trim()
+    if ($isSummer -and $_.SupportsDaylightSavingTime) {
+        $dateTime = $dateTime.AddHours(1)
+    }
+    '{0,-30}: {1:HH:mm"h"} ({2})' -f $_.Id, $dateTime, $cities
+}
 ```
-
-scripts/time/Get-CurrentWorldTime.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

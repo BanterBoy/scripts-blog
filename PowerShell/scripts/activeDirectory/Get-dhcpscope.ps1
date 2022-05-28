@@ -1,7 +1,6 @@
 Function Get-DhcpScope ([string]$Servername) {
 	$Tab = [char]9
 	$DHCPIpAddress = (Get-WmiObject -Class Win32_PingStatus -Filter "Address='$servername' and ResolveAddressNames=true").ProtocolAddress
-
 	trap {
 		Write-host "Error !!"   $_.Exception.Message -ForegroundColor Red
 		Write-Host "Solution :" -ForegroundColor green
@@ -11,16 +10,13 @@ Function Get-DhcpScope ([string]$Servername) {
 	} & {
 		$dhcpmanager = New-Object -ComObject dhcp.manager
 	}
-
 	$dhcpmanager = New-Object -ComObject dhcp.manager
 	$dhcpsrvr = $dhcpmanager.Servers.Connect($DHCPIpAddress)
 	$NBScopeDHCP = $dhcpsrvr.scopes.count
 	$ScopeDHCP = @{"" = "" }
-
 	for ($a = 1; $a -le $NBScopeDHCP ; $a++) {
 		$ScopeDHCP.add($dhcpsrvr.scopes.item($a).address , $dhcpsrvr.scopes.item($a).name)
 	}
-
 	NetSHScopeDHCP $Servername
 	$DHCPArray = TransformDHCPToArray "c:\temp\DumpAllscope$servername.txt" $ScopeDHCP
 	$DHCPArray
@@ -41,7 +37,6 @@ function TransformDHCPToArray ($filename, $Scope) {
 		 $personalarray.Comment = $Scope.Get_Item("$ip")
 			$temporaire += $personalarray
 		}
-
 	}
 	$temporaire
 }
@@ -50,7 +45,6 @@ function isIPAddress($object) {
 	[Boolean]($object -as [System.Net.IPAddress])
 }
 
-
 function NetSHScopeDHCP($servername) {
 	$cmdline = "cmd /c netsh dhcp server show all > c:\temp\DumpAllscope.txt"
 	$RemoteExec = (Get-WmiObject -List -ComputerName $servername | Where-Object { $_.name -eq 'win32_process' }).create($cmdline)
@@ -58,8 +52,5 @@ function NetSHScopeDHCP($servername) {
 	Move-Item \\$servername\c$\temp\DumpAllscope.txt c:\temp -Force
 	if (Test-Path "c:\temp\DumpAllscope$servername.txt") { Remove-Item "c:\temp\DumpAllscope$servername.txt" }
 	Rename-Item c:\temp\DumpAllscope.txt "DumpAllscope$servername.txt" -Force
-
 }
-
-
 #Get-DhcpScope MyDHCPServer

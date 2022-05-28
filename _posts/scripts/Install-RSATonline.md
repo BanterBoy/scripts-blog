@@ -19,10 +19,17 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+# Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability –Online
+# Get-WindowsCapability -Name RSAT* -Online | Select-Object -Property Name, State
 
+<#
+Add-WindowsCapability -Name Rsat.CertificateServices.Tools~~~~0.0.1.0 –Online
+Remove-WindowsCapability -Name Rsat.CertificateServices.Tools~~~~0.0.1.0 –Online
+#>
+
+Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability -Online
+Get-WindowsCapability -Name RSAT* -Online | Select-Object -Property DisplayName,Online,RestartNeeded,State | Format-Table -AutoSize
 ```
-
-scripts/installScripts/Install-RSATonline.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

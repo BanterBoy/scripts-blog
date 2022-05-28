@@ -56,33 +56,17 @@ foreach ($drive in $drives) {
 
 ####################################################
 
-if ($i -gt 0)
-{
-
-	foreach ($user in $users)
- {
-
+if ($i -gt 0) {
+	foreach ($user in $users) {
 		Write-Output "Sending Email notification ro $user"
-
 		$smtpServer = "smtp server"
-
 		$smtp = New-Object Net.Mail.SmtpClient($smtpServer)
-
 		$emailFrom = "fromuser@domain.com"
-
 		$subject = "Email Subject"
-
-		foreach ($line in Get-Content "D:\Scripts\lowdisk.txt")
-		{
-
+		foreach ($line in Get-Content "D:\Scripts\lowdisk.txt") {
 			$body += "$line `n"
-
 		}
-
 		$smtp.Send($EmailFrom, $user, $subject, $body)
-
 		$body = ""
-
 	}
-
 }

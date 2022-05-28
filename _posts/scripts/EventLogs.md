@@ -19,10 +19,17 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-
+$XMLFilter = @'
+<QueryList>
+  <Query Id="0" Path="Application">
+    <Select Path="Application">*[System[(Level=2 or Level=3)
+	  and TimeCreated[timediff(@SystemTime) &lt;= 86400000]]]</Select>
+  </Query>
+</QueryList>
+'@
+[array] $Events = @()
+Get-WinEvent -ComputerName COMPUPTERNAME -FilterXml $XMLfilter
 ```
-
-scripts/EventLogs/EventLogs.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

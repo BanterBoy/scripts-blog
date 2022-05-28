@@ -19,10 +19,20 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+Import-Module –Name ADSync
 
+# Import-Module –Name "C:\Program Files\Microsoft Azure AD Sync\Bin\ADSync" -Verbose
+
+Get-ADSyncScheduler
+
+# To force a full sync from Windows PowerShell
+
+Start-ADSyncSyncCycle -PolicyType Full
+
+# To force a delta sync:
+
+Start-ADSyncSyncCycle -PolicyType Delta
 ```
-
-scripts/activeDirectory/Start-ADSyncCycle.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
