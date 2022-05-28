@@ -19,10 +19,16 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-
+Function Format-FileSize() {
+    Param ([int]$size)
+    If ($size -gt 1TB) { [string]::Format("{0:0.00} TB", $size / 1TB) }
+    ElseIf ($size -gt 1GB) { [string]::Format("{0:0.00} GB", $size / 1GB) }
+    ElseIf ($size -gt 1MB) { [string]::Format("{0:0.00} MB", $size / 1MB) }
+    ElseIf ($size -gt 1KB) { [string]::Format("{0:0.00} kB", $size / 1KB) }
+    ElseIf ($size -gt 0) { [string]::Format("{0:0.00} B", $size) }
+    Else { "" }
+}
 ```
-
-functions/fileManagement/Format-FileSize.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -62,7 +68,3 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
-
-```
-
-```

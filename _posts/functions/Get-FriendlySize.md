@@ -19,10 +19,15 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-
+function Get-FriendlySize {
+    param($Bytes)
+    $sizes = 'Bytes,KB,MB,GB,TB,PB,EB,ZB' -split ','
+    for ($i = 0; ($Bytes -ge 1kb) -and
+        ($i -lt $sizes.Count); $i++) { $Bytes /= 1kb }
+    $N = 2; if ($i -eq 0) { $N = 0 }
+    "{0:N$($N)} {1}" -f $Bytes, $sizes[$i]
+}
 ```
-
-functions/fileManagement/Get-FriendlySize.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -62,7 +67,3 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
-
-```
-
-```

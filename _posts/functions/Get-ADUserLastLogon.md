@@ -19,10 +19,24 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+Import-Module ActiveDirectory
 
+function Get-ADUserLastLogon([string]$userName) {
+    $dcs = Get-ADDomainController -Filter { Name -like "*" }
+    $time = 0
+    foreach ($dc in $dcs) {
+        $hostname = $dc.HostName
+        $user = Get-ADUser $userName | Get-ADObject -Properties lastLogon
+        if ($user.LastLogon -gt $time) {
+            $time = $user.LastLogon
+        }
+    }
+    $dt = [DateTime]::FromFileTime($time)
+    Write-Host $username "last logged on at:" $dt "on" $hostname
+}
+
+# Example = Get-ADUserLastLogon -UserName Administrator
 ```
-
-functions/activeDirectory/Get-ADUserLastLogon.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -62,7 +76,3 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
-
-```
-
-```

@@ -19,10 +19,34 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+function Get-ExchangeServer {
+    param
+    (
+        [switch]$mailbox,
+        [switch]$CAS,
+        [switch]$UM,
+        [switch]$hub,
+        [switch]$edge,
+        [switch]$getAll
+    )
 
+    $roleMask += 2 * [boolean]$mailbox
+    $roleMask += 4 * [boolean]$CAS
+    $roleMask += 16 * [boolean]$UM
+    $roleMask += 32 * [boolean]$hub
+    $roleMask += 64 * [boolean]$edge
+
+    $configNamingContext = (("CN=Configuration," + (Get-ADDomain).distinguishedname))
+    $exchangeServers = (Get-ADObject -SearchBase $configNamingContext -Filter {objectclass -eq "msExchExchangeServer"} -properties msexchcurrentserverroles)
+    $exchangeServers = $exchangeServers | Where-Object {($_.msexchcurrentserverroles -band $roleMask) -eq $roleMask}
+
+    [array]$exchangeServers = $exchangeServers | Select-Object -ExpandProperty name
+    if (!$getAll) {
+        $exchangeServers = $exchangeServers[0]
+    }
+    Write-Output ($exchangeServers)
+}
 ```
-
-functions/exchange/Get-ExchangeServer.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -62,7 +86,3 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
-
-```
-
-```

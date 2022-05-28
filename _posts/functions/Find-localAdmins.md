@@ -19,10 +19,69 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+function Find-localAdmins {
 
+	<#
+	.SYNOPSIS
+		List users in specified local group
+	.DESCRIPTION
+		Created: March 17, 2011 Jeff Patton
+		This script searches ActiveDirectory for computers. It then queries each computer for the list of users who
+		are in the local Administrators group.
+	.PARAMETER ADSPath
+		The LDAP URI of the container you wish to pull computers from.
+	.PARAMETER GroupName
+		The name of the local group to pull membership pfrom.
+	.EXAMPLE
+		find-localadmins "LDAP://OU=Workstations,DC=company,DC=com"
+	.NOTES
+		You will need to run this script as an administrator or disable UAC to update the event-log
+		You will need to have at least Read permissions in the AD container in order to get a list of computers.
+	.LINK
+		http://scripts.patton-tech.com/wiki/PowerShell/Production/FindLocalAdmins
+	#>
+
+	Param
+	(
+		[Parameter(Mandatory = $true)]
+		[string]$ADSPath,
+		[Parameter(Mandatory = $true)]
+		[string]$GroupName
+	)
+	Begin {
+		$ScriptName = $MyInvocation.MyCommand.ToString()
+		$LogName = "Application"
+		$ScriptPath = $MyInvocation.MyCommand.Path
+		$Username = $env:USERDOMAIN + "\" + $env:USERNAME
+
+		New-EventLog -Source $ScriptName -LogName $LogName -ErrorAction SilentlyContinue
+
+		$Message = "Script: " + $ScriptPath + "`nScript User: " + $Username + "`nStarted: " + (Get-Date).toString()
+		Write-EventLog -LogName $LogName -Source $ScriptName -EventID "100" -EntryType "Information" -Message $Message
+
+		#	Dotsource in the AD functions
+		. .\includes\ActiveDirectoryManagement.ps1
+	}
+	Process {
+		$computers = Get-ADObjects $ADSPath
+
+		foreach ($computer in $computers) {
+			if ($null -eq $computer) {}
+			else {
+				$groups = Get-LocalGroupMembers $computer.Properties.name $GroupName
+				If ($null -ne $groups) {
+					write-host "Accounts with membership in $GroupName on: " $computer.Properties.name
+					$groups | Format-Table -autosize
+				}
+			}
+		}
+	}
+	End {
+		$Message = "Script: " + $ScriptPath + "`nScript User: " + $Username + "`nFinished: " + (Get-Date).toString()
+		Write-EventLog -LogName $LogName -Source $ScriptName -EventID "100" -EntryType "Information" -Message $Message
+	}
+}
 ```
-
-functions/activeDirectory/Find-localAdmins.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -62,7 +121,3 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
-
-```
-
-```

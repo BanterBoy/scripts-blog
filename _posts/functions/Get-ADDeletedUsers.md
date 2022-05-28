@@ -19,10 +19,26 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+<#
+    .SYNOPSIS
+    Gives a list of all Restorable Users from the AD Recycle Bin.
 
+    .EXAMPLE
+    Get-ADDeletedUsers -domainprefix example -domainsuffix local
+#>
+
+Function Get-ADDeletedUsers {
+    [CmdletBinding()]
+    Param(
+        [Parameter(Mandatory = $True)]
+        [string]$domainprefix,
+        [Parameter(Mandatory = $True)]
+        [string]$domainsuffix
+    )
+    Get-ADObject -SearchBase "CN=deleted objects,dc=$domainprefix,dc=$domainsuffix" -IncludeDeletedObjects -filter * -Properties * |
+    Where-Object { $_.ObjectClass -ne 'container' -and $_.ObjectClass -eq 'user' }
+}
 ```
-
-functions/activeDirectory/Get-ADDeletedUsers.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -62,7 +78,3 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
-
-```
-
-```

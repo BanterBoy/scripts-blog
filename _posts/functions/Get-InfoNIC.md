@@ -19,10 +19,24 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-
+function Get-InfoNIC {
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory = $True)]
+        [string]
+        $ComputerName
+    )
+    $nics = Get-WmiObject -class Win32_NetworkAdapter -ComputerName $ComputerName -Filter "PhysicalAdapter=True"
+    foreach ($nic in $nics) {
+        $props = @{'NICName' = $nic.servicename;
+            'Speed'          = $nic.speed / 1MB -as [int];
+            'Manufacturer'   = $nic.manufacturer;
+            'MACAddress'     = $nic.macaddress
+        }
+        New-Object -TypeName PSObject -Property $props
+    }
+}
 ```
-
-functions/information/Get-InfoNIC.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -62,7 +76,3 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
-
-```
-
-```

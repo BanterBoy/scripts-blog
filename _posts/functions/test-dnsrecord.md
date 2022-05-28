@@ -544,7 +544,3 @@ _[Back to Top]: Click to go back to the top of the page
 _[ Download]: Click this button to Download the file.
 _[Back to Functions]: Click here to go back to the Functions Index
 _[Table of contents generated with markdown-toc]: Click here to create your own.
-
-```
-
-```
