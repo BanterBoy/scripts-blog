@@ -28,7 +28,7 @@ Some information about the exciting thing
 
 #### Download
 
-Some information about why this button exists and how you can download the complete repository.
+You can of course copy any part of the script from the text above, or you can simply press the download button and download the entire script. Choice is yours....its just nice to have choices 😎
 
 <button class="btn" type="submit" onclick="window.open('/PowerShell/functions/activeDirectory/ADUserAccountFunctions.ps1')">
     <i class="fa fa-cloud-download-alt">

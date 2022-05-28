@@ -42,7 +42,7 @@ function Add-ADUsertoLocalGroup {
 
 #### Download
 
-Some information about why this button exists and how you can download the complete repository.
+You can of course copy any part of the script from the text above, or you can simply press the download button and download the entire script. Choice is yours....its just nice to have choices 😎
 
 <button class="btn" type="submit" onclick="window.open('http://agamar.domain.leigh-services.com:4000/powershell/functions/activeDirectory/ADUserAccountFunctions.ps1')">
     <i class="fa fa-cloud-download-alt">
