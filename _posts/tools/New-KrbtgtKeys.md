@@ -15,13 +15,13 @@ Some information about the exciting thing
   - [gist-it](#gist-it)
   - [Report Issues](#report-issues)
 
-<small><i>[Table of contents generated with markdown-toc][1]{:target="_blank"}</i></small>
+<small><i>[Table of contents generated with markdown-toc][1]{:target="\_blank"}</i></small>
 
 ---
 
 #### Information
 
-This is a Microsoft script and is maintained at at the following GitHub Repository - [https://github.com/microsoft/New-KrbtgtKeys.ps1][5]{:target="_blank"}
+This is a Microsoft script and is maintained at at the following GitHub Repository - [https://github.com/microsoft/New-KrbtgtKeys.ps1][5]{:target="\_blank"}
 
 ---
 
@@ -35,12 +35,15 @@ This is a Microsoft script and is maintained at at the following GitHub Reposito
 
 #### Script
 
-This script will enable you to: (1) perform a single reset of the krbtgt account password hash and related keys (it can be run multiple times for subsequent resets), (2) immediately replicate the krbtgt account and its new keys to all writable DCs in the domain, and (3) validate that all writable DC's in the domain have successfully replicated the new keys, so they can decrypt any TGTs that are presented by clients and were encrypted with the new key(s).  These capabilities help to perform the reset in a manner which minimizes the likelihood of Kerberos authentication issues due to the operation.
+````powershell
 
-The script is designed to be self-documenting and includes an interactive menu and screen output that will guide you through its execution.  Because it requires user input to select the execution mode and confirm before any changes are made, it is safe to begin by simply executing the script and reading the guidance throughout.
+```
 
+This script will enable you to: (1) perform a single reset of the krbtgt account password hash and related keys (it can be run multiple times for subsequent resets), (2) immediately replicate the krbtgt account and its new keys to all writable DCs in the domain, and (3) validate that all writable DC's in the domain have successfully replicated the new keys, so they can decrypt any TGTs that are presented by clients and were encrypted with the new key(s). These capabilities help to perform the reset in a manner which minimizes the likelihood of Kerberos authentication issues due to the operation.
 
-<script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/tools/New-KrbtgtKeys.ps1"></script>
+The script is designed to be self-documenting and includes an interactive menu and screen output that will guide you through its execution. Because it requires user input to select the execution mode and confirm before any changes are made, it is safe to begin by simply executing the script and reading the guidance throughout.
+
+<script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/tools/New-KrbtgtKeys.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -68,16 +71,6 @@ This document is a supplemental guide to the interactive krbtgt reset script (Ne
 
 ---
 
-#### gist-it
-
-I have used <i>[gist-it][2]{:target="_blank"}</i> to display the files from my GitHub repository and embed it into the web page. This is very similar to <i>[GitHub Gists][3]{:target="_blank"}</i>
-
-Gist-it uses <i>[google-code-prettify][4]{:target="_blank"}</i> for Syntax highlighting.
-
-The `view raw` link at the bottom right of the script will take you to a raw text version of the script which you can copy and paste.
-
----
-
 #### Report Issues
 
 You can report an issue or contribute to this site on <a href="https://github.com/BanterBoy/scripts-blog/issues">GitHub</a>. Simply click the button below and add any relevant notes.
@@ -98,12 +91,5 @@ You can report an issue or contribute to this site on <a href="https://github.co
 </a>
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
-[2]: https://gist-it.appspot.com/
-[3]: https://gist.github.com
-[4]: https://github.com/googlearchive/code-prettify
-[5]: https://github.com/microsoft/New-KrbtgtKeys.ps1
-
-*[Back to Top]: Click to go back to the top of the page
-*[        Download]: Click this button to Download the file.
-*[Back to Tools]: Click here to go back to the Tools Index
-*[Table of contents generated with markdown-toc]: Click here to create your own.
+[2]: https://github.com/googlearchive/code-prettify
+````

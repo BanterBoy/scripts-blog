@@ -30,14 +30,16 @@ The list of popular Public DNS Servers was taken from the article - <a href="htt
   - [gist-it](#gist-it)
   - [Report Issues](#report-issues)
 
-<small><i>[Table of contents generated with markdown-toc][1]{:target="_blank"}</i></small>
+<small><i>[Table of contents generated with markdown-toc][1]{:target="\_blank"}</i></small>
 
 ---
 
 #### Examples
+
 <br>
 
 ##### EXAMPLE 1
+
 ```text
 Test-DNSRecord
 
@@ -63,6 +65,7 @@ This example shows Test-DNSRecord without any options. As recordname is a mandat
 <br>
 
 ##### EXAMPLE 2
+
 ```text
 Test-DNSRecord -recordName example.com -Type A -DNSProvider GooglePrimary
 
@@ -78,6 +81,7 @@ This example shows an 'A' record query against Google's Primary Public DNS serve
 <br>
 
 ##### EXAMPLE 3
+
 ```text
 Test-DNSRecord -recordName bbc.co.uk -Type CNAME -DNSProvider AllPublic
 
@@ -106,6 +110,7 @@ This example shows the results from a CNAME lookup queried against the complete 
 <br>
 
 ##### EXAMPLE 4
+
 ```text
 Test-DNSRecord -recordName bbc.co.uk -Type CNAME -DNSProvider GooglePrimary -Verbose
 VERBOSE: bbc.co.uk
@@ -123,6 +128,7 @@ This example displays the output with the verbose option enabled. The function p
 <br>
 
 ##### EXAMPLE 5
+
 ```text
 Test-DNSRecord -recordName bbc.co.uk -Type CNAME -DNSProvider InternalDNSserver -Verbose
 
@@ -139,6 +145,7 @@ This example displays the output with the verbose option enabled. The function p
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
+
 #### OutPut
 
 System.String. The output returned from Test-DNSRecord is a string
@@ -146,11 +153,14 @@ System.String. The output returned from Test-DNSRecord is a string
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
+
 #### Script
 
-Details about the script/function/tool/snippet file.
+```powershell
 
-<script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/functions/dns/Test-DNSRecord.ps1"></script>
+```
+
+functions/dns/Test-DNSRecord.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -172,9 +182,9 @@ Some information about why this button exists and how you can download the compl
 
 #### gist-it
 
-I have used <i>[gist-it][2]{:target="_blank"}</i> to display the files from my GitHub repository and embed it into the web page. This is very similar to <i>[GitHub Gists][3]{:target="_blank"}</i>
+I have used <i>[gist-it][2]{:target="\_blank"}</i> to display the files from my GitHub repository and embed it into the web page. This is very similar to <i>[GitHub Gists][3]{:target="\_blank"}</i>
 
-Gist-it uses <i>[google-code-prettify][4]{:target="_blank"}</i> for Syntax highlighting.
+Gist-it uses <i>[google-code-prettify][4]{:target="\_blank"}</i> for Syntax highlighting.
 
 The `view raw` link at the bottom right of the script will take you to a raw text version of the script which you can copy and paste.
 
@@ -187,6 +197,7 @@ The `view raw` link at the bottom right of the script will take you to a raw tex
 You can report an issue or contribute to this site on <a href="https://github.com/BanterBoy/scripts-blog/issues">GitHub</a>. Simply click the button below and add any relevant notes.
 
 <!-- Place this tag where you want the button to render. -->
+
 <a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=Test-DNSRecord.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
@@ -208,7 +219,11 @@ You can report an issue or contribute to this site on <a href="https://github.co
 [3]: https://gist.github.com
 [4]: https://github.com/googlearchive/code-prettify
 
-*[Back to Top]: Click to go back to the top of the page
-*[        Download]: Click this button to Download the file.
-*[Back to Functions]: Click here to go back to the Functions Index
-*[Table of contents generated with markdown-toc]: Click here to create your own.
+_[Back to Top]: Click to go back to the top of the page
+_[ Download]: Click this button to Download the file.
+_[Back to Functions]: Click here to go back to the Functions Index
+_[Table of contents generated with markdown-toc]: Click here to create your own.
+
+```
+
+```
