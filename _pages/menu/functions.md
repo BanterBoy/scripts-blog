@@ -23,7 +23,6 @@ permalink: /menu/_pages/functions.html
 - [information](#information)
 - [ip](#ip)
 - [miscellaneous](#miscellaneous)
-- [other](#other)
 - [powerShellProfile](#powershellprofile)
 - [time](#time)
 - [windowsUpdates](#windowsupdates)
@@ -295,16 +294,6 @@ permalink: /menu/_pages/functions.html
 | miscellaneous | [Test-TLSConnection.ps1](/_posts/functions/Test-TLSConnection/)                     |
 | miscellaneous | [Test-WebsiteStatus.ps1](/_posts/functions/Test-WebsiteStatus/)                     |
 | miscellaneous | [Test-WebSiteUp.ps1](/_posts/functions/Test-WebSiteUp/)                             |
-
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
-
----
-
-## other
-
-| Section | FileName                                                          |
-| :------ | :---------------------------------------------------------------- |
-| other   | [Get-ChuckNorrisJoke.ps1](/_posts/functions/Get-ChuckNorrisJoke/) |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
