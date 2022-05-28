@@ -19,10 +19,22 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+<# Create Encrypted Password file
+This file is tied to the creator and the machine can not be used elsewhere
+#>
 
+$Path = "$Home\Desktop\"
+$File = Read-Host "Enter Filename.xml"
+$FilePath =  Join-Path -Path $Path -ChildPath $File
+[PSCustomObject]@{
+    User = Get-Credential -Message User
+} | Export-Clixml -Path $FilePath
+
+<# Example use
+$encrypted = Import-Clixml -Path "FilePath"
+$encrypted.User
+#>
 ```
-
-functions/New-EncryptedUser.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

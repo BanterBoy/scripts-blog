@@ -56,7 +56,6 @@ function Select-DifferenceFolder {
     $browse.Dispose()
 }
 
-
 $DifferenceFolder = Select-DifferenceFolder
 if (![string]::IsNullOrEmpty($DifferenceFolder)) {
     Write-Host "You selected the directory: $DifferenceFolder"
@@ -82,6 +81,6 @@ function New-FolderCompare {
         Finally {
             $obj = New-Object -TypeName PSObject -Property $properties
             Write-Output $obj
-            }
-        }
-    }
+		}
+	}
+}

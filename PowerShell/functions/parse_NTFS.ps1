@@ -11,21 +11,21 @@ $WarningPreference = 'SilentlyContinue'
 ################################################>
 
 function connect-visioobject ($firstObj, $secondObj) {
- $shpConn = $pagObj.Drop($pagObj.Application.ConnectorToolDataObject, 0, 0)
- #// Connect its Begin to the 'From' shape:
- $connectBegin = $shpConn.CellsU("BeginX").GlueTo($firstObj.CellsU("PinX"))
- #// Connect its End to the 'To' shape:
- $connectEnd = $shpConn.CellsU("EndX").GlueTo($secondObj.CellsU("PinX"))
+	$shpConn = $pagObj.Drop($pagObj.Application.ConnectorToolDataObject, 0, 0)
+	#// Connect its Begin to the 'From' shape:
+	$connectBegin = $shpConn.CellsU("BeginX").GlueTo($firstObj.CellsU("PinX"))
+	#// Connect its End to the 'To' shape:
+	$connectEnd = $shpConn.CellsU("EndX").GlueTo($secondObj.CellsU("PinX"))
 }
 
 function add-visioobject ($mastObj, $item, $x, $y) {
- Write-Host "Adding $item"
- # Drop the selected stencil on the active page, with the coordinates x, y
- $shpObj = $pagObj.Drop($mastObj, $x, $y)
- # Enter text for the object
- $shpObj.Text = $item
- #Return the visioobject to be used
- return $shpObj
+	Write-Host "Adding $item"
+	# Drop the selected stencil on the active page, with the coordinates x, y
+	$shpObj = $pagObj.Drop($mastObj, $x, $y)
+	# Enter text for the object
+	$shpObj.Text = $item
+	#Return the visioobject to be used
+	return $shpObj
 }
 
 function New-VisioDocument ($visible) {

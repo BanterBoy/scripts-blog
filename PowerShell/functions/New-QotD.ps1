@@ -38,8 +38,8 @@ function New-QotD {
     }
 
     foreach ( $item in $QuoteOfTheDay ) {
-        $QuoteOfTheDayProperties = $item | Select-Object -Property *
         try {
+        $QuoteOfTheDayProperties = $item | Select-Object -Property *
             $QuoteOfTheDayProperties = @{
                 Quote      = $QuoteOfTheDayProperties.contents.quotes.quote
                 Length     = $QuoteOfTheDayProperties.contents.quotes.length

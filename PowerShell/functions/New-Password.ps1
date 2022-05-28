@@ -1,5 +1,4 @@
-<#
-API Usage
+<# API Usage
 
 It is possible to pass settings into the generator to set the initial values of the complexity settings.
 
@@ -22,6 +21,14 @@ length	1-128	15	Set the password length.
 exclude	[string]	?!<>li1I0OB8`	Indicates which characters to exclude.
 repeat	1-128	9	Indicates how many passwords to generate.
 
+$upper
+$lower
+$numbers
+$special
+$length
+[string]$exclude		?!<>li1I0OB8`	Indicates which characters to exclude.
+repeat	1-128	9	Indicates how many passwords to generate.
+
 #>
 
 function New-Password {
@@ -32,11 +39,3 @@ function New-Password {
     $password = $Alphas.password + $Special.password + $Numbers.password
     $password
 }
-
-# $upper
-# $lower
-# $numbers
-# $special
-# $length
-# [string]$exclude		?!<>li1I0OB8`	Indicates which characters to exclude.
-# repeat	1-128	9	Indicates how many passwords to generate.

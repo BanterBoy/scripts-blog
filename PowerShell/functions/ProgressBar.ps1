@@ -27,7 +27,6 @@ function ProcessingAnimation($scriptBlock) {
     }
 }
 
-
 $scriptBlock = @{
     $Items = Get-ChildItem -Path \\SERVERNAME\Movies -Include *.mkv -Recurse
 }

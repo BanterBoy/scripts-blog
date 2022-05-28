@@ -106,14 +106,13 @@ foreach ($user in $users) {
 
     # Email Body Set Here, Note: You can use HTML, including Images. 
     $body = " 
-Dear $name, 
-<p> Your Office 365 e-mail Password will expire $messageDays.<br> 
-You can change your password through the Office 365 web portal.<br>
-<p> If you need instructions on how to access the portal, please contact the administrator.<br> 
-<p>Thank you, <br> 
-Office 365 Administrator<br> 
-</P>" 
-
+    Dear $name,
+    <p> Your Office 365 e-mail Password will expire $messageDays.<br> 
+    You can change your password through the Office 365 web portal.<br>
+    <p> If you need instructions on how to access the portal, please contact the administrator.<br> 
+    <p>Thank you, <br> 
+    Office 365 Administrator<br> 
+    </P>" 
 
     # If Testing Is Enabled - Email Administrator 
     if (($testing) -eq "Enabled") { 

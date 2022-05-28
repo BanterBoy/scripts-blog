@@ -19,10 +19,25 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-
+$SourceFiles = Get-ChildItem -Path "D:\TEST"
+foreach ($Source in $SourceFiles){
+	$ArchiveLocation = "D:\TEST\Archive"
+	$SubtractDays = -1
+	$FileBeforeHour = 20
+	$FileBeforeMin = 00
+	$FileBeforeSec = 00
+	$ArchiveDate = $Source.LastWriteTime.ToString("yyyyMMdd")
+	$FileBefore = Get-Date -Date (Get-Date).Adddays($SubtractDays) -Hour $FileBeforeHour -Minute $FileBeforeMin -Second -$FileBeforeSec
+	$FinalLocation = $ArchiveLocation + '\' + $ArchiveDate
+	if ( -not ( Test-Path $FinalLocation ) ) {
+		New-Item $FinalLocation -Type Directory
+	}
+	$Source |
+	Where-Object {$_.LastWriteTime -lt $FileBefore -and (!$_.PSIsContainer) } |
+	Move-Item -Destination $FinalLocation
+}
+# (Get-Date).Adddays($SubtractDays).ToString("yyyyMMdd")
 ```
-
-functions/compression/New-FileArchive.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

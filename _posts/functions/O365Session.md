@@ -19,10 +19,14 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-
+function New-O365Session {
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $Credentials -Authentication Basic -AllowRedirection
+    Import-PSSession $Session
+}
+function Remove-O365Session {
+    Get-PSSession | Remove-PSSession
+}
 ```
-
-functions/exchange/O365Session.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
