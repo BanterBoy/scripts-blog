@@ -73,7 +73,7 @@ This document is a supplemental guide to the interactive krbtgt reset script (Ne
 
 #### Report Issues
 
-You can report an issue or contribute to this site on <a href="https://github.com/BanterBoy/scripts-blog/issues">GitHub</a>. Simply click the button below and add any relevant notes.
+You can report an issue or contribute to this site on <a href="https://github.com/BanterBoy/scripts-blog/issues">GitHub</a>. Simply click the button below and add any relevant notes. I will attempt to respond to all issues as soon as possible.
 
 <!-- Place this tag where you want the button to render. -->
 <a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=New-KrbtgtKeys.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>

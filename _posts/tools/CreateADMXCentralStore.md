@@ -66,7 +66,7 @@ More information can be found on the owners website - [jhouseconsulting.com][5]{
 
 #### Report Issues
 
-You can report an issue or contribute to this site on <a href="https://github.com/BanterBoy/scripts-blog/issues">GitHub</a>. Simply click the button below and add any relevant notes.
+You can report an issue or contribute to this site on <a href="https://github.com/BanterBoy/scripts-blog/issues">GitHub</a>. Simply click the button below and add any relevant notes. I will attempt to respond to all issues as soon as possible.
 
 <!-- Place this tag where you want the button to render. -->
 

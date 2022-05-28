@@ -30,7 +30,7 @@ scripts/AutoBitlocker.ps1
 
 #### Download
 
-You can of course copy any part of the script from the text above, or you can simply press the download button and download the entire script. Choice is yours....its just nice to have choices 😎
+Some information about why this button exists and how you can download the complete repository.
 
 <button class="btn" type="submit" onclick="window.open('/PowerShell/scripts/AutoBitlocker.ps1')">
     <i class="fa fa-cloud-download-alt">
@@ -42,7 +42,7 @@ You can of course copy any part of the script from the text above, or you can si
 
 #### Report Issues
 
-You can report an issue or contribute to this site on <a href="https://github.com/BanterBoy/scripts-blog/issues">GitHub</a>. Simply click the button below and add any relevant notes.
+You can report an issue or contribute to this site on <a href="https://github.com/BanterBoy/scripts-blog/issues">GitHub</a>. Simply click the button below and add any relevant notes. I will attempt to respond to all issues as soon as possible.
 
 <!-- Place this tag where you want the button to render. -->
 
