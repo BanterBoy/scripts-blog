@@ -19,10 +19,16 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+# This script will list the installed Windows Features
 
+import-module ServerManager
+$InstalledFeatures = Get-WindowsFeature | Where-Object { $_.Installed -eq $True }
+Write-Host "Installed Features:"
+ForEach ($Feature in $InstalledFeatures) {
+  $Message = " - " + $Feature.DisplayName + " (" + $Feature.Name + ")"
+  Write-Host $Message
+}
 ```
-
-functions/GetWindowsFeatures.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
