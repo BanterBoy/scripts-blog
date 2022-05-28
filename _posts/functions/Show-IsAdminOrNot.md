@@ -19,10 +19,30 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+function Test-IsAdmin {
+	<#
+	.Synopsis
+	Tests if the user is an administrator
+	.Description
+	Returns true if a user is an administrator, false if the user is not an administrator
+	.Example
+	Test-IsAdmin
+	#>
+	$identity = [Security.Principal.WindowsIdentity]::GetCurrent()
+	$principal = New-Object Security.Principal.WindowsPrincipal $identity
+	$principal.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
+}
 
+function Show-IsAdminOrNot {
+	$IsAdmin = Test-IsAdmin
+	if ( $IsAdmin -eq "False") {
+		Write-Warning -Message "Admin Privileges!"
+	}
+	else {
+		Write-Warning -Message "User Privileges"
+	}
+}
 ```
-
-functions/Show-IsAdminOrNot.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

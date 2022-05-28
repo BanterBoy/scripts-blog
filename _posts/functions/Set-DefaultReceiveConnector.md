@@ -19,10 +19,10 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-
+$Connector = Get-ReceiveConnector -Identity 'MAIL02\Default Frontend MAIL02'
+$Connector.RemoteIPRanges += "10.0.0.1","10.0.0.2","10.0.0.3"
+Set-ReceiveConnector -Name $Connector.Name -RemoteIPRanges $Connector.RemoteIPRanges
 ```
-
-functions/exchange/Set-DefaultReceiveConnector.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

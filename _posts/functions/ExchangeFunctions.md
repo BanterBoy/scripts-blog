@@ -19,10 +19,22 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+function New-OnPremExchangeSession {
+    $creds = Get-Credential
+    $OnPremSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri http://mail01.example.local/PowerShell/ -Authentication Kerberos -Credential $creds
+    Import-PSSession $OnPremSession -DisableNameChecking
+}
 
+function New-O365ExchangeSession {
+    $creds = Get-Credential
+    $O365Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $creds -Authentication Basic -AllowRedirection
+    Import-PSSession $O365Session
+}
+
+function Remove-ExchangeSession {
+    Get-PSSession | Remove-PSSession
+}
 ```
-
-functions/exchange/ExchangeFunctions.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

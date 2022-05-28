@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set-CalendarPermsScript.ps1
+title: Get-HostIOResults.ps1
 ---
 
 ### something exciting
@@ -19,35 +19,48 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-function New-O365Session {
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential (Get-Credential) -Authentication Basic -AllowRedirection
-    Import-PSSession $Session
-}
-function Remove-O365Session {
-    Get-PSSession | Remove-PSSession
-}
-
-New-O365Session
-
-$UsersMailbox = Get-Mailbox -RecipientTypeDetails UserMailbox
-foreach ($item in $UsersMailbox) {
-    $Permissions = Get-MailboxFolderPermission -Identity ($item.alias + ':\calendar') -User email@example.com | Select-Object Identity, User, AccessRights
-    if ($Permissions.User -like 'UserName') {
-        $message = ($item.DisplayName) + ' - User Exists'
-        Write-Warning -Message "$message" -ErrorAction Stop
+function Get-HostIOResults {
+    [CmdletBinding(
+        SupportsShouldProcess = $true
+    )]
+    param (
+        [Parameter()]
+        [string[]]
+        $domainName,
+        [Parameter()]
+        [string[]]
+        $apiKey
+    )
+    begin {
+        $siteURL = "https://host.io/api/full/"
+        $accessKey = ("?token=" + "$ApiKey")
+        $fullresults = Invoke-RestMethod -Method Get -Uri ($siteURL + $domainName + $accessKey)
     }
-    else {
-        Add-MailboxFolderPermission -Identity ($user.alias + ':\calendar') -User email@example.com -AccessRights Reviewer
-        $message = ($item.DisplayName) + ' - User Added'
-        Write-Verbose -Message "$message" -Verbose
+    process {
+        if ($PSCmdlet.ShouldProcess("Target", "Operation")) {
+            try {
+                foreach ($result in $fullresults) {
+                    $properties = @{
+                        "Domain"       = $fullresults.domain
+                        "WEB"          = $fullresults.web
+                        "DomainRecord" = $fullresults.dns.domain
+                        "ARecord"      = $fullresults.dns.a
+                        "AAAADomain"   = $fullresults.dns.aaaa
+                        "MXDomain"     = $fullresults.dns.mx
+                        "NSDomain"     = $fullresults.dns.ns
+
+                    }
+                }
+            }
+            finally {
+                $object = New-Object -TypeName PSObject -Property $properties
+                Write-Output $object
+            }
+        }
+    }
+    end {
     }
 }
-
-Remove-O365Session
-
-Write-Verbose -Message "Job Complete, press any key to close this Window" -Verbose
-
-pause
 ```
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
@@ -58,7 +71,7 @@ pause
 
 Please feel free to copy parts of the script or if you would like to download the entire script, simple click the download button. You can download the complete repository in a zip file by clicking the Download link in the menu bar on the left hand side of the page.
 
-<button class="btn" type="submit" onclick="window.open('/PowerShell/functions/exchange/Set-CalendarPermsScript.ps1')">
+<button class="btn" type="submit" onclick="window.open('/PowerShell/functions/Get-HostIOResults.ps1')">
     <i class="fa fa-cloud-download-alt">
     </i>
         Download
@@ -72,7 +85,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 <!-- Place this tag where you want the button to render. -->
 
-<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=Set-CalendarPermsScript.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
+<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=Get-HostIOResults.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
 
 ---
 

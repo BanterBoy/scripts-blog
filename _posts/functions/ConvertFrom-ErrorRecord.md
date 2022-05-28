@@ -19,10 +19,42 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+function ConvertFrom-ErrorRecord {
+    [CmdletBinding(DefaultParameterSetName = "ErrorRecord")]
+    param
+    (
+        [Management.Automation.ErrorRecord]
+        [Parameter(Mandatory,
+            ValueFromPipeline,
+            ParameterSetName = "ErrorRecord",
+            Position = 0)]
+        $Record,
 
+        [Object]
+        [Parameter(Mandatory,
+            ValueFromPipeline,
+            ParameterSetName = "Unknown",
+            Position = 0)]
+        $Alien
+    )
+
+    process {
+        if ($PSCmdlet.ParameterSetName -eq 'ErrorRecord') {
+            [PSCustomObject]@{
+                Exception = $Record.Exception.Message
+                Reason    = $Record.CategoryInfo.Reason
+                Target    = $Record.CategoryInfo.TargetName
+                Script    = $Record.InvocationInfo.ScriptName
+                Line      = $Record.InvocationInfo.ScriptLineNumber
+                Column    = $Record.InvocationInfo.OffsetInLine
+            }
+        }
+        else {
+            Write-Warning "$Alien"
+        }
+    }
+}
 ```
-
-functions/ConvertFrom-ErrorRecord.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

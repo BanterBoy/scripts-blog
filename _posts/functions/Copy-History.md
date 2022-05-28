@@ -19,10 +19,15 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-
+#--------------------
+# History Function
+Function Copy-History {
+    Get-History |
+    Out-GridView -Title "Command History - press CTRL to select multiple - Selected commands copied to clipboard" -OutputMode Multiple |
+    ForEach-Object -Begin { [Text.StringBuilder]$sb = "" } -Process { $null = $sb.AppendLine($_.CommandLine) } -End { $sb.ToString() |
+        clip }
+}
 ```
-
-functions/Copy-History.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

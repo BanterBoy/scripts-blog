@@ -23,19 +23,17 @@ function Add-ADUsertoLocalGroup {
     [CmdletBinding(DefaultParameterSetName = 'Default',
         HelpURI = 'https://scripts.lukeleigh.com/_posts/functions/Add-ADUsertoLocalGroup/')]
     param (
-        [string[]]
-        $ComputerName,
-        [string[]]
-        $UserName,
-        [string[]]
-        $LocalGroupName
+        [string[]]$ComputerName,
+        [string[]]$UserName,
+        [string[]]$LocalGroupName
     )
-    if ($ComputerName -eq "") {
-        $ComputerName = "$env:COMPUTERNAME"
-        }
+    if ($ComputerName -eq "") { $ComputerName = "$env:COMPUTERNAME" }
     [string]$domainName = ([ADSI]'').name
-    ([ADSI]"WinNT://$ComputerName/$LocalGroupName,group").Add("WinNT://$domainName/
+    ([ADSI]"WinNT://$ComputerName/$LocalGroupName,group").Add("WinNT://$domainName/$UserName")
+
 }
+
+# Write-Host "User $domainName\$userName is now member of local group $localGroupName on $computerName."
 ```
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -19,10 +19,85 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+<#
+    .SYNOPSIS
+    A set of functions to provide the ability to manage Active Directory FSMO Roles.
 
+    .DESCRIPTION
+    A function to centralise all Roles on the Active Directory PDC Emulator.
+
+    Move-FSMORolestoPDCEmulator
+
+    Wrapper for the Move-ADDirectoryServerOperationMasterRole command.
+    Operation Master Roles
+    PDCEmulator or 0
+    RIDMaster or 1
+    InfrastructureMaster or 2
+    SchemaMaster or 3
+    DomainNamingMaster or 4
+
+    .EXAMPLE
+    PS C:\> Move-FSMORolestoPDCEmulator
+
+    Move Operation Master Role
+    Do you want to move role 'InfrastructureMaster' to server 'DOMAINCONTROLLERNAME.example.com' ?
+    [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): Y
+
+    .INPUTS
+    Each SET function accepts piped input. All SET functions are strings.
+    $PDCEmulator
+    $RIDMaster
+    $InfrastructureMaster
+    $SchemaMaster
+    $DomainNamingMaster
+
+    .OUTPUTS
+    Move Operation Master Role
+    Do you want to move role 'InfrastructureMaster' to server 'DOMAINCONTROLLERNAME.example.com' ?
+    [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"):
+
+    .NOTES
+    Author:     Luke Leigh
+    Website:    https://blog.lukeleigh.com/
+    LinkedIn:   https://www.linkedin.com/in/lukeleigh/
+    GitHub:     https://github.com/BanterBoy/
+    GitHubGist: https://gist.github.com/BanterBoy
+
+    .LINK
+    https://github.com/BanterBoy/scripts-blog
+
+#>
+
+#Requires -Module ActiveDirectory
+#Requires -RunAsAdministrator
+
+[CmdletBinding(DefaultParameterSetName = 'Default',
+    HelpURI = 'https://github.com/BanterBoy/scripts-blog/wiki')]
+
+param (
+    [parameter(Mandatory = $true, HelpMessage = "Select the Operation Master Role that you want to move.")]
+    [ValidateSet("PDCEmulator", "RIDMaster", "InfrastructureMaster", "SchemaMaster", "DomainNamingMaster")]
+    [Alias('FSMO', 'OpMastRole')]
+    [string]$OperationMasterRole
+)
+
+BEGIN {
+    $ForestInfo = (Get-ADForest) | Select-Object DomainNamingMaster, SchemaMaster
+    $DomainInfo = (Get-ADDomain) | Select-Object InfrastructureMaster, PDCEmulator, RIDMaster
+}
+
+PROCESS {
+    Move-ADDirectoryServerOperationMasterRole -Identity $PDCEmulator -OperationMasterRole 0 -whatif
+    Move-ADDirectoryServerOperationMasterRole -Identity $RIDMaster -OperationMasterRole 1 -whatif
+    Move-ADDirectoryServerOperationMasterRole -Identity $InfrastructureMaster -OperationMasterRole 2 -whatif
+    Move-ADDirectoryServerOperationMasterRole -Identity $SchemaMaster -OperationMasterRole 3 -whatif
+    Move-ADDirectoryServerOperationMasterRole -Identity $DomainNamingMaster -OperationMasterRole 4 -whatif
+}
+
+END {
+
+}
 ```
-
-functions/activeDirectory/Set-FSMORoleOwner.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

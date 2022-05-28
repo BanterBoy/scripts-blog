@@ -19,10 +19,20 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+function Restart-ExchangeServices {
+    param (
+        [Parameter(ValueFromPipeline = $True)]
+        [string[]]$ComputerName
+    )
 
+    foreach ($Computer in $ComputerName) {
+        $Services = Get-Service -ComputerName $Computer | Where-Object { $_.Name -like "MSExchange*" -and $_.Status -eq "Running" }
+        foreach ($Service in $Services) {
+            Restart-Service $Service.name -Force
+        }
+    }
+}
 ```
-
-functions/exchange/Restart-ExchangeServices.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

@@ -19,10 +19,23 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+Function Start-DownloadFileToTemp {
+    param
+    (
+        [Parameter()]
+        [String]$Url
+    )
 
+    $fileName = [system.io.path]::GetFileName($url)
+    $tmpFilePath = [system.io.path]::Combine($env:TEMP, $fileName)
+
+    $wc = new-object System.Net.WebClient
+    $wc.DownloadFile($url, $tmpFilePath)
+    $wc.Dispose()
+
+    return $tmpFilePath
+}
 ```
-
-functions/Start-DownloadFileToTemp.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

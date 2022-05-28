@@ -19,10 +19,18 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-
+$DisabledUsers = Get-ADUser -Filter { Name -like '*' } -SearchBase "OU=Users,OU=Disabled Accounts,DC=domain,DC=local" |
+Where-Object { $_.Enabled -eq $false }
+foreach ($User in $DisabledUsers) {
+    try {
+        Get-Mailbox -Identity $User.UserPrincipalName -ErrorAction Stop |
+        Set-Mailbox -HiddenFromAddressListsEnabled $true -ErrorAction Stop -Whatif
+    }
+    catch {
+        Write-Verbose -Message $_.Exception.Message -Verbose
+    }
+}
 ```
-
-functions/exchange/Remove-UsersfromGAL.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

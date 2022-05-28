@@ -19,7 +19,103 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+<#
+Get-ADUser "ADUserName" -Properties PasswordExpired | Select-Object PasswordExpired
 
+Set-ADUser "ADUserName" -Replace @{pwdLastSet='0'}
+
+$users = Get-ADUser -Filter {name -like '*' } -Properties *
+foreach($user in $users){ Set-ADUser -Replace @{pdwLastSet='0' -whatif }
+#>
+
+function Get-PasswordLastSetDate {
+    [CmdletBinding(SupportsShouldProcess = $false)]
+    param (
+        [Parameter(Mandatory = $true,
+            ValueFromPipeline = $false,
+            ValueFromPipelineByPropertyName = $True,
+            HelpMessage = "Enter username")]
+        [Alias('un')]
+        [string[]]$Identity,
+        [Parameter(Mandatory = $true,
+            ValueFromPipeline = $false,
+            ValueFromPipelineByPropertyName = $True,
+            HelpMessage = "Enter Domain name")]
+        [Alias('dom')]
+        [string[]]$Domain
+    )
+
+    BEGIN {
+    }
+
+    PROCESS {
+        foreach ($User in $Identity) {
+            $PasswordTest = Get-ADUser -Identity $User -Server "$Domain" -Properties "pwdLastSet" | Select-Object -Property Name, @{name = "pwdLastSet"; expression = { [datetime]::FromFileTime($_.pwdLastSet) } }
+            try {
+                $Properties = @{
+                    "Username"   = $PasswordTest.Name
+                    "pwdLastSet" = $PasswordTest.pwdLastSet
+                }
+            }
+            catch {
+                $Properties = @{
+                    "Username"   = $PasswordTest.Name
+                    "pwdLastSet" = $PasswordTest.pwdLastSet
+                }
+            }
+            finally {
+                $obj = New-Object -TypeName PSObject -Property $Properties
+                Write-Output $obj
+            }
+        }
+    }
+    END {
+
+    }
+
+}
+
+function Set-PasswordExpired {
+    [CmdletBinding(SupportsShouldProcess = $false)]
+    param (
+        [Parameter(Mandatory = $true,
+            ValueFromPipeline = $false,
+            ValueFromPipelineByPropertyName = $True,
+            HelpMessage = "Enter Username for account to be expired")]
+        [Alias('id')]
+        [string[]]$Identity
+    )
+
+    BEGIN {
+    }
+
+    PROCESS {
+
+        foreach ($User in $Identity) {
+            Set-ADUser $User -Replace @{pwdLastSet = '0' }
+            $Reset = Get-ADUser $User -Properties PasswordExpired | Select-Object -Property Name, PasswordExpired
+            try {
+                $Properties = @{
+                    "Username"        = $Reset.Name
+                    "PasswordExpired" = $Reset.PasswordExpired
+                }
+            }
+            catch {
+                $Properties = @{
+                    "Username"        = $Reset.Name
+                    "PasswordExpired" = $Reset.PasswordExpired
+                }
+            }
+            finally {
+                $obj = New-Object -TypeName PSObject -Property $Properties
+                Write-Output $obj
+            }
+        }
+    }
+    END {
+
+    }
+}
 ```
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

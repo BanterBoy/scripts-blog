@@ -97,7 +97,6 @@ permalink: /menu/_pages/functions.html
 
 ---
 
-
 ## compression
 
 | Section     | FileName                                                                              |
@@ -224,9 +223,8 @@ permalink: /menu/_pages/functions.html
 | miscellaneous | [ConvertFrom-ErrorRecord.ps1](/_posts/functions/ConvertFrom-ErrorRecord/)           |
 | miscellaneous | [ConvertObject-ToHashTable.ps1](/_posts/functions/ConvertObject-ToHashTable/)       |
 | miscellaneous | [Copy-History.ps1](/_posts/functions/Copy-History/)                                 |
-| miscellaneous | [createRealFakeNames.ps1](/_posts/functions/createRealFakeNames/)                   |
 | miscellaneous | [Disable-PrintSpooler.ps1](/_posts/functions/Disable-PrintSpooler/)                 |
-| miscellaneous | [domainresults.hostio.ps1](/_posts/functions/domainresults.hostio/)                 |
+| miscellaneous | [Get-HostIOResults.ps1](/_posts/functions/Get-HostIOResults/)                       |
 | miscellaneous | [Get-FriendlySize.ps1](/_posts/functions/Get-FriendlySize/)                         |
 | miscellaneous | [Get-FTPFile-empty.ps1](/_posts/functions/Get-FTPFile-empty/)                       |
 | miscellaneous | [Get-Icon.ps1](/_posts/functions/Get-Icon/)                                         |

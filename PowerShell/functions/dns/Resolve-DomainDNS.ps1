@@ -34,7 +34,6 @@ function Get-DMARCRecord {
     }    
 }
 
-
 function Get-DKIMRecord {
     <#
     .SYNOPSIS
@@ -79,7 +78,6 @@ function Get-DKIMRecord {
         }
     }
 }
-
 
 function Get-SPFRecord {
     <# 
@@ -127,4 +125,3 @@ Resolve-DnsName -Name $env:USERDOMAIN -Type A -Server 8.8.8.8 -ErrorAction Stop
 Get-SPFRecord -DomainName example.co.uk -Server 8.8.4.4 -ErrorAction Stop
 Get-DMARCRecord -DomainName example.co.uk -Server 8.8.8.8 -ErrorAction Stop
 Get-DKIMRecord -DomainName example.co.uk -Server 8.8.8.8 -ErrorAction Stop
-

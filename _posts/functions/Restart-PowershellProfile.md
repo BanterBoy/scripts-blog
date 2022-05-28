@@ -19,10 +19,20 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-
+function Restart-PowershellProfile {
+    @(
+        $Profile.AllUsersAllHosts,
+        $Profile.AllUsersCurrentHost,
+        $Profile.CurrentUserAllHosts,
+        $Profile.CurrentUserCurrentHost
+    ) | ForEach-Object {
+        if (Test-Path $_) {
+            Write-Verbose "Running $_"
+            . $_
+        }
+    }
+}
 ```
-
-functions/powerShellProfile/Restart-PowershellProfile.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

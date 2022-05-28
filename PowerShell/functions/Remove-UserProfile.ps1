@@ -16,7 +16,6 @@ If ((Test-Path $Logging) –eq $false) {
 }
 Start-Transcript -Path $Logging\ProfileCleanup.txt -Append
 
-
 Write-Warning "Filtering for user profiles older than $Days days" 
 Get-CimInstance win32_userprofile -Verbose | 
 Where-Object { $_.LastUseTime -lt $(Get-Date).Date.AddDays(-$days) } |

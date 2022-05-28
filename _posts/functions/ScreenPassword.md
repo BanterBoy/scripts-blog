@@ -19,10 +19,13 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+function ScreenPassword($instance) {
+    if (!($instance.screensaversecure)) { return $instance.name }
+    <additional statements>
+}
 
+foreach ($a in @(get-wmiobject win32_desktop)) { ScreenPassword($a) }
 ```
-
-functions/ScreenPassword.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
