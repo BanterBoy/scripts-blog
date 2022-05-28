@@ -19,10 +19,26 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+# This script was created to extract the contents of multiple ZIP files located in a directory
+# structure. Each ZIP files is extracted within the folder it resides.
 
+# File path
+$filepath = Get-ChildItem -Path 'C:\Users\Luke\Desktop\SapienScripts\' -Filter *.zip -Recurse
+
+# convert filepath to NameSpace object
+$shell = new-object -com shell.application
+
+# ForEach Loop processes each ZIP file located within the $filepath variable
+#
+foreach ($file in $filepath) {
+    $zip = $shell.NameSpace($file.FullName)
+    foreach ($item in $zip.items()) {
+        $shell.Namespace($file.DirectoryName).copyhere($item)
+    }
+
+    Remove-Item $file.FullName
+}
 ```
-
-functions/compression/UncompressZip-SameDestination.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

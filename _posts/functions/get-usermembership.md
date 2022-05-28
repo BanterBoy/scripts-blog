@@ -19,10 +19,29 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-
+$groups = Get-ADGroup -Filter * | Select-Object Name
+foreach ($group in $groups) {
+    $users = Get-ADGroupMember -Identity "$group.name" | Select-Object Name
+    foreach($user in $users){
+        try {
+            $properties = @{
+                Group = "$group.name"
+                User = "$user.name"
+            }
+        }
+        catch {
+            $properties = @{
+                Group = "$group.name"
+                User = "$user.name"
+            }
+        }
+        finally {
+            $obj = New-Object -TypeName PSObject -Property $properties
+            Write-Output $obj | ConvertTo-Json | Out-File C:\exported-data.json -Append
+        }
+    }
+}
 ```
-
-functions/activeDirectory/Get-UserMembership.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

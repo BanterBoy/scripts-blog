@@ -19,10 +19,15 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+function Test-UserExists {
+    param([Parameter(Mandatory)]
+        [string]
+        $SAMAccountName
+    )
 
+    @(Get-ADUser -LDAPFilter "(samaccountname=$SAMAccountName)").Count -ne 0
+}
 ```
-
-functions/activeDirectory/Test-UserExists.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
