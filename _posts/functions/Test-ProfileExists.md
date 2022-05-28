@@ -19,10 +19,12 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-
+function Test-ProfileExists {
+    $profile.PSObject.Properties.Name |
+    Where-Object { $_ -ne 'Length' } |
+    ForEach-Object { [PSCustomObject]@{Profile = $_; Present = Test-Path $profile.$_ ; Path = $profile.$_ } }
+}
 ```
-
-functions/Test-ProfileExists.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
