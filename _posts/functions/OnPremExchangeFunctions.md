@@ -38,16 +38,6 @@ Some information about why this button exists and how you can download the compl
 
 ---
 
-#### gist-it
-
-I have used <i>[gist-it][2]{:target="\_blank"}</i> to display the files from my GitHub repository and embed it into the web page. This is very similar to <i>[GitHub Gists][3]{:target="\_blank"}</i>
-
-Gist-it uses <i>[google-code-prettify][4]{:target="\_blank"}</i> for Syntax highlighting.
-
-The `view raw` link at the bottom right of the script will take you to a raw text version of the script which you can copy and paste.
-
----
-
 #### Report Issues
 
 You can report an issue or contribute to this site on <a href="https://github.com/BanterBoy/scripts-blog/issues">GitHub</a>. Simply click the button below and add any relevant notes.
