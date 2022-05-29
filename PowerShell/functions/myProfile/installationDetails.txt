@@ -1,0 +1,3 @@
+Some details
+go into this file
+something about how to set up the profile if it is downloaded

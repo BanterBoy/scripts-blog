@@ -1,6 +1,6 @@
 ---
 layout: post
-title: templatePage.ps1
+title: Get-ServerIPInfo.ps1
 ---
 
 ### something exciting
@@ -19,7 +19,27 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+function Get-ServerIPInfo {
+    $ServerList = (Get-ADComputer -Filter 'operatingsystem -like "*server*" -and enabled -eq "true"').Name
+    $test = Test-Connection -ComputerName $ServerList -Count 1 -ErrorAction SilentlyContinue
+    $Available = $test | Select-Object -ExpandProperty Address
+    $result = @()
 
+    foreach ($Server in $Available) {
+        $Invoke = Invoke-Command -ComputerName $Server -ScriptBlock {
+            Get-NetIPConfiguration | Select-Object -Property InterfaceAlias, Ipv4Address, DNSServer
+            Get-NetRoute -DestinationPrefix '0.0.0.0/0' | Select-Object -ExpandProperty NextHop
+        }
+        $result += New-Object -TypeName PSCustomObject -Property ([ordered]@{
+                'Server'      = $Server
+                'Interface'   = $Invoke.InterfaceAlias -join ','
+                'IPv4Address' = $Invoke.Ipv4Address.IPAddress -join ','
+                'Gateway'     = $Invoke | Select-Object -Last 1
+                'DNSServer'   = ($Invoke.DNSServer | Select-Object -ExpandProperty ServerAddresses) -join ','
+            })
+    }
+    $result
+}
 ```
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
@@ -28,7 +48,7 @@ Some information about the exciting thing
 
 Please feel free to copy parts of the script or if you would like to download the entire script, simple click the download button. You can download the complete repository in a zip file by clicking the Download link in the menu bar on the left hand side of the page.
 
-<button class="btn" type="submit" onclick="window.open('http://agamar.domain.leigh-services.com:4000/powershell/functions/myProfile/templatePage.ps1')">
+<button class="btn" type="submit" onclick="window.open('http://agamar.domain.leigh-services.com:4000/powershell/functions/myProfile/Get-ServerIPInfo.ps1')">
     <i class="fa fa-cloud-download-alt">
     </i>
         Download
@@ -42,7 +62,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 <!-- Place this tag where you want the button to render. -->
 
-<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=templatePage.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
+<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=Get-ServerIPInfo.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
 
 ---
 

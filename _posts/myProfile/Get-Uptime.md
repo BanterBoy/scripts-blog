@@ -1,6 +1,6 @@
 ---
 layout: post
-title: templatePage.ps1
+title: Get-Uptime.ps1
 ---
 
 ### something exciting
@@ -19,7 +19,92 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+function Get-Uptime {
+        <#
+        .SYNOPSIS
+            Get-Uptime will extract the current system uptime from the computer entered.
 
+        .DESCRIPTION
+            A detailed description of the Get-Uptime function.
+
+        .PARAMETER ComputerName
+            Enter the Name/IP/FQDN for the computer you would like to retrieve the information from or pipe in a list of computers.
+
+        .PARAMETER Days
+            A description of the Days parameter.
+
+        .PARAMETER Since
+            A description of the Since parameter.
+
+        .EXAMPLE
+            Get-Uptime
+
+        .EXAMPLE
+            Get-ADComputer -Filter { Name -like '*' } -Properties * | Where-Object -Property Name -NotLike '*AGAMAR*' | ForEach-Object -Process { Get-Uptime -ComputerName $_.Name } | Format-Table -AutoSize -Property Name,Days,Hours,Minutes
+
+        .EXAMPLE
+            'HOTH','KAMINO','DANTOOINE' | ForEach-Object -Process { Get-Uptime -ComputerName $_ } | Format-Table -AutoSize -Property Name,Days,Hours,Minutes
+
+        .OUTPUTS
+            string
+
+        .NOTES
+            Additional information about the function.
+    #>
+    [CmdletBinding(DefaultParameterSetName = 'Default',
+        SupportsPaging = $true,
+        SupportsShouldProcess = $true)]
+    [OutputType([string], ParameterSetName = 'Default')]
+    param
+    (
+        # Enter the Name/IP/FQDN for the computer you would like to retrieve the information from or pipe in a list of computers.
+        [Parameter(ParameterSetName = 'Default',
+            Mandatory = $false,
+            ValueFromPipeline = $true,
+            ValueFromPipelineByPropertyName = $true,
+            ValueFromRemainingArguments = $true,
+            Position = 0,
+            HelpMessage = 'Enter the Name/IP/FQDN for the computer you would like to retrieve the information from or pipe in a list of computers.')]
+        [ValidateNotNullOrEmpty()]
+        [Alias('cn')]
+        [string[]]
+        $ComputerName = $env:COMPUTERNAME
+    )
+    begin {
+    }
+    process {
+        if ($PSCmdlet.ShouldProcess("$Computer", "Retrieving uptime")) {
+        foreach ($Computer in $ComputerName) {
+                $Date = (Get-CimInstance -ComputerName $Computer -Class Win32_OperatingSystem).LastBootUpTime
+                $TimeSpan = New-Timespan -Start $Date
+                try {
+                    $properties = @{
+                        'Name'              = $Computer
+                        'Date'              = $Date
+                        'Days'              = $TimeSpan.Days
+                        'Hours'             = $TimeSpan.Hours
+                        'Minutes'           = $TimeSpan.Minutes
+                        'Seconds'           = $TimeSpan.Seconds
+                        'Milliseconds'      = $TimeSpan.Milliseconds
+                        'Ticks'             = $TimeSpan.Ticks
+                        'TotalDays'         = $TimeSpan.TotalDays
+                        'TotalHours'        = $TimeSpan.TotalHours
+                        'TotalMinutes'      = $TimeSpan.TotalMinutes
+                        'TotalSeconds'      = $TimeSpan.TotalSeconds
+                        'TotalMilliseconds' = $TimeSpan.TotalMilliseconds
+                    }
+                    $obj = New-Object PSObject -Property $properties
+                    Write-Output $obj
+                }
+                catch {
+                    Write-Error -Message $_
+                }
+            }
+        }
+    }
+    end {
+    }
+}
 ```
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
@@ -28,7 +113,7 @@ Some information about the exciting thing
 
 Please feel free to copy parts of the script or if you would like to download the entire script, simple click the download button. You can download the complete repository in a zip file by clicking the Download link in the menu bar on the left hand side of the page.
 
-<button class="btn" type="submit" onclick="window.open('http://agamar.domain.leigh-services.com:4000/powershell/functions/myProfile/templatePage.ps1')">
+<button class="btn" type="submit" onclick="window.open('http://agamar.domain.leigh-services.com:4000/powershell/functions/myProfile/Get-Uptime.ps1')">
     <i class="fa fa-cloud-download-alt">
     </i>
         Download
@@ -42,7 +127,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 <!-- Place this tag where you want the button to render. -->
 
-<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=templatePage.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
+<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=Get-Uptime.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
 
 ---
 

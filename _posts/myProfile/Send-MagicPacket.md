@@ -1,6 +1,6 @@
 ---
 layout: post
-title: templatePage.ps1
+title: Send-MagicPacket.ps1
 ---
 
 ### something exciting
@@ -19,7 +19,68 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+function Send-MagicPacket {
+	<#
+	.SYNOPSIS
+		Send a Magic Packet to a specific computer to wake up the computer.
 
+	.DESCRIPTION
+		A detailed description of the Send-MagicPacket function.
+
+	.PARAMETER Mac
+		 This field will accept a string value for the MAC Address - e.g. "98-90-96-DE-4C-6E" or "98:90:96:DE:4C:6E"
+
+	.EXAMPLE
+				PS C:\> Send-MagicPacket -Mac 'Value1'
+
+	.OUTPUTS
+		string
+
+	.NOTES
+		Additional information about the function.
+
+	.LINK
+		http://www.microsoft.com/
+#>
+	[CmdletBinding(DefaultParameterSetName = 'Default',
+		ConfirmImpact = 'Low',
+		HelpUri = 'http://www.microsoft.com/',
+		PositionalBinding = $true,
+		SupportsShouldProcess = $true)]
+	[OutputType([string], ParameterSetName = 'Default')]
+	[Alias('smp')]
+	[OutputType([String])]
+	param
+	(
+		[Parameter(ParameterSetName = 'Default',
+			Mandatory = $true,
+			ValueFromPipeline = $true,
+			ValueFromPipelineByPropertyName = $true,
+			ValueFromRemainingArguments = $false,
+			Position = 0,
+			HelpMessage = "This field will accept a string value for the MAC Address - e.g. '98 - 90 - 96 -DE - 4C-6E' or '98:90:96:DE:4C:6E' ")]
+		[String]$Mac
+	)
+	BEGIN {
+	}
+	PROCESS {
+		if ($PSCmdlet.ShouldProcess("$($MAC)", "Sending Magic Packet")) {
+			try {
+				$MacByteArray = $Mac -split "[:-]" | ForEach-Object { [Byte] "0x$_" }
+				[Byte[]]$MagicPacket = ( , 0xFF * 6) + ($MacByteArray * 16)
+				$UdpClient = New-Object System.Net.Sockets.UdpClient
+				$UdpClient.Connect(([System.Net.IPAddress]::Broadcast), 7)
+				$UdpClient.Send($MagicPacket, $MagicPacket.Length)
+				$UdpClient.Close()
+			}
+			catch {
+				Write-Error "Error sending magic packet"
+			}
+		}
+	}
+	END {
+	}
+}
 ```
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
@@ -28,7 +89,7 @@ Some information about the exciting thing
 
 Please feel free to copy parts of the script or if you would like to download the entire script, simple click the download button. You can download the complete repository in a zip file by clicking the Download link in the menu bar on the left hand side of the page.
 
-<button class="btn" type="submit" onclick="window.open('http://agamar.domain.leigh-services.com:4000/powershell/functions/myProfile/templatePage.ps1')">
+<button class="btn" type="submit" onclick="window.open('http://agamar.domain.leigh-services.com:4000/powershell/functions/myProfile/Send-MagicPacket.ps1')">
     <i class="fa fa-cloud-download-alt">
     </i>
         Download
@@ -42,7 +103,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 <!-- Place this tag where you want the button to render. -->
 
-<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=templatePage.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
+<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=Send-MagicPacket.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
 
 ---
 

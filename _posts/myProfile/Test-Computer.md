@@ -55,13 +55,11 @@ Function Test-Computer {
         [CmdletBinding()]
         [string[]]$ComputerName = $env:COMPUTERNAME
     )
-
     begin {
         $SelectHash = @{
          'Property' = @('Name','ADObject','DNSEntry','PingResponse','RDPConnection')
         }
     }
-
     process {
         foreach ($CurrentComputer in $ComputerName) {
             # Create new Hash
@@ -72,7 +70,6 @@ Function Test-Computer {
                 'RDPConnection' = $false
                 'PingResponse' = $false
             }
-
             # Perform Checks
             switch ($true)
             {
@@ -82,12 +79,10 @@ Function Test-Computer {
                 {Test-Connection -ComputerName $CurrentComputer -Quiet -Count 1} {$HashProps.PingResponse = $true}
                 Default {}
             }
-
             # Output object
             New-Object -TypeName 'PSCustomObject' -Property $HashProps | Select-Object @SelectHash
         }
     }
-
     end {
     }
 }

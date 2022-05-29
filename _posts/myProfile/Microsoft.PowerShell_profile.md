@@ -21,10 +21,10 @@ Some information about the exciting thing
 ```powershell
 #--------------------
 # Generic Profile Commands
-#--------------------
 Get-ChildItem C:\GitRepos\ProfileFunctions\ProfileFunctions\*.ps1 | ForEach-Object {. $_ }
 oh-my-posh init pwsh --config C:\GitRepos\ProfileFunctions\BanterBoyOhMyPoshConfig.json | Invoke-Expression
 
+#--------------------
 # basic greeting function, contents to be added to current function
 Write-Output "Type Get-ProfileFunctions to see the available functions"
 

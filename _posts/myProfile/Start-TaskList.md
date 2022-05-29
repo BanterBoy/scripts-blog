@@ -1,6 +1,6 @@
 ---
 layout: post
-title: templatePage.ps1
+title: Start-TaskList.ps1
 ---
 
 ### something exciting
@@ -19,7 +19,44 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+function Start-TaskList {
+    $PSDefaultParameterValues['Write-Progress:Activity'] = $phrase
+    $phrases = Get-Content -Path C:\GitRepos\TextFiles\prankphrases.txt
+    $i = 0
+    foreach ($phrase in $phrases) {
+        $i++
+        Write-Progress -activity “Listing Commands” -status $phrase -PercentComplete (($i / $phrases.count) * 100)
+        Start-Sleep -Seconds 5
+    }
+}
 
+function Write-ProgressHelper {
+    param (
+        [int]$StepNumber,
+        [string]$Message
+    )
+    $stepCounter = 0
+    Write-Progress -Activity 'Title' -Status $Message -PercentComplete (($StepNumber / ($stepCounter).count ) * 100)
+}
+
+<#
+    Write-ProgressHelper -Message 'Doing something' -StepNumber ($stepCounter++)
+    Start-Sleep -Seconds 5
+
+    ## Some process here
+    Write-ProgressHelper -Message 'Doing something2' -StepNumber ($stepCounter++)
+    Start-Sleep -Seconds 5
+
+    ## Some process here
+    Write-ProgressHelper -Message 'Doing something3' -StepNumber ($stepCounter++)
+    Start-Sleep -Seconds 5
+    $tcount = 100
+    for($i=0;$i -le $tcount; $i++){
+    $pcomplete = ($i / $tcount) * 100
+    Write-Progress -Activity "Counting from 1 to 100" -Status "Counting $i times" -PercentComplete $pcomplete
+    Start-Sleep 1
+    }
+#>
 ```
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
@@ -28,7 +65,7 @@ Some information about the exciting thing
 
 Please feel free to copy parts of the script or if you would like to download the entire script, simple click the download button. You can download the complete repository in a zip file by clicking the Download link in the menu bar on the left hand side of the page.
 
-<button class="btn" type="submit" onclick="window.open('http://agamar.domain.leigh-services.com:4000/powershell/functions/myProfile/templatePage.ps1')">
+<button class="btn" type="submit" onclick="window.open('http://agamar.domain.leigh-services.com:4000/powershell/functions/myProfile/Start-TaskList.ps1')">
     <i class="fa fa-cloud-download-alt">
     </i>
         Download
@@ -42,7 +79,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 <!-- Place this tag where you want the button to render. -->
 
-<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=templatePage.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
+<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=Start-TaskList.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
 
 ---
 

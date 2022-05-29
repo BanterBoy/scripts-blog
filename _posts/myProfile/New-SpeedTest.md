@@ -56,8 +56,7 @@ function New-SpeedTest {
 			Binary prefix, bytes per second:  kiB/s, MiB/s, GiB/s
 			Auto-scaled prefix: auto-binary-bits, auto-binary-bytes, auto-decimal-bits, auto-decimal-bytes
 
-
-		.DESCRIPTION
+        .DESCRIPTION
 			A detailed description of the New-SpeedTest function.
 
 		.PARAMETER Path

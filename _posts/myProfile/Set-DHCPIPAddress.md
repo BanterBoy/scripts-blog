@@ -1,6 +1,6 @@
 ---
 layout: post
-title: templatePage.ps1
+title: Set-DHCPIPAddress.ps1
 ---
 
 ### something exciting
@@ -19,7 +19,78 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
+function Set-DHCPIPAddress {
+	<#
+	.SYNOPSIS
+		Configure a network adapter to use DHCP settings.
 
+	.DESCRIPTION
+		Configure a network adapter to use DHCP settings using the current IP address of the Network Card that you would like to configure to receive a DHCP IP Address assignment.
+
+	.PARAMETER CurrentIPAddress
+		Enter the current IP address of the Network Card that you would like to configure to receive a DHCP IP Address assignment.
+
+	.EXAMPLE
+		Set-DHCPIPAddress -CurrentIPAddress $value1
+
+	.EXAMPLE
+		Set-DHCPIPAddress -CurrentIPAddress '192.168.1.20'
+		Clear-DnsClientCache
+		Register-DnsClient
+		ipconfig /release
+		ipconfig /renew
+
+	.OUTPUTS
+		string
+
+	.NOTES
+		Additional information about the function.
+
+	.LINK
+		https://github.com/BanterBoy
+	#>
+
+	[CmdletBinding(DefaultParameterSetName = 'Default',
+		HelpUri = 'https://github.com/BanterBoy',
+		SupportsPaging = $true,
+		SupportsShouldProcess = $true)]
+	param
+	(
+		[Parameter(ParameterSetName = 'Default',
+			Mandatory = $true,
+			ValueFromPipeline = $true,
+			ValueFromPipelineByPropertyName = $true,
+			Position = 0,
+			HelpMessage = 'Enter Current IPAddress or pipe input')]
+		[Alias('ci')]
+		[string]$CurrentIPAddress
+	)
+
+	BEGIN {
+	}
+	PROCESS {
+		if ($PSCmdlet.ShouldProcess("$($CurrentIPAddress)", "Setting Network card to DHCP")) {
+			try {
+				foreach ($IPAddress in $CurrentIPAddress) {
+						$NetworkCard = Get-NetIPAddress -IPAddress $IPAddress
+						$Interface = Get-NetIPInterface -InterfaceIndex $NetworkCard.InterfaceIndex
+						$Interface | Set-NetIPInterface -Dhcp Enabled -ErrorAction SilentlyContinue
+						$Interface | Set-DnsClientServerAddress -ResetServerAddresses -ErrorAction SilentlyContinue
+						$Interface | Remove-NetRoute -Confirm:$false -ErrorAction SilentlyContinue
+						Clear-DnsClientCache
+						Register-DnsClient
+						ipconfig /release
+						ipconfig /renew
+				}
+			}
+			catch {
+				Write-Error "Unable to find interface with IP Address $($IPAddress)"
+			}
+		}
+	}
+	END {
+	}
+}
 ```
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
@@ -28,7 +99,7 @@ Some information about the exciting thing
 
 Please feel free to copy parts of the script or if you would like to download the entire script, simple click the download button. You can download the complete repository in a zip file by clicking the Download link in the menu bar on the left hand side of the page.
 
-<button class="btn" type="submit" onclick="window.open('http://agamar.domain.leigh-services.com:4000/powershell/functions/myProfile/templatePage.ps1')">
+<button class="btn" type="submit" onclick="window.open('http://agamar.domain.leigh-services.com:4000/powershell/functions/myProfile/Set-DHCPIPAddress.ps1')">
     <i class="fa fa-cloud-download-alt">
     </i>
         Download
@@ -42,7 +113,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 <!-- Place this tag where you want the button to render. -->
 
-<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=templatePage.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
+<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=Set-DHCPIPAddress.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
 
 ---
 
