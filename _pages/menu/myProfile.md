@@ -14,7 +14,7 @@ permalink: /menu/_pages/myProfile.html
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [Microsoft.PowerShell_profile.ps1](#Microsoft.PowerShell_profile.ps1)
+- [Microsoft.PowerShell_profile.ps1](#microsoftpowershell-profileps1)
 - [Office365](#office365)
 - [Connect](#connect)
 - [RDPfunctions](#rdpfunctions)
@@ -38,7 +38,7 @@ permalink: /menu/_pages/myProfile.html
 
 There are several articles scattered around the internet that provide either a cursory overview of PowerShell profiles or a detailed explanation of their functionality. I have written one such article about PowerShell profiles which can be found [here](https://blog.lukeleigh.com/blog/The-PowerShell-Profile)
 
-<img src="/assets/images/PoshProfile.png" title="Posh Profile" alt="OhMyPosh" height="338" width="1099">
+[![Microsoft.PowerShell_profile](/assets/images/PoshProfile.png)](/_posts/myProfile/Microsoft.PowerShell_profile/)
 
 ```powershell
 #--------------------
@@ -167,6 +167,7 @@ New-Greeting
 | myProfile | [Restart-PrintSpooler](/_posts/myProfile/Restart-PrintSpooler/)                                 |
 | myProfile | [Restart-Profile](/_posts/myProfile/Restart-Profile/)                                           |
 | myProfile | [Get-ProfileFunctions](/_posts/myProfile/Get-ProfileFunctions/)                                 |
+| myProfile | [Microsoft.PowerShell_profile](/_posts/myProfile/Microsoft.PowerShell_profile/)                 |
 | myProfile | [Microsoft.PowerShell_profile_Example](/_posts/myProfile/Microsoft.PowerShell_profile_Example/) |
 
 ---
