@@ -25,7 +25,9 @@ permalink: /menu/_pages/tools.html
 | tools   | [CreateADMXCentralStore.ps1](/_posts/tools/CreateADMXCentralStore/) |
 | tools   | [CreateTimeServerGPOs.ps1](/_posts/tools/CreateTimeServerGPOs/)     |
 | tools   | [IISLogsCleanup.ps1](/_posts/tools/IISLogsCleanup/)                 |
+| tools   | [New-ADAssetReport.ps1](/_posts/tools/New-ADAssetReport/)           |
 | tools   | [New-KrbtgtKeys.ps1](/_posts/tools/New-KrbtgtKeys/)                 |
+| tools   | [OU_permissions.ps1](/_posts/tools/OU_permissions/)                 |
 | tools   | [Reset-UsersPassword.ps1](/_posts/tools/Reset-UsersPassword/)       |
 | tools   | [VMWareHealthcheck.ps1](/_posts/tools/VMWareHealthcheck/)           |
 | tools   | [Write-Log.ps1](/_posts/tools/Write-Log/)                           |
