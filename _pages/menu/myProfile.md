@@ -80,8 +80,8 @@ New-Greeting
 
 ## Office365
 
-| Section   | FileName                                                              |
-| :-------- | :-------------------------------------------------------------------- |
+|   Section | FileName                                                              |
+| --------: | :-------------------------------------------------------------------- |
 | myProfile | [Add-Office365Functions](/_posts/myProfile/Add-Office365Functions/)   |
 | myProfile | [Stop-Outlook](/_posts/myProfile/Stop-Outlook/)                       |
 | myProfile | [Get-OutlookAppointments](/_posts/myProfile/Get-OutlookAppointments/) |
@@ -90,8 +90,8 @@ New-Greeting
 
 ## Connect
 
-| Section   | FileName                                                        |
-| :-------- | :-------------------------------------------------------------- |
+|   Section | FileName                                                        |
+| --------: | :-------------------------------------------------------------- |
 | myProfile | [Connect-InternalPRTG](/_posts/myProfile/Connect-InternalPRTG/) |
 | myProfile | [Connect-PSExec](/_posts/myProfile/Connect-PSExec/)             |
 | myProfile | [Connect-RDPSession](/_posts/myProfile/Connect-RDPSession/)     |
@@ -101,8 +101,8 @@ New-Greeting
 
 ## RDPfunctions
 
-| Section   | FileName                                                            |
-| :-------- | :------------------------------------------------------------------ |
+|   Section | FileName                                                            |
+| --------: | :------------------------------------------------------------------ |
 | myProfile | [Get-RDPStatusCIM](/_posts/myProfile/Get-RDPStatusCIM/)             |
 | myProfile | [Enable-RDPRemotelyCIM](/_posts/myProfile/Enable-RDPRemotelyCIM/)   |
 | myProfile | [Disable-RDPRemotelyCIM](/_posts/myProfile/Disable-RDPRemotelyCIM/) |
@@ -115,8 +115,8 @@ New-Greeting
 
 ## PrintSpooler
 
-| Section   | FileName                                                        |
-| :-------- | :-------------------------------------------------------------- |
+|   Section | FileName                                                        |
+| --------: | :-------------------------------------------------------------- |
 | myProfile | [Disable-PrintSpooler](/_posts/myProfile/Disable-PrintSpooler/) |
 | myProfile | [Enable-PrintSpooler](/_posts/myProfile/Enable-PrintSpooler/)   |
 | myProfile | [Get-PrintSpooler](/_posts/myProfile/Get-PrintSpooler/)         |
@@ -125,8 +125,8 @@ New-Greeting
 
 ## fileManagement
 
-| Section   | FileName                                                          |
-| :-------- | :---------------------------------------------------------------- |
+|   Section | FileName                                                          |
+| --------: | :---------------------------------------------------------------- |
 | myProfile | [Find-Movies](/_posts/myProfile/Find-Movies/)                     |
 | myProfile | [Show-PSDrive](/_posts/myProfile/Show-PSDrive/)                   |
 | myProfile | [New-GitDrives](/_posts/myProfile/New-GitDrives/)                 |
@@ -143,8 +143,8 @@ New-Greeting
 
 ## InternetIP
 
-| Section   | FileName                                                        |
-| :-------- | :-------------------------------------------------------------- |
+|   Section | FileName                                                        |
+| --------: | :-------------------------------------------------------------- |
 | myProfile | [Test-OpenPorts](/_posts/myProfile/Test-OpenPorts/)             |
 | myProfile | [Set-GoogleDynamicDNS](/_posts/myProfile/Set-GoogleDynamicDNS/) |
 | myProfile | [Set-StaticIPAddress](/_posts/myProfile/Set-StaticIPAddress/)   |
@@ -161,8 +161,8 @@ New-Greeting
 
 ## ProfileSpecific
 
-| Section   | FileName                                                                                        |
-| :-------- | :---------------------------------------------------------------------------------------------- |
+|   Section | FileName                                                                                        |
+| --------: | :---------------------------------------------------------------------------------------------- |
 | myProfile | [Restart-myProfile](/_posts/myProfile/Restart-myProfile/)                                       |
 | myProfile | [Restart-PrintSpooler](/_posts/myProfile/Restart-PrintSpooler/)                                 |
 | myProfile | [Restart-Profile](/_posts/myProfile/Restart-Profile/)                                           |
@@ -174,8 +174,8 @@ New-Greeting
 
 ## activeDirectory
 
-| Section   | FileName                                                                |
-| :-------- | :---------------------------------------------------------------------- |
+|   Section | FileName                                                                |
+| --------: | :---------------------------------------------------------------------- |
 | myProfile | [Get-AllDomainControllers](/_posts/myProfile/Get-AllDomainControllers/) |
 | myProfile | [Copy-GroupMembership](/_posts/myProfile/Copy-GroupMembership/)         |
 | myProfile | [Disable-InactiveComputer](/_posts/myProfile/Disable-InactiveComputer/) |
@@ -187,8 +187,8 @@ New-Greeting
 
 ## InternetSearch
 
-| Section   | FileName                                                        |
-| :-------- | :-------------------------------------------------------------- |
+|   Section | FileName                                                        |
+| --------: | :-------------------------------------------------------------- |
 | myProfile | [Get-GoogleDirections](/_posts/myProfile/Get-GoogleDirections/) |
 | myProfile | [Get-GoogleSearch](/_posts/myProfile/Get-GoogleSearch/)         |
 | myProfile | [Get-DuckDuckGoSearch](/_posts/myProfile/Get-DuckDuckGoSearch/) |
@@ -197,8 +197,8 @@ New-Greeting
 
 ## miscellaneous
 
-| Section   | FileName                                                                        |
-| :-------- | :------------------------------------------------------------------------------ |
+|   Section | FileName                                                                        |
+| --------: | :------------------------------------------------------------------------------ |
 | myProfile | [Get-DownloadPercent](/_posts/myProfile/Get-DownloadPercent/)                   |
 | myProfile | [Get-FriendlySize](/_posts/myProfile/Get-FriendlySize/)                         |
 | myProfile | [Get-LastBootTime](/_posts/myProfile/Get-LastBootTime/)                         |
@@ -226,8 +226,8 @@ New-Greeting
 
 ## shell
 
-| Section   | FileName                                                  |
-| :-------- | :-------------------------------------------------------- |
+|   Section | FileName                                                  |
+| --------: | :-------------------------------------------------------- |
 | myProfile | [New-AdminShell](/_posts/myProfile/New-AdminShell/)       |
 | myProfile | [New-AdminTerminal](/_posts/myProfile/New-AdminTerminal/) |
 | myProfile | [New-Shell](/_posts/myProfile/New-Shell/)                 |
@@ -236,8 +236,8 @@ New-Greeting
 
 ## BloggingFunctions
 
-| Section   | FileName                                                              |
-| :-------- | :-------------------------------------------------------------------- |
+|   Section | FileName                                                              |
+| --------: | :-------------------------------------------------------------------- |
 | myProfile | [New-BlogServer](/_posts/myProfile/New-BlogServer/)                   |
 | myProfile | [New-BlogSession](/_posts/myProfile/New-BlogSession/)                 |
 | myProfile | [Remove-BlogServer](/_posts/myProfile/Remove-BlogServer/)             |
@@ -250,8 +250,8 @@ New-Greeting
 
 ## shellConfig
 
-| Section   | FileName                                                        |
-| :-------- | :-------------------------------------------------------------- |
+|   Section | FileName                                                        |
+| --------: | :-------------------------------------------------------------- |
 | myProfile | [New-Greeting](/_posts/myProfile/New-Greeting/)                 |
 | myProfile | [New-DynamicParameter](/_posts/myProfile/New-DynamicParameter/) |
 | myProfile | [New-SpeedTest](/_posts/myProfile/New-SpeedTest/)               |
@@ -270,8 +270,8 @@ New-Greeting
 
 ## transmission
 
-| Section   | FileName                                                                              |
-| :-------- | :------------------------------------------------------------------------------------ |
+|   Section | FileName                                                                              |
+| --------: | :------------------------------------------------------------------------------------ |
 | myProfile | [Test-TransmissionSettings](/_posts/myProfile/Test-TransmissionSettings/)             |
 | myProfile | [Set-TransmissionDefaultSettings](/_posts/myProfile/Set-TransmissionDefaultSettings/) |
 
