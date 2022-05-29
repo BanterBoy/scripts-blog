@@ -14,7 +14,7 @@ permalink: /menu/_pages/myProfile.html
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [MicrosoftPowerShellprofileps1](#MicrosoftPowerShellprofileps1)
+- [Microsoft.PowerShell_profile.ps1](#Microsoft.PowerShell_profile.ps1)
 - [Office365](#office365)
 - [Connect](#connect)
 - [RDPfunctions](#rdpfunctions)
@@ -34,7 +34,7 @@ permalink: /menu/_pages/myProfile.html
 
 ---
 
-## <i class="fas fa-door-open" aria-hidden="true" style="color: black; margin-right:5px;"></i>MicrosoftPowerShellprofileps1
+## Microsoft.PowerShell_profile.ps1
 
 There are several articles scattered around the internet that provide either a cursory overview of PowerShell profiles or a detailed explanation of their functionality. I have written one such article about PowerShell profiles which can be found [here](https://blog.lukeleigh.com/blog/The-PowerShell-Profile)
 
