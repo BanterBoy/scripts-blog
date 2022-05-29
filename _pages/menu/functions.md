@@ -71,6 +71,7 @@ permalink: /menu/_pages/functions.html
 | activeDirectory | [Restore-ADDeletedUsers.ps1](/_posts/functions/Restore-ADDeletedUsers/)                                   |
 | activeDirectory | [Search-GPOsForString.ps1](/_posts/functions/Search-GPOsForString/)                                       |
 | activeDirectory | [Search-GPOsForStringOrig.ps1](/_posts/functions/Search-GPOsForStringOrig/)                               |
+| activeDirectory | [Search-GPO.ps1](/_posts/functions/Search-GPO/)                                                           |
 | activeDirectory | [Set-FSMORoleOwner.ps1](/_posts/functions/Set-FSMORoleOwner/)                                             |
 | activeDirectory | [Sync-DomainController.ps1](/_posts/functions/Sync-DomainController/)                                     |
 | activeDirectory | [Sync-Office365ToADDS.ps1](/_posts/functions/Sync-Office365ToADDS/)                                       |
