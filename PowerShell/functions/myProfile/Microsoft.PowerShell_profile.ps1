@@ -5,7 +5,7 @@ Get-ChildItem C:\GitRepos\ProfileFunctions\ProfileFunctions\*.ps1 | ForEach-Obje
 
 # oh-my-posh init pwsh | Invoke-Expression
 # oh-my-posh print primary --config C:\GitRepos\ProfileFunctions\BanterBoyOhMyPoshTheme.json --shell uni
-oh-my-posh init pwsh --config C:\GitRepos\ProfileFunctions\BanterBoyOhMyPoshConfig.json| Invoke-Expression
+oh-my-posh init pwsh --config C:\GitRepos\ProfileFunctions\BanterBoyOhMyPoshConfig.json | Invoke-Expression
 
 #--------------------
 # Set-ExecutionPolicy
