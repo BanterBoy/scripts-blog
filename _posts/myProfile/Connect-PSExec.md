@@ -143,6 +143,14 @@ Please feel free to copy parts of the script or if you would like to download th
         Download
 </button>
 
+This function requires the following executable and is included in the repository:
+
+<button class="btn" type="submit" onclick="window.open('http://agamar.domain.leigh-services.com:4000/powershell/functions/myProfile/psexec.exe')">
+    <i class="fa fa-cloud-download-alt">
+    </i>
+        psexec.exe
+</button>
+
 ---
 
 #### Report Issues
