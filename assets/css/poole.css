@@ -222,8 +222,8 @@ blockquote p:last-child {
 }
 @media (min-width: 30em) {
   blockquote {
-    padding-right: 5rem;
-    padding-left: 1.25rem;
+    padding-right: .25rem;
+    padding-left: .25rem;
   }
 }
 
@@ -231,26 +231,29 @@ img {
   display: block;
   max-width: 100%;
   margin: 0 0 1rem;
-  border-radius: 5px;
+  border-radius: .25px;
 }
 
 /* Tables */
 table {
   margin-bottom: 1rem;
-  width: 100%;
-  border: 1px solid #e5e5e5;
-  border-collapse: collapse;
 }
-td,
-th {
-  padding: .25rem .5rem;
-  border: 1px solid #e5e5e5;
+td{
+  columns: 2;
+  padding: .5rem;
+}
+th { background: scroll repeat-y #d4d4d4;
+  text-align: left;
+}
+column {
+  max-width: 20rem;
+  min-width: 3rem;
+  padding: 3px;
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
-
 
 /*
  * Custom type
