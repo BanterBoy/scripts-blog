@@ -20,6 +20,7 @@ permalink: /menu/_pages/about.html
   - [Information](#information)
   - [Tips](#tips)
   - [Support](#support)
+  - [Status](#status)
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -66,17 +67,20 @@ I have expanded any aliases that were in each script to ensure they are easier t
 
 Reach out to me at one of the following places!
 
-| --- | --- |
-| <br><a class="sidebar-nav-item" href="https://blog.lukeleigh.com/"><img src="https://img.shields.io/badge/Blog-blog.lukeleigh.com-2A6496.svg" alt="Blog Link Shield"></a> | My blog site, full of what I hope can be considered interesting articles and many PowerShell related things. |
-| <br><a class="sidebar-nav-item" href="https://www.linkedin.com/in/lukeleigh"><img src="https://img.shields.io/badge/LinkedIn-lukeleigh-0077B5.svg?logo=LinkedIn" alt="LinkedIn Shield"></a> | My profile on LinkedIn. |
-| <br><a class="sidebar-nav-item" href="https://github.com/BanterBoy"><img src="https://img.shields.io/badge/GitHub-BanterBoy-blue?logo=GitHub" alt="GitHub Shield"></a> | My profile on GitHub. |
+My blog site, full of what I hope can be considered interesting articles and many PowerShell related things.
+<a class="sidebar-nav-item" href="https://blog.lukeleigh.com/"><img src="https://img.shields.io/badge/Blog-blog.lukeleigh.com-2A6496.svg" alt="Blog Link Shield"></a>
+My profile on LinkedIn.
+<a class="sidebar-nav-item" href="https://www.linkedin.com/in/lukeleigh"><img src="https://img.shields.io/badge/LinkedIn-lukeleigh-0077B5.svg?logo=LinkedIn" alt="LinkedIn Shield"></a>
+My profile on GitHub.
+<a class="sidebar-nav-item" href="https://github.com/BanterBoy"><img src="https://img.shields.io/badge/GitHub-BanterBoy-blue?logo=GitHub" alt="GitHub Shield"></a>
+
+---
+
+## Status
+
+[![pages-build-deployment](https://github.com/BanterBoy/scripts-blog/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/BanterBoy/scripts-blog/actions/workflows/pages/pages-build-deployment)
+[![GitHub license](https://img.shields.io/github/license/BanterBoy/scripts-blog?color=orange&label=GitHub%20License&logo=github&style=plastic)](https://github.com/BanterBoy/scripts-blog/blob/master/LICENSE)
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
-
-| :---: | :---: | :---: |
-| <br>[![Build Status](https://dev.azure.com/luke-leigh/github-repo/_apis/build/status/BanterBoy.scripts-blog?branchName=master)](https://dev.azure.com/luke-leigh/github-repo/_build/latest?definitionId=2&branchName=master) | <br>[![Mergify Status][mergify-status]][mergify] | <br>[![GitHub license](https://img.shields.io/github/license/BanterBoy/scripts-blog?color=orange&label=GitHub%20License&logo=github&style=plastic)](https://github.com/BanterBoy/scripts-blog/blob/master/LICENSE) |
-
-[mergify]: https://mergify.io
-[mergify-status]: https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges/BanterBoy/scripts-blog&style=plastic
