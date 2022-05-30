@@ -254,6 +254,33 @@ tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
+.fixed-layout {
+  table-layout: fixed;
+}
+.sized {
+  width: 700px;
+}
+.flex {
+  width: auto;
+  background: gray;
+}
+.sized1 {
+  width: 200px;
+  background: menu;
+}
+.sized2 {
+  width: 100px;
+  background: gold;
+}
+.sized3 {
+  width: 500px;
+  background:pink;
+}
+.p1 {
+  width: 20%;
+  background: red;
+}
+
 
 /*
  * Custom type
