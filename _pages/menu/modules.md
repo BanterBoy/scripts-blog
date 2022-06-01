@@ -8,7 +8,6 @@ permalink: /menu/_pages/modules.html
 
 - [Table of Contents](#table-of-contents)
   - [PowerShell Gallery Modules](#powershell-gallery-modules)
-  - [Download](#download)
   - [Report Issues](#report-issues)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
@@ -68,20 +67,6 @@ permalink: /menu/_pages/modules.html
 | :----------  | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
-
----
-
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
-
-#### Download
-
-Please feel free to copy parts of the script or if you would like to download the entire script, simple click the download button. You can download the complete repository in a zip file by clicking the Download link in the menu bar on the left hand side of the page.
-
-<button class="btn" type="submit" onclick="window.open('http://agamar.domain.leigh-services.com:4000/assets/files/myprofile.zip')">
-    <i class="fa fa-cloud-download-alt">
-    </i>
-        myProfile.zip
-</button>
 
 ---
 
