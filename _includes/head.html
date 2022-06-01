@@ -1,74 +1,74 @@
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="cache-control" content="public, max-age=604800, immutable">
-  <meta name="keywords"
-    content="PowerShell, Scripts, Functions, Snippets, Tools, Maintenance, Information Technology, Administration, Download, Automation, Learning">
-  <meta name="description"
-    content="This site was created as a catalogue for all the scripts, functions, tools and snippets I have written, downloaded or amended while learning how to automate and develop PowerShell tools.">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cache-control" content="public, max-age=604800, immutable">
+    <meta name="keywords"
+        content="PowerShell, Scripts, Functions, Snippets, Tools, Maintenance, Information Technology, Administration, Download, Automation, Learning">
+    <meta name="description"
+        content="This site was created as a catalogue for all the scripts, functions, tools and snippets I have written, downloaded or amended while learning how to automate and develop PowerShell tools.">
 
-  <!-- Enable responsiveness on mobile devices-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="{{ "/assets/css/poole.css" }}">
-  <link rel="stylesheet" href="{{ "/assets/css/syntax.css" }}">
-  <link rel="stylesheet" href="{{ "/assets/css/hyde.css" }}">
-  <link rel="stylesheet" href="{{ "/assets/css/lightbox/css/lightbox.min.css" }}">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap">
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ " /assets/css/poole.css" }}">
+    <link rel="stylesheet" href="{{ " /assets/css/syntax.css" }}">
+    <link rel="stylesheet" href="{{ " /assets/css/hyde.css" }}">
+    <link rel="stylesheet" href="{{ " /assets/css/lightbox/css/lightbox.min.css" }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap">
 
-  <!-- buttons.github.io -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- buttons.github.io -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-  <!-- fontawesome -->
-  <script src="https://kit.fontawesome.com/0716ac15bf.js" crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/0716ac15bf.js" crossorigin="anonymous"></script>
 
-  <!-- lightbox -->
-  <script src="{{ "/assets/css/lightbox/js/lightbox.js" }}"></script>
+    <!-- lightbox -->
+    <script src="{{ " /assets/css/lightbox/js/lightbox.js" }}"></script>
 
-  <!-- Icons -->
-  <link rel="shortcut icon" href="{{ absolute_url }}/favicon.ico">
+    <!-- Icons -->
+    <link rel="shortcut icon" href="{{ absolute_url }}/favicon.ico">
 
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
 
-  <title>
-    {% if page.title == "Home" %}
-    {{ site.title }} &middot; {{ site.tagline }}
-    {% else %}
-    {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
-  </title>
+    <title>
+        {% if page.title == "Home" %}
+        {{ site.title }} &middot; {{ site.tagline }}
+        {% else %}
+        {{ page.title }} &middot; {{ site.title }}
+        {% endif %}
+    </title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3T94X6S0QF"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3T94X6S0QF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-3T94X6S0QF');
-  </script>
+        gtag('config', 'G-3T94X6S0QF');
+    </script>
 
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-W3S7GRW');</script>
-  <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W3S7GRW');</script>
+    <!-- End Google Tag Manager -->
 
-  <!-- Microsoft Clarity Analytics -->
-  <script type="text/javascript">
-    (function (c, l, a, r, i, t, y) {
-      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-      t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-    })(window, document, "clarity", "script", "3viwaz6tld");
-  </script>
-  <!-- End Microsoft Clarity Analytics -->
+    <!-- Microsoft Clarity Analytics -->
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "3viwaz6tld");
+    </script>
+    <!-- End Microsoft Clarity Analytics -->
 </head>
