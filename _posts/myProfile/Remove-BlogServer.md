@@ -25,59 +25,72 @@ function Remove-BlogServer {
 	$choices = '&Yes', '&No'
 	$decision = $Host.UI.PromptForChoice($title, $question, $choices, 1)
 	if ($decision -eq 0) {
-		$PSRootFolder = Select-FolderLocation
-		Set-Location -Path $PSRootFolder
-		Write-Host 'Cleaning Environment - Removing Images'
-		$images = docker images jekyll/jekyll -q
-		foreach ($image in $images) {
-			docker rmi $image -f
-			docker rm $(docker ps -a -f status=exited -q)
+		$directoryPath = Select-FolderLocation
+		if (![string]::IsNullOrEmpty($directoryPath)) {
+			Write-Host "You selected the directory: $directoryPath"
 		}
-		$vendor = Test-Path $PSRootFolder\vendor
-		$site = Test-Path $PSRootFolder\_site
-		$gemfile = Test-Path -Path $PSRootFolder\gemfile.lock
-		$jekyllmetadata = Test-Path -Path $PSRootFolder\.jekyll-metadata
-		Write-Warning -Message 'Cleaning Environment - Removing Vendor Bundle'
-		if ($vendor = $true) {
+		else {
+			"You did not select a directory."
+		}
+		Write-Host 'Cleaning Environment - Removing Images'
+		$images = docker images jekyll/jekyll:latest -q
+		foreach ($image in $images) {
+			docker image rm $image -f
+			docker image rm $(docker ps -a -f status=exited -q)
+		}
+		$vendor = $directoryPath + "\vendor"
+		$site = $directoryPath + "\_site"
+		$gemfile = $directoryPath + "\gemfile.lock"
+		$jekyllmetadata = $directoryPath + "\.jekyll-metadata"
+
+		$vendorPath = Test-Path -Path $vendor
+		$sitePath = Test-Path -Path $site
+		$gemfilePath = Test-Path -Path $gemfile
+		$jekyllmetadataPath = Test-Path -Path $jekyllmetadata
+
+
+		if ($vendorPath = $true) {
+			Write-Warning -Message 'Cleaning Environment - Removing Vendor Bundle'
 			try {
 				Remove-Item -Path $vendor -Recurse -Force -ErrorAction Stop
 				Write-Verbose -Message 'Vendor Bundle removed.' -Verbose
 			}
-			catch [System.Management.Automation.ItemNotFoundException] {
+			catch {
 				Write-Verbose -Message 'Vendor Bundle does not exist.' -Verbose
 			}
 		}
-		Write-Warning -Message 'Cleaning Environment - Removing _site Folder'
-		if ($site = $true) {
+
+		if ($sitePath = $true) {
+			Write-Warning -Message 'Cleaning Environment - Removing _site Folder'
 			try {
 				Remove-Item -Path $site -Recurse -Force -ErrorAction Stop
 				Write-Verbose -Message '_site folder removed.' -Verbose
 			}
-			catch [System.Management.Automation.ItemNotFoundException] {
+			catch {
 				Write-Verbose -Message '_site folder does not exist.' -Verbose
 			}
 		}
-		Write-Warning -Message 'Cleaning Environment - Removing Gemfile.lock File'
-		if ($gemfile = $true) {
+
+		if ($gemfilePath = $true) {
+			Write-Warning -Message 'Cleaning Environment - Removing Gemfile.lock File'
 			try {
 				Remove-Item -Path $gemfile -Force -ErrorAction Stop
 				Write-Verbose -Message 'gemfile.lock removed.' -Verbose
 			}
-			catch [System.Management.Automation.ItemNotFoundException] {
+			catch {
 				Write-Verbose -Message 'gemfile.lock does not exist.' -Verbose
 			}
 		}
-		Write-Warning -Message 'Cleaning Environment - Removing .jekyll-metadata File'
-		if ($jekyllmetadata = $true) {
+
+		if ($jekyllmetadataPath = $true) {
+			Write-Warning -Message 'Cleaning Environment - Removing .jekyll-metadata File'
 			try {
 				Remove-Item -Path $jekyllmetadata -Force -ErrorAction Stop
 				Write-Verbose -Message '.jekyll-metadata removed.' -Verbose
 			}
-			catch [System.Management.Automation.ItemNotFoundException] {
+			catch {
 				Write-Verbose -Message '.jekyll-metadata does not exist.' -Verbose
-
 			}
-			Set-Location -Path $PSRootFolder
 		}
 	}
 	else {
