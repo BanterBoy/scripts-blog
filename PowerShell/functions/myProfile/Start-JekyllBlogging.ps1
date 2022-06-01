@@ -1,4 +1,4 @@
-function Start-Blogging {
+function Start-JekyllBlogging {
 	if (Test-IsAdmin = $True) {
 		New-BlogServer
 	}
