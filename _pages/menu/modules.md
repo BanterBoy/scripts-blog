@@ -7,8 +7,8 @@ permalink: /menu/_pages/modules.html
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-  - [PowerShell Gallery Modules](#powershell-gallery-modules)
-  - [Report Issues](#report-issues)
+- [PowerShell Gallery Modules](#powershell-gallery-modules)
+- [Report Issues](#report-issues)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
