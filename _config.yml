@@ -57,6 +57,7 @@ linkedin_username: lukeleigh
 
 plugins:
   - rouge
+  - liquid
   - github-pages
   - github-embed
   - jekyll-algolia
