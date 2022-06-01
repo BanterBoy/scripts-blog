@@ -68,11 +68,11 @@ permalink: /menu/_pages/resources.html
 | [weekend-scripter-build-your-own-powershell-cmdlet-part-8-of-9](https://blogs.technet.microsoft.com/heyscriptingguy/2012/10/06/weekend-scripter-build-your-own-powershell-cmdlet-part-8-of-9/) |
 | [weekend-scripter-build-your-own-powershell-cmdlet-part-9-of-9](https://blogs.technet.microsoft.com/heyscriptingguy/2012/10/07/weekend-scripter-build-your-own-powershell-cmdlet-part-9-of-9/) |
 
-| use-powershell-to-interact-with-the-windows-api-series                                                                     |
-| :------------------------------------------------------------------------------------------------------------------------- |
-| [](https://blogs.technet.microsoft.com/heyscriptingguy/2013/06/25/use-powershell-to-interact-with-the-windows-api-part-1/) |
-| [](https://blogs.technet.microsoft.com/heyscriptingguy/2013/06/26/use-powershell-to-interact-with-the-windows-api-part-2/) |
-| [](https://blogs.technet.microsoft.com/heyscriptingguy/2013/06/27/use-powershell-to-interact-with-the-windows-api-part-3/) |
+| use-powershell-to-interact-with-the-windows-api-series                                                                                                                           |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [use-powershell-to-interact-with-the-windows-api-part-1](https://blogs.technet.microsoft.com/heyscriptingguy/2013/06/25/use-powershell-to-interact-with-the-windows-api-part-1/) |
+| [use-powershell-to-interact-with-the-windows-api-part-2](https://blogs.technet.microsoft.com/heyscriptingguy/2013/06/26/use-powershell-to-interact-with-the-windows-api-part-2/) |
+| [use-powershell-to-interact-with-the-windows-api-part-3](https://blogs.technet.microsoft.com/heyscriptingguy/2013/06/27/use-powershell-to-interact-with-the-windows-api-part-3/) |
 
 | mixed-resources-urls                                                                        |
 | :------------------------------------------------------------------------------------------ |
