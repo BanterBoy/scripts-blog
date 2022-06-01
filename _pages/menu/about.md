@@ -16,11 +16,11 @@ permalink: /menu/_pages/about.html
 ## Table of Contents
 
 - [What's it all about](#whats-it-all-about)
-  - [Example](#example)
-  - [Information](#information)
-  - [Tips](#tips)
-  - [Support](#support)
-  - [Status](#status)
+- [Example](#example)
+- [Information](#information)
+- [Tips](#tips)
+- [Support](#support)
+- [Status](#status)
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
