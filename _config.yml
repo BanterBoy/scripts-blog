@@ -1,3 +1,32 @@
+# Where things are stored
+source: .
+destination: ./_site
+layouts_dir: _layouts
+includes_dir: _includes
+data_dir: _data
+
+# Handling Reading
+safe: false
+keep_files: [".git", ".svn"]
+encoding: UTF-8
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+include:
+  - _pages
+  - _posts
+
+exclude:
+  - "_site"
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - "vendor/bundle/"
+  - "vendor/cache/"
+  - "vendor/gems/"
+  - "vendor/ruby/"
+  - ".bundle/"
+  - "tmp/"
+  - "_drafts"
+
 # Markdown Processing
 markdown: kramdown
 highlighter: rouge
@@ -9,10 +38,6 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Permalinks
 permalink: pretty
@@ -29,21 +54,6 @@ author:
   email: me@lukeleigh.com
 
 linkedin_username: lukeleigh
-
-include:
-  - _pages
-  - _posts
-
-exclude:
-  - [Gemfile]
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - "vendor/bundle/"
-  - "vendor/cache/"
-  - "vendor/gems/"
-  - "vendor/ruby/"
-  - [vendor]
 
 plugins:
   - rouge
