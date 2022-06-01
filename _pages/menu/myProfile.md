@@ -14,21 +14,21 @@ permalink: /menu/_pages/myProfile.html
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [Microsoft.PowerShell_profile.ps1](#microsoftpowershell-profileps1)
-- [Office365](#office365)
-- [Connect](#connect)
-- [RDPfunctions](#rdpfunctions)
-- [PrintSpooler](#printspooler)
-- [fileManagement](#filemanagement)
-- [InternetIP](#internetip)
-- [ProfileSpecific](#profilespecific)
-- [activeDirectory](#activedirectory)
-- [InternetSearch](#internetsearch)
-- [miscellaneous](#miscellaneous)
-- [shell](#shell)
-- [BloggingFunctions](#bloggingfunctions)
-- [shellConfig](#shellconfig)
-- [transmission](#transmission)
+  - [Microsoft.PowerShell_profile.ps1](#microsoftpowershell-profileps1)
+  - [Office365](#office365)
+  - [Connect](#connect)
+  - [RDPfunctions](#rdpfunctions)
+  - [PrintSpooler](#printspooler)
+  - [fileManagement](#filemanagement)
+  - [InternetIP](#internetip)
+  - [ProfileSpecific](#profilespecific)
+  - [activeDirectory](#activedirectory)
+  - [InternetSearch](#internetsearch)
+  - [miscellaneous](#miscellaneous)
+  - [shell](#shell)
+  - [BloggingFunctions](#bloggingfunctions)
+  - [shellConfig](#shellconfig)
+  - [transmission](#transmission)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -238,11 +238,12 @@ New-Greeting
 
 | BloggingFunctions                                                                                                                                          | Function                                                              |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------- |
-| <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span> | [New-BlogServer](/_posts/myProfile/New-BlogServer/)                   |
-|                                                                                                                                                            | [New-BlogSession](/_posts/myProfile/New-BlogSession/)                 |
-|                                                                                                                                                            | [Remove-BlogServer](/_posts/myProfile/Remove-BlogServer/)             |
-|                                                                                                                                                            | [Show-LocalBlogSite](/_posts/myProfile/Show-LocalBlogSite/)           |
-|                                                                                                                                                            | [Start-Blogging](/_posts/myProfile/Start-Blogging/)                   |
+| <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span> | [New-JekyllBlogServer](/_posts/myProfile/New-JekyllBlogServer/)       |
+|                                                                                                                                                            | [New-JekyllBlogPost](/_posts/myProfile/New-JekyllBlogPost/)           |
+|                                                                                                                                                            | [New-JekyllBlogSession](/_posts/myProfile/New-JekyllBlogSession/)     |
+|                                                                                                                                                            | [Start-JekyllBlogging](/_posts/myProfile/Start-JekyllBlogging/)       |
+|                                                                                                                                                            | [Remove-JekyllBlogServer](/_posts/myProfile/Remove-JekyllBlogServer/) |
+|                                                                                                                                                            | [Show-JekyllBlogSite](/_posts/myProfile/Show-JekyllBlogSite/)         |
 |                                                                                                                                                            | [Get-GistIframe](/_posts/myProfile/Get-GistIframe/)                   |
 |                                                                                                                                                            | [Get-DockerStatsSnapshot](/_posts/myProfile/Get-DockerStatsSnapshot/) |
 
