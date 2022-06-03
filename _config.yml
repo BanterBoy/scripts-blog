@@ -11,8 +11,8 @@ keep_files: [".git", ".svn"]
 encoding: UTF-8
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 include:
-  - _pages
-  - _posts
+  - "_pages"
+  - "_posts"
 
 exclude:
   - "_site"
