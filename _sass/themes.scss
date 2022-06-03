@@ -80,6 +80,10 @@ $dark-border: 1px solid $dark-light-blue;
         background: #000;
     }
 
+    strong {
+        color: $dark-text-color;
+    }
+
     .highlight .hll {
         background-color: #49483e
     }
@@ -501,6 +505,10 @@ $dark-border: 1px solid $dark-light-blue;
 
     th {
         background: scroll repeat-y #d4d4d4;
+    }
+
+    strong {
+        color: #303030;
     }
 
     .highlight .hll {

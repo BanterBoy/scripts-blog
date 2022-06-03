@@ -205,6 +205,11 @@ tbody tr:nth-child(2n+1) th {
   }
 }
 @media (prefers-color-scheme: dark) {
+  strong {
+    color: #fff;
+  }
+}
+@media (prefers-color-scheme: dark) {
   .highlight .hll {
     background-color: #49483e;
   }
@@ -680,6 +685,9 @@ tbody tr:nth-child(2n+1) th {
 .dark-theme th {
   background: #000;
 }
+.dark-theme strong {
+  color: #fff;
+}
 .dark-theme .highlight .hll {
   background-color: #49483e;
 }
@@ -999,6 +1007,9 @@ tbody tr:nth-child(2n+1) th {
 }
 .light-theme th {
   background: scroll repeat-y #d4d4d4;
+}
+.light-theme strong {
+  color: #303030;
 }
 .light-theme .highlight .hll {
   background-color: #ffc;
