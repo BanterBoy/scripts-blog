@@ -19,6 +19,7 @@ The full metadata block is above (in the [raw Markdown](https://raw.githubuserco
 Here are some key things to note about metadata.
 
 - **Required metadata**
+
   - **title** - The title will appear in search engine results. You can also add a pipe (|) followed by the product name (for example, `title: Action search | Microsoft Docs`). The title doesn't need be identical to the title in your H1 heading and it should contain 65 characters or less (including | PRODUCT NAME).
     - **description** - This is the full description that appears in the search results. Usually this is the first paragraph of your topic.
     - **author** - This is your GitHub alias, which is required for ownership and sorting in GitHub.
@@ -31,10 +32,10 @@ Here are some key things to note about metadata.
 
 - **Optional metadata**
   - **audience** - Use of these values: Application User, Developer, or IT Pro.
-    - **ms.reviewer** - This is the Microsoft alias of your Content Strategist.  
-    - **ms.custom** 
+    - **ms.reviewer** - This is the Microsoft alias of your Content Strategist.
+    - **ms.custom**
     - **ms.search.region** - Use "global" or enter a country-region value.
-    - **ms.author** - Use your Microsoft alias.  
+    - **ms.author** - Use your Microsoft alias.
 
 ## Basic Markdown, GFM, and special characters
 
@@ -48,18 +49,18 @@ All basic and GitHub Flavoured Markdown (GFM) is supported. For more information
 Markdown uses special characters such as \*, \`, and \# for formatting. If you wish to include one of these characters in your content, you must do one of two things:
 
 - Put a backslash before the special character to "escape" it (for example, `\*` for a \*)
-- Use the [HTML entity code](http://www.ascii.cl/htmlcodes.htm) for the character (for example, `&#42;` for a &#42;).
+- Use the [HTML entity code](http://www.ascii.cl/htmlcodes.htm) for the character (for example, `&#42;` for a \*).
 
 ## File name
 
 File names use the following rules:
 
-* Contain only lowercase letters, numbers, and hyphens.
-* No spaces or punctuation characters. Use the hyphens to separate words and numbers in the file name.
-* Use action verbs that are specific, such as develop, buy, build, troubleshoot. No -ing words.
-* No small words - don't include a, and, the, in, or, etc.
-* Must be in Markdown and use the .md file extension.
-* Keep file names short. They are part of the URL for your articles.  
+- Contain only lowercase letters, numbers, and hyphens.
+- No spaces or punctuation characters. Use the hyphens to separate words and numbers in the file name.
+- Use action verbs that are specific, such as develop, buy, build, troubleshoot. No -ing words.
+- No small words - don't include a, and, the, in, or, etc.
+- Must be in Markdown and use the .md file extension.
+- Keep file names short. They are part of the URL for your articles.
 
 ## Headings
 
@@ -83,8 +84,8 @@ Second-level headings will generate the on-page TOC that appears in the "In this
 
 ## Text styling
 
-*Italics*
- Use for files, folders, paths (for long items, split onto their own line) - new terms - URLs (unless rendered as links, which is the default).
+_Italics_
+Use for files, folders, paths (for long items, split onto their own line) - new terms - URLs (unless rendered as links, which is the default).
 
 **Bold**
 Use for UI elements.
@@ -127,8 +128,7 @@ If a URL appears in a Markdown file, it will be transformed into a clickable lin
 1. Is
 1. An
 1. Ordered
-1. List  
-
+1. List
 
 #### Ordered list with an embedded list
 
@@ -136,8 +136,8 @@ If a URL appears in a Markdown file, it will be transformed into a clickable lin
 1. comes
 1. an
 1. embedded
-    1. Miss Scarlet
-    1. Professor Plum
+   1. Miss Scarlet
+   1. Professor Plum
 1. ordered
 1. list
 
@@ -156,10 +156,10 @@ If a URL appears in a Markdown file, it will be transformed into a clickable lin
 - list
   - Mrs. Peacock
   - Mr. Green
-- contains  
+- contains
 - other
-    1. Colonel Mustard
-    1. Mrs. White
+  1. Colonel Mustard
+  1. Mrs. White
 - lists
 
 ## Horizontal rule
@@ -168,11 +168,11 @@ If a URL appears in a Markdown file, it will be transformed into a clickable lin
 
 ## Tables
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centred      |   $12 |
-| col 1 is default | left-aligned     |    $1 |
+| Tables           |      Are      |  Cool |
+| ---------------- | :-----------: | ----: |
+| col 3 is         | right-aligned | $1600 |
+| col 2 is         |    centred    |   $12 |
+| col 1 is default | left-aligned  |    $1 |
 
 You can use a [Markdown table generator tool](http://www.tablesgenerator.com/markdown_tables) to help creating them more easily.
 
@@ -238,3 +238,5 @@ It's important to use the following alert styles so they render with the proper 
 
 > [!IMPORTANT]
 > This is IMPORTANT
+
+---
