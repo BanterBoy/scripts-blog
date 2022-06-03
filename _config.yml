@@ -26,6 +26,7 @@ exclude:
   - ".bundle/"
   - "tmp/"
   - "_drafts"
+  - "_sass"
 
 # Markdown Processing
 markdown: kramdown
