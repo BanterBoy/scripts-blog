@@ -12,7 +12,6 @@ Some information about the exciting thing
   - [OutPut](#output)
   - [Script](#script)
   - [Download](#download)
-  - [gist-it](#gist-it)
   - [Report Issues](#report-issues)
 
 <small><i>[Table of contents generated with markdown-toc][1]{:target="\_blank"}</i></small>
