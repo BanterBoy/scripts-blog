@@ -1,6 +1,6 @@
 function Start-JekyllBlogging {
 	if (Test-IsAdmin = $True) {
-		New-BlogServer
+		New-JekyllBlogServer
 	}
 	else {
 		Write-Warning -message "Starting Admin Shell"
