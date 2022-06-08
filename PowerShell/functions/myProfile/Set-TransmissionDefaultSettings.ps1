@@ -1,6 +1,5 @@
 
 function Set-TransmissionDefaultSettings {
-
     <#
         .SYNOPSIS
         Updates transmission to use default settings:
@@ -50,7 +49,6 @@ function Set-TransmissionDefaultSettings {
         .EXAMPLE
         Set-TransmissionDefaultSettings
     #>
-
     $properties = @{
         AlternativeSpeedDown        = 1024
         AlternativeSpeedEnabled     = $true
@@ -95,6 +93,5 @@ function Set-TransmissionDefaultSettings {
         TrashOriginalTorrentFiles   = $false
         UtpEnabled                  = $true
     }
-    
     Set-TransmissionSession @properties
 }

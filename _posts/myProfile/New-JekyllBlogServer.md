@@ -20,9 +20,7 @@ Some information about the exciting thing
 
 ```powershell
 function New-JekyllBlogServer {
-
 	[CmdletBinding(DefaultParameterSetName = 'default')]
-
 	param(
 		[Parameter(Mandatory = $True,
 			ValueFromPipeline = $True,
@@ -30,11 +28,8 @@ function New-JekyllBlogServer {
 		[ValidateSet('Select', 'Blog')]
 		[string]$BlogPath,
 		[string]$Path
-
 	)
-
 	switch ($BlogPath) {
-
 		Select {
 			try {
 				$PSRootFolder = Select-FolderLocation
@@ -45,7 +40,6 @@ function New-JekyllBlogServer {
 				Write-Warning -Message "$_"
 			}
 		}
-
 		Blog {
 			try {
 				Set-Location -Path $Path
@@ -55,7 +49,6 @@ function New-JekyllBlogServer {
 				Write-Warning -Message "$_"
 			}
 		}
-
 		Default {
 			try {
 				Set-Location -Path $PSRootFolder

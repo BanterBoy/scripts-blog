@@ -19,7 +19,7 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-function New-JekyllBlogPost {
+function New-JekyllScriptsPost {
     param(
         [Parameter(Mandatory = $true)]
         [string]$Title,
@@ -28,14 +28,23 @@ function New-JekyllBlogPost {
         [Parameter(Mandatory = $false)]
         [string]$Date = (Get-Date -Format yyyy-MM-dd),
         [Parameter(Mandatory = $false)]
-        [string]$Content = 'Sample content',
+        [string]$Content,
         [Parameter(Mandatory = $true)]
         [ValidateSet(Post, Page)]
         [string]$Layout,
         [Parameter(Mandatory = $true)]
         [string]$Destination
     )
+    $Content = Get-Content -Path  -Raw -ReadAllBytes
+    $Path = $Destination + "\$date\$date-blogpost.md"
+    New-Item -ItemType File -Value $Content -Path $Path
+    New-Item -ItemType directory -Path ".\$date"
+    code $Path
+}
 
+# Find-Files -Path C:\GitRepos\scripts-blog\PowerShell\
+
+<#
     $Content =
     "---
     layout: $Layout
@@ -47,16 +56,13 @@ function New-JekyllBlogPost {
     ---
 
     $Content
-
     "
 
     $Path = $Destination + "\$date\$date-blogpost.md"
     New-Item -ItemType File -Value $Content -Path $Path
     New-Item -ItemType directory -Path ".\$date"
-
-
     code $Path
-}
+#>
 ```
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

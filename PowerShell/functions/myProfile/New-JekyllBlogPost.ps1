@@ -22,3 +22,23 @@ function New-JekyllScriptsPost {
 }
 
 # Find-Files -Path C:\GitRepos\scripts-blog\PowerShell\ 
+
+<#
+    $Content =
+    "---
+    layout: $Layout
+    title: $Title
+    permalink: /menu/_pages/$Title.html
+    tags:
+    - $Tag
+    - PowerShell
+    ---
+
+    $Content
+    "
+
+    $Path = $Destination + "\$date\$date-blogpost.md"
+    New-Item -ItemType File -Value $Content -Path $Path
+    New-Item -ItemType directory -Path ".\$date"
+    code $Path
+#>

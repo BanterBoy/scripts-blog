@@ -19,9 +19,7 @@ Some information about the exciting thing
 #### Script
 
 ```powershell
-
 function Set-TransmissionDefaultSettings {
-
     <#
         .SYNOPSIS
         Updates transmission to use default settings:
@@ -116,7 +114,6 @@ function Set-TransmissionDefaultSettings {
         TrashOriginalTorrentFiles   = $false
         UtpEnabled                  = $true
     }
-
     Set-TransmissionSession @properties
 }
 ```

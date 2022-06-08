@@ -19,19 +19,16 @@ function Remove-JekyllBlogServer {
 			docker rmi $(docker images -qf 'dangling=true')
 			docker volume rm $(docker volume ls -qf 'dangling=true')
 		}
-
 		$vendor = ($directoryPath + "\vendor")
 		$site = ($directoryPath + "\_site")
 		$gemfile = ($directoryPath + "\gemfile.lock")
 		$jekyllmetadata = ($directoryPath + "\.jekyll-metadata")
 		$jekyllcache = ($directoryPath + "\.jekyll-cache")
-
 		$vendorPath = Test-Path -Path $vendor
 		$sitePath = Test-Path -Path $site
 		$gemfilePath = Test-Path -Path $gemfile
 		$jekyllmetadataPath = Test-Path -Path $jekyllmetadata
 		$jekyllcachePath = Test-Path -Path $jekyllcache
-
 		if ( $vendorPath ) {
 			Write-Warning -Message 'Cleaning Environment - Removing Vendor Bundle'
 			try {

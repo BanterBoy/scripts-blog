@@ -30,6 +30,7 @@ function Stop-FailedService {
         [string]
         $ProcessName
     )
+
     foreach ($Computer in $ComputerName) {
         $Process = Get-CimInstance -ClassName "CIM_Process" -Namespace "root/CIMV2" -ComputerName "$Computer" | Where-Object -Property Name -Like ($ProcessName + ".exe")
         IF ($null -ne $Process) {
