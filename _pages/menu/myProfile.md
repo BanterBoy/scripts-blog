@@ -133,19 +133,19 @@ New-Greeting
 
 ## fileManagement
 
-| fileManagement | Function                                                          |
-| :------------- | :---------------------------------------------------------------- |
-| Category       | [Find-Movies](/_posts/myProfile/Find-Movies/)                     |
-|                | [Show-PSDrive](/_posts/myProfile/Show-PSDrive/)                   |
-|                | [New-GitDrives](/_posts/myProfile/New-GitDrives/)                 |
-|                | [New-PSDrives](/_posts/myProfile/New-PSDrives/)                   |
-|                | [Get-LatestFiles](/_posts/myProfile/Get-LatestFiles/)             |
-|                | [New-DummyFile](/_posts/myProfile/New-DummyFile/)                 |
-|                | [New-Shortcut](/_posts/myProfile/New-Shortcut/)                   |
-|                | [Get-FolderPermissions](/_posts/myProfile/Get-FolderPermissions/) |
-|                | [Search-ForFiles](/_posts/myProfile/Search-ForFiles/)             |
-|                | [Search-Scripts](/_posts/myProfile/Search-Scripts/)               |
-|                | [Select-FolderLocation](/_posts/myProfile/Select-FolderLocation/) |
+| fileManagement | Function                                                                        |
+| :------------- | :------------------------------------------------------------------------------ |
+| Category       | [Find-Movies](/_posts/myProfile/Find-Movies/)                                   |
+|                | [Show-PSDrive](/_posts/myProfile/Show-PSDrive/)                                 |
+|                | [New-GitDrives](/_posts/myProfile/New-GitDrives/)                               |
+|                | [New-PSDrives](/_posts/myProfile/New-PSDrives/)                                 |
+|                | [Get-LatestFiles](/_posts/myProfile/Get-LatestFiles/)                           |
+|                | [New-DummyFile](/_posts/myProfile/New-DummyFile/)                               |
+|                | [New-Shortcut](/_posts/myProfile/New-Shortcut/)                                 |
+|                | [Get-FileAndFolderPermissions](/_posts/myProfile/Get-FileAndFolderPermissions/) |
+|                | [Search-ForFiles](/_posts/myProfile/Search-ForFiles/)                           |
+|                | [Search-Scripts](/_posts/myProfile/Search-Scripts/)                             |
+|                | [Select-FolderLocation](/_posts/myProfile/Select-FolderLocation/)               |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
