@@ -52,4 +52,11 @@
         l.parentNode.insertBefore(lwas, l);
     })(lwa, 'trackPage');
 </script>
+
+<script type='text/javascript'>
+    LWA_tracking = 'log';
+    if (document.location.protocol == "https:") { var ptcl = "https:" } else { var ptcl = "http:" }
+    var lwa_server = ptcl + "//app.logaholic.com/";
+    document.write(unescape("%3Cscript type='text/javascript' src='" + lwa_server + "exitclicks.js'%3E%3C/script%3E"));
+</script>
 <!-- /* Logaholic Web Analytics Code End */ -->
