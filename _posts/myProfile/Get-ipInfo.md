@@ -176,7 +176,7 @@ function Get-ipInfo {
 
 Please feel free to copy parts of the script or if you would like to download the entire script, simple click the download button. You can download the complete repository in a zip file by clicking the Download link in the menu bar on the left hand side of the page.
 
-<button class="btn" type="submit" onclick="window.open('/powershell/functions/myProfile/Get-ipInfo.ps1')">
+<button class="btn" type="submit" onclick="window.open('/PowerShell/functions/myProfile/Get-ipInfo.ps1')">
     <i class="fa fa-cloud-download-alt">
     </i>
         Download

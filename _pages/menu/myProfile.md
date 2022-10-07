@@ -70,7 +70,7 @@ Write-Output ""
 New-Greeting
 ```
 
-<button class="btn" type="submit" onclick="window.open('/powershell/functions/myProfile/Microsoft.PowerShell_profile.ps1')">
+<button class="btn" type="submit" onclick="window.open('/PowerShell/functions/myProfile/Microsoft.PowerShell_profile.ps1')">
     <i class="fa fa-cloud-download-alt">
     </i>
         Download myProfile
