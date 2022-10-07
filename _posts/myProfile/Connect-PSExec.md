@@ -137,7 +137,7 @@ function Connect-PSExec {
 
 Please feel free to copy parts of the script or if you would like to download the entire script, simple click the download button. You can download the complete repository in a zip file by clicking the Download link in the menu bar on the left hand side of the page.
 
-<button class="btn" type="submit" onclick="window.open('http://agamar.domain.leigh-services.com:4000/powershell/functions/myProfile/Connect-PSExec.ps1')">
+<button class="btn" type="submit" onclick="window.open('https://scripts.lukeleigh.com/powershell/functions/myProfile/Connect-PSExec.ps1')">
     <i class="fa fa-cloud-download-alt">
     </i>
         Download
@@ -145,7 +145,7 @@ Please feel free to copy parts of the script or if you would like to download th
 
 This function requires the following executable and is included in the repository:
 
-<button class="btn" type="submit" onclick="window.open('http://agamar.domain.leigh-services.com:4000/powershell/functions/myProfile/psexec.exe')">
+<button class="btn" type="submit" onclick="window.open('https://scripts.lukeleigh.com/powershell/functions/myProfile/psexec.exe')">
     <i class="fa fa-cloud-download-alt">
     </i>
         psexec.exe
