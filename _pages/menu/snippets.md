@@ -11,14 +11,13 @@ permalink: /menu/_pages/snippets.html
 
 ---
 
-## Table of Contents
+### Table of Contents
 
-- [Table of Contents](#table-of-contents)
 - [snippets](#snippets)
 
 ---
 
-## snippets
+### snippets
 
 | Section  | FileName                                                                     |
 | :------- | :--------------------------------------------------------------------------- |
