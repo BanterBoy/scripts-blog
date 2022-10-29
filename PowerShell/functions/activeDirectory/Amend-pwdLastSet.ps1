@@ -37,10 +37,7 @@ function Get-PasswordLastSetDate {
                 }
             }
             catch {
-                $Properties = @{
-                    "Username"   = $PasswordTest.Name
-                    "pwdLastSet" = $PasswordTest.pwdLastSet
-                }
+                Write-Error -Message $_
             }
             finally {
                 $obj = New-Object -TypeName PSObject -Property $Properties
@@ -80,10 +77,7 @@ function Set-PasswordExpired {
                 }
             }
             catch {
-                $Properties = @{
-                    "Username"        = $Reset.Name
-                    "PasswordExpired" = $Reset.PasswordExpired
-                }
+                Write-Error -Message $_
             }
             finally {
                 $obj = New-Object -TypeName PSObject -Property $Properties
