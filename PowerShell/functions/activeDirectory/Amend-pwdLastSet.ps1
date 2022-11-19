@@ -1,12 +1,3 @@
-<#
-Get-ADUser "ADUserName" -Properties PasswordExpired | Select-Object PasswordExpired
-
-Set-ADUser "ADUserName" -Replace @{pwdLastSet='0'}
-
-$users = Get-ADUser -Filter {name -like '*' } -Properties *
-foreach($user in $users){ Set-ADUser -Replace @{pdwLastSet='0' -whatif }
-#>
-
 function Get-PasswordLastSetDate {
     [CmdletBinding(SupportsShouldProcess = $false)]
     param (
