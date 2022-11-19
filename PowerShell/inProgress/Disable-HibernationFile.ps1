@@ -1,4 +1,4 @@
-function Disable-HibernationFile {
+function ToggleHibernation {
     [CmdletBinding()]
     param (
         
