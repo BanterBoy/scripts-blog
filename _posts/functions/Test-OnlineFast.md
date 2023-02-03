@@ -27,14 +27,14 @@ function Test-OnlineFast {
             ValueFromPipeline)]
         [string[]]
         $ComputerName,
-
+ 
         $TimeoutMillisec = 1000
     )
-
+ 
     begin {
         # use this to collect computer names that were sent via pipeline
         [Collections.ArrayList]$bucket = @()
-
+    
         # hash table with error code to text translation
         $StatusCode_ReturnValue =
         @{
@@ -60,60 +60,81 @@ function Test-OnlineFast {
             11032 = 'Negotiating IPSEC'
             11050 = 'General Failure'
         }
-
-
+    
+    
         # hash table with calculated property that translates
         # numeric return value into friendly text
-
+ 
         $statusFriendlyText = @{
             # name of column
             Name       = 'Status'
             # code to calculate content of column
-            Expression = {
+            Expression = { 
                 # take status code and use it as index into
                 # the hash table with friendly names
                 # make sure the key is of same data type (int)
                 $StatusCode_ReturnValue[([int]$_.StatusCode)]
             }
         }
-
+ 
         # calculated property that returns $true when status -eq 0
         $IsOnline = @{
             Name       = 'Online'
             Expression = { $_.StatusCode -eq 0 }
         }
-
+ 
         # do DNS resolution when system responds to ping
         $DNSName = @{
             Name       = 'DNSName'
-            Expression = { if ($_.StatusCode -eq 0) {
-                    if ($_.Address -like '*.*.*.*')
-                    { [Net.DNS]::GetHostByAddress($_.Address).HostName }
-                    else
-                    { [Net.DNS]::GetHostByName($_.Address).HostName }
+            Expression = { if ($_.StatusCode -eq 0) { 
+                    if ($_.Address -like '*.*.*.*') 
+                    { [Net.DNS]::GetHostByAddress($_.Address).HostName } 
+                    else  
+                    { [Net.DNS]::GetHostByName($_.Address).HostName } 
                 }
             }
         }
-    }
 
+        $IpSort = @{
+            Name       = 'IpSort'
+            Expression = { 
+                $paddedArray = $_.Address -split "." | Select-Object { ([int]$_).ToString("000") }
+
+                [array]::Reverse($paddedArray)
+
+                $paddedArray -join "."
+            }
+        }
+    }
+    
     process {
         # add each computer name to the bucket
-        # we either receive a string array via parameter, or
+        # we either receive a string array via parameter, or 
         # the process block runs multiple times when computer
         # names are piped
         $ComputerName | ForEach-Object {
             $null = $bucket.Add($_)
         }
     }
-
+    
     end {
         # convert list of computers into a WMI query string
         $query = $bucket -join "' or Address='"
+        
+        $collection = $null
 
-        Get-WmiObject -Class Win32_PingStatus -Filter "(Address='$query') and timeout=$TimeoutMillisec" |
-        Select-Object -Property Address, $IsOnline, $DNSName, $statusFriendlyText
-    }
+        if ($PSVersionTable.PSVersion.Major -ge 6) {
+            $collection = Get-CimInstance -ClassName Win32_PingStatus -Filter "(Address='$query') and timeout=$TimeoutMillisec"
+        }
+        else {
+            $collection = Get-WmiObject -Class Win32_PingStatus -Filter "(Address='$query') and timeout=$TimeoutMillisec"
+        }
 
+        $collection |
+        Select-Object -Property Address, $IsOnline, $DNSName, $statusFriendlyText |
+        Sort-Object { $IpSort } |
+        Format-Table -AutoSize
+    }    
 }
 ```
 
