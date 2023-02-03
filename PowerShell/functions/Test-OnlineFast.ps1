@@ -73,6 +73,17 @@ function Test-OnlineFast {
                 }
             }
         }
+
+        $IpSort = @{
+            Name       = 'IpSort'
+            Expression = { 
+                $paddedArray = $_.Address -split "." | Select-Object { ([int]$_).ToString("000") }
+
+                [array]::Reverse($paddedArray)
+
+                $paddedArray -join "."
+            }
+        }
     }
     
     process {
@@ -89,8 +100,18 @@ function Test-OnlineFast {
         # convert list of computers into a WMI query string
         $query = $bucket -join "' or Address='"
         
-        Get-WmiObject -Class Win32_PingStatus -Filter "(Address='$query') and timeout=$TimeoutMillisec" |
-        Select-Object -Property Address, $IsOnline, $DNSName, $statusFriendlyText
-    }
-    
+        $collection = $null
+
+        if ($PSVersionTable.PSVersion.Major -ge 6) {
+            $collection = Get-CimInstance -ClassName Win32_PingStatus -Filter "(Address='$query') and timeout=$TimeoutMillisec"
+        }
+        else {
+            $collection = Get-WmiObject -Class Win32_PingStatus -Filter "(Address='$query') and timeout=$TimeoutMillisec"
+        }
+
+        $collection |
+        Select-Object -Property Address, $IsOnline, $DNSName, $statusFriendlyText |
+        Sort-Object { $IpSort } |
+        Format-Table -AutoSize
+    }    
 }
