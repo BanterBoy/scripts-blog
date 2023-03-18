@@ -7,4 +7,12 @@
         "yaml"
     ],
     "editor.formatOnSave": true
+	"editor.fontFamily": "'mesloLGMDZ Nerd Font Mono', 'Courier New', monospace",
+	"editor.fontSize": 10,
+	"terminal.integrated.fontSize": 11,
+	"terminal.integrated.fontFamily": "'mesloLGMDZ Nerd Font Mono', 'Courier New', monospace",
+	"markdown.preview.fontSize": 11,
+	"markdown.preview.fontFamily": "'mesloLGMDZ Nerd Font Mono', 'Courier New', monospace",
+	"editor.codeLensFontFamily": "'mesloLGMDZ Nerd Font Mono', 'Courier New', monospace",
+	"editor.inlayHints.fontFamily": "'mesloLGMDZ Nerd Font Mono', 'Courier New', monospace"
 }
