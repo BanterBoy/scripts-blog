@@ -125,16 +125,16 @@ function ConvertTo-WmiFilter([Microsoft.ActiveDirectory.Management.ADObject[]] $
             $filter = $gpDomain.GetWmiFilter($path)
         }
         catch {
-            write-host -ForeGroundColor Red "The WMI filter could not be found."
+            Write-Host -ForeGroundColor Red "The WMI filter could not be found."
         }
         if ($filter) {
             [Guid]$Guid = $_.Name.Substring(1, $_.Name.Length - 2)
             $filter | Add-Member -MemberType NoteProperty -Name Guid -Value $Guid -PassThru | Add-Member -MemberType NoteProperty -Name Content -Value $_."msWMI-Parm2" -PassThru
         }
         else {
-            write-host -ForeGroundColor Yellow "Waiting $SleepTimer seconds for Active Directory replication to complete."
+            Write-Host -ForeGroundColor Yellow "Waiting $SleepTimer seconds for Active Directory replication to complete."
             start-sleep -s $SleepTimer
-            write-host -ForeGroundColor Yellow "Trying again to retrieve the WMI filter."
+            Write-Host -ForeGroundColor Yellow "Trying again to retrieve the WMI filter."
             ConvertTo-WmiFilter $ADObject
         }
     }
@@ -188,11 +188,11 @@ Function Create-Policy {
     }
 
     if ($array -notcontains $msWMIName) {
-        write-host -ForeGroundColor Green "Creating the $msWMIName WMI Filter..."
+        Write-Host -ForeGroundColor Green "Creating the $msWMIName WMI Filter..."
         $WMIFilterADObject = New-ADObject -name $WMICN -type "msWMI-Som" -Path $WMIPath -OtherAttributes $Attr
     }
     Else {
-        write-host -ForeGroundColor Yellow "The $msWMIName WMI Filter already exists."
+        Write-Host -ForeGroundColor Yellow "The $msWMIName WMI Filter already exists."
     }
     $WMIFilterADObject = $NULL
 
@@ -202,7 +202,7 @@ Function Create-Policy {
 
     $ExistingGPO = get-gpo $GPOName -ea "SilentlyContinue"   
     If ($NULL -eq $ExistingGPO) {            
-        write-host -ForeGroundColor Green "Creating the $GPOName Group Policy Object..."
+        Write-Host -ForeGroundColor Green "Creating the $GPOName Group Policy Object..."
 
         # Create new GPO shell
         $GPO = New-GPO -Name $GPOName
@@ -234,16 +234,16 @@ Function Create-Policy {
         }
 
         # Link the new GPO to the Domain Controllers OU
-        write-host -ForeGroundColor Green "Linking the $GPOName Group Policy Object to the $TargetOU OU..."
+        Write-Host -ForeGroundColor Green "Linking the $GPOName Group Policy Object to the $TargetOU OU..."
         New-GPLink -Name $GPOName `
             -Target "$TargetOU" | out-null
     }
     Else {
-        write-host -ForeGroundColor Yellow "The $GPOName Group Policy Object already exists."
-        write-host -ForeGroundColor Green "Adding the $msWMIName WMI Filter..."
+        Write-Host -ForeGroundColor Yellow "The $GPOName Group Policy Object already exists."
+        Write-Host -ForeGroundColor Green "Adding the $msWMIName WMI Filter..."
         $ExistingGPO.WmiFilter = ConvertTo-WmiFilter $WMIFilterADObject
     }
-    write-host -ForeGroundColor Green "Completed.`n"
+    Write-Host -ForeGroundColor Green "Completed.`n"
     $ObjectExists = $NULL
 }
 

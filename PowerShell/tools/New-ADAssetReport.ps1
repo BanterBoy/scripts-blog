@@ -4044,12 +4044,12 @@ Function Search-AD {
     }
     try {
         (New-Object ADSISearcher -ArgumentList @(
-                $Root,
-                $LDAP,
-                $Properties
-            ) -Property @{
-                PageSize = 1000
-            }).FindAll() | ForEach-Object {
+            $Root,
+            $LDAP,
+            $Properties
+        ) -Property @{
+            PageSize = 1000
+        }).FindAll() | ForEach-Object {
             $ObjectProps = @{}
             $_.Properties.GetEnumerator() |
             Foreach-Object {

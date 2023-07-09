@@ -3,16 +3,54 @@ layout: post
 title: CreateADMXCentralStore.ps1
 ---
 
-### something exciting
-
-Some information about the exciting thing
-
-- [something exciting](#something-exciting)
+- [Description](#description)
   - [Script](#script)
   - [Download](#download)
   - [Report Issues](#report-issues)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+---
+
+### Description
+
+**_BanterBoy:_** Explain what the script does and why it is useful.
+
+**_GitHub Copilot:_** This PowerShell script is designed to create a central store for ADMX files. The script starts by checking if the specified source server location exists. If it does not exist, the script will output an error message to the console.
+
+After checking the source server location, the script proceeds to create the central store. It starts by creating a new folder with the name "PolicyDefinitions" in the specified destination location. Then, it copies all the ADMX files from the source server location to the newly created "PolicyDefinitions" folder.
+
+Once the ADMX files have been copied, the script outputs a summary of the total number of ADMX files in the destination folder. It then proceeds to iterate through each language folder in the destination folder and outputs the total number of ADML files and ADML DLL files for each language.
+
+Finally, the script outputs a message indicating that it has finished creating the central store.
+
+To improve the readability of the code, the script could benefit from more descriptive variable names. Additionally, the script could be optimized for performance by using the pipeline to pass objects between commands instead of using variables.
+
+**_BanterBoy:_** Can you provide examples for using the script
+
+**_GitHub Copilot:_** Certainly! Here are a few examples of how you can use this PowerShell script:
+
+Example 1: Create a central store on a local machine
+
+```
+.\CreateADMXCentralStore.ps1 -SourcePath "C:\Windows\PolicyDefinitions" -DestinationPath "C:\Windows\CentralStore"
+```
+
+This command will create a central store on the local machine by copying all the ADMX files from the "C:\Windows\PolicyDefinitions" folder to the newly created "C:\Windows\CentralStore\PolicyDefinitions" folder.
+
+Example 2: Create a central store on a remote machine
+
+```
+Invoke-Command -ComputerName "Server01" -FilePath "C:\Scripts\CreateADMXCentralStore.ps1" -ArgumentList "C:\Windows\PolicyDefinitions", "\\Server02\CentralStore"
+```
+
+This command will create a central store on a remote machine named "Server02" by copying all the ADMX files from the "C:\Windows\PolicyDefinitions" folder on "Server01" to the newly created "\\Server02\CentralStore\PolicyDefinitions" folder.
+
+Example 3: Create a central store with verbose output
+
+```
+.\CreateADMXCentralStore.ps1 -SourcePath "C:\Windows\PolicyDefinitions" -DestinationPath "C:\Windows\CentralStore" -Verbose
+```
+
+This command will create a central store on the local machine and provide verbose output to the console, including information about each ADMX file that is copied and the total number of ADML files and ADML DLL files for each language.
 
 ---
 

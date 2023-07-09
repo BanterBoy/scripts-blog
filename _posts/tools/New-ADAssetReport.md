@@ -3,16 +3,62 @@ layout: post
 title: New-ADAssetReport.ps1
 ---
 
-### something exciting
-
-Some information about the exciting thing
-
-- [something exciting](#something-exciting)
+- [Description](#description)
   - [Script](#script)
   - [Download](#download)
   - [Report Issues](#report-issues)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+---
+
+### Description
+
+**_BanterBoy:_** Explain what the script does and why it is useful.
+
+**_GitHub Copilot:_** The code excerpt provided is a PowerShell script that appears to be generating an asset report for Active Directory. The code block is enclosed in a region called "Main" which suggests that this is the main body of the script.
+
+The code block contains a switch statement that is used to determine the type of report to generate based on the value of the $ReportType variable. The switch statement has several cases that handle different report types.
+
+The first case handles the "Forest" report type. If the $ReportType variable is equal to "Forest", the script generates a new self-contained asset report for the entire forest using the New-SelfContainedAssetReport function. The report is saved to the $ADForestReport variable and the report name prefix is set to "forest\_".
+
+The second case handles the "Domain" and "ForestAndDomain" report types. If the $ReportType variable is equal to either of these values, the script generates a new self-contained asset report for each domain in the forest using the New-SelfContainedAssetReport function. The report is saved to the $ADDomainReport variable and the report name prefix is set to "domain\_".
+
+The third case handles the "Custom" report type. If the $ReportType variable is equal to "Custom", the script does not generate a report and instead provides a comment instructing the user to fill out the report as they wish.
+
+Overall, the code appears to be well-structured and easy to read. The use of a switch statement makes it clear which report type is being handled and the New-SelfContainedAssetReport function is used consistently throughout the code.
+
+To improve the code's readability, the author could consider adding comments to explain the purpose of each section of the code. Additionally, the author could consider using more descriptive variable names to make the code easier to understand.
+
+In terms of performance, it is difficult to make any suggestions without more context about the size of the Active Directory environment being reported on. However, it is worth noting that generating asset reports for large environments can be a time-consuming process, so the author may want to consider implementing some form of progress tracking to keep the user informed about the status of the report generation.
+
+**_BanterBoy:_** Can you provide examples of running this script
+
+**_GitHub Copilot:_** I'm sorry, but without more context about the environment in which this script is intended to be run, it is difficult to provide specific examples of running the script.
+
+However, in general, to run this script, you would need to open PowerShell and navigate to the directory where the script is saved. You can then run the script by typing the name of the script file (including the .ps1 extension) and pressing Enter.
+
+For example, if the script is saved as "New-ADAssetReport.ps1" in the C:\Scripts directory, you would navigate to the C:\Scripts directory in PowerShell and then run the script by typing ".\New-ADAssetReport.ps1" and pressing Enter.
+
+When running the script, you would need to provide a value for the $ReportType variable. This value determines the type of report that will be generated.
+
+For example, to generate a forest report, you would run the script with the following command:
+
+```
+.\New-ADAssetReport.ps1 -ReportType Forest
+```
+
+To generate a domain report, you would run the script with the following command:
+
+```
+.\New-ADAssetReport.ps1 -ReportType Domain
+```
+
+To generate a report for both the forest and all domains, you would run the script with the following command:
+
+```
+.\New-ADAssetReport.ps1 -ReportType ForestAndDomain
+```
+
+It is worth noting that the script may require additional parameters or configuration depending on the environment in which it is being run. The script may also require administrative privileges to run.
 
 ---
 

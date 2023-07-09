@@ -3,16 +3,59 @@ layout: post
 title: IISLogsCleanup.ps1
 ---
 
-### something exciting
-
-Some information about the exciting thing
-
-- [something exciting](#something-exciting)
+- [Description](#description)
   - [Script](#script)
   - [Download](#download)
   - [Report Issues](#report-issues)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+---
+
+### Description
+
+**_BanterBoy:_** Explain what the script does and why it is useful.
+
+**_GitHub Copilot:_** This PowerShell script is designed to clean up log files on a server. The script first checks if the number of log files matches the number of zipped files. If the numbers match, the script proceeds to move the zipped files to an archive folder. If the numbers do not match, the script logs a warning message and does not delete any files.
+
+The script uses a function called Write-Logfile to write messages to a log file. This function takes a string as input and writes it to a log file. The log file is created in the same directory as the script and is named "IISLogsCleanup.log". The log file is opened in append mode, so new messages are added to the end of the file.
+
+The script uses the Test-Path cmdlet to check if the archive folder exists. If the folder does not exist, the script creates the folder using the New-Item cmdlet. The script also creates a subfolder in the archive folder based on the name of the log file folder.
+
+The script then uses the Move-Item cmdlet to move the zipped log files to the archive folder. If the move operation fails, the script logs an error message.
+
+Finally, the script writes a "Finished" message to the console and the log file.
+
+To improve the readability of the code, the script could use more descriptive variable names. The script could also benefit from more comments to explain the purpose of each section of code. Additionally, the script could be optimized for performance by using the -Recurse parameter with the Remove-Item cmdlet to delete all log files in a folder and its subfolders.
+
+**_BanterBoy:_** Can you provide examples for using the script
+
+**_GitHub Copilot:_** Sure, here are some examples of how to use the script:
+
+Example 1: Running the script with default settings
+Assuming the script is saved as "IISLogsCleanup.ps1" in the current directory, you can run the script with default settings by opening PowerShell and navigating to the directory where the script is saved. You can then type the following command and press Enter:
+
+```
+.\IISLogsCleanup.ps1
+```
+
+This will run the script with the default settings, which will clean up log files in the "C:\inetpub\logs\LogFiles" folder that are older than 7 days and move zipped files to an archive folder named "C:\inetpub\logs\Archive".
+
+Example 2: Customizing the log folder and archive folder
+Assuming you want to clean up log files in a different folder and move zipped files to a different archive folder, you can modify the variables at the beginning of the script. For example, you can change the $LogFolder variable to "D:\Logs" and the $ArchiveFolder variable to "D:\Logs\Archive". You can then run the script with the following command:
+
+```
+.\IISLogsCleanup.ps1
+```
+
+This will run the script with the new settings, which will clean up log files in the "D:\Logs" folder that are older than 7 days and move zipped files to the "D:\Logs\Archive" folder.
+
+Example 3: Changing the number of days to keep log files
+Assuming you want to keep log files for a different number of days before deleting them, you can modify the $DaysToKeep variable at the beginning of the script. For example, you can change the $DaysToKeep variable to 14 to keep log files for 14 days before deleting them. You can then run the script with the following command:
+
+```
+.\IISLogsCleanup.ps1
+```
+
+This will run the script with the new settings, which will clean up log files in the "C:\inetpub\logs\LogFiles" folder that are older than 14 days and move zipped files to the "C:\inetpub\logs\Archive" folder.
 
 ---
 

@@ -3,16 +3,40 @@ layout: post
 title: CreateTimeServerGPOs.ps1
 ---
 
-### something exciting
-
-Some information about the exciting thing
-
-- [something exciting](#something-exciting)
+- [Description](#description)
   - [Script](#script)
   - [Download](#download)
   - [Report Issues](#report-issues)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+---
+
+### Description
+
+**_BanterBoy:_** Explain what the script does and why it is useful.
+
+**_GitHub Copilot:_** This PowerShell script creates Group Policy Objects (GPOs) for time synchronization on Windows domain controllers. The script creates two GPOs, one for the primary domain controller emulator (PDCe) and one for all other domain controllers. The script also creates WMI filters for each GPO to ensure that the GPOs are only applied to the correct computers.
+
+The script defines a function called `Create-Policy` that takes five parameters: `$GPOName`, `$NtpServer`, `$AnnounceFlags`, `$Type`, and `$WMIFilterADObject`. This function creates a new GPO with the specified name and sets the WMI filter to the value of `$WMIFilterADObject`. The function then sets three registry keys in the Preferences section of the new GPO to configure the time synchronization settings. If the `$DisableHyperVTimeSynchronization` variable is set to `$true`, the function also disables the Hyper-V time synchronization integration service. Finally, the function links the new GPO to the domain controllers organizational unit (OU).
+
+The script calls the `Create-Policy` function twice, once for the PDCe GPO and once for the non-PDCe GPO. The PDCe GPO is configured to use the specified time servers and the NT5DS time synchronization type, while the non-PDCe GPO is configured to use the domain hierarchy for time synchronization.
+
+The script uses the `get-gpo` cmdlet to check if a GPO with the specified name already exists. If the GPO does not exist, the script creates a new GPO using the `New-GPO` cmdlet and calls the `Create-Policy` function to configure the GPO. If the GPO already exists, the script updates the WMI filter using the `ConvertTo-WmiFilter` cmdlet.
+
+The script uses the `Write-Host` cmdlet to output status messages to the console. The script outputs a message when a new GPO is created, when a GPO already exists, when a WMI filter is added, and when the script completes.
+
+Overall, this script is well-organized and easy to read. The use of functions and cmdlets makes the code more modular and easier to maintain. However, the script could be improved by adding more comments to explain the purpose of each section of code. Additionally, the script could be made more efficient by using the `Set-GPRegistryValue` cmdlet instead of the `Set-GPPrefRegistryValue` cmdlet to configure the registry keys in the GPO.
+
+**_BanterBoy:_** Can you provide examples for using the script
+
+**_GitHub Copilot:_** Certainly! Here are a few examples of how you could use this script:
+
+1. Create GPOs for time synchronization on a new domain: If you are setting up a new Windows domain, you can use this script to create GPOs for time synchronization on all domain controllers. Simply run the script on the primary domain controller and it will create the necessary GPOs and WMI filters.
+
+2. Update time synchronization settings on existing domain controllers: If you need to update the time synchronization settings on existing domain controllers, you can use this script to create new GPOs with the updated settings and link them to the domain controllers OU. The script will automatically update the WMI filters for any existing GPOs with the same name.
+
+3. Customize time synchronization settings for different domains: If you have multiple domains in your organization with different time synchronization requirements, you can modify the script to create GPOs with different settings for each domain. Simply update the `$PDCeGPOName`, `$NonPDCeGPOName`, `$TimeServers`, `$AnnounceFlags`, `$Type`, and `$WMIFilterADObject` variables to match the requirements for each domain.
+
+Note that this script should be run on the primary domain controller and requires administrative privileges. Additionally, you should test the script in a non-production environment before running it in a production environment to ensure that it works as expected.
 
 ---
 
@@ -146,16 +170,16 @@ function ConvertTo-WmiFilter([Microsoft.ActiveDirectory.Management.ADObject[]] $
             $filter = $gpDomain.GetWmiFilter($path)
         }
         catch {
-            write-host -ForeGroundColor Red "The WMI filter could not be found."
+            Write-Host -ForeGroundColor Red "The WMI filter could not be found."
         }
         if ($filter) {
             [Guid]$Guid = $_.Name.Substring(1, $_.Name.Length - 2)
             $filter | Add-Member -MemberType NoteProperty -Name Guid -Value $Guid -PassThru | Add-Member -MemberType NoteProperty -Name Content -Value $_."msWMI-Parm2" -PassThru
         }
         else {
-            write-host -ForeGroundColor Yellow "Waiting $SleepTimer seconds for Active Directory replication to complete."
+            Write-Host -ForeGroundColor Yellow "Waiting $SleepTimer seconds for Active Directory replication to complete."
             start-sleep -s $SleepTimer
-            write-host -ForeGroundColor Yellow "Trying again to retrieve the WMI filter."
+            Write-Host -ForeGroundColor Yellow "Trying again to retrieve the WMI filter."
             ConvertTo-WmiFilter $ADObject
         }
     }
@@ -209,11 +233,11 @@ Function Create-Policy {
     }
 
     if ($array -notcontains $msWMIName) {
-        write-host -ForeGroundColor Green "Creating the $msWMIName WMI Filter..."
+        Write-Host -ForeGroundColor Green "Creating the $msWMIName WMI Filter..."
         $WMIFilterADObject = New-ADObject -name $WMICN -type "msWMI-Som" -Path $WMIPath -OtherAttributes $Attr
     }
     Else {
-        write-host -ForeGroundColor Yellow "The $msWMIName WMI Filter already exists."
+        Write-Host -ForeGroundColor Yellow "The $msWMIName WMI Filter already exists."
     }
     $WMIFilterADObject = $NULL
 
@@ -223,7 +247,7 @@ Function Create-Policy {
 
     $ExistingGPO = get-gpo $GPOName -ea "SilentlyContinue"
     If ($NULL -eq $ExistingGPO) {
-        write-host -ForeGroundColor Green "Creating the $GPOName Group Policy Object..."
+        Write-Host -ForeGroundColor Green "Creating the $GPOName Group Policy Object..."
 
         # Create new GPO shell
         $GPO = New-GPO -Name $GPOName
@@ -255,16 +279,16 @@ Function Create-Policy {
         }
 
         # Link the new GPO to the Domain Controllers OU
-        write-host -ForeGroundColor Green "Linking the $GPOName Group Policy Object to the $TargetOU OU..."
+        Write-Host -ForeGroundColor Green "Linking the $GPOName Group Policy Object to the $TargetOU OU..."
         New-GPLink -Name $GPOName `
             -Target "$TargetOU" | out-null
     }
     Else {
-        write-host -ForeGroundColor Yellow "The $GPOName Group Policy Object already exists."
-        write-host -ForeGroundColor Green "Adding the $msWMIName WMI Filter..."
+        Write-Host -ForeGroundColor Yellow "The $GPOName Group Policy Object already exists."
+        Write-Host -ForeGroundColor Green "Adding the $msWMIName WMI Filter..."
         $ExistingGPO.WmiFilter = ConvertTo-WmiFilter $WMIFilterADObject
     }
-    write-host -ForeGroundColor Green "Completed.`n"
+    Write-Host -ForeGroundColor Green "Completed.`n"
     $ObjectExists = $NULL
 }
 
