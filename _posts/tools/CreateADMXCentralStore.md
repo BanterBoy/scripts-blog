@@ -4,6 +4,7 @@ title: CreateADMXCentralStore.ps1
 ---
 
 - [Description](#description)
+  - [Information](#information)
   - [Script](#script)
   - [Download](#download)
   - [Report Issues](#report-issues)
