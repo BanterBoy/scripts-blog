@@ -3,7 +3,7 @@ layout: post
 title: New-JekyllBlogPost.ps1
 ---
 
-### something exciting
+### Description
 
 Some information about the exciting thing
 
@@ -11,8 +11,6 @@ Some information about the exciting thing
   - [Script](#script)
   - [Download](#download)
   - [Report Issues](#report-issues)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ---
 

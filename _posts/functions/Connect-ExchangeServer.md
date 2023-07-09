@@ -7,7 +7,7 @@ title: Connect-ExchangeServer.ps1
 
 Interesting stuff further down the page! 🤔
 
-- [Something Exciting](#something-exciting)
+- [Description](#description)
   - [Examples](#examples)
   - [Script](#script)
   - [Download](#download)
@@ -15,7 +15,7 @@ Interesting stuff further down the page! 🤔
 
 ---
 
-### Something Exciting
+### Description
 
 Something about the lack of information and the thought about making as many scripts available as possible, regardless of any missing additional content.
 

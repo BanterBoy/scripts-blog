@@ -3,16 +3,14 @@ layout: post
 title: installationDetails.txt
 ---
 
-### something exciting
+### Description
 
 Some information about the exciting thing
 
-- [something exciting](#something-exciting)
+- [Description](#description)
   - [Instructions](#script)
   - [Download](#download)
   - [Report Issues](#report-issues)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ---
 

@@ -3,16 +3,18 @@ layout: post
 title: Get_AD_Users_Logon_History.ps1
 ---
 
-### something exciting
-
-Some information about the exciting thing
-
-- [something exciting](#something-exciting)
+- [Description](#description)
   - [Script](#script)
   - [Download](#download)
   - [Report Issues](#report-issues)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+---
+
+### Description
+
+**_BanterBoy:_** Explain what the script does and why it is useful.
+
+**_GitHub Copilot:_**
 
 ---
 

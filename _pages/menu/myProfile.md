@@ -30,8 +30,6 @@ permalink: /menu/_pages/myProfile.html
 - [shellConfig](#shellconfig)
 - [transmission](#transmission)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 ---
 
 ## Microsoft.PowerShell_profile.ps1

@@ -10,7 +10,7 @@ Import-Module ActiveDirectory
 # A128 (KERB_ENCTYPE_AES128_CTS_HMAC_SHA1_96, 0x00000008): Supports HMAC-SHA1-96-AES128
 # A256 (KERB_ENCTYPE_AES256_CTS_HMAC_SHA1_96, 0x00000010): Supports HMAC-SHA1-96-AES256
 
-function resolve-EncryptionTypes {            
+function Resolve-EncryptionTypes {            
     param (            
         [int]$key            
     )
@@ -28,7 +28,7 @@ function resolve-EncryptionTypes {
     }
     $SupportedEncryptionTypes            
 }
-$Users = Get-ADUser -Properties * -LdapFilter "(&(objectclass=user)(objectcategory=user)(msDS-SupportedEncryptionTypes=*)(!msDS-SupportedEncryptionTypes=0))" | Select-Object -Property Name, @{N = "EncryptionTypes"; E = { resolve-EncryptionTypes $($_."msDS-SupportedEncryptionTypes") } }
+$Users = Get-ADUser -Properties * -LdapFilter "(&(objectclass=user)(objectcategory=user)(msDS-SupportedEncryptionTypes=*)(!msDS-SupportedEncryptionTypes=0))" | Select-Object -Property Name, @{N = "EncryptionTypes"; E = { Resolve-EncryptionTypes $($_."msDS-SupportedEncryptionTypes") } }
 foreach ($User in $Users) {
     $User.Name
     foreach ($EncryptionType in $User.EncryptionTypes) {

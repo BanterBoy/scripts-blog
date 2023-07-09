@@ -3,7 +3,7 @@ layout: post
 title: Test-DNSRecord.ps1
 ---
 
-### something exciting
+### Description
 
 A simple wrapper for the function Resolve-DNSName to perform DNS queries against specific DNS Servers. This in no way replaces Resolve-DNSName but provides some simple enhanced queries that do not require you to remember the names or IP Addresses of the Name Servers that you wish to query. This tool does not include all of the functionality of Resolve-DNSName but will speed up everyday DNS queries and diagnostics.
 
@@ -17,7 +17,7 @@ The list of popular Public DNS Servers was taken from the article - <a href="htt
 
 ---
 
-- [something exciting](#something-exciting)
+- [Description](#description)
   - [Examples](#examples)
     - [Example 1](#example-1)
     - [Example 2](#example-2)

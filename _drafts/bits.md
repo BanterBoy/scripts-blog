@@ -6,7 +6,7 @@ title: bits.html
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
-- [something exciting](#something-exciting)
+- [Description](#description)
   - [Script](#script)
     - [Test-EmailAddress.ps1](#test-emailaddressps1)
 - [Example](#example)
@@ -23,7 +23,7 @@ title: bits.html
 
 ---
 
-## something exciting
+## Description
 
 Some information about the exciting thing
 

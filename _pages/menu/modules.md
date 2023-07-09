@@ -10,8 +10,6 @@ permalink: /menu/_pages/modules.html
 - [PowerShell Gallery Modules](#powershell-gallery-modules)
 - [Report Issues](#report-issues)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 ---
 
 ## <i class="fas fa-door-open" aria-hidden="true" style="color: black; margin-right:5px;"></i>PowerShell Gallery Modules
