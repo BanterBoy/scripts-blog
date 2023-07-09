@@ -3,20 +3,18 @@ layout: post
 title: New-KrbtgtKeys.ps1
 ---
 
-### something exciting
-
-Some information about the exciting thing
-
-- [something exciting](#something-exciting)
+- [Description](#description)
   - [Information](#information)
   - [OutPut](#output)
   - [Script](#script)
   - [Download](#download)
   - [Report Issues](#report-issues)
 
-<small><i>[Table of contents generated with markdown-toc][1]{:target="\_blank"}</i></small>
-
 ---
+
+### Description
+
+This PoSH Script Resets The KrbTgt Password For RWDCs And RODCs In A Controlled Manner
 
 #### Information
 

@@ -3,16 +3,104 @@ layout: post
 title: Reset-UsersPassword.ps1
 ---
 
-### something exciting
-
-Some information about the exciting thing
-
-- [something exciting](#something-exciting)
+- [Description](#description)
   - [Script](#script)
   - [Download](#download)
   - [Report Issues](#report-issues)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+---
+
+### Description
+
+**_BanterBoy:_** Explain what the script does and why it is useful.
+
+**_GitHub Copilot:_** This PowerShell script is designed to check the expiration date of a user's password and their locked-out status. It then allows the user to unlock and/or reset the password. The script begins by importing the ActiveDirectory module and displaying a welcome message to the user. It then counts the number of locked accounts on the local domain controller and displays the names of the locked-out accounts if there are any.
+
+The script prompts the user to enter the username of the employee they would like to check. It then retrieves the pwdlastset date from Active Directory and calculates the password age in days. If the password is older than 90 days, the script displays a message indicating that the password is expired. Otherwise, it displays the number of days since the password was last set.
+
+The script then checks the locked-out status of the user on defined domain controllers and displays the results. The user is prompted to choose from four options: unlock the user, reset the user's password, unlock and reset the user's password, or exit the script.
+
+If the user chooses to unlock the user, the script unlocks the account on the defined domain controllers and displays the locked-out status of the user. If the user chooses to reset the user's password, the script prompts the user to enter a new password and resets the password on the defined domain controllers. If the user chooses to unlock and reset the user's password, the script performs both actions and displays the locked-out status of the user.
+
+If the user enters an incorrect number, the script displays an error message and prompts the user to choose from the four options again. The script ends when the user chooses to exit.
+
+To improve the readability of the code, the author could add comments to explain the purpose of each section of code. Additionally, the author could use more descriptive variable names to make the code easier to understand. To improve the performance of the code, the author could consider using a more efficient method for retrieving the pwdlastset date from Active Directory.
+
+**_BanterBoy:_** Can you provide some examples of using the script
+
+**_GitHub Copilot:_** The following examples demonstrate how to use the script to unlock and reset a user's password.
+
+```powershell
+PS C:\> .\Reset-UsersPassword.ps1
+PowerShell AD Password Tool
+
+This tool displays the Exparation Date of a user's Password and their Locked out
+Status.  It will then allow you to unlock and/or reset the password.
+
+
+Current Locked Out Accounts on your LOCAL Domain Controller:
+
+SamAccountName LastLogonDate
+-------------- -------------
+jsmith         11/28/2012 10:00:00 AM
+jdoe           11/28/2012 10:00:00 AM
+
+
+Enter username of the employee you would like to check or [ Ctrl+c ] to exit: jsmith
+
+
+Password for jsmith is 91 days old.
+
+
+Checking LockedOut Status on defined Domain Controllers:
+DC04:      Not Locked
+DC01:      Not Locked
+DC02:      Not Locked
+DC03:      Not Locked
+
+
+1. Unlock User
+2. Reset User's Password
+3. Unlock and Reset User's Password
+4. Exit
+
+
+Enter the number of the action you would like to perform: 3
+
+
+Unlocking User...
+
+
+Unlocking User on DC04...
+Unlocking User on DC01...
+Unlocking User on DC02...
+Unlocking User on DC03...
+
+
+Resetting User's Password...
+
+
+Resetting User's Password on DC04...
+Resetting User's Password on DC01...
+Resetting User's Password on DC02...
+Resetting User's Password on DC03...
+
+
+Checking LockedOut Status on defined Domain Controllers:
+DC04:      Not Locked
+DC01:      Not Locked
+DC02:      Not Locked
+DC03:      Not Locked
+
+
+1. Unlock User
+2. Reset User's Password
+3. Unlock and Reset User's Password
+4. Exit
+
+
+Enter the number of the action you would like to perform: 4
+```
 
 ---
 

@@ -3,16 +3,56 @@ layout: post
 title: Write-Log.ps1
 ---
 
-### something exciting
-
-Some information about the exciting thing
-
-- [something exciting](#something-exciting)
+- [Description](#description)
   - [Script](#script)
   - [Download](#download)
   - [Report Issues](#report-issues)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+---
+
+### Description
+
+**_BanterBoy:_** Explain what the script does and why it is useful.
+
+**_GitHub Copilot:_** The code is a PowerShell function called Write-Log. It is designed to add logging capability to other scripts. The function writes a message to a specified log file with the current time stamp. In addition to writing output and/or verbose, you can write to a log file for later debugging. The function has several parameters that allow you to customize the log message.
+
+The Message parameter is the content that you wish to add to the log file. The Path parameter is the path to the log file to which you would like to write. By default, the function will create the path and file if it does not exist. The Level parameter specifies the criticality of the log information being written to the log (i.e. Error, Warning, Informational). The NoClobber parameter is used if you do not wish to overwrite an existing file.
+
+The function has several examples that demonstrate how to use it. For example, you can use the Write-Log function to write a message to a log file with the default path and file name. You can also specify a custom path and file name. Additionally, you can specify the level of the log message (i.e. Error, Warning, Informational).
+
+The function uses PowerShell's switch statement to write the log message to the appropriate pipeline (i.e. Error, Warning, Informational). The log message is formatted with the current date and time stamp, the level of the log message, and the message itself. The log message is then written to the specified log file.
+
+To improve the code's readability, the function uses descriptive parameter names and comments to explain what each section of the code does. Additionally, the function uses PowerShell's cmdlet binding attribute to enable advanced parameter validation and pipeline support. Finally, the function uses PowerShell's verbose preference to display verbose messages.
+
+To improve the code's performance, the function could be optimized to handle large log files more efficiently. For example, the function could use a buffered approach to write log messages to the log file. Additionally, the function could use a more efficient date and time stamp format.
+
+**_BanterBoy:_** Can you provide an example of how to use the Write-Log function in a PowerShell script?
+
+**_GitHub Copilot:_** Certainly! Here's an example of how to use the Write-Log function in a PowerShell script:
+
+```powershell
+# Import the Write-Log function
+. .\Write-Log.ps1
+
+# Write a message to the log file
+Write-Log -Message "Starting script" -Path "C:\Logs\Script.log"
+
+# Do some work here...
+
+# Write another message to the log file
+Write-Log -Message "Script completed successfully" -Path "C:\Logs\Script.log"
+```
+
+In this example, we first import the Write-Log function into our script. We then use the function to write a message to the log file at the beginning of our script, and another message at the end of our script. The `-Message` parameter specifies the content of the log message, and the `-Path` parameter specifies the path to the log file.
+
+You can also use the `-Level` parameter to specify the criticality of the log message (i.e. Error, Warning, Informational). For example:
+
+```powershell
+# Write an error message to the log file
+Write-Log -Message "An error occurred" -Path "C:\Logs\Script.log" -Level Error
+```
+
+This will write an error message to the log file and also write the message to the error pipeline.
 
 ---
 
@@ -170,7 +210,3 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
-
-```
-
-```
