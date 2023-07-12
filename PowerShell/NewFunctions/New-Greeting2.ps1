@@ -1,37 +1,9 @@
-function New-Greeting {
-	[CmdletBinding(DefaultParameterSetName = 'Default')]
-	[OutputType([string])]
-	Param
-	(
-		[Parameter(ParameterSetName = 'Default',
-			Mandatory = $false,
-			ValueFromPipeline = $true,
-			ValueFromPipelineByPropertyName = $true,
-			HelpMessage = 'Enter '
-		)]
-        [ValidateSet([GreetingsValidator])]
-		[string]$Day
-	)
-
-	Begin {
-        $greetings = [Greetings]::new()
-
-		if ([String]::IsNullOrWhiteSpace($Day)) {
-			$Day = $greetings.CurrentDay
-		}
-	}
-
-	Process {
-		Write-Output $($greetings.GetMessageForDay($Day))
-	}
-}
-
 class Greetings {
     $greetings = @{
-        Monday		= "Don't want to work today"
-        Friday  	= "Almost the weekend"
-        Saturday 	= "Everyone loves a Saturday ;-)"
-        Sunday 		= "A good day to rest, or so I hear."
+        Monday   = "Don't want to work today"
+        Friday   = "Almost the weekend"
+        Saturday = "Everyone loves a Saturday ;-)"
+        Sunday   = "A good day to rest, or so I hear."
     }
 
     [string[]] $Days = @( "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" )
@@ -67,5 +39,34 @@ class Greetings {
 class GreetingsValidator : System.Management.Automation.IValidateSetValuesGenerator {
     [String[]] GetValidValues() {
         return [Greetings]::new().Days
+    }
+}
+
+
+function New-Greeting {
+    [CmdletBinding(DefaultParameterSetName = 'Default')]
+    [OutputType([string])]
+    Param
+    (
+        [Parameter(ParameterSetName = 'Default',
+            Mandatory = $false,
+            ValueFromPipeline = $true,
+            ValueFromPipelineByPropertyName = $true,
+            HelpMessage = 'Enter '
+        )]
+        [ValidateSet([GreetingsValidator])]
+        [string]$Day
+    )
+
+    Begin {
+        $greetings = [Greetings]::new()
+
+        if ([String]::IsNullOrWhiteSpace($Day)) {
+            $Day = $greetings.CurrentDay
+        }
+    }
+
+    Process {
+        Write-Output $($greetings.GetMessageForDay($Day))
     }
 }

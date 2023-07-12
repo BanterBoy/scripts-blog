@@ -12,9 +12,28 @@ title: Detect-KeyInput2.ps1
 
 ### Description
 
-**_BanterBoy:_** Explain what the script does and why it is useful.
+**_@GitHub Copilot_** - Welcome @BanterBoy, I'm your Copilot and I'm here to help you get things done faster. I can identify issues, explain and even improve code.
 
-**_GitHub Copilot:_**
+You can ask generic questions, but what I'm really good at is helping you with your code. For example:
+
+Generate unit tests for my code
+Explain the selected code
+Propose a fix for the bugs in my code
+If you want to learn more about my capabilities and limitations, check out the Copilot documentation.
+
+I'm powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions, and share feedback so that we can learn and improve.
+
+**_@BanterBoy:_** - Explain what the script does and why it is useful.
+
+**_@GitHub Copilot_** - This PowerShell script demonstrates how to detect if a specific key is pressed on the keyboard. The script starts by adding two .NET assemblies, WindowsBase and PresentationCore, which are required for working with keyboard input in PowerShell.
+
+After the assemblies are loaded, the script waits for 2 seconds using the Start-Sleep cmdlet. This is to give the user time to press and hold the key that the script will detect.
+
+Next, the script sets the `$key` variable to the `LeftCtrl` key. This is the key that the script will detect. The script then uses the `[System.Windows.Input.Keyboard]::IsKeyDown($key)` method to check if the `LeftCtrl` key is pressed. If the key is pressed, the script outputs a message to the console saying "You pressed left CTRL, so I am now doing extra stuff".
+
+Overall, this script is a simple example of how to detect keyboard input in PowerShell. It can be useful for automating tasks that require specific keyboard input, such as hotkeys or shortcuts.
+
+Possible ways to improve the code with respect to readability and performance include adding comments to explain the purpose of each line of code, using more descriptive variable names, and optimizing the code to reduce unnecessary operations.
 
 ---
 

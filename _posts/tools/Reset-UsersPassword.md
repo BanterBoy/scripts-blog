@@ -12,9 +12,20 @@ title: Reset-UsersPassword.ps1
 
 ### Description
 
-**_BanterBoy:_** Explain what the script does and why it is useful.
+**_@GitHub Copilot_** - Welcome @BanterBoy, I'm your Copilot and I'm here to help you get things done faster. I can identify issues, explain and even improve code.
 
-**_GitHub Copilot:_** This PowerShell script is designed to check the expiration date of a user's password and their locked-out status. It then allows the user to unlock and/or reset the password. The script begins by importing the ActiveDirectory module and displaying a welcome message to the user. It then counts the number of locked accounts on the local domain controller and displays the names of the locked-out accounts if there are any.
+You can ask generic questions, but what I'm really good at is helping you with your code. For example:
+
+Generate unit tests for my code
+Explain the selected code
+Propose a fix for the bugs in my code
+If you want to learn more about my capabilities and limitations, check out the Copilot documentation.
+
+I'm powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions, and share feedback so that we can learn and improve.
+
+**_@BanterBoy:_** - Explain what the script does and why it is useful.
+
+**_@GitHub Copilot_** - This PowerShell script is designed to check the expiration date of a user's password and their locked-out status. It then allows the user to unlock and/or reset the password. The script begins by importing the ActiveDirectory module and displaying a welcome message to the user. It then counts the number of locked accounts on the local domain controller and displays the names of the locked-out accounts if there are any.
 
 The script prompts the user to enter the username of the employee they would like to check. It then retrieves the pwdlastset date from Active Directory and calculates the password age in days. If the password is older than 90 days, the script displays a message indicating that the password is expired. Otherwise, it displays the number of days since the password was last set.
 
@@ -26,9 +37,9 @@ If the user enters an incorrect number, the script displays an error message and
 
 To improve the readability of the code, the author could add comments to explain the purpose of each section of code. Additionally, the author could use more descriptive variable names to make the code easier to understand. To improve the performance of the code, the author could consider using a more efficient method for retrieving the pwdlastset date from Active Directory.
 
-**_BanterBoy:_** Can you provide some examples of using the script
+**_@BanterBoy:_** -Can you provide some examples of using the script
 
-**_GitHub Copilot:_** The following examples demonstrate how to use the script to unlock and reset a user's password.
+**_@GitHub Copilot_** - The following examples demonstrate how to use the script to unlock and reset a user's password.
 
 ```powershell
 PS C:\> .\Reset-UsersPassword.ps1

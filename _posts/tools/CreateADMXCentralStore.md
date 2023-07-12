@@ -13,9 +13,20 @@ title: CreateADMXCentralStore.ps1
 
 ### Description
 
-**_BanterBoy:_** Explain what the script does and why it is useful.
+**_@GitHub Copilot_** - Welcome @BanterBoy, I'm your Copilot and I'm here to help you get things done faster. I can identify issues, explain and even improve code.
 
-**_GitHub Copilot:_** This PowerShell script is designed to create a central store for ADMX files. The script starts by checking if the specified source server location exists. If it does not exist, the script will output an error message to the console.
+You can ask generic questions, but what I'm really good at is helping you with your code. For example:
+
+Generate unit tests for my code
+Explain the selected code
+Propose a fix for the bugs in my code
+If you want to learn more about my capabilities and limitations, check out the Copilot documentation.
+
+I'm powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions, and share feedback so that we can learn and improve.
+
+**_@BanterBoy:_** - Explain what the script does and why it is useful.
+
+**_@GitHub Copilot_** - This PowerShell script is designed to create a central store for ADMX files. The script starts by checking if the specified source server location exists. If it does not exist, the script will output an error message to the console.
 
 After checking the source server location, the script proceeds to create the central store. It starts by creating a new folder with the name "PolicyDefinitions" in the specified destination location. Then, it copies all the ADMX files from the source server location to the newly created "PolicyDefinitions" folder.
 
@@ -25,9 +36,9 @@ Finally, the script outputs a message indicating that it has finished creating t
 
 To improve the readability of the code, the script could benefit from more descriptive variable names. Additionally, the script could be optimized for performance by using the pipeline to pass objects between commands instead of using variables.
 
-**_BanterBoy:_** Can you provide examples for using the script
+**_@BanterBoy:_** -Can you provide examples for using the script
 
-**_GitHub Copilot:_** Certainly! Here are a few examples of how you can use this PowerShell script:
+**_@GitHub Copilot_** - Certainly! Here are a few examples of how you can use this PowerShell script:
 
 Example 1: Create a central store on a local machine
 

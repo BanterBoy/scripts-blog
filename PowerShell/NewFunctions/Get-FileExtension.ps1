@@ -42,12 +42,3 @@ function Get-Extension {
     }
 
 }
-
-<#
-$jsonData = Get-Content -Raw -Path C:\GitRepos\scripts-blog\PowerShell\NewFunctions\categories.json
-$fileExtensions = Get-FileExtensions $jsonData
-
-# Example usage: find the category for the 'zip' extension
-$zipCategory = $fileExtensions | Where-Object { $_.Extension -eq 'zip' } | Select-Object -ExpandProperty Category
-Write-Output "The category for the 'zip' extension is: $zipCategory"
-#>

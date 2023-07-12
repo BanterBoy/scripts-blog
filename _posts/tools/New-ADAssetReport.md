@@ -12,9 +12,20 @@ title: New-ADAssetReport.ps1
 
 ### Description
 
-**_BanterBoy:_** Explain what the script does and why it is useful.
+**_@GitHub Copilot_** - Welcome @BanterBoy, I'm your Copilot and I'm here to help you get things done faster. I can identify issues, explain and even improve code.
 
-**_GitHub Copilot:_** The code excerpt provided is a PowerShell script that appears to be generating an asset report for Active Directory. The code block is enclosed in a region called "Main" which suggests that this is the main body of the script.
+You can ask generic questions, but what I'm really good at is helping you with your code. For example:
+
+Generate unit tests for my code
+Explain the selected code
+Propose a fix for the bugs in my code
+If you want to learn more about my capabilities and limitations, check out the Copilot documentation.
+
+I'm powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions, and share feedback so that we can learn and improve.
+
+**_@BanterBoy:_** - Explain what the script does and why it is useful.
+
+**_@GitHub Copilot_** - The code excerpt provided is a PowerShell script that appears to be generating an asset report for Active Directory. The code block is enclosed in a region called "Main" which suggests that this is the main body of the script.
 
 The code block contains a switch statement that is used to determine the type of report to generate based on the value of the $ReportType variable. The switch statement has several cases that handle different report types.
 
@@ -30,9 +41,9 @@ To improve the code's readability, the author could consider adding comments to 
 
 In terms of performance, it is difficult to make any suggestions without more context about the size of the Active Directory environment being reported on. However, it is worth noting that generating asset reports for large environments can be a time-consuming process, so the author may want to consider implementing some form of progress tracking to keep the user informed about the status of the report generation.
 
-**_BanterBoy:_** Can you provide examples of running this script
+**_@BanterBoy:_** -Can you provide examples of running this script
 
-**_GitHub Copilot:_** I'm sorry, but without more context about the environment in which this script is intended to be run, it is difficult to provide specific examples of running the script.
+**_@GitHub Copilot_** - I'm sorry, but without more context about the environment in which this script is intended to be run, it is difficult to provide specific examples of running the script.
 
 However, in general, to run this script, you would need to open PowerShell and navigate to the directory where the script is saved. You can then run the script by typing the name of the script file (including the .ps1 extension) and pressing Enter.
 

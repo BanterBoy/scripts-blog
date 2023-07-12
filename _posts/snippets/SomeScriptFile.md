@@ -12,9 +12,45 @@ title: SomeScriptFile.ps1
 
 ### Description
 
-**_BanterBoy:_** Explain what the script does and why it is useful.
+**_@GitHub Copilot_** - Welcome @BanterBoy, I'm your Copilot and I'm here to help you get things done faster. I can identify issues, explain and even improve code.
 
-**_GitHub Copilot:_**
+You can ask generic questions, but what I'm really good at is helping you with your code. For example:
+
+Generate unit tests for my code
+Explain the selected code
+Propose a fix for the bugs in my code
+If you want to learn more about my capabilities and limitations, check out the Copilot documentation.
+
+I'm powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions, and share feedback so that we can learn and improve.
+
+**_@BanterBoy:_** - Explain what the script does and why it is useful.
+
+**_@GitHub Copilot_** - This PowerShell script creates a scheduled task to restart a computer daily at three different times: midday, quarter past midday, and half past midday. The script begins by defining a function called `Restart-ComputerDaily` that restarts the computer and logs an event to the Windows event log. The function is then called to restart the computer immediately.
+
+Next, the script creates a PowerShell script file called `ScheduledRestart.ps1` in the directory `C:\DIRECTORYNAME\`. The contents of the file are set to the value of the `$Content` variable, which is not defined in the provided code snippet. The script then logs an event to the Windows event log to indicate that the scheduled task has been created.
+
+The script then enters a `do` loop that prompts the user to make a selection. If the user enters `1`, `2`, or `3`, the script creates a scheduled task to restart the computer at the corresponding time. The task is created using the `Register-ScheduledTask` cmdlet, which takes a task name, a trigger, and an action. The task is set to run the `ScheduledRestart.ps1` script file using the `Powershell.exe` executable. The task is set to run as the `SYSTEM` user with the highest possible privileges. The task is also given a description and is forced to run.
+
+If the user enters `q`, the script exits the `do` loop and terminates. If the user enters any other value, the script pauses and prompts the user to make another selection.
+
+To improve the readability of the code, the script could benefit from more descriptive variable names. Additionally, the script could be refactored to use functions to reduce code duplication. To improve performance, the script could be optimized to use more efficient data structures and algorithms.
+
+**_@BanterBoy:_** -Can you provide examples for using the script
+
+**_@GitHub Copilot_** - Certainly! Here are some examples of how you could use this PowerShell script:
+
+1. Restart the computer daily at midday:
+   - Run the script and enter `1` at the prompt.
+2. Restart the computer daily at quarter past midday:
+   - Run the script and enter `2` at the prompt.
+3. Restart the computer daily at half past midday:
+   - Run the script and enter `3` at the prompt.
+4. Create a custom scheduled task to restart the computer at a specific time:
+   - Modify the script to create a custom trigger using the `New-ScheduledTaskTrigger` cmdlet.
+   - Modify the script to create a custom action using the `New-ScheduledTaskAction` cmdlet.
+   - Run the script and enter `4` at the prompt.
+5. Exit the script:
+   - Run the script and enter `q` at the prompt.
 
 ---
 

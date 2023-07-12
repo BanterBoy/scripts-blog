@@ -12,9 +12,20 @@ title: VMWareHealthcheck.ps1
 
 ### Description
 
-**_BanterBoy:_** Explain what the script does and why it is useful.
+**_@GitHub Copilot_** - Welcome @BanterBoy, I'm your Copilot and I'm here to help you get things done faster. I can identify issues, explain and even improve code.
 
-**_GitHub Copilot:_**
+You can ask generic questions, but what I'm really good at is helping you with your code. For example:
+
+Generate unit tests for my code
+Explain the selected code
+Propose a fix for the bugs in my code
+If you want to learn more about my capabilities and limitations, check out the Copilot documentation.
+
+I'm powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions, and share feedback so that we can learn and improve.
+
+**_@BanterBoy:_** - Explain what the script does and why it is useful.
+
+**_@GitHub Copilot_** -
 
 GitHub Copilot: This PowerShell script is designed to perform a health check on a VMware environment. The script starts by setting the VMware VirtualCenter server name to "localhost". It then adds the VI-toolkit and initializes the environment before connecting to the VirtualCenter server. The script then sets a number of variables, including the file location for the HTML output, the VirtualCenter version, and the date.
 
@@ -26,9 +37,9 @@ Finally, the script checks for VMware timesync not enabled and adds this informa
 
 To improve the code, the author could consider breaking the script into smaller functions to improve readability and maintainability. Additionally, the author could consider adding error handling to the script to handle any unexpected errors that may occur during execution. Finally, the author could consider adding more detailed comments to the script to help other developers understand the code more easily.
 
-**_BanterBoy:_** What are some common errors that can occur during the execution of this PowerShell script?
+**_@BanterBoy:_** -What are some common errors that can occur during the execution of this PowerShell script?
 
-**_GitHub Copilot:_** Some common errors that can occur during the execution of this PowerShell script include:
+**_@GitHub Copilot_** - Some common errors that can occur during the execution of this PowerShell script include:
 
 1. VI Toolkit not installed: The script requires the VI Toolkit to be installed. If the VI Toolkit is not installed, the script will not be able to connect to the VirtualCenter server and will fail.
 
@@ -40,9 +51,9 @@ To improve the code, the author could consider breaking the script into smaller 
 
 5. Email configuration errors: If email notifications are enabled, the script requires correct email configuration settings to be able to send the email. If the email configuration settings are incorrect, the script will not be able to send the email and will fail.
 
-**_BanterBoy:_** Can you provide examples of using this script
+**_@BanterBoy:_** -Can you provide examples of using this script
 
-**_GitHub Copilot:_** Sure! Here are some examples of how you can use this script:
+**_@GitHub Copilot_** - Sure! Here are some examples of how you can use this script:
 
 1. Run the script manually: You can run the script manually by opening PowerShell and navigating to the directory where the script is saved. Then, run the script by typing `.\VMWareHealthcheck.ps1` and pressing Enter. The script will then perform a health check on the VMware environment and output an HTML report.
 

@@ -8,6 +8,3 @@ else {
     Write-Output "Do something else"
 
 }
-
-
-#Requires -Modules ExchangeOnlineManagement

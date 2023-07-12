@@ -42,7 +42,7 @@ function Restart-ProjectComputer {
             if ($Credential) {
                 Restart-Computer -ComputerName $ComputerName -Credential $Credential -Force
                 do {
-                    Test-Connection -ComputerName $ComputerName -Continuous | Select-Object -Property Ping, Source, Destination, Address, Status
+                    Test-Connection -ComputerName $ComputerName Continuous -TimeoutSeconds 5 | Select-Object -Property Ping, Source, Destination, Address, Status
                 } while (
                     $_.Status -ne "Success"
                 )
@@ -50,7 +50,7 @@ function Restart-ProjectComputer {
             else {
                 Restart-Computer -ComputerName $ComputerName -Force
                 do {
-                    Test-Connection -ComputerName $ComputerName -Continuous | Select-Object -Property Ping, Source, Destination, Address, Status
+                    Test-Connection -ComputerName $ComputerName Continuous -TimeoutSeconds 5 | Select-Object -Property Ping, Source, Destination, Address, Status
                 } while (
                     $_.Status -ne "Success"
                 )

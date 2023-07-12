@@ -1,10 +1,12 @@
 class CountdownDate {
     [string]$CountdownDay
     [int]$DaysUntilCountdown
+    [TimeSpan]$CountdownTime = [TimeSpan]::Zero
 
-    CountdownDate([string]$CountdownDay, [int]$DaysUntilCountdown) {
+    CountdownDate([string]$CountdownDay, [int]$DaysUntilCountdown, [TimeSpan]$CountdownTime = [TimeSpan]::Zero) {
         $this.CountdownDay = $CountdownDay
         $this.DaysUntilCountdown = $DaysUntilCountdown
+        $this.CountdownTime = $CountdownTime
     }
 
     [PSObject]GetCountdown() {

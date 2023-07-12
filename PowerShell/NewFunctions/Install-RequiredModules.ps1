@@ -6,7 +6,7 @@ function Install-RequiredModules {
     .DESCRIPTION
         Install-RequiredModules - Tests to see if scripts/function required modules are available. Where module is missing it, the function installs the missing module and then imports all required modules.
     .EXAMPLE
-        PS C:\> Install-RequiredModules
+        PS C:\> Install-RequiredModules 
         Tests to see if scripts/function required modules are available. Where module is missing it, the function installs the missing module and then imports all required modules.
     .INPUTS
         None.
@@ -52,16 +52,7 @@ function Install-RequiredModules {
             HelpMessage = 'Enter a computer name or pipe input'
         )]
         [Alias('ign')]
-        [string[]]$InternalGalleryName,
-
-        [Parameter(ParameterSetName = 'RSAT',
-            Mandatory = $false,
-            ValueFromPipeline = $true,
-            ValueFromPipelineByPropertyName = $true,
-            HelpMessage = 'Use this switch to install the Microsoft RSAT suite of tools. This includes the Active Directory module which is not available in the PowerShell Gallery.'
-        )]
-        [Alias('rsat')]
-        [switch]$RSATTools
+        [string[]]$InternalGalleryName
     )
     
     begin {
@@ -117,31 +108,6 @@ function Install-RequiredModules {
                         ForEach-Object -InputObject $Module -Process {
                             Get-Module -Name $Module
                         }
-                    }
-                }
-            }
-        }
-
-        if ($RSATTools) {
-            if ($PSCmdlet.ShouldProcess("ActiveDirectory", "Importing/Installing modules...")) {
-                try {
-                    $Module = "ActiveDirectory"
-                    if ((Get-Module -Name $Module -ListAvailable)) {
-                        Write-Verbose "Importing module - ActiveDirectory"
-                        Import-Module -Name 'ActiveDirectory'
-                    }
-                    else {
-                        Write-Verbose "Installing module - RSAT Tools"
-                        Get-WindowsCapability -Name "Rsat*" -Online | Add-WindowsCapability -Online
-                        Import-Module -Name 'ActiveDirectory'
-                    }
-                }
-                catch {
-                    Write-Error -Message $_.Exception.Message
-                }
-                finally {
-                    ForEach-Object -InputObject $Module -Process {
-                        Get-Module -Name $Module
                     }
                 }
             }

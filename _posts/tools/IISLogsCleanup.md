@@ -12,9 +12,20 @@ title: IISLogsCleanup.ps1
 
 ### Description
 
-**_BanterBoy:_** Explain what the script does and why it is useful.
+**_@GitHub Copilot_** - Welcome @BanterBoy, I'm your Copilot and I'm here to help you get things done faster. I can identify issues, explain and even improve code.
 
-**_GitHub Copilot:_** This PowerShell script is designed to clean up log files on a server. The script first checks if the number of log files matches the number of zipped files. If the numbers match, the script proceeds to move the zipped files to an archive folder. If the numbers do not match, the script logs a warning message and does not delete any files.
+You can ask generic questions, but what I'm really good at is helping you with your code. For example:
+
+Generate unit tests for my code
+Explain the selected code
+Propose a fix for the bugs in my code
+If you want to learn more about my capabilities and limitations, check out the Copilot documentation.
+
+I'm powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions, and share feedback so that we can learn and improve.
+
+**_@BanterBoy:_** - Explain what the script does and why it is useful.
+
+**_@GitHub Copilot_** - This PowerShell script is designed to clean up log files on a server. The script first checks if the number of log files matches the number of zipped files. If the numbers match, the script proceeds to move the zipped files to an archive folder. If the numbers do not match, the script logs a warning message and does not delete any files.
 
 The script uses a function called Write-Logfile to write messages to a log file. This function takes a string as input and writes it to a log file. The log file is created in the same directory as the script and is named "IISLogsCleanup.log". The log file is opened in append mode, so new messages are added to the end of the file.
 
@@ -26,9 +37,9 @@ Finally, the script writes a "Finished" message to the console and the log file.
 
 To improve the readability of the code, the script could use more descriptive variable names. The script could also benefit from more comments to explain the purpose of each section of code. Additionally, the script could be optimized for performance by using the -Recurse parameter with the Remove-Item cmdlet to delete all log files in a folder and its subfolders.
 
-**_BanterBoy:_** Can you provide examples for using the script
+**_@BanterBoy:_** -Can you provide examples for using the script
 
-**_GitHub Copilot:_** Sure, here are some examples of how to use the script:
+**_@GitHub Copilot_** - Sure, here are some examples of how to use the script:
 
 Example 1: Running the script with default settings
 Assuming the script is saved as "IISLogsCleanup.ps1" in the current directory, you can run the script with default settings by opening PowerShell and navigating to the directory where the script is saved. You can then type the following command and press Enter:

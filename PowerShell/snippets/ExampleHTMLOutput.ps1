@@ -27,4 +27,3 @@ Select-Object Status, Name, DisplayName |
 ConvertTo-HTML -head $head -body $header -title $title |
 Out-File $env:temp\report.hta
 Invoke-Item $env:temp\report.hta
-

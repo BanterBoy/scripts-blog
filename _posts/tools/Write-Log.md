@@ -12,9 +12,20 @@ title: Write-Log.ps1
 
 ### Description
 
-**_BanterBoy:_** Explain what the script does and why it is useful.
+**_@GitHub Copilot_** - Welcome @BanterBoy, I'm your Copilot and I'm here to help you get things done faster. I can identify issues, explain and even improve code.
 
-**_GitHub Copilot:_** The code is a PowerShell function called Write-Log. It is designed to add logging capability to other scripts. The function writes a message to a specified log file with the current time stamp. In addition to writing output and/or verbose, you can write to a log file for later debugging. The function has several parameters that allow you to customize the log message.
+You can ask generic questions, but what I'm really good at is helping you with your code. For example:
+
+Generate unit tests for my code
+Explain the selected code
+Propose a fix for the bugs in my code
+If you want to learn more about my capabilities and limitations, check out the Copilot documentation.
+
+I'm powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions, and share feedback so that we can learn and improve.
+
+**_@BanterBoy:_** - Explain what the script does and why it is useful.
+
+**_@GitHub Copilot_** - The code is a PowerShell function called Write-Log. It is designed to add logging capability to other scripts. The function writes a message to a specified log file with the current time stamp. In addition to writing output and/or verbose, you can write to a log file for later debugging. The function has several parameters that allow you to customize the log message.
 
 The Message parameter is the content that you wish to add to the log file. The Path parameter is the path to the log file to which you would like to write. By default, the function will create the path and file if it does not exist. The Level parameter specifies the criticality of the log information being written to the log (i.e. Error, Warning, Informational). The NoClobber parameter is used if you do not wish to overwrite an existing file.
 
@@ -26,9 +37,9 @@ To improve the code's readability, the function uses descriptive parameter names
 
 To improve the code's performance, the function could be optimized to handle large log files more efficiently. For example, the function could use a buffered approach to write log messages to the log file. Additionally, the function could use a more efficient date and time stamp format.
 
-**_BanterBoy:_** Can you provide an example of how to use the Write-Log function in a PowerShell script?
+**_@BanterBoy:_** -Can you provide an example of how to use the Write-Log function in a PowerShell script?
 
-**_GitHub Copilot:_** Certainly! Here's an example of how to use the Write-Log function in a PowerShell script:
+**_@GitHub Copilot_** - Certainly! Here's an example of how to use the Write-Log function in a PowerShell script:
 
 ```powershell
 # Import the Write-Log function

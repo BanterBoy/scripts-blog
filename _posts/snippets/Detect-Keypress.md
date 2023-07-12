@@ -12,9 +12,30 @@ title: Detect-Keypress.ps1
 
 ### Description
 
-**_BanterBoy:_** Explain what the script does and why it is useful.
+**_@GitHub Copilot_** - Welcome @BanterBoy, I'm your Copilot and I'm here to help you get things done faster. I can identify issues, explain and even improve code.
 
-**_GitHub Copilot:_**
+You can ask generic questions, but what I'm really good at is helping you with your code. For example:
+
+Generate unit tests for my code
+Explain the selected code
+Propose a fix for the bugs in my code
+If you want to learn more about my capabilities and limitations, check out the Copilot documentation.
+
+I'm powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions, and share feedback so that we can learn and improve.
+
+**_@BanterBoy:_** - Explain what the script does and why it is useful.
+
+**_@GitHub Copilot_** - This PowerShell script is designed to detect when a specific key is pressed and then take action based on that key press. The script begins by adding two types to the PowerShell session: WindowsBase and PresentationCore. These types are necessary for the script to interact with the Windows operating system and the graphical user interface.
+
+Next, the script sets a variable called `$key` to the value of the `LeftCtrl` key. This key is the one that the script will be looking for when it is running. The script then writes a warning message to the console, telling the user to press the `$key` key to abort the script.
+
+The script then enters a `do` loop that will run indefinitely until the script is aborted. Within the loop, the script checks to see if the `$key` key is being pressed by using the `IsKeyDown` method of the `Keyboard` class. If the key is being pressed, the script writes a message to the console indicating that the key has been pressed and then exits the loop.
+
+If the key is not being pressed, the script writes a period to the console and then waits for 100 milliseconds before checking the key again. This loop will continue to run until the `$key` key is pressed.
+
+Overall, this script is a simple but effective way to detect when a specific key is pressed and then take action based on that key press. It uses the `Keyboard` class from the WindowsBase and PresentationCore assemblies to detect the key press and then writes messages to the console to indicate what is happening.
+
+To improve the readability of the code, the script could be broken down into smaller functions or modules. Additionally, the script could be optimized for performance by reducing the amount of time that it spends waiting for the key to be pressed.
 
 ---
 

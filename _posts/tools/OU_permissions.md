@@ -12,9 +12,20 @@ title: OU_permissions.ps1
 
 ### Description
 
-**_BanterBoy:_** Explain what the script does and why it is useful.
+**_@GitHub Copilot_** - Welcome @BanterBoy, I'm your Copilot and I'm here to help you get things done faster. I can identify issues, explain and even improve code.
 
-**_GitHub Copilot:_** This PowerShell script creates a report of all OU permissions. It starts by importing the ActiveDirectory module. The script then builds a lookup hash table that holds all of the string names of the ObjectType GUIDs referenced in the security descriptors. It retrieves a list of all OUs and retrieves their permissions. It adds report columns to contain the OU path and string names of the ObjectTypes. It then dumps the raw report out to a CSV file for analysis in Excel and opens the file.
+You can ask generic questions, but what I'm really good at is helping you with your code. For example:
+
+Generate unit tests for my code
+Explain the selected code
+Propose a fix for the bugs in my code
+If you want to learn more about my capabilities and limitations, check out the Copilot documentation.
+
+I'm powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions, and share feedback so that we can learn and improve.
+
+**_@BanterBoy:_** - Explain what the script does and why it is useful.
+
+**_@GitHub Copilot_** - This PowerShell script creates a report of all OU permissions. It starts by importing the ActiveDirectory module. The script then builds a lookup hash table that holds all of the string names of the ObjectType GUIDs referenced in the security descriptors. It retrieves a list of all OUs and retrieves their permissions. It adds report columns to contain the OU path and string names of the ObjectTypes. It then dumps the raw report out to a CSV file for analysis in Excel and opens the file.
 
 The script retrieves a list of all OUs by getting the domain and root containers for good measure (users, computers, etc.). It then loops through each of the OUs and retrieves their permissions. It adds report columns to contain the OU path and string names of the ObjectTypes. It then dumps the raw report out to a CSV file for analysis in Excel and opens the file.
 
@@ -22,9 +33,9 @@ The script also includes various reports of interest. The first report shows onl
 
 To improve the code's readability, the script could be broken down into smaller functions. The variable names could be more descriptive, and the comments could be more detailed. The script could also be optimized for performance by using the pipeline more effectively and avoiding unnecessary loops.
 
-**_BanterBoy:_** Explain how to use the script.
+**_@BanterBoy:_** - Explain how to use the script.
 
-**_GitHub Copilot:_** To use the script, run it in a PowerShell console. The script will prompt you to enter the user or group name to search in OU permissions. The script will then create a report of all OU permissions. The script will then dump the raw report out to a CSV file for analysis in Excel and open the file.
+**_@GitHub Copilot_** - To use the script, run it in a PowerShell console. The script will prompt you to enter the user or group name to search in OU permissions. The script will then create a report of all OU permissions. The script will then dump the raw report out to a CSV file for analysis in Excel and open the file.
 
 GitHub Copilot: Yes, to use the script, you will need to dot source it and enter parameters. Here is an example demonstrating how to use the script:
 

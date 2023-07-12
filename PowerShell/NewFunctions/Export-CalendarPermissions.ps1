@@ -93,4 +93,3 @@ if ($Version -like "O365") {
     } 
     Remove-PSSession $Session 
 }
-

@@ -12,9 +12,26 @@ title: Cmdlet-API-Template.ps1
 
 ### Description
 
-**_BanterBoy:_** Explain what the script does and why it is useful.
+**_@GitHub Copilot_** - Welcome @BanterBoy, I'm your Copilot and I'm here to help you get things done faster. I can identify issues, explain and even improve code.
 
-**_GitHub Copilot:_**
+You can ask generic questions, but what I'm really good at is helping you with your code. For example:
+
+Generate unit tests for my code
+Explain the selected code
+Propose a fix for the bugs in my code
+If you want to learn more about my capabilities and limitations, check out the Copilot documentation.
+
+I'm powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions, and share feedback so that we can learn and improve.
+
+**_@BanterBoy:_** - Explain what the script does and why it is useful.
+
+**_@GitHub Copilot_** - This PowerShell script appears to be a template for a cmdlet that performs some kind of email validation. The script defines a cmdlet with a number of parameters, including `$ApiKey`, `$EmailAddress`, and `$somethingelse`. The `ValueFromPipelineByPropertyName` attribute on the `$somethingelse` parameter indicates that the cmdlet can accept input from the pipeline based on the property name. The `Alias` attribute provides an alternative name for the parameter.
+
+The `BEGIN` block is commented out, but it appears to set the security protocol and define some variables related to an API endpoint for email validation. The `PROCESS` block contains a loop that iterates over each item in the `$####s` array. The `$####` variable is assigned the value of the current item, and a try-catch-finally block is used to define a `$properties` hash table. The `New-Object` cmdlet is used to create a new PSObject with the properties defined in the `$properties` hash table, and the object is written to the output stream with `Write-Output`.
+
+The `END` block is empty, so it doesn't do anything.
+
+Without more context, it's difficult to say exactly what this cmdlet is supposed to do or how it fits into a larger script or module. However, it appears to be a basic template for a cmdlet that performs some kind of email validation and outputs a PSObject with properties based on the input.
 
 ---
 

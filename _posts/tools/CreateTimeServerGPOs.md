@@ -12,9 +12,20 @@ title: CreateTimeServerGPOs.ps1
 
 ### Description
 
-**_BanterBoy:_** Explain what the script does and why it is useful.
+**_@GitHub Copilot_** - Welcome @BanterBoy, I'm your Copilot and I'm here to help you get things done faster. I can identify issues, explain and even improve code.
 
-**_GitHub Copilot:_** This PowerShell script creates Group Policy Objects (GPOs) for time synchronization on Windows domain controllers. The script creates two GPOs, one for the primary domain controller emulator (PDCe) and one for all other domain controllers. The script also creates WMI filters for each GPO to ensure that the GPOs are only applied to the correct computers.
+You can ask generic questions, but what I'm really good at is helping you with your code. For example:
+
+Generate unit tests for my code
+Explain the selected code
+Propose a fix for the bugs in my code
+If you want to learn more about my capabilities and limitations, check out the Copilot documentation.
+
+I'm powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions, and share feedback so that we can learn and improve.
+
+**_@BanterBoy:_** - Explain what the script does and why it is useful.
+
+**_@GitHub Copilot_** - This PowerShell script creates Group Policy Objects (GPOs) for time synchronization on Windows domain controllers. The script creates two GPOs, one for the primary domain controller emulator (PDCe) and one for all other domain controllers. The script also creates WMI filters for each GPO to ensure that the GPOs are only applied to the correct computers.
 
 The script defines a function called `Create-Policy` that takes five parameters: `$GPOName`, `$NtpServer`, `$AnnounceFlags`, `$Type`, and `$WMIFilterADObject`. This function creates a new GPO with the specified name and sets the WMI filter to the value of `$WMIFilterADObject`. The function then sets three registry keys in the Preferences section of the new GPO to configure the time synchronization settings. If the `$DisableHyperVTimeSynchronization` variable is set to `$true`, the function also disables the Hyper-V time synchronization integration service. Finally, the function links the new GPO to the domain controllers organizational unit (OU).
 
@@ -26,9 +37,9 @@ The script uses the `Write-Host` cmdlet to output status messages to the console
 
 Overall, this script is well-organized and easy to read. The use of functions and cmdlets makes the code more modular and easier to maintain. However, the script could be improved by adding more comments to explain the purpose of each section of code. Additionally, the script could be made more efficient by using the `Set-GPRegistryValue` cmdlet instead of the `Set-GPPrefRegistryValue` cmdlet to configure the registry keys in the GPO.
 
-**_BanterBoy:_** Can you provide examples for using the script
+**_@BanterBoy:_** -Can you provide examples for using the script
 
-**_GitHub Copilot:_** Certainly! Here are a few examples of how you could use this script:
+**_@GitHub Copilot_** - Certainly! Here are a few examples of how you could use this script:
 
 1. Create GPOs for time synchronization on a new domain: If you are setting up a new Windows domain, you can use this script to create GPOs for time synchronization on all domain controllers. Simply run the script on the primary domain controller and it will create the necessary GPOs and WMI filters.
 

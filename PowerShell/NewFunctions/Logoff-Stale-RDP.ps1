@@ -14,7 +14,7 @@
    PS > .\Logoff-DisconnectedSession.ps1
 #>
 
-function Ensure-LogFilePath([string]$LogFilePath) {
+function Test-LogFilePath([string]$LogFilePath) {
    if (!(Test-Path -Path $LogFilePath)) { New-Item $LogFilePath -ItemType directory >> $null }
 }
 
@@ -52,7 +52,7 @@ function Get-Sessions {
    }
 }
 
-Ensure-LogFilePath($ENV:LOCALAPPDATA + "\DisconnectedSessions")
+Test-LogFilePath($ENV:LOCALAPPDATA + "\DisconnectedSessions")
 $LogFile = $ENV:LOCALAPPDATA + "\DisconnectedSessions\" + "sessions_" + $([DateTime]::Now.ToString('yyyyMMdd')) + ".log"
 
 [string]$IncludeStates = '^(Disc)$'

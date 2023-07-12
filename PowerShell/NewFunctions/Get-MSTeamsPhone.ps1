@@ -2,16 +2,16 @@ function Get-MSTeamsPhone {
 
     <#
     .SYNOPSIS
-        Install-RequiredModules - Tests to see if scripts/function required modules are available.
+        Get-MSTeamsPhone
     .DESCRIPTION
-        Install-RequiredModules - Tests to see if scripts/function required modules are available. Where module is missing it, the function installs the missing module and then imports all required modules.
+        Get-MSTeamsPhone - 
     .EXAMPLE
-        PS C:\> Install-RequiredModules
-        Tests to see if scripts/function required modules are available. Where module is missing it, the function installs the missing module and then imports all required modules.
+        PS C:\> Get-MSTeamsPhone
+        
     .INPUTS
         None.
     .OUTPUTS
-        [String] Outputs details of installation, importing and failure.
+        [String] 
     .NOTES
         Author	: Luke Leigh
         Website	: https://blog.lukeleigh.com
@@ -24,7 +24,7 @@ function Get-MSTeamsPhone {
         PositionalBinding = $true,
         SupportsShouldProcess = $true)]
     [OutputType([string], ParameterSetName = 'Default')]
-    [Alias('trm')]
+    [Alias('gtp')]
     Param
     (
 

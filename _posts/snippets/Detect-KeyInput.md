@@ -12,9 +12,26 @@ title: Detect-KeyInput.ps1
 
 ### Description
 
-**_BanterBoy:_** Explain what the script does and why it is useful.
+**_@GitHub Copilot_** - Welcome @BanterBoy, I'm your Copilot and I'm here to help you get things done faster. I can identify issues, explain and even improve code.
 
-**_GitHub Copilot:_**
+You can ask generic questions, but what I'm really good at is helping you with your code. For example:
+
+Generate unit tests for my code
+Explain the selected code
+Propose a fix for the bugs in my code
+If you want to learn more about my capabilities and limitations, check out the Copilot documentation.
+
+I'm powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions, and share feedback so that we can learn and improve.
+
+**_@BanterBoy:_** - Explain what the script does and why it is useful.
+
+**_@GitHub Copilot_** - This PowerShell script is designed to detect which key is pressed and execute a specific action based on the key pressed. The script begins by adding the required assemblies for the script to function properly. The script then pauses for 2 seconds to allow the user to press and hold a key.
+
+The script then defines a list of keys that can be pressed, including the "None" key, LeftCtrl, and LeftShift. The script then checks to see which key is pressed by using the IsKeyDown method from the PresentationCore assembly. The results of these checks are stored in variables for later use.
+
+The script then uses a series of if-else statements to determine which action to take based on the key pressed. If no key is pressed, the script launches the user's home PowerShell profile. If the LeftCtrl key is pressed, the script connects to Office365. If the LeftShift key is pressed, the script starts PowerShell without a profile.
+
+Overall, this script is a simple but effective way to detect key presses and execute specific actions based on the key pressed. However, the script could be improved by adding more keys to the list of detectable keys, and by adding more actions that can be executed based on the key pressed. Additionally, the script could be made more readable by adding comments to explain what each section of the code does.
 
 ---
 

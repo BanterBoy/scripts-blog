@@ -215,7 +215,7 @@ permalink: /menu/_pages/scripts.html
 | miscellaneous | [ConfigureWinrm.ps1](/_posts/scripts/ConfigureWinrm/)                       |
 | miscellaneous | [DiskCleanup.ps1](/_posts/scripts/DiskCleanup/)                             |
 | miscellaneous | [diskmonitor.ps1](/_posts/scripts/diskmonitor/)                             |
-| miscellaneous | [Encrypt-Laptop.ps1](/_posts/scripts/Encrypt-Laptop/)                       |
+| miscellaneous | [Blank-Page.ps1](/_posts/scripts/Encrypt-Laptop/)                           |
 | miscellaneous | [HyperVGoldenImage.ps1](/_posts/scripts/HyperVGoldenImage/)                 |
 | miscellaneous | [Stop-FailedServiceScript.ps1](/_posts/scripts/Stop-FailedServiceScript/)   |
 | miscellaneous | [Update-DynamicDNSTemplate.ps1](/_posts/scripts/Update-DynamicDNSTemplate/) |

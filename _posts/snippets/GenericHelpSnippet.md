@@ -12,9 +12,38 @@ title: GenericHelpSnippet.ps1
 
 ### Description
 
-**_BanterBoy:_** Explain what the script does and why it is useful.
+**_@GitHub Copilot_** - Welcome @BanterBoy, I'm your Copilot and I'm here to help you get things done faster. I can identify issues, explain and even improve code.
 
-**_GitHub Copilot:_**
+You can ask generic questions, but what I'm really good at is helping you with your code. For example:
+
+Generate unit tests for my code
+Explain the selected code
+Propose a fix for the bugs in my code
+If you want to learn more about my capabilities and limitations, check out the Copilot documentation.
+
+I'm powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions, and share feedback so that we can learn and improve.
+
+**_@BanterBoy:_** - Explain what the script does and why it is useful.
+
+**_@GitHub Copilot_** - The code above is a PowerShell script that contains a comment-based help snippet. This snippet is used to provide help documentation for a PowerShell function or script. The help snippet contains several keywords that are used to describe the function or script, its parameters, inputs, outputs, examples, notes, and related links.
+
+The ".SYNOPSIS" keyword is used to provide a brief description of the function or script. This description should be a short summary of what the function or script does. The ".DESCRIPTION" keyword is used to provide a more detailed description of the function or script. This description should provide more information about what the function or script does, how it works, and what its purpose is.
+
+The ".PARAMETER" keyword is used to describe the parameters of the function or script. This keyword should be used once for each parameter in the function or script syntax. The parameter name should be typed on the same line as the ".PARAMETER" keyword, and the parameter description should be typed on the lines following the ".PARAMETER" keyword. The description can include paragraph breaks.
+
+The ".EXAMPLE" keyword is used to provide examples of how to use the function or script. This keyword should be repeated for each example. The example should include a sample command that uses the function or script, optionally followed by sample output and a description.
+
+The ".INPUTS" keyword is used to describe the input objects that can be piped to the function or script. This keyword should include the Microsoft .NET Framework types of objects that can be piped to the function or script, as well as a description of the input objects.
+
+The ".OUTPUTS" keyword is used to describe the .NET Framework type of the objects that the cmdlet returns. This keyword should also include a description of the returned objects.
+
+The ".NOTES" keyword is used to provide additional information about the function or script. This keyword can be used to provide any additional information that is not covered by the other keywords.
+
+The ".LINK" keyword is used to provide related links for the function or script. This keyword should be repeated for each related topic. The content that appears after the ".LINK" keyword can include the name of the related topic, as well as a Uniform Resource Identifier (URI) to an online version of the same help topic.
+
+Finally, the ".COMPONENT", ".ROLE", and ".FUNCTIONALITY" keywords are used to provide additional information about the function or script. These keywords can be used to provide information about the technology or feature that the function or script uses, the user role for the help topic, and the intended use of the function, respectively.
+
+Possible ways to improve the code with respect to readability and performance include using consistent indentation, using descriptive variable names, and avoiding unnecessary comments. Additionally, it is important to ensure that the help snippet is accurate and up-to-date, as it is an important resource for users who need help with the function or script.
 
 ---
 

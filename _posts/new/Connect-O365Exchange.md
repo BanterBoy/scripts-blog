@@ -12,9 +12,9 @@ title: Connect-O365Exchange.ps1
 
 ### Description
 
-**_BanterBoy:_** Explain what the script does and how it works.
+**_@BanterBoy:_** - Explain what the script does and how it works.
 
-**_GitHub Copilot:_** The code above is a PowerShell script that defines a function called `Connect-O365Exchange`. This function is used to connect to Office 365 Exchange Online using Modern Authentication. The function takes one parameter, `UserName`, which is a string that represents the username of the user with permissions to Office 365. If the `UserName` parameter is left blank, the function will try to use the default account for the PowerShell session, using the `$env:USERNAME` environment variable.
+**_@GitHub Copilot_** - The code above is a PowerShell script that defines a function called `Connect-O365Exchange`. This function is used to connect to Office 365 Exchange Online using Modern Authentication. The function takes one parameter, `UserName`, which is a string that represents the username of the user with permissions to Office 365. If the `UserName` parameter is left blank, the function will try to use the default account for the PowerShell session, using the `$env:USERNAME` environment variable.
 
 The function is well-documented with a detailed description, examples, and notes. The `SYNOPSIS` section provides a brief summary of what the function does, while the `DESCRIPTION` section provides a more detailed explanation. The `EXAMPLE` section provides examples of how to use the function, including using the `ex365` alias. The `NOTES` section provides information about the author, website, LinkedIn, GitHub, and GitHubGist.
 
@@ -24,9 +24,9 @@ The function imports the `ExchangeOnlineManagement` module and connects to Excha
 
 To improve the code's readability, the author could consider adding comments to explain the purpose of each section of the code. Additionally, the author could consider using more descriptive variable names and breaking up long lines of code into multiple lines. To improve the code's performance, the author could consider using the `-Credential` parameter of the `Connect-ExchangeOnline` cmdlet instead of using the `Get-ADUser` cmdlet to get the user principal name.
 
-**_BanterBoy:_** Explain how to use the script and provide examples.
+**_@BanterBoy:_** - Explain how to use the script and provide examples.
 
-**_GitHub Copilot:_** To use the `Connect-O365Exchange` function to connect to a specific Office 365 account, you need to provide the `UserName` parameter with the username of the account you want to connect to. For example, if the username of the account you want to connect to is "user@example.com", you can use the following command:
+**_@GitHub Copilot_** - To use the `Connect-O365Exchange` function to connect to a specific Office 365 account, you need to provide the `UserName` parameter with the username of the account you want to connect to. For example, if the username of the account you want to connect to is "user@example.com", you can use the following command:
 
 ```
 Connect-O365Exchange -UserName "user@example.com"

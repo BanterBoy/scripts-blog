@@ -3,5 +3,5 @@ function Install-PSTools {
 	Expand-Archive -Path 'pstools.zip' -DestinationPath "$env:TEMP\pstools"
 	New-Item -Path 'C:\Program Files\' -Name Sysinternals -ItemType Directory
 	Copy-Item -Path "$env:TEMP\pstools\*.*" -Destination 'C:\Program Files\Sysinternals'
-	Remove-Item -Path "$env:TEMP\pstools" -Recurse
+	Remove-Item -Path "$env:TEMP\pstools" -Recurse -Force
 }

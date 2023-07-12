@@ -12,9 +12,63 @@ title: Exam-CertDets.ps1
 
 ### Description
 
-**_BanterBoy:_** Explain what the script does and why it is useful.
+**_@GitHub Copilot_** - Welcome @BanterBoy, I'm your Copilot and I'm here to help you get things done faster. I can identify issues, explain and even improve code.
 
-**_GitHub Copilot:_**
+You can ask generic questions, but what I'm really good at is helping you with your code. For example:
+
+Generate unit tests for my code
+Explain the selected code
+Propose a fix for the bugs in my code
+If you want to learn more about my capabilities and limitations, check out the Copilot documentation.
+
+I'm powered by AI, so surprises and mistakes are possible. Make sure to verify any generated code or suggestions, and share feedback so that we can learn and improve.
+
+**_@BanterBoy:_** - Explain what the script does and why it is useful.
+
+**_@GitHub Copilot_** - This PowerShell script is designed to allow the user to view the details of a certificate file without the need to import it into their certificate store. The script begins by defining the path to the certificate file that the user wishes to examine. This path is stored in the `$Path` variable.
+
+Next, the script uses the `Add-Type` cmdlet to load the `System.Security` assembly. This assembly contains the `X509Certificates` namespace, which provides classes for working with X.509 certificates. The script then creates a new instance of the `X509Certificate2` class using the `CreateFromCertFile` method, passing in the path to the certificate file as an argument. This creates a new `X509Certificate2` object that represents the certificate file.
+
+Finally, the script uses the `Select-Object` cmdlet to display all properties of the certificate object. This allows the user to view all of the details of the certificate file, including the subject, issuer, expiration date, and more.
+
+Overall, this script provides a simple and efficient way to view the details of a certificate file without the need to import it into the certificate store. It is a useful tool for developers and system administrators who need to work with certificates on a regular basis.
+
+To improve the readability of the code, the developer could consider adding comments to explain each step of the process. Additionally, they could use more descriptive variable names to make the code easier to understand. In terms of performance, there is not much that can be done to improve this script, as it is already quite efficient.
+
+**_@BanterBoy:_** -How can I modify the script to accept command-line arguments?
+
+**_@GitHub Copilot_** - To modify the script to accept command-line arguments, you can replace the hard-coded path to the certificate file with a parameter that is passed in from the command line. Here's an example of how you could modify the script to accept a path to the certificate file as a command-line argument:
+
+```powershell
+<#
+Examining Certificate Details
+
+All Versions
+
+If you’d like to examine and view the details of a certificate file without the need to import it into your certificate store, here is a simple example:
+#>
+
+[CmdletBinding()]
+param (
+    [Parameter(Mandatory=$true)]
+    [string]$Path
+)
+
+Add-Type -AssemblyName System.Security
+[Security.Cryptography.X509Certificates.X509Certificate2]$cert = [Security.Cryptography.X509Certificates.X509Certificate2]::CreateFromCertFile($Path)
+
+$cert | Select-Object -Property *
+```
+
+In this modified version of the script, we've added a `[CmdletBinding()]` attribute to the script, which allows us to define parameters that can be passed in from the command line. We've also defined a new parameter called `$Path`, which is marked as mandatory using the `[Parameter(Mandatory=$true)]` attribute.
+
+When the script is run, PowerShell will prompt the user to enter a value for the `$Path` parameter. For example, if the script is saved as `Exam-CertDets.ps1`, you could run it from the command line like this:
+
+```
+.\Exam-CertDets.ps1 -Path C:\Path\To\CertificateFile\test.cer
+```
+
+This would run the script and pass in the path to the certificate file as a command-line argument. The script would then use this path to load the certificate file and display its details.
 
 ---
 
