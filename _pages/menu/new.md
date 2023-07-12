@@ -13,7 +13,7 @@ permalink: /menu/_pages/new.html
 
 ## New Stuff
 
-**_GitHub Copilot_** The code above is a table of contents for a collection of PowerShell scripts and functions. Each row in the table represents a script or function, and the second column provides a link to the file containing the code.
+**_GitHub Copilot_** Below is a table of contents for a collection of PowerShell scripts and functions. Each row in the table represents a script or function, and the second column provides a link to the file containing the code.
 
 The table includes a variety of scripts and functions that can be used for various tasks, such as managing Exchange servers, monitoring files, and testing network connectivity. For example, there are scripts for copying files to remote servers, getting information about scheduled tasks, and restarting Exchange services.
 
