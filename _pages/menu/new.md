@@ -36,6 +36,7 @@ Overall, this collection of scripts and functions can be a useful resource for P
 | Function | [Export-CalendarPermissions.ps1](/_posts/new/Export-CalendarPermissions/)         |
 | Script   | [FileWatcher.ps1](/_posts/new/FileWatcher/)                                       |
 | Function | [Get-ExchangeServerInSite.ps1](/_posts/new/Get-ExchangeServerInSite/)             |
+| Function | [Get-FileAndFolderPermissions.ps1](/_posts/new/Get-FileAndFolderPermissions/)     |
 | Function | [Get-FileExtension.ps1](/_posts/new/Get-FileExtension/)                           |
 | Function | [Get-GroupMembers.ps1](/_posts/new/Get-GroupMembers/)                             |
 | Function | [Get-GroupNames.ps1](/_posts/new/Get-GroupNames/)                                 |
