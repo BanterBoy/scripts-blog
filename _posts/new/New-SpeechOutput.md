@@ -25,7 +25,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 **_@BanterBoy:_** - Explain what the script does and why it is useful.
 
-**_@GitHub Copilot_** - The code above is a PowerShell function called `New-SpeechOutput`. This function is designed to output a string as speech using the `System.Speech.Synthesis.SpeechSynthesizer` class.
+**_@GitHub Copilot_** - The code is a PowerShell function called `New-SpeechOutput`. This function is designed to output a string as speech using the `System.Speech.Synthesis.SpeechSynthesizer` class.
 
 The function has a single parameter called `$Output`, which is of type `String`. This parameter is not mandatory, but can be passed in either through the pipeline or as a positional parameter. If no value is passed in for `$Output`, the function will not output anything.
 

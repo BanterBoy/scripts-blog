@@ -25,7 +25,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 **_@BanterBoy:_** - Explain what the script does and why it is useful.
 
-**_@GitHub Copilot_** - The code above is a PowerShell script that defines a `CountdownDate` class and a `New-CountdownDate` function. The `CountdownDate` class has three properties: `CountdownDay`, `DaysUntilCountdown`, and `CountdownTime`. The `CountdownDay` property is a string that represents the date of the countdown. The `DaysUntilCountdown` property is an integer that represents the number of days until the countdown. The `CountdownTime` property is a `TimeSpan` object that represents the time of the countdown.
+**_@GitHub Copilot_** - The code is a PowerShell script that defines a `CountdownDate` class and a `New-CountdownDate` function. The `CountdownDate` class has three properties: `CountdownDay`, `DaysUntilCountdown`, and `CountdownTime`. The `CountdownDay` property is a string that represents the date of the countdown. The `DaysUntilCountdown` property is an integer that represents the number of days until the countdown. The `CountdownTime` property is a `TimeSpan` object that represents the time of the countdown.
 
 The `CountdownDate` class has a constructor that takes three parameters: `CountdownDay`, `DaysUntilCountdown`, and `CountdownTime`. The constructor sets the `CountdownDay`, `DaysUntilCountdown`, and `CountdownTime` properties to the values of the corresponding parameters.
 

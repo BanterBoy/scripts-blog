@@ -25,7 +25,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 **_@BanterBoy:_** - Explain what the script does and why it is useful.
 
-**_@GitHub Copilot_** - The code above is a PowerShell script that defines a function called `Disable-RDPRemotely`. This function disables Remote Desktop Protocol (RDP) on one or more remote computers. The function takes an array of computer names as input and iterates through each computer to disable RDP.
+**_@GitHub Copilot_** - The code is a PowerShell script that defines a function called `Disable-RDPRemotely`. This function disables Remote Desktop Protocol (RDP) on one or more remote computers. The function takes an array of computer names as input and iterates through each computer to disable RDP.
 
 The function uses the `[CmdletBinding()]` attribute to specify the default parameter set, confirm impact, support for ShouldProcess, and a help URI. The `[OutputType()]` attribute specifies the output type of the function.
 

@@ -25,7 +25,40 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 **_@BanterBoy:_** - Explain what the script does and why it is useful.
 
-**_@GitHub Copilot_** -
+**_@GitHub Copilot_** - The code above is a PowerShell function called `Disable-RDPRemotelyWMI`. This function disables Remote Desktop Protocol (RDP) remotely using Windows Management Instrumentation (WMI). The function takes an array of computer names as input and iterates through each computer to disable RDP.
+
+Within the function, there is a `foreach` loop that iterates through each computer name in the input array. For each computer, the function uses the `Get-WmiObject` cmdlet to retrieve the `Win32_TerminalServiceSetting` WMI class from the `Root\CimV2\TerminalServices` namespace. This class contains properties and methods related to Terminal Services settings, including the ability to enable or disable RDP.
+
+The function then calls the `SetAllowTSConnections` method on the retrieved `Win32_TerminalServiceSetting` object, passing in two parameters: `0` and `0`. These parameters respectively disable RDP and prevent the server from listening for RDP connections.
+
+Overall, this function provides a convenient way to disable RDP on multiple remote computers using PowerShell and WMI.
+
+To improve the code's readability, the function could benefit from more descriptive variable names. Additionally, the function could be optimized for performance by using the `Invoke-WmiMethod` cmdlet instead of `Get-WmiObject` and `SetAllowTSConnections`. This would allow the function to directly call the `SetAllowTSConnections` method without first retrieving the entire `Win32_TerminalServiceSetting` object.
+
+**_@BanterBoy:_** - Explain how to use the script and provide examples.
+
+**_@GitHub Copilot_** - Certainly! Here are a few examples of how you can use the `Disable-RDPRemotelyWMI` function:
+
+Example 1: Disable RDP on a single remote computer
+
+```powershell
+Disable-RDPRemotelyWMI -ComputerName "RemoteComputer01"
+```
+
+Example 2: Disable RDP on multiple remote computers
+
+```powershell
+Disable-RDPRemotelyWMI -ComputerName "RemoteComputer01", "RemoteComputer02", "RemoteComputer03"
+```
+
+Example 3: Disable RDP on remote computers listed in a text file
+
+```powershell
+$computers = Get-Content -Path "C:\Computers.txt"
+Disable-RDPRemotelyWMI -ComputerName $computers
+```
+
+In these examples, replace "RemoteComputer01", "RemoteComputer02", etc. with the actual names of the remote computers you want to disable RDP on. You can also replace "C:\Computers.txt" with the path to a text file containing a list of remote computer names, with each name on a separate line.
 
 ---
 

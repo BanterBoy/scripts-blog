@@ -25,7 +25,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 **_@BanterBoy:_** - Explain what the script does and why it is useful.
 
-**_@GitHub Copilot_** - The code above is a PowerShell script that defines a function called `Restart-ExchangeServices`. This function takes two parameters: `$ComputerName` and `$Credential`. `$ComputerName` is an array of strings that represents the names of the computers on which the Exchange services will be restarted. `$Credential` is an optional parameter that represents the credentials that will be used to connect to the remote computers.
+**_@GitHub Copilot_** - The code is a PowerShell script that defines a function called `Restart-ExchangeServices`. This function takes two parameters: `$ComputerName` and `$Credential`. `$ComputerName` is an array of strings that represents the names of the computers on which the Exchange services will be restarted. `$Credential` is an optional parameter that represents the credentials that will be used to connect to the remote computers.
 
 The function uses the `CmdletBinding` attribute to specify some metadata about the function. This attribute allows the function to support common parameters like `-Verbose`, `-Debug`, and `-ErrorAction`. It also specifies a default parameter set, a confirmation level, and a help URI.
 

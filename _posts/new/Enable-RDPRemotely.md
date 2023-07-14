@@ -25,7 +25,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 **_@BanterBoy:_** - Explain what the script does and why it is useful.
 
-**_@GitHub Copilot_** - The code above is a PowerShell script that defines a function called `Enable-RDPRemotely`. This function enables Remote Desktop Protocol (RDP) on one or more remote computers. The function takes a single parameter called `$ComputerName`, which is an array of strings that contains the names of the computers on which RDP should be enabled.
+**_@GitHub Copilot_** - The code is a PowerShell script that defines a function called `Enable-RDPRemotely`. This function enables Remote Desktop Protocol (RDP) on one or more remote computers. The function takes a single parameter called `$ComputerName`, which is an array of strings that contains the names of the computers on which RDP should be enabled.
 
 The function uses the `foreach` loop to iterate over each computer name in the `$ComputerName` array. For each computer, the function uses either the `Get-CimInstance` cmdlet or the `Get-WmiObject` cmdlet to retrieve the `Win32_TerminalServiceSetting` object that represents the RDP settings on the remote computer.
 

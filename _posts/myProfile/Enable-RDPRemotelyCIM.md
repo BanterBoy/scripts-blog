@@ -25,7 +25,28 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 **_@BanterBoy:_** - Explain what the script does and why it is useful.
 
-**_@GitHub Copilot_** -
+**_@GitHub Copilot_** - The code above is a PowerShell function called `Enable-RDPRemotelyCIM`. This function enables Remote Desktop Protocol (RDP) on a remote host by running two lines of code.
+
+The function is defined with `[CmdletBinding()]` and a `param` block that takes a parameter called `$ComputerName`. This parameter is an array of strings that represents the names of the remote computers on which RDP needs to be enabled.
+
+The function then uses a `foreach` loop to iterate through each computer name in the `$ComputerName` array. Inside the loop, the function uses the `Get-CimInstance` cmdlet to retrieve an instance of the `Win32_TerminalServiceSetting` class from the `root/cimv2/TerminalServices` namespace on the remote computer. This instance is stored in the `$Win32TerminalServiceSettings` variable.
+
+Finally, the function uses the `Invoke-CimMethod` cmdlet to invoke the `SetAllowTSConnections` method on the `$Win32TerminalServiceSettings` object. This method takes two arguments: `AllowTSConnections` and `ModifyFirewallException`. Both arguments are set to `1`, which enables RDP and modifies the firewall exception to allow RDP traffic.
+
+In terms of improving the code, one possible suggestion is to add error handling to the function. For example, if a remote computer is not reachable or does not have the necessary permissions to enable RDP, the function should gracefully handle these errors and provide feedback to the user. Additionally, the function could be made more efficient by using PowerShell remoting to enable RDP on multiple remote computers simultaneously.
+
+**_@BanterBoy:_** - Explain how to use the script and provide examples.
+
+**_@GitHub Copilot_** - Sure! Here's an example of how to use the `Enable-RDPRemotelyCIM` function:
+
+```powershell
+# Enable RDP on two remote computers
+Enable-RDPRemotelyCIM -ComputerName "computer1", "computer2"
+```
+
+In this example, the `Enable-RDPRemotelyCIM` function is called with the `-ComputerName` parameter, which takes an array of strings representing the names of the remote computers on which RDP needs to be enabled. In this case, RDP will be enabled on two remote computers named "computer1" and "computer2".
+
+Note that you can pass any number of computer names to the `-ComputerName` parameter, separated by commas.
 
 ---
 

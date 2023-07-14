@@ -25,7 +25,37 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 **_@BanterBoy:_** - Explain what the script does and why it is useful.
 
-**_@GitHub Copilot_** -
+**_@GitHub Copilot_** - This PowerShell script is called "Disable-InactiveComputer" and is designed to disable inactive computers in an Active Directory domain. The script takes three optional parameters: "DaysAgo", "DisabledAccountsOU", and "SearchBase". The "DaysAgo" parameter specifies the number of days since a computer was last active, and defaults to 90 days. The "DisabledAccountsOU" parameter specifies the distinguished name of the OU where disabled computer accounts should be moved, and defaults to an OU called "DisabledAccounts" in the domain of the current user. The "SearchBase" parameter specifies the distinguished name of the search base for the query, and defaults to the domain of the current user.
+
+The script uses the "Search-ADAccount" cmdlet to find inactive computers in the specified search base. It then loops through each inactive computer and checks if it has been inactive for longer than the specified number of days. If it has, the script disables the computer account using the "Set-ADComputer" cmdlet and moves the computer account to the specified disabled accounts OU using the "Move-ADObject" cmdlet. If the computer has been active within the specified number of days, the script simply logs a message indicating that the computer is active.
+
+The script uses the "ShouldProcess" method to provide a confirmation prompt before disabling each computer account. This method is called with the search base as the target resource and the action as "Disabling Inactive Computers...". If the user confirms the action, the script proceeds with disabling the computer account and moving it to the disabled accounts OU.
+
+To improve the readability of the code, the script could benefit from additional comments to explain the purpose of each section of code. Additionally, the script could be optimized for performance by using the "Get-ADDomainController" cmdlet to target a specific domain controller for the query, rather than relying on the default domain controller.
+
+**_@BanterBoy:_** - Explain how to use the script and provide examples.
+
+**_@GitHub Copilot_** - Certainly! Here are some examples of how to use the `Disable-InactiveComputer` function:
+
+1. Disable inactive computers that have been inactive for 60 days or more and move them to the "DisabledComputers" OU:
+
+```powershell
+Disable-InactiveComputer -DaysAgo 60 -DisabledAccountsOU "OU=DisabledComputers,DC=example,DC=com"
+```
+
+2. Disable inactive computers that have been inactive for the default 90 days and move them to the default "DisabledAccounts" OU:
+
+```powershell
+Disable-InactiveComputer
+```
+
+3. Disable inactive computers that have been inactive for 120 days or more and move them to the "OldComputers" OU, searching only within the "OU=Computers,DC=example,DC=com" OU:
+
+```powershell
+Disable-InactiveComputer -DaysAgo 120 -DisabledAccountsOU "OU=OldComputers,DC=example,DC=com" -SearchBase "OU=Computers,DC=example,DC=com"
+```
+
+Note that the `DaysAgo` parameter specifies the number of days since a computer was last active, and the `DisabledAccountsOU` parameter specifies the distinguished name of the OU where disabled computer accounts should be moved. The `SearchBase` parameter specifies the distinguished name of the search base for the query. If any of these parameters are not specified, the script will use default values.
 
 ---
 

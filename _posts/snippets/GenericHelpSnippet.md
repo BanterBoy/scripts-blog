@@ -25,7 +25,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 **_@BanterBoy:_** - Explain what the script does and why it is useful.
 
-**_@GitHub Copilot_** - The code above is a PowerShell script that contains a comment-based help snippet. This snippet is used to provide help documentation for a PowerShell function or script. The help snippet contains several keywords that are used to describe the function or script, its parameters, inputs, outputs, examples, notes, and related links.
+**_@GitHub Copilot_** - The code is a PowerShell script that contains a comment-based help snippet. This snippet is used to provide help documentation for a PowerShell function or script. The help snippet contains several keywords that are used to describe the function or script, its parameters, inputs, outputs, examples, notes, and related links.
 
 The ".SYNOPSIS" keyword is used to provide a brief description of the function or script. This description should be a short summary of what the function or script does. The ".DESCRIPTION" keyword is used to provide a more detailed description of the function or script. This description should provide more information about what the function or script does, how it works, and what its purpose is.
 

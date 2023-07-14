@@ -25,7 +25,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 **_@BanterBoy:_** - Explain what the script does and why it is useful.
 
-**_@GitHub Copilot_** - The code above is a PowerShell script that defines a function called `Sync-DomainController`. This function synchronizes all domain controllers in the specified domain by forcing replication using the `repadmin` tool. The function takes one parameter, `Domain`, which specifies the name of the domain to synchronize. If no domain is specified, the function defaults to the user's domain.
+**_@GitHub Copilot_** - The code is a PowerShell script that defines a function called `Sync-DomainController`. This function synchronizes all domain controllers in the specified domain by forcing replication using the `repadmin` tool. The function takes one parameter, `Domain`, which specifies the name of the domain to synchronize. If no domain is specified, the function defaults to the user's domain.
 
 The function begins with a comment-based help section that provides a synopsis, description, parameter information, example usage, and other notes about the function. This information is useful for anyone who wants to use the function or understand what it does.
 

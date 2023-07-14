@@ -25,7 +25,40 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 **_@BanterBoy:_** - Explain what the script does and why it is useful.
 
-**_@GitHub Copilot_** -
+**_@GitHub Copilot_** - The code above is a PowerShell function called `Disable-RDPRemotelyCIM`. It disables Remote Desktop Protocol (RDP) on one or more remote computers. The function takes an array of computer names as input and then loops through each computer to disable RDP.
+
+The function uses the `Get-CimInstance` cmdlet to retrieve the `Win32_TerminalServiceSetting` class from the `root/cimv2/TerminalServices` namespace on each remote computer. The `Win32_TerminalServiceSetting` class contains properties and methods that allow you to configure Terminal Services settings on a Windows computer.
+
+The function then pipes the `Win32TerminalServiceSettings` object to the `Invoke-CimMethod` cmdlet to call the `SetAllowTSConnections` method. This method takes two arguments: `AllowTSConnections` and `ModifyFirewallException`. The `AllowTSConnections` argument is set to `0` to disable RDP, and the `ModifyFirewallException` argument is set to `0` to prevent the method from modifying the Windows Firewall exception for RDP.
+
+Overall, this function is a useful tool for disabling RDP on multiple remote computers at once. However, it's worth noting that the function assumes that the remote computers are running Windows and that they have the `Win32_TerminalServiceSetting` class available in the `root/cimv2/TerminalServices` namespace. If these assumptions are not met, the function may not work as expected.
+
+To improve the code's readability, the function could benefit from more descriptive variable names. Additionally, the function could be optimized for performance by using the `Invoke-Command` cmdlet to run the `SetAllowTSConnections` method in parallel on multiple remote computers.
+
+**_@BanterBoy:_** - Explain how to use the script and provide examples.
+
+**_@GitHub Copilot_** - Certainly! Here are a few examples of how you could use the `Disable-RDPRemotelyCIM` function:
+
+1. Disable RDP on a single remote computer:
+
+```powershell
+Disable-RDPRemotelyCIM -ComputerName "RemoteComputer01"
+```
+
+2. Disable RDP on multiple remote computers:
+
+```powershell
+Disable-RDPRemotelyCIM -ComputerName "RemoteComputer01", "RemoteComputer02", "RemoteComputer03"
+```
+
+3. Disable RDP on all computers in an Active Directory domain:
+
+```powershell
+$Computers = Get-ADComputer -Filter * | Select-Object -ExpandProperty Name
+Disable-RDPRemotelyCIM -ComputerName $Computers
+```
+
+Note that in the third example, we're using the `Get-ADComputer` cmdlet to retrieve a list of all computers in the Active Directory domain, and then passing that list to the `Disable-RDPRemotelyCIM` function. This is just one way to generate a list of computer names programmatically - you could also hard-code the list of computer names or retrieve them from a CSV file, for example.
 
 ---
 

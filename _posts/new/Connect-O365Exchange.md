@@ -14,7 +14,7 @@ title: Connect-O365Exchange.ps1
 
 **_@BanterBoy:_** - Explain what the script does and how it works.
 
-**_@GitHub Copilot_** - The code above is a PowerShell script that defines a function called `Connect-O365Exchange`. This function is used to connect to Office 365 Exchange Online using Modern Authentication. The function takes one parameter, `UserName`, which is a string that represents the username of the user with permissions to Office 365. If the `UserName` parameter is left blank, the function will try to use the default account for the PowerShell session, using the `$env:USERNAME` environment variable.
+**_@GitHub Copilot_** - The code is a PowerShell script that defines a function called `Connect-O365Exchange`. This function is used to connect to Office 365 Exchange Online using Modern Authentication. The function takes one parameter, `UserName`, which is a string that represents the username of the user with permissions to Office 365. If the `UserName` parameter is left blank, the function will try to use the default account for the PowerShell session, using the `$env:USERNAME` environment variable.
 
 The function is well-documented with a detailed description, examples, and notes. The `SYNOPSIS` section provides a brief summary of what the function does, while the `DESCRIPTION` section provides a more detailed explanation. The `EXAMPLE` section provides examples of how to use the function, including using the `ex365` alias. The `NOTES` section provides information about the author, website, LinkedIn, GitHub, and GitHubGist.
 

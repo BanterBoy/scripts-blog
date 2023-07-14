@@ -25,7 +25,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 **_@BanterBoy:_** - Explain what the script does and why it is useful.
 
-**_@GitHub Copilot_** - The code above is a PowerShell script that defines a function called `Get-GroupNames`. This function queries Active Directory and exports the details for the matching groups. The function takes one parameter called `GroupName`, which is the name of the group that you want to search for. This field supports wildcards.
+**_@GitHub Copilot_** - The code is a PowerShell script that defines a function called `Get-GroupNames`. This function queries Active Directory and exports the details for the matching groups. The function takes one parameter called `GroupName`, which is the name of the group that you want to search for. This field supports wildcards.
 
 The function is defined using the `CmdletBinding` attribute, which allows it to support common parameters like `-Verbose`, `-Debug`, and `-ErrorAction`. The `OutputType` attribute specifies that the function returns an object of type `[string]`. The `Alias` attribute provides an alternate name for the function, which is `ggm`.
 

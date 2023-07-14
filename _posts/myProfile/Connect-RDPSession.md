@@ -25,7 +25,45 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 **_@BanterBoy:_** - Explain what the script does and why it is useful.
 
-**_@GitHub Copilot_** -
+**_@GitHub Copilot_** - This is a PowerShell script that defines a cmdlet called `Connect-RDPSession`. The cmdlet establishes a Remote Desktop Protocol (RDP) connection to a remote computer. The cmdlet takes a computer name as input and opens an RDP session to that computer. The cmdlet is defined with a `CmdletBinding` attribute that specifies the default parameter set name, positional binding, and support for ShouldProcess. The cmdlet also has an alias `crdp`.
+
+The `Param` block defines the parameters for the cmdlet. The `ComputerName` parameter is defined as an array of strings and is optional. It supports pipeline input and accepts input from the pipeline by property name. The `HelpMessage` parameter specifies the help message that is displayed when the parameter is not specified.
+
+The `Begin`, `Process`, and `End` blocks are used to define the cmdlet's functionality. The `Begin` block is executed before the pipeline input is processed. The `Process` block is executed for each input object in the pipeline. The `End` block is executed after all input objects have been processed.
+
+The `Process` block uses a `ForEach` loop to iterate through each computer name in the `ComputerName` parameter. The `ShouldProcess` method is used to confirm that the cmdlet should establish an RDP connection to the specified computer. If the confirmation is successful, the `Start-Process` cmdlet is used to open an RDP session to the specified computer. If the connection is unsuccessful, the `catch` block is executed and an error message is displayed.
+
+To improve the code's readability, the comments should be moved to the top of the script and the code should be indented properly. Additionally, the `try-catch` block could be improved by specifying the type of exception to catch. Finally, the `Write-Output` cmdlet in the `catch` block is unnecessary since the error message is already displayed.
+
+**_@BanterBoy:_** - Explain how to use the script and provide examples.
+
+**_@GitHub Copilot_** - Sure! Here are some examples of how to use the `Connect-RDPSession` cmdlet:
+
+Example 1: Connect to a single computer
+
+```
+Connect-RDPSession -ComputerName "COMPUTER01"
+```
+
+This command establishes an RDP connection to the computer named "COMPUTER01".
+
+Example 2: Connect to multiple computers
+
+```
+"COMPUTER01", "COMPUTER02", "COMPUTER03" | Connect-RDPSession
+```
+
+This command establishes an RDP connection to the computers named "COMPUTER01", "COMPUTER02", and "COMPUTER03" by piping the computer names to the `Connect-RDPSession` cmdlet.
+
+Example 3: Connect to a computer using pipeline input
+
+```
+Get-Content -Path "C:\Computers.txt" | Connect-RDPSession
+```
+
+This command establishes an RDP connection to the computers listed in the "C:\Computers.txt" file by using the `Get-Content` cmdlet to read the file and piping the computer names to the `Connect-RDPSession` cmdlet.
+
+I hope these examples help you understand how to use the `Connect-RDPSession` cmdlet!
 
 ---
 
