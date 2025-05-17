@@ -4,17 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Stalker Page</title>
+    <style>
+        .map-container {
+            width: 100%;
+            height: 50vh;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 50%;
+            border: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div style="position: relative; margin: 0 auto;">
-        <div style="position: relative; height: 0; overflow: hidden;">
-            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 50%; border:0;" loading="lazy"
-                allowfullscreen
-                src="https://maps.google.com/maps?q=Inchture%2C+Perth+PH14+9SH+GB&output=embed"></iframe>
-        </div>
-
+    <div class="map-container">
+        <iframe loading="lazy" allowfullscreen
+            src="https://maps.google.com/maps?q=Inchture%2C+Perth+PH14+9SH+GB&output=embed"></iframe>
     </div>
 
 </body>
