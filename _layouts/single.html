@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+{% assign overlay_image = page.header.overlay_image %}
+{% assign overlay_filter = page.header.overlay_filter | default: 'rgba(0, 0, 0, 0.5)' %}
+{% assign custom_classes = page.classes %}
+{% capture article_classes %}page single{% if custom_classes %} {{ custom_classes }}{% endif %}{% endcapture %}
+
+<link rel="stylesheet" href="/assets/css/single.css">
+<article class="{{ article_classes | strip }}">
+  {% if overlay_image %}
+  <header class="page-hero" style="background-image: url('{{ overlay_image }}');">
+    <div class="page-hero__filter" style="background-color: {{ overlay_filter }};"></div>
+    <div class="page-hero__content">
+      <h1>{{ page.title }}</h1>
+      {% if page.header.caption %}
+        {% assign caption_html = page.header.caption | markdownify %}
+        {% assign caption_text = caption_html | strip_html %}
+        <p class="page-hero__caption">{{ caption_text }}</p>
+      {% endif %}
+    </div>
+  </header>
+  {% else %}
+  <header class="page-header">
+    <h1>{{ page.title }}</h1>
+  </header>
+  {% endif %}
+
+  <div class="page-content">
+    {% if page.date or page.last_modified_at %}
+    <p class="page-meta">
+      {% if page.date %}
+        {{ page.date | date: "%B %-d, %Y" }}
+      {% endif %}
+      {% if page.date and page.last_modified_at %}
+        &bull;
+      {% endif %}
+      {% if page.last_modified_at %}
+        Updated {{ page.last_modified_at | date: "%B %-d, %Y" }}
+      {% endif %}
+    </p>
+    {% endif %}
+
+    {{ content }}
+  </div>
+</article>
