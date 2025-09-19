@@ -53,7 +53,7 @@ layout: default
       <h1>{{ page.title }}</h1>
       {% if page.header.caption %}
         {% assign caption_html = page.header.caption | markdownify %}
-        {% assign caption_text = caption_html | replace: '<p>', '' | replace: '</p>', '' %}
+        {% assign caption_text = caption_html | strip_html %}
         <p class="page-hero__caption">{{ caption_text }}</p>
       {% endif %}
     </div>
