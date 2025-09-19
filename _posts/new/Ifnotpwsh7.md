@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ifnotpwsh7.ps1
+description: "Example logic that branches actions based on whether PowerShell 6 or later is available."
 ---
 
 - [Description](#description)

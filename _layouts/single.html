@@ -7,43 +7,6 @@ layout: default
 {% assign custom_classes = page.classes %}
 {% capture article_classes %}page single{% if custom_classes %} {{ custom_classes }}{% endif %}{% endcapture %}
 
-<style>
-  .single .page-hero {
-    position: relative;
-    color: #fff;
-    text-align: center;
-    padding: 4rem 1rem;
-    margin-bottom: 2rem;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .single .page-hero__filter {
-    position: absolute;
-    inset: 0;
-    opacity: 1;
-  }
-
-  .single .page-hero__content {
-    position: relative;
-    max-width: 50rem;
-    margin: 0 auto;
-  }
-
-  .single .page-hero__caption {
-    margin-top: 0.75rem;
-    font-size: 0.95em;
-  }
-
-  .single .page-content {
-    padding: 0 1rem 2rem;
-  }
-
-  .single .page-meta {
-    font-style: italic;
-    margin-bottom: 1rem;
-  }
-</style>
 
 <article class="{{ article_classes | strip }}">
   {% if overlay_image %}
@@ -53,7 +16,6 @@ layout: default
       <h1>{{ page.title }}</h1>
       {% if page.header.caption %}
         {% assign caption_html = page.header.caption | markdownify %}
-        {% assign caption_text = caption_html | replace: '<p>', '' | replace: '</p>', '' %}
         <p class="page-hero__caption">{{ caption_text }}</p>
       {% endif %}
     </div>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-LogonEvent.ps1
+description: "Parses Winlogon events to report recent logon and logoff activity on Windows systems."
 ---
 
 - [Description](#description)

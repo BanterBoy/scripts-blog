@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Blank-Page.ps1
+description: "Starter template for drafting new PowerShell script posts on the site."
 ---
 
 - [Description](#description)

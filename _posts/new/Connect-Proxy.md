@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Connect-Proxy.ps1
+description: "Shows how to create a proxy-aware WebClient for authenticated downloads and API calls."
 ---
 
 - [Description](#description)
