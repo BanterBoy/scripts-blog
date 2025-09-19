@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Connect-O365Exchange.ps1
+description: "Connects to Exchange Online with modern authentication via the ExchangeOnlineManagement module."
 date: 2025-09-19
 permalink: /_posts/UserAdminModule/Connect-O365Exchange/
 categories:

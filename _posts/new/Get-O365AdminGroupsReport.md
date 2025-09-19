@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-O365AdminGroupsReport.ps1
+description: "Generates a CSV report of Office 365 administrative roles and their assigned members."
 ---
 
 - [Description](#description)

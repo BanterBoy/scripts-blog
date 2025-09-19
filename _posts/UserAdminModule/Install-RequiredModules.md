@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Install-RequiredModules.ps1
+description: "Ensures required modules and RSAT components are installed before running scripts."
 date: 2025-09-19
 permalink: /_posts/UserAdminModule/Install-RequiredModules/
 categories:

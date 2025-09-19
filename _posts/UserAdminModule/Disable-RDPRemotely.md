@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Disable-RDPRemotely.ps1
+description: "Turns off Remote Desktop Protocol on specified computers via WMI or CIM."
 date: 2025-09-19
 permalink: /_posts/UserAdminModule/Disable-RDPRemotely/
 categories:

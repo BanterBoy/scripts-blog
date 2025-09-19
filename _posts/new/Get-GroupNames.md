@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-GroupNames.ps1
+description: "Searches Active Directory for groups by name pattern and outputs their details."
 ---
 
 - [Description](#description)

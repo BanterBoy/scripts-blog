@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Remove-RDPUserSession.ps1
+description: "Wraps QUser to inspect and disconnect Remote Desktop sessions programmatically."
 date: 2025-09-19
 permalink: /_posts/UserAdminModule/Remove-RDPUserSession/
 categories:

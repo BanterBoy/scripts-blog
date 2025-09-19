@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-ServiceDetails.ps1
+description: "Queries remote computers for service status and configuration details by display name."
 ---
 
 - [Description](#description)

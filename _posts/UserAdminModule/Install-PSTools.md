@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Install-PSTools.ps1
+description: "Downloads, installs, or removes the Sysinternals PSTools suite."
 date: 2025-09-19
 permalink: /_posts/UserAdminModule/Install-PSTools/
 categories:

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: FileWatcher.ps1
+description: "Monitors folders with FileSystemWatcher and logs file changes to a text file."
 ---
 
 - [Description](#description)

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-IISCertificates.ps1
+description: "Inventories IIS HTTPS bindings and the SSL certificates assigned to each site."
 ---
 
 - [Description](#description)

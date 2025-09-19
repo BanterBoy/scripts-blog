@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ArgumentCompleterExample.ps1
+description: "Demonstrates using an ArgumentCompleter to tab-complete Exchange server names when connecting."
 ---
 
 - [Description](#description)
