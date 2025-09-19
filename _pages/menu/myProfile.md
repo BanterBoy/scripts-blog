@@ -80,9 +80,9 @@ New-Greeting
 
 | Office365 | Function                                                              |
 | :-------- | :-------------------------------------------------------------------- |
-| Category  | [Add-Office365Functions](/_posts/myProfile/Add-Office365Functions/)   |
-|           | [Stop-Outlook](/_posts/myProfile/Stop-Outlook/)                       |
-|           | [Get-OutlookAppointments](/_posts/myProfile/Get-OutlookAppointments/) |
+| Category  | [Add-Office365Functions](/_posts/UserAdminModule/Add-Office365Functions/)   |
+|           | [Stop-Outlook](/_posts/UserAdminModule/Stop-Outlook/)                       |
+|           | [Get-OutlookAppointments](/_posts/UserAdminModule/Get-OutlookAppointments/) |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -92,9 +92,9 @@ New-Greeting
 
 | Connect  | Function                                                        |
 | :------- | :-------------------------------------------------------------- |
-| Category | [Connect-CmRcViewer](/_posts/myProfile/Connect-CmRcViewer/)     |
-|          | [Connect-InternalPRTG](/_posts/myProfile/Connect-InternalPRTG/) |
-|          | [Connect-PSExec](/_posts/myProfile/Connect-PSExec/)             |
+| Category | [Connect-CmRcViewer](/_posts/UserAdminModule/Connect-CmRcViewer/)     |
+|          | [Connect-InternalPRTG](/_posts/UserAdminModule/Connect-InternalPRTG/) |
+|          | [Connect-PSExec](/_posts/UserAdminModule/Connect-PSExec/)             |
 |          | [Connect-RDPSession](/_posts/myProfile/Connect-RDPSession/)     |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
@@ -111,7 +111,7 @@ New-Greeting
 |              | [Get-RDPStatusWMI](/_posts/myProfile/Get-RDPStatusWMI/)             |
 |              | [Enable-RDPRemotelyWMI](/_posts/myProfile/Enable-RDPRemotelyWMI/)   |
 |              | [Disable-RDPRemotelyWMI](/_posts/myProfile/Disable-RDPRemotelyWMI/) |
-|              | [Get-RDPUserReport](/_posts/myProfile/Get-RDPUserReport/)           |
+|              | [Get-RDPUserReport](/_posts/UserAdminModule/Get-RDPUserReport/)           |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -121,9 +121,9 @@ New-Greeting
 
 | PrintSpooler | Function                                                        |
 | :----------- | :-------------------------------------------------------------- |
-| Category     | [Disable-PrintSpooler](/_posts/myProfile/Disable-PrintSpooler/) |
-|              | [Enable-PrintSpooler](/_posts/myProfile/Enable-PrintSpooler/)   |
-|              | [Get-PrintSpooler](/_posts/myProfile/Get-PrintSpooler/)         |
+| Category     | [Disable-PrintSpooler](/_posts/UserAdminModule/Disable-PrintSpooler/) |
+|              | [Enable-PrintSpooler](/_posts/UserAdminModule/Enable-PrintSpooler/)   |
+|              | [Get-PrintSpooler](/_posts/UserAdminModule/Get-PrintSpooler/)         |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -133,17 +133,17 @@ New-Greeting
 
 | fileManagement | Function                                                                        |
 | :------------- | :------------------------------------------------------------------------------ |
-| Category       | [Find-Movies](/_posts/myProfile/Find-Movies/)                                   |
-|                | [Show-PSDrive](/_posts/myProfile/Show-PSDrive/)                                 |
+| Category       | [Find-Movies](/_posts/UserAdminModule/Find-Movies/)                                   |
+|                | [Show-PSDrive](/_posts/UserAdminModule/Show-PSDrive/)                                 |
 |                | [New-GitDrives](/_posts/myProfile/New-GitDrives/)                               |
 |                | [New-PSDrives](/_posts/myProfile/New-PSDrives/)                                 |
-|                | [Get-LatestFiles](/_posts/myProfile/Get-LatestFiles/)                           |
-|                | [New-DummyFile](/_posts/myProfile/New-DummyFile/)                               |
-|                | [New-Shortcut](/_posts/myProfile/New-Shortcut/)                                 |
-|                | [Get-FileAndFolderPermissions](/_posts/myProfile/Get-FileAndFolderPermissions/) |
-|                | [Search-ForFiles](/_posts/myProfile/Search-ForFiles/)                           |
-|                | [Search-Scripts](/_posts/myProfile/Search-Scripts/)                             |
-|                | [Select-FolderLocation](/_posts/myProfile/Select-FolderLocation/)               |
+|                | [Get-LatestFiles](/_posts/UserAdminModule/Get-LatestFiles/)                           |
+|                | [New-DummyFile](/_posts/UserAdminModule/New-DummyFile/)                               |
+|                | [New-Shortcut](/_posts/UserAdminModule/New-Shortcut/)                                 |
+|                | [Get-FileAndFolderPermissions](/_posts/UserAdminModule/Get-FileAndFolderPermissions/) |
+|                | [Search-ForFiles](/_posts/UserAdminModule/Search-ForFiles/)                           |
+|                | [Search-Scripts](/_posts/UserAdminModule/Search-Scripts/)                             |
+|                | [Select-FolderLocation](/_posts/UserAdminModule/Select-FolderLocation/)               |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -153,17 +153,17 @@ New-Greeting
 
 | InternetIP | Function                                                        |
 | :--------- | :-------------------------------------------------------------- |
-| Category   | [Test-OpenPorts](/_posts/myProfile/Test-OpenPorts/)             |
-|            | [Set-GoogleDynamicDNS](/_posts/myProfile/Set-GoogleDynamicDNS/) |
-|            | [Set-StaticIPAddress](/_posts/myProfile/Set-StaticIPAddress/)   |
-|            | [Test-SSLProtocols](/_posts/myProfile/Test-SSLProtocols/)       |
-|            | [Get-CidrIPRange](/_posts/myProfile/Get-CidrIPRange/)           |
-|            | [Get-ComputerIP](/_posts/myProfile/Get-ComputerIP/)             |
-|            | [Get-ServerIPInfo](/_posts/myProfile/Get-ServerIPInfo/)         |
-|            | [Send-MagicPacket](/_posts/myProfile/Send-MagicPacket/)         |
-|            | [Set-DHCPIPAddress](/_posts/myProfile/Set-DHCPIPAddress/)       |
-|            | [Get-ipInfo](/_posts/myProfile/Get-ipInfo/)                     |
-|            | [Get-HostIOResults](/_posts/myProfile/Get-HostIOResults/)       |
+| Category   | [Test-OpenPorts](/_posts/UserAdminModule/Test-OpenPorts/)             |
+|            | [Set-GoogleDynamicDNS](/_posts/UserAdminModule/Set-GoogleDynamicDNS/) |
+|            | [Set-StaticIPAddress](/_posts/UserAdminModule/Set-StaticIPAddress/)   |
+|            | [Test-SSLProtocols](/_posts/UserAdminModule/Test-SSLProtocols/)       |
+|            | [Get-CidrIPRange](/_posts/UserAdminModule/Get-CidrIPRange/)           |
+|            | [Get-ComputerIP](/_posts/UserAdminModule/Get-ComputerIP/)             |
+|            | [Get-ServerIPInfo](/_posts/UserAdminModule/Get-ServerIPInfo/)         |
+|            | [Send-MagicPacket](/_posts/UserAdminModule/Send-MagicPacket/)         |
+|            | [Set-DHCPIPAddress](/_posts/UserAdminModule/Set-DHCPIPAddress/)       |
+|            | [Get-ipInfo](/_posts/UserAdminModule/Get-ipInfo/)                     |
+|            | [Get-HostIOResults](/_posts/UserAdminModule/Get-HostIOResults/)       |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -174,8 +174,8 @@ New-Greeting
 | ProfileSpecific | Function                                                                                        |
 | :-------------- | :---------------------------------------------------------------------------------------------- |
 | Category        | [Restart-myProfile](/_posts/myProfile/Restart-myProfile/)                                       |
-|                 | [Restart-PrintSpooler](/_posts/myProfile/Restart-PrintSpooler/)                                 |
-|                 | [Restart-Profile](/_posts/myProfile/Restart-Profile/)                                           |
+|                 | [Restart-PrintSpooler](/_posts/UserAdminModule/Restart-PrintSpooler/)                                 |
+|                 | [Restart-Profile](/_posts/UserAdminModule/Restart-Profile/)                                           |
 |                 | [Get-ProfileFunctions](/_posts/myProfile/Get-ProfileFunctions/)                                 |
 |                 | [Microsoft.PowerShell_profile](/_posts/myProfile/Microsoft.PowerShell_profile/)                 |
 |                 | [Microsoft.PowerShell_profile_Example](/_posts/myProfile/Microsoft.PowerShell_profile_Example/) |
@@ -188,11 +188,11 @@ New-Greeting
 
 | activeDirectory | Function                                                                |
 | :-------------- | :---------------------------------------------------------------------- |
-| Category        | [Get-AllDomainControllers](/_posts/myProfile/Get-AllDomainControllers/) |
-|                 | [Copy-GroupMembership](/_posts/myProfile/Copy-GroupMembership/)         |
-|                 | [Disable-InactiveComputer](/_posts/myProfile/Disable-InactiveComputer/) |
-|                 | [Get-FeaturesInventory](/_posts/myProfile/Get-FeaturesInventory/)       |
-|                 | [Test-ADReplication](/_posts/myProfile/Test-ADReplication/)             |
+| Category        | [Get-AllDomainControllers](/_posts/UserAdminModule/Get-AllDomainControllers/) |
+|                 | [Copy-GroupMembership](/_posts/UserAdminModule/Copy-GroupMembership/)         |
+|                 | [Disable-InactiveComputer](/_posts/UserAdminModule/Disable-InactiveComputer/) |
+|                 | [Get-FeaturesInventory](/_posts/UserAdminModule/Get-FeaturesInventory/)       |
+|                 | [Test-ADReplication](/_posts/UserAdminModule/Test-ADReplication/)             |
 |                 | [Unlock-UserAccount](/_posts/myProfile/Unlock-UserAccount/)             |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
@@ -215,28 +215,28 @@ New-Greeting
 
 | miscellaneous | Function                                                                        |
 | :------------ | :------------------------------------------------------------------------------ |
-| Category      | [Get-DownloadPercent](/_posts/myProfile/Get-DownloadPercent/)                   |
-|               | [Get-FriendlySize](/_posts/myProfile/Get-FriendlySize/)                         |
-|               | [Get-LastBootTime](/_posts/myProfile/Get-LastBootTime/)                         |
-|               | [Get-LastInstalledApplication](/_posts/myProfile/Get-LastInstalledApplication/) |
-|               | [Get-MyHistory](/_posts/myProfile/Get-MyHistory/)                               |
-|               | [Get-PatchTue](/_posts/myProfile/Get-PatchTue/)                                 |
-|               | [Get-PayDay](/_posts/myProfile/Get-PayDay/)                                     |
-|               | [Get-ScriptFunctionNames](/_posts/myProfile/Get-ScriptFunctionNames/)           |
-|               | [Get-ServerTimeZone](/_posts/myProfile/Get-ServerTimeZone/)                     |
+| Category      | [Get-DownloadPercent](/_posts/UserAdminModule/Get-DownloadPercent/)                   |
+|               | [Get-FriendlySize](/_posts/UserAdminModule/Get-FriendlySize/)                         |
+|               | [Get-LastBootTime](/_posts/UserAdminModule/Get-LastBootTime/)                         |
+|               | [Get-LastInstalledApplication](/_posts/UserAdminModule/Get-LastInstalledApplication/) |
+|               | [Get-MyHistory](/_posts/UserAdminModule/Get-MyHistory/)                               |
+|               | [Get-PatchTue](/_posts/UserAdminModule/Get-PatchTue/)                                 |
+|               | [Get-PayDay](/_posts/UserAdminModule/Get-PayDay/)                                     |
+|               | [Get-ScriptFunctionNames](/_posts/UserAdminModule/Get-ScriptFunctionNames/)           |
+|               | [Get-ServerTimeZone](/_posts/UserAdminModule/Get-ServerTimeZone/)                     |
 |               | [Get-ServiceDetails](/_posts/myProfile/Get-ServiceDetails/)                     |
-|               | [Get-SpeedTestServers](/_posts/myProfile/Get-SpeedTestServers/)                 |
-|               | [Get-TargetGPResult](/_posts/myProfile/Get-TargetGPResult/)                     |
+|               | [Get-SpeedTestServers](/_posts/UserAdminModule/Get-SpeedTestServers/)                 |
+|               | [Get-TargetGPResult](/_posts/UserAdminModule/Get-TargetGPResult/)                     |
 |               | [Get-TempHumidData](/_posts/myProfile/Get-TempHumidData/)                       |
 |               | [Get-Uptime](/_posts/myProfile/Get-Uptime/)                                     |
-|               | [Get-Weather](/_posts/myProfile/Get-Weather/)                                   |
-|               | [Get-WmiADEvent](/_posts/myProfile/Get-WmiADEvent/)                             |
-|               | [Get-WMIHardwareOSInfo](/_posts/myProfile/Get-WMIHardwareOSInfo/)               |
-|               | [Get-WTFismyIP](/_posts/myProfile/Get-WTFismyIP/)                               |
-|               | [Import-CSVCustom](/_posts/myProfile/Import-CSVCustom/)                         |
-|               | [Invoke-BatchArray](/_posts/myProfile/Invoke-BatchArray/)                       |
-|               | [Install-PSTools](/_posts/myProfile/Install-PSTools/)                           |
-|               | [Test-Computer](/_posts/myProfile/Test-Computer/)                               |
+|               | [Get-Weather](/_posts/UserAdminModule/Get-Weather/)                                   |
+|               | [Get-WmiADEvent](/_posts/UserAdminModule/Get-WmiADEvent/)                             |
+|               | [Get-WMIHardwareOSInfo](/_posts/UserAdminModule/Get-WMIHardwareOSInfo/)               |
+|               | [Get-WTFismyIP](/_posts/UserAdminModule/Get-WTFismyIP/)                               |
+|               | [Import-CSVCustom](/_posts/UserAdminModule/Import-CSVCustom/)                         |
+|               | [Invoke-BatchArray](/_posts/UserAdminModule/Invoke-BatchArray/)                       |
+|               | [Install-PSTools](/_posts/UserAdminModule/Install-PSTools/)                           |
+|               | [Test-Computer](/_posts/UserAdminModule/Test-Computer/)                               |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -248,7 +248,7 @@ New-Greeting
 | :------- | :-------------------------------------------------------- |
 | Category | [New-AdminShell](/_posts/myProfile/New-AdminShell/)       |
 |          | [New-AdminTerminal](/_posts/myProfile/New-AdminTerminal/) |
-|          | [New-Shell](/_posts/myProfile/New-Shell/)                 |
+|          | [New-Shell](/_posts/UserAdminModule/New-Shell/)                 |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -258,14 +258,14 @@ New-Greeting
 
 | BloggingFunctions | Function                                                              |
 | :---------------- | :-------------------------------------------------------------------- |
-| Category          | [New-JekyllBlogServer](/_posts/myProfile/New-JekyllBlogServer/)       |
-|                   | [New-JekyllBlogPost](/_posts/myProfile/New-JekyllBlogPost/)           |
-|                   | [New-JekyllBlogSession](/_posts/myProfile/New-JekyllBlogSession/)     |
-|                   | [Start-JekyllBlogging](/_posts/myProfile/Start-JekyllBlogging/)       |
-|                   | [Remove-JekyllBlogServer](/_posts/myProfile/Remove-JekyllBlogServer/) |
-|                   | [Show-JekyllBlogSite](/_posts/myProfile/Show-JekyllBlogSite/)         |
-|                   | [Get-GistIframe](/_posts/myProfile/Get-GistIframe/)                   |
-|                   | [Get-DockerStatsSnapshot](/_posts/myProfile/Get-DockerStatsSnapshot/) |
+| Category          | [New-JekyllBlogServer](/_posts/UserAdminModule/New-JekyllBlogServer/)       |
+|                   | [New-JekyllBlogPost](/_posts/UserAdminModule/New-JekyllBlogPost/)           |
+|                   | [New-JekyllBlogSession](/_posts/UserAdminModule/New-JekyllBlogSession/)     |
+|                   | [Start-JekyllBlogging](/_posts/UserAdminModule/Start-JekyllBlogging/)       |
+|                   | [Remove-JekyllBlogServer](/_posts/UserAdminModule/Remove-JekyllBlogServer/) |
+|                   | [Show-JekyllBlogSite](/_posts/UserAdminModule/Show-JekyllBlogSite/)         |
+|                   | [Get-GistIframe](/_posts/UserAdminModule/Get-GistIframe/)                   |
+|                   | [Get-DockerStatsSnapshot](/_posts/UserAdminModule/Get-DockerStatsSnapshot/) |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -275,19 +275,19 @@ New-Greeting
 
 | shellConfig | Function                                                        |
 | :---------- | :-------------------------------------------------------------- |
-| Category    | [New-Greeting](/_posts/myProfile/New-Greeting/)                 |
-|             | [New-DynamicParameter](/_posts/myProfile/New-DynamicParameter/) |
-|             | [New-SpeedTest](/_posts/myProfile/New-SpeedTest/)               |
-|             | [Save-PasswordFile](/_posts/myProfile/Save-PasswordFile/)       |
-|             | [Set-ServerTimeZone](/_posts/myProfile/Set-ServerTimeZone/)     |
-|             | [Set-DisplayIsAdmin](/_posts/myProfile/Set-DisplayIsAdmin/)     |
-|             | [Show-IsAdminOrNot](/_posts/myProfile/Show-IsAdminOrNot/)       |
-|             | [Test-IsAdmin](/_posts/myProfile/Test-IsAdmin/)                 |
-|             | [PadOrTruncate](/_posts/myProfile/PadOrTruncate/)               |
-|             | [Set-ConsoleConfig](/_posts/myProfile/Set-ConsoleConfig/)       |
-|             | [Show-Notification](/_posts/myProfile/Show-Notification/)       |
+| Category    | [New-Greeting](/_posts/UserAdminModule/New-Greeting/)                 |
+|             | [New-DynamicParameter](/_posts/UserAdminModule/New-DynamicParameter/) |
+|             | [New-SpeedTest](/_posts/UserAdminModule/New-SpeedTest/)               |
+|             | [Save-PasswordFile](/_posts/UserAdminModule/Save-PasswordFile/)       |
+|             | [Set-ServerTimeZone](/_posts/UserAdminModule/Set-ServerTimeZone/)     |
+|             | [Set-DisplayIsAdmin](/_posts/UserAdminModule/Set-DisplayIsAdmin/)     |
+|             | [Show-IsAdminOrNot](/_posts/UserAdminModule/Show-IsAdminOrNot/)       |
+|             | [Test-IsAdmin](/_posts/UserAdminModule/Test-IsAdmin/)                 |
+|             | [PadOrTruncate](/_posts/UserAdminModule/PadOrTruncate/)               |
+|             | [Set-ConsoleConfig](/_posts/UserAdminModule/Set-ConsoleConfig/)       |
+|             | [Show-Notification](/_posts/UserAdminModule/Show-Notification/)       |
 |             | [Start-TaskList](/_posts/myProfile/Start-TaskList/)             |
-|             | [Stop-FailedService](/_posts/myProfile/Stop-FailedService/)     |
+|             | [Stop-FailedService](/_posts/UserAdminModule/Stop-FailedService/)     |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -297,8 +297,8 @@ New-Greeting
 
 | transmission | Function                                                                              |
 | :----------- | :------------------------------------------------------------------------------------ |
-| Category     | [Test-TransmissionSettings](/_posts/myProfile/Test-TransmissionSettings/)             |
-|              | [Set-TransmissionDefaultSettings](/_posts/myProfile/Set-TransmissionDefaultSettings/) |
+| Category     | [Test-TransmissionSettings](/_posts/UserAdminModule/Test-TransmissionSettings/)             |
+|              | [Set-TransmissionDefaultSettings](/_posts/UserAdminModule/Set-TransmissionDefaultSettings/) |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

@@ -1,0 +1,143 @@
+---
+layout: post
+title: Enable-CiscoSecure.ps1
+date: 2025-09-19
+permalink: /_posts/UserAdminModule/Enable-CiscoSecure/
+categories:
+  - UserAdminModule
+  - Security
+---
+
+- [Description](#description)
+  - [Purpose](#purpose)
+  - [Detailed Description](#detailed-description)
+  - [Usage](#usage)
+  - [Notes](#notes)
+  - [Script](#script)
+  - [Download](#download)
+  - [Report Issues](#report-issues)
+
+---
+
+### Description
+
+#### Purpose
+
+This function enables Cisco Secure on the specified computers.
+
+#### Detailed Description
+
+The Enable-CiscoSecure function uses the Invoke-Command cmdlet to run a script block on each computer specified in the ComputerName parameter. The script block checks for the presence of the sfc.exe file in the "C:\Program Files\Cisco\AMP\" directory. If the file is found, it starts the process with the "-s" argument to enable Cisco Secure.
+
+<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+
+#### Usage
+
+**Example 1**
+
+```powershell
+Enable-CiscoSecure -ComputerName "Computer1", "Computer2", "Computer3"
+```
+
+This command enables Cisco Secure on the computers named Computer1, Computer2, and Computer3.
+
+<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+
+#### Notes
+
+No additional notes.
+
+<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+
+---
+
+#### Script
+
+{% raw %}
+```powershell
+<#
+.SYNOPSIS
+   This function enables Cisco Secure on the specified computers.
+
+.DESCRIPTION
+   The Enable-CiscoSecure function uses the Invoke-Command cmdlet to run a script block on each computer specified in the ComputerName parameter.
+   The script block checks for the presence of the sfc.exe file in the "C:\Program Files\Cisco\AMP\" directory. If the file is found, it starts the process with the "-s" argument to enable Cisco Secure.
+
+.PARAMETER ComputerName
+   Specifies the names of the computers on which to enable Cisco Secure. This parameter accepts an array of computer names.
+
+.EXAMPLE
+   Enable-CiscoSecure -ComputerName "Computer1", "Computer2", "Computer3"
+   This command enables Cisco Secure on the computers named Computer1, Computer2, and Computer3.
+#>
+function Enable-CiscoSecure {
+    [CmdletBinding()]
+    param (
+        [Parameter(Mandatory = $true)]
+        [string[]]$ComputerName  # Array of computer names
+    )
+    $ScriptBlock = {
+        # Get the full path of the sfc.exe file
+        $Path = Get-ChildItem -Path "C:\Program Files\Cisco\AMP\" -Filter "sfc.exe" -Recurse -ErrorAction SilentlyContinue
+        if ($Path) {
+            $Path = $Path.FullName
+            # Start the sfc.exe process with the "-s" argument
+            Start-Process -FilePath $Path -ArgumentList "-s" -Wait
+            # Output the results as a PSCustomObject
+            [PSCustomObject]@{
+                ComputerName = $env:COMPUTERNAME
+                SfcExePath   = $Path
+                Action       = "Enabled"
+            }
+        }
+        else {
+            # Output the results as a PSCustomObject
+            [PSCustomObject]@{
+                ComputerName = $env:COMPUTERNAME
+                SfcExePath   = $null
+                Action       = "sfc.exe not found"
+            }
+        }
+    }
+    # Run the script block on each computer
+    foreach ($Computer in $ComputerName) {
+        Invoke-Command -ComputerName $Computer -ScriptBlock $ScriptBlock
+    }
+}
+```
+{% endraw %}
+
+<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+
+#### Download
+
+Please feel free to copy parts of the script or if you would like to download the entire script, simply click the download button. You can download the complete repository in a zip file by clicking the Download link in the menu bar on the left hand side of the page.
+
+<button class="btn" type="submit" onclick="window.open('/PowerShell/UserAdminModule/Security/Public/Enable-CiscoSecure.ps1')">
+    <i class="fa fa-cloud-download-alt">
+    </i>
+        Download
+</button>
+
+---
+
+#### Report Issues
+
+You can report an issue or contribute to this site on <a href="https://github.com/BanterBoy/scripts-blog/issues">GitHub</a>. Simply click the button below and add any relevant notes. I will attempt to respond to all issues as soon as possible.
+
+<!-- Place this tag where you want the button to render. -->
+
+<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=Enable-CiscoSecure.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
+
+---
+
+<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+
+<a href="/menu/_pages/UserAdminModule.html">
+    <button class="btn">
+        <i class='fas fa-reply'>
+        </i>
+            Back to UserAdminModule
+    </button>
+</a>
+
