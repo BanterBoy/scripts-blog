@@ -1,6 +1,7 @@
 ---
 layout: page
 title: tools
+description: "Collection of larger PowerShell tools for automation, reporting, and remediation."
 permalink: /menu/_pages/tools.html
 ---
 

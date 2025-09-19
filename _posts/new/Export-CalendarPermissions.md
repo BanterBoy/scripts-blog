@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Export-CalendarPermissions.ps1
+description: "Exports calendar permissions from Exchange or Microsoft 365 mailboxes to CSV for auditing."
 ---
 
 - [Description](#description)

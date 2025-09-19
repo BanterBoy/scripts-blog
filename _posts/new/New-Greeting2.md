@@ -1,6 +1,7 @@
 ---
 layout: post
 title: New-Greeting2.ps1
+description: "Outputs ASCII-art greetings for each weekday using a custom class."
 ---
 
 - [Description](#description)

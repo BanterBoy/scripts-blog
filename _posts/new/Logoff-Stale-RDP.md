@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Blank-Page.ps1
+description: "Logs off disconnected or stale Remote Desktop sessions across target servers."
 ---
 
 - [Description](#description)

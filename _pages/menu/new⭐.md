@@ -1,6 +1,7 @@
 ---
 layout: page
 title: new ⭐
+description: "Spotlight on newly added scripts and functions with quick navigation links."
 permalink: /menu/_pages/new.html
 ---
 

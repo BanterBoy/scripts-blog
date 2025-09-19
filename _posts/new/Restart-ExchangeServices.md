@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Restart-ExchangeServices.ps1
+description: "Restarts Exchange-related Windows services on remote servers with optional credentials."
 ---
 
 - [Description](#description)

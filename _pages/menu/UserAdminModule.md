@@ -1,6 +1,7 @@
 ---
 layout: page
 title: UserAdminModule
+description: "Documentation index for the UserAdminModule PowerShell toolkit and its commands."
 permalink: /menu/_pages/UserAdminModule.html
 ---
 

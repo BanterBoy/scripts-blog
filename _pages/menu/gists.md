@@ -1,6 +1,7 @@
 ---
 layout: page
 title: gists
+description: "Embedded GitHub Gists highlighting smaller PowerShell utilities and experiments."
 permalink: /menu/_pages/gists.html
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-GroupMembers.ps1
+description: "Collects detailed membership information for Active Directory groups."
 ---
 
 - [Description](#description)
