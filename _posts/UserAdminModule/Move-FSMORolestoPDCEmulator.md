@@ -1,0 +1,170 @@
+---
+layout: post
+title: Move-FSMORolestoPDCEmulator.ps1
+date: 2025-09-19
+permalink: /_posts/UserAdminModule/Move-FSMORolestoPDCEmulator/
+categories:
+  - UserAdminModule
+  - ADFunctions
+---
+
+- [Description](#description)
+  - [Purpose](#purpose)
+  - [Detailed Description](#detailed-description)
+  - [Usage](#usage)
+  - [Notes](#notes)
+  - [Script](#script)
+  - [Download](#download)
+  - [Report Issues](#report-issues)
+
+---
+
+### Description
+
+#### Purpose
+
+A set of functions to provide the ability to manage Active Directory FSMO Roles.
+
+#### Detailed Description
+
+A set of functions to provide the ability to manage Active Directory FSMO Roles.
+
+Functions included; Move-FSMORolestoPDCEmulator
+
+Wrapper for the Move-ADDirectoryServerOperationMasterRole command. Operation Master Roles PDCEmulator or 0 RIDMaster or 1 InfrastructureMaster or 2 SchemaMaster or 3 DomainNamingMaster or 4
+
+<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+
+#### Usage
+
+**Example 1**
+
+```powershell
+PS C:\> Move-FSMORolestoPDCEmulator
+```
+
+Move Operation Master Role Do you want to move role 'InfrastructureMaster' to server 'LSERV-DC01.example.com' ? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): Y
+
+<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+
+#### Notes
+
+Author:     Luke Leigh Website:    https://blog.lukeleigh.com/ LinkedIn:   https://www.linkedin.com/in/lukeleigh/ GitHub:     https://github.com/BanterBoy/ GitHubGist: https://gist.github.com/BanterBoy
+
+<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+
+---
+
+#### Script
+
+{% raw %}
+```powershell
+function Move-FSMORolestoPDCEmulator {
+    <#
+    .SYNOPSIS
+    A set of functions to provide the ability to manage Active Directory FSMO Roles.
+
+    .DESCRIPTION
+    A set of functions to provide the ability to manage Active Directory FSMO Roles.
+
+    Functions included;
+    Move-FSMORolestoPDCEmulator
+
+    Wrapper for the Move-ADDirectoryServerOperationMasterRole command. 
+    Operation Master Roles
+    PDCEmulator or 0
+    RIDMaster or 1
+    InfrastructureMaster or 2
+    SchemaMaster or 3
+    DomainNamingMaster or 4
+    
+    .EXAMPLE
+    PS C:\> Move-FSMORolestoPDCEmulator
+
+    Move Operation Master Role
+    Do you want to move role 'InfrastructureMaster' to server 'LSERV-DC01.example.com' ?
+    [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): Y
+
+    .INPUTS
+
+    .OUTPUTS
+
+    .NOTES
+    Author:     Luke Leigh
+    Website:    https://blog.lukeleigh.com/
+    LinkedIn:   https://www.linkedin.com/in/lukeleigh/
+    GitHub:     https://github.com/BanterBoy/
+    GitHubGist: https://gist.github.com/BanterBoy
+
+    .LINK
+    https://github.com/BanterBoy/MSPTech
+
+#>
+
+    [CmdletBinding(DefaultParameterSetName = 'Default',
+        HelpURI = 'https://github.com/BanterBoy/MSPTech/wiki')]
+    param (
+	
+    )
+
+    BEGIN {
+        $ForestInfo = Get-ADForest | Select-Object DomainNamingMaster, SchemaMaster
+        $DomainInfo = Get-ADDomain | Select-Object InfrastructureMaster, PDCEmulator, RIDMaster
+        $PrimaryDC = Get-ADDomainController -Discover -DomainName $Env:USERDNSDOMAIN -Service 'PrimaryDC'
+    }
+    PROCESS {
+        if ($DomainInfo.RIDMaster -notmatch $PrimaryDC) {
+            Move-ADDirectoryServerOperationMasterRole -Identity $PrimaryDC -OperationMasterRole 1
+        }
+        if ($DomainInfo.InfrastructureMaster -notmatch $PrimaryDC) {
+            Move-ADDirectoryServerOperationMasterRole -Identity $PrimaryDC -OperationMasterRole 2
+        }
+        if ($ForestInfo.SchemaMaster -notmatch $PrimaryDC) {
+            Move-ADDirectoryServerOperationMasterRole -Identity $PrimaryDC -OperationMasterRole 3
+        }
+        if ($ForestInfo.DomainNamingMaster -notmatch $PrimaryDC) {
+            Move-ADDirectoryServerOperationMasterRole -Identity $PrimaryDC -OperationMasterRole 4
+        }
+    }
+    END {
+	
+    }
+
+}
+```
+{% endraw %}
+
+<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+
+#### Download
+
+Please feel free to copy parts of the script or if you would like to download the entire script, simply click the download button. You can download the complete repository in a zip file by clicking the Download link in the menu bar on the left hand side of the page.
+
+<button class="btn" type="submit" onclick="window.open('/PowerShell/UserAdminModule/ADFunctions/Public/Move-FSMORolestoPDCEmulator.ps1')">
+    <i class="fa fa-cloud-download-alt">
+    </i>
+        Download
+</button>
+
+---
+
+#### Report Issues
+
+You can report an issue or contribute to this site on <a href="https://github.com/BanterBoy/scripts-blog/issues">GitHub</a>. Simply click the button below and add any relevant notes. I will attempt to respond to all issues as soon as possible.
+
+<!-- Place this tag where you want the button to render. -->
+
+<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=Move-FSMORolestoPDCEmulator.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
+
+---
+
+<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+
+<a href="/menu/_pages/UserAdminModule.html">
+    <button class="btn">
+        <i class='fas fa-reply'>
+        </i>
+            Back to UserAdminModule
+    </button>
+</a>
+

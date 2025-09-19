@@ -44,40 +44,40 @@ permalink: /menu/_pages/functions.html
 | activeDirectory | [Get-ADUserLastLogon.ps1](/_posts/functions/Get-ADUserLastLogon/)                                         |
 | activeDirectory | [Get-DomainControllers.ps1](/_posts/functions/Get-DomainControllers/)                                     |
 | activeDirectory | [Get-ElevatedUsers.ps1](/_posts/functions/Get-ElevatedUsers/)                                             |
-| activeDirectory | [Get-FSMORoleOwner.ps1](/_posts/functions/Get-FSMORoleOwner/)                                             |
+| activeDirectory | [Get-FSMORoleOwner.ps1](/_posts/UserAdminModule/Get-FSMORoleOwner/)                                             |
 | activeDirectory | [Get-LocalGroupMembership.ps1](/_posts/functions/Get-LocalGroupMembership/)                               |
 | activeDirectory | [Get-LockedOutUser.ps1](/_posts/functions/Get-LockedOutUser/)                                             |
 | activeDirectory | [Get-LoggedOnUser.ps1](/_posts/functions/Get-LoggedOnUser/)                                               |
-| activeDirectory | [Get-LogonHistory.ps1](/_posts/functions/Get-LogonHistory/)                                               |
+| activeDirectory | [Get-LogonHistory.ps1](/_posts/UserAdminModule/Get-LogonHistory/)                                               |
 | activeDirectory | [Get-NestedGroupMember.ps1](/_posts/functions/Get-NestedGroupMember/)                                     |
 | activeDirectory | [Get-O365LastLogonTime.ps1](/_posts/functions/Get-O365LastLogonTime/)                                     |
 | activeDirectory | [Get-PrimaryGroupsReport.ps1](/_posts/functions/Get-PrimaryGroupsReport/)                                 |
-| activeDirectory | [Get-RDPUserReport.ps1](/_posts/functions/Get-RDPUserReport/)                                             |
+| activeDirectory | [Get-RDPUserReport.ps1](/_posts/UserAdminModule/Get-RDPUserReport/)                                             |
 | activeDirectory | [Get-RemoteServiceAccount.ps1](/_posts/functions/Get-RemoteServiceAccount/)                               |
 | activeDirectory | [Get-ServiceDetails.ps1](/_posts/functions/Get-ServiceDetails/)                                           |
 | activeDirectory | [Get-ServiceLogonAccount.ps1](/_posts/functions/Get-ServiceLogonAccount/)                                 |
 | activeDirectory | [Get-ServicePrivilege.ps1](/_posts/functions/Get-ServicePrivilege/)                                       |
 | activeDirectory | [Get-UnlinkedGPO.ps1](/_posts/functions/Get-UnlinkedGPO/)                                                 |
-| activeDirectory | [Get-UserLogon.ps1](/_posts/functions/Get-UserLogon/)                                                     |
+| activeDirectory | [Get-UserLogon.ps1](/_posts/UserAdminModule/Get-UserLogon/)                                                     |
 | activeDirectory | [get-usermembership.ps1](/_posts/functions/get-usermembership/)                                           |
 | activeDirectory | [Get-UserReport.ps1](/_posts/functions/Get-UserReport/)                                                   |
 | activeDirectory | [Get-UsersGroupMemberShips.ps1](/_posts/functions/Get-UsersGroupMemberShips/)                             |
 | activeDirectory | [Get-UserSupportedEncryptionTypes.ps1](/_posts/functions/Get-UserSupportedEncryptionTypes/)               |
 | activeDirectory | [GetMailboxPermission.ps1](/_posts/functions/GetMailboxPermission/)                                       |
 | activeDirectory | [GetUserLoggedOnto.ps1](/_posts/functions/GetUserLoggedOnto/)                                             |
-| activeDirectory | [Move-FSMORolestoPDCEmulator.ps1](/_posts/functions/Move-FSMORolestoPDCEmulator/)                         |
+| activeDirectory | [Move-FSMORolestoPDCEmulator.ps1](/_posts/UserAdminModule/Move-FSMORolestoPDCEmulator/)                         |
 | activeDirectory | [Provision_Home_Folder.ps1](/_posts/functions/Provision_Home_Folder/)                                     |
 | activeDirectory | [Remove-AdminSDHolder.ps1](/_posts/functions/Remove-AdminSDHolder/)                                       |
 | activeDirectory | [Restore-ADDeletedUsers.ps1](/_posts/functions/Restore-ADDeletedUsers/)                                   |
 | activeDirectory | [Search-GPOsForString.ps1](/_posts/functions/Search-GPOsForString/)                                       |
 | activeDirectory | [Search-GPOsForStringOrig.ps1](/_posts/functions/Search-GPOsForStringOrig/)                               |
 | activeDirectory | [Search-GPO.ps1](/_posts/functions/Search-GPO/)                                                           |
-| activeDirectory | [Set-FSMORoleOwner.ps1](/_posts/functions/Set-FSMORoleOwner/)                                             |
-| activeDirectory | [Sync-DomainController.ps1](/_posts/functions/Sync-DomainController/)                                     |
+| activeDirectory | [Set-FSMORoleOwner.ps1](/_posts/UserAdminModule/Set-FSMORoleOwner/)                                             |
+| activeDirectory | [Sync-DomainController.ps1](/_posts/UserAdminModule/Sync-DomainController/)                                     |
 | activeDirectory | [Sync-Office365ToADDS.ps1](/_posts/functions/Sync-Office365ToADDS/)                                       |
 | activeDirectory | [Test-ADUserCredentials.ps1](/_posts/functions/Test-ADUserCredentials/)                                   |
 | activeDirectory | [Test-ADUserHighPrivilegeGroupMembership.ps1](/_posts/functions/Test-ADUserHighPrivilegeGroupMembership/) |
-| activeDirectory | [Test-UserExists.ps1](/_posts/functions/Test-UserExists/)                                                 |
+| activeDirectory | [Test-UserExists.ps1](/_posts/UserAdminModule/Test-UserExists/)                                                 |
 | activeDirectory | [Unlock-UserAccount.ps1](/_posts/functions/Unlock-UserAccount/)                                           |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
@@ -121,7 +121,7 @@ permalink: /menu/_pages/functions.html
 | dns      | [Resolve-DNSList.ps1](/_posts/functions/Resolve-DNSList/)         |
 | dns      | [Resolve-DomainDNS.ps1](/_posts/functions/Resolve-DomainDNS/)     |
 | dns      | [Test-DNSPropagation.ps1](/_posts/functions/Test-DNSPropagation/) |
-| dns      | [Test-DNSRecord.ps1](/_posts/functions/Test-DNSRecord/)           |
+| dns      | [Test-DNSRecord.ps1](/_posts/UserAdminModule/Test-DNSRecord/)           |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -140,7 +140,7 @@ permalink: /menu/_pages/functions.html
 | exchange | [Export-CalendarPermissions.ps1](/_posts/functions/Export-CalendarPermissions/)           |
 | exchange | [Get-ADExchangeServer.ps1](/_posts/functions/Get-ADExchangeServer/)                       |
 | exchange | [Get-ExchangeServer.ps1](/_posts/functions/Get-ExchangeServer/)                           |
-| exchange | [Get-ExchangeVersion.ps1](/_posts/functions/Get-ExchangeVersion/)                         |
+| exchange | [Get-ExchangeVersion.ps1](/_posts/UserAdminModule/Get-ExchangeVersion/)                         |
 | exchange | [Get-MailboxAccessPerms.ps1](/_posts/functions/Get-MailboxAccessPerms/)                   |
 | exchange | [Get-MailboxPermissions.ps1](/_posts/functions/Get-MailboxPermissions/)                   |
 | exchange | [Get-MailboxPermissionsExport.ps1](/_posts/functions/Get-MailboxPermissionsExport/)       |
@@ -171,9 +171,9 @@ permalink: /menu/_pages/functions.html
 | :------------- | :---------------------------------------------------------------- |
 | fileManagement | [Format-FileSize.ps1](/_posts/functions/Format-FileSize/)         |
 | fileManagement | [Get-FileOwner.ps1](/_posts/functions/Get-FileOwner/)             |
-| fileManagement | [Get-FriendlySize.ps1](/_posts/functions/Get-FriendlySize/)       |
+| fileManagement | [Get-FriendlySize.ps1](/_posts/UserAdminModule/Get-FriendlySize/)       |
 | fileManagement | [Get-IniContent.ps1](/_posts/functions/Get-IniContent/)           |
-| fileManagement | [Get-LatestFiles.ps1](/_posts/functions/Get-LatestFiles/)         |
+| fileManagement | [Get-LatestFiles.ps1](/_posts/UserAdminModule/Get-LatestFiles/)         |
 | fileManagement | [Get-MediaDetails.ps1](/_posts/functions/Get-MediaDetails/)       |
 | fileManagement | [Get-NeglectedFiles.ps1](/_posts/functions/Get-NeglectedFiles/)   |
 | fileManagement | [Get-PathPermissions.ps1](/_posts/functions/Get-PathPermissions/) |
@@ -205,9 +205,9 @@ permalink: /menu/_pages/functions.html
 
 | Category | Function                                                  |
 | :------- | :-------------------------------------------------------- |
-| ip       | [Get-CidrIPRange.ps1](/_posts/functions/Get-CidrIPRange/) |
+| ip       | [Get-CidrIPRange.ps1](/_posts/UserAdminModule/Get-CidrIPRange/) |
 | ip       | [Get-IPConfig.ps1](/_posts/functions/Get-IPConfig/)       |
-| ip       | [Get-ipInfo.ps1](/_posts/functions/Get-ipInfo/)           |
+| ip       | [Get-ipInfo.ps1](/_posts/UserAdminModule/Get-ipInfo/)           |
 | ip       | [Get-PingMonitor.ps1](/_posts/functions/Get-PingMonitor/) |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
@@ -234,7 +234,7 @@ permalink: /menu/_pages/functions.html
 | Category | Function                                                                          |
 | :------- | :-------------------------------------------------------------------------------- |
 | time     | [Get-2amOfThirdMondayInMonth.ps1](/_posts/functions/Get-2amOfThirdMondayInMonth/) |
-| time     | [Get-LastxOfMonth.ps1](/_posts/functions/Get-LastxOfMonth/)                       |
+| time     | [Get-LastxOfMonth.ps1](/_posts/UserAdminModule/Get-LastxOfMonth/)                       |
 | time     | [Get-NTPStatusFromHost.ps1](/_posts/functions/Get-NTPStatusFromHost/)             |
 | time     | [Get-Ntptime.ps1](/_posts/functions/Get-Ntptime/)                                 |
 | time     | [Get-PatchTuesday.ps1](/_posts/functions/Get-PatchTuesday/)                       |
@@ -252,7 +252,7 @@ permalink: /menu/_pages/functions.html
 | Category       | Function                                                            |
 | :------------- | :------------------------------------------------------------------ |
 | windowsUpdates | [Get-InstalledUpdates.ps1](/_posts/functions/Get-InstalledUpdates/) |
-| windowsUpdates | [Get-PendingUpdate.ps1](/_posts/functions/Get-PendingUpdate/)       |
+| windowsUpdates | [Get-PendingUpdate.ps1](/_posts/UserAdminModule/Get-PendingUpdate/)       |
 | windowsUpdates | [Get-PendingUpdates.ps1](/_posts/functions/Get-PendingUpdates/)     |
 | windowsUpdates | [Start-WindowsUpdate.ps1](/_posts/functions/Start-WindowsUpdate/)   |
 
@@ -267,10 +267,10 @@ permalink: /menu/_pages/functions.html
 | miscellaneous | [ConvertFrom-ErrorRecord.ps1](/_posts/functions/ConvertFrom-ErrorRecord/)           |
 | miscellaneous | [ConvertObject-ToHashTable.ps1](/_posts/functions/ConvertObject-ToHashTable/)       |
 | miscellaneous | [Copy-History.ps1](/_posts/functions/Copy-History/)                                 |
-| miscellaneous | [Disable-PrintSpooler.ps1](/_posts/functions/Disable-PrintSpooler/)                 |
+| miscellaneous | [Disable-PrintSpooler.ps1](/_posts/UserAdminModule/Disable-PrintSpooler/)                 |
 | miscellaneous | [Enable-RemoteDesktop.ps1](/_posts/functions/Enable-RemoteDesktop/)                 |
 | miscellaneous | [Get-FTPFile-empty.ps1](/_posts/functions/Get-FTPFile-empty/)                       |
-| miscellaneous | [Get-HostIOResults.ps1](/_posts/functions/Get-HostIOResults/)                       |
+| miscellaneous | [Get-HostIOResults.ps1](/_posts/UserAdminModule/Get-HostIOResults/)                       |
 | miscellaneous | [Get-Icon.ps1](/_posts/functions/Get-Icon/)                                         |
 | miscellaneous | [Get-LastCommands.ps1](/_posts/functions/Get-LastCommands/)                         |
 | miscellaneous | [Get-PendingReboot.ps1](/_posts/functions/Get-PendingReboot/)                       |
@@ -286,7 +286,7 @@ permalink: /menu/_pages/functions.html
 | miscellaneous | [Get-Uptime.ps1](/_posts/functions/Get-Uptime/)                                     |
 | miscellaneous | [Get-UptimeV1.ps1](/_posts/functions/Get-UptimeV1/)                                 |
 | miscellaneous | [Get-UserAccountControlReport.ps1](/_posts/functions/Get-UserAccountControlReport/) |
-| miscellaneous | [Get-Weather.ps1](/_posts/functions/Get-Weather/)                                   |
+| miscellaneous | [Get-Weather.ps1](/_posts/UserAdminModule/Get-Weather/)                                   |
 | miscellaneous | [GetWindowsFeatures.ps1](/_posts/functions/GetWindowsFeatures/)                     |
 | miscellaneous | [Invoke-CDRomDrive.ps1](/_posts/functions/Invoke-CDRomDrive/)                       |
 | miscellaneous | [Invoke-FTPUpload.ps1](/_posts/functions/Invoke-FTPUpload/)                         |
@@ -302,7 +302,7 @@ permalink: /menu/_pages/functions.html
 | miscellaneous | [New-PassPhrase.ps1](/_posts/functions/New-PassPhrase/)                             |
 | miscellaneous | [New-Password.ps1](/_posts/functions/New-Password/)                                 |
 | miscellaneous | [New-QotD.ps1](/_posts/functions/New-QotD/)                                         |
-| miscellaneous | [New-ScheduledScript.ps1](/_posts/functions/New-ScheduledScript/)                   |
+| miscellaneous | [New-ScheduledScript.ps1](/_posts/UserAdminModule/New-ScheduledScript/)                   |
 | miscellaneous | [New-ScheduledTask.ps1](/_posts/functions/New-ScheduledTask/)                       |
 | miscellaneous | [Open-CDTray.ps1](/_posts/functions/Open-CDTray/)                                   |
 | miscellaneous | [Out-Excel.ps1](/_posts/functions/Out-Excel/)                                       |
@@ -318,26 +318,26 @@ permalink: /menu/_pages/functions.html
 | miscellaneous | [Search-Google.ps1](/_posts/functions/Search-Google/)                               |
 | miscellaneous | [Search-KerbDelegatedAccounts.ps1](/_posts/functions/Search-KerbDelegatedAccounts/) |
 | miscellaneous | [Search-RoadWorks.ps1](/_posts/functions/Search-RoadWorks/)                         |
-| miscellaneous | [Search-Scripts.ps1](/_posts/functions/Search-Scripts/)                             |
-| miscellaneous | [Select-FolderLocation.ps1](/_posts/functions/Select-FolderLocation/)               |
+| miscellaneous | [Search-Scripts.ps1](/_posts/UserAdminModule/Search-Scripts/)                             |
+| miscellaneous | [Select-FolderLocation.ps1](/_posts/UserAdminModule/Select-FolderLocation/)               |
 | miscellaneous | [Send-OutlookMail.ps1](/_posts/functions/Send-OutlookMail/)                         |
-| miscellaneous | [Show-IsAdminOrNot.ps1](/_posts/functions/Show-IsAdminOrNot/)                       |
+| miscellaneous | [Show-IsAdminOrNot.ps1](/_posts/UserAdminModule/Show-IsAdminOrNot/)                       |
 | miscellaneous | [SiteNameConsistencyReport.ps1](/_posts/functions/SiteNameConsistencyReport/)       |
 | miscellaneous | [Start-DownloadFileToTemp.ps1](/_posts/functions/Start-DownloadFileToTemp/)         |
 | miscellaneous | [Start-PSCountdown.ps1](/_posts/functions/Start-PSCountdown/)                       |
 | miscellaneous | [Start-Stream.ps1](/_posts/functions/Start-Stream/)                                 |
 | miscellaneous | [Test-ComputerName.ps1](/_posts/functions/Test-ComputerName/)                       |
 | miscellaneous | [Test-EmailAddress.ps1](/_posts/functions/Test-EmailAddress/)                       |
-| miscellaneous | [Test-IsAdmin.ps1](/_posts/functions/Test-IsAdmin/)                                 |
-| miscellaneous | [Test-NetworkPort.ps1](/_posts/functions/Test-NetworkPort/)                         |
+| miscellaneous | [Test-IsAdmin.ps1](/_posts/UserAdminModule/Test-IsAdmin/)                                 |
+| miscellaneous | [Test-NetworkPort.ps1](/_posts/UserAdminModule/Test-NetworkPort/)                         |
 | miscellaneous | [Test-OnlineFast.ps1](/_posts/functions/Test-OnlineFast/)                           |
-| miscellaneous | [Test-ProfileExists.ps1](/_posts/functions/Test-ProfileExists/)                     |
+| miscellaneous | [Test-ProfileExists.ps1](/_posts/UserAdminModule/Test-ProfileExists/)                     |
 | miscellaneous | [Test-ServerExists.ps1](/_posts/functions/Test-ServerExists/)                       |
-| miscellaneous | [Test-SMB1Enabled.ps1](/_posts/functions/Test-SMB1Enabled/)                         |
-| miscellaneous | [Test-TLSConnection.ps1](/_posts/functions/Test-TLSConnection/)                     |
+| miscellaneous | [Test-SMB1Enabled.ps1](/_posts/UserAdminModule/Test-SMB1Enabled/)                         |
+| miscellaneous | [Test-TLSConnection.ps1](/_posts/UserAdminModule/Test-TLSConnection/)                     |
 | miscellaneous | [Test-WebsiteStatus.ps1](/_posts/functions/Test-WebsiteStatus/)                     |
 | miscellaneous | [Test-WebSiteUp.ps1](/_posts/functions/Test-WebSiteUp/)                             |
-| miscellaneous | [Update-PowerShell.ps1](/_posts/functions/Update-PowerShell/)                       |
+| miscellaneous | [Update-PowerShell.ps1](/_posts/UserAdminModule/Update-PowerShell/)                       |
 | miscellaneous | [Search-GPO.ps1](/_posts/functions/Search-GPO/)                                     |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

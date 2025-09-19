@@ -74,7 +74,7 @@ permalink: /menu/_pages/scripts.html
 | activeDirectory | [Get-dhcpscope.ps1](/_posts/scripts/Get-dhcpscope/)                                                           |
 | activeDirectory | [Get-DHCPServers.ps1](/_posts/scripts/Get-DHCPServers/)                                                       |
 | activeDirectory | [Get-GPOLogonScriptReport.ps1](/_posts/scripts/Get-GPOLogonScriptReport/)                                     |
-| activeDirectory | [Get-GPProcessingTime.ps1](/_posts/scripts/Get-GPProcessingTime/)                                             |
+| activeDirectory | [Get-GPProcessingTime.ps1](/_posts/UserAdminModule/Get-GPProcessingTime/)                                             |
 | activeDirectory | [Get-LastLogonToCSV.ps1](/_posts/scripts/Get-LastLogonToCSV/)                                                 |
 | activeDirectory | [Get-NoSettingsGPO.ps1](/_posts/scripts/Get-NoSettingsGPO/)                                                   |
 | activeDirectory | [Get-RODCPasswordRPs.ps1](/_posts/scripts/Get-RODCPasswordRPs/)                                               |
