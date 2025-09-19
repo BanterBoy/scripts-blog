@@ -1,6 +1,7 @@
 ---
 layout: page
 title: about
+description: "Background on Luke Leigh and the goals of the PowerShell script catalogue."
 permalink: /menu/_pages/about.html
 ---
 

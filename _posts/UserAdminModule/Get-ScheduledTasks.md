@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-ScheduledTasks.ps1
+description: "Enumerates scheduled tasks on remote servers with filtering support."
 date: 2025-09-19
 permalink: /_posts/UserAdminModule/Get-ScheduledTasks/
 categories:

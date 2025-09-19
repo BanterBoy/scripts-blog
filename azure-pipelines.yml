@@ -13,11 +13,6 @@ steps:
 - task: UseRubyVersion@0
   displayName: 'Select Ruby version'
   inputs:
-    versionSpec: '3.2'
-    addToPath: true
-
-- script: |
-    gem install bundler:2.4.22
     bundle config set --local path 'vendor/bundle'
     bundle install --jobs 4 --retry 3
   displayName: 'Install Ruby gems'

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Blank-Page.ps1
+description: "Uses System.Speech to speak supplied text aloud from PowerShell."
 ---
 
 - [Description](#description)

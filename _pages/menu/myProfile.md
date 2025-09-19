@@ -1,6 +1,7 @@
 ---
 layout: page
 title: myProfile
+description: "Luke's personal PowerShell profile modules and helper functions organized by area."
 permalink: /menu/_pages/myProfile.html
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: resources
+description: "Curated external resources for learning and extending PowerShell automation."
 permalink: /menu/_pages/resources.html
 ---
 

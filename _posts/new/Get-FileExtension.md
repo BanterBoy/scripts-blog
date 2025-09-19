@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-FileExtension.ps1
+description: "Retrieves file extension metadata from an online JSON catalog to classify file types."
 ---
 
 - [Description](#description)

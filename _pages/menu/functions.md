@@ -1,6 +1,7 @@
 ---
 layout: page
 title: functions
+description: "Browse reusable PowerShell functions grouped by administration topic."
 permalink: /menu/_pages/functions.html
 ---
 
