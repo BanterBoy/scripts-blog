@@ -7,7 +7,7 @@ layout: default
 {% assign custom_classes = page.classes %}
 {% capture article_classes %}page single{% if custom_classes %} {{ custom_classes }}{% endif %}{% endcapture %}
 
-<link rel="stylesheet" href="/assets/css/single.css">
+
 <article class="{{ article_classes | strip }}">
   {% if overlay_image %}
   <header class="page-hero" style="background-image: url('{{ overlay_image }}');">
@@ -16,7 +16,6 @@ layout: default
       <h1>{{ page.title }}</h1>
       {% if page.header.caption %}
         {% assign caption_html = page.header.caption | markdownify %}
-        {% assign caption_text = caption_html | strip_html %}
         <p class="page-hero__caption">{{ caption_text }}</p>
       {% endif %}
     </div>

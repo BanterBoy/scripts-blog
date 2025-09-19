@@ -13,11 +13,6 @@ steps:
 - task: UseRubyVersion@0
   displayName: 'Select Ruby version'
   inputs:
-    bundle config set --local path 'vendor/bundle'
-    bundle install --jobs 4 --retry 3
-  displayName: 'Install Ruby gems'
-
-- script: |
     bundle exec jekyll build --future
     ls -la _site
   displayName: 'Build Jekyll site'
