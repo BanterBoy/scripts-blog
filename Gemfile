@@ -1,15 +1,14 @@
 source "https://rubygems.org"
 
-gem 'rouge'
-gem 'webrick'
-gem 'liquid'
-gem 'jekyll-include-cache'
-gem 'jekyll-paginate'
-gem 'github-pages', group: :jekyll_plugins
+gem "github-pages", group: :jekyll_plugins
+gem "jekyll-include-cache"
+gem "webrick", "~> 1.8"
+
 group :jekyll_plugins do
-    gem 'jekyll-algolia'
-    gem 'jekyll-feed'
-    gem 'jekyll-gist'
-    gem 'jekyll-json-feed'
-    gem 'jekyll-sitemap'
+  gem "jekyll-algolia"
+  gem "jekyll-feed"
+  gem "jekyll-gist"
+  gem "jekyll-json-feed"
+  gem "jekyll-paginate"
+  gem "jekyll-sitemap"
 end
