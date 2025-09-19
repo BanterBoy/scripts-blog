@@ -1,0 +1,90 @@
+IPAddress,ComputerName,Type,OS
+10.16.3.1,Default Gateway,Network,
+10.16.3.2,Veeam proxy1,Veeam,
+10.16.3.3,RDGBULLWALL,Virtual,Windows Server 2019 Standard
+10.16.3.4,RDGWSUS2,Virtual,Microsoft Windows Server 2019
+10.16.3.6,RDGCONFIGMGR,Virtual,Microsoft Windows Server 2019
+10.16.3.7,NINJAWINDOWS11,Virtual,Microsoft Windows 11
+10.16.3.8,RDG2019SvrUdateTest,Virtual,Microsoft Windows Server 2019
+10.16.3.9,RDGLONALDTIF001,Virtual,Microsoft Windows Server 2022
+10.16.3.10,Umbrella_VM1,Appliance,Ubuntu Linux
+10.16.3.11,Umbrella_VM2,Appliance,Ubuntu Linux
+10.16.3.12,RDGLONALDPAP004,Virtual,Microsoft Windows Server 2022
+10.16.3.13,Cisco SNA,Appliance,Debian GNU/Linux 10
+10.16.3.14,RDGDC04,Virtual,Microsoft Windows Server 2019
+10.16.3.15,RDGLONALDIDC002,Virtual,Microsoft Windows Server 2022
+10.16.3.17,QATEST3a,Virtual,Microsoft Windows 10
+10.16.3.18,QATEST4a,Virtual,Microsoft Windows 10
+10.16.3.20,RDGDC02,Virtual,Microsoft Windows Server 2012
+10.16.3.22,RDGLONALDPAP003,Virtual,Microsoft Windows Server 2019
+10.16.3.27,CiscoISE,Appliance,
+10.16.3.28,RDGSFTP,Virtual,Microsoft Windows Server 2012
+10.16.3.29,RDGLONALDIAP002,Virtual,Microsoft Windows Server 2022
+10.16.3.30,RDGLONALDIAP003,Appliance,SUSE Linux Enterprise 15
+10.16.3.32,CiscoISE,Appliance,
+10.16.3.33,RDGLONALDIAP001,Appliance,Red Hat Enterprise Linux 8
+10.16.3.34,RDG-NETSCALER,Appliance,FreeBSD 
+10.16.3.35,RDG-NETSCALER,Appliance,FreeBSD 
+10.16.3.36,RDG-NETSCALER,Appliance,FreeBSD 
+10.16.3.37,RDG-NETSCALER,Appliance,FreeBSD 
+10.16.3.38,RDGCTX-ENVOY,Virtual,Microsoft Windows Server 2019
+10.16.3.39,RDG-NETSCALER,Appliance,FreeBSD 
+10.16.3.44,newbob,Appliance,CentOS 7
+10.16.3.47,RDGSKYLINE,Appliance,VMware Photon OS
+10.16.3.48,RDG-ADFS,Virtual,Microsoft Windows Server 2012
+10.16.3.49,RDGNETAPPUM,Appliance,Other 4.x or later Linux
+10.16.3.51,RDGENDPOINT,Appliance,Ubuntu Linux
+10.16.3.52,VARONIS-SOLR,Virtual,Microsoft Windows Server 2019
+10.16.3.53,VARONIS-IDU,Virtual,Microsoft Windows Server 2019
+10.16.3.54,VARONIS-COLLECTOR,Virtual,Microsoft Windows Server 2019
+10.16.3.59,SYMANTEC-ENC,Virtual,Microsoft Windows Server 2012
+10.16.3.60,VARONIS-SQL,Virtual,Microsoft Windows Server 2019
+10.16.3.61,RDGINFRATOOLS,Virtual,Microsoft Windows Server 2019
+10.16.3.62,RDG-NETSCALER,Appliance,FreeBSD 
+10.16.3.63,RDGLONALDIIT001,Virtual,Microsoft Windows Server 2022
+10.16.3.64,VARONIS-DAT,Virtual,Microsoft Windows Server 2019
+10.16.3.65,RDGLONALDPAP001,Virtual,Microsoft Windows Server 2019
+10.16.3.66,RDGLONALDPAP002,Virtual,Microsoft Windows Server 2022
+10.16.3.67,QATEST7A,Virtual,Microsoft Windows 10
+10.16.3.69,RDGLONALDIIF001,Appliance,Other 3.x Linux
+10.16.3.70,RDGUPDATETEST,Virtual,Microsoft Windows Server 2012
+10.16.3.76,RDGVEEAMO365,Virtual,Microsoft Windows Server 2012
+10.16.3.79,RDG-NETAPP-VSC,Appliance,Other 4.x or later Linux
+10.16.3.80,NETSCALER-LB,Appliance,FreeBSD 
+10.16.3.81,NETSCALER-LB,Appliance,FreeBSD 
+10.16.3.82,NETSCALER-LB,Appliance,FreeBSD 
+10.16.3.83,RDGLONALDIHH001,VMHost,VMware ESXi, 7.0.3, 23794027
+10.16.3.84,EXCHANGE01,Virtual,Microsoft Windows Server 2019
+10.16.3.85,EXCHANGE02,Virtual,Microsoft Windows Server 2019
+10.16.3.89,APPCHECK,Appliance,Other
+10.16.3.90,RDGLONALDTIT001,Virtual,Microsoft Windows Server 2019
+10.16.3.91,RDGLONALDIDC001,Physical,Microsoft Windows Server 2022 Datacenter
+10.16.3.92,RDGLONALDIBK001,Physical,Microsoft Windows Server 2022 Datacenter
+10.16.3.93,RDGWAC,Virtual,Microsoft Windows Server 2019
+10.16.3.94,RDG-ADAXES,Virtual,Microsoft Windows Server 2019
+10.16.3.95,AZURECON19,Virtual,Microsoft Windows Server 2019
+10.16.3.96,VHA-5-5-0,Appliance,VMware Photon OS
+10.16.3.100,RDGVCSA,Appliance,VMware Photon OS
+10.16.3.105,VARONIS-TEST-DSPSQL,Virtual,Microsoft Windows Server 2019
+10.16.3.106,VARONIS-TEST-SOLRDW,Virtual,Microsoft Windows Server 2019
+10.16.3.107,VARONIS-TEST-DW,Virtual,Microsoft Windows Server 2019
+10.16.3.108,RDG19SQL,Virtual,Microsoft Windows Server 2019
+10.16.3.120,RDGLONALDIHH002,VMHost,"VMware ESXi, 7.0.3, 23794027"
+10.16.3.121,RDGLONALDIHH003,VMHost,"VMware ESXi, 7.0.3, 23794027"
+10.16.3.122,RDGCTX19DEL1,Virtual,Microsoft Windows Server 2019
+10.16.3.123,RDGCTX19DEL2,Virtual,Microsoft Windows Server 2019
+10.16.3.124,RDGCTX19B1-01,Virtual,Microsoft Windows Server 2019
+10.16.3.125,RDGCTX19B2-01,Virtual,Microsoft Windows Server 2019
+10.20.9.9,RDGLONPUDIIF002,Virtual,Ubuntu Linux
+10.20.9.69,RDGLONPUDIIF004,Virtual,Other 3.x Linux
+10.20.9.10,RDGLONPUDIHH001,VMHost,VMware ESXi, 7.0.3, 23794027
+10.20.9.11,RDGLONPUDIHH002,VMHost,VMware ESXi, 7.0.3, 23794027
+10.20.9.33,RDGLONPUDIAP001,Virtual,Red Hat Enterprise Linux 8
+10.20.9.23,RDGLONPUDIAP002,Virtual,Microsoft Windows 10
+10.20.9.40,RDGLONPUDIAP003,Virtual,Microsoft Windows Server 2022
+10.20.9.20,RDGLONPUDIDC001,Virtual,Microsoft Windows Server 2019
+10.20.9.8,RDGLONPUDIIF001,Appliance,Ubuntu Linux
+10.20.9.21,RDGLONPUDIIF003,Virtual,Microsoft Windows Server 2019
+10.20.9.22,RDGLONPUDPPS001,Virtual,Microsoft Windows Server 2019
+172.16.10.107,ATCDC1.atoc.local,Virtual,Microsoft Windows Server 2012
+172.16.10.114,ATCDC2.atoc.local,Virtual,Microsoft Windows Server 2012

@@ -1,0 +1,148 @@
+<#
+.SYNOPSIS
+Imports PowerShell modules from a specified category.
+
+.DESCRIPTION
+The Import-PersonalModules function automates the process of importing PowerShell modules from a specified category.
+It uses a predefined list of module paths organized by category and ensures that only valid categories are processed.
+The function supports verbose output for detailed logging and adheres to best practices by using ShouldProcess for confirmation before importing modules.
+
+.PARAMETER Category
+Specifies the category of modules to import. Valid categories include:
+- ADFunctions
+- Azure
+- EnvironmentManagement
+- Exchange
+- FileOperations
+- Logging
+- MediaManagement
+- Network
+- PKIdecommission
+- RemoteConnections
+- Replication
+- Security
+- Shell
+- ShutdownCommands
+ - Teams
+ - Testing
+ - Database
+ - Weather
+ - Utilities
+ - Virtualization
+
+This parameter is mandatory and defaults to the Category parameter set.
+
+.EXAMPLE
+Import-PersonalModules -Category "Logging"
+This example imports all modules in the Logging category.
+
+.EXAMPLE
+Import-PersonalModules -Category "Azure" -Verbose
+This example imports all modules in the Azure category with verbose output enabled.
+
+.EXAMPLE
+Import-PersonalModules -Category "Security" -WhatIf
+This example simulates the import process for the Security category without making any changes.
+
+.NOTES
+Author: Luke Leigh
+Date: April 3, 2025
+Requires: PowerShell 5.0 or later
+
+REQUIREMENTS
+- **PowerShell Version**: This function requires PowerShell 5.0 or later.
+- **Module Paths**: The modules must exist in the specified paths relative to the script's location ($PSScriptRoot).
+
+BEST PRACTICES
+- **Validate Module Paths**: Ensure that the module paths are correct and accessible before running the function.
+- **Use Verbose Output**: Enable verbose output (-Verbose) to monitor the import process and troubleshoot issues.
+- **Test with WhatIf**: Use the -WhatIf parameter to simulate the import process without making changes.
+
+#>
+
+function Import-PersonalModules {
+    [CmdletBinding(SupportsShouldProcess = $true, DefaultParameterSetName = "Category")]
+    param (
+        [Parameter(Mandatory = $true, ParameterSetName = "Category")]
+        [ValidateSet([PersonalModulesValidator])]
+        [string]$Category
+    )
+
+    process {
+        # Ensure the category exists in the hash table
+        $modules = [PersonalModules]::new()
+
+        try {
+            $module = $modules.Path($Category)
+            
+            Write-Verbose "Category '$Category' found. Preparing to import modules."
+
+            if ($PSCmdlet.ShouldProcess($module, "Importing module")) {
+                try {
+                    if (Test-Path $module) {
+                        Write-Verbose "Importing module: $module"
+                        Import-Module -Name $module -Force -DisableNameChecking
+                        Write-Verbose "Successfully imported module: $module"
+                    }
+                    else {
+                        Write-Warning "Module not found: $module"
+                    }
+                }
+                catch {
+                    Write-Error "Failed to import module $module. Error: $_"
+                }
+            }
+        }
+        catch {
+            Write-Error "Failed to create PersonalModules object. Error: $_"
+            return
+        }
+    }
+
+    end {
+        Write-Verbose "Import-PersonalModules function completed."
+    }
+}
+
+class PersonalModules {
+    $modules = @(
+        "ADFunctions",
+        "Azure",
+        "EnvironmentManagement",
+        "Exchange",
+        "FileOperations",
+        "Logging",
+        "MediaManagement",
+        "Network",
+        "PKIdecommission",
+        "RemoteConnections",
+        "Replication",
+        "Security",
+        "Shell",
+        "ShutdownCommands",
+        "Teams",
+        "Utilities",
+        "Database",
+        "Weather",
+        "Virtualization"
+    )
+
+    [String[]] Keys() {
+        return $this.modules
+    }
+
+    [String] Path($module) {
+        if ($this.modules -contains $module) {
+            return "$PSScriptRoot\$module\$module.psm1"
+        }
+        else {
+            throw "Module '$module' not found in the list."
+        }
+    }
+}
+
+class PersonalModulesValidator : System.Management.Automation.IValidateSetValuesGenerator {
+    [String[]] GetValidValues() {
+        return [PersonalModules]::new().modules
+    }
+}

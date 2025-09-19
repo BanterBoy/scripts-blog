@@ -1,0 +1,62 @@
+<Configuration>
+  <ViewDefinitions>
+    <View>
+      <Name>CustomScheduledTaskView</Name>
+      <ViewSelectedBy>
+        <TypeName>Custom.ScheduledTask</TypeName>
+      </ViewSelectedBy>
+      <TableControl>
+        <TableHeaders>
+          <TableColumnHeader>
+            <Label>Task Name</Label>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Task Path</Label>
+            <Width>30</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>State</Label>
+            <Width>10</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Last Run Time</Label>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Next Run Time</Label>
+            <Width>20</Width>
+          </TableColumnHeader>
+          <TableColumnHeader>
+            <Label>Last Task Result</Label>
+            <Width>50</Width>
+          </TableColumnHeader>
+        </TableHeaders>
+        <TableRowEntries>
+          <TableRowEntry>
+            <TableColumnItems>
+              <TableColumnItem>
+                <PropertyName>TaskName</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>TaskPath</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>State</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>LastRunTime</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>NextRunTime</PropertyName>
+              </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>LastTaskResult</PropertyName>
+              </TableColumnItem>
+            </TableColumnItems>
+          </TableRowEntry>
+        </TableRowEntries>
+      </TableControl>
+    </View>
+  </ViewDefinitions>
+</Configuration>

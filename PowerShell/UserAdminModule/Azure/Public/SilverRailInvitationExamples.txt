@@ -1,0 +1,78 @@
+# Example: Send SilverRail Application Invitations with New-EntraGuestInvitationEntra
+
+# Example 1: Invite a SilverRail user with full profile and group assignment
+New-EntraGuestInvitationEntra `
+    -InvitedUserEmailAddress "silverrail.user1@example.com" `
+    -InviteRedirectUrl "https://www.adminbyrequest.com/saml" `
+    -InvitedUserDisplayName "SilverRail User One" `
+    -CustomMessageBody "Welcome to SilverRail! Please follow the onboarding steps." `
+    -GroupId "SR-Group-01","SR-Group-02" `
+    -GivenName "User" `
+    -Surname "One" `
+    -Department "Operations" `
+    -JobTitle "Rail Operator" `
+    -CompanyName "SilverRail" `
+    -MobilePhone "+44 7700 123456" `
+    -StreetAddress "1 Rail Street" `
+    -City "London" `
+    -State "Greater London" `
+    -PostalCode "E1 1AA" `
+    -Country "United Kingdom" `
+    -OtherMails "user1.alt@silverrail.com","user1.billing@silverrail.com" `
+    -PassThru
+
+# Example 2: Invite a SilverRail user with basic details and single group
+New-EntraGuestInvitationEntra `
+    -InvitedUserEmailAddress "silverrail.user2@example.com" `
+    -InviteRedirectUrl "https://www.adminbyrequest.com/saml" `
+    -InvitedUserDisplayName "SilverRail User Two" `
+    -CustomMessageBody "Your SilverRail account is ready." `
+    -GroupId "SR-Group-01" `
+    -GivenName "User" `
+    -Surname "Two" `
+    -Department "Support" `
+    -JobTitle "Support Agent" `
+    -CompanyName "SilverRail" `
+    -MobilePhone "+44 7700 654321" `
+    -StreetAddress "2 Rail Street" `
+    -City "Manchester" `
+    -State "Greater Manchester" `
+    -PostalCode "M1 2AB" `
+    -Country "United Kingdom" `
+    -OtherMails "user2.alt@silverrail.com" `
+    -PassThru
+
+# Example 3: Bulk invite SilverRail users from pipeline
+"silverrail.user3@example.com","silverrail.user4@example.com" | New-EntraGuestInvitationEntra `
+    -InviteRedirectUrl "https://www.adminbyrequest.com/saml" `
+    -InvitedUserDisplayName "SilverRail Bulk User" `
+    -Department "Engineering" `
+    -JobTitle "Engineer" `
+    -CompanyName "SilverRail" `
+    -GroupId "SR-Group-02" `
+    -PassThru
+
+# Example 4: Invite a SilverRail user with alternate address and no group
+New-EntraGuestInvitationEntra `
+    -InvitedUserEmailAddress "silverrail.user5@example.com" `
+    -InviteRedirectUrl "https://www.adminbyrequest.com/saml" `
+    -InvitedUserDisplayName "SilverRail User Five" `
+    -CustomMessageBody "Welcome!" `
+    -GivenName "User" `
+    -Surname "Five" `
+    -Department "Finance" `
+    -JobTitle "Accountant" `
+    -CompanyName "SilverRail" `
+    -MobilePhone "+44 7700 987654" `
+    -StreetAddress "5 Rail Street" `
+    -City "Birmingham" `
+    -State "West Midlands" `
+    -PostalCode "B1 1AA" `
+    -Country "United Kingdom" `
+    -OtherMails "user5.alt@silverrail.com" `
+    -PassThru
+
+# Example 5: Invite with minimal required parameters
+New-EntraGuestInvitationEntra `
+    -InvitedUserEmailAddress "silverrail.user6@example.com" `
+    -InviteRedirectUrl "https://www.adminbyrequest.com/saml"

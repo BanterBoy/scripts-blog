@@ -1,0 +1,22 @@
+{
+  "Categories": [
+    "ADFunctions",
+    "Azure",
+    "EnvironmentManagement",
+    "Exchange",
+    "FileOperations",
+    "Logging",
+    "MediaManagement",
+    "Network",
+    "PKIdecommission",
+    "RemoteConnections",
+    "Replication",
+    "Security",
+    "Shell",
+    "Teams",
+    "Utilities",
+    "Database",
+    "Weather"
+  ],
+  "FolderPath": "C:\\GitRepos\\RDGScripts\\UserAdminModule\\"
+}
