@@ -1,6 +1,7 @@
 ---
 layout: post
 title: New-Greeting1.ps1
+description: "Builds day-specific greeting messages using PowerShell hash tables."
 ---
 
 - [Description](#description)

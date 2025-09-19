@@ -1,6 +1,7 @@
 ---
 layout: page
 title: snippets
+description: "Quick PowerShell snippets for frequent administrative tasks."
 permalink: /menu/_pages/snippets.html
 ---
 

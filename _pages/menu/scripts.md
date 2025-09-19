@@ -1,6 +1,7 @@
 ---
 layout: page
 title: scripts
+description: "Directory of complete PowerShell scripts covering Active Directory, Exchange, and more."
 permalink: /menu/_pages/scripts.html
 ---
 

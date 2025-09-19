@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Restart-ProjectComputer.ps1
+description: "Forcibly restarts project computers and waits for them to come back online."
 ---
 
 - [Description](#description)

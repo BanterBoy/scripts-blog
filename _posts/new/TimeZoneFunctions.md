@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Blank-Page.ps1
+description: "Provides functions to get or set server time zones across multiple computers."
 ---
 
 - [Description](#description)

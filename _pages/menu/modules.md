@@ -1,6 +1,7 @@
 ---
 layout: page
 title: modules
+description: "Summary of published PowerShell modules with links to the PowerShell Gallery."
 permalink: /menu/_pages/modules.html
 ---
 
