@@ -1,128 +1,186 @@
-# RDGScripts Agents Guidance
+# scripts-blog Agents Guidance
 
 ## Purpose of This Document
 
-This document provides guidance for automation agents, AI code generators and maintainers working with the RDGScripts repository. It sets out responsibilities, best practices and workflows so that automated contributions are consistent with the repository’s standards and the wider PowerShell ecosystem. With this guidance, agents can generate robust scripts, well‑structured modules and maintain clear documentation without the human maintainers needing to continually intervene.
+This document provides guidance for automation agents, AI assistants, and maintainers working on the scripts-blog repository. It
+explains responsibilities, best practices, and workflows so that automated contributions stay consistent with the Jekyll site’s
+structure and publishing standards. By following these instructions, agents can confidently add content, enhance the theme, and
+maintain supporting automation without unexpected regressions.
 
 ## Repository Overview
 
-***Focus:*** RDGScripts is a grab‑bag of PowerShell scripts and modules for automating Windows infrastructure: Active Directory, Certificate Services, DHCP, firewall configuration and lab automation. Use the top‑level folders below to decide where new work belongs:
+***Focus:*** scripts-blog powers a Jekyll site published at `https://scripts.lukeleigh.com`. Use the directories below to orient
+new work and ensure updates land in the appropriate place:
 
-- **Functions/** – Shared helper functions that multiple scenarios and modules depend on. Add reusable logic here first and dot‑source or import it from scenario folders so we avoid copy/paste drift.
-- **Scripts/** – Stand‑alone runbooks or administrative utilities that do not yet justify a full module. Keep them focused on a single task and pull in helpers from Functions/ instead of re‑implementing them.
-- **UserAdminModule/** – User administration modules that already follow the `Public/`, `Private/`, `Classes/` and `Resources/` layout. Match that structure whenever you add new module content in this area so discoverability and exports stay consistent.
-- **rdgCAInstallation/** – Certificate Services deployment assets (scripts, configuration files and documentation). Place CA installation or maintenance automation here unless it clearly belongs in a reusable helper under Functions/.
+- **_posts/** – Time-stamped blog entries named `YYYY-MM-DD-title.md`. Posts should include a clear excerpt, helpful tags, and
+  Liquid-friendly links to related content.
+- **_pages/** – Evergreen pages grouped by purpose. The `menu/` folder drives site navigation, while `content/` hosts longer
+  reference material or landing pages. Keep permalinks aligned with existing conventions so links remain stable.
+- **_layouts/** – Page templates that set overall structure. Update these when introducing new page types or altering site-wide
+  markup.
+- **_includes/** – Reusable Liquid components (headers, footers, callouts). Modify or add includes when you need to adjust shared
+  fragments across multiple layouts.
+- **_sass/** – Modular Sass partials compiled into the site’s CSS. Maintain the existing naming conventions and import order when
+  adjusting styling.
+- **assets/** – Images, JavaScript, CSS, and other static files referenced by posts and layouts. Optimize media assets and store
+  them in sensible subdirectories (e.g., `assets/img/`, `assets/js/`).
+- **index.html, 404.html, robots.txt, feeds** – Root-level entry points and metadata that shape the public site experience.
+  Update these thoughtfully when adjusting redirects, SEO metadata, or the home page layout.
+- **_config.yml and _config.algolia.yml** – Core configuration for the Jekyll build and optional search integrations. Maintain
+  consistent values across environments and document any new keys you introduce.
+- **Gemfile, Gemfile.lock, docker-compose.yml, build/** – Tooling that supports local development, dependency management, and
+  automation. Update these files when you change build requirements or add supporting scripts.
 
-Scenario‑driven folders—such as **AdaxesFunctions/**, **AutomatedLab/**, **DHCPmigration/** or **FirewallUpgrade/**—contain tooling tailored to those environments. When enhancing those scenarios, check Functions/ for existing helpers you can reuse, and only add new shared utilities there if no equivalent exists.
-
-***Modules:*** Some subfolders contain complete PowerShell modules that can be installed from the PowerShell Gallery (for example adcstools‑main). Other folders simply hold stand‑alone scripts.
-
-***Documentation:*** The root README is intentionally minimal; most scenario‑specific documentation lives alongside the scripts in their respective folders . Example usage is often included as comments within the script itself.
+Historical automation resources live under **PowerShell/**. Treat them as supporting materials for the blog rather than the
+primary deliverable, and update them only when they directly support published documentation.
 
 ## Roles for Agents
 
 ### Agents supporting this repository may be asked to:
 
-- Generate new scripts or modules to solve infrastructure problems or automate repetitive tasks.
-- Refactor existing scripts for clarity, performance, error handling or security.
-- Convert collections of related scripts into reusable modules and publish them to the PowerShell Gallery.
-- Write Pester tests and integrate them into CI pipelines.
-- Maintain documentation and examples so that humans and other agents understand how to use each script or module.
-- Propose automation ( Actions, Azure DevOps) to run analyzers, tests and publishing steps.
+- Draft or revise Markdown posts and pages, ensuring correct front matter and internal linking.
+- Update layouts, includes, Sass partials, or assets to refine the site design or add new capabilities.
+- Maintain configuration files, build scripts, and GitHub workflow definitions so continuous deployment remains reliable.
+- Document workflows, contributor guidance, and cross-linking between the repository and the live site.
+- Monitor automation (e.g., GitHub Actions, Azure Pipelines) and adjust them when new dependencies or checks are introduced.
 
 ## Guiding Principles
 
-### PowerShell Best Practices
+### Content Authoring Best Practices
 
-- ***Approved verbs and naming:*** Functions should start with approved verbs (Get‑, Set‑, Invoke‑, Start‑, Stop‑) and use PascalCase for the noun portion.
-- ***Advanced functions:*** Use [CmdletBinding()] to create advanced functions. This brings in common parameters like -Verbose, -Debug and makes your functions behave like built‑in cmdlets.
-- ***Parameter validation:*** Validate user input with [ValidateSet], [ValidateNotNullOrEmpty] and [ValidateRange]. Use parameter attributes to mark mandatory parameters and provide help messages.
-- ***Error handling:*** Wrap risky operations in try { … } catch { … } blocks and use Write‑Error to emit terminating errors. Avoid Write‑Host; prefer Write‑Verbose and Write‑Information to surface diagnostic information.
-- ***Module structure:*** When creating a module, create Public, Private, Classes, Configuration and Resources subfolders, and generate a .psm1 file that dot‑sources all functions and exports only the public ones. Place public functions in Public and helper functions in Private.
-- ***Reusable code:*** Centralise reusable logic in the Functions/ directory and dot‑source it from scripts when needed.
-- ***Documentation:*** Provide comment‑based help for every function (.SYNOPSIS, .DESCRIPTION, .PARAMETER, .EXAMPLE, .NOTES) similar to the documentation block at the top of New‑PSM1Module.ps1.
+- ***Front matter essentials:*** Every Jekyll-processed file must include YAML front matter specifying `layout`, `title`, and an
+  appropriate `permalink`. Add `description`, `tags`, `categories`, and other metadata to support SEO and site organisation.
+- ***Consistent naming:*** Name posts `YYYY-MM-DD-title.md` and prefer lowercase, hyphenated slugs. Page filenames should mirror
+  their permalink for clarity.
+- ***Heading hierarchy:*** Begin each Markdown file with a single H1 (`# Title`). Structure subsequent content with H2/H3 levels
+  and avoid skipping heading levels so generated tables of contents stay accurate.
+- ***Link management:*** Use Liquid filters such as `{{ '/menu/_pages/about/' | relative_url }}` for internal links and `{{ site.url }}` for absolute references when necessary. Verify that external links include `https://` and that internal anchors resolve.
+- ***Media usage:*** Optimise images before committing them, store them under `assets/`, and provide descriptive `alt` text. Use
+  Markdown figure syntax or includes for galleries to keep layout consistent.
+- ***Excerpts and summaries:*** Include a concise summary paragraph near the top of each post, and insert `<!--more-->` when you
+  need to control home page teasers.
 
-### Script and Module Organisation
+### Layout, Includes, and Styling
 
-- ***Scenario organisation:*** Place scenario‑specific scripts in the appropriate subfolder. Do not create random folders at the root; follow the existing structure.
-- ***Cross‑script communication:*** Import shared functions by dot‑sourcing them from the Functions/ directory.
-- ***Example usage:*** Include one or more usage examples in the comments of each script. This helps humans and agents understand how to invoke the script.
-- ***Modules vs. scripts:*** When a collection of scripts share data structures or logic, consider consolidating them into a module. Use New‑PSM1Module or similar scaffolding to create the folder structure and .psm1 file.
+- ***Shared components first:*** When introducing new UI elements, prefer creating or updating `_includes/` files so multiple
+  layouts can reuse them. Keep Liquid logic readable and comment complex conditions.
+- ***Sass organisation:*** Extend existing partials in `_sass/` rather than adding large blocks of inline CSS. Follow the
+  established import order in `main.scss` (or equivalent) to avoid specificity issues.
+- ***Accessibility:*** Ensure semantic HTML, sufficient colour contrast, and keyboard-accessible navigation. Test changes with
+  screen-reader friendly markup when possible.
+
+### Configuration and Automation
+
+- ***Configuration parity:*** When modifying `_config.yml` or related files, document the intent in commit messages and relevant
+  READMEs. Mirror critical settings across local, staging, and production builds.
+- ***Dependency management:*** Update the `Gemfile` and `Gemfile.lock` together. Note Ruby version requirements and any new gems
+  in the README or site documentation.
+- ***Build tooling:*** Keep supporting scripts in `build/` or the repository root idempotent and well-commented. If you add a new
+  script for common tasks (e.g., link checking), ensure it runs on macOS, Linux, and GitHub-hosted runners.
 
 ### Testing and Quality Assurance
 
-- ***PSScriptAnalyzer:*** Use PSScriptAnalyzer with the latest Microsoft recommended rules to catch style and performance issues. Configure a PSScriptAnalyzer ruleset in .psd1 or .settings.json to enforce naming conventions and avoid obsolete cmdlets.
-- ***Pester tests:*** Although the repository currently lacks a formal test framework, agents should generate Pester tests for new functions and gradually backfill tests for critical existing scripts. Use Describe, Context and It blocks to structure tests.
-- ***Cross‑version testing:*** Test scripts in both Windows PowerShell (5.1) and PowerShell Core (7+). Note any platform‑specific behaviour.
-Administrative context: Some scripts require administrative privileges or remote access. Document these prerequisites and, if possible, add checks that warn or fail gracefully when run without the required rights.
+- ***Jekyll builds:*** Run `bundle exec jekyll build` before committing to verify the site compiles cleanly. For interactive
+  testing, `bundle exec jekyll serve --livereload` helps spot rendering issues.
+- ***Link and HTML validation:*** Where possible, run `bundle exec htmlproofer ./_site` or an equivalent checker to catch broken
+  links, missing alt text, and HTML errors. Resolve issues before opening a pull request.
+- ***Search and feed checks:*** Confirm that Algolia configurations, RSS/Atom feeds, and sitemap entries still render correctly
+  after structural changes.
+- ***Asset verification:*** Ensure referenced images, downloads, and other static files exist and load in local previews.
 
 ### Documentation Standards
 
-- Keep the top‑level README.md focused on overall purpose; place detailed scenario documentation in subfolder README files.
-- Use markdown headings, lists and code blocks. Avoid embedding long sentences in tables (tables should only hold short phrases or numeric data).
-- Provide links to external resources where appropriate (e.g., Microsoft docs for technologies referenced).
-- Maintain `.github/AGENTS.md` so that AI assistants can easily find and follow these guidelines; the instructions in this file apply to the entire repository.
+- Keep the top-level `README.md` focused on the site’s purpose, development setup, and deployment workflow. Add or update
+  directory-specific README files when introducing new conventions or tooling.
+- Reference `.github/AGENTS.md` from contributor documentation so humans and agents alike can locate the latest automation
+  guidance.
+- Document significant layout changes, new includes, or build requirements within the repository to help future contributors
+  understand the rationale.
 
 ## GitHub Pages and Jekyll Site Integration
 
-This repository also powers the public Jekyll site hosted on GitHub Pages at `https://scripts.lukeleigh.com`. When generating or updating content, treat the PowerShell assets and the static-site artefacts as a cohesive product so that readers receive consistent guidance regardless of whether they consume the material via the website or directly from the repository.
+The scripts-blog repository backs the live Jekyll site hosted on GitHub Pages. Treat code, content, and automation as a single
+product: visitors should receive consistent information whether they read the published site or browse the repository.
 
-### How the Jekyll site is organised
+### How the Jekyll Site Is Organised
 
-- `_pages/` holds evergreen content. The `menu/` subfolder feeds the primary navigation, while the `content/` subfolder is used for long-form reference material or landing pages. Keep permalink structures (`permalink:` front matter values) aligned with the existing `/menu/_pages/...` and `/content/_pages/...` conventions so links remain stable.
-- `_posts/` contains dated blog posts that surface new scripts, release notes or scenario updates. Posts are rendered automatically on the home page and within any archive views.
-- `_layouts/`, `_includes/`, `_sass/` and `assets/` provide the presentation layer. Any structural change to navigation, theming or shared components should be reflected here so that all pages inherit the update.
-- `index.html`, `404.html`, `robots.txt`, feeds and other root-level files round out the published site and should be reviewed when editing cross-site metadata.
+- `_pages/` houses evergreen content surfaced through navigation menus and landing pages. Keep `menu/` entries synchronised with
+  the live navigation structure.
+- `_posts/` powers news, release notes, and change logs. Posts automatically populate archive pages, feeds, and the home page.
+- `_layouts/`, `_includes/`, `_sass/`, and `assets/` define the presentation layer. Apply structural changes here so every page
+  inherits the update.
+- Root-level files such as `index.html`, `404.html`, `robots.txt`, `CNAME`, and `keybase.txt` control site-wide routing, search
+  visibility, and domain configuration. Review them whenever you modify navigation or metadata.
 
-### Position of this guidance within the site
+### Position of This Guidance Within the Site
 
-- `.github/AGENTS.md` is intentionally excluded from the Jekyll build but remains the canonical reference for automation and authoring practices. When writing `_pages` or `_posts`, link back to this document using a stable GitHub URL such as `{{ site.github.repository_url }}/blob/main/.github/AGENTS.md` so contributors can locate the latest rules from the rendered site.
-- Cross-reference this guidance from navigation or overview pages where appropriate. For example, if you add a "Contributing" or "About the automation" section under `_pages/menu/`, provide a short synopsis and then point readers to the full instructions here.
-- Keep any summaries of these guidelines in sync across site content, README files and issue templates so that human maintainers and agents receive consistent direction regardless of entry point.
+- `.github/AGENTS.md` is intentionally excluded from the build but remains the canonical reference for automation and authoring
+  practices. When documenting contribution processes, link to this file using a stable GitHub URL like `{{ site.github.repository_url }}/blob/main/.github/AGENTS.md`.
+- Summaries of these guidelines should stay in sync across README files, issue templates, and any “Contributing” pages. Update
+  those summaries when this document changes.
 
-### Formatting expectations for Jekyll content
+### Formatting Expectations for Jekyll Content
 
-- Include YAML front matter on any file that should be processed by Jekyll. At minimum specify `layout`, `title` and `permalink`; add `description`, `tags` or other metadata when the page requires richer SEO or categorisation.
-- Match the heading hierarchy already in use across the site: start each page with a single H1 (`# Title`) and structure subsequent sections with H2/H3 levels. Avoid skipping levels so that automatically generated tables of contents stay accurate.
-- Use relative URLs that respect the GitHub Pages build pipeline. Prefer the Liquid helper `{{ '/menu/_pages/about.html' | relative_url }}` or equivalent when linking between internal pages, and ensure asset references use `{{ '/assets/...' | relative_url }}` so they resolve correctly in both local previews and the hosted site.
-- Validate that any cross-links to scripts, posts or documentation resolve when the site is built locally with `bundle exec jekyll build` or served via `bundle exec jekyll serve`. Fix broken anchors or outdated permalinks before opening a pull request.
-- When referencing PowerShell content from Markdown, provide context or excerpts rather than embedding entire scripts; link to the source file in the repository using GitHub-friendly URLs so that updates propagate automatically.
+- Include front matter on all Markdown or HTML files processed by Jekyll, specifying layout and metadata.
+- Use Liquid helpers for internal links and asset references (`{{ '/assets/img/example.png' | relative_url }}`) so URLs work both
+  locally and on GitHub Pages.
+- Prefer Markdown tables only for short phrases or data points; use lists or paragraphs for narrative content.
+- Keep code snippets fenced and specify the language for syntax highlighting (e.g., <code>```powershell</code> or
+  <code>```yaml</code>) when relevant to the article.
+- Validate cross-links by building the site locally before submitting changes.
 
-### Deployment and automation considerations
+### Deployment and Automation Considerations
 
-- GitHub Actions or similar CI tooling may run the Jekyll build, execute link checkers and publish documentation updates. Coordinate any changes to workflows (`.github/workflows/`) with site modifications to ensure the automated deployment continues to succeed.
-- Whenever you introduce new pages, posts or navigation elements, verify that the automated build handles the additional files (for example, that includes are whitelisted and that no excluded directories need to be added to `_config.yml`).
-- Document any additional deployment prerequisites—such as new gems or build steps—in both the workflow configuration and any contributor-facing README sections so the local and hosted experiences stay aligned.
+- Review GitHub Actions workflows (and Azure Pipelines where applicable) when altering dependencies, build commands, or
+  deployment triggers. Update secrets or environment variables through the repository settings rather than hard-coding values.
+- When adding new pages, posts, or includes, ensure `_config.yml` allows Jekyll to process them and that any necessary plugins are
+  declared in the `Gemfile`.
+- Document additional prerequisites—such as new Ruby gems, npm packages, or external services—in both workflow configuration and
+  contributor-facing docs so local previews match the hosted site.
 
 ### Automation and Continuous Integration
 
-- ***Analyzers and tests first:*** Prioritise CI workflows that install dependencies and run PSScriptAnalyzer, linting and Pester suites on every pull request and before any packaging step. Treat passing analysis and test stages as a hard gate for subsequent jobs.
-- ***Build scripts:*** Provide build.ps1 (or equivalent) helpers that replicate the CI analyser/test pipeline locally so contributors can verify changes before opening a PR. Keep the scripts idempotent and configurable.
-- ***Ownership and licensing checks:*** Before attempting any gallery publishing workflow, confirm the repository owns the code, that all bundled assets permit redistribution and that maintainers have approved the licensing posture. Document that confirmation in the PR or release notes when applicable.
-- ***Vendored modules stay internal:*** Some folders contain vendored modules for internal automation—for example `rdgCAInstallation/PKIdecommission/adcstools-main`. Do **not** package or republish these modules without explicit maintainer approval and a completed licence review.
+- ***Automated checks first:*** Prioritise CI workflows that install dependencies, run `bundle exec jekyll build`, and perform
+  linting or link checking before deployment steps.
+- ***Reusable scripts:*** Provide helper scripts (Ruby, Bash, or PowerShell) that mirror CI steps for local use. Keep them
+  idempotent and cross-platform when feasible.
+- ***Content governance:*** Add safeguards against publishing drafts inadvertently (e.g., ensuring future-dated posts are
+  intentional and front matter flags like `published: false` remain honoured).
+- ***Data privacy:*** Confirm that any new automation handling analytics or API keys respects privacy policies and stores secrets
+  securely.
 
-### Agent Workflow
+## Agent Workflow
 
-When asked to work on the repository, an agent should follow this workflow:
+When tasked with updates, agents should follow this workflow:
 
-- ***Understand the request:*** Determine whether the task involves new functionality, refactoring or documentation. Clarify missing details if needed.
-- ***Locate relevant scripts:*** Use the folder structure and search to find existing scripts or modules related to the task. Reuse code from the Functions/ directory where possible.
-- ***Plan structure:*** If creating a module, mirror the existing .psm1 plus Public/Private layout used in UserAdminModule so that public commands live under Public/ and helper functions under Private/, with the .psm1 importing each folder.
-- ***Manifests:*** Create a .psd1 manifest only when the module is being packaged for distribution outside this repository; internal modules can rely solely on the .psm1 scaffold.
-- ***Write code:*** Use approved verbs, parameter validation and error handling. Prefer clarity over cleverness, but don’t shy away from a tasteful comment or witty variable name.
-- ***Test:*** Write or update Pester tests. Run manual tests in both Windows PowerShell and PowerShell Core.
-- ***Document:*** Update comment‑based help and add or update README files. Add usage examples.
-- ***Automate:*** Update or create CI workflow files if necessary. Ensure tests and analyzers run automatically on pull requests.
-- ***Commit and PR:*** Follow conventional commit messages (feat:, fix:, docs:). Open a pull request describing what you’ve done and referencing any issues.
+1. ***Understand the request:*** Clarify whether the work involves content creation, visual design, automation, or configuration
+   changes.
+2. ***Locate relevant files:*** Use the repository structure to find existing posts, pages, includes, or assets to extend. Reuse
+   components instead of duplicating markup.
+3. ***Plan the change:*** Outline front matter, layout adjustments, and asset needs before editing. Coordinate navigation updates
+   with `_config.yml` or menu includes.
+4. ***Preview locally:*** Run `bundle exec jekyll serve` (or `docker-compose up` if preferred) to confirm the site renders as
+   expected. Address build warnings early.
+5. ***Validate automation:*** Update or create CI workflows, link checkers, or build scripts if your changes introduce new
+   dependencies or processes.
+6. ***Document decisions:*** Update README files, inline comments, or documentation pages to explain new structures or tooling.
+7. ***Commit and review:*** Use clear commit messages, open a pull request summarising the change, and note any manual steps
+   reviewers must follow.
 
-### Future Directions
+## Future Directions
 
-- ***Expand testing:*** Gradually introduce Pester tests across critical scripts and modules. This will enable safer refactoring and automation.
-- ***Modularisation:*** Identify clusters of related scripts and consolidate them into well‑defined modules. Modules improve discoverability and enable publishing to the PowerShell Gallery.
-- ***Continuous integration:*** Add robust CI workflows that run tests, perform static analysis and publish modules automatically when tags are pushed.
-- ***Documentation automation:*** Use PlatyPS to generate external help files from comment‑based help, and host them alongside the modules.
-- ***Community contributions:*** Encourage issues and pull requests from the community. Provide templates for bug reports and feature requests.
+- ***Enhanced testing:*** Introduce automated HTML/link validation and visual regression testing to catch issues before they
+  reach production.
+- ***Component library:*** Gradually standardise UI components using `_includes/` and Sass utilities to simplify future design
+  updates.
+- ***Content governance:*** Develop editorial checklists or issue templates to track upcoming posts, review cycles, and approvals.
+- ***Performance optimisation:*** Monitor site build times, asset sizes, and Lighthouse scores, and plan iterative improvements.
+- ***Documentation depth:*** Expand contributor guides covering local development, deployment pipelines, and accessibility
+  expectations.
 
 ## Final Thoughts
 
-RDGScripts is a Swiss Army knife for infrastructure automation, and agents adding or updating its tools should treat it accordingly: add new blades when necessary, sharpen existing ones and avoid leaving rust behind. A hint of humour is welcome—after all, even automated tasks can appreciate a good pun—but professionalism and precision must remain paramount. By following the practices in this document, agents will help ensure that RDGScripts remains a reliable and forward‑looking toolbox for infrastructure engineers.
+scripts-blog is the public face of the project’s documentation and storytelling. Treat every contribution—whether a new post, a
+layout tweak, or an automation update—as part of that narrative. Aim for clarity, consistency, and a touch of personality while
+upholding professional standards. By following these practices, agents will help ensure scripts-blog remains a reliable, inviting
+resource for readers and maintainers alike.
