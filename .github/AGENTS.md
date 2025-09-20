@@ -22,7 +22,7 @@ new work and ensure updates land in the appropriate place:
   fragments across multiple layouts.
 - **_sass/** – Modular Sass partials compiled into the site’s CSS. Maintain the existing naming conventions and import order when
   adjusting styling.
-- **assets/** – Images, JavaScript, CSS, and other static files referenced by posts and layouts. Optimise media assets and store
+- **assets/** – Images, JavaScript, CSS, and other static files referenced by posts and layouts. Optimize media assets and store
   them in sensible subdirectories (e.g., `assets/img/`, `assets/js/`).
 - **index.html, 404.html, robots.txt, feeds** – Root-level entry points and metadata that shape the public site experience.
   Update these thoughtfully when adjusting redirects, SEO metadata, or the home page layout.
