@@ -21,17 +21,19 @@ permalink: /menu/_pages/tools.html
 
 ## tools
 
-| Section | FileName                                                            |
-| :------ | :------------------------------------------------------------------ |
-| tools   | [CreateADMXCentralStore.ps1](/_posts/tools/CreateADMXCentralStore/) |
-| tools   | [CreateTimeServerGPOs.ps1](/_posts/tools/CreateTimeServerGPOs/)     |
-| tools   | [IISLogsCleanup.ps1](/_posts/tools/IISLogsCleanup/)                 |
-| tools   | [New-ADAssetReport.ps1](/_posts/tools/New-ADAssetReport/)           |
-| tools   | [New-KrbtgtKeys.ps1](/_posts/tools/New-KrbtgtKeys/)                 |
-| tools   | [OU_permissions.ps1](/_posts/tools/OU_permissions/)                 |
-| tools   | [Reset-UsersPassword.ps1](/_posts/tools/Reset-UsersPassword/)       |
-| tools   | [VMWareHealthcheck.ps1](/_posts/tools/VMWareHealthcheck/)           |
-| tools   | [Write-Log.ps1](/_posts/tools/Write-Log/)                           |
+> **Note:** These legacy tools have been reorganised under the [UserAdminModule](/menu/_pages/UserAdminModule.html) collection. The links below now point to their updated home.
+
+| Module          | Function                                                                    |
+| :-------------- | :-------------------------------------------------------------------------- |
+| UserAdminModule | [CreateADMXCentralStore.ps1](/_posts/UserAdminModule/CreateADMXCentralStore/) |
+| UserAdminModule | [CreateTimeServerGPOs.ps1](/_posts/UserAdminModule/CreateTimeServerGPOs/)     |
+| UserAdminModule | [IISLogsCleanup.ps1](/_posts/UserAdminModule/IISLogsCleanup/)                 |
+| UserAdminModule | [New-ADAssetReport.ps1](/_posts/UserAdminModule/New-ADAssetReport/)           |
+| UserAdminModule | [New-KrbtgtKeys.ps1](/_posts/UserAdminModule/New-KrbtgtKeys/)                 |
+| UserAdminModule | [OU_permissions.ps1](/_posts/UserAdminModule/OU_permissions/)                 |
+| UserAdminModule | [Reset-UsersPassword.ps1](/_posts/UserAdminModule/Reset-UsersPassword/)       |
+| UserAdminModule | [VMWareHealthcheck.ps1](/_posts/UserAdminModule/VMWareHealthcheck/)           |
+| UserAdminModule | [Write-Log.ps1](/_posts/UserAdminModule/Write-Log/)                           |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
