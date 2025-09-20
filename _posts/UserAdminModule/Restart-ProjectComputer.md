@@ -2,8 +2,12 @@
 layout: post
 title: Restart-ProjectComputer.ps1
 description: "Forcibly restarts project computers and waits for them to come back online."
+date: 2025-09-19
+permalink: /_posts/UserAdminModule/Restart-ProjectComputer/
+categories:
+  - UserAdminModule
+  - ShutdownCommands
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

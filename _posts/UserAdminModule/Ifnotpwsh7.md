@@ -2,8 +2,12 @@
 layout: post
 title: Ifnotpwsh7.ps1
 description: "Example logic that branches actions based on whether PowerShell 6 or later is available."
+date: 2025-09-19
+permalink: /_posts/UserAdminModule/Ifnotpwsh7/
+categories:
+  - UserAdminModule
+  - Shell
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

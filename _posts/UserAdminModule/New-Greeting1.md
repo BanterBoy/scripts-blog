@@ -2,8 +2,12 @@
 layout: post
 title: New-Greeting1.ps1
 description: "Builds day-specific greeting messages using PowerShell hash tables."
+date: 2025-09-19
+permalink: /_posts/UserAdminModule/New-Greeting1/
+categories:
+  - UserAdminModule
+  - Shell
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

@@ -102,7 +102,9 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | ADFunctions | [Get-ADEmailAddress](/_posts/UserAdminModule/Get-ADEmailAddress/)                                           |
 | ADFunctions | [Get-ADGroupAccountDetails](/_posts/UserAdminModule/Get-ADGroupAccountDetails/)                             |
 | ADFunctions | [Get-ADGroupMembers](/_posts/UserAdminModule/Get-ADGroupMembers/)                                           |
+| ADFunctions | [Get-GroupMembers](/_posts/UserAdminModule/Get-GroupMembers/)                                               |
 | ADFunctions | [Get-ADGroupNames](/_posts/UserAdminModule/Get-ADGroupNames/)                                               |
+| ADFunctions | [Get-GroupNames](/_posts/UserAdminModule/Get-GroupNames/)                                                   |
 | ADFunctions | [Get-AdminGroupsWithComputers](/_posts/UserAdminModule/Get-AdminGroupsWithComputers/)                       |
 | ADFunctions | [Get-ADObjectAddress](/_posts/UserAdminModule/Get-ADObjectAddress/)                                         |
 | ADFunctions | [Get-ADPasswordReminderUsers](/_posts/UserAdminModule/Get-ADPasswordReminderUsers/)                         |
@@ -200,6 +202,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | Azure    | [Get-MFAMethods](/_posts/UserAdminModule/Get-MFAMethods/)                                                           |
 | Azure    | [Get-MgAdmins](/_posts/UserAdminModule/Get-MgAdmins/)                                                               |
 | Azure    | [Get-MgUserDetails](/_posts/UserAdminModule/Get-MgUserDetails/)                                                     |
+| Azure    | [Get-O365AdminGroupsReport](/_posts/UserAdminModule/Get-O365AdminGroupsReport/)                                     |
 | Azure    | [Invoke-AzureADApp](/_posts/UserAdminModule/Invoke-AzureADApp/)                                                     |
 | Azure    | [Invoke-AzureMailApp](/_posts/UserAdminModule/Invoke-AzureMailApp/)                                                 |
 | Azure    | [Manage-AzureADApp](/_posts/UserAdminModule/Manage-AzureADApp/)                                                     |
@@ -219,6 +222,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | :------------------- | :------------------------------------------------------------------------------ |
 | CertificateUtilities | [Get-CertificateExpiry](/_posts/UserAdminModule/Get-CertificateExpiry/)         |
 | CertificateUtilities | [Get-RemoteCertificates](/_posts/UserAdminModule/Get-RemoteCertificates/)       |
+| CertificateUtilities | [Get-IISCertificates](/_posts/UserAdminModule/Get-IISCertificates/)             |
 | CertificateUtilities | [Get-RemoteCipherDetails](/_posts/UserAdminModule/Get-RemoteCipherDetails/)     |
 | CertificateUtilities | [Get-RemoteLdapCertDetails](/_posts/UserAdminModule/Get-RemoteLdapCertDetails/) |
 | CertificateUtilities | [Install-RemoteCertificate](/_posts/UserAdminModule/Install-RemoteCertificate/) |
@@ -257,6 +261,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | :------- | :---------------------------------------------------------------------------------------------------------------------- |
 | Exchange | [Add-MemberToDistributionGroup](/_posts/UserAdminModule/Add-MemberToDistributionGroup/)                                 |
 | Exchange | [Add-Office365Functions](/_posts/UserAdminModule/Add-Office365Functions/)                                               |
+| Exchange | [ArgumentCompleterExample](/_posts/UserAdminModule/ArgumentCompleterExample/)                                           |
 | Exchange | [Connect-ExchangeServer](/_posts/UserAdminModule/Connect-ExchangeServer/)                                               |
 | Exchange | [Connect-O365Exchange](/_posts/UserAdminModule/Connect-O365Exchange/)                                                   |
 | Exchange | [Connect-O365Session](/_posts/UserAdminModule/Connect-O365Session/)                                                     |
@@ -349,8 +354,10 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | FileOperations | [createRandomFilesFunctions](/_posts/UserAdminModule/createRandomFilesFunctions/)                   |
 | FileOperations | [Expand-NinjaOne7Zip](/_posts/UserAdminModule/Expand-NinjaOne7Zip/)                                 |
 | FileOperations | [Expand-NinjaOneZip](/_posts/UserAdminModule/Expand-NinjaOneZip/)                                   |
+| FileOperations | [FileWatcher](/_posts/UserAdminModule/FileWatcher/)                                                 |
 | FileOperations | [Format-FileSize](/_posts/UserAdminModule/Format-FileSize/)                                         |
 | FileOperations | [Get-FileAndFolderPermissions](/_posts/UserAdminModule/Get-FileAndFolderPermissions/)               |
+| FileOperations | [Get-FileExtension](/_posts/UserAdminModule/Get-FileExtension/)                                     |
 | FileOperations | [Get-FileOwner](/_posts/UserAdminModule/Get-FileOwner/)                                             |
 | FileOperations | [Get-IniContent](/_posts/UserAdminModule/Get-IniContent/)                                           |
 | FileOperations | [Get-LatestFiles](/_posts/UserAdminModule/Get-LatestFiles/)                                         |
@@ -415,6 +422,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | Logging  | [Get-EventLogs](/_posts/UserAdminModule/Get-EventLogs/)                     |
 | Logging  | [Get-EventsFromTimeframe](/_posts/UserAdminModule/Get-EventsFromTimeframe/) |
 | Logging  | [Get-FilteredEvents](/_posts/UserAdminModule/Get-FilteredEvents/)           |
+| Logging  | [Get-LogonEvent](/_posts/UserAdminModule/Get-LogonEvent/)                   |
 | Logging  | [Get-SystemEvent](/_posts/UserAdminModule/Get-SystemEvent/)                 |
 | Logging  | [Get-WmiADEvent](/_posts/UserAdminModule/Get-WmiADEvent/)                   |
 | Logging  | [Initialize-EventLogging](/_posts/UserAdminModule/Initialize-EventLogging/) |
@@ -435,6 +443,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | MediaManagement | [Get-FFProbeAudioStreams](/_posts/UserAdminModule/Get-FFProbeAudioStreams/)                     |
 | MediaManagement | [Get-FFProbeVideoInfo](/_posts/UserAdminModule/Get-FFProbeVideoInfo/)                           |
 | MediaManagement | [Find-Movies](/_posts/UserAdminModule/Find-Movies/)                                             |
+| MediaManagement | [New-SpeechOutput](/_posts/UserAdminModule/New-SpeechOutput/)                                   |
 | MediaManagement | [Remove-FFMpegVideoFileAudioStream](/_posts/UserAdminModule/Remove-FFMpegVideoFileAudioStream/) |
 | MediaManagement | [Set-FFMpegVideoSpeed](/_posts/UserAdminModule/Set-FFMpegVideoSpeed/)                           |
 | MediaManagement | [Set-TransmissionDefaultSettings](/_posts/UserAdminModule/Set-TransmissionDefaultSettings/)     |
@@ -448,6 +457,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 
 | Category | Function                                                                |
 | :------- | :---------------------------------------------------------------------- |
+| Network  | [Connect-Proxy](/_posts/UserAdminModule/Connect-Proxy/)                 |
 | Network  | [Get-CidrIPRange](/_posts/UserAdminModule/Get-CidrIPRange/)             |
 | Network  | [Get-ComputerIP](/_posts/UserAdminModule/Get-ComputerIP/)               |
 | Network  | [Get-DKIMRecord](/_posts/UserAdminModule/Get-DKIMRecord/)               |
@@ -583,6 +593,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | RemoteConnections | [Get-LoggedOnRDPUser](/_posts/UserAdminModule/Get-LoggedOnRDPUser/)           |
 | RemoteConnections | [Get-RDPStatus](/_posts/UserAdminModule/Get-RDPStatus/)                       |
 | RemoteConnections | [Get-RDPUserReport](/_posts/UserAdminModule/Get-RDPUserReport/)               |
+| RemoteConnections | [Logoff-Stale-RDP](/_posts/UserAdminModule/Logoff-Stale-RDP/)                 |
 | RemoteConnections | [Remove-RDPUserSession](/_posts/UserAdminModule/Remove-RDPUserSession/)       |
 | RemoteConnections | [Set-RDPRemotely](/_posts/UserAdminModule/Set-RDPRemotely/)                   |
 | RemoteConnections | [Set-RDPStatus](/_posts/UserAdminModule/Set-RDPStatus/)                       |
@@ -681,6 +692,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | Shell    | [Initialize-Module](/_posts/UserAdminModule/Initialize-Module/)                                       |
 | Shell    | [Install-LatestPWSH7](/_posts/UserAdminModule/Install-LatestPWSH7/)                                   |
 | Shell    | [Install-ModuleIfNotPresent](/_posts/UserAdminModule/Install-ModuleIfNotPresent/)                     |
+| Shell    | [Ifnotpwsh7](/_posts/UserAdminModule/Ifnotpwsh7/)                                                     |
 | Shell    | [Install-PSTools](/_posts/UserAdminModule/Install-PSTools/)                                           |
 | Shell    | [Install-RequiredModules](/_posts/UserAdminModule/Install-RequiredModules/)                           |
 | Shell    | [Install-WinGet](/_posts/UserAdminModule/Install-WinGet/)                                             |
@@ -693,6 +705,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | Shell    | [New-CopilotPrompt](/_posts/UserAdminModule/New-CopilotPrompt/)                                       |
 | Shell    | [New-CountdownDate](/_posts/UserAdminModule/New-CountdownDate/)                                       |
 | Shell    | [New-Greeting](/_posts/UserAdminModule/New-Greeting/)                                                 |
+| Shell    | [New-Greeting1](/_posts/UserAdminModule/New-Greeting1/)                                               |
+| Shell    | [New-Greeting2](/_posts/UserAdminModule/New-Greeting2/)                                               |
 | Shell    | [New-PSM1Module](/_posts/UserAdminModule/New-PSM1Module/)                                             |
 | Shell    | [New-QotD](/_posts/UserAdminModule/New-QotD/)                                                         |
 | Shell    | [New-Shell](/_posts/UserAdminModule/New-Shell/)                                                       |
@@ -728,6 +742,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | ShutdownCommands | [Get-RemoteComputerScheduledShutdown](/_posts/UserAdminModule/Get-RemoteComputerScheduledShutdown/)   |
 | ShutdownCommands | [Get-ShutdownExample](/_posts/UserAdminModule/Get-ShutdownExample/)                                   |
 | ShutdownCommands | [Invoke-RemoteComputerShutdown](/_posts/UserAdminModule/Invoke-RemoteComputerShutdown/)               |
+| ShutdownCommands | [Restart-ProjectComputer](/_posts/UserAdminModule/Restart-ProjectComputer/)                           |
 | ShutdownCommands | [New-PowerOutage](/_posts/UserAdminModule/New-PowerOutage/)                                           |
 | ShutdownCommands | [Schedule-Shutdown](/_posts/UserAdminModule/Schedule-Shutdown/)                                       |
 | ShutdownCommands | [Start-RemoteComputerShutdownSchedule](/_posts/UserAdminModule/Start-RemoteComputerShutdownSchedule/) |
@@ -805,6 +820,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 
 | Category  | Function                                                                              |
 | :-------- | :------------------------------------------------------------------------------------ |
+| Utilities | [Blank-Page](/_posts/UserAdminModule/Blank_Page/)                                     |
 | Utilities | [Cleanup-TestFiles](/_posts/UserAdminModule/Cleanup-TestFiles/)                       |
 | Utilities | [ConvertFrom-ErrorRecord](/_posts/UserAdminModule/ConvertFrom-ErrorRecord/)           |
 | Utilities | [ConvertFrom-Text](/_posts/UserAdminModule/ConvertFrom-Text/)                         |
@@ -850,6 +866,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | Utilities | [Get-Time](/_posts/UserAdminModule/Get-Time/)                                         |
 | Utilities | [Get-TimeServer](/_posts/UserAdminModule/Get-TimeServer/)                             |
 | Utilities | [Get-TimeSource](/_posts/UserAdminModule/Get-TimeSource/)                             |
+| Utilities | [TimeZoneFunctions](/_posts/UserAdminModule/TimeZoneFunctions/)                       |
 | Utilities | [Get-TimeZoneID](/_posts/UserAdminModule/Get-TimeZoneID/)                             |
 | Utilities | [Get-UserProfiles](/_posts/UserAdminModule/Get-UserProfiles/)                         |
 | Utilities | [Get-W32TimeConfiguration](/_posts/UserAdminModule/Get-W32TimeConfiguration/)         |
