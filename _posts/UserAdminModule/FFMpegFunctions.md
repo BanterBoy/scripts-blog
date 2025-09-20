@@ -234,7 +234,7 @@ function FFMpeg-RemoveVideoFileAudioStream {
 
             mkdir $asrDir -Force -InformationAction SilentlyContinue
 
-            Get-ChildItem -Path $Dir -File |
+            Get-ChildItem -Path $_ -File |
                 ForEach-Object {
                     $asrFile = $($_.FullName).Replace($($_.Name), $(Join-Path -Path 'ASR' -ChildPath $($_.Name)))
 
