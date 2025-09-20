@@ -5,7 +5,8 @@ date: 2025-09-19
 permalink: /_posts/UserAdminModule/IISLogsCleanup/
 categories:
   - UserAdminModule
-  - Logging
+    - FileOperations
+    - Logging
 ---
 
 - [Description](#description)

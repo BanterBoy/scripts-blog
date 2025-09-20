@@ -376,6 +376,7 @@ The FileOperations category offers a comprehensive suite of PowerShell functions
 | FileOperations | [createRandomFilesFunctions](/_posts/UserAdminModule/createRandomFilesFunctions/)                   |
 | FileOperations | [Expand-NinjaOne7Zip](/_posts/UserAdminModule/Expand-NinjaOne7Zip/)                                 |
 | FileOperations | [Expand-NinjaOneZip](/_posts/UserAdminModule/Expand-NinjaOneZip/)                                   |
+| FileOperations | [IISLogsCleanup](/_posts/UserAdminModule/IISLogsCleanup/)                                           |
 | FileOperations | [FileWatcher](/_posts/UserAdminModule/FileWatcher/)                                                 |
 | FileOperations | [Format-FileSize](/_posts/UserAdminModule/Format-FileSize/)                                         |
 | FileOperations | [Get-FileAndFolderPermissions](/_posts/UserAdminModule/Get-FileAndFolderPermissions/)               |
