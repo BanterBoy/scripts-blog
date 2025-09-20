@@ -1,0 +1,41 @@
+name: Jekyll Build Validation
+
+on:
+  push:
+    branches: [prod]
+  pull_request:
+    branches: [prod]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      BUNDLE_PATH: vendor/bundle
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      - name: Configure bundler path
+        run: bundle config set --local path 'vendor/bundle'
+
+      - name: Install dependencies
+        run: bundle install --jobs 4 --retry 3
+
+      - name: Build site
+        run: bundle exec jekyll build --future
+
+      - name: Verify generated CSS is referenced
+        shell: pwsh
+        run: ./build/Verify-CssLink.ps1 -SiteRoot "_site" -CssHint "hyde.css"
+
+      - name: Upload built site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: jekyll-site
+          path: _site
