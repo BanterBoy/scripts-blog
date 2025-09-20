@@ -36,7 +36,7 @@
     {% capture search_target %}{{ site.url }}{{ search_template }}{% endcapture %}
   {% endif %}
 {% endif %}
-{% if search_target == nil %}
+{% if search_target == null %}
   {% capture search_target %}{{ site.url }}{{ '/search/' | relative_url }}?q={search_term_string}{% endcapture %}
 {% endif %}
 {% assign search_target = search_target | strip %}
