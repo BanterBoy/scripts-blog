@@ -5,10 +5,18 @@ description: "Scripts v2.0 overview for the UserAdminModule—now helper-driven,
 permalink: /menu/_pages/UserAdminModule.html
 ---
 
+---
+
 <video width="380" height="160" controls autoplay loop muted>
     <source src="/assets/menu/scripts-blog-intro.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
+
+---
+
+> **⚠️ Important Disclaimer**  
+> These PowerShell scripts are provided as-is for educational and administrative purposes. While I've tested them in various environments, using them in production systems is entirely at your own risk. I cannot be held responsible for any unintended consequences, data loss, or system disruptions that may occur.  
+> Remember: PowerShell is like a lightsaber - powerful but potentially dangerous in the wrong hands. Use responsibly, and may the Force be with you! 🛡️
 
 ---
 
@@ -53,6 +61,9 @@ Scripts v2.0 gives the **UserAdminModule** a fresh coat of paint and a neatly la
 - **Categorized muscle:** The module leans into broader, service-focused categories so you can dive straight into AD, Azure, or whichever drawer holds the tool you need.
 
 Browse the categories below to explore the reorganised toolkit, open each function page for usage guidance, and enjoy knowing the drawers finally close without a shove.
+
+> **ℹ️ Important Notes on Usage**  
+> While these scripts have been published and tested in various environments, some functions may encounter issues depending on your specific setup, permissions, or system configuration. If you run into any problems or unexpected behavior, please don't hesitate to report it! Each script explanation page includes an issue submission feature at the bottom - simply use that to let me know about any bugs, compatibility issues, or suggestions for improvement. Your feedback helps make these tools better for everyone!
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -919,5 +930,11 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | Weather  | [Get-WeatherDetail](/_posts/UserAdminModule/Get-WeatherDetail/) |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+
+---
+
+> **⚠️ Important Disclaimer**  
+> These PowerShell scripts are provided as-is for educational and administrative purposes. While I've tested them in various environments, using them in production systems is entirely at your own risk. I cannot be held responsible for any unintended consequences, data loss, or system disruptions that may occur.  
+> Remember: PowerShell is like a lightsaber - powerful but potentially dangerous in the wrong hands. Use responsibly, and may the Force be with you! 🛡️
 
 ---
