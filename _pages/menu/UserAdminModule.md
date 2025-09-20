@@ -89,6 +89,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | ADFunctions | [Compare-GroupMembership](/_posts/UserAdminModule/Compare-GroupMembership/)                                 |
 | ADFunctions | [Copy-AdGroupMemberShip](/_posts/UserAdminModule/Copy-AdGroupMemberShip/)                                   |
 | ADFunctions | [Copy-GroupMembership](/_posts/UserAdminModule/Copy-GroupMembership/)                                       |
+| ADFunctions | [CreateADMXCentralStore](/_posts/UserAdminModule/CreateADMXCentralStore/)                                   |
+| ADFunctions | [CreateTimeServerGPOs](/_posts/UserAdminModule/CreateTimeServerGPOs/)                                       |
 | ADFunctions | [Disable-InactiveComputer](/_posts/UserAdminModule/Disable-InactiveComputer/)                               |
 | ADFunctions | [DisableADAccountsMenu](/_posts/UserAdminModule/DisableADAccountsMenu/)                                     |
 | ADFunctions | [Find-localAdmins](/_posts/UserAdminModule/Find-localAdmins/)                                               |
@@ -158,15 +160,18 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | ADFunctions | [Move-ADComputer](/_posts/UserAdminModule/Move-ADComputer/)                                                 |
 | ADFunctions | [Move-FSMORolestoPDCEmulator](/_posts/UserAdminModule/Move-FSMORolestoPDCEmulator/)                         |
 | ADFunctions | [MoveOU](/_posts/UserAdminModule/MoveOU/)                                                                   |
+| ADFunctions | [New-ADAssetReport](/_posts/UserAdminModule/New-ADAssetReport/)                                             |
 | ADFunctions | [New-EncryptedUser](/_posts/UserAdminModule/New-EncryptedUser/)                                             |
 | ADFunctions | [New-FakeADUser](/_posts/UserAdminModule/New-FakeADUser/)                                                   |
 | ADFunctions | [New-FakeADUserDetails](/_posts/UserAdminModule/New-FakeADUserDetails/)                                     |
 | ADFunctions | [New-FakeUserDetails](/_posts/UserAdminModule/New-FakeUserDetails/)                                         |
 | ADFunctions | [New-RandomUser](/_posts/UserAdminModule/New-RandomUser/)                                                   |
+| ADFunctions | [OU_permissions](/_posts/UserAdminModule/OU_permissions/)                                                   |
 | ADFunctions | [Provision_Home_Folder](/_posts/UserAdminModule/Provision_Home_Folder/)                                     |
 | ADFunctions | [Query-UserAccountControl](/_posts/UserAdminModule/Query-UserAccountControl/)                               |
 | ADFunctions | [remove-ADM](/_posts/UserAdminModule/remove-ADM/)                                                           |
 | ADFunctions | [Remove-AdminSDHolder](/_posts/UserAdminModule/Remove-AdminSDHolder/)                                       |
+| ADFunctions | [Reset-UsersPassword](/_posts/UserAdminModule/Reset-UsersPassword/)                                         |
 | ADFunctions | [Restore-ADDeletedUsers](/_posts/UserAdminModule/Restore-ADDeletedUsers/)                                   |
 | ADFunctions | [Search-GPO](/_posts/UserAdminModule/Search-GPO/)                                                           |
 | ADFunctions | [Search-GPOforString](/_posts/UserAdminModule/Search-GPOforString/)                                         |
@@ -365,6 +370,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | FileOperations | [Get-NeglectedFiles](/_posts/UserAdminModule/Get-NeglectedFiles/)                                   |
 | FileOperations | [Get-OldFiles](/_posts/UserAdminModule/Get-OldFiles/)                                               |
 | FileOperations | [Get-PathPermissions](/_posts/UserAdminModule/Get-PathPermissions/)                                 |
+| FileOperations | [IISLogsCleanup](/_posts/UserAdminModule/IISLogsCleanup/)                                           |
 | FileOperations | [Invoke-RemoteZipExpansion](/_posts/UserAdminModule/Invoke-RemoteZipExpansion/)                     |
 | FileOperations | [Merge-Files](/_posts/UserAdminModule/Merge-Files/)                                                 |
 | FileOperations | [New-DummyFile](/_posts/UserAdminModule/New-DummyFile/)                                             |
@@ -429,6 +435,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | Logging  | [Log-Event](/_posts/UserAdminModule/Log-Event/)                             |
 | Logging  | [New-LogEvent](/_posts/UserAdminModule/New-LogEvent/)                       |
 | Logging  | [Script4logging](/_posts/UserAdminModule/Script4logging/)                   |
+| Logging  | [Write-Log](/_posts/UserAdminModule/Write-Log/)                             |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -646,6 +653,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | Security | [Invoke-PasswordRoll](/_posts/UserAdminModule/Invoke-PasswordRoll/)                             |
 | Security | [Invoke-UrlScan](/_posts/UserAdminModule/Invoke-UrlScan/)                                       |
 | Security | [New-DynamicParameter](/_posts/UserAdminModule/New-DynamicParameter/)                           |
+| Security | [New-KrbtgtKeys](/_posts/UserAdminModule/New-KrbtgtKeys/)                                       |
 | Security | [New-PassPhrase](/_posts/UserAdminModule/New-PassPhrase/)                                       |
 | Security | [New-Password](/_posts/UserAdminModule/New-Password/)                                           |
 | Security | [PasswordFunctions](/_posts/UserAdminModule/PasswordFunctions/)                                 |
@@ -934,6 +942,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | Virtualization | [Get-VMInformationPlus](/_posts/UserAdminModule/Get-VMInformationPlus/)           |
 | Virtualization | [Get-WMIHardwareOSInfo](/_posts/UserAdminModule/Get-WMIHardwareOSInfo/)           |
 | Virtualization | [New-WindowsSandbox](/_posts/UserAdminModule/New-WindowsSandbox/)                 |
+| Virtualization | [VMWareHealthcheck](/_posts/UserAdminModule/VMWareHealthcheck/)                   |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
