@@ -2,12 +2,19 @@
 layout: post
 title: Get-TeamsFolderStructure.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-TeamsFolderStructure/
 categories:
-  - UserAdminModule
-  - Teams
+- UserAdminModule
+- Teams
+tags:
+- PowerShell
+- User Admin Module
+- Teams Folder Structure
+- Microsoft Teams
+description: Gets the folder structure for Microsoft Teams backgrounds.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

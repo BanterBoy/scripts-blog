@@ -1,12 +1,19 @@
 ---
 layout: post
 title: Get-LogonEvent.ps1
-description: "Parses Winlogon events to report recent logon and logoff activity on Windows systems."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-LogonEvent/
 categories:
-  - UserAdminModule
-  - Logging
+- UserAdminModule
+- Logging
+tags:
+- PowerShell
+- User Admin Module
+- Logon Event
+description: This PowerShell script is called Get-LogonEvent.ps1 and it retrieves
+  logon events from the Microsoft-Windows-Winlogon provider on one or more remote...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 - [Description](#description)
   - [Script](#script)

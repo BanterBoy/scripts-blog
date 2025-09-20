@@ -2,12 +2,18 @@
 layout: post
 title: Test-RemoteTimeSettings.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Test-RemoteTimeSettings/
 categories:
-  - UserAdminModule
-  - Testing
+- UserAdminModule
+- Testing
+tags:
+- PowerShell
+- User Admin Module
+- Remote Time Settings
+description: Tests the time settings on remote computers.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

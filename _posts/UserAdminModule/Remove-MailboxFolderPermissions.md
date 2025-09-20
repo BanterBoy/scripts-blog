@@ -2,12 +2,18 @@
 layout: post
 title: Remove-MailboxFolderPermissions.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Remove-MailboxFolderPermissions/
 categories:
-  - UserAdminModule
-  - Exchange
+- UserAdminModule
+- Exchange
+tags:
+- PowerShell
+- User Admin Module
+- Mailbox Folder Permissions
+description: PowerShell script for mailbox folder permissions.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

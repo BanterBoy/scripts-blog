@@ -1,12 +1,18 @@
 ---
 layout: post
 title: Blank-Page.ps1
-description: "Starter template for drafting new PowerShell script posts on the site."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Blank_Page/
 categories:
-  - UserAdminModule
-  - Utilities
+- UserAdminModule
+- Utilities
+tags:
+- PowerShell
+- User Admin Module
+- Blank Page
+description: PowerShell script for blank page.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 - [Description](#description)
   - [Script](#script)

@@ -2,12 +2,18 @@
 layout: post
 title: Send-OutlookMail.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Send-OutlookMail/
 categories:
-  - UserAdminModule
-  - Exchange
+- UserAdminModule
+- Exchange
+tags:
+- PowerShell
+- User Admin Module
+- Send Outlook Mail
+description: PowerShell script for send outlook mail.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

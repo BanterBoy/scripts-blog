@@ -2,12 +2,20 @@
 layout: post
 title: Get-TeamsVersion.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-TeamsVersion/
 categories:
-  - UserAdminModule
-  - Teams
+- UserAdminModule
+- Teams
+tags:
+- PowerShell
+- User Admin Module
+- Teams Version
+- Microsoft Teams
+description: This function retrieves the version of Microsoft Teams installed for
+  the current user.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

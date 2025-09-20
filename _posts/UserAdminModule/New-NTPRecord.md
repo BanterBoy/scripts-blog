@@ -2,12 +2,19 @@
 layout: post
 title: New-NTPRecord.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/New-NTPRecord/
 categories:
-  - UserAdminModule
-  - Utilities
+- UserAdminModule
+- Utilities
+tags:
+- PowerShell
+- User Admin Module
+- NTP Record
+- NTP
+description: Creates a new NTP (Network Time Protocol) record in a DNS zone.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

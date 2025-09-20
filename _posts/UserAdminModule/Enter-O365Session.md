@@ -2,12 +2,18 @@
 layout: post
 title: Enter-O365Session.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Enter-O365Session/
 categories:
-  - UserAdminModule
-  - Exchange
+- UserAdminModule
+- Exchange
+tags:
+- PowerShell
+- User Admin Module
+- Enter O 365 Session
+description: PowerShell script for enter O 365 session.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

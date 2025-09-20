@@ -2,12 +2,19 @@
 layout: post
 title: Remove-AdminSDHolder.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Remove-AdminSDHolder/
 categories:
-  - UserAdminModule
-  - ADFunctions
+- UserAdminModule
+- ADFunctions
+tags:
+- PowerShell
+- User Admin Module
+- Admin SD Holder
+- SD
+description: PowerShell script for admin SD holder.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

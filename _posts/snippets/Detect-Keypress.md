@@ -1,8 +1,17 @@
 ---
 layout: post
 title: Detect-Keypress.ps1
+last_modified_at: 2025-09-20 00:00:00
+categories:
+- Snippets
+tags:
+- PowerShell
+- Snippets
+- Detect Keypress
+description: This PowerShell script is designed to detect when a specific key is pressed
+  and then take action based on that key press. The script begins by adding two...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

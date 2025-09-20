@@ -2,12 +2,19 @@
 layout: post
 title: Get-GoogleSearch.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-GoogleSearch/
 categories:
-  - UserAdminModule
-  - Shell
+- UserAdminModule
+- Shell
+tags:
+- PowerShell
+- User Admin Module
+- Google Search
+description: Get-GoogleSearch is a minimal helper that fires off a Google search using
+  whatever arguments you pass. It simply appends the raw arguments to the query...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

@@ -1,12 +1,19 @@
 ---
 layout: post
 title: Get-GroupNames.ps1
-description: "Searches Active Directory for groups by name pattern and outputs their details."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-GroupNames/
 categories:
-  - UserAdminModule
-  - ADFunctions
+- UserAdminModule
+- ADFunctions
+tags:
+- PowerShell
+- User Admin Module
+- Group Names
+description: The code is a PowerShell script that defines a function called Get-GroupNames.
+  This function queries Active Directory and exports the details for the...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 - [Description](#description)
   - [Script](#script)

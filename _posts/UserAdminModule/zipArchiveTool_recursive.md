@@ -2,12 +2,18 @@
 layout: post
 title: zipArchiveTool_recursive.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/zipArchiveTool_recursive/
 categories:
-  - UserAdminModule
-  - FileOperations
+- UserAdminModule
+- FileOperations
+tags:
+- PowerShell
+- User Admin Module
+- Archive Tool Recursive
+description: PowerShell script for archive tool recursive.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

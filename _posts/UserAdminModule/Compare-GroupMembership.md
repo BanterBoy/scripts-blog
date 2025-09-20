@@ -2,12 +2,18 @@
 layout: post
 title: Compare-GroupMembership.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Compare-GroupMembership/
 categories:
-  - UserAdminModule
-  - ADFunctions
+- UserAdminModule
+- ADFunctions
+tags:
+- PowerShell
+- User Admin Module
+- Compare Group Membership
+description: Compares the group membership of two Active Directory users.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

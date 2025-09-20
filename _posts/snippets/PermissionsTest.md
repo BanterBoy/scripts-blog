@@ -1,8 +1,17 @@
-﻿---
+---
 layout: post
 title: PermissionsTest.ps1
+last_modified_at: 2025-09-20 00:00:00
+categories:
+- Snippets
+tags:
+- PowerShell
+- Snippets
+- Permissions Test
+description: This PowerShell script is designed to check the permissions of a specified
+  user on a given folder. The script starts by defining the $Folder variable, which...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

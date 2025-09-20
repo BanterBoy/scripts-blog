@@ -1,8 +1,16 @@
 ---
 layout: post
 title: Config-Psmodulepath.ps1
+last_modified_at: 2025-09-20 00:00:00
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Config Psmodulepath
+description: PowerShell script for config psmodulepath.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

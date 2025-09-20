@@ -2,12 +2,19 @@
 layout: post
 title: Test-TransmissionSettings.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Test-TransmissionSettings/
 categories:
-  - UserAdminModule
-  - Testing
+- UserAdminModule
+- Testing
+tags:
+- PowerShell
+- User Admin Module
+- Transmission Settings
+description: Checks to see if the transmission download directory is "/share/Download/transmission/completed",
+  and updates to default settings if not.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

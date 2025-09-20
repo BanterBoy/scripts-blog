@@ -2,12 +2,18 @@
 layout: post
 title: Set-DistributionGroupProperties.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Set-DistributionGroupProperties/
 categories:
-  - UserAdminModule
-  - Exchange
+- UserAdminModule
+- Exchange
+tags:
+- PowerShell
+- User Admin Module
+- Distribution Group Properties
+description: Sets properties for distribution groups in Exchange.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

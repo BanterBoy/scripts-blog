@@ -2,12 +2,19 @@
 layout: post
 title: Export-BitlockerComp.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Export-BitlockerComp/
 categories:
-  - UserAdminModule
-  - Security
+- UserAdminModule
+- Security
+tags:
+- PowerShell
+- User Admin Module
+- Bitlocker Comp
+- BitLocker
+description: PowerShell script for bitlocker comp.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

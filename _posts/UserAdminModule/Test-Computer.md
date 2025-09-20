@@ -1,14 +1,20 @@
 ---
 layout: post
 title: Test-Computer.ps1
-description: "Runs connectivity and service checks to summarize a computer's health."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Test-Computer/
 categories:
-  - UserAdminModule
-  - Testing
+- UserAdminModule
+- Testing
+tags:
+- PowerShell
+- User Admin Module
+- Computer
+description: Tests a computer and returns its current status including DNS, RDP, AD,
+  and DHCP IP address information.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

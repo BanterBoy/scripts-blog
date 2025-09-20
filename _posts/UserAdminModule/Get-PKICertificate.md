@@ -2,12 +2,19 @@
 layout: post
 title: Get-PKICertificate.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-PKICertificate/
 categories:
-  - UserAdminModule
-  - PKICertificateTools
+- UserAdminModule
+- PKICertificateTools
+tags:
+- PowerShell
+- User Admin Module
+- PKI Certificate
+- PKI
+description: Retrieves PKI certificates from one or more specified computers.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

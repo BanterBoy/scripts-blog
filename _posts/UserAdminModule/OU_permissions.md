@@ -2,12 +2,20 @@
 layout: post
 title: OU_permissions.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/OU_permissions/
 categories:
-  - UserAdminModule
-  - ADFunctions
+- UserAdminModule
+- ADFunctions
+tags:
+- PowerShell
+- User Admin Module
+- OU Permissions
+- OU
+description: This PowerShell script creates a report of all OU permissions. It starts
+  by importing the ActiveDirectory module. The script then builds a lookup hash table...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

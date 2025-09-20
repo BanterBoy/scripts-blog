@@ -2,12 +2,18 @@
 layout: post
 title: Search-RoadWorks.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Search-RoadWorks/
 categories:
-  - UserAdminModule
-  - Utilities
+- UserAdminModule
+- Utilities
+tags:
+- PowerShell
+- User Admin Module
+- Road Works
+description: PowerShell script for road works.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

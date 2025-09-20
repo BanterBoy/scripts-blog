@@ -2,12 +2,18 @@
 layout: post
 title: Update-PowerShell.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Update-PowerShell/
 categories:
-  - UserAdminModule
-  - Shell
+- UserAdminModule
+- Shell
+tags:
+- PowerShell
+- User Admin Module
+- Power Shell
+description: Installs the latest version of PowerShell 7.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

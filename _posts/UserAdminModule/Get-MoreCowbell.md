@@ -2,12 +2,18 @@
 layout: post
 title: Get-MoreCowbell.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-MoreCowbell/
 categories:
-  - UserAdminModule
-  - Shell
+- UserAdminModule
+- Shell
+tags:
+- PowerShell
+- User Admin Module
+- More Cowbell
+description: No synopsis provided.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

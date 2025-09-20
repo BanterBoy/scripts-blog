@@ -2,12 +2,18 @@
 layout: post
 title: Set-CustomAttributesForGroupMembers.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Set-CustomAttributesForGroupMembers/
 categories:
-  - UserAdminModule
-  - ADFunctions
+- UserAdminModule
+- ADFunctions
+tags:
+- PowerShell
+- User Admin Module
+- Custom Attributes For Group Members
+description: Sets custom extension attributes for all members of an AD group.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

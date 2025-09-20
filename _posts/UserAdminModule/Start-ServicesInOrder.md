@@ -2,12 +2,18 @@
 layout: post
 title: Start-ServicesInOrder.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Start-ServicesInOrder/
 categories:
-  - UserAdminModule
-  - ProcessServiceSchedules
+- UserAdminModule
+- ProcessServiceSchedules
+tags:
+- PowerShell
+- User Admin Module
+- Services In Order
+description: Starts a list of services in the order they are provided.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

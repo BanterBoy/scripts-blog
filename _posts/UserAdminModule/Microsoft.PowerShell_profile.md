@@ -2,12 +2,18 @@
 layout: post
 title: Microsoft.PowerShell_profile.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Microsoft.PowerShell_profile/
 categories:
-  - UserAdminModule
-  - Shell
+- UserAdminModule
+- Shell
+tags:
+- PowerShell
+- User Admin Module
+- Microsoft Power Shell Profile
+description: PowerShell script for microsoft power shell profile.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

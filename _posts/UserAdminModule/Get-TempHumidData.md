@@ -2,12 +2,19 @@
 layout: post
 title: Get-TempHumidData.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-TempHumidData/
 categories:
-  - UserAdminModule
-  - Weather
+- UserAdminModule
+- Weather
+tags:
+- PowerShell
+- User Admin Module
+- Temp Humid Data
+description: Get-TempHumidData monitors the most recent temperature and humidity sample
+  stored in \\HOTH\TEMPerX\TEMPerX\1.csv. The function temporarily resizes the...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

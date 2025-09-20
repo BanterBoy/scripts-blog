@@ -1,12 +1,19 @@
 ---
 layout: post
 title: Get-O365AdminGroupsReport.ps1
-description: "Generates a CSV report of Office 365 administrative roles and their assigned members."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-O365AdminGroupsReport/
 categories:
-  - UserAdminModule
-  - Azure
+- UserAdminModule
+- Azure
+tags:
+- PowerShell
+- User Admin Module
+- O 365 Admin Groups Report
+description: This PowerShell script generates a report of all the members in Office
+  365 admin groups. The script starts by defining a function called...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 - [Description](#description)
   - [Script](#script)

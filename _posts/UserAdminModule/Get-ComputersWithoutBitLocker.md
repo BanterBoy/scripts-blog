@@ -2,12 +2,19 @@
 layout: post
 title: Get-ComputersWithoutBitLocker.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-ComputersWithoutBitLocker/
 categories:
-  - UserAdminModule
-  - ADFunctions
+- UserAdminModule
+- ADFunctions
+tags:
+- PowerShell
+- User Admin Module
+- Computers Without Bit Locker
+description: Retrieves a list of computers in Active Directory that do not have associated
+  BitLocker recovery information.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

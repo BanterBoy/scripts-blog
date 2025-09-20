@@ -1,8 +1,17 @@
 ---
 layout: post
 title: InstallPwnedPasswordDLL.ps1
+last_modified_at: 2025-09-20 00:00:00
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Pwned Password DLL
+- DLL
+description: PowerShell script for pwned password DLL.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

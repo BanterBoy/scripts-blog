@@ -2,12 +2,19 @@
 layout: post
 title: Get-LastxOfMonth.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-LastxOfMonth/
 categories:
-  - UserAdminModule
-  - Shell
+- UserAdminModule
+- Shell
+tags:
+- PowerShell
+- User Admin Module
+- Lastx Of Month
+description: Retrieves the last occurrence of a specified day of the week or date
+  in a given month and year.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

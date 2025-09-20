@@ -2,12 +2,20 @@
 layout: post
 title: Remove-FFMpegVideoFileAudioStream.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Remove-FFMpegVideoFileAudioStream/
 categories:
-  - UserAdminModule
-  - MediaManagement
+- UserAdminModule
+- MediaManagement
+tags:
+- PowerShell
+- User Admin Module
+- FF Mpeg Video File Audio Stream
+- FF
+description: Remove an unwanted audio stream from one or many video files while preserving
+  the originals.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

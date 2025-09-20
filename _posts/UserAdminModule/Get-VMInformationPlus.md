@@ -2,12 +2,19 @@
 layout: post
 title: Get-VMInformationPlus.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-VMInformationPlus/
 categories:
-  - UserAdminModule
-  - Virtualization
+- UserAdminModule
+- Virtualization
+tags:
+- PowerShell
+- User Admin Module
+- VM Information Plus
+- VM
+description: Retrieves information about virtual machines from a vCenter server.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

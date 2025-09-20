@@ -1,14 +1,19 @@
 ---
 layout: post
 title: Copy-GroupMembership.ps1
-description: "Duplicates group memberships from a source Active Directory user to another account."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Copy-GroupMembership/
 categories:
-  - UserAdminModule
-  - ADFunctions
+- UserAdminModule
+- ADFunctions
+tags:
+- PowerShell
+- User Admin Module
+- Group Membership
+description: Copies the group membership of one user to another user.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

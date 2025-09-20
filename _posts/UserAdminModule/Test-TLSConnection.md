@@ -2,12 +2,19 @@
 layout: post
 title: Test-TLSConnection.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Test-TLSConnection/
 categories:
-  - UserAdminModule
-  - Testing
+- UserAdminModule
+- Testing
+tags:
+- PowerShell
+- User Admin Module
+- TLS Connection
+- TLS
+description: Test if a TLS Connection can be established.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

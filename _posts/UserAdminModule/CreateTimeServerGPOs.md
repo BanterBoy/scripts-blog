@@ -2,12 +2,20 @@
 layout: post
 title: CreateTimeServerGPOs.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/CreateTimeServerGPOs/
 categories:
-  - UserAdminModule
-  - ADFunctions
+- UserAdminModule
+- ADFunctions
+tags:
+- PowerShell
+- User Admin Module
+- Time Server GP Os
+- GP
+description: This PowerShell script creates Group Policy Objects (GPOs) for time synchronization
+  on Windows domain controllers. The script creates two GPOs, one for the...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

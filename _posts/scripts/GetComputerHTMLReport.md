@@ -1,8 +1,17 @@
 ---
 layout: post
 title: GetComputerHTMLReport.ps1
+last_modified_at: 2025-09-20 00:00:00
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Computer HTML Report
+- HTML
+description: PowerShell script for computer HTML report.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

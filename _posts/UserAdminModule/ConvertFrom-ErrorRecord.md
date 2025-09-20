@@ -2,12 +2,18 @@
 layout: post
 title: ConvertFrom-ErrorRecord.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/ConvertFrom-ErrorRecord/
 categories:
-  - UserAdminModule
-  - Utilities
+- UserAdminModule
+- Utilities
+tags:
+- PowerShell
+- User Admin Module
+- From Error Record
+description: Interesting stuff further down the page! 🤔
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 ---
 
 Interesting stuff further down the page! 🤔

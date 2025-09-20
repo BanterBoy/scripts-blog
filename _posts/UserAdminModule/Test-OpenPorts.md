@@ -1,14 +1,21 @@
 ---
 layout: post
 title: Test-OpenPorts.ps1
-description: "Leverages Test-NetConnection to verify common or custom TCP ports on hosts."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Test-OpenPorts/
 categories:
-  - UserAdminModule
-  - Testing
+- UserAdminModule
+- Testing
+tags:
+- PowerShell
+- User Admin Module
+- Open Ports
+description: The Test-OpenPorts function utilises the Test-NetConnection cmdlet to
+  make it easier to test multiple ports on multiple computers. It has been created
+  with a...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

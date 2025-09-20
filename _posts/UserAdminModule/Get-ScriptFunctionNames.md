@@ -2,12 +2,18 @@
 layout: post
 title: Get-ScriptFunctionNames.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-ScriptFunctionNames/
 categories:
-  - UserAdminModule
-  - Utilities
+- UserAdminModule
+- Utilities
+tags:
+- PowerShell
+- User Admin Module
+- Script Function Names
+description: Retrieves the names of all functions defined in a PowerShell script.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

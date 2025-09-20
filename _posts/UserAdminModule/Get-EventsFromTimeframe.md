@@ -2,12 +2,19 @@
 layout: post
 title: Get-EventsFromTimeframe.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-EventsFromTimeframe/
 categories:
-  - UserAdminModule
-  - Logging
+- UserAdminModule
+- Logging
+tags:
+- PowerShell
+- User Admin Module
+- Events From Timeframe
+description: This script searches a Windows computer for all event log or text log
+  entries between a specified start and end time.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

@@ -2,12 +2,21 @@
 layout: post
 title: Get-WMIHardwareOSInfo.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-WMIHardwareOSInfo/
 categories:
-  - UserAdminModule
-  - Virtualization
+- UserAdminModule
+- Virtualization
+tags:
+- PowerShell
+- User Admin Module
+- WMI Hardware OS Info
+- WMI
+- OS
+description: Function to pull Hardware & OS info from a machine (prints to console
+  and passes out object with data).
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

@@ -1,14 +1,20 @@
 ---
 layout: post
 title: Update-O365CalendarPermissions.ps1
-description: "Updates existing Microsoft 365 calendar permissions with new roles or removes access."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Update-O365CalendarPermissions/
 categories:
-  - UserAdminModule
-  - Exchange
+- UserAdminModule
+- Exchange
+tags:
+- PowerShell
+- User Admin Module
+- O 365 Calendar Permissions
+description: Update-O365CalendarPermissions - A function to update the permissions
+  for a calendar.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

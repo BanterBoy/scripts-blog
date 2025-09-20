@@ -2,12 +2,18 @@
 layout: post
 title: Get-PortService.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-PortService/
 categories:
-  - UserAdminModule
-  - Network
+- UserAdminModule
+- Network
+tags:
+- PowerShell
+- User Admin Module
+- Port Service
+description: Retrieves port service information based on a search query.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

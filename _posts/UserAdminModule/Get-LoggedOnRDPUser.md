@@ -1,14 +1,21 @@
 ---
 layout: post
 title: Get-LoggedOnRDPUser.ps1
-description: "Returns currently logged-on RDP users across one or more servers."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-LoggedOnRDPUser/
 categories:
-  - UserAdminModule
-  - RemoteConnections
+- UserAdminModule
+- RemoteConnections
+tags:
+- PowerShell
+- User Admin Module
+- Logged On RDP User
+- RDP
+description: Retrieves information about logged on Remote Desktop Protocol (RDP) users
+  on specified computers.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

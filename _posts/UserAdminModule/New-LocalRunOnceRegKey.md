@@ -2,12 +2,18 @@
 layout: post
 title: New-LocalRunOnceRegKey.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/New-LocalRunOnceRegKey/
 categories:
-  - UserAdminModule
-  - Utilities
+- UserAdminModule
+- Utilities
+tags:
+- PowerShell
+- User Admin Module
+- Local Run Once Reg Key
+description: Creates a new RunOnce registry key in the LocalMachine hive.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

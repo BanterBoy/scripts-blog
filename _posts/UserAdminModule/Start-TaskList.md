@@ -2,12 +2,19 @@
 layout: post
 title: Start-TaskList.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Start-TaskList/
 categories:
-  - UserAdminModule
-  - ProcessServiceSchedules
+- UserAdminModule
+- ProcessServiceSchedules
+tags:
+- PowerShell
+- User Admin Module
+- Task List
+description: Start-TaskList reads phrases from C:\GitRepos\TextFiles\prankphrases.txt
+  and displays them through Write-Progress, advancing every five seconds. The function...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

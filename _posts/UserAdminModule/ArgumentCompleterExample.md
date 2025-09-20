@@ -1,12 +1,19 @@
 ---
 layout: post
 title: ArgumentCompleterExample.ps1
-description: "Demonstrates using an ArgumentCompleter to tab-complete Exchange server names when connecting."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/ArgumentCompleterExample/
 categories:
-  - UserAdminModule
-  - Exchange
+- UserAdminModule
+- Exchange
+tags:
+- PowerShell
+- User Admin Module
+- Argument Completer Example
+description: This PowerShell code defines a parameter called $ComputerName that is
+  used to specify the Exchange Server to connect to. The parameter is marked as mandatory...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 - [Description](#description)
   - [Script](#script)

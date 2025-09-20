@@ -2,12 +2,21 @@
 layout: post
 title: Get-DuplicateExchangeDN.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-DuplicateExchangeDN/
 categories:
-  - UserAdminModule
-  - Exchange
+- UserAdminModule
+- Exchange
+tags:
+- PowerShell
+- User Admin Module
+- Duplicate Exchange DN
+- Exchange
+- DN
+description: Retrieves users with duplicate Exchange distinguished names (DNs) and
+  provides the option to remove the duplicates.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

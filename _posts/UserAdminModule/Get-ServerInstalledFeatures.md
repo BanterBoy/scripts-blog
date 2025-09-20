@@ -1,14 +1,19 @@
 ---
 layout: post
 title: Get-ServerInstalledFeatures.ps1
-description: "Queries remote servers for installed Windows features via Get-WindowsFeature."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-ServerInstalledFeatures/
 categories:
-  - UserAdminModule
-  - Utilities
+- UserAdminModule
+- Utilities
+tags:
+- PowerShell
+- User Admin Module
+- Server Installed Features
+description: Retrieves the installed features on a remote server.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

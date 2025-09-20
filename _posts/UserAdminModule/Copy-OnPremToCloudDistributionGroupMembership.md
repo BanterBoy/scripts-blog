@@ -2,12 +2,19 @@
 layout: post
 title: Copy-OnPremToCloudDistributionGroupMembership.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Copy-OnPremToCloudDistributionGroupMembership/
 categories:
-  - UserAdminModule
-  - Exchange
+- UserAdminModule
+- Exchange
+tags:
+- PowerShell
+- User Admin Module
+- On Prem To Cloud Distribution Group Membership
+description: Copies the distribution group membership from an on-premise distribution
+  group to a cloud distribution group.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

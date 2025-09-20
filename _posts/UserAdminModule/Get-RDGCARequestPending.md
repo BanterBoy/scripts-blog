@@ -2,12 +2,20 @@
 layout: post
 title: Get-RDGCARequestPending.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-RDGCARequestPending/
 categories:
-  - UserAdminModule
-  - PKICertificateTools
+- UserAdminModule
+- PKICertificateTools
+tags:
+- PowerShell
+- User Admin Module
+- RDGCA Request Pending
+- RDGCA
+description: Retrieves pending certificate requests from one or more CAs with optional
+  filters.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

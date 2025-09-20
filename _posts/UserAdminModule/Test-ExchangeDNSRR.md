@@ -2,12 +2,21 @@
 layout: post
 title: Test-ExchangeDNSRR.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Test-ExchangeDNSRR/
 categories:
-  - UserAdminModule
-  - Testing
+- UserAdminModule
+- Testing
+tags:
+- PowerShell
+- User Admin Module
+- Exchange DNSRR
+- DNS
+- Exchange
+- DNSRR
+description: A function to search for files
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

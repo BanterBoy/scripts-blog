@@ -2,12 +2,18 @@
 layout: post
 title: Disable-CiscoSecure.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Disable-CiscoSecure/
 categories:
-  - UserAdminModule
-  - Security
+- UserAdminModule
+- Security
+tags:
+- PowerShell
+- User Admin Module
+- Cisco Secure
+description: Disables Cisco Secure on one or more computers.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

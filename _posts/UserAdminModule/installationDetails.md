@@ -2,12 +2,19 @@
 layout: post
 title: installationDetails.txt
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/installationDetails/
 categories:
-  - UserAdminModule
-  - Shell
+- UserAdminModule
+- Shell
+tags:
+- PowerShell
+- User Admin Module
+- Installation Details Txt
+description: Use these installation notes when you download the UserAdminModule profile
+  bundle. The text file outlines the expected folder structure and the steps...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

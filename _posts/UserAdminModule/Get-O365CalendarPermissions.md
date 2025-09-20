@@ -1,14 +1,20 @@
 ---
 layout: post
 title: Get-O365CalendarPermissions.ps1
-description: "Gets the calendar permissions assigned to a Microsoft 365 mailbox."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-O365CalendarPermissions/
 categories:
-  - UserAdminModule
-  - Exchange
+- UserAdminModule
+- Exchange
+tags:
+- PowerShell
+- User Admin Module
+- O 365 Calendar Permissions
+description: Get-O365CalendarPermissions - A function to get the permissions for a
+  calendar.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

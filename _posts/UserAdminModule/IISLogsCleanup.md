@@ -2,13 +2,21 @@
 layout: post
 title: IISLogsCleanup.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/IISLogsCleanup/
 categories:
-  - UserAdminModule
-    - FileOperations
-    - Logging
+- UserAdminModule - FileOperations - Logging
+- UserAdminModule
+tags:
+- PowerShell
+- User Admin Module
+- IIS Logs Cleanup
+- IIS
+description: This PowerShell script is designed to clean up log files on a server.
+  The script first checks if the number of log files matches the number of zipped
+  files....
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

@@ -2,12 +2,19 @@
 layout: post
 title: Unblock-AndUnzipFiles.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Unblock-AndUnzipFiles/
 categories:
-  - UserAdminModule
-  - FileOperations
+- UserAdminModule
+- FileOperations
+tags:
+- PowerShell
+- User Admin Module
+- Unblock And Unzip Files
+description: Unblocks and unzips all zip files in a specified folder or a single zip
+  file.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

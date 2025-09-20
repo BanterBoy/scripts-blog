@@ -2,12 +2,19 @@
 layout: post
 title: Get-VpnFailoverEventLogs.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-VpnFailoverEventLogs/
 categories:
-  - UserAdminModule
-  - Security
+- UserAdminModule
+- Security
+tags:
+- PowerShell
+- User Admin Module
+- VPN Failover Event Logs
+- VPN
+description: Retrieves the event logs created by the Switch-VpnFailover function.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

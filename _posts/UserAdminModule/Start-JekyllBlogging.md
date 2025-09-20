@@ -2,12 +2,18 @@
 layout: post
 title: Start-JekyllBlogging.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Start-JekyllBlogging/
 categories:
-  - UserAdminModule
-  - JekyllBlog
+- UserAdminModule
+- JekyllBlog
+tags:
+- PowerShell
+- User Admin Module
+- Jekyll Blogging
+description: Starts a Jekyll blog server with administrative privileges if required.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

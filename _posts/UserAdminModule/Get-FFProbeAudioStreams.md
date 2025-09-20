@@ -2,12 +2,19 @@
 layout: post
 title: Get-FFProbeAudioStreams.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-FFProbeAudioStreams/
 categories:
-  - UserAdminModule
-  - MediaManagement
+- UserAdminModule
+- MediaManagement
+tags:
+- PowerShell
+- User Admin Module
+- FF Probe Audio Streams
+- FF
+description: Retrieve structured audio stream metadata for a video file using ffprobe.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

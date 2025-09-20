@@ -2,12 +2,19 @@
 layout: post
 title: Remove-CAFromNTAuth.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Remove-CAFromNTAuth/
 categories:
-  - UserAdminModule
-  - PKICertificateTools
+- UserAdminModule
+- PKICertificateTools
+tags:
+- PowerShell
+- User Admin Module
+- Certificate Authority From NT Auth
+- NT
+description: Removes a Certificate Authority (CA) certificate from the NTAuth store.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

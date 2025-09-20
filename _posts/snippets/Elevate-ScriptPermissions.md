@@ -1,8 +1,17 @@
-﻿---
+---
 layout: post
 title: Elevate-ScriptPermissions.ps1
+last_modified_at: 2025-09-20 00:00:00
+categories:
+- Snippets
+tags:
+- PowerShell
+- Snippets
+- Elevate Script Permissions
+description: 'GitHub Copilot: This PowerShell script is designed to check if the current
+  user is running the script with administrator privileges. If the user is not...'
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

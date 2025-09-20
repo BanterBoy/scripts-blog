@@ -2,12 +2,19 @@
 layout: post
 title: Merge-Files.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Merge-Files/
 categories:
-  - UserAdminModule
-  - FileOperations
+- UserAdminModule
+- FileOperations
+tags:
+- PowerShell
+- User Admin Module
+- Merge Files
+description: Merges multiple files of a specified type from a source folder into one
+  or more output files.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

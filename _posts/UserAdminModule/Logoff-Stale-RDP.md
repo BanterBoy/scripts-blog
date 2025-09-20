@@ -1,12 +1,20 @@
 ---
 layout: post
 title: Logoff-Stale-RDP.ps1
-description: "Logs off disconnected or stale Remote Desktop sessions across target servers."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Logoff-Stale-RDP/
 categories:
-  - UserAdminModule
-  - RemoteConnections
+- UserAdminModule
+- RemoteConnections
+tags:
+- PowerShell
+- User Admin Module
+- Logoff Stale RDP
+- RDP
+description: This PowerShell script is designed to log off stale Remote Desktop Protocol
+  (RDP) sessions. The script begins by defining a new object called $starters with...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 - [Description](#description)
   - [Script](#script)

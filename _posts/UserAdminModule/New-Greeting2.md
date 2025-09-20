@@ -1,12 +1,20 @@
 ---
 layout: post
 title: New-Greeting2.ps1
-description: "Outputs ASCII-art greetings for each weekday using a custom class."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/New-Greeting2/
 categories:
-  - UserAdminModule
-  - Shell
+- UserAdminModule
+- Shell
+tags:
+- PowerShell
+- User Admin Module
+- Greeting 2
+description: This PowerShell script defines a class called Greetings that contains
+  a mapping of ASCII art greetings for each day of the week. The Process method of
+  the...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 - [Description](#description)
   - [Script](#script)

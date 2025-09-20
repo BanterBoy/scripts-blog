@@ -2,12 +2,20 @@
 layout: post
 title: New-ModulePSM1.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/New-ModulePSM1/
 categories:
-  - UserAdminModule
-  - Shell
+- UserAdminModule
+- Shell
+tags:
+- PowerShell
+- User Admin Module
+- Module PSM 1
+- PSM
+description: New-ModulePSM1 rebuilds the .psm1 file for a module by concatenating
+  every script found in the module's Public folder. Pass the root module path with...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

@@ -2,12 +2,19 @@
 layout: post
 title: Get-ServiceStatus.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-ServiceStatus/
 categories:
-  - UserAdminModule
-  - ProcessServiceSchedules
+- UserAdminModule
+- ProcessServiceSchedules
+tags:
+- PowerShell
+- User Admin Module
+- Service Status
+description: Retrieves the status of specified services on one or more computers,
+  with options to filter by service name, display name, and various predefined service...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

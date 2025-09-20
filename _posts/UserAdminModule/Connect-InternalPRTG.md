@@ -2,12 +2,19 @@
 layout: post
 title: Connect-InternalPRTG.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Connect-InternalPRTG/
 categories:
-  - UserAdminModule
-  - RemoteConnections
+- UserAdminModule
+- RemoteConnections
+tags:
+- PowerShell
+- User Admin Module
+- Internal PRTG
+- PRTG
+description: Connects to the internal PRTG server.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

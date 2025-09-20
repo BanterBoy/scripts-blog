@@ -2,12 +2,19 @@
 layout: post
 title: Get-ProfileFunctions.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-ProfileFunctions/
 categories:
-  - UserAdminModule
-  - Shell
+- UserAdminModule
+- Shell
+tags:
+- PowerShell
+- User Admin Module
+- Profile Functions
+description: Get-ProfileFunctions inventories the functions stored in your local profile
+  repository and prints them in neatly padded columns. It expects a root folder of...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

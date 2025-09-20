@@ -1,14 +1,21 @@
 ---
 layout: post
 title: Connect-OPExchange.ps1
-description: "Opens a remote session to on-premises Exchange servers using a randomly selected host."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Connect-OPExchange/
 categories:
-  - UserAdminModule
-  - Exchange
+- UserAdminModule
+- Exchange
+tags:
+- PowerShell
+- User Admin Module
+- OP Exchange
+- Exchange
+- OP
+description: Connect-OPExchange - A function to connect to Exchange Server on premise.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

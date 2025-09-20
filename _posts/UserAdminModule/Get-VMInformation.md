@@ -2,12 +2,20 @@
 layout: post
 title: Get-VMInformation.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-VMInformation/
 categories:
-  - UserAdminModule
-  - Virtualization
+- UserAdminModule
+- Virtualization
+tags:
+- PowerShell
+- User Admin Module
+- VM Information
+- VM
+description: Get information from a VM object. Properties include Name, PowerState,
+  vCenterServer, Datacenter, Cluster, VMHost, Datastore, Folder, GuestOS, NetworkName,...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

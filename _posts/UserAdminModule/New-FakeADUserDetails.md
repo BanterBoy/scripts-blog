@@ -2,12 +2,20 @@
 layout: post
 title: New-FakeADUserDetails.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/New-FakeADUserDetails/
 categories:
-  - UserAdminModule
-  - ADFunctions
+- UserAdminModule
+- ADFunctions
+tags:
+- PowerShell
+- User Admin Module
+- Fake Active Directory User Details
+- Active Directory
+description: 'Author: Luke Leigh Website: https://blog.lukeleigh.com/ LinkedIn: https://www.linkedin.com/in/lukeleigh/
+  GitHub: https://github.com/BanterBoy/ GitHubGist:...'
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

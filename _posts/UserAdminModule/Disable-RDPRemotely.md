@@ -1,14 +1,20 @@
 ---
 layout: post
 title: Disable-RDPRemotely.ps1
-description: "Turns off Remote Desktop Protocol on specified computers via WMI or CIM."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Disable-RDPRemotely/
 categories:
-  - UserAdminModule
-  - RemoteConnections
+- UserAdminModule
+- RemoteConnections
+tags:
+- PowerShell
+- User Admin Module
+- RDP Remotely
+- RDP
+description: Disables Remote Desktop Protocol (RDP) on remote computers.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

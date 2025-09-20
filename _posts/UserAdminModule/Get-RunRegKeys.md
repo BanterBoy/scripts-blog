@@ -2,12 +2,19 @@
 layout: post
 title: Get-RunRegKeys.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-RunRegKeys/
 categories:
-  - UserAdminModule
-  - Utilities
+- UserAdminModule
+- Utilities
+tags:
+- PowerShell
+- User Admin Module
+- Run Reg Keys
+description: Retrieves the registry keys under the "Run" subkey of the HKLM:\Software\Microsoft\Windows\CurrentVersion
+  registry path.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

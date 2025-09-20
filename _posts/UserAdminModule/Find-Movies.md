@@ -2,12 +2,18 @@
 layout: post
 title: Find-Movies.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Find-Movies/
 categories:
-  - UserAdminModule
-  - MediaManagement
+- UserAdminModule
+- MediaManagement
+tags:
+- PowerShell
+- User Admin Module
+- Movies
+description: A function to search for files
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

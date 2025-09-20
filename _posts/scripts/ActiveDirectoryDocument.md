@@ -1,8 +1,17 @@
 ---
 layout: post
 title: ActiveDirectoryDocument.ps1
+last_modified_at: 2025-09-20 00:00:00
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Active Directory Document
+- Active Directory
+description: PowerShell script for active directory document.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

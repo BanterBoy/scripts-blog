@@ -1,14 +1,21 @@
 ---
 layout: post
 title: Connect-O365Exchange.ps1
-description: "Connects to Exchange Online with modern authentication via the ExchangeOnlineManagement module."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Connect-O365Exchange/
 categories:
-  - UserAdminModule
-  - Exchange
+- UserAdminModule
+- Exchange
+tags:
+- PowerShell
+- User Admin Module
+- O 365 Exchange
+- Exchange
+description: Connect-O365Exchange - A function to connect to Office 365 Exchange Online
+  using Modern Authentication.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

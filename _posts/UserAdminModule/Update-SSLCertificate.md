@@ -2,12 +2,19 @@
 layout: post
 title: Update-SSLCertificate.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Update-SSLCertificate/
 categories:
-  - UserAdminModule
-  - Security
+- UserAdminModule
+- Security
+tags:
+- PowerShell
+- User Admin Module
+- SSL Certificate
+- SSL
+description: Updates SSL certificates on specified remote servers and IIS bindings.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

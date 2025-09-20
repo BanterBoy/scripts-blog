@@ -1,8 +1,17 @@
 ---
 layout: post
 title: ADACLScan1.3.3.ps1
+last_modified_at: 2025-09-20 00:00:00
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- ADACL Scan 1 3 3
+- ADACL
+description: PowerShell script for ADACL scan 1 3 3.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

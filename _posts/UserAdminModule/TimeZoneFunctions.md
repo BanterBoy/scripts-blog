@@ -1,12 +1,20 @@
 ---
 layout: post
 title: TimeZoneFunctions.ps1
-description: "Provides functions to get or set server time zones across multiple computers."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/TimeZoneFunctions/
 categories:
-  - UserAdminModule
-  - Utilities
+- UserAdminModule
+- Utilities
+tags:
+- PowerShell
+- User Admin Module
+- Time Zone Functions
+description: The PowerShell script that defines a function called Set-ServerTimeZone.
+  This function takes in an array of computer names as input and sets the time zone
+  of...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 - [Description](#description)
   - [Script](#script)

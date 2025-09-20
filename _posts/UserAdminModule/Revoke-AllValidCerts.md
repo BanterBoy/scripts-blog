@@ -2,12 +2,19 @@
 layout: post
 title: Revoke-AllValidCerts.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Revoke-AllValidCerts/
 categories:
-  - UserAdminModule
-  - PKICertificateTools
+- UserAdminModule
+- PKICertificateTools
+tags:
+- PowerShell
+- User Admin Module
+- Revoke All Valid Certs
+description: Revokes all valid certificates issued by a specified Certificate Authority
+  (CA).
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

@@ -2,12 +2,19 @@
 layout: post
 title: Get-BankHolidays.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-BankHolidays/
 categories:
-  - UserAdminModule
-  - Shell
+- UserAdminModule
+- Shell
+tags:
+- PowerShell
+- User Admin Module
+- Bank Holidays
+description: Retrieves bank holidays for the UK regions (England and Wales, Scotland,
+  or Northern Ireland).
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

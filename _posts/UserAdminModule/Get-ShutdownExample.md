@@ -2,12 +2,18 @@
 layout: post
 title: Get-ShutdownExample.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-ShutdownExample/
 categories:
-  - UserAdminModule
-  - ShutdownCommands
+- UserAdminModule
+- ShutdownCommands
+tags:
+- PowerShell
+- User Admin Module
+- Shutdown Example
+description: Displays an example PowerShell script for scheduling remote server shutdowns.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

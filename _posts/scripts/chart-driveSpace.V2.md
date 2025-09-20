@@ -1,8 +1,16 @@
 ---
 layout: post
 title: chart-driveSpace.V2.ps1
+last_modified_at: 2025-09-20 00:00:00
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Chart Drive Space V 2
+description: PowerShell script for chart drive space V 2.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

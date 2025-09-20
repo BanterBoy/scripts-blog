@@ -2,12 +2,18 @@
 layout: post
 title: Set-ServiceConfig.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Set-ServiceConfig/
 categories:
-  - UserAdminModule
-  - ProcessServiceSchedules
+- UserAdminModule
+- ProcessServiceSchedules
+tags:
+- PowerShell
+- User Admin Module
+- Service Config
+description: Configures the status of a specified service on one or more computers.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

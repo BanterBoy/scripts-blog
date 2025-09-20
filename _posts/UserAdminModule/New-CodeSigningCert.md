@@ -2,12 +2,18 @@
 layout: post
 title: New-CodeSigningCert.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/New-CodeSigningCert/
 categories:
-  - UserAdminModule
-  - CertificateUtilities
+- UserAdminModule
+- CertificateUtilities
+tags:
+- PowerShell
+- User Admin Module
+- Code Signing Cert
+description: Creates a new code signing certificate.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

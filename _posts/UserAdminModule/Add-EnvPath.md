@@ -2,12 +2,19 @@
 layout: post
 title: Add-EnvPath.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Add-EnvPath/
 categories:
-  - UserAdminModule
-  - EnvironmentManagement
+- UserAdminModule
+- EnvironmentManagement
+tags:
+- PowerShell
+- User Admin Module
+- Env Path
+description: Adds a path to the system or user environment variable 'Path' and the
+  current session's environment variable 'Path'.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

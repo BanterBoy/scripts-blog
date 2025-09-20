@@ -1,14 +1,22 @@
 ---
 layout: post
 title: New-MSTeamsPhone.ps1
-description: "Assigns a phone number to a Microsoft Teams user using provided credentials."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/New-MSTeamsPhone/
 categories:
-  - UserAdminModule
-  - Teams
+- UserAdminModule
+- Teams
+tags:
+- PowerShell
+- User Admin Module
+- MS Teams Phone
+- Microsoft Teams
+- MS
+description: Install-RequiredModules - Tests to see if scripts/function required modules
+  are available.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

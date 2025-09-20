@@ -2,12 +2,18 @@
 layout: post
 title: Get-PathPermissions.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-PathPermissions/
 categories:
-  - UserAdminModule
-  - FileOperations
+- UserAdminModule
+- FileOperations
+tags:
+- PowerShell
+- User Admin Module
+- Path Permissions
+description: PowerShell script for path permissions.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

@@ -2,12 +2,21 @@
 layout: post
 title: CreateADMXCentralStore.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/CreateADMXCentralStore/
 categories:
-  - UserAdminModule
-  - ADFunctions
+- UserAdminModule
+- ADFunctions
+tags:
+- PowerShell
+- User Admin Module
+- ADMX Central Store
+- ADMX
+description: This PowerShell script is designed to create a central store for ADMX
+  files. The script starts by checking if the specified source server location exists.
+  If...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Information](#information)
   - [Script](#script)

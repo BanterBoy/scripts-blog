@@ -2,12 +2,19 @@
 layout: post
 title: Test-DomainMailRecords.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Test-DomainMailRecords/
 categories:
-  - UserAdminModule
-  - Testing
+- UserAdminModule
+- Testing
+tags:
+- PowerShell
+- User Admin Module
+- Domain Mail Records
+description: Tests the mail records (MX, SPF, DKIM, DMARC) for a given domain using
+  a specified DNS server.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

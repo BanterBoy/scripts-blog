@@ -2,12 +2,20 @@
 layout: post
 title: Test-DNSRecord.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/test-dnsrecord/
 categories:
-  - UserAdminModule
-  - Testing
+- UserAdminModule
+- Testing
+tags:
+- PowerShell
+- User Admin Module
+- DNS Record
+- DNS
+description: A simple wrapper for the function Resolve-DNSName to perform DNS queries
+  against specific DNS Servers. This in no way replaces Resolve-DNSName but provides...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 ### Description
 
 A simple wrapper for the function Resolve-DNSName to perform DNS queries against specific DNS Servers. This in no way replaces Resolve-DNSName but provides some simple enhanced queries that do not require you to remember the names or IP Addresses of the Name Servers that you wish to query. This tool does not include all of the functionality of Resolve-DNSName but will speed up everyday DNS queries and diagnostics.

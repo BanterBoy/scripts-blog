@@ -2,12 +2,20 @@
 layout: post
 title: Convert-ImageForTeams.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Convert-ImageForTeams/
 categories:
-  - UserAdminModule
-  - Teams
+- UserAdminModule
+- Teams
+tags:
+- PowerShell
+- User Admin Module
+- Image For Teams
+- Microsoft Teams
+description: Converts images in a source folder to PNG format and creates thumbnail
+  images.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

@@ -2,12 +2,20 @@
 layout: post
 title: New-PSDrives.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/New-PSDrives/
 categories:
-  - UserAdminModule
-  - Shell
+- UserAdminModule
+- Shell
+tags:
+- PowerShell
+- User Admin Module
+- PowerShell Drives
+description: New-PSDrives is similar to New-GitDrives but skips the initial existence
+  check and simply enumerates each child directory under the selected root, creating
+  a...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

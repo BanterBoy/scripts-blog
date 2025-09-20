@@ -1,12 +1,19 @@
 ---
 layout: post
 title: Ifnotpwsh7.ps1
-description: "Example logic that branches actions based on whether PowerShell 6 or later is available."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Ifnotpwsh7/
 categories:
-  - UserAdminModule
-  - Shell
+- UserAdminModule
+- Shell
+tags:
+- PowerShell
+- User Admin Module
+- Ifnotpwsh 7
+description: This PowerShell code is using an if-else statement to check the version
+  of PowerShell that is currently running. The if statement checks if the major version...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 - [Description](#description)
   - [Script](#script)

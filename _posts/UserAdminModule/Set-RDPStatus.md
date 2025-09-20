@@ -2,12 +2,19 @@
 layout: post
 title: Set-RDPStatus.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Set-RDPStatus/
 categories:
-  - UserAdminModule
-  - RemoteConnections
+- UserAdminModule
+- RemoteConnections
+tags:
+- PowerShell
+- User Admin Module
+- RDP Status
+- RDP
+description: Enables or disables RDP on specified computers.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

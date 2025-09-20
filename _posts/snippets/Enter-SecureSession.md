@@ -1,8 +1,18 @@
 ---
 layout: post
 title: Enter-SecureSession.ps1
+last_modified_at: 2025-09-20 00:00:00
+categories:
+- Snippets
+tags:
+- PowerShell
+- Snippets
+- Enter Secure Session
+description: This PowerShell script is designed to create a secure session with a
+  remote server. The script prompts the user to enter their username and password,
+  which...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

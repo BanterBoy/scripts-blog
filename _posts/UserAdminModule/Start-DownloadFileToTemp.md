@@ -2,12 +2,18 @@
 layout: post
 title: Start-DownloadFileToTemp.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Start-DownloadFileToTemp/
 categories:
-  - UserAdminModule
-  - FileOperations
+- UserAdminModule
+- FileOperations
+tags:
+- PowerShell
+- User Admin Module
+- Download File To Temp
+description: PowerShell script for download file to temp.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

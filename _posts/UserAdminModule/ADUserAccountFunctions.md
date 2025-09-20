@@ -2,12 +2,19 @@
 layout: post
 title: ADUserAccountFunctions.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/ADUserAccountFunctions/
 categories:
-  - UserAdminModule
-  - ADFunctions
+- UserAdminModule
+- ADFunctions
+tags:
+- PowerShell
+- User Admin Module
+- Active Directory User Account Functions
+- Active Directory
+description: Interesting stuff further down the page! 🤔
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 ---
 
 Interesting stuff further down the page! 🤔

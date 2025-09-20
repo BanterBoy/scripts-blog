@@ -2,12 +2,19 @@
 layout: post
 title: Test-OpenPortsWitch.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Test-OpenPortsWitch/
 categories:
-  - UserAdminModule
-  - Testing
+- UserAdminModule
+- Testing
+tags:
+- PowerShell
+- User Admin Module
+- Open Ports Witch
+description: The Test-OpenPortsWitch function utilises the Test-NetConnection cmdlet
+  to make it easier to test multiple ports on multiple computers. It has been created...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

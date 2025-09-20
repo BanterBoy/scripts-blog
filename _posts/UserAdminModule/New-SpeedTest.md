@@ -2,12 +2,19 @@
 layout: post
 title: New-SpeedTest.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/New-SpeedTest/
 categories:
-  - UserAdminModule
-  - Utilities
+- UserAdminModule
+- Utilities
+tags:
+- PowerShell
+- User Admin Module
+- Speed Test
+description: New-SpeedTest is a wrapper function for the the official command line
+  client from Speedtest by Ookla for testing the speed and performance of your internet...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

@@ -1,12 +1,19 @@
 ---
 layout: post
 title: Connect-Proxy.ps1
-description: "Shows how to create a proxy-aware WebClient for authenticated downloads and API calls."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Connect-Proxy/
 categories:
-  - UserAdminModule
-  - Network
+- UserAdminModule
+- Network
+tags:
+- PowerShell
+- User Admin Module
+- Proxy
+description: This code is written in PowerShell and is used to create a web client
+  object and set its properties. The first line creates a new instance of the...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 - [Description](#description)
   - [Script](#script)

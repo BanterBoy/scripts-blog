@@ -2,12 +2,19 @@
 layout: post
 title: Reset-UsersPassword.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Reset-UsersPassword/
 categories:
-  - UserAdminModule
-  - ADFunctions
+- UserAdminModule
+- ADFunctions
+tags:
+- PowerShell
+- User Admin Module
+- Reset Users Password
+description: This PowerShell script is designed to check the expiration date of a
+  user's password and their locked-out status. It then allows the user to unlock and/or...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

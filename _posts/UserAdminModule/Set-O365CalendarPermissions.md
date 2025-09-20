@@ -1,14 +1,20 @@
 ---
 layout: post
 title: Set-O365CalendarPermissions.ps1
-description: "Applies or removes Microsoft 365 calendar permissions for specified users."
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Set-O365CalendarPermissions/
 categories:
-  - UserAdminModule
-  - Exchange
+- UserAdminModule
+- Exchange
+tags:
+- PowerShell
+- User Admin Module
+- O 365 Calendar Permissions
+description: Sets, updates, or removes permissions for a user on an Office 365 calendar
+  (Exchange Online).
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

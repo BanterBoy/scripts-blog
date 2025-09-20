@@ -2,12 +2,19 @@
 layout: post
 title: Get-ADCertificates.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Get-ADCertificates/
 categories:
-  - UserAdminModule
-  - PKICertificateTools
+- UserAdminModule
+- PKICertificateTools
+tags:
+- PowerShell
+- User Admin Module
+- Active Directory Certificates
+- Active Directory
+description: No synopsis provided.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

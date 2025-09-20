@@ -2,12 +2,20 @@
 layout: post
 title: FFMpegFunctions.ps1
 date: 2025-09-19
+last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/FFMpegFunctions/
 categories:
-  - UserAdminModule
-  - MediaManagement
+- UserAdminModule
+- MediaManagement
+tags:
+- PowerShell
+- User Admin Module
+- FF Mpeg Functions
+- FF
+description: Provide helper functions that surface common FFmpeg and FFprobe tasks
+  within the MediaManagement module.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
-
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)
