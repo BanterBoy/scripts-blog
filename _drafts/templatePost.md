@@ -47,7 +47,8 @@ This section will, in the near future, contain one or more examples of the scrip
 
 Please feel free to copy parts of the script or if you would like to download the entire script, simple click the download button. You can download the complete repository in a zip file by clicking the Download link in the menu bar on the left hand side of the page.
 
-<button class="btn" type="submit" onclick="window.open('/PowerShell/functions/myProfile/templatePost.ps1')">
+<!-- Update the script path below to point at the final module location before publishing. -->
+<button class="btn" type="submit" onclick="window.open('/PowerShell/UserAdminModule/<update-with-script-path>.ps1')">
     <i class="fa fa-cloud-download-alt">
     </i>
         Download
