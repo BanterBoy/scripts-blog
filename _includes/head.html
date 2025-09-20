@@ -11,11 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ " /assets/css/poole.css" }}">
-    <link rel="stylesheet" href="{{ " /assets/css/syntax.css" }}">
-    <link rel="stylesheet" href="{{ " /assets/css/hyde.css" }}">
-    <link rel="stylesheet" href="{{ " /assets/css/lightbox/css/lightbox.min.css" }}">
-    <link rel="stylesheet" href="{{ " /assets/css/themes.css" }}">
+    <link rel="stylesheet" href="{{ "/assets/css/poole.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/syntax.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/hyde.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/lightbox/css/lightbox.min.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/themes.css" | relative_url }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap">
 
     <!-- buttons.github.io -->
@@ -28,16 +28,16 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- lightbox -->
-    <script src="{{ " /assets/css/lightbox/js/lightbox-plus-jquery.js" }}"></script>
+    <script src="{{ "/assets/css/lightbox/js/lightbox-plus-jquery.js" | relative_url }}"></script>
 
     <!-- js.cookie for theming -->
-    <script src="{{ " /assets/js/js.cookie.min.js" }}"></script>
+    <script src="{{ "/assets/js/js.cookie.min.js" | relative_url }}"></script>
 
     <!-- site -->
-    <script src="{{ " /assets/js/site.js" }}"></script>
+    <script src="{{ "/assets/js/site.js" | relative_url }}"></script>
 
     <!-- Icons -->
-    <link rel="shortcut icon" href="{{ absolute_url }}/favicon.ico">
+    <link rel="shortcut icon" href="{{ '/favicon.ico' | absolute_url }}">
 
     <!-- RSS -->
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
@@ -82,3 +82,4 @@
     </script>
     <!-- End Microsoft Clarity Analytics -->
 </head>
+
