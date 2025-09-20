@@ -1,0 +1,982 @@
+{
+  "ConvertFrom-ErrorRecord": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/ConvertFrom-ErrorRecord.ps1"
+  },
+  "ConvertObject-ToHashTable": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/ConvertObject-ToHashTable.ps1"
+  },
+  "Copy-History": {
+    "category": "Shell",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Shell/Public/Copy-History.ps1"
+  },
+  "Enable-RemoteDesktop": {
+    "category": "RemoteConnections",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/RemoteConnections/Public/Enable-RemoteDesktop.ps1"
+  },
+  "Get-FTPFile-empty": {
+    "category": "Network",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Network/Public/Get-FTPFile-empty.ps1"
+  },
+  "Get-Icon": {
+    "category": "Shell",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Shell/Public/Get-Icon.ps1"
+  },
+  "Get-LastCommands": {
+    "category": "Shell",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Shell/Public/Get-LastCommands.ps1"
+  },
+  "Get-PendingReboot": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-PendingReboot.ps1"
+  },
+  "Get-PortInfo": {
+    "category": "Network",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Network/Public/Get-PortInfo.ps1"
+  },
+  "Get-ProcessandServicePID": {
+    "category": "ProcessServiceSchedules",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ProcessServiceSchedules/Public/Get-ProcessandServicePID.ps1"
+  },
+  "Get-ProductKey": {
+    "category": "Security",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Security/Public/Get-ProductKey.ps1"
+  },
+  "Get-RebootReport": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-RebootReport.ps1"
+  },
+  "Get-Resources": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-Resources.ps1"
+  },
+  "Get-SSLlabsScore": {
+    "category": "Security",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Security/Public/Get-SSLlabsScore.ps1"
+  },
+  "Get-SettingsWithCPassword": {
+    "category": "Security",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Security/Public/Get-SettingsWithCPassword.ps1"
+  },
+  "Get-TokenSizeReport": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Get-TokenSizeReport.ps1"
+  },
+  "Get-UnknownDevices": {
+    "category": "Security",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Security/Public/Get-UnknownDevices.ps1"
+  },
+  "Get-Uptime": {
+    "category": "Utilities",
+    "subfolder": "Private",
+    "path": "PowerShell/UserAdminModule/Utilities/Private/Get-Uptime.ps1"
+  },
+  "Get-UptimeV1": {
+    "category": "Virtualization",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Virtualization/Public/Get-UptimeV1.ps1"
+  },
+  "Get-UserAccountControlReport": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Get-UserAccountControlReport.ps1"
+  },
+  "GetWindowsFeatures": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/GetWindowsFeatures.ps1"
+  },
+  "Invoke-CDRomDrive": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Invoke-CDRomDrive.ps1"
+  },
+  "Invoke-FTPUpload": {
+    "category": "Network",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Network/Public/Invoke-FTPUpload.ps1"
+  },
+  "Invoke-PasswordRoll": {
+    "category": "Security",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Security/Public/Invoke-PasswordRoll.ps1"
+  },
+  "Invoke-UrlScan": {
+    "category": "Security",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Security/Public/Invoke-UrlScan.ps1"
+  },
+  "Invoke-WebrequestCookie": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Invoke-WebrequestCookie.ps1"
+  },
+  "Lock-Screen": {
+    "category": "Shell",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Shell/Public/Lock-Screen.ps1"
+  },
+  "Lock-UserInput": {
+    "category": "Shell",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Shell/Public/Lock-UserInput.ps1"
+  },
+  "MoveOU": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/MoveOU.ps1"
+  },
+  "New-AdminShell": {
+    "category": "Shell",
+    "subfolder": "Private",
+    "path": "PowerShell/UserAdminModule/Shell/Private/New-AdminShell.ps1"
+  },
+  "New-BlogServer": {
+    "category": "JekyllBlog",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/JekyllBlog/Public/New-BlogServer.ps1"
+  },
+  "New-EncryptedUser": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/New-EncryptedUser.ps1"
+  },
+  "New-PassPhrase": {
+    "category": "Security",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Security/Public/New-PassPhrase.ps1"
+  },
+  "New-Password": {
+    "category": "Security",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Security/Public/New-Password.ps1"
+  },
+  "New-QotD": {
+    "category": "Shell",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Shell/Public/New-QotD.ps1"
+  },
+  "New-ScheduledTask": {
+    "category": "ProcessServiceSchedules",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ProcessServiceSchedules/Public/New-ScheduledTask.ps1"
+  },
+  "Open-CDTray": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Open-CDTray.ps1"
+  },
+  "Out-Excel": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Out-Excel.ps1"
+  },
+  "PasswordFunctions": {
+    "category": "Security",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Security/Public/PasswordFunctions.ps1"
+  },
+  "ProgressBar": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/ProgressBar.ps1"
+  },
+  "Query-UserAccountControl": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Query-UserAccountControl.ps1"
+  },
+  "Remote Admin Tools v3": {
+    "category": "RemoteConnections",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/RemoteConnections/Public/Remote Admin Tools v3.ps1"
+  },
+  "Remove-UserProfile": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Remove-UserProfile.ps1"
+  },
+  "RemoveLocalUserProfile": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/RemoveLocalUserProfile.ps1"
+  },
+  "ScreenPassword": {
+    "category": "Security",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Security/Public/ScreenPassword.ps1"
+  },
+  "Script4logging": {
+    "category": "Logging",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Logging/Public/Script4logging.ps1"
+  },
+  "Search-Google": {
+    "category": "Shell",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Shell/Public/Search-Google.ps1"
+  },
+  "Search-KerbDelegatedAccounts": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Search-KerbDelegatedAccounts.ps1"
+  },
+  "Search-RoadWorks": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Search-RoadWorks.ps1"
+  },
+  "Send-OutlookMail": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Send-OutlookMail.ps1"
+  },
+  "SiteNameConsistencyReport": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/SiteNameConsistencyReport.ps1"
+  },
+  "Start-DownloadFileToTemp": {
+    "category": "FileOperations",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/FileOperations/Public/Start-DownloadFileToTemp.ps1"
+  },
+  "Start-PSCountdown": {
+    "category": "Shell",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Shell/Public/Start-PSCountdown.ps1"
+  },
+  "Start-Stream": {
+    "category": "MediaManagement",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/MediaManagement/Public/Start-Stream.ps1"
+  },
+  "Test-ComputerName": {
+    "category": "Testing",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Testing/Public/Test-ComputerName.ps1"
+  },
+  "Test-EmailAddress": {
+    "category": "Testing",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Testing/Public/Test-EmailAddress.ps1"
+  },
+  "Test-OnlineFast": {
+    "category": "Testing",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Testing/Public/Test-OnlineFast.ps1"
+  },
+  "Test-ServerExists": {
+    "category": "Testing",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Testing/Public/Test-ServerExists.ps1"
+  },
+  "Test-WebSiteUp": {
+    "category": "Testing",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Testing/Public/Test-WebSiteUp.ps1"
+  },
+  "ADUserAccountFunctions": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/ADUserAccountFunctions.ps1"
+  },
+  "Add-ADUsertoLocalGroup": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Add-ADUsertoLocalGroup.ps1"
+  },
+  "Amend-pwdLastSet": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Amend-pwdLastSet.ps1"
+  },
+  "Copy-AdGroupMemberShip": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Copy-AdGroupMemberShip.ps1"
+  },
+  "FSMOFunctions": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/FSMOFunctions.ps1"
+  },
+  "Find-localAdmins": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Find-localAdmins.ps1"
+  },
+  "Get-ADDeletedUsers": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Get-ADDeletedUsers.ps1"
+  },
+  "Get-ADUserLastLogon": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Get-ADUserLastLogon.ps1"
+  },
+  "Get-ActiveDirectoryTombstonePeriod": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Get-ActiveDirectoryTombstonePeriod.ps1"
+  },
+  "Get-DomainControllers": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Get-DomainControllers.ps1"
+  },
+  "Get-ElevatedUsers": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Get-ElevatedUsers.ps1"
+  },
+  "Get-LocalGroupMembership": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Get-LocalGroupMembership.ps1"
+  },
+  "Get-LockedOutUser": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Get-LockedOutUser.ps1"
+  },
+  "Get-LoggedOnUser": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Get-LoggedOnUser.ps1"
+  },
+  "Get-NestedGroupMember": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Get-NestedGroupMember.ps1"
+  },
+  "Get-O365LastLogonTime": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Get-O365LastLogonTime.ps1"
+  },
+  "Get-PrimaryGroupsReport": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Get-PrimaryGroupsReport.ps1"
+  },
+  "Get-RemoteServiceAccount": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Get-RemoteServiceAccount.ps1"
+  },
+  "Get-ServiceDetails": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Get-ServiceDetails.ps1"
+  },
+  "Get-ServiceLogonAccount": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Get-ServiceLogonAccount.ps1"
+  },
+  "Get-ServicePrivilege": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Get-ServicePrivilege.ps1"
+  },
+  "Get-UnlinkedGPO": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Get-UnlinkedGPO.ps1"
+  },
+  "Get-UserReport": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Get-UserReport.ps1"
+  },
+  "Get-UserSupportedEncryptionTypes": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Get-UserSupportedEncryptionTypes.ps1"
+  },
+  "Get-UsersGroupMemberShips": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Get-UsersGroupMemberShips.ps1"
+  },
+  "GetMailboxPermission": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/GetMailboxPermission.ps1"
+  },
+  "GetUserLoggedOnto": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/GetUserLoggedOnto.ps1"
+  },
+  "Provision_Home_Folder": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Provision_Home_Folder.ps1"
+  },
+  "Remove-AdminSDHolder": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Remove-AdminSDHolder.ps1"
+  },
+  "Restore-ADDeletedUsers": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Restore-ADDeletedUsers.ps1"
+  },
+  "Search-GPO": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Search-GPO.ps1"
+  },
+  "Search-GPOsForString": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Search-GPOsForString.ps1"
+  },
+  "Search-GPOsForStringOrig": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Search-GPOsForStringOrig.ps1"
+  },
+  "Sync-Office365ToADDS": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Sync-Office365ToADDS.ps1"
+  },
+  "Test-ADUserCredentials": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Test-ADUserCredentials.ps1"
+  },
+  "Test-ADUserHighPrivilegeGroupMembership": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Test-ADUserHighPrivilegeGroupMembership.ps1"
+  },
+  "Unlock-UserAccount": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/Unlock-UserAccount.ps1"
+  },
+  "get-usermembership": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/get-usermembership.ps1"
+  },
+  "Export-Bitlocker": {
+    "category": "Security",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Security/Public/Export-Bitlocker.ps1"
+  },
+  "Export-BitlockerComp": {
+    "category": "Security",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Security/Public/Export-BitlockerComp.ps1"
+  },
+  "Export-BitlockerParams": {
+    "category": "Security",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Security/Public/Export-BitlockerParams.ps1"
+  },
+  "New-FileArchive": {
+    "category": "FileOperations",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/FileOperations/Public/New-FileArchive.ps1"
+  },
+  "New-ZipFile": {
+    "category": "FileOperations",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/FileOperations/Public/New-ZipFile.ps1"
+  },
+  "UncompressZip-SameDestination": {
+    "category": "FileOperations",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/FileOperations/Public/UncompressZip-SameDestination.ps1"
+  },
+  "zipArchiveTool_recursive": {
+    "category": "FileOperations",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/FileOperations/Public/zipArchiveTool_recursive.ps1"
+  },
+  "Get-DKIMRecord": {
+    "category": "Network",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Network/Public/Get-DKIMRecord.ps1"
+  },
+  "Get-DMARCRecord": {
+    "category": "Network",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Network/Public/Get-DMARCRecord.ps1"
+  },
+  "Get-PublicDnsRecord": {
+    "category": "Network",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Network/Public/Get-PublicDnsRecord.ps1"
+  },
+  "Get-SPFRecord": {
+    "category": "Network",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Network/Public/Get-SPFRecord.ps1"
+  },
+  "Resolve-DNSList": {
+    "category": "Network",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Network/Public/Resolve-DNSList.ps1"
+  },
+  "Resolve-DnsDomain": {
+    "category": "Network",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Network/Public/Resolve-DnsDomain.ps1"
+  },
+  "Resolve-DomainDNS": {
+    "category": "Network",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Network/Public/Resolve-DomainDNS.ps1"
+  },
+  "Test-DNSPropagation": {
+    "category": "Network",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Network/Public/Test-DNSPropagation.ps1"
+  },
+  "Connect-ExchangeServer": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Connect-ExchangeServer.ps1"
+  },
+  "Connect-O365Session": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Connect-O365Session.ps1"
+  },
+  "Connect-Office365Services": {
+    "category": "Shell",
+    "subfolder": "Configuration/personalProfiles",
+    "path": "PowerShell/UserAdminModule/Shell/Configuration/personalProfiles/Connect-Office365Services.ps1"
+  },
+  "Copy-ReceiveConnector": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Copy-ReceiveConnector.ps1"
+  },
+  "Enter-O365Session": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Enter-O365Session.ps1"
+  },
+  "ExchangeFunctions": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/ExchangeFunctions.ps1"
+  },
+  "Export-CalendarPermissions": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Export-CalendarPermissions.ps1"
+  },
+  "Get-ADExchangeServer": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Get-ADExchangeServer.ps1"
+  },
+  "Get-ExchangeServer": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Get-ExchangeServer.ps1"
+  },
+  "Get-InboxRules": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Get-InboxRules.ps1"
+  },
+  "Get-MBAccessPerms": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Get-MBAccessPerms.ps1"
+  },
+  "Get-MailboxAccessPerms": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Get-MailboxAccessPerms.ps1"
+  },
+  "Get-MailboxPermissions": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Get-MailboxPermissions.ps1"
+  },
+  "Get-MailboxPermissionsExport": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Get-MailboxPermissionsExport.ps1"
+  },
+  "Get-MailboxPermissionsReport": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Get-MailboxPermissionsReport.ps1"
+  },
+  "Get-MailboxPermissionsReport2": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Get-MailboxPermissionsReport2.ps1"
+  },
+  "Get-MailboxReport": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Get-MailboxReport.ps1"
+  },
+  "Get-MailboxStatistics": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Get-MailboxStatistics.ps1"
+  },
+  "O365Session": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/O365Session.ps1"
+  },
+  "OnPremExchangeFunctions": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/OnPremExchangeFunctions.ps1"
+  },
+  "PasswordChangeNotification": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/PasswordChangeNotification.ps1"
+  },
+  "PasswordReminderAlso": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/PasswordReminderAlso.ps1"
+  },
+  "Remove-MailboxFolderPermissions": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Remove-MailboxFolderPermissions.ps1"
+  },
+  "Remove-UsersfromGAL": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Remove-UsersfromGAL.ps1"
+  },
+  "Restart-ExchangeServices": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Restart-ExchangeServices.ps1"
+  },
+  "Set-AutoDiscover": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Set-AutoDiscover.ps1"
+  },
+  "Set-CalendarPermsScript": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Set-CalendarPermsScript.ps1"
+  },
+  "Set-DefaultReceiveConnector": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Set-DefaultReceiveConnector.ps1"
+  },
+  "Update-CalendarPermissions": {
+    "category": "Exchange",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Exchange/Public/Update-CalendarPermissions.ps1"
+  },
+  "Format-FileSize": {
+    "category": "FileOperations",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/FileOperations/Public/Format-FileSize.ps1"
+  },
+  "Get-FileOwner": {
+    "category": "FileOperations",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/FileOperations/Public/Get-FileOwner.ps1"
+  },
+  "Get-IniContent": {
+    "category": "FileOperations",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/FileOperations/Public/Get-IniContent.ps1"
+  },
+  "Get-MediaDetails": {
+    "category": "FileOperations",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/FileOperations/Public/Get-MediaDetails.ps1"
+  },
+  "Get-NeglectedFiles": {
+    "category": "FileOperations",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/FileOperations/Public/Get-NeglectedFiles.ps1"
+  },
+  "Get-PathPermissions": {
+    "category": "FileOperations",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/FileOperations/Public/Get-PathPermissions.ps1"
+  },
+  "New-FolderCompare": {
+    "category": "FileOperations",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/FileOperations/Public/New-FolderCompare.ps1"
+  },
+  "Get-CPUTemperature": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-CPUTemperature.ps1"
+  },
+  "Get-ErrorInfo": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-ErrorInfo.ps1"
+  },
+  "Get-InfoBadService": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-InfoBadService.ps1"
+  },
+  "Get-InfoCompSystem": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-InfoCompSystem.ps1"
+  },
+  "Get-InfoDisk": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-InfoDisk.ps1"
+  },
+  "Get-InfoNIC": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-InfoNIC.ps1"
+  },
+  "Get-InfoOS": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-InfoOS.ps1"
+  },
+  "Get-InfoProc": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-InfoProc.ps1"
+  },
+  "get-DotNetVersion": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/get-DotNetVersion.ps1"
+  },
+  "Get-IPConfig": {
+    "category": "Network",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Network/Public/Get-IPConfig.ps1"
+  },
+  "Get-PingMonitor": {
+    "category": "Network",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Network/Public/Get-PingMonitor.ps1"
+  },
+  "Connect-RDPSession": {
+    "category": "RemoteConnections",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/RemoteConnections/Public/Connect-RDPSession.ps1"
+  },
+  "Disable-RDPRemotelyCIM": {
+    "category": "RemoteConnections",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/RemoteConnections/Public/Disable-RDPRemotelyCIM.ps1"
+  },
+  "Disable-RDPRemotelyWMI": {
+    "category": "RemoteConnections",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/RemoteConnections/Public/Disable-RDPRemotelyWMI.ps1"
+  },
+  "Enable-RDPRemotelyCIM": {
+    "category": "RemoteConnections",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/RemoteConnections/Public/Enable-RDPRemotelyCIM.ps1"
+  },
+  "Enable-RDPRemotelyWMI": {
+    "category": "RemoteConnections",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/RemoteConnections/Public/Enable-RDPRemotelyWMI.ps1"
+  },
+  "Get-DuckDuckGoSearch": {
+    "category": "Shell",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Shell/Public/Get-DuckDuckGoSearch.ps1"
+  },
+  "Get-GoogleDirections": {
+    "category": "Shell",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Shell/Public/Get-GoogleDirections.ps1"
+  },
+  "Get-GoogleSearch": {
+    "category": "Shell",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Shell/Public/Get-GoogleSearch.ps1"
+  },
+  "Get-ProfileFunctions": {
+    "category": "Shell",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Shell/Public/Get-ProfileFunctions.ps1"
+  },
+  "Get-RDPStatusCIM": {
+    "category": "RemoteConnections",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/RemoteConnections/Public/Get-RDPStatusCIM.ps1"
+  },
+  "Get-RDPStatusWMI": {
+    "category": "RemoteConnections",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/RemoteConnections/Public/Get-RDPStatusWMI.ps1"
+  },
+  "Get-TempHumidData": {
+    "category": "Weather",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Weather/Public/Get-TempHumidData.ps1"
+  },
+  "Microsoft.PowerShell_profile": {
+    "category": "Shell",
+    "subfolder": "Configuration/General",
+    "path": "PowerShell/UserAdminModule/Shell/Configuration/General/Microsoft.PowerShell_profile.ps1"
+  },
+  "New-AdminTerminal": {
+    "category": "Shell",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Shell/Public/New-AdminTerminal.ps1"
+  },
+  "New-GitDrives": {
+    "category": "Shell",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Shell/Public/New-GitDrives.ps1"
+  },
+  "New-ModulePSM1": {
+    "category": "Shell",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Shell/Public/New-ModulePSM1.ps1"
+  },
+  "New-PSDrives": {
+    "category": "Shell",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Shell/Public/New-PSDrives.ps1"
+  },
+  "Start-TaskList": {
+    "category": "ProcessServiceSchedules",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ProcessServiceSchedules/Public/Start-TaskList.ps1"
+  },
+  "network packV3": {
+    "category": "Network",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Network/Public/network packV3.ps1"
+  },
+  "parse_NTFS": {
+    "category": "FileOperations",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/FileOperations/Public/parse_NTFS.ps1"
+  },
+  "Microsoft.PowerShell_profile_Example": {
+    "category": "Shell",
+    "subfolder": "Configuration/Examples",
+    "path": "PowerShell/UserAdminModule/Shell/Configuration/Examples/Microsoft.PowerShell_profile_Example.ps1"
+  },
+  "Restart-PowershellProfile": {
+    "category": "Shell",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Shell/Public/Restart-PowershellProfile.ps1"
+  },
+  "HomePowerShell_profile": {
+    "category": "Shell",
+    "subfolder": "Configuration/personalProfiles",
+    "path": "PowerShell/UserAdminModule/Shell/Configuration/personalProfiles/HomePowerShell_profile.ps1"
+  },
+  "WorkPowerShell_profile": {
+    "category": "Shell",
+    "subfolder": "Configuration/personalProfiles",
+    "path": "PowerShell/UserAdminModule/Shell/Configuration/personalProfiles/WorkPowerShell_profile.ps1"
+  },
+  "Get-2amOfThirdMondayInMonth": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-2amOfThirdMondayInMonth.ps1"
+  },
+  "Get-NTPStatusFromHost": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-NTPStatusFromHost.ps1"
+  },
+  "Get-Ntptime": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-Ntptime.ps1"
+  },
+  "Get-PatchTuesday": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-PatchTuesday.ps1"
+  },
+  "Get-RemoteTime": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-RemoteTime.ps1"
+  },
+  "Get-Time": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-Time.ps1"
+  },
+  "Get-TimeServer": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-TimeServer.ps1"
+  },
+  "Get-WeekDayInMonth": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-WeekDayInMonth.ps1"
+  },
+  "Get-InstalledUpdates": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-InstalledUpdates.ps1"
+  },
+  "Get-PendingUpdates": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-PendingUpdates.ps1"
+  },
+  "Start-WindowsUpdate": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Start-WindowsUpdate.ps1"
+  },
+  "remove-ADM": {
+    "category": "ADFunctions",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/ADFunctions/Public/remove-ADM.ps1"
+  },
+  "Get-ChuckNorrisJoke": {
+    "category": "Utilities",
+    "subfolder": "Public",
+    "path": "PowerShell/UserAdminModule/Utilities/Public/Get-ChuckNorrisJoke.ps1"
+  }
+}
