@@ -82,7 +82,7 @@ Uses the default `SpeedUpPercentage` value (100) to keep tempo unchanged, which 
 Speeds up a video file.
 
 .DESCRIPTION
-Speeds up a video file, likely to make porn really weird.
+Speeds up a video file by a specified percentage, adjusting both video and audio to maintain synchronization. Useful for creating condensed versions of media or increasing playback speed for review purposes.
 
 .PARAMETER VideoFile
 Input video file. Full path.
