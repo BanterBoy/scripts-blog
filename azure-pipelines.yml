@@ -17,10 +17,42 @@ steps:
     addToPath: true
 
 - script: |
-    gem install bundler
+    if [ -f Gemfile.lock ]; then
+      echo 'Gemfile.lock already present. Using existing lockfile for cache key.'
+    else
+      echo 'Gemfile.lock not found – generating temporary lockfile for cache key.'
+      if ! command -v bundle >/dev/null; then
+        echo 'Installing Bundler to create lockfile.'
+        gem install bundler
+      fi
+      bundle lock
+    fi
+  displayName: 'Ensure Gemfile.lock for cache key'
+
+- task: Cache@2
+  displayName: 'Cache Ruby gems'
+  inputs:
+    key: 'bundler | "$(Agent.OS)" | $(Build.SourcesDirectory)/Gemfile.lock'
+    restoreKeys: |
+      bundler | "$(Agent.OS)"
+    path: '$(Build.SourcesDirectory)/vendor/bundle'
+    cacheHitVar: BUNDLE_CACHE_RESTORED
+
+- script: |
+    if [ "$(BUNDLE_CACHE_RESTORED)" = "true" ]; then
+      echo 'Using cached gems from vendor/bundle.'
+    else
+      echo 'Cache miss – installing gems fresh.'
+    fi
+    if ! command -v bundle >/dev/null; then
+      echo 'Installing Bundler.'
+      gem install bundler
+    fi
     bundle config set --local path vendor/bundle
     bundle install --jobs 4 --retry 3
   displayName: 'Install Ruby gems'
+  env:
+    BUNDLE_CACHE_RESTORED: $(BUNDLE_CACHE_RESTORED)
 
 - script: bundle exec jekyll build --future
   displayName: 'Build Jekyll site'
