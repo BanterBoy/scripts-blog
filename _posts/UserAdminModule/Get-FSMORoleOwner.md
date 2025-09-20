@@ -2,7 +2,7 @@
 layout: post
 title: Get-FSMORoleOwner.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-FSMORoleOwner/
+permalink: /useradminmodule/adfunctions/get-fsmoroleowner/
 categories:
   - UserAdminModule
   - ADFunctions

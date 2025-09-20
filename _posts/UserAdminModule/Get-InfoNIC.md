@@ -2,7 +2,7 @@
 layout: post
 title: Get-InfoNIC.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-InfoNIC/
+permalink: /useradminmodule/utilities/get-infonic/
 categories:
   - UserAdminModule
   - Utilities

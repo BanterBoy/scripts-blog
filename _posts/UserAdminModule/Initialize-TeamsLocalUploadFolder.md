@@ -2,7 +2,7 @@
 layout: post
 title: Initialize-TeamsLocalUploadFolder.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Initialize-TeamsLocalUploadFolder/
+permalink: /useradminmodule/teams/initialize-teamslocaluploadfolder/
 categories:
   - UserAdminModule
   - Teams

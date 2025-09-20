@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Install-O365Modules.ps1
+permalink: /scripts/install-o365modules/
 ---
 
 - [Description](#description)

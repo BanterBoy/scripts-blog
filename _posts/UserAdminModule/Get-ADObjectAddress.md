@@ -2,7 +2,7 @@
 layout: post
 title: Get-ADObjectAddress.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ADObjectAddress/
+permalink: /useradminmodule/adfunctions/get-adobjectaddress/
 categories:
   - UserAdminModule
   - ADFunctions

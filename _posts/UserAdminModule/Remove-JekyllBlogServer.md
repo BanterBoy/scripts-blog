@@ -2,7 +2,7 @@
 layout: post
 title: Remove-JekyllBlogServer.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Remove-JekyllBlogServer/
+permalink: /useradminmodule/jekyllblog/remove-jekyllblogserver/
 categories:
   - UserAdminModule
   - JekyllBlog

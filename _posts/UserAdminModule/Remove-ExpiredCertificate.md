@@ -2,7 +2,7 @@
 layout: post
 title: Remove-ExpiredCertificate.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Remove-ExpiredCertificate/
+permalink: /useradminmodule/pkicertificatetools/remove-expiredcertificate/
 categories:
   - UserAdminModule
   - PKICertificateTools

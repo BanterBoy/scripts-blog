@@ -2,7 +2,7 @@
 layout: post
 title: Set-DistributionGroupProperties.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-DistributionGroupProperties/
+permalink: /useradminmodule/exchange/set-distributiongroupproperties/
 categories:
   - UserAdminModule
   - Exchange

@@ -2,7 +2,7 @@
 layout: post
 title: GetMailboxPermission.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/GetMailboxPermission/
+permalink: /useradminmodule/adfunctions/getmailboxpermission/
 categories:
   - UserAdminModule
   - ADFunctions

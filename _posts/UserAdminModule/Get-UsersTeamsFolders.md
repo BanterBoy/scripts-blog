@@ -2,7 +2,7 @@
 layout: post
 title: Get-UsersTeamsFolders.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-UsersTeamsFolders/
+permalink: /useradminmodule/teams/get-usersteamsfolders/
 categories:
   - UserAdminModule
   - Teams

@@ -2,7 +2,7 @@
 layout: post
 title: Set-StaticIPAddress.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-StaticIPAddress/
+permalink: /useradminmodule/network/set-staticipaddress/
 categories:
   - UserAdminModule
   - Network

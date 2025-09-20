@@ -2,7 +2,7 @@
 layout: post
 title: Write-CAActivityLog.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Write-CAActivityLog/
+permalink: /useradminmodule/pkicertificatetools/write-caactivitylog/
 categories:
   - UserAdminModule
   - PKICertificateTools

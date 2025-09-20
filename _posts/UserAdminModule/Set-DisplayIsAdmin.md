@@ -2,7 +2,7 @@
 layout: post
 title: Set-DisplayIsAdmin.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-DisplayIsAdmin/
+permalink: /useradminmodule/shell/set-displayisadmin/
 categories:
   - UserAdminModule
   - Shell

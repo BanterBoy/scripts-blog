@@ -2,7 +2,7 @@
 layout: post
 title: Stop-Outlook.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Stop-Outlook/
+permalink: /useradminmodule/shell/stop-outlook/
 categories:
   - UserAdminModule
   - Shell

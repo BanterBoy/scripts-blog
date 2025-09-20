@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Exam-CertDets.ps1
+permalink: /snippets/exam-certdets/
 ---
 
 - [Description](#description)

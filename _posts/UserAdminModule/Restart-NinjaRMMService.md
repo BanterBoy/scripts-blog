@@ -2,7 +2,7 @@
 layout: post
 title: Restart-NinjaRMMService.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Restart-NinjaRMMService/
+permalink: /useradminmodule/processserviceschedules/restart-ninjarmmservice/
 categories:
   - UserAdminModule
   - ProcessServiceSchedules

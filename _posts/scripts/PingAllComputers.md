@@ -1,6 +1,7 @@
 ---
 layout: post
 title: PingAllComputers.ps1
+permalink: /scripts/pingallcomputers/
 ---
 
 - [Description](#description)

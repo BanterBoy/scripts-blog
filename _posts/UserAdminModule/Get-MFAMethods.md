@@ -2,7 +2,7 @@
 layout: post
 title: Get-MFAMethods.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-MFAMethods/
+permalink: /useradminmodule/azure/get-mfamethods/
 categories:
   - UserAdminModule
   - Azure

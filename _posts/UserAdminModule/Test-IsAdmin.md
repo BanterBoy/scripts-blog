@@ -2,7 +2,7 @@
 layout: post
 title: Test-IsAdmin.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-IsAdmin/
+permalink: /useradminmodule/testing/test-isadmin/
 categories:
   - UserAdminModule
   - Testing

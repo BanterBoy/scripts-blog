@@ -2,7 +2,7 @@
 layout: post
 title: FFMpeg-Install.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/FFMpeg-Install/
+permalink: /useradminmodule/mediamanagement/ffmpeg-install/
 categories:
   - UserAdminModule
   - MediaManagement

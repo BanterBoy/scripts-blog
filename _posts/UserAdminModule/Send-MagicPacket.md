@@ -2,7 +2,7 @@
 layout: post
 title: Send-MagicPacket.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Send-MagicPacket/
+permalink: /useradminmodule/network/send-magicpacket/
 categories:
   - UserAdminModule
   - Network

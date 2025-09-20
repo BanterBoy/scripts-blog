@@ -2,7 +2,7 @@
 layout: post
 title: Get-EntraGuestMembers.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-EntraGuestMembers/
+permalink: /useradminmodule/azure/get-entraguestmembers/
 categories:
   - UserAdminModule
   - Azure

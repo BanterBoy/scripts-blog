@@ -2,7 +2,7 @@
 layout: post
 title: New-SpeedTest.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-SpeedTest/
+permalink: /useradminmodule/utilities/new-speedtest/
 categories:
   - UserAdminModule
   - Utilities

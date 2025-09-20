@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-DFSNameSpaceReport.ps1
+permalink: /scripts/get-dfsnamespacereport/
 ---
 
 - [Description](#description)

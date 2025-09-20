@@ -2,7 +2,7 @@
 layout: post
 title: Test-ifContactExists.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-ifContactExists/
+permalink: /useradminmodule/testing/test-ifcontactexists/
 categories:
   - UserAdminModule
   - Testing

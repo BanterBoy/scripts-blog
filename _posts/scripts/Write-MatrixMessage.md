@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Write-MatrixMessage.ps1
+permalink: /scripts/write-matrixmessage/
 ---
 
 - [Description](#description)

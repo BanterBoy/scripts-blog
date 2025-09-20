@@ -2,7 +2,7 @@
 layout: post
 title: Test-WebSiteUp.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-WebSiteUp/
+permalink: /useradminmodule/testing/test-websiteup/
 categories:
   - UserAdminModule
   - Testing

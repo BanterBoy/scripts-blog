@@ -2,7 +2,7 @@
 layout: post
 title: New-Shortcut.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-Shortcut/
+permalink: /useradminmodule/fileoperations/new-shortcut/
 categories:
   - UserAdminModule
   - FileOperations

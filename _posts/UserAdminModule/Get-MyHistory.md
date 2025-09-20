@@ -2,7 +2,7 @@
 layout: post
 title: Get-MyHistory.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-MyHistory/
+permalink: /useradminmodule/shell/get-myhistory/
 categories:
   - UserAdminModule
   - Shell

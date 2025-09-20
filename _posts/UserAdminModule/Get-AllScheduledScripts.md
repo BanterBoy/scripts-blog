@@ -2,7 +2,7 @@
 layout: post
 title: Get-AllScheduledScripts.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-AllScheduledScripts/
+permalink: /useradminmodule/processserviceschedules/get-allscheduledscripts/
 categories:
   - UserAdminModule
   - ProcessServiceSchedules

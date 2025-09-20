@@ -2,7 +2,7 @@
 layout: post
 title: Get-UnlinkedGPO.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-UnlinkedGPO/
+permalink: /useradminmodule/adfunctions/get-unlinkedgpo/
 categories:
   - UserAdminModule
   - ADFunctions

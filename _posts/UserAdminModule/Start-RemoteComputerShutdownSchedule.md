@@ -2,7 +2,7 @@
 layout: post
 title: Start-RemoteComputerShutdownSchedule.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Start-RemoteComputerShutdownSchedule/
+permalink: /useradminmodule/shutdowncommands/start-remotecomputershutdownschedule/
 categories:
   - UserAdminModule
   - ShutdownCommands

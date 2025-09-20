@@ -2,7 +2,7 @@
 layout: post
 title: Remove-NTPRecord.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Remove-NTPRecord/
+permalink: /useradminmodule/utilities/remove-ntprecord/
 categories:
   - UserAdminModule
   - Utilities

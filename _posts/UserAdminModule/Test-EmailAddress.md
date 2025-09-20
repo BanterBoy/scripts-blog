@@ -2,7 +2,7 @@
 layout: post
 title: Test-EmailAddress.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-EmailAddress/
+permalink: /useradminmodule/testing/test-emailaddress/
 categories:
   - UserAdminModule
   - Testing

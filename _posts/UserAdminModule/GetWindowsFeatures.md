@@ -2,7 +2,7 @@
 layout: post
 title: GetWindowsFeatures.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/GetWindowsFeatures/
+permalink: /useradminmodule/utilities/getwindowsfeatures/
 categories:
   - UserAdminModule
   - Utilities

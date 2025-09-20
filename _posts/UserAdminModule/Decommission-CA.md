@@ -2,7 +2,7 @@
 layout: post
 title: Decommission-CA.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Decommission-CA/
+permalink: /useradminmodule/pkicertificatetools/decommission-ca/
 categories:
   - UserAdminModule
   - PKICertificateTools

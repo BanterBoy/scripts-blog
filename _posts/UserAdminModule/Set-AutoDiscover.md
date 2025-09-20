@@ -2,7 +2,7 @@
 layout: post
 title: Set-AutoDiscover.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-AutoDiscover/
+permalink: /useradminmodule/exchange/set-autodiscover/
 categories:
   - UserAdminModule
   - Exchange

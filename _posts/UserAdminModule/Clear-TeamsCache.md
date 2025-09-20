@@ -2,7 +2,7 @@
 layout: post
 title: Clear-TeamsCache.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Clear-TeamsCache/
+permalink: /useradminmodule/teams/clear-teamscache/
 categories:
   - UserAdminModule
   - Teams

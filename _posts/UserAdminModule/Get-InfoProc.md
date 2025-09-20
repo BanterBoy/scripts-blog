@@ -2,7 +2,7 @@
 layout: post
 title: Get-InfoProc.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-InfoProc/
+permalink: /useradminmodule/utilities/get-infoproc/
 categories:
   - UserAdminModule
   - Utilities

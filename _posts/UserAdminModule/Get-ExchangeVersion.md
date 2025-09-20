@@ -2,7 +2,7 @@
 layout: post
 title: Get-ExchangeVersion.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ExchangeVersion/
+permalink: /useradminmodule/exchange/get-exchangeversion/
 categories:
   - UserAdminModule
   - Exchange

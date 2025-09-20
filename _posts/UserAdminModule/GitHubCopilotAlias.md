@@ -2,7 +2,7 @@
 layout: post
 title: GitHubCopilotAlias.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/GitHubCopilotAlias/
+permalink: /useradminmodule/shell/githubcopilotalias/
 categories:
   - UserAdminModule
   - Shell

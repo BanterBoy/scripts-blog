@@ -2,7 +2,7 @@
 layout: post
 title: Get-LocationStack.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-LocationStack/
+permalink: /useradminmodule/shell/get-locationstack/
 categories:
   - UserAdminModule
   - Shell

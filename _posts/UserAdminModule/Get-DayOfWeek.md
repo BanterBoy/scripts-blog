@@ -2,7 +2,7 @@
 layout: post
 title: Get-DayOfWeek.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-DayOfWeek/
+permalink: /useradminmodule/shell/get-dayofweek/
 categories:
   - UserAdminModule
   - Shell

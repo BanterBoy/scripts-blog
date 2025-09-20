@@ -2,7 +2,7 @@
 layout: post
 title: Get-TimeSource.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-TimeSource/
+permalink: /useradminmodule/utilities/get-timesource/
 categories:
   - UserAdminModule
   - Utilities

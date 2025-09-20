@@ -2,7 +2,7 @@
 layout: post
 title: Get-TeamsFolderStructure.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-TeamsFolderStructure/
+permalink: /useradminmodule/teams/get-teamsfolderstructure/
 categories:
   - UserAdminModule
   - Teams

@@ -2,7 +2,7 @@
 layout: post
 title: Get-ExchangeServer.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ExchangeServer/
+permalink: /useradminmodule/exchange/get-exchangeserver/
 categories:
   - UserAdminModule
   - Exchange

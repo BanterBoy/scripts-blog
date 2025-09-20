@@ -2,7 +2,7 @@
 layout: post
 title: IsAdmin.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/IsAdmin/
+permalink: /useradminmodule/shell/isadmin/
 categories:
   - UserAdminModule
   - Shell

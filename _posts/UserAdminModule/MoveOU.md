@@ -2,7 +2,7 @@
 layout: post
 title: MoveOU.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/MoveOU/
+permalink: /useradminmodule/adfunctions/moveou/
 categories:
   - UserAdminModule
   - ADFunctions

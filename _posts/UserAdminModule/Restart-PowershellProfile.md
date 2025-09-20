@@ -2,7 +2,7 @@
 layout: post
 title: Restart-PowershellProfile.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Restart-PowershellProfile/
+permalink: /useradminmodule/shell/restart-powershellprofile/
 categories:
   - UserAdminModule
   - Shell

@@ -2,7 +2,7 @@
 layout: post
 title: Get-KMSserverActivations.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-KMSserverActivations/
+permalink: /useradminmodule/utilities/get-kmsserveractivations/
 categories:
   - UserAdminModule
   - Utilities

@@ -2,7 +2,7 @@
 layout: post
 title: Get-TokenSizeReport.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-TokenSizeReport/
+permalink: /useradminmodule/adfunctions/get-tokensizereport/
 categories:
   - UserAdminModule
   - ADFunctions

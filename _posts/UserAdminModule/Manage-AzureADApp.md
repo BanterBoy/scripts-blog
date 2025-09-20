@@ -2,7 +2,7 @@
 layout: post
 title: Manage-AzureADApp.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Manage-AzureADApp/
+permalink: /useradminmodule/azure/manage-azureadapp/
 categories:
   - UserAdminModule
   - Azure

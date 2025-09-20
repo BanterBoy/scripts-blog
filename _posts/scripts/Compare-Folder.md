@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Compare-Folder.ps1
+permalink: /scripts/compare-folder/
 ---
 
 - [Description](#description)

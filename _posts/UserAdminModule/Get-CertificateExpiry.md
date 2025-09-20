@@ -2,7 +2,7 @@
 layout: post
 title: Get-CertificateExpiry.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-CertificateExpiry/
+permalink: /useradminmodule/certificateutilities/get-certificateexpiry/
 categories:
   - UserAdminModule
   - CertificateUtilities

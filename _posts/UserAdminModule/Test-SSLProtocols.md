@@ -2,7 +2,7 @@
 layout: post
 title: Test-SSLProtocols.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-SSLProtocols/
+permalink: /useradminmodule/testing/test-sslprotocols/
 categories:
   - UserAdminModule
   - Testing

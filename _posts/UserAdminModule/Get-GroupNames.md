@@ -3,7 +3,7 @@ layout: post
 title: Get-GroupNames.ps1
 description: "Searches Active Directory for groups by name pattern and outputs their details."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-GroupNames/
+permalink: /useradminmodule/adfunctions/get-groupnames/
 categories:
   - UserAdminModule
   - ADFunctions

@@ -2,7 +2,7 @@
 layout: post
 title: Get-TargetGPResult.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-TargetGPResult/
+permalink: /useradminmodule/adfunctions/get-targetgpresult/
 categories:
   - UserAdminModule
   - ADFunctions

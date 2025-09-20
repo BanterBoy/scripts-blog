@@ -1,6 +1,7 @@
 ---
 layout: post
 title: New-dummyFile.ps1
+permalink: /scripts/new-dummyfile/
 ---
 
 - [Description](#description)

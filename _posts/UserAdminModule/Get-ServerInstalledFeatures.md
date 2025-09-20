@@ -3,7 +3,7 @@ layout: post
 title: Get-ServerInstalledFeatures.ps1
 description: "Queries remote servers for installed Windows features via Get-WindowsFeature."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ServerInstalledFeatures/
+permalink: /useradminmodule/utilities/get-serverinstalledfeatures/
 categories:
   - UserAdminModule
   - Utilities

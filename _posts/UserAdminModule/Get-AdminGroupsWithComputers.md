@@ -2,7 +2,7 @@
 layout: post
 title: Get-AdminGroupsWithComputers.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-AdminGroupsWithComputers/
+permalink: /useradminmodule/adfunctions/get-admingroupswithcomputers/
 categories:
   - UserAdminModule
   - ADFunctions

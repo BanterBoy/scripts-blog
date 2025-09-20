@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ADDS_Inventory.ps1
+permalink: /scripts/adds-inventory/
 ---
 
 - [Description](#description)

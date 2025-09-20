@@ -2,7 +2,7 @@
 layout: post
 title: Start-PSCountdown.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Start-PSCountdown/
+permalink: /useradminmodule/shell/start-pscountdown/
 categories:
   - UserAdminModule
   - Shell

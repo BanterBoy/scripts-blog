@@ -2,7 +2,7 @@
 layout: post
 title: Start-JekyllBlogging.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Start-JekyllBlogging/
+permalink: /useradminmodule/jekyllblog/start-jekyllblogging/
 categories:
   - UserAdminModule
   - JekyllBlog

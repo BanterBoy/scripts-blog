@@ -2,7 +2,7 @@
 layout: post
 title: Test-WebsiteAvailability.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-WebsiteAvailability/
+permalink: /useradminmodule/testing/test-websiteavailability/
 categories:
   - UserAdminModule
   - Testing

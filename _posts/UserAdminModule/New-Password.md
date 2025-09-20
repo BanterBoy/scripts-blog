@@ -2,7 +2,7 @@
 layout: post
 title: New-Password.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-Password/
+permalink: /useradminmodule/security/new-password/
 categories:
   - UserAdminModule
   - Security

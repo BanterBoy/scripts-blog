@@ -2,7 +2,7 @@
 layout: post
 title: Get-EventLogs.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-EventLogs/
+permalink: /useradminmodule/logging/get-eventlogs/
 categories:
   - UserAdminModule
   - Logging

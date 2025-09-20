@@ -1,6 +1,7 @@
 ---
 layout: post
 title: OU_permissions.ps1
+permalink: /scripts/ou-permissions/
 ---
 
 - [Description](#description)

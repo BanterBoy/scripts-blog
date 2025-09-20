@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-FileDownload.ps1
+permalink: /scripts/get-filedownload/
 ---
 
 - [Description](#description)

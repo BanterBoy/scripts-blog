@@ -2,7 +2,7 @@
 layout: post
 title: RageQuit.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/RageQuit/
+permalink: /useradminmodule/shell/ragequit/
 categories:
   - UserAdminModule
   - Shell

@@ -2,7 +2,7 @@
 layout: post
 title: Test-RemoteTimeSettings.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-RemoteTimeSettings/
+permalink: /useradminmodule/testing/test-remotetimesettings/
 categories:
   - UserAdminModule
   - Testing

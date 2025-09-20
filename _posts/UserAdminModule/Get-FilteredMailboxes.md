@@ -2,7 +2,7 @@
 layout: post
 title: Get-FilteredMailboxes.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-FilteredMailboxes/
+permalink: /useradminmodule/exchange/get-filteredmailboxes/
 categories:
   - UserAdminModule
   - Exchange

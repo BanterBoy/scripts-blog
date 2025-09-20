@@ -2,7 +2,7 @@
 layout: post
 title: New-ScheduledScript.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-ScheduledScript/
+permalink: /useradminmodule/processserviceschedules/new-scheduledscript/
 categories:
   - UserAdminModule
   - ProcessServiceSchedules

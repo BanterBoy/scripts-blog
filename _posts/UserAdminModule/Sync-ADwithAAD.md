@@ -2,7 +2,7 @@
 layout: post
 title: Sync-ADwithAAD.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Sync-ADwithAAD/
+permalink: /useradminmodule/replication/sync-adwithaad/
 categories:
   - UserAdminModule
   - Replication

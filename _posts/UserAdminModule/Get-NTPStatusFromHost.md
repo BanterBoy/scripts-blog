@@ -2,7 +2,7 @@
 layout: post
 title: Get-NTPStatusFromHost.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-NTPStatusFromHost/
+permalink: /useradminmodule/utilities/get-ntpstatusfromhost/
 categories:
   - UserAdminModule
   - Utilities

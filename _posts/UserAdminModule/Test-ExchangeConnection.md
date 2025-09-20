@@ -2,7 +2,7 @@
 layout: post
 title: Test-ExchangeConnection.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-ExchangeConnection/
+permalink: /useradminmodule/testing/test-exchangeconnection/
 categories:
   - UserAdminModule
   - Testing

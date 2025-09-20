@@ -2,7 +2,7 @@
 layout: post
 title: Reset-UsersPassword.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Reset-UsersPassword/
+permalink: /useradminmodule/adfunctions/reset-userspassword/
 categories:
   - UserAdminModule
   - ADFunctions

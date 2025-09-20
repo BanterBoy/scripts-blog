@@ -2,7 +2,7 @@
 layout: post
 title: New-QotD.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-QotD/
+permalink: /useradminmodule/shell/new-qotd/
 categories:
   - UserAdminModule
   - Shell

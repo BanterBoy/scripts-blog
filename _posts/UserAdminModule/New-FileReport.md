@@ -2,7 +2,7 @@
 layout: post
 title: New-FileReport.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-FileReport/
+permalink: /useradminmodule/fileoperations/new-filereport/
 categories:
   - UserAdminModule
   - FileOperations

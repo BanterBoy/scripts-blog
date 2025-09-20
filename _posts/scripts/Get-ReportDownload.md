@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-ReportDownload.ps1
+permalink: /scripts/get-reportdownload/
 ---
 
 - [Description](#description)

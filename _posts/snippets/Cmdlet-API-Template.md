@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Cmdlet-API-Template.ps1
+permalink: /snippets/cmdlet-api-template/
 ---
 
 - [Description](#description)

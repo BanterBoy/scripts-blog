@@ -2,7 +2,7 @@
 layout: post
 title: Get-SpeedTestServers.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-SpeedTestServers/
+permalink: /useradminmodule/utilities/get-speedtestservers/
 categories:
   - UserAdminModule
   - Utilities

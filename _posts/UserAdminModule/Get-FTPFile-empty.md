@@ -2,7 +2,7 @@
 layout: post
 title: Get-FTPFile-empty.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-FTPFile-empty/
+permalink: /useradminmodule/network/get-ftpfile-empty/
 categories:
   - UserAdminModule
   - Network

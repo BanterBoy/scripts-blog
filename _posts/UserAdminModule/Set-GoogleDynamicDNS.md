@@ -2,7 +2,7 @@
 layout: post
 title: Set-GoogleDynamicDNS.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-GoogleDynamicDNS/
+permalink: /useradminmodule/network/set-googledynamicdns/
 categories:
   - UserAdminModule
   - Network

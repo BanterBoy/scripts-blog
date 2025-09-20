@@ -2,7 +2,7 @@
 layout: post
 title: Test-CiscoSecure.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-CiscoSecure/
+permalink: /useradminmodule/testing/test-ciscosecure/
 categories:
   - UserAdminModule
   - Testing

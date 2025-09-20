@@ -2,7 +2,7 @@
 layout: post
 title: Get-W32TimeServiceStatus.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-W32TimeServiceStatus/
+permalink: /useradminmodule/utilities/get-w32timeservicestatus/
 categories:
   - UserAdminModule
   - Utilities

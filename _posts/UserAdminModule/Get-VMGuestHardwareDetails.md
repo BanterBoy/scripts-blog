@@ -2,7 +2,7 @@
 layout: post
 title: Get-VMGuestHardwareDetails.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-VMGuestHardwareDetails/
+permalink: /useradminmodule/virtualization/get-vmguesthardwaredetails/
 categories:
   - UserAdminModule
   - Virtualization

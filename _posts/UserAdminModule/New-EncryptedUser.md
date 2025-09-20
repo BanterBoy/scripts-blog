@@ -2,7 +2,7 @@
 layout: post
 title: New-EncryptedUser.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-EncryptedUser/
+permalink: /useradminmodule/adfunctions/new-encrypteduser/
 categories:
   - UserAdminModule
   - ADFunctions

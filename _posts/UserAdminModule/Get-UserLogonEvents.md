@@ -2,7 +2,7 @@
 layout: post
 title: Get-UserLogonEvents.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-UserLogonEvents/
+permalink: /useradminmodule/adfunctions/get-userlogonevents/
 categories:
   - UserAdminModule
   - ADFunctions

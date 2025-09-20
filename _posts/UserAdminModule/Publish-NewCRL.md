@@ -2,7 +2,7 @@
 layout: post
 title: Publish-NewCRL.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Publish-NewCRL/
+permalink: /useradminmodule/pkicertificatetools/publish-newcrl/
 categories:
   - UserAdminModule
   - PKICertificateTools

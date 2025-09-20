@@ -2,7 +2,7 @@
 layout: post
 title: Test-DNSRecord.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/test-dnsrecord/
+permalink: /useradminmodule/testing/test-dnsrecord/
 categories:
   - UserAdminModule
   - Testing

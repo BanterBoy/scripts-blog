@@ -2,7 +2,7 @@
 layout: post
 title: Install-LatestPWSH7.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Install-LatestPWSH7/
+permalink: /useradminmodule/shell/install-latestpwsh7/
 categories:
   - UserAdminModule
   - Shell

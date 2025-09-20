@@ -2,7 +2,7 @@
 layout: post
 title: Test-TransmissionSettings.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-TransmissionSettings/
+permalink: /useradminmodule/testing/test-transmissionsettings/
 categories:
   - UserAdminModule
   - Testing

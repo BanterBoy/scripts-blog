@@ -2,7 +2,7 @@
 layout: post
 title: Set-CalendarPermsScript.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-CalendarPermsScript/
+permalink: /useradminmodule/exchange/set-calendarpermsscript/
 categories:
   - UserAdminModule
   - Exchange

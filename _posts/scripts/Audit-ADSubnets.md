@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Audit-ADSubnets.ps1
+permalink: /scripts/audit-adsubnets/
 ---
 
 - [Description](#description)

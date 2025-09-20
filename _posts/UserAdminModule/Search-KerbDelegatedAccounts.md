@@ -2,7 +2,7 @@
 layout: post
 title: Search-KerbDelegatedAccounts.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Search-KerbDelegatedAccounts/
+permalink: /useradminmodule/adfunctions/search-kerbdelegatedaccounts/
 categories:
   - UserAdminModule
   - ADFunctions

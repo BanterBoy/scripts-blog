@@ -2,7 +2,7 @@
 layout: post
 title: Get-ADUserExchangeDN.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ADUserExchangeDN/
+permalink: /useradminmodule/adfunctions/get-aduserexchangedn/
 categories:
   - UserAdminModule
   - ADFunctions

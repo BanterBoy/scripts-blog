@@ -1,6 +1,7 @@
 ---
 layout: post
 title: gPLink_Report.ps1
+permalink: /scripts/gplink-report/
 ---
 
 - [Description](#description)

@@ -2,7 +2,7 @@
 layout: post
 title: Select-FolderLocation.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Select-FolderLocation/
+permalink: /useradminmodule/shell/select-folderlocation/
 categories:
   - UserAdminModule
   - Shell

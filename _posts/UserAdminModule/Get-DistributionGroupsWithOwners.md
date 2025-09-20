@@ -2,7 +2,7 @@
 layout: post
 title: Get-DistributionGroupsWithOwners.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-DistributionGroupsWithOwners/
+permalink: /useradminmodule/exchange/get-distributiongroupswithowners/
 categories:
   - UserAdminModule
   - Exchange

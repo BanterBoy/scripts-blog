@@ -1,6 +1,7 @@
 ---
 layout: post
 title: InstallADDocsModules.ps1
+permalink: /scripts/installaddocsmodules/
 ---
 
 - [Description](#description)

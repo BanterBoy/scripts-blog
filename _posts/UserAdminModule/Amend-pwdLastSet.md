@@ -2,7 +2,7 @@
 layout: post
 title: Amend-pwdLastSet.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Amend-pwdLastSet/
+permalink: /useradminmodule/adfunctions/amend-pwdlastset/
 categories:
   - UserAdminModule
   - ADFunctions

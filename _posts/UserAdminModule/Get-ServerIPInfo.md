@@ -2,7 +2,7 @@
 layout: post
 title: Get-ServerIPInfo.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ServerIPInfo/
+permalink: /useradminmodule/network/get-serveripinfo/
 categories:
   - UserAdminModule
   - Network

@@ -2,7 +2,7 @@
 layout: post
 title: OnPremExchangeFunctions.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/OnPremExchangeFunctions/
+permalink: /useradminmodule/exchange/onpremexchangefunctions/
 categories:
   - UserAdminModule
   - Exchange

@@ -2,7 +2,7 @@
 layout: post
 title: Copy-AdGroupMemberShip.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Copy-AdGroupMemberShip/
+permalink: /useradminmodule/adfunctions/copy-adgroupmembership/
 categories:
   - UserAdminModule
   - ADFunctions

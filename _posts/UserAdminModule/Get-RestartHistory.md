@@ -2,7 +2,7 @@
 layout: post
 title: Get-RestartHistory.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-RestartHistory/
+permalink: /useradminmodule/utilities/get-restarthistory/
 categories:
   - UserAdminModule
   - Utilities

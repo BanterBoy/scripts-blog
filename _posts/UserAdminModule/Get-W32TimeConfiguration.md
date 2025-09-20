@@ -2,7 +2,7 @@
 layout: post
 title: Get-W32TimeConfiguration.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-W32TimeConfiguration/
+permalink: /useradminmodule/utilities/get-w32timeconfiguration/
 categories:
   - UserAdminModule
   - Utilities

@@ -2,7 +2,7 @@
 layout: post
 title: Get-RemoteCipherDetails.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-RemoteCipherDetails/
+permalink: /useradminmodule/certificateutilities/get-remotecipherdetails/
 categories:
   - UserAdminModule
   - CertificateUtilities

@@ -2,7 +2,7 @@
 layout: post
 title: Restart-ExchangeServices.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Restart-ExchangeServices/
+permalink: /useradminmodule/exchange/restart-exchangeservices/
 categories:
   - UserAdminModule
   - Exchange

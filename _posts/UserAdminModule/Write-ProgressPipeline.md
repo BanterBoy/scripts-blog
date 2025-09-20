@@ -2,7 +2,7 @@
 layout: post
 title: Write-ProgressPipeline.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Write-ProgressPipeline/
+permalink: /useradminmodule/utilities/write-progresspipeline/
 categories:
   - UserAdminModule
   - Utilities

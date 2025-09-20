@@ -2,7 +2,7 @@
 layout: post
 title: Get-MgUserDetails.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-MgUserDetails/
+permalink: /useradminmodule/azure/get-mguserdetails/
 categories:
   - UserAdminModule
   - Azure

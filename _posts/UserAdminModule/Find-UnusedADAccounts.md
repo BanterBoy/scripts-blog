@@ -2,7 +2,7 @@
 layout: post
 title: Find-UnusedADAccounts.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Find-UnusedADAccounts/
+permalink: /useradminmodule/adfunctions/find-unusedadaccounts/
 categories:
   - UserAdminModule
   - ADFunctions

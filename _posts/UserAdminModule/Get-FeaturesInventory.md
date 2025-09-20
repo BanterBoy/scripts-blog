@@ -2,7 +2,7 @@
 layout: post
 title: Get-FeaturesInventory.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-FeaturesInventory/
+permalink: /useradminmodule/adfunctions/get-featuresinventory/
 categories:
   - UserAdminModule
   - ADFunctions

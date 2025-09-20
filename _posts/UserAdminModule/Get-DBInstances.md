@@ -2,7 +2,7 @@
 layout: post
 title: Get-DBInstances.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-DBInstances/
+permalink: /useradminmodule/database/get-dbinstances/
 categories:
   - UserAdminModule
   - Database

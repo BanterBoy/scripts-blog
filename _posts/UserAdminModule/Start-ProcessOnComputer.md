@@ -2,7 +2,7 @@
 layout: post
 title: Start-ProcessOnComputer.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Start-ProcessOnComputer/
+permalink: /useradminmodule/processserviceschedules/start-processoncomputer/
 categories:
   - UserAdminModule
   - ProcessServiceSchedules

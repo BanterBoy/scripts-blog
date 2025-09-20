@@ -2,7 +2,7 @@
 layout: post
 title: Optimize-DomainControllerTlsConfiguration.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Optimize-DomainControllerTlsConfiguration/
+permalink: /useradminmodule/pkicertificatetools/optimize-domaincontrollertlsconfiguration/
 categories:
   - UserAdminModule
   - PKICertificateTools

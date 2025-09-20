@@ -2,7 +2,7 @@
 layout: post
 title: Backup-CAServer.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Backup-CAServer/
+permalink: /useradminmodule/pkicertificatetools/backup-caserver/
 categories:
   - UserAdminModule
   - PKICertificateTools

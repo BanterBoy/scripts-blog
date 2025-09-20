@@ -2,7 +2,7 @@
 layout: post
 title: Set-DHCPIPAddress.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-DHCPIPAddress/
+permalink: /useradminmodule/network/set-dhcpipaddress/
 categories:
   - UserAdminModule
   - Network

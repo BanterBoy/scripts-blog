@@ -2,7 +2,7 @@
 layout: post
 title: New-PSM1Module.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-PSM1Module/
+permalink: /useradminmodule/shell/new-psm1module/
 categories:
   - UserAdminModule
   - Shell

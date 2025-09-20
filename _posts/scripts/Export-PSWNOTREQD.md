@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Export-PSWNOTREQD.ps1
+permalink: /scripts/export-pswnotreqd/
 ---
 
 - [Description](#description)

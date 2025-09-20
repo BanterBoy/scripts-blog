@@ -2,7 +2,7 @@
 layout: post
 title: Lock-UserAccount.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Lock-UserAccount/
+permalink: /useradminmodule/adfunctions/lock-useraccount/
 categories:
   - UserAdminModule
   - ADFunctions

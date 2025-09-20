@@ -2,7 +2,7 @@
 layout: post
 title: Get-UserAccountControlReport.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-UserAccountControlReport/
+permalink: /useradminmodule/adfunctions/get-useraccountcontrolreport/
 categories:
   - UserAdminModule
   - ADFunctions

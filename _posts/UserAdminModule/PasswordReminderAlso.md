@@ -2,7 +2,7 @@
 layout: post
 title: PasswordReminderAlso.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/PasswordReminderAlso/
+permalink: /useradminmodule/exchange/passwordreminderalso/
 categories:
   - UserAdminModule
   - Exchange

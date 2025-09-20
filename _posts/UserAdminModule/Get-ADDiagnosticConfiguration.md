@@ -2,7 +2,7 @@
 layout: post
 title: Get-ADDiagnosticConfiguration.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ADDiagnosticConfiguration/
+permalink: /useradminmodule/adfunctions/get-addiagnosticconfiguration/
 categories:
   - UserAdminModule
   - ADFunctions

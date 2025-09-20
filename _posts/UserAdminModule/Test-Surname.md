@@ -2,7 +2,7 @@
 layout: post
 title: Test-Surname.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-Surname/
+permalink: /useradminmodule/testing/test-surname/
 categories:
   - UserAdminModule
   - Testing

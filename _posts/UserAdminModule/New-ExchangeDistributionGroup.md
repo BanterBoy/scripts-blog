@@ -2,7 +2,7 @@
 layout: post
 title: New-ExchangeDistributionGroup.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-ExchangeDistributionGroup/
+permalink: /useradminmodule/exchange/new-exchangedistributiongroup/
 categories:
   - UserAdminModule
   - Exchange

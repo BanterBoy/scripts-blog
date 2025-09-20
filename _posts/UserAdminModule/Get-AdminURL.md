@@ -2,7 +2,7 @@
 layout: post
 title: Get-AdminURL.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-AdminURL/
+permalink: /useradminmodule/utilities/get-adminurl/
 categories:
   - UserAdminModule
   - Utilities

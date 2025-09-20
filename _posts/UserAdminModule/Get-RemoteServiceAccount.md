@@ -2,7 +2,7 @@
 layout: post
 title: Get-RemoteServiceAccount.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-RemoteServiceAccount/
+permalink: /useradminmodule/adfunctions/get-remoteserviceaccount/
 categories:
   - UserAdminModule
   - ADFunctions

@@ -2,7 +2,7 @@
 layout: post
 title: Get-ADUserEmailProperties.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ADUserEmailProperties/
+permalink: /useradminmodule/adfunctions/get-aduseremailproperties/
 categories:
   - UserAdminModule
   - ADFunctions

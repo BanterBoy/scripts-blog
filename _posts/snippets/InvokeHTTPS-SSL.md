@@ -1,6 +1,7 @@
 ---
 layout: post
 title: InvokeHTTPS-SSL.ps1
+permalink: /snippets/invokehttps-ssl/
 ---
 
 - [Description](#description)

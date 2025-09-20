@@ -2,7 +2,7 @@
 layout: post
 title: Measure-Lines.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Measure-Lines/
+permalink: /useradminmodule/utilities/measure-lines/
 categories:
   - UserAdminModule
   - Utilities

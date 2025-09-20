@@ -2,7 +2,7 @@
 layout: post
 title: Get-PayDay.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-PayDay/
+permalink: /useradminmodule/shell/get-payday/
 categories:
   - UserAdminModule
   - Shell

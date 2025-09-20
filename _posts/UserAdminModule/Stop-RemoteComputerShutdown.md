@@ -2,7 +2,7 @@
 layout: post
 title: Stop-RemoteComputerShutdown.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Stop-RemoteComputerShutdown/
+permalink: /useradminmodule/shutdowncommands/stop-remotecomputershutdown/
 categories:
   - UserAdminModule
   - ShutdownCommands

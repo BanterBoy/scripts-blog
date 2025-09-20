@@ -2,7 +2,7 @@
 layout: post
 title: Stop-ScheduledScript.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Stop-ScheduledScript/
+permalink: /useradminmodule/processserviceschedules/stop-scheduledscript/
 categories:
   - UserAdminModule
   - ProcessServiceSchedules

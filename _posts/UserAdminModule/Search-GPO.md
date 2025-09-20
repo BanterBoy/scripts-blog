@@ -2,7 +2,7 @@
 layout: post
 title: Search-GPO.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Search-GPO/
+permalink: /useradminmodule/adfunctions/search-gpo/
 categories:
   - UserAdminModule
   - ADFunctions

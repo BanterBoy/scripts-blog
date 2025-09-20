@@ -1,6 +1,7 @@
 ---
 layout: post
 title: CreateUser.ps1
+permalink: /scripts/createuser/
 ---
 
 - [Description](#description)

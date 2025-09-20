@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ActiveDirectoryDocument.ps1
+permalink: /scripts/activedirectorydocument/
 ---
 
 - [Description](#description)

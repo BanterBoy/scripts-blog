@@ -2,7 +2,7 @@
 layout: post
 title: Wait-RemoteComputerShutdown.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Wait-RemoteComputerShutdown/
+permalink: /useradminmodule/shutdowncommands/wait-remotecomputershutdown/
 categories:
   - UserAdminModule
   - ShutdownCommands

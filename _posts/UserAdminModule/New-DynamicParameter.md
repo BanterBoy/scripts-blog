@@ -2,7 +2,7 @@
 layout: post
 title: New-DynamicParameter.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-DynamicParameter/
+permalink: /useradminmodule/security/new-dynamicparameter/
 categories:
   - UserAdminModule
   - Security

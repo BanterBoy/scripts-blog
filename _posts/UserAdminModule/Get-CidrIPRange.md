@@ -2,7 +2,7 @@
 layout: post
 title: Get-CidrIPRange.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-CidrIPRange/
+permalink: /useradminmodule/network/get-cidriprange/
 categories:
   - UserAdminModule
   - Network

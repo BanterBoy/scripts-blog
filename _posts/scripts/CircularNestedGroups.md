@@ -1,6 +1,7 @@
 ---
 layout: post
 title: CircularNestedGroups.ps1
+permalink: /scripts/circularnestedgroups/
 ---
 
 - [Description](#description)

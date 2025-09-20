@@ -2,7 +2,7 @@
 layout: post
 title: Get-QuarantinedEmailMessages.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-QuarantinedEmailMessages/
+permalink: /useradminmodule/exchange/get-quarantinedemailmessages/
 categories:
   - UserAdminModule
   - Exchange

@@ -2,7 +2,7 @@
 layout: post
 title: Enable-CiscoSecure.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Enable-CiscoSecure/
+permalink: /useradminmodule/security/enable-ciscosecure/
 categories:
   - UserAdminModule
   - Security

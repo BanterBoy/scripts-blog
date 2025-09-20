@@ -2,7 +2,7 @@
 layout: post
 title: Lock-UserInput.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Lock-UserInput/
+permalink: /useradminmodule/shell/lock-userinput/
 categories:
   - UserAdminModule
   - Shell

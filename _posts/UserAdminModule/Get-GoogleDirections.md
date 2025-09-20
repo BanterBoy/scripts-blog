@@ -2,7 +2,7 @@
 layout: post
 title: Get-GoogleDirections.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-GoogleDirections/
+permalink: /useradminmodule/shell/get-googledirections/
 categories:
   - UserAdminModule
   - Shell

@@ -2,7 +2,7 @@
 layout: post
 title: Test-DisplayName.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-DisplayName/
+permalink: /useradminmodule/testing/test-displayname/
 categories:
   - UserAdminModule
   - Testing

@@ -2,7 +2,7 @@
 layout: post
 title: Save-PasswordFile.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Save-PasswordFile/
+permalink: /useradminmodule/fileoperations/save-passwordfile/
 categories:
   - UserAdminModule
   - FileOperations

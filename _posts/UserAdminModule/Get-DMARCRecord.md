@@ -2,7 +2,7 @@
 layout: post
 title: Get-DMARCRecord.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-DMARCRecord/
+permalink: /useradminmodule/network/get-dmarcrecord/
 categories:
   - UserAdminModule
   - Network

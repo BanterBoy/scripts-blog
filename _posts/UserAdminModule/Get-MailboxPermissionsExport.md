@@ -2,7 +2,7 @@
 layout: post
 title: Get-MailboxPermissionsExport.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-MailboxPermissionsExport/
+permalink: /useradminmodule/exchange/get-mailboxpermissionsexport/
 categories:
   - UserAdminModule
   - Exchange

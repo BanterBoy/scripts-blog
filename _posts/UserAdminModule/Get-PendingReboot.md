@@ -2,7 +2,7 @@
 layout: post
 title: Get-PendingReboot.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-PendingReboot/
+permalink: /useradminmodule/utilities/get-pendingreboot/
 categories:
   - UserAdminModule
   - Utilities

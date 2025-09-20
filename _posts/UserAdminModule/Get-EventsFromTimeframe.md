@@ -2,7 +2,7 @@
 layout: post
 title: Get-EventsFromTimeframe.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-EventsFromTimeframe/
+permalink: /useradminmodule/logging/get-eventsfromtimeframe/
 categories:
   - UserAdminModule
   - Logging

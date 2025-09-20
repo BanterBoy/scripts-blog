@@ -2,7 +2,7 @@
 layout: post
 title: Invoke-PasswordRoll.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Invoke-PasswordRoll/
+permalink: /useradminmodule/security/invoke-passwordroll/
 categories:
   - UserAdminModule
   - Security

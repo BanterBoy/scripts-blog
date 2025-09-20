@@ -2,7 +2,7 @@
 layout: post
 title: Export-ExchangeContactData.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Export-ExchangeContactData/
+permalink: /useradminmodule/exchange/export-exchangecontactdata/
 categories:
   - UserAdminModule
   - Exchange

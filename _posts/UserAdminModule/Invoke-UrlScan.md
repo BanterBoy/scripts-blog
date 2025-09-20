@@ -2,7 +2,7 @@
 layout: post
 title: Invoke-UrlScan.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Invoke-UrlScan/
+permalink: /useradminmodule/security/invoke-urlscan/
 categories:
   - UserAdminModule
   - Security

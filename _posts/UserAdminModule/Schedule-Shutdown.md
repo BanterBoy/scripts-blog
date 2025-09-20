@@ -2,7 +2,7 @@
 layout: post
 title: Schedule-Shutdown.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Schedule-Shutdown/
+permalink: /useradminmodule/shutdowncommands/schedule-shutdown/
 categories:
   - UserAdminModule
   - ShutdownCommands

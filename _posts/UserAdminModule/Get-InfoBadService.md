@@ -2,7 +2,7 @@
 layout: post
 title: Get-InfoBadService.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-InfoBadService/
+permalink: /useradminmodule/utilities/get-infobadservice/
 categories:
   - UserAdminModule
   - Utilities

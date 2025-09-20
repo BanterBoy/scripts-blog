@@ -2,7 +2,7 @@
 layout: post
 title: WorkPowerShell_profile.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/WorkPowerShell_profile/
+permalink: /useradminmodule/shell/workpowershell-profile/
 categories:
   - UserAdminModule
   - Shell

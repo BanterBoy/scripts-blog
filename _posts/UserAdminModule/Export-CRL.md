@@ -2,7 +2,7 @@
 layout: post
 title: Export-CRL.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Export-CRL/
+permalink: /useradminmodule/pkicertificatetools/export-crl/
 categories:
   - UserAdminModule
   - PKICertificateTools

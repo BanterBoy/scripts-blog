@@ -2,7 +2,7 @@
 layout: post
 title: Get-ChuckNorrisJoke.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ChuckNorrisJoke/
+permalink: /useradminmodule/utilities/get-chucknorrisjoke/
 categories:
   - UserAdminModule
   - Utilities

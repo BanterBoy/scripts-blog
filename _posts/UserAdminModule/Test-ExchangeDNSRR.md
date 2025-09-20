@@ -2,7 +2,7 @@
 layout: post
 title: Test-ExchangeDNSRR.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-ExchangeDNSRR/
+permalink: /useradminmodule/testing/test-exchangednsrr/
 categories:
   - UserAdminModule
   - Testing

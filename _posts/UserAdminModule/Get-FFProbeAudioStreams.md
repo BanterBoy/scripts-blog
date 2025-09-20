@@ -2,7 +2,7 @@
 layout: post
 title: Get-FFProbeAudioStreams.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-FFProbeAudioStreams/
+permalink: /useradminmodule/mediamanagement/get-ffprobeaudiostreams/
 categories:
   - UserAdminModule
   - MediaManagement
@@ -61,9 +61,9 @@ Filters the returned streams to locate the English-language track before taking 
 
 #### Notes
 
-- Requires the ffprobe executable to be available on the system `PATH`. Install FFmpeg using [`FFMpeg-Install`](/_posts/UserAdminModule/FFMpeg-Install/) if needed.
+- Requires the ffprobe executable to be available on the system `PATH`. Install FFmpeg using [`FFMpeg-Install`](/useradminmodule/mediamanagement/ffmpeg-install/) if needed.
 - Outputs objects with `index`, `codec_name`, `Language`, and `File` properties to simplify filtering or piping into other automation.
-- Designed to feed directly into [`Remove-FFMpegVideoFileAudioStream`](/_posts/UserAdminModule/Remove-FFMpegVideoFileAudioStream/) for automated audio stream removal.
+- Designed to feed directly into [`Remove-FFMpegVideoFileAudioStream`](/useradminmodule/mediamanagement/remove-ffmpegvideofileaudiostream/) for automated audio stream removal.
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

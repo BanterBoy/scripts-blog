@@ -2,7 +2,7 @@
 layout: post
 title: Query-UserAccountControl.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Query-UserAccountControl/
+permalink: /useradminmodule/adfunctions/query-useraccountcontrol/
 categories:
   - UserAdminModule
   - ADFunctions

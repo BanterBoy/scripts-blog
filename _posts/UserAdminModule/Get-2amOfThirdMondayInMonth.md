@@ -2,7 +2,7 @@
 layout: post
 title: Get-2amOfThirdMondayInMonth.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-2amOfThirdMondayInMonth/
+permalink: /useradminmodule/utilities/get-2amofthirdmondayinmonth/
 categories:
   - UserAdminModule
   - Utilities

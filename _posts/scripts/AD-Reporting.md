@@ -1,6 +1,7 @@
 ---
 layout: post
 title: AD-Reporting.ps1
+permalink: /scripts/ad-reporting/
 ---
 
 - [Description](#description)

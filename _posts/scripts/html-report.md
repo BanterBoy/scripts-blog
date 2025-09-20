@@ -1,6 +1,7 @@
 ---
 layout: post
 title: html-report.ps1
+permalink: /scripts/html-report/
 ---
 
 - [Description](#description)

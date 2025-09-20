@@ -2,7 +2,7 @@
 layout: post
 title: Remove-RunRegKey.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Remove-RunRegKey/
+permalink: /useradminmodule/utilities/remove-runregkey/
 categories:
   - UserAdminModule
   - Utilities

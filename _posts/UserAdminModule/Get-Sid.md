@@ -2,7 +2,7 @@
 layout: post
 title: Get-Sid.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-Sid/
+permalink: /useradminmodule/pkicertificatetools/get-sid/
 categories:
   - UserAdminModule
   - PKICertificateTools

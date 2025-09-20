@@ -2,7 +2,7 @@
 layout: post
 title: New-CopilotPrompt.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-CopilotPrompt/
+permalink: /useradminmodule/shell/new-copilotprompt/
 categories:
   - UserAdminModule
   - Shell

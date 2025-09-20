@@ -2,7 +2,7 @@
 layout: post
 title: Set-RegistryShouldBe.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-RegistryShouldBe/
+permalink: /useradminmodule/utilities/set-registryshouldbe/
 categories:
   - UserAdminModule
   - Utilities

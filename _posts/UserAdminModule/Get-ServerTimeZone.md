@@ -2,7 +2,7 @@
 layout: post
 title: Get-ServerTimeZone.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ServerTimeZone/
+permalink: /useradminmodule/utilities/get-servertimezone/
 categories:
   - UserAdminModule
   - Utilities

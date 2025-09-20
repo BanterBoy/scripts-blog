@@ -2,7 +2,7 @@
 layout: post
 title: Get-ADUserLastLogon.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ADUserLastLogon/
+permalink: /useradminmodule/adfunctions/get-aduserlastlogon/
 categories:
   - UserAdminModule
   - ADFunctions

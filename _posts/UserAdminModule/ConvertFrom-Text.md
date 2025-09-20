@@ -2,7 +2,7 @@
 layout: post
 title: ConvertFrom-Text.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/ConvertFrom-Text/
+permalink: /useradminmodule/utilities/convertfrom-text/
 categories:
   - UserAdminModule
   - Utilities

@@ -2,7 +2,7 @@
 layout: post
 title: Install-WinGet.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Install-WinGet/
+permalink: /useradminmodule/shell/install-winget/
 categories:
   - UserAdminModule
   - Shell

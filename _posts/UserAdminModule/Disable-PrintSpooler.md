@@ -2,7 +2,7 @@
 layout: post
 title: Disable-PrintSpooler.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Disable-PrintSpooler/
+permalink: /useradminmodule/printmanagement/disable-printspooler/
 categories:
   - UserAdminModule
   - PrintManagement

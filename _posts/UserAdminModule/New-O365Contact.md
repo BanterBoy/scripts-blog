@@ -2,7 +2,7 @@
 layout: post
 title: New-O365Contact.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-O365Contact/
+permalink: /useradminmodule/exchange/new-o365contact/
 categories:
   - UserAdminModule
   - Exchange

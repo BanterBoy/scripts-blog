@@ -2,7 +2,7 @@
 layout: post
 title: New-SYDIDocument.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-SYDIDocument/
+permalink: /useradminmodule/utilities/new-sydidocument/
 categories:
   - UserAdminModule
   - Utilities

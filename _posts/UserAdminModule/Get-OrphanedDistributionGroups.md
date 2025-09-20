@@ -2,7 +2,7 @@
 layout: post
 title: Get-OrphanedDistributionGroups.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-OrphanedDistributionGroups/
+permalink: /useradminmodule/exchange/get-orphaneddistributiongroups/
 categories:
   - UserAdminModule
   - Exchange

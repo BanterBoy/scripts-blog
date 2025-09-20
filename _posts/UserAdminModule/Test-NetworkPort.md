@@ -2,7 +2,7 @@
 layout: post
 title: Test-NetworkPort.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-NetworkPort/
+permalink: /useradminmodule/testing/test-networkport/
 categories:
   - UserAdminModule
   - Testing

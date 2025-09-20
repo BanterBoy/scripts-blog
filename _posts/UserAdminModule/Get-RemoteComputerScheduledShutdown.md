@@ -2,7 +2,7 @@
 layout: post
 title: Get-RemoteComputerScheduledShutdown.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-RemoteComputerScheduledShutdown/
+permalink: /useradminmodule/shutdowncommands/get-remotecomputerscheduledshutdown/
 categories:
   - UserAdminModule
   - ShutdownCommands

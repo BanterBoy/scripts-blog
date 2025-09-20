@@ -2,7 +2,7 @@
 layout: post
 title: Export-SingleFunction.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Export-SingleFunction/
+permalink: /useradminmodule/utilities/export-singlefunction/
 categories:
   - UserAdminModule
   - Utilities

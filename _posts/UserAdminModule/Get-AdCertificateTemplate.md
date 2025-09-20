@@ -2,7 +2,7 @@
 layout: post
 title: Get-AdCertificateTemplate.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-AdCertificateTemplate/
+permalink: /useradminmodule/pkicertificatetools/get-adcertificatetemplate/
 categories:
   - UserAdminModule
   - PKICertificateTools

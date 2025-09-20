@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-ADGroupNesting.ps1
+permalink: /scripts/get-adgroupnesting/
 ---
 
 - [Description](#description)

@@ -2,7 +2,7 @@
 layout: post
 title: Test-ADUserCredentials.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-ADUserCredentials/
+permalink: /useradminmodule/adfunctions/test-adusercredentials/
 categories:
   - UserAdminModule
   - ADFunctions

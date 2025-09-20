@@ -2,7 +2,7 @@
 layout: post
 title: Backup-CertificateServicesDatabase.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Backup-CertificateServicesDatabase/
+permalink: /useradminmodule/pkicertificatetools/backup-certificateservicesdatabase/
 categories:
   - UserAdminModule
   - PKICertificateTools

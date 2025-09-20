@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Install-RSATonline.ps1
+permalink: /scripts/install-rsatonline/
 ---
 
 - [Description](#description)

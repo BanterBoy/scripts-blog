@@ -2,7 +2,7 @@
 layout: post
 title: Get-ServicePrivilege.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ServicePrivilege/
+permalink: /useradminmodule/adfunctions/get-serviceprivilege/
 categories:
   - UserAdminModule
   - ADFunctions

@@ -2,7 +2,7 @@
 layout: post
 title: Find-localAdmins.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Find-localAdmins/
+permalink: /useradminmodule/adfunctions/find-localadmins/
 categories:
   - UserAdminModule
   - ADFunctions

@@ -2,7 +2,7 @@
 layout: post
 title: Microsoft.PowerShell_profile_example.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Microsoft.PowerShell_profile_example/
+permalink: /useradminmodule/shell/microsoft-powershell-profile-example/
 categories:
   - UserAdminModule
   - Shell

@@ -2,7 +2,7 @@
 layout: post
 title: Convert-TimeUnit.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Convert-TimeUnit/
+permalink: /useradminmodule/shell/convert-timeunit/
 categories:
   - UserAdminModule
   - Shell

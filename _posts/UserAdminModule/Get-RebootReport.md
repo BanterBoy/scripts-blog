@@ -2,7 +2,7 @@
 layout: post
 title: Get-RebootReport.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-RebootReport/
+permalink: /useradminmodule/utilities/get-rebootreport/
 categories:
   - UserAdminModule
   - Utilities

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: New-ADAssetReport.ps1
+permalink: /scripts/new-adassetreport/
 ---
 
 - [Description](#description)

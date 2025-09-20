@@ -2,7 +2,7 @@
 layout: post
 title: New-FileofSize.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-FileofSize/
+permalink: /useradminmodule/fileoperations/new-fileofsize/
 categories:
   - UserAdminModule
   - FileOperations

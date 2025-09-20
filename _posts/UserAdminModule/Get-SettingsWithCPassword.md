@@ -2,7 +2,7 @@
 layout: post
 title: Get-SettingsWithCPassword.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-SettingsWithCPassword/
+permalink: /useradminmodule/security/get-settingswithcpassword/
 categories:
   - UserAdminModule
   - Security

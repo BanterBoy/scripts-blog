@@ -2,7 +2,7 @@
 layout: post
 title: Invoke-RemoteZipExpansion.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Invoke-RemoteZipExpansion/
+permalink: /useradminmodule/fileoperations/invoke-remotezipexpansion/
 categories:
   - UserAdminModule
   - FileOperations

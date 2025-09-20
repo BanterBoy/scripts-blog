@@ -3,7 +3,7 @@ layout: post
 title: Logoff-Stale-RDP.ps1
 description: "Logs off disconnected or stale Remote Desktop sessions across target servers."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Logoff-Stale-RDP/
+permalink: /useradminmodule/remoteconnections/logoff-stale-rdp/
 categories:
   - UserAdminModule
   - RemoteConnections

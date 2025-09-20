@@ -2,7 +2,7 @@
 layout: post
 title: Get-UptimeV1.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-UptimeV1/
+permalink: /useradminmodule/virtualization/get-uptimev1/
 categories:
   - UserAdminModule
   - Virtualization

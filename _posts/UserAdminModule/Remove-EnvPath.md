@@ -2,7 +2,7 @@
 layout: post
 title: Remove-EnvPath.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Remove-EnvPath/
+permalink: /useradminmodule/environmentmanagement/remove-envpath/
 categories:
   - UserAdminModule
   - EnvironmentManagement

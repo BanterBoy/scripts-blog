@@ -2,7 +2,7 @@
 layout: post
 title: Set-TransmissionDefaultSettings.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-TransmissionDefaultSettings/
+permalink: /useradminmodule/mediamanagement/set-transmissiondefaultsettings/
 categories:
   - UserAdminModule
   - MediaManagement

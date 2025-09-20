@@ -2,7 +2,7 @@
 layout: post
 title: Start-TaskList.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Start-TaskList/
+permalink: /useradminmodule/processserviceschedules/start-tasklist/
 categories:
   - UserAdminModule
   - ProcessServiceSchedules

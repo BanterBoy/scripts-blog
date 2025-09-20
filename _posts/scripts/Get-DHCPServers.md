@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-DHCPServers.ps1
+permalink: /scripts/get-dhcpservers/
 ---
 
 - [Description](#description)

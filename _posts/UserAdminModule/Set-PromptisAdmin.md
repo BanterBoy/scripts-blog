@@ -2,7 +2,7 @@
 layout: post
 title: Set-PromptisAdmin.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-PromptisAdmin/
+permalink: /useradminmodule/shell/set-promptisadmin/
 categories:
   - UserAdminModule
   - Shell

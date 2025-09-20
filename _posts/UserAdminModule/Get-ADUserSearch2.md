@@ -2,7 +2,7 @@
 layout: post
 title: Get-ADUserSearch2.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ADUserSearch2/
+permalink: /useradminmodule/adfunctions/get-adusersearch2/
 categories:
   - UserAdminModule
   - ADFunctions

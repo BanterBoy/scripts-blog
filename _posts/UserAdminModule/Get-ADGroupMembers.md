@@ -2,7 +2,7 @@
 layout: post
 title: Get-ADGroupMembers.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ADGroupMembers/
+permalink: /useradminmodule/adfunctions/get-adgroupmembers/
 categories:
   - UserAdminModule
   - ADFunctions

@@ -2,7 +2,7 @@
 layout: post
 title: Get-WeekDayInMonth.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-WeekDayInMonth/
+permalink: /useradminmodule/utilities/get-weekdayinmonth/
 categories:
   - UserAdminModule
   - Utilities

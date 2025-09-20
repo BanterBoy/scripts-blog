@@ -2,7 +2,7 @@
 layout: post
 title: Start-ServicesInOrder.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Start-ServicesInOrder/
+permalink: /useradminmodule/processserviceschedules/start-servicesinorder/
 categories:
   - UserAdminModule
   - ProcessServiceSchedules

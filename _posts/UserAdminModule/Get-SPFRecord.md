@@ -2,7 +2,7 @@
 layout: post
 title: Get-SPFRecord.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-SPFRecord/
+permalink: /useradminmodule/network/get-spfrecord/
 categories:
   - UserAdminModule
   - Network

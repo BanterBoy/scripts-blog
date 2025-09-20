@@ -2,7 +2,7 @@
 layout: post
 title: Get-UserSupportedEncryptionTypes.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-UserSupportedEncryptionTypes/
+permalink: /useradminmodule/adfunctions/get-usersupportedencryptiontypes/
 categories:
   - UserAdminModule
   - ADFunctions

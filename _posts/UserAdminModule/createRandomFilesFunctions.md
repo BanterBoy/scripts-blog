@@ -2,7 +2,7 @@
 layout: post
 title: createRandomFilesFunctions.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/createRandomFilesFunctions/
+permalink: /useradminmodule/fileoperations/createrandomfilesfunctions/
 categories:
   - UserAdminModule
   - FileOperations

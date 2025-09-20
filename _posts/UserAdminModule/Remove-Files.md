@@ -2,7 +2,7 @@
 layout: post
 title: Remove-Files.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Remove-Files/
+permalink: /useradminmodule/fileoperations/remove-files/
 categories:
   - UserAdminModule
   - FileOperations

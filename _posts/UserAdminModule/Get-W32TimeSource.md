@@ -2,7 +2,7 @@
 layout: post
 title: Get-W32TimeSource.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-W32TimeSource/
+permalink: /useradminmodule/utilities/get-w32timesource/
 categories:
   - UserAdminModule
   - Utilities

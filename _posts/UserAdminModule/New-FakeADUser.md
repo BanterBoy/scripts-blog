@@ -2,7 +2,7 @@
 layout: post
 title: New-FakeADUser.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-FakeADUser/
+permalink: /useradminmodule/adfunctions/new-fakeaduser/
 categories:
   - UserAdminModule
   - ADFunctions

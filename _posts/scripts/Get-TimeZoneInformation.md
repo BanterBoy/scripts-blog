@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-TimeZoneInformation.ps1
+permalink: /scripts/get-timezoneinformation/
 ---
 
 - [Description](#description)

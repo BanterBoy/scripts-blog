@@ -2,7 +2,7 @@
 layout: post
 title: Get-LogonHistory.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-LogonHistory/
+permalink: /useradminmodule/adfunctions/get-logonhistory/
 categories:
   - UserAdminModule
   - ADFunctions

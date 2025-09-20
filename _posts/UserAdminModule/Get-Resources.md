@@ -2,7 +2,7 @@
 layout: post
 title: Get-Resources.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-Resources/
+permalink: /useradminmodule/utilities/get-resources/
 categories:
   - UserAdminModule
   - Utilities

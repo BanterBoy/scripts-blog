@@ -2,7 +2,7 @@
 layout: post
 title: Set-OOHmessage.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-OOHmessage/
+permalink: /useradminmodule/exchange/set-oohmessage/
 categories:
   - UserAdminModule
   - Exchange

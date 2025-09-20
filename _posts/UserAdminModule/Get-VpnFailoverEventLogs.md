@@ -2,7 +2,7 @@
 layout: post
 title: Get-VpnFailoverEventLogs.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-VpnFailoverEventLogs/
+permalink: /useradminmodule/security/get-vpnfailovereventlogs/
 categories:
   - UserAdminModule
   - Security

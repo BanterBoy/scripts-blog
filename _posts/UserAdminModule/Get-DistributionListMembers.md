@@ -2,7 +2,7 @@
 layout: post
 title: Get-DistributionListMembers.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-DistributionListMembers/
+permalink: /useradminmodule/exchange/get-distributionlistmembers/
 categories:
   - UserAdminModule
   - Exchange

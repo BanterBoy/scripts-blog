@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Active_Directory_Information.ps1
+permalink: /scripts/active-directory-information/
 ---
 
 - [Description](#description)

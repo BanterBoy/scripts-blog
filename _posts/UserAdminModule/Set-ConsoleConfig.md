@@ -2,7 +2,7 @@
 layout: post
 title: Set-ConsoleConfig.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-ConsoleConfig/
+permalink: /useradminmodule/shell/set-consoleconfig/
 categories:
   - UserAdminModule
   - Shell

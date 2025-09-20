@@ -2,7 +2,7 @@
 layout: post
 title: Start-WindowsUpdate.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Start-WindowsUpdate/
+permalink: /useradminmodule/utilities/start-windowsupdate/
 categories:
   - UserAdminModule
   - Utilities

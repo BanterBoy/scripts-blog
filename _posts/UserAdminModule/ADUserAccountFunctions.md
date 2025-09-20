@@ -2,7 +2,7 @@
 layout: post
 title: ADUserAccountFunctions.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/ADUserAccountFunctions/
+permalink: /useradminmodule/adfunctions/aduseraccountfunctions/
 categories:
   - UserAdminModule
   - ADFunctions

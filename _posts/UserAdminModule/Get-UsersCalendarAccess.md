@@ -2,7 +2,7 @@
 layout: post
 title: Get-UsersCalendarAccess.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-UsersCalendarAccess/
+permalink: /useradminmodule/exchange/get-userscalendaraccess/
 categories:
   - UserAdminModule
   - Exchange

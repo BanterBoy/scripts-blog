@@ -1,6 +1,7 @@
 ---
 layout: post
 title: copyFilestoServers.ps1
+permalink: /scripts/copyfilestoservers/
 ---
 
 - [Description](#description)

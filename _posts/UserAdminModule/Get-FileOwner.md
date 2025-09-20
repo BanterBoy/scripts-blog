@@ -2,7 +2,7 @@
 layout: post
 title: Get-FileOwner.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-FileOwner/
+permalink: /useradminmodule/fileoperations/get-fileowner/
 categories:
   - UserAdminModule
   - FileOperations

@@ -2,7 +2,7 @@
 layout: post
 title: Get-LoggedOnUser.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-LoggedOnUser/
+permalink: /useradminmodule/adfunctions/get-loggedonuser/
 categories:
   - UserAdminModule
   - ADFunctions

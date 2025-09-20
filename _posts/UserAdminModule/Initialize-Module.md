@@ -2,7 +2,7 @@
 layout: post
 title: Initialize-Module.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Initialize-Module/
+permalink: /useradminmodule/shell/initialize-module/
 categories:
   - UserAdminModule
   - Shell

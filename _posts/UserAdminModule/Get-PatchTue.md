@@ -2,7 +2,7 @@
 layout: post
 title: Get-PatchTue.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-PatchTue/
+permalink: /useradminmodule/shell/get-patchtue/
 categories:
   - UserAdminModule
   - Shell

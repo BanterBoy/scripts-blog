@@ -2,7 +2,7 @@
 layout: post
 title: Connect-toAzure.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Connect-toAzure/
+permalink: /useradminmodule/azure/connect-toazure/
 categories:
   - UserAdminModule
   - Azure

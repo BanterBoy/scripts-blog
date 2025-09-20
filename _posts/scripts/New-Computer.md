@@ -1,6 +1,7 @@
 ---
 layout: post
 title: New-Computer.ps1
+permalink: /scripts/new-computer/
 ---
 
 - [Description](#description)

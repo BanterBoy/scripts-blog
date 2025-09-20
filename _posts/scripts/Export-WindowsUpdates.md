@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Export-WindowsUpdates.ps1
+permalink: /scripts/export-windowsupdates/
 ---
 
 - [Description](#description)

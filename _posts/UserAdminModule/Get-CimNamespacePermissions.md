@@ -2,7 +2,7 @@
 layout: post
 title: Get-CimNamespacePermissions.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-CimNamespacePermissions/
+permalink: /useradminmodule/security/get-cimnamespacepermissions/
 categories:
   - UserAdminModule
   - Security

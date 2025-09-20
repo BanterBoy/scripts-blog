@@ -2,7 +2,7 @@
 layout: post
 title: Set-ServerTimeZone.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-ServerTimeZone/
+permalink: /useradminmodule/utilities/set-servertimezone/
 categories:
   - UserAdminModule
   - Utilities

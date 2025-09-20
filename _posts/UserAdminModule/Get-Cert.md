@@ -2,7 +2,7 @@
 layout: post
 title: Get-Cert.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-Cert/
+permalink: /useradminmodule/adfunctions/get-cert/
 categories:
   - UserAdminModule
   - ADFunctions

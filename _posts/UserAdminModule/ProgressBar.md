@@ -2,7 +2,7 @@
 layout: post
 title: ProgressBar.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/ProgressBar/
+permalink: /useradminmodule/utilities/progressbar/
 categories:
   - UserAdminModule
   - Utilities

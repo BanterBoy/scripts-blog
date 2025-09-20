@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Install-PoshBot.ps1
+permalink: /scripts/install-poshbot/
 ---
 
 - [Description](#description)

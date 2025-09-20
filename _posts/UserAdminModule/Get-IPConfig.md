@@ -2,7 +2,7 @@
 layout: post
 title: Get-IPConfig.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-IPConfig/
+permalink: /useradminmodule/network/get-ipconfig/
 categories:
   - UserAdminModule
   - Network

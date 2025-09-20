@@ -2,7 +2,7 @@
 layout: post
 title: Show-Notification.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Show-Notification/
+permalink: /useradminmodule/shell/show-notification/
 categories:
   - UserAdminModule
   - Shell

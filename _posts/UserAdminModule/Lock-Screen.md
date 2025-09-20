@@ -2,7 +2,7 @@
 layout: post
 title: Lock-Screen.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Lock-Screen/
+permalink: /useradminmodule/shell/lock-screen/
 categories:
   - UserAdminModule
   - Shell

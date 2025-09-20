@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Stop-FailedServiceScript.ps1
+permalink: /scripts/stop-failedservicescript/
 ---
 
 - [Description](#description)

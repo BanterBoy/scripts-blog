@@ -2,7 +2,7 @@
 layout: post
 title: Get-InfoCompSystem.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-InfoCompSystem/
+permalink: /useradminmodule/utilities/get-infocompsystem/
 categories:
   - UserAdminModule
   - Utilities

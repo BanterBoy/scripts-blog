@@ -2,7 +2,7 @@
 layout: post
 title: New-WindowsSandbox.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-WindowsSandbox/
+permalink: /useradminmodule/virtualization/new-windowssandbox/
 categories:
   - UserAdminModule
   - Virtualization

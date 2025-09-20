@@ -2,7 +2,7 @@
 layout: post
 title: Script4logging.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Script4logging/
+permalink: /useradminmodule/logging/script4logging/
 categories:
   - UserAdminModule
   - Logging

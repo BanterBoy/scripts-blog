@@ -2,7 +2,7 @@
 layout: post
 title: Invoke-CDRomDrive.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Invoke-CDRomDrive/
+permalink: /useradminmodule/utilities/invoke-cdromdrive/
 categories:
   - UserAdminModule
   - Utilities

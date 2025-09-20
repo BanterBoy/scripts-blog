@@ -2,7 +2,7 @@
 layout: post
 title: Test-LDAPconnection.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-LDAPconnection/
+permalink: /useradminmodule/testing/test-ldapconnection/
 categories:
   - UserAdminModule
   - Testing

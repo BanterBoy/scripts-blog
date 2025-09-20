@@ -2,7 +2,7 @@
 layout: post
 title: Get-LastBootTime.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-LastBootTime/
+permalink: /useradminmodule/shell/get-lastboottime/
 categories:
   - UserAdminModule
   - Shell

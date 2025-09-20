@@ -2,7 +2,7 @@
 layout: post
 title: Get-TempHumidData.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-TempHumidData/
+permalink: /useradminmodule/weather/get-temphumiddata/
 categories:
   - UserAdminModule
   - Weather

@@ -2,7 +2,7 @@
 layout: post
 title: Disable-RDPRemotelyCIM.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Disable-RDPRemotelyCIM/
+permalink: /useradminmodule/remoteconnections/disable-rdpremotelycim/
 categories:
   - UserAdminModule
   - RemoteConnections

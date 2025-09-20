@@ -2,7 +2,7 @@
 layout: post
 title: Get-MediaDetails.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-MediaDetails/
+permalink: /useradminmodule/fileoperations/get-mediadetails/
 categories:
   - UserAdminModule
   - FileOperations

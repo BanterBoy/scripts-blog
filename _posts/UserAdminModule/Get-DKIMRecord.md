@@ -2,7 +2,7 @@
 layout: post
 title: Get-DKIMRecord.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-DKIMRecord/
+permalink: /useradminmodule/network/get-dkimrecord/
 categories:
   - UserAdminModule
   - Network

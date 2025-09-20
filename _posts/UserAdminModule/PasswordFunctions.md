@@ -2,7 +2,7 @@
 layout: post
 title: PasswordFunctions.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/PasswordFunctions/
+permalink: /useradminmodule/security/passwordfunctions/
 categories:
   - UserAdminModule
   - Security

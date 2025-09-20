@@ -2,7 +2,7 @@
 layout: post
 title: Get-ComputerReplicationStatus.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ComputerReplicationStatus/
+permalink: /useradminmodule/replication/get-computerreplicationstatus/
 categories:
   - UserAdminModule
   - Replication

@@ -3,7 +3,7 @@ layout: post
 title: Test-Computer.ps1
 description: "Runs connectivity and service checks to summarize a computer's health."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-Computer/
+permalink: /useradminmodule/testing/test-computer/
 categories:
   - UserAdminModule
   - Testing

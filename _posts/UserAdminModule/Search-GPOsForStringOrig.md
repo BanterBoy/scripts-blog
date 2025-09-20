@@ -2,7 +2,7 @@
 layout: post
 title: Search-GPOsForStringOrig.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Search-GPOsForStringOrig/
+permalink: /useradminmodule/adfunctions/search-gposforstringorig/
 categories:
   - UserAdminModule
   - ADFunctions

@@ -2,7 +2,7 @@
 layout: post
 title: Get-DuplicateExchangeDN.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-DuplicateExchangeDN/
+permalink: /useradminmodule/exchange/get-duplicateexchangedn/
 categories:
   - UserAdminModule
   - Exchange

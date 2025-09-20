@@ -2,7 +2,7 @@
 layout: post
 title: Invoke-FTPUpload.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Invoke-FTPUpload/
+permalink: /useradminmodule/network/invoke-ftpupload/
 categories:
   - UserAdminModule
   - Network

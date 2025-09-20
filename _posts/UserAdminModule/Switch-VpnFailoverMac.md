@@ -2,7 +2,7 @@
 layout: post
 title: Switch-VpnFailoverMac.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Switch-VpnFailoverMac/
+permalink: /useradminmodule/network/switch-vpnfailovermac/
 categories:
   - UserAdminModule
   - Network

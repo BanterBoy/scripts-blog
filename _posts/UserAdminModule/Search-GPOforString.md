@@ -2,7 +2,7 @@
 layout: post
 title: Search-GPOforString.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Search-GPOforString/
+permalink: /useradminmodule/adfunctions/search-gpoforstring/
 categories:
   - UserAdminModule
   - ADFunctions

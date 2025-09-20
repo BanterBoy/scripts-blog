@@ -2,7 +2,7 @@
 layout: post
 title: Create-VLCPlaylists.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Create-VLCPlaylists/
+permalink: /useradminmodule/mediamanagement/create-vlcplaylists/
 categories:
   - UserAdminModule
   - MediaManagement

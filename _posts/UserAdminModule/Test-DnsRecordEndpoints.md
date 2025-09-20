@@ -2,7 +2,7 @@
 layout: post
 title: Test-DnsRecordEndpoints.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-DnsRecordEndpoints/
+permalink: /useradminmodule/testing/test-dnsrecordendpoints/
 categories:
   - UserAdminModule
   - Testing

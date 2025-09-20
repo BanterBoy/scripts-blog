@@ -2,7 +2,7 @@
 layout: post
 title: ConvertObject-ToHashTable.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/ConvertObject-ToHashTable/
+permalink: /useradminmodule/utilities/convertobject-tohashtable/
 categories:
   - UserAdminModule
   - Utilities

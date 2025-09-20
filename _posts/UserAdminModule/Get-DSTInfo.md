@@ -2,7 +2,7 @@
 layout: post
 title: Get-DSTInfo.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-DSTInfo/
+permalink: /useradminmodule/shell/get-dstinfo/
 categories:
   - UserAdminModule
   - Shell

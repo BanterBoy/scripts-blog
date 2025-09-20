@@ -3,7 +3,7 @@ layout: post
 title: Connect-OPExchange.ps1
 description: "Opens a remote session to on-premises Exchange servers using a randomly selected host."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Connect-OPExchange/
+permalink: /useradminmodule/exchange/connect-opexchange/
 categories:
   - UserAdminModule
   - Exchange

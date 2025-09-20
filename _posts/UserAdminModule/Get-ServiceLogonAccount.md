@@ -2,7 +2,7 @@
 layout: post
 title: Get-ServiceLogonAccount.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ServiceLogonAccount/
+permalink: /useradminmodule/adfunctions/get-servicelogonaccount/
 categories:
   - UserAdminModule
   - ADFunctions

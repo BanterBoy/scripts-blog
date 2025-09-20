@@ -2,7 +2,7 @@
 layout: post
 title: New-FolderCompare.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-FolderCompare/
+permalink: /useradminmodule/fileoperations/new-foldercompare/
 categories:
   - UserAdminModule
   - FileOperations

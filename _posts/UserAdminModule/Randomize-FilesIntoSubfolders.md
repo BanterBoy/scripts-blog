@@ -2,7 +2,7 @@
 layout: post
 title: Randomize-FilesIntoSubfolders.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Randomize-FilesIntoSubfolders/
+permalink: /useradminmodule/fileoperations/randomize-filesintosubfolders/
 categories:
   - UserAdminModule
   - FileOperations

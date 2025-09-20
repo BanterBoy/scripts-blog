@@ -2,7 +2,7 @@
 layout: post
 title: Get-InstalledUpdates.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-InstalledUpdates/
+permalink: /useradminmodule/utilities/get-installedupdates/
 categories:
   - UserAdminModule
   - Utilities

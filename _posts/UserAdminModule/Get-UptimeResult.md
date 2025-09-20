@@ -2,7 +2,7 @@
 layout: post
 title: Get-UptimeResult.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-UptimeResult/
+permalink: /useradminmodule/virtualization/get-uptimeresult/
 categories:
   - UserAdminModule
   - Virtualization

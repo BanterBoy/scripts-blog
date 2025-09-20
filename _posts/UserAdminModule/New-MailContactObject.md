@@ -2,7 +2,7 @@
 layout: post
 title: New-MailContactObject.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-MailContactObject/
+permalink: /useradminmodule/exchange/new-mailcontactobject/
 categories:
   - UserAdminModule
   - Exchange

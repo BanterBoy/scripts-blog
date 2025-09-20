@@ -2,7 +2,7 @@
 layout: post
 title: New-FileArchive.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-FileArchive/
+permalink: /useradminmodule/fileoperations/new-filearchive/
 categories:
   - UserAdminModule
   - FileOperations

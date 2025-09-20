@@ -2,7 +2,7 @@
 layout: post
 title: Invoke-WithPsGalleryStats.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Invoke-WithPsGalleryStats/
+permalink: /useradminmodule/utilities/invoke-withpsgallerystats/
 categories:
   - UserAdminModule
   - Utilities

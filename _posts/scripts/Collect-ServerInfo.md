@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Collect-ServerInfo.ps1
+permalink: /scripts/collect-serverinfo/
 ---
 
 - [Description](#description)

@@ -2,7 +2,7 @@
 layout: post
 title: Test-DNSPropagation.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-DNSPropagation/
+permalink: /useradminmodule/network/test-dnspropagation/
 categories:
   - UserAdminModule
   - Network

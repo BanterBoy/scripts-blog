@@ -2,7 +2,7 @@
 layout: post
 title: Get-HostIOResults.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-HostIOResults/
+permalink: /useradminmodule/network/get-hostioresults/
 categories:
   - UserAdminModule
   - Network

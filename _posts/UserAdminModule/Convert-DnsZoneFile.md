@@ -2,7 +2,7 @@
 layout: post
 title: Convert-DnsZoneFile.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Convert-DnsZoneFile/
+permalink: /useradminmodule/fileoperations/convert-dnszonefile/
 categories:
   - UserAdminModule
   - FileOperations

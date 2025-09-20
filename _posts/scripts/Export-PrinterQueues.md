@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Export-PrinterQueues.ps1
+permalink: /scripts/export-printerqueues/
 ---
 
 - [Description](#description)

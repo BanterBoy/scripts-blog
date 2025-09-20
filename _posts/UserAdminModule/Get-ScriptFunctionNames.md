@@ -2,7 +2,7 @@
 layout: post
 title: Get-ScriptFunctionNames.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ScriptFunctionNames/
+permalink: /useradminmodule/utilities/get-scriptfunctionnames/
 categories:
   - UserAdminModule
   - Utilities

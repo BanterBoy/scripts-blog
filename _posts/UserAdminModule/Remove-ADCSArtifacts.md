@@ -2,7 +2,7 @@
 layout: post
 title: Remove-ADCSArtifacts.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Remove-ADCSArtifacts/
+permalink: /useradminmodule/pkicertificatetools/remove-adcsartifacts/
 categories:
   - UserAdminModule
   - PKICertificateTools

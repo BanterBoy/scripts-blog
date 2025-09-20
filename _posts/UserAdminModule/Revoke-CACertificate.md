@@ -2,7 +2,7 @@
 layout: post
 title: Revoke-CACertificate.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Revoke-CACertificate/
+permalink: /useradminmodule/pkicertificatetools/revoke-cacertificate/
 categories:
   - UserAdminModule
   - PKICertificateTools

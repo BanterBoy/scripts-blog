@@ -2,7 +2,7 @@
 layout: post
 title: Revoke-AllValidCerts.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Revoke-AllValidCerts/
+permalink: /useradminmodule/pkicertificatetools/revoke-allvalidcerts/
 categories:
   - UserAdminModule
   - PKICertificateTools

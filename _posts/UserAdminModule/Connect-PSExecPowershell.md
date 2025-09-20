@@ -2,7 +2,7 @@
 layout: post
 title: Connect-PSExecPowershell.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Connect-PSExecPowershell/
+permalink: /useradminmodule/remoteconnections/connect-psexecpowershell/
 categories:
   - UserAdminModule
   - RemoteConnections

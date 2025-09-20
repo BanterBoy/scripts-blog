@@ -2,7 +2,7 @@
 layout: post
 title: Get-MoreCowbell.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-MoreCowbell/
+permalink: /useradminmodule/shell/get-morecowbell/
 categories:
   - UserAdminModule
   - Shell

@@ -2,7 +2,7 @@
 layout: post
 title: Import-CSVCustom.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Import-CSVCustom/
+permalink: /useradminmodule/utilities/import-csvcustom/
 categories:
   - UserAdminModule
   - Utilities

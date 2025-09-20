@@ -2,7 +2,7 @@
 layout: post
 title: Get-LoadedFunctions.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-LoadedFunctions/
+permalink: /useradminmodule/shell/get-loadedfunctions/
 categories:
   - UserAdminModule
   - Shell

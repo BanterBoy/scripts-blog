@@ -2,7 +2,7 @@
 layout: post
 title: Get-UsersGroupMemberShips.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-UsersGroupMemberShips/
+permalink: /useradminmodule/adfunctions/get-usersgroupmemberships/
 categories:
   - UserAdminModule
   - ADFunctions

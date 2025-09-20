@@ -2,7 +2,7 @@
 layout: post
 title: Get-VMInformationPlus.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-VMInformationPlus/
+permalink: /useradminmodule/virtualization/get-vminformationplus/
 categories:
   - UserAdminModule
   - Virtualization

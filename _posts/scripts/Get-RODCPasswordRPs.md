@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-RODCPasswordRPs.ps1
+permalink: /scripts/get-rodcpasswordrps/
 ---
 
 - [Description](#description)

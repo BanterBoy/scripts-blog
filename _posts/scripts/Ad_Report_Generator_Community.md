@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ad_Report_Generator_Community.ps1
+permalink: /scripts/ad-report-generator-community/
 ---
 
 - [Description](#description)

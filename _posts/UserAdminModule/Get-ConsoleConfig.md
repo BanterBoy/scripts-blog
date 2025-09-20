@@ -2,7 +2,7 @@
 layout: post
 title: Get-ConsoleConfig.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ConsoleConfig/
+permalink: /useradminmodule/shell/get-consoleconfig/
 categories:
   - UserAdminModule
   - Shell

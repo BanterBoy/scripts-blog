@@ -2,7 +2,7 @@
 layout: post
 title: Get-PathPermissions.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-PathPermissions/
+permalink: /useradminmodule/fileoperations/get-pathpermissions/
 categories:
   - UserAdminModule
   - FileOperations

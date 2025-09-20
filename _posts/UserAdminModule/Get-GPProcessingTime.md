@@ -2,7 +2,7 @@
 layout: post
 title: Get-GPProcessingTime.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-GPProcessingTime/
+permalink: /useradminmodule/adfunctions/get-gpprocessingtime/
 categories:
   - UserAdminModule
   - ADFunctions

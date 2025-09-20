@@ -2,7 +2,7 @@
 layout: post
 title: Get-DirectReports.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-DirectReports/
+permalink: /useradminmodule/adfunctions/get-directreports/
 categories:
   - UserAdminModule
   - ADFunctions

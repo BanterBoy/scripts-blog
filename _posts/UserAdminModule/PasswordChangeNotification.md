@@ -2,7 +2,7 @@
 layout: post
 title: PasswordChangeNotification.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/PasswordChangeNotification/
+permalink: /useradminmodule/exchange/passwordchangenotification/
 categories:
   - UserAdminModule
   - Exchange

@@ -2,7 +2,7 @@
 layout: post
 title: Get-MailboxAccessPerms.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-MailboxAccessPerms/
+permalink: /useradminmodule/exchange/get-mailboxaccessperms/
 categories:
   - UserAdminModule
   - Exchange

@@ -2,7 +2,7 @@
 layout: post
 title: Get-ADDeletedUsers.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ADDeletedUsers/
+permalink: /useradminmodule/adfunctions/get-addeletedusers/
 categories:
   - UserAdminModule
   - ADFunctions

@@ -2,7 +2,7 @@
 layout: post
 title: New-AzureADDynamicGroup.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-AzureADDynamicGroup/
+permalink: /useradminmodule/azure/new-azureaddynamicgroup/
 categories:
   - UserAdminModule
   - Azure

@@ -2,7 +2,7 @@
 layout: post
 title: Get-MyIpWtf.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-MyIpWtf/
+permalink: /useradminmodule/shell/get-myipwtf/
 categories:
   - UserAdminModule
   - Shell

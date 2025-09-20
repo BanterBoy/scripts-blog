@@ -2,7 +2,7 @@
 layout: post
 title: New-PowerOutage.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-PowerOutage/
+permalink: /useradminmodule/shutdowncommands/new-poweroutage/
 categories:
   - UserAdminModule
   - ShutdownCommands

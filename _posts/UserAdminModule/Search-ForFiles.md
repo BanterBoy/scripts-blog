@@ -2,7 +2,7 @@
 layout: post
 title: Search-ForFiles.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Search-ForFiles/
+permalink: /useradminmodule/fileoperations/search-forfiles/
 categories:
   - UserAdminModule
   - FileOperations

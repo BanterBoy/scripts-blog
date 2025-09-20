@@ -1,6 +1,7 @@
 ---
 layout: post
 title: FindDNSServersAndLocalZones.ps1
+permalink: /scripts/finddnsserversandlocalzones/
 ---
 
 - [Description](#description)

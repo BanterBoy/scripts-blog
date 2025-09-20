@@ -2,7 +2,7 @@
 layout: post
 title: Connect-RemoteAssistance.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Connect-RemoteAssistance/
+permalink: /useradminmodule/remoteconnections/connect-remoteassistance/
 categories:
   - UserAdminModule
   - RemoteConnections
