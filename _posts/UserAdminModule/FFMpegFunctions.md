@@ -238,7 +238,7 @@ function FFMpeg-RemoveVideoFileAudioStream {
                 ForEach-Object {
                     $asrFile = $($_.FullName).Replace($($_.Name), $(Join-Path -Path 'ASR' -ChildPath $($_.Name)))
 
-                    $command = "ffmpeg -i $($($_.FullName)) -map $VideoStreamIx -map -$($VideoStreamIx):a:$($AudioStreamIx) -c copy ($asrFile)"
+                    $command = "ffmpeg -i `"$($($_.FullName))`" -map $VideoStreamIx -map -$($VideoStreamIx):a:$($AudioStreamIx) -c copy `"$asrFile`""
 
                     Start-Process -FilePath 'powershell' -ArgumentList "-command $command" -Wait -NoNewWindow -PassThru
 
