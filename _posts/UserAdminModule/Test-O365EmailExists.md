@@ -32,7 +32,7 @@ Test-O365EmailExists - A function to The function tests to see if
 
 Outputs inlcude: Name DisplayName Alias SamAccountName ExternalEmailAddress EmailAddresses WindowsEmailAddress PrimarySmtpAddress RecipientType RecipientTypeDetails
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -44,13 +44,13 @@ Test-O365EmailExists -EmailAddress sharedMailbox@example.com,something@example.c
 
 Name                 : sharedMailbox DisplayName          : sharedMailbox Alias                : sharedMailbox SamAccountName       : $2UM3R0-D5L0FOVDKNME EmailAddresses       : {smtp:sharedMailbox@example.com, SMTP:sharedMailbox@example.com} WindowsEmailAddress  : sharedMailbox@example.com PrimarySmtpAddress   : sharedMailbox@example.com RecipientType        : UserMailbox RecipientTypeDetails : Name                 : Something DisplayName          : Something Alias                : Something SamAccountName       : EmailAddresses       : {SMTP:something@example.com} ExternalEmailAddress : SMTP:something@example.com WindowsEmailAddress  : something@example.com PrimarySmtpAddress   : something@example.com RecipientType        : MailContact RecipientTypeDetails : MailContact
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
 Author:     Luke Leigh Website:    https://scripts.lukeleigh.com/ LinkedIn:   https://www.linkedin.com/in/lukeleigh/ GitHub:     https://github.com/BanterBoy/ GitHubGist: https://gist.github.com/BanterBoy
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -265,7 +265,7 @@ function Test-O365EmailExists {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -289,7 +289,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

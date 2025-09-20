@@ -43,7 +43,7 @@ New-EntraGuestInvitationEntra invites an external user (B2B guest) to your tenan
 
 To use this command: 1. Ensure the Microsoft.Entra.SignIns module is installed and imported. 2. Connect to Microsoft Entra with the required permissions. 3. Run New-EntraGuestInvitationEntra with at minimum `-InvitedUserEmailAddress` and `-InviteRedirectUrl`. 4. Optionally include profile details, custom message, or group assignment. 5. Use `-PassThru` to return the user object for further automation.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -95,7 +95,7 @@ New-EntraGuestInvitationEntra -InvitedUserEmailAddress "guest@example.com" -Invi
 
 New-EntraGuestInvitationEntra -InvitedUserEmailAddress "guest@example.com" -InviteRedirectUrl "https://myapps.microsoft.com" -InvitedUserDisplayName "Guest (No Email)" -PassThru
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
@@ -103,7 +103,7 @@ Permissions: Requires Microsoft Entra permissions to invite users and update use
 
 This function does not modify Exchange Online proxy addresses. To manage proxy addresses, use Exchange Online cmdlets separately.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -356,7 +356,7 @@ function New-EntraGuestInvitationEntra {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -380,7 +380,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

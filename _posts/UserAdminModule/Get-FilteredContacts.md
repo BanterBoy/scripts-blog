@@ -29,7 +29,7 @@ This function retrieves mail contacts based on provided search and email address
 
 The Get-FilteredContacts function retrieves mail contacts from the Exchange server. If a search parameter is provided, it retrieves only those contacts whose display name matches the search parameter. Otherwise, it retrieves all contacts. It then filters the email addresses of these contacts based on the provided email address filter. The function returns a custom PowerShell object with contact details and filtered email addresses.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -57,13 +57,13 @@ Get-FilteredContacts -EmailAddressFilter "*@company.com"
 
 This example retrieves all contacts and filters their email addresses to include only those that end with "@company.com".
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
 The function uses the Get-MailContact cmdlet to retrieve mail contacts and the Get-Contact cmdlet to retrieve additional contact details. The function supports parallel processing in PowerShell 7 and later. If you're using an older version of PowerShell, you'll need to use the Start-Job cmdlet, which can be slower and more resource-intensive. Running commands in parallel can increase the load on the Exchange server, which may impact its performance. The -Parallel parameter in ForEach-Object cmdlet uses PowerShell's thread job feature, which is not as robust as the Start-Job cmdlet for handling errors and exceptions. Therefore, you should use it with caution and thoroughly test your code before deploying it in a production environment.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -151,7 +151,7 @@ function Get-FilteredContacts {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -175,7 +175,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

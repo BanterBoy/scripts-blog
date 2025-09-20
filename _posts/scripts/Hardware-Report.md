@@ -58,7 +58,7 @@ Write-Host "System Information for: " $computerSystem.Name -BackgroundColor Dark
 Get-PSDrive -PSProvider 'FileSystem' | Format-Table @{Label = "Drive"; Expression = { $_.name } }, @{Label = "Used Space GB"; Expression = { [math]::truncate($_.used / 1GB) } }, @{Label = "Free Space GB"; Expression = { [math]::truncate($_.free / 1GB) } }, @{Label = "Percent Free"; Expression = { "{0:P}" -f ($_.free / ($_.free + $_.used)) } }, @{Label = "Total Size"; Expression = { [math]::truncate(($_.free + $_.used) / 1GB) } } -AutoSize
 ```
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -84,7 +84,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/scripts.html">
     <button class="btn">

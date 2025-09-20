@@ -45,7 +45,7 @@ New-EntraGuestInvitation invites an external user (B2B guest) to your tenant usi
 
 To complete an invitation using this command: 1. Connect to Microsoft Graph with the required scopes: Connect-MgGraph -Scopes User.Invite.All, User.ReadWrite.All, Group.ReadWrite.All 2. Run New-EntraGuestInvitation with at minimum `-InvitedUserEmailAddress` and `-InviteRedirectUrl`. 3. Optionally include a custom message (`-CustomMessageBody`, `-CcRecipients`) or suppress email with `-SuppressInvitationMessage`. 4. To immediately set profile details or add to groups, supply the relevant parameters and consider `-WaitForUser`. 5. Use `-PassThru` to return the user object for further automation.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -97,7 +97,7 @@ New-EntraGuestInvitation -InvitedUserEmailAddress "guest@example.com" -GroupId "
 
 New-EntraGuestInvitation -InvitedUserEmailAddress "guest@example.com" -SuppressInvitationMessage -DisplayName "Guest (No Email)" -WaitForUser -PassThru
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
@@ -115,7 +115,7 @@ Redirect URL logic:
 
 This function does not modify Exchange Online proxy addresses. To manage proxy addresses, use Exchange Online cmdlets separately.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -515,7 +515,7 @@ function New-EntraGuestInvitation {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -539,7 +539,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

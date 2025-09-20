@@ -29,7 +29,7 @@ Speed up a video file by a configurable percentage while keeping audio and video
 
 `Set-FFMpegVideoSpeed` wraps the ffmpeg `setpts` and `atempo` filters to produce a faster version of a video. Provide the full path to the source file and the desired output location, then specify the percentage increase. The function converts that percentage into a factor that ffmpeg uses to adjust both video frames and audio tempo, giving you a sped-up copy without touching the source file.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -61,7 +61,7 @@ Set-FFMpegVideoSpeed -VideoFile "C:\\Media\\Tutorials\\walkthrough.mkv" -OutputF
 
 Uses the default `SpeedUpPercentage` value (100) to keep tempo unchanged, which is handy when you only want to re-encode with the preset filters.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
@@ -69,7 +69,7 @@ Uses the default `SpeedUpPercentage` value (100) to keep tempo unchanged, which 
 - Ensure the output file extension matches the input container to avoid format issues.
 - For speeds greater than 200% you may need to adjust the `atempo` filter chain manually, as ffmpeg limits each `atempo` stage to a factor between 0.5 and 2.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -120,7 +120,7 @@ function Set-FFMpegVideoSpeed {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -144,7 +144,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

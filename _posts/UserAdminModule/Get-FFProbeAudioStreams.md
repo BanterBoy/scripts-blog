@@ -29,7 +29,7 @@ Retrieve structured audio stream metadata for a video file using ffprobe.
 
 `Get-FFProbeAudioStreams` wraps ffprobe to output the audio streams from a media file as easy-to-filter PowerShell objects. It parses ffprobe's JSON response, returning each stream with its index, codec, language tag, and originating file path. The function accepts a literal path or pipeline input, making it simple to chain with file discovery commands or pass the results directly into `Remove-FFMpegVideoFileAudioStream`.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -57,7 +57,7 @@ Get-FFProbeAudioStreams -VideoFile "C:\\Media\\Movies\\Alien (1979).mkv" | Where
 
 Filters the returned streams to locate the English-language track before taking further action.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
@@ -65,7 +65,7 @@ Filters the returned streams to locate the English-language track before taking 
 - Outputs objects with `index`, `codec_name`, `Language`, and `File` properties to simplify filtering or piping into other automation.
 - Designed to feed directly into [`Remove-FFMpegVideoFileAudioStream`](/_posts/UserAdminModule/Remove-FFMpegVideoFileAudioStream/) for automated audio stream removal.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -121,7 +121,7 @@ function Get-FFProbeAudioStreams {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -145,7 +145,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">
