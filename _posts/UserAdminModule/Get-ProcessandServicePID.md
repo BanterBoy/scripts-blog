@@ -10,7 +10,7 @@ categories:
 tags:
 - PowerShell
 - User Admin Module
-- Processand Service PID
+- Process and Service PID
 - PID
 description: PowerShell script for processand service PID.
 image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
