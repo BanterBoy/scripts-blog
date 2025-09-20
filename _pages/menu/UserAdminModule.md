@@ -1,7 +1,7 @@
 ---
 layout: page
 title: UserAdminModule
-description: "Scripts v2.0 overview for the UserAdminModule—now helper-driven, categorised, and blissfully free of dot-sourcing."
+description: "Scripts v2.0 overview for the UserAdminModule—now helper-driven, categorized, and blissfully free of dot-sourcing."
 permalink: /menu/_pages/UserAdminModule.html
 ---
 
