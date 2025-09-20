@@ -13,6 +13,24 @@ steps:
 - task: UseRubyVersion@0
   displayName: 'Select Ruby version'
   inputs:
-    bundle exec jekyll build --future
-    ls -la _site
+    versionSpec: '>= 3.1'
+    addToPath: true
+
+- script: |
+    gem install bundler
+    bundle config set --local path vendor/bundle
+    bundle install --jobs 4 --retry 3
+  displayName: 'Install Ruby gems'
+
+- script: bundle exec jekyll build --future
   displayName: 'Build Jekyll site'
+
+- script: ls -la _site
+  displayName: 'List generated site contents'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish site artifact'
+  inputs:
+    PathtoPublish: '_site'
+    ArtifactName: 'jekyll-site'
+    publishLocation: 'Container'
