@@ -1,6 +1,11 @@
 ---
 layout: post
 title: CreateADMXCentralStore.ps1
+date: 2025-09-19
+permalink: /_posts/UserAdminModule/CreateADMXCentralStore/
+categories:
+  - UserAdminModule
+  - ADFunctions
 ---
 
 - [Description](#description)
@@ -83,7 +88,7 @@ The script has 3 variables which you will need to configure:-
 The screen shot below shows the output from the script running for the first time
 
 <div>
-<a href="/assets/images/functions/CreateADMXCentralStore-Script-Output.png" data-lightbox="CreateADMXCentralStore" data-title="CreateADMXCentralStore"><img src="/assets/images/tools/CreateADMXCentralStore-Script-Output.png" alt="CreateADMXCentralStore" width="828" height="800"/></a>
+<a href="/assets/images/tools/CreateADMXCentralStore-Script-Output.png" data-lightbox="CreateADMXCentralStore" data-title="CreateADMXCentralStore"><img src="/assets/images/tools/CreateADMXCentralStore-Script-Output.png" alt="CreateADMXCentralStore" width="828" height="800"/></a>
 </div>
 
 More information can be found on the owners website - [jhouseconsulting.com][5]{:target="\_blank"}
@@ -384,7 +389,7 @@ Write-Host -ForegroundColor green "`nFinished."
 
 <small><i>CreateADMXCentralStore.ps1</i></small>
 
-<button class="btn" type="submit" onclick="window.open('/PowerShell/tools/CreateADMXCentralStore.ps1')">
+<button class="btn" type="submit" onclick="window.open('/PowerShell/UserAdminModule/CreateADMXCentralStore.ps1')">
     <i class="fa fa-cloud-download-alt">
     </i>
         Download
@@ -404,11 +409,11 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
-<a href="/menu/_pages/tools.html">
+<a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">
         <i class='fas fa-reply'>
         </i>
-            Back to Tools
+            Back to UserAdminModule
     </button>
 </a>
 
