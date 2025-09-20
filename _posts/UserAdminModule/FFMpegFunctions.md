@@ -266,7 +266,7 @@ function FFMpeg-RemoveVideoFileAudioStream {
 Speeds up a video file.
 
 .DESCRIPTION
-Speeds up a video file, likely to make porn really weird.
+Speeds up a video file by the specified percentage while maintaining audio synchronization.
 
 .PARAMETER VideoFile
 Input video file. Full path.
