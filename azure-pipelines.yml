@@ -28,6 +28,9 @@ steps:
 - script: ls -la _site
   displayName: 'List generated site contents'
 
+- script: pwsh -File build/Verify-CssLink.ps1 -SiteRoot "$(Build.SourcesDirectory)/_site" -CssHint "hyde.css"
+  displayName: 'Verify CSS linked in built site'
+
 - task: PublishBuildArtifacts@1
   displayName: 'Publish site artifact'
   inputs:
