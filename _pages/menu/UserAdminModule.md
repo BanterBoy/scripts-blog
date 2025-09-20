@@ -1,7 +1,7 @@
 ---
 layout: page
 title: UserAdminModule
-description: "Documentation index for the UserAdminModule PowerShell toolkit and its commands."
+description: "Scripts v2.0 overview for the UserAdminModule—now helper-driven, categorized, and blissfully free of dot-sourcing."
 permalink: /menu/_pages/UserAdminModule.html
 ---
 
@@ -46,7 +46,13 @@ permalink: /menu/_pages/UserAdminModule.html
 
 ## Module Overview
 
-The **UserAdminModule** consolidates frequently used PowerShell automation into a structured module so that you can import functions by category, streamline profile management, and reuse scripts without copy-and-paste drift. Browse the categories below to explore the available tooling and open each function page for usage guidance and source code.
+Scripts v2.0 gives the **UserAdminModule** a fresh coat of paint and a neatly labelled toolbox. The release retires dot-sourcing in favour of clean module imports, so your profile scripts load faster than the coffee machine warms up.
+
+- **Module-first loading:** Wave goodbye to dot-sourcing; functions now ship in a proper module so imports stay predictable and portable.
+- **Helper scripts at the ready:** `Import-PersonalModules.ps1` wrangles profile imports, while `New-PSM1Module.ps1` scaffolds new function packs without rummaging through legacy snippets.
+- **Categorized muscle:** The module leans into broader, service-focused categories so you can dive straight into AD, Azure, or whichever drawer holds the tool you need.
+
+Browse the categories below to explore the reorganised toolkit, open each function page for usage guidance, and enjoy knowing the drawers finally close without a shove.
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
