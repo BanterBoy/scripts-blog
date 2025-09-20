@@ -63,6 +63,37 @@ Administrative context: Some scripts require administrative privileges or remote
 - Provide links to external resources where appropriate (e.g., Microsoft docs for technologies referenced).
 - Maintain `.github/AGENTS.md` so that AI assistants can easily find and follow these guidelines; the instructions in this file apply to the entire repository.
 
+## GitHub Pages and Jekyll Site Integration
+
+This repository also powers the public Jekyll site hosted on GitHub Pages at `https://scripts.lukeleigh.com`. When generating or updating content, treat the PowerShell assets and the static-site artefacts as a cohesive product so that readers receive consistent guidance regardless of whether they consume the material via the website or directly from the repository.
+
+### How the Jekyll site is organised
+
+- `_pages/` holds evergreen content. The `menu/` subfolder feeds the primary navigation, while the `content/` subfolder is used for long-form reference material or landing pages. Keep permalink structures (`permalink:` front matter values) aligned with the existing `/menu/_pages/...` and `/content/_pages/...` conventions so links remain stable.
+- `_posts/` contains dated blog posts that surface new scripts, release notes or scenario updates. Posts are rendered automatically on the home page and within any archive views.
+- `_layouts/`, `_includes/`, `_sass/` and `assets/` provide the presentation layer. Any structural change to navigation, theming or shared components should be reflected here so that all pages inherit the update.
+- `index.html`, `404.html`, `robots.txt`, feeds and other root-level files round out the published site and should be reviewed when editing cross-site metadata.
+
+### Position of this guidance within the site
+
+- `.github/AGENTS.md` is intentionally excluded from the Jekyll build but remains the canonical reference for automation and authoring practices. When writing `_pages` or `_posts`, link back to this document using a stable GitHub URL such as `{{ site.github.repository_url }}/blob/main/.github/AGENTS.md` so contributors can locate the latest rules from the rendered site.
+- Cross-reference this guidance from navigation or overview pages where appropriate. For example, if you add a "Contributing" or "About the automation" section under `_pages/menu/`, provide a short synopsis and then point readers to the full instructions here.
+- Keep any summaries of these guidelines in sync across site content, README files and issue templates so that human maintainers and agents receive consistent direction regardless of entry point.
+
+### Formatting expectations for Jekyll content
+
+- Include YAML front matter on any file that should be processed by Jekyll. At minimum specify `layout`, `title` and `permalink`; add `description`, `tags` or other metadata when the page requires richer SEO or categorisation.
+- Match the heading hierarchy already in use across the site: start each page with a single H1 (`# Title`) and structure subsequent sections with H2/H3 levels. Avoid skipping levels so that automatically generated tables of contents stay accurate.
+- Use relative URLs that respect the GitHub Pages build pipeline. Prefer the Liquid helper `{{ '/menu/_pages/about.html' | relative_url }}` or equivalent when linking between internal pages, and ensure asset references use `{{ '/assets/... ' | relative_url }}` so they resolve correctly in both local previews and the hosted site.
+- Validate that any cross-links to scripts, posts or documentation resolve when the site is built locally with `bundle exec jekyll build` or served via `bundle exec jekyll serve`. Fix broken anchors or outdated permalinks before opening a pull request.
+- When referencing PowerShell content from Markdown, provide context or excerpts rather than embedding entire scripts; link to the source file in the repository using GitHub-friendly URLs so that updates propagate automatically.
+
+### Deployment and automation considerations
+
+- GitHub Actions or similar CI tooling may run the Jekyll build, execute link checkers and publish documentation updates. Coordinate any changes to workflows (`.github/workflows/`) with site modifications to ensure the automated deployment continues to succeed.
+- Whenever you introduce new pages, posts or navigation elements, verify that the automated build handles the additional files (for example, that includes are whitelisted and that no excluded directories need to be added to `_config.yml`).
+- Document any additional deployment prerequisites—such as new gems or build steps—in both the workflow configuration and any contributor-facing README sections so the local and hosted experiences stay aligned.
+
 ### Automation and Continuous Integration
 
 - ***Analyzers and tests first:*** Prioritise CI workflows that install dependencies and run PSScriptAnalyzer, linting and Pester suites on every pull request and before any packaging step. Treat passing analysis and test stages as a hard gate for subsequent jobs.
