@@ -567,6 +567,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | ProcessServiceSchedules | [Start-Outlook](/_posts/UserAdminModule/Start-Outlook/)                             |
 | ProcessServiceSchedules | [Start-ProcessOnComputer](/_posts/UserAdminModule/Start-ProcessOnComputer/)         |
 | ProcessServiceSchedules | [Start-ScheduledScript](/_posts/UserAdminModule/Start-ScheduledScript/)             |
+| ProcessServiceSchedules | [Start-TaskList](/_posts/UserAdminModule/Start-TaskList/)                           |
 | ProcessServiceSchedules | [Start-ServicesInOrder](/_posts/UserAdminModule/Start-ServicesInOrder/)             |
 | ProcessServiceSchedules | [Stop-FailedService](/_posts/UserAdminModule/Stop-FailedService/)                   |
 | ProcessServiceSchedules | [Stop-NonRespondingProcesses](/_posts/UserAdminModule/Stop-NonRespondingProcesses/) |
@@ -587,11 +588,18 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | RemoteConnections | [Connect-PSExec](/_posts/UserAdminModule/Connect-PSExec/)                     |
 | RemoteConnections | [Connect-PSExecPowershell](/_posts/UserAdminModule/Connect-PSExecPowershell/) |
 | RemoteConnections | [Connect-RemoteAssistance](/_posts/UserAdminModule/Connect-RemoteAssistance/) |
+| RemoteConnections | [Connect-RDPSession](/_posts/UserAdminModule/Connect-RDPSession/)             |
 | RemoteConnections | [Disable-RDPRemotely](/_posts/UserAdminModule/Disable-RDPRemotely/)           |
+| RemoteConnections | [Disable-RDPRemotelyCIM](/_posts/UserAdminModule/Disable-RDPRemotelyCIM/)     |
+| RemoteConnections | [Disable-RDPRemotelyWMI](/_posts/UserAdminModule/Disable-RDPRemotelyWMI/)     |
 | RemoteConnections | [Enable-RDPRemotely](/_posts/UserAdminModule/Enable-RDPRemotely/)             |
+| RemoteConnections | [Enable-RDPRemotelyCIM](/_posts/UserAdminModule/Enable-RDPRemotelyCIM/)       |
+| RemoteConnections | [Enable-RDPRemotelyWMI](/_posts/UserAdminModule/Enable-RDPRemotelyWMI/)       |
 | RemoteConnections | [Enable-RemoteDesktop](/_posts/UserAdminModule/Enable-RemoteDesktop/)         |
 | RemoteConnections | [Get-LoggedOnRDPUser](/_posts/UserAdminModule/Get-LoggedOnRDPUser/)           |
 | RemoteConnections | [Get-RDPStatus](/_posts/UserAdminModule/Get-RDPStatus/)                       |
+| RemoteConnections | [Get-RDPStatusCIM](/_posts/UserAdminModule/Get-RDPStatusCIM/)                 |
+| RemoteConnections | [Get-RDPStatusWMI](/_posts/UserAdminModule/Get-RDPStatusWMI/)                 |
 | RemoteConnections | [Get-RDPUserReport](/_posts/UserAdminModule/Get-RDPUserReport/)               |
 | RemoteConnections | [Logoff-Stale-RDP](/_posts/UserAdminModule/Logoff-Stale-RDP/)                 |
 | RemoteConnections | [Remove-RDPUserSession](/_posts/UserAdminModule/Remove-RDPUserSession/)       |
@@ -669,8 +677,11 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | Shell    | [Get-ConsoleConfig](/_posts/UserAdminModule/Get-ConsoleConfig/)                                       |
 | Shell    | [Get-DayOfWeek](/_posts/UserAdminModule/Get-DayOfWeek/)                                               |
 | Shell    | [Get-DSTInfo](/_posts/UserAdminModule/Get-DSTInfo/)                                                   |
+| Shell    | [Get-DuckDuckGoSearch](/_posts/UserAdminModule/Get-DuckDuckGoSearch/)                                 |
 | Shell    | [Get-ExportedFunction](/_posts/UserAdminModule/Get-ExportedFunction/)                                 |
 | Shell    | [Get-FriendlySize](/_posts/UserAdminModule/Get-FriendlySize/)                                         |
+| Shell    | [Get-GoogleDirections](/_posts/UserAdminModule/Get-GoogleDirections/)                                 |
+| Shell    | [Get-GoogleSearch](/_posts/UserAdminModule/Get-GoogleSearch/)                                         |
 | Shell    | [Get-Icon](/_posts/UserAdminModule/Get-Icon/)                                                         |
 | Shell    | [Get-LastBootTime](/_posts/UserAdminModule/Get-LastBootTime/)                                         |
 | Shell    | [Get-LastCommands](/_posts/UserAdminModule/Get-LastCommands/)                                         |
@@ -686,6 +697,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | Shell    | [Get-OutlookAppointments](/_posts/UserAdminModule/Get-OutlookAppointments/)                           |
 | Shell    | [Get-PatchTue](/_posts/UserAdminModule/Get-PatchTue/)                                                 |
 | Shell    | [Get-PayDay](/_posts/UserAdminModule/Get-PayDay/)                                                     |
+| Shell    | [Get-ProfileFunctions](/_posts/UserAdminModule/Get-ProfileFunctions/)                                 |
 | Shell    | [Get-RageQuitEvents](/_posts/UserAdminModule/Get-RageQuitEvents/)                                     |
 | Shell    | [GitHubCopilotAlias](/_posts/UserAdminModule/GitHubCopilotAlias/)                                     |
 | Shell    | [HomePowerShell_profile](/_posts/UserAdminModule/HomePowerShell_profile/)                             |
@@ -701,12 +713,16 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | Shell    | [Lock-UserInput](/_posts/UserAdminModule/Lock-UserInput/)                                             |
 | Shell    | [Microsoft.PowerShell_profile](/_posts/UserAdminModule/Microsoft.PowerShell_profile/)                 |
 | Shell    | [Microsoft.PowerShell_profile_example](/_posts/UserAdminModule/Microsoft.PowerShell_profile_example/) |
+| Shell    | [New-AdminTerminal](/_posts/UserAdminModule/New-AdminTerminal/)                                       |
 | Shell    | [New-AdminShell](/_posts/UserAdminModule/New-AdminShell/)                                             |
 | Shell    | [New-CopilotPrompt](/_posts/UserAdminModule/New-CopilotPrompt/)                                       |
 | Shell    | [New-CountdownDate](/_posts/UserAdminModule/New-CountdownDate/)                                       |
 | Shell    | [New-Greeting](/_posts/UserAdminModule/New-Greeting/)                                                 |
 | Shell    | [New-Greeting1](/_posts/UserAdminModule/New-Greeting1/)                                               |
 | Shell    | [New-Greeting2](/_posts/UserAdminModule/New-Greeting2/)                                               |
+| Shell    | [New-GitDrives](/_posts/UserAdminModule/New-GitDrives/)                                               |
+| Shell    | [New-ModulePSM1](/_posts/UserAdminModule/New-ModulePSM1/)                                             |
+| Shell    | [New-PSDrives](/_posts/UserAdminModule/New-PSDrives/)                                                 |
 | Shell    | [New-PSM1Module](/_posts/UserAdminModule/New-PSM1Module/)                                             |
 | Shell    | [New-QotD](/_posts/UserAdminModule/New-QotD/)                                                         |
 | Shell    | [New-Shell](/_posts/UserAdminModule/New-Shell/)                                                       |
@@ -945,6 +961,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | :------- | :-------------------------------------------------------------- |
 | Weather  | [Get-Weather](/_posts/UserAdminModule/Get-Weather/)             |
 | Weather  | [Get-WeatherDetail](/_posts/UserAdminModule/Get-WeatherDetail/) |
+| Weather  | [Get-TempHumidData](/_posts/UserAdminModule/Get-TempHumidData/) |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
