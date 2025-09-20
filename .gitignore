@@ -367,3 +367,6 @@ _site
 .jekyll-metadata
 .jekyll-cache
 vendor
+
+# Bundler lockfile is generated dynamically
+Gemfile.lock
