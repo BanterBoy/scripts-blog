@@ -387,6 +387,7 @@ The FileOperations category offers a comprehensive suite of PowerShell functions
 | FileOperations | [Get-NeglectedFiles](/_posts/UserAdminModule/Get-NeglectedFiles/)                                   |
 | FileOperations | [Get-OldFiles](/_posts/UserAdminModule/Get-OldFiles/)                                               |
 | FileOperations | [Get-PathPermissions](/_posts/UserAdminModule/Get-PathPermissions/)                                 |
+| FileOperations | [IISLogsCleanup](/_posts/UserAdminModule/IISLogsCleanup/)                                           |
 | FileOperations | [Invoke-RemoteZipExpansion](/_posts/UserAdminModule/Invoke-RemoteZipExpansion/)                     |
 | FileOperations | [Merge-Files](/_posts/UserAdminModule/Merge-Files/)                                                 |
 | FileOperations | [New-DummyFile](/_posts/UserAdminModule/New-DummyFile/)                                             |
@@ -690,6 +691,7 @@ The Security category contains PowerShell functions for managing system security
 | Security | [Invoke-PasswordRoll](/_posts/UserAdminModule/Invoke-PasswordRoll/)                             |
 | Security | [Invoke-UrlScan](/_posts/UserAdminModule/Invoke-UrlScan/)                                       |
 | Security | [New-DynamicParameter](/_posts/UserAdminModule/New-DynamicParameter/)                           |
+| Security | [New-KrbtgtKeys](/_posts/UserAdminModule/New-KrbtgtKeys/)                                       |
 | Security | [New-PassPhrase](/_posts/UserAdminModule/New-PassPhrase/)                                       |
 | Security | [New-Password](/_posts/UserAdminModule/New-Password/)                                           |
 | Security | [PasswordFunctions](/_posts/UserAdminModule/PasswordFunctions/)                                 |
@@ -991,6 +993,7 @@ The Virtualization category offers PowerShell functions for managing virtualized
 | Virtualization | [Get-WMIHardwareOSInfo](/_posts/UserAdminModule/Get-WMIHardwareOSInfo/)           |
 | Virtualization | [VMWareHealthcheck](/_posts/UserAdminModule/VMWareHealthcheck/)                   |
 | Virtualization | [New-WindowsSandbox](/_posts/UserAdminModule/New-WindowsSandbox/)                 |
+| Virtualization | [VMWareHealthcheck](/_posts/UserAdminModule/VMWareHealthcheck/)                   |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
