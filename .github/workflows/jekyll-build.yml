@@ -23,12 +23,6 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: true
 
-      - name: Configure bundler path
-        run: bundle config set --local path 'vendor/bundle'
-
-      - name: Install dependencies
-        run: bundle install --jobs 4 --retry 3
-
       - name: Build site
         run: bundle exec jekyll build --future
 
