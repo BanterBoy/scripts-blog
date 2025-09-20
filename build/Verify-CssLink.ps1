@@ -15,7 +15,7 @@ if ($css.Length -le 256) { throw "CSS '$($css.FullName)' appears too small to be
 $htmls = Get-ChildItem -Path $SiteRoot -Recurse -Include index.html,*.html
 if (-not $htmls) { throw "No HTML found under $SiteRoot." }
 
-$rel = $css.FullName.Substring($SiteRoot.Length).TrimStart('\','/')
+$rel = [System.IO.Path]::GetRelativePath($SiteRoot, $css.FullName)
 $linked = $false
 foreach ($h in $htmls) {
   $c = Get-Content -Raw -Path $h.FullName
