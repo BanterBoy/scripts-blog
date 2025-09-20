@@ -10,9 +10,9 @@ categories:
 tags:
 - PowerShell
 - User Admin Module
-- SS Llabs Score
-- SS
-description: PowerShell script for SS llabs score.
+- SSL Labs Score
+- SSL
+description: PowerShell script for SSL Labs score.
 image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 - [Description](#description)
