@@ -35,7 +35,7 @@ The function uses the Get-MailContact and Get-Mailbox cmdlets to retrieve the Ma
 
 The function also determines the session type (OnPremises or Online) by checking if there is an active PSSession with a ConfigurationName of 'Microsoft.Exchange'. If such a session exists, the session type is considered to be 'OnPremises'. Otherwise, it is 'Online'.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -55,13 +55,13 @@ Test-ifContactExists -emailAddresses 'example4@example.com'
 
 This example demonstrates how to use the Test-ifContactExists function to test if a single email address exists in Exchange Online. Example Output: Email               UserType    Exists SessionType -----               --------    ------ ----------- example4@example.com None        False  Online
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
 Author: Your Name Date:   Current Date
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -182,7 +182,7 @@ function Test-ifContactExists {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -206,7 +206,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

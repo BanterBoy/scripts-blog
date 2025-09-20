@@ -29,7 +29,7 @@ Creates a specified number of dummy files of various types in a given directory.
 
 The `New-DummyFiles` function generates a specified number of dummy files with random content. The file types can be specified, and it supports multiple types such as txt, log, csv, xml, json, png, properties, and html. If the base directory does not exist, it will be created.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -49,7 +49,7 @@ New-DummyFiles -baseDirectory "C:\TestFiles" -numFiles 50 -fileTypes @("txt", "c
 
 Creates 50 dummy files with the specified file types (txt, csv, json) in the directory "C:\TestFiles".
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
@@ -57,7 +57,7 @@ Author: Your Name Date: Today's Date
 
 The function includes a progress bar to indicate the progress of file creation. In case of an error during the file creation process, an error message will be displayed.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -437,7 +437,7 @@ function New-DummyFiles {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -461,7 +461,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

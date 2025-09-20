@@ -29,7 +29,7 @@ Send a Magic Packet to a specific computer to wake it up.
 
 This function sends a Magic Packet to a specified MAC address to wake up a computer on the network. The MAC address should be in the format "98-90-96-DE-4C-6E" or "98:90:96:DE:4C:6E".
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -41,13 +41,13 @@ PS C:\> Send-MagicPacket -Mac '98-90-96-DE-4C-6E'
 
 This example sends a Magic Packet to the computer with the specified MAC address.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
 Additional information about the function.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -133,7 +133,7 @@ function Send-MagicPacket {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -157,7 +157,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

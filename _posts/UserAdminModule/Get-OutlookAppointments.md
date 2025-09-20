@@ -29,7 +29,7 @@ Retrieves Outlook appointments within a specified date range.
 
 The Get-OutlookAppointments function retrieves Outlook appointments within a specified date range. It uses the Outlook COM object to connect to the Outlook application and retrieve the appointments.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -41,13 +41,13 @@ Get-OutlookAppointments -NumDays 14 -Start (Get-Date "2022-01-01") -End (Get-Dat
 
 Retrieves Outlook appointments for the next 14 days starting from January 1, 2022.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
 This function requires the Outlook COM object to be installed on the system.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -118,7 +118,7 @@ Function Get-OutlookAppointments {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -142,7 +142,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

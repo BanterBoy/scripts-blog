@@ -29,7 +29,7 @@ Retrieves information about the SYSVOL replication mechanism for each domain con
 
 The Get-SysvolReplicationInfo function retrieves information about the SYSVOL replication mechanism used in each domain controller in the current domain. It checks if the replication mechanism is DFSR (Distributed File System Replication) or FRS (File Replication Service) and returns the corresponding replication path along with the domain controller's hostname.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -41,7 +41,7 @@ Get-SysvolReplicationInfo
 
 This example retrieves the SYSVOL replication information for each domain controller in the current domain.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
@@ -49,7 +49,7 @@ This example retrieves the SYSVOL replication information for each domain contro
 
 - The user running this function must have appropriate permissions to query Active Directory.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -128,7 +128,7 @@ function Get-SysvolReplicationInfo {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -152,7 +152,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

@@ -29,7 +29,7 @@ Creates a new Azure AD dynamic group if it does not already exist.
 
 The `New-AzureADDynamicGroup` function connects to Microsoft Graph using the required permissions and checks if a group with the specified name already exists in Azure AD. If the group does not exist, it creates a new dynamic group with the provided membership rule. If the group already exists, it outputs a message indicating so.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -49,7 +49,7 @@ $GroupName = "Test Dynamic Group"
 
 $MembershipRule = "(device.devicePhysicalIds -any _ -eq 'abc')" New-AzureADDynamicGroup -GroupName $GroupName -MembershipRule $MembershipRule This example creates a new Azure AD dynamic group named "Test Dynamic Group" with a membership rule that includes devices with a specific physical ID.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
@@ -65,7 +65,7 @@ $MembershipRule = "(device.devicePhysicalIds -any _ -eq 'abc')" New-AzureADDynam
 
 - `User.ReadWrite.All`
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -152,7 +152,7 @@ function New-AzureADDynamicGroup {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -176,7 +176,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

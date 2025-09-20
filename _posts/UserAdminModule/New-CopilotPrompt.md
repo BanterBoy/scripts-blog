@@ -29,7 +29,7 @@ Creates a structured PowerShell prompt for Copilot with dynamic tab completion.
 
 This function generates a structured object for use in AI-assisted scripting. It includes **tab completion** for quick selection of common values while allowing full free-text entry. Users can also copy the formatted output to the clipboard.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -41,13 +41,13 @@ This function generates a structured object for use in AI-assisted scripting. It
 
 ```powershell $PromptParams = @{ Goal         = "Monitor disk usage" Context      = "Infrastructure automation" Source       = "Server logs" Expectations = "Provide a CSV report" ExampleCode  = "Get-PSDrive -PSProvider FileSystem | Export-Csv -Path disk_report.csv" CopyToClipboard = $true } New-CopilotPrompt @PromptParams ``` ✅ **Why use splatting?** - Improves readability. - Avoids long single-line commands. - Makes it easier to modify input values.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
 No additional notes.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -176,7 +176,7 @@ function New-CopilotPrompt {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -200,7 +200,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

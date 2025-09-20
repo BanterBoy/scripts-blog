@@ -29,7 +29,7 @@ Provide helper functions that surface common FFmpeg and FFprobe tasks within the
 
 `FFMpegFunctions.ps1` bundles three automation helpers: `FFProbe-GetVideoInfo` reports metadata for video files, `FFMpeg-RemoveVideoFileAudioStream` creates audio-sanitised copies of files by removing a specified audio stream, and `FFMpeg-SpeedThatShitUp` generates a sped-up version of a video while maintaining sync. Each function is written to work with full paths or pipeline input, making it easy to batch process series folders.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -57,7 +57,7 @@ FFMpeg-SpeedThatShitUp -VideoFile "C:\Media\Clips\demo.mp4" -OutputFile "C:\Medi
 
 Speeds up the input video by 150% and saves the accelerated copy to the path you choose.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
@@ -66,7 +66,7 @@ Speeds up the input video by 150% and saves the accelerated copy to the path you
 - When processing multiple directories via the pipeline, the function automatically restores the original working directory after completion.
 - `FFMpeg-SpeedThatShitUp` adjusts both video and audio streams to maintain synchronisation at the requested speed.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -304,7 +304,7 @@ function FFMpeg-SpeedThatShitUp {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -328,7 +328,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

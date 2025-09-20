@@ -29,7 +29,7 @@ This function will check when a computer is scheduled for Daylight/Standard time
 
 This function will check when a computer is scheduled for Daylight/Standard time changes. It uses the WMI Win32_TimeZone and Win32_LocalTime class to query the required information. It will return the actual time change dates or the current year.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -57,13 +57,13 @@ $Servers = "Server1", "Server2", "Server3"
 
 $Servers | Get-DSTInfo | Export-Csv -Path C:\DSTInformation.csv This example creates a $Server array varible that contains three servers.  It is then piped to the Get-DSTInfo function which will collect the DST Information from the three servers.  It is then piped to the Export-Csv cmdlet to output the data in a csv file for later review.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
 Author:  Brian Wilhite Email:   bwilhite1@carolina.rr.com Date:    11/04/2011 Updated: 10/11/2012 Notes:   Updated the code where problems occurred with the "Last" DaylightDay or "Last" StandardDay to calculate the change date correctly.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -357,7 +357,7 @@ Function Get-DSTInfo {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -381,7 +381,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

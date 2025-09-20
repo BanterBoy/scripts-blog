@@ -29,7 +29,7 @@ Collect ffprobe metadata for video files and optionally return the audio streams
 
 `Get-FFProbeVideoInfo` targets video files in a chosen directory (or a specific file) and executes ffprobe with banner output suppressed. By default it writes the raw ffprobe results to the console, mirroring the traditional command-line experience. Supplying the `-GetAudioStreams` switch changes the behaviour to parse ffprobe's JSON stream data, returning each audio track with index, codec, and language fields—ideal for piping into `Remove-FFMpegVideoFileAudioStream`.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -57,7 +57,7 @@ Get-FFProbeVideoInfo -Dir "C:\\Media\\Movies" -VideoFile "Alien (1979).mkv" -Get
 
 Parses the ffprobe JSON response and returns audio stream objects instead of the raw console output.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
@@ -65,7 +65,7 @@ Parses the ffprobe JSON response and returns audio stream objects instead of the
 - When `-GetAudioStreams` is used, the function mirrors the output shape of [`Get-FFProbeAudioStreams`](/_posts/UserAdminModule/Get-FFProbeAudioStreams/), returning an object per audio track.
 - Omitting `-VideoFile` causes the function to enumerate every file in the specified directory, matching the behaviour of the original monolithic script.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -160,7 +160,7 @@ function Get-FFProbeVideoInfo {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -184,7 +184,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

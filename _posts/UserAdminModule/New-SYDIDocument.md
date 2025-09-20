@@ -29,7 +29,7 @@ Creates basic documentation for a Windows system using SYDI-Server.
 
 New-SYDIDocument creates basic documentation for a Windows system, which can be used as a starting point. The documentation is created in Microsoft Word format using SYDI-Server written by NetworkLore (https://networklore.com/sydi-server/). SYDI-Server is a VBScript that collects information from Windows computers using WMI (Windows Management Instrumentation), which can be done against any remote computer reachable via WMI. The information is then written to a Word document.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -57,13 +57,13 @@ New-SYDIDocument -OutputPath C:\GitRepos\ -FontSize 12
 
 This example will create a document for the current computer with a font size of 12 and save it to the C:\GitRepos\ folder.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
 Author: Luke Leigh LinkedIn: https://www.linkedin.com/in/lukeleigh/ GitHub: https://github.com/BanterBoy/ GitHubGist: https://gist.github.com/BanterBoy Twitter: https://twitter.com/luke_leighs
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -216,7 +216,7 @@ function New-SYDIDocument {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -240,7 +240,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

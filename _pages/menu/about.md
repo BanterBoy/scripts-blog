@@ -23,7 +23,7 @@ permalink: /menu/_pages/about.html
 - [Support](#support)
 - [Status](#status)
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -41,7 +41,7 @@ Over the years I had accumulated a large store of PowerShell code that TBH wasn'
 
 I plan to provide a brief overview of the script and where possible some examples for their use.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -49,7 +49,7 @@ I plan to provide a brief overview of the script and where possible some example
 
 I have expanded any aliases that were in each script to ensure they are easier to read and I have also tested to ensure they all function as designed. Some require an earlier version and will only work in PowerShell 5. They have been catalogued by use case as best I can. Any not fitting in a specific category can be found under miscellaneous.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -60,7 +60,7 @@ I have expanded any aliases that were in each script to ensure they are easier t
 
 <a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=Enter Title&body=Please add a description of the issue." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -82,6 +82,6 @@ My profile on GitHub.
 [![pages-build-deployment](https://github.com/BanterBoy/scripts-blog/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/BanterBoy/scripts-blog/actions/workflows/pages/pages-build-deployment)
 [![GitHub license](https://img.shields.io/github/license/BanterBoy/scripts-blog?color=orange&label=GitHub%20License&logo=github&style=plastic)](https://github.com/BanterBoy/scripts-blog/blob/master/LICENSE)
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---

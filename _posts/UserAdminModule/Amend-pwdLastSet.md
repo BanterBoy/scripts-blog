@@ -28,7 +28,7 @@ Some information about the exciting thing.....that's actually what will be here,
 
 Please report any issues or suggestions using the link in the [Report Issues](#report-issues) section. If you report a requirement for more information, I can prioritise which pages are updated first. At present, I am working on adding information for each exciting thing contained within these pages.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -36,7 +36,7 @@ Please report any issues or suggestions using the link in the [Report Issues](#r
 
 This section will, in the near future, contain one or more examples of the script/function/etc in use and a small sample of the output and will hopefully prove somewhat more useful than the current content 🤷‍♂️
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -142,7 +142,7 @@ function Set-PasswordExpired {
 }
 ```
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -156,7 +156,7 @@ Please feel free to copy parts of the script or if you would like to download th
         Download
 </button>
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -168,7 +168,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 <a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=Amend-pwdLastSet.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 

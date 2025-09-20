@@ -29,7 +29,7 @@ Remove an unwanted audio stream from one or many video files while preserving th
 
 `Remove-FFMpegVideoFileAudioStream` creates audio-sanitised copies of media files by removing the specified audio stream index. It can target a single directory, process a specific file, or accept pipeline input from `Get-FFProbeAudioStreams`. Output is written to an `ASR` subdirectory, leaving original files untouched. The function wraps ffmpeg commands and supports optional throttling when iterating large directories.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -61,7 +61,7 @@ Get-FFProbeAudioStreams -VideoFile "C:\\Media\\Movies\\Alien (1979).mkv" |
 
 Uses pipeline input from `Get-FFProbeAudioStreams` to remove the matching stream without manually specifying file paths.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
@@ -70,7 +70,7 @@ Uses pipeline input from `Get-FFProbeAudioStreams` to remove the matching stream
 - Accepts pipeline input from `Get-FFProbeAudioStreams`, which automatically maps the audio stream index and file path.
 - Supports both single-directory and multi-directory processing, reverting to the original working directory once complete.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -273,7 +273,7 @@ function Remove-FFMpegVideoFileAudioStream {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -297,7 +297,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

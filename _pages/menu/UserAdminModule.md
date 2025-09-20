@@ -65,7 +65,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 > **ℹ️ Important Notes on Usage**  
 > While these scripts have been published and tested in various environments, some functions may encounter issues depending on your specific setup, permissions, or system configuration. If you run into any problems or unexpected behavior, please don't hesitate to report it! Each script explanation page includes an issue submission feature at the bottom - simply use that to let me know about any bugs, compatibility issues, or suggestions for improvement. Your feedback helps make these tools better for everyone!
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -77,7 +77,7 @@ The ModuleManagement category provides essential tools for managing and importin
 | :--------------- | :------------------------------------------------------------------------ |
 | ModuleManagement | [Import-PersonalModules](/_posts/UserAdminModule/Import-PersonalModules/) |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -194,7 +194,7 @@ The ADFunctions category contains a comprehensive collection of PowerShell tools
 | ADFunctions | [Test-ADUserHighPrivilegeGroupMembership](/_posts/UserAdminModule/Test-ADUserHighPrivilegeGroupMembership/) |
 | ADFunctions | [Unlock-UserAccount](/_posts/UserAdminModule/Unlock-UserAccount/)                                           |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -224,7 +224,7 @@ The Azure category provides a robust set of PowerShell functions for managing Mi
 | Azure    | [Send-EmailUsingAzureApp](/_posts/UserAdminModule/Send-EmailUsingAzureApp/)                                         |
 | Azure    | [Set-EntraGuestMember](/_posts/UserAdminModule/Set-EntraGuestMember/)                                               |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -243,7 +243,7 @@ The CertificateUtilities category offers specialized PowerShell functions for ce
 | CertificateUtilities | [New-CodeSigningCert](/_posts/UserAdminModule/New-CodeSigningCert/)             |
 | CertificateUtilities | [Set-DigitalSignature](/_posts/UserAdminModule/Set-DigitalSignature/)           |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -255,7 +255,7 @@ The Database category provides PowerShell functions for database administration 
 | :------- | :---------------------------------------------------------- |
 | Database | [Get-DBInstances](/_posts/UserAdminModule/Get-DBInstances/) |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -269,7 +269,7 @@ The EnvironmentManagement category contains PowerShell functions for managing sy
 | EnvironmentManagement | [Get-EnvPath](/_posts/UserAdminModule/Get-EnvPath/)       |
 | EnvironmentManagement | [Remove-EnvPath](/_posts/UserAdminModule/Remove-EnvPath/) |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -359,7 +359,7 @@ The Exchange category provides comprehensive PowerShell functions for managing M
 | Exchange | [Update-MailContactProperties](/_posts/UserAdminModule/Update-MailContactProperties/)                                   |
 | Exchange | [Update-O365CalendarPermissions](/_posts/UserAdminModule/Update-O365CalendarPermissions/)                               |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -418,7 +418,7 @@ The FileOperations category offers a comprehensive suite of PowerShell functions
 | FileOperations | [UncompressZip-SameDestination](/_posts/UserAdminModule/UncompressZip-SameDestination/)             |
 | FileOperations | [zipArchiveTool_recursive](/_posts/UserAdminModule/zipArchiveTool_recursive/)                       |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -437,7 +437,7 @@ The JekyllBlog category provides specialized PowerShell functions for managing J
 | JekyllBlog | [Show-JekyllBlogSite](/_posts/UserAdminModule/Show-JekyllBlogSite/)         |
 | JekyllBlog | [Start-JekyllBlogging](/_posts/UserAdminModule/Start-JekyllBlogging/)       |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -460,7 +460,7 @@ The Logging category contains PowerShell functions for comprehensive event log m
 | Logging  | [Script4logging](/_posts/UserAdminModule/Script4logging/)                   |
 | Logging  | [Write-Log](/_posts/UserAdminModule/Write-Log/)                             |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -481,7 +481,7 @@ The MediaManagement category provides PowerShell functions for multimedia proces
 | MediaManagement | [Set-TransmissionDefaultSettings](/_posts/UserAdminModule/Set-TransmissionDefaultSettings/)     |
 | MediaManagement | [Start-Stream](/_posts/UserAdminModule/Start-Stream/)                                           |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -525,7 +525,7 @@ The Network category offers a comprehensive set of PowerShell functions for netw
 | Network  | [Test-DNSPropagation](/_posts/UserAdminModule/Test-DNSPropagation/)     |
 | Network  | [Update-CloudflareDDNS](/_posts/UserAdminModule/Update-CloudflareDDNS/) |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -565,7 +565,7 @@ The PKICertificateTools category provides specialized PowerShell functions for m
 | PKICertificateTools | [Show-CertificateTemplateInformation](/_posts/UserAdminModule/Show-CertificateTemplateInformation/)             |
 | PKICertificateTools | [Write-CAActivityLog](/_posts/UserAdminModule/Write-CAActivityLog/)                                             |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -579,7 +579,7 @@ The PrintManagement category contains PowerShell functions for managing print se
 | PrintManagement | [Enable-PrintSpooler](/_posts/UserAdminModule/Enable-PrintSpooler/)   |
 | PrintManagement | [Get-PrintSpooler](/_posts/UserAdminModule/Get-PrintSpooler/)         |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -614,7 +614,7 @@ The ProcessServiceSchedules category provides PowerShell functions for managing 
 | ProcessServiceSchedules | [Stop-ProcessOnComputer](/_posts/UserAdminModule/Stop-ProcessOnComputer/)           |
 | ProcessServiceSchedules | [Stop-ScheduledScript](/_posts/UserAdminModule/Stop-ScheduledScript/)               |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -648,7 +648,7 @@ The RemoteConnections category offers PowerShell functions for establishing and 
 | RemoteConnections | [Set-RDPRemotely](/_posts/UserAdminModule/Set-RDPRemotely/)                   |
 | RemoteConnections | [Set-RDPStatus](/_posts/UserAdminModule/Set-RDPStatus/)                       |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -666,7 +666,7 @@ The Replication category provides PowerShell functions for managing Active Direc
 | Replication | [Sync-ADwithAAD](/_posts/UserAdminModule/Sync-ADwithAAD/)                               |
 | Replication | [Sync-DomainController](/_posts/UserAdminModule/Sync-DomainController/)                 |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -709,7 +709,7 @@ The Security category contains PowerShell functions for managing system security
 | Security | [Set-LDAPSBinding](/_posts/UserAdminModule/Set-LDAPSBinding/)                                   |
 | Security | [Update-SSLCertificate](/_posts/UserAdminModule/Update-SSLCertificate/)                         |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -796,7 +796,7 @@ The Shell category provides PowerShell functions for shell productivity, utiliti
 | Shell    | [Update-PowerShell](/_posts/UserAdminModule/Update-PowerShell/)                                       |
 | Shell    | [WorkPowerShell_profile](/_posts/UserAdminModule/WorkPowerShell_profile/)                             |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -816,7 +816,7 @@ The ShutdownCommands category offers PowerShell functions for managing system sh
 | ShutdownCommands | [Stop-RemoteComputerShutdown](/_posts/UserAdminModule/Stop-RemoteComputerShutdown/)                   |
 | ShutdownCommands | [Wait-RemoteComputerShutdown](/_posts/UserAdminModule/Wait-RemoteComputerShutdown/)                   |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -835,7 +835,7 @@ The Teams category provides PowerShell functions for managing Microsoft Teams in
 | Teams    | [Initialize-TeamsLocalUploadFolder](/_posts/UserAdminModule/Initialize-TeamsLocalUploadFolder/) |
 | Teams    | [New-MSTeamsPhone](/_posts/UserAdminModule/New-MSTeamsPhone/)                                   |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -883,7 +883,7 @@ The Testing category contains PowerShell functions for system validation, connec
 | Testing  | [Test-WebsiteAvailability](/_posts/UserAdminModule/Test-WebsiteAvailability/)   |
 | Testing  | [Test-WebSiteUp](/_posts/UserAdminModule/Test-WebSiteUp/)                       |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -986,7 +986,7 @@ The Utilities category provides a collection of general-purpose PowerShell helpe
 | Utilities | [Write-ProgressHelper](/_posts/UserAdminModule/Write-ProgressHelper/)                 |
 | Utilities | [Write-ProgressPipeline](/_posts/UserAdminModule/Write-ProgressPipeline/)             |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -1012,7 +1012,7 @@ The Virtualization category offers PowerShell functions for managing virtualized
 | Virtualization | [New-WindowsSandbox](/_posts/UserAdminModule/New-WindowsSandbox/)                 |
 | Virtualization | [VMWareHealthcheck](/_posts/UserAdminModule/VMWareHealthcheck/)                   |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -1026,7 +1026,7 @@ The Weather category provides PowerShell functions for retrieving weather inform
 | Weather  | [Get-WeatherDetail](/_posts/UserAdminModule/Get-WeatherDetail/) |
 | Weather  | [Get-TempHumidData](/_posts/UserAdminModule/Get-TempHumidData/) |
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 

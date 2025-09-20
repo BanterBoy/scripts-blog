@@ -29,7 +29,7 @@ Amend Name, DisplayName, and Alias properties for MailContacts with a specified 
 
 Update-MailContactProperties retrieves MailContacts with an ExternalEmailAddress ending in the specified domain. It updates Name and DisplayName by replacing all occurrences of a specified tag (OldString) with a new value (NewString). When the –AddTag switch is used, it replaces the tag only if it exactly matches OldString (ignoring spaces and case); if no tag exists, NewString is appended. The function computes the Alias based on the ExternalEmailAddress by taking the local part (before the '@') and appending a period followed by the NewString with parentheses removed, hyphenated between camel-case transitions, and lowercased. Alias is updated if Name or DisplayName changes or if the computed alias differs (case-sensitively) from the current alias. This function supports ShouldProcess; use –WhatIf to preview changes.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -49,13 +49,13 @@ Update-MailContactProperties -DomainName "c2crail.net" -OldString "(c2rail)" -Ne
 
 Replaces the tag only if it matches "(c2rail)" (ignoring spaces and case) or appends "(C2C)" if no tag exists.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
 No additional notes.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -194,7 +194,7 @@ function Update-MailContactProperties {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -218,7 +218,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

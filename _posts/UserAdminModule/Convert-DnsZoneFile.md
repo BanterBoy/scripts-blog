@@ -29,7 +29,7 @@ Converts a DNS zone file into a collection of DNS records.
 
 The Convert-DnsZoneFile function reads a DNS zone file and converts it into a collection of DNS records. It supports the following record types: SOA, A, TXT, CNAME, MX, SRV, and NS.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -41,7 +41,7 @@ $zoneFilePath = "C:\DNS\example.com.zone"
 
 $dnsRecords = Convert-DnsZoneFile -FilePath $zoneFilePath $dnsRecords This example demonstrates how to use the Convert-DnsZoneFile function to convert a DNS zone file located at "C:\DNS\example.com.zone" into a collection of DNS records. The resulting DNS records are then stored in the $dnsRecords variable.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
@@ -51,7 +51,7 @@ $dnsRecords = Convert-DnsZoneFile -FilePath $zoneFilePath $dnsRecords This examp
 
 - The function does not perform any validation on the DNS records.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -124,7 +124,7 @@ function Convert-DnsZoneFile {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -148,7 +148,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

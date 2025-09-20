@@ -29,7 +29,7 @@ Provide a Write-Progress for a long-running pipeline for signs of life.
 
 No detailed description provided.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -41,13 +41,13 @@ $kustoData | Write-Progress -Activity Get-KustoIpamAllocationsData -StatusSuffix
 
 Writes the following as Write-Progress to update the user on current progres at a given point in the Get-KustoIpamAllocationsData function. Get-KustoIpamAllocationsData 26000 / 34973 (74%) IPAM allocation records processed [ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo                          ] Current time: 15:23:46  Elapsed time: 00:08:21  Expected completion: 15:26:36 Writes the following as to [Verbose] stream (visible if user specified -Verbose) Get-KustoIpamAllocationsData 26000 / 34973 (74%) IPAM allocation records processed Current time: 15:23:46  Elapsed time: 00:08:21  Expected completion: 15:26:36
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
 No additional notes.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -348,7 +348,7 @@ function Write-ProgressPipeline
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -372,7 +372,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

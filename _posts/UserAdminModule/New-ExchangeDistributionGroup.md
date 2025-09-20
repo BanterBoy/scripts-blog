@@ -29,7 +29,7 @@ Creates a new distribution group in Exchange.
 
 This script creates a new distribution group in Exchange with the specified parameters. It checks if a group with the same alias already exists before attempting to create a new one. Verbose logging is available to provide detailed information during execution. This function is intended for quickly creating distribution groups for testing or other purposes. It uses default values for most parameters to simplify the creation process.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -65,7 +65,7 @@ PS> New-ExchangeDistributionGroup -Name "ProjectTeam" -ManagedBy "project.manage
 
 Creates a new distribution group for a project team, managed by "project.manager" and includes "user1", "user2", and "user3" as members.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
@@ -73,7 +73,7 @@ Author: Your Name Date: Today's Date
 
 This function is designed to quickly create distribution groups in Exchange. It is useful for both testing and production environments where you need to create groups rapidly. The function provides default values for most parameters to simplify the process, but you can override these defaults as needed. The function also includes verbose logging to help you understand the steps being taken during execution.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -421,7 +421,7 @@ function New-ExchangeDistributionGroup {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -445,7 +445,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

@@ -29,7 +29,7 @@ Sets the out-of-office (OOH) message for a mailbox in Exchange Online.
 
 The Set-OOHMessage function sets the out-of-office (OOH) message for a specified mailbox in Exchange Online. The OOH message can be enabled, disabled, or scheduled with specific start and end times.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -65,13 +65,13 @@ This example disables the OOH message for the specified mailbox.
 
 $OOHMessagePath = New-OOHMessage -returnDate "31 December 2022" -contactEmail "contact@example.com" -closingRemark "Thank you for your understanding." -senderName "John Doe" -RelatesTo "Project X" -Verbose # Read the generated message from the file $InternalMessage = Get-Content -Path $OOHMessagePath -Raw $ExternalMessage = $InternalMessage # Assuming the same message for both internal and external # Set the OOH message in Office 365 Set-OOHMessage -Identity "user@example.com" -AutoReplyState "Enabled" -InternalMessage $InternalMessage -ExternalMessage $ExternalMessage -Verbose # If scheduling is needed, use the following: Set-OOHMessage -Identity "user@example.com" -AutoReplyState "Scheduled" -InternalMessage $InternalMessage -ExternalMessage $ExternalMessage -StartTime (Get-Date).AddDays(1) -EndTime (Get-Date).AddDays(7) -Verbose
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
 Author: Your Name Date: Today's Date
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -212,7 +212,7 @@ function Set-OOHMessage {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -236,7 +236,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">

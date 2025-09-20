@@ -29,7 +29,7 @@ Install FFmpeg quickly on Windows devices that use the UserAdminModule toolkit.
 
 `FFMpeg-Install` validates that the current PowerShell session is running with administrative privileges before handing off to Chocolatey to install FFmpeg. The function ensures that installation is attempted only when elevated and relies on Chocolatey to deliver the latest FFmpeg package along with its required binaries.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Usage
 
@@ -41,7 +41,7 @@ FFMpeg-Install
 
 Run the function from an elevated PowerShell session to install FFmpeg via Chocolatey. The function exits with an error if elevation is missing so the installation never proceeds without administrator rights.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Notes
 
@@ -49,7 +49,7 @@ Run the function from an elevated PowerShell session to install FFmpeg via Choco
 - Must be run from an elevated PowerShell session. Non-administrative sessions receive a clear error message and the install command does not run.
 - Installs the FFmpeg toolset so that additional media functions in the module can call `ffmpeg` and `ffprobe`.
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 ---
 
@@ -76,7 +76,7 @@ function FFMpeg-Install {
 ```
 {% endraw %}
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 #### Download
 
@@ -100,7 +100,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 ---
 
-<span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
+<span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
 <a href="/menu/_pages/UserAdminModule.html">
     <button class="btn">
