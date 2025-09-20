@@ -330,8 +330,11 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | :----------- | :-------------------------------------------------------------- |
 | Category | [Create-VLCPlaylists](/_posts/UserAdminModule/Create-VLCPlaylists/) |
 | Category | [FFMpeg-Install](/_posts/UserAdminModule/FFMpeg-Install/) |
-| Category | [FFMpegFunctions](/_posts/UserAdminModule/FFMpegFunctions/) |
+| Category | [Get-FFProbeAudioStreams](/_posts/UserAdminModule/Get-FFProbeAudioStreams/) |
+| Category | [Get-FFProbeVideoInfo](/_posts/UserAdminModule/Get-FFProbeVideoInfo/) |
 | Category | [Find-Movies](/_posts/UserAdminModule/Find-Movies/) |
+| Category | [Remove-FFMpegVideoFileAudioStream](/_posts/UserAdminModule/Remove-FFMpegVideoFileAudioStream/) |
+| Category | [Set-FFMpegVideoSpeed](/_posts/UserAdminModule/Set-FFMpegVideoSpeed/) |
 | Category | [Set-TransmissionDefaultSettings](/_posts/UserAdminModule/Set-TransmissionDefaultSettings/) |
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
