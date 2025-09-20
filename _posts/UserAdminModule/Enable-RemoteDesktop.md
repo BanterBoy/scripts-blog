@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export-BitlockerParams.ps1
+title: Enable-RemoteDesktop.ps1
 date: 2025-09-19
 last_modified_at: 2025-09-20 00:00:00
 permalink: /_posts/UserAdminModule/Enable-RemoteDesktop/
