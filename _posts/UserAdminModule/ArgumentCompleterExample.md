@@ -2,8 +2,12 @@
 layout: post
 title: ArgumentCompleterExample.ps1
 description: "Demonstrates using an ArgumentCompleter to tab-complete Exchange server names when connecting."
+date: 2025-09-19
+permalink: /_posts/UserAdminModule/ArgumentCompleterExample/
+categories:
+  - UserAdminModule
+  - Exchange
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

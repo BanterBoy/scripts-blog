@@ -1,9 +1,13 @@
 ---
 layout: post
-title: Blank-Page.ps1
-description: "Starter template for drafting new PowerShell script posts on the site."
+title: Connect-Proxy.ps1
+description: "Shows how to create a proxy-aware WebClient for authenticated downloads and API calls."
+date: 2025-09-19
+permalink: /_posts/UserAdminModule/Connect-Proxy/
+categories:
+  - UserAdminModule
+  - Network
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)
@@ -26,14 +30,24 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 **_@BanterBoy:_** - Explain what the script does and why it is useful.
 
-**_@GitHub Copilot_** -
+**_@GitHub Copilot_** - This code is written in PowerShell and is used to create a web client object and set its properties. The first line creates a new instance of the System.Net.WebClient class and assigns it to the variable $Wcl. This object is used to interact with web servers and retrieve data from them.
+
+The second line sets the user-agent header of the web client to "PowerShell Script". This header is used to identify the client to the server and can be used to customize the server's response to the client.
+
+The third line sets the credentials of the web client's proxy to the default network credentials. This allows the web client to authenticate with the proxy server using the current user's credentials.
+
+Overall, this code is used to create a web client object with specific properties that can be used to interact with web servers. The user-agent header and proxy credentials are set to default values, but they can be customized to fit the specific needs of the application.
+
+To improve the readability of this code, it could be helpful to add comments explaining the purpose of each line. Additionally, the variable names could be more descriptive to make it easier to understand what each variable is used for. In terms of performance, this code is relatively simple and does not have any obvious performance issues.
 
 ---
 
 #### Script
 
 ```powershell
-
+$Wcl = new-object System.Net.WebClient
+$Wcl.Headers.Add(“user-agent”, “PowerShell Script”)
+$Wcl.Proxy.Credentials = [System.Net.CredentialCache]::DefaultNetworkCredentials
 ```
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
@@ -44,7 +58,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 Please feel free to copy parts of the script or if you would like to download the entire script, simple click the download button. You can download the complete repository in a zip file by clicking the Download link in the menu bar on the left hand side of the page.
 
-<button class="btn" type="submit" onclick="window.open('/PowerShell/NewFunctions/Blank-Page.ps1')">
+<button class="btn" type="submit" onclick="window.open('/PowerShell/NewFunctions/Connect-Proxy.ps1')">
     <i class="fa fa-cloud-download-alt">
     </i>
         Download
@@ -58,7 +72,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 <!-- Place this tag where you want the button to render. -->
 
-<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=Blank-Page.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
+<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=Connect-Proxy.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
 
 ---
 

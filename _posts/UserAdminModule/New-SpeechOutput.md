@@ -1,9 +1,13 @@
 ---
 layout: post
-title: Blank-Page.ps1
+title: New-SpeechOutput.ps1
 description: "Uses System.Speech to speak supplied text aloud from PowerShell."
+date: 2025-09-19
+permalink: /_posts/UserAdminModule/New-SpeechOutput/
+categories:
+  - UserAdminModule
+  - MediaManagement
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)
@@ -100,7 +104,7 @@ function New-SpeechOutput {
 
 Please feel free to copy parts of the script or if you would like to download the entire script, simple click the download button. You can download the complete repository in a zip file by clicking the Download link in the menu bar on the left hand side of the page.
 
-<button class="btn" type="submit" onclick="window.open('/PowerShell/NewFunctions/Blank-Page.ps1')">
+<button class="btn" type="submit" onclick="window.open('/PowerShell/NewFunctions/New-SpeechOutput.ps1')">
     <i class="fa fa-cloud-download-alt">
     </i>
         Download
@@ -114,7 +118,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 <!-- Place this tag where you want the button to render. -->
 
-<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=Blank-Page.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
+<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=New-SpeechOutput.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
 
 ---
 

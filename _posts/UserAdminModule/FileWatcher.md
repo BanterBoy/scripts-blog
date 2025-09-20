@@ -2,8 +2,12 @@
 layout: post
 title: FileWatcher.ps1
 description: "Monitors folders with FileSystemWatcher and logs file changes to a text file."
+date: 2025-09-19
+permalink: /_posts/UserAdminModule/FileWatcher/
+categories:
+  - UserAdminModule
+  - FileOperations
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

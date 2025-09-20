@@ -2,8 +2,12 @@
 layout: post
 title: Get-FileExtension.ps1
 description: "Retrieves file extension metadata from an online JSON catalog to classify file types."
+date: 2025-09-19
+permalink: /_posts/UserAdminModule/Get-FileExtension/
+categories:
+  - UserAdminModule
+  - FileOperations
 ---
-
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)
