@@ -66,6 +66,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-json-feed
   - jekyll-paginate
+  - jekyll-seo-tag
   - jekyll-sitemap
 
 github: [metadata]
