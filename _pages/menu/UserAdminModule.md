@@ -71,6 +71,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 
 ## ModuleManagement
 
+The ModuleManagement category provides essential tools for managing and importing PowerShell modules within the UserAdminModule ecosystem. These utilities help streamline module loading and ensure proper initialization of the various function categories available in the toolkit.
+
 | Category         | Function                                                                  |
 | :--------------- | :------------------------------------------------------------------------ |
 | ModuleManagement | [Import-PersonalModules](/_posts/UserAdminModule/Import-PersonalModules/) |
@@ -80,6 +82,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 ---
 
 ## ADFunctions
+
+The ADFunctions category contains a comprehensive collection of PowerShell tools for Active Directory management and administration. These functions cover user account management, group operations, domain controller queries, Group Policy management, and various AD diagnostic and reporting capabilities. Whether you're managing user lifecycles, troubleshooting authentication issues, or performing bulk operations, this category provides the essential toolkit for AD administrators.
 
 | Category    | Function                                                                                                    |
 | :---------- | :---------------------------------------------------------------------------------------------------------- |
@@ -196,6 +200,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 
 ## Azure
 
+The Azure category provides a robust set of PowerShell functions for managing Microsoft Azure and Microsoft 365 services. These tools enable seamless connectivity to Azure subscriptions, Azure AD (now Entra ID), Microsoft Graph API, and various Azure services. Whether you're managing user identities, configuring enterprise applications, handling guest access, or working with Azure resources, this category offers the essential functions for cloud administration and automation.
+
 | Category | Function                                                                                                            |
 | :------- | :------------------------------------------------------------------------------------------------------------------ |
 | Azure    | [Connect-toAzure](/_posts/UserAdminModule/Connect-toAzure/)                                                         |
@@ -224,6 +230,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 
 ## CertificateUtilities
 
+The CertificateUtilities category offers specialized PowerShell functions for certificate management, security assessment, and cryptographic operations. These tools help administrators monitor certificate expiration dates, analyze SSL/TLS configurations, manage remote certificates, and handle code signing certificates. Essential for maintaining security compliance and preventing certificate-related outages in enterprise environments.
+
 | Category             | Function                                                                        |
 | :------------------- | :------------------------------------------------------------------------------ |
 | CertificateUtilities | [Get-CertificateExpiry](/_posts/UserAdminModule/Get-CertificateExpiry/)         |
@@ -241,6 +249,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 
 ## Database
 
+The Database category provides PowerShell functions for database administration and management tasks. These tools enable administrators to discover database instances, perform health checks, and manage database-related operations across various database platforms. Essential for database administrators who need to automate routine database management tasks and monitoring.
+
 | Category | Function                                                    |
 | :------- | :---------------------------------------------------------- |
 | Database | [Get-DBInstances](/_posts/UserAdminModule/Get-DBInstances/) |
@@ -250,6 +260,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 ---
 
 ## EnvironmentManagement
+
+The EnvironmentManagement category contains PowerShell functions for managing system environment variables and paths. These tools help administrators configure and maintain environment settings across local and remote systems, ensuring proper application execution and system configuration. Critical for maintaining consistent environments in enterprise deployments.
 
 | Category              | Function                                                  |
 | :-------------------- | :-------------------------------------------------------- |
@@ -262,6 +274,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 ---
 
 ## Exchange
+
+The Exchange category provides comprehensive PowerShell functions for managing Microsoft Exchange Server and Exchange Online (Office 365) environments. These tools cover mailbox management, distribution groups, mail contacts, calendar permissions, message tracing, and connectivity operations. Essential for Exchange administrators handling both on-premises and cloud-based Exchange deployments, enabling efficient email system management and troubleshooting.
 
 | Category | Function                                                                                                                |
 | :------- | :---------------------------------------------------------------------------------------------------------------------- |
@@ -351,6 +365,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 
 ## FileOperations
 
+The FileOperations category offers a comprehensive suite of PowerShell functions for file system management, archiving, and data manipulation. These tools enable administrators to perform bulk file operations, manage archives, monitor file systems, convert file formats, and handle file permissions. Perfect for system administrators who need to automate file management tasks across multiple systems and maintain organized file structures.
+
 | Category       | Function                                                                                            |
 | :------------- | :-------------------------------------------------------------------------------------------------- |
 | FileOperations | [Convert-DnsZoneFile](/_posts/UserAdminModule/Convert-DnsZoneFile/)                                 |
@@ -372,6 +388,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | FileOperations | [Get-NeglectedFiles](/_posts/UserAdminModule/Get-NeglectedFiles/)                                   |
 | FileOperations | [Get-OldFiles](/_posts/UserAdminModule/Get-OldFiles/)                                               |
 | FileOperations | [Get-PathPermissions](/_posts/UserAdminModule/Get-PathPermissions/)                                 |
+| FileOperations | [IISLogsCleanup](/_posts/UserAdminModule/IISLogsCleanup/)                                           |
 | FileOperations | [Invoke-RemoteZipExpansion](/_posts/UserAdminModule/Invoke-RemoteZipExpansion/)                     |
 | FileOperations | [Merge-Files](/_posts/UserAdminModule/Merge-Files/)                                                 |
 | FileOperations | [New-DummyFile](/_posts/UserAdminModule/New-DummyFile/)                                             |
@@ -407,6 +424,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 
 ## JekyllBlog
 
+The JekyllBlog category provides specialized PowerShell functions for managing Jekyll-based static websites and blogs. These tools help developers and content creators automate blog post creation, manage Jekyll servers, embed GitHub Gists, and handle various blogging workflows. Essential for technical writers and developers who maintain Jekyll-powered documentation sites and blogs.
+
 | Category   | Function                                                                    |
 | :--------- | :-------------------------------------------------------------------------- |
 | JekyllBlog | [Get-GistIframe](/_posts/UserAdminModule/Get-GistIframe/)                   |
@@ -424,6 +443,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 
 ## Logging
 
+The Logging category contains PowerShell functions for comprehensive event log management and analysis. These tools enable administrators to query Windows Event Logs, filter events by various criteria, monitor system events, and implement custom logging solutions. Critical for system monitoring, troubleshooting, and maintaining audit trails in enterprise environments.
+
 | Category | Function                                                                    |
 | :------- | :-------------------------------------------------------------------------- |
 | Logging  | [Get-EventLogs](/_posts/UserAdminModule/Get-EventLogs/)                     |
@@ -433,6 +454,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | Logging  | [Get-SystemEvent](/_posts/UserAdminModule/Get-SystemEvent/)                 |
 | Logging  | [Get-WmiADEvent](/_posts/UserAdminModule/Get-WmiADEvent/)                   |
 | Logging  | [Initialize-EventLogging](/_posts/UserAdminModule/Initialize-EventLogging/) |
+| Logging  | [IISLogsCleanup](/_posts/UserAdminModule/IISLogsCleanup/)                   |
 | Logging  | [Log-Event](/_posts/UserAdminModule/Log-Event/)                             |
 | Logging  | [New-LogEvent](/_posts/UserAdminModule/New-LogEvent/)                       |
 | Logging  | [Script4logging](/_posts/UserAdminModule/Script4logging/)                   |
@@ -443,6 +465,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 ---
 
 ## MediaManagement
+
+The MediaManagement category provides PowerShell functions for multimedia processing and management. These tools integrate with FFmpeg for video/audio manipulation, VLC for playlist creation, and various media analysis utilities. Perfect for content creators, system administrators managing media servers, and anyone working with multimedia files who needs to automate media processing workflows.
 
 | Category        | Function                                                                                        |
 | :-------------- | :---------------------------------------------------------------------------------------------- |
@@ -462,6 +486,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 ---
 
 ## Network
+
+The Network category offers a comprehensive set of PowerShell functions for network administration, diagnostics, and management. These tools cover IP address management, DNS operations, network connectivity testing, firewall configuration, and various network service monitoring capabilities. Essential for network administrators and system engineers who need to automate network-related tasks and troubleshoot connectivity issues.
 
 | Category | Function                                                                |
 | :------- | :---------------------------------------------------------------------- |
@@ -505,6 +531,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 
 ## PKICertificateTools
 
+The PKICertificateTools category provides specialized PowerShell functions for managing Public Key Infrastructure (PKI) and Certificate Authority (CA) operations. These tools enable administrators to backup and restore CA servers, manage certificate templates, handle certificate revocation lists, and perform various PKI-related administrative tasks. Critical for organizations managing their own certificate infrastructure and ensuring secure certificate lifecycle management.
+
 | Category            | Function                                                                                                        |
 | :------------------ | :-------------------------------------------------------------------------------------------------------------- |
 | PKICertificateTools | [Backup-CAServer](/_posts/UserAdminModule/Backup-CAServer/)                                                     |
@@ -543,6 +571,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 
 ## PrintManagement
 
+The PrintManagement category contains PowerShell functions for managing print servers, print spoolers, and printer operations. These tools help administrators monitor print services, troubleshoot printing issues, and manage print server configurations. Essential for IT support teams and system administrators responsible for maintaining printing infrastructure in enterprise environments.
+
 | Category        | Function                                                              |
 | :-------------- | :-------------------------------------------------------------------- |
 | PrintManagement | [Disable-PrintSpooler](/_posts/UserAdminModule/Disable-PrintSpooler/) |
@@ -554,6 +584,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 ---
 
 ## ProcessServiceSchedules
+
+The ProcessServiceSchedules category provides PowerShell functions for managing Windows processes, services, and scheduled tasks. These tools enable administrators to monitor system processes, manage Windows services, and handle scheduled task operations across local and remote systems. Critical for system monitoring, troubleshooting performance issues, and maintaining automated task schedules.
 
 | Category                | Function                                                                            |
 | :---------------------- | :---------------------------------------------------------------------------------- |
@@ -587,6 +619,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 
 ## RemoteConnections
 
+The RemoteConnections category offers PowerShell functions for establishing and managing remote connections to Windows systems. These tools support various remote access methods including RDP, PSExec, Remote Assistance, and specialized connection viewers. Essential for IT support teams and system administrators who need to remotely access and manage multiple systems efficiently.
+
 | Category          | Function                                                                      |
 | :---------------- | :---------------------------------------------------------------------------- |
 | RemoteConnections | [Connect-CmRcViewer](/_posts/UserAdminModule/Connect-CmRcViewer/)             |
@@ -612,6 +646,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 
 ## Replication
 
+The Replication category provides PowerShell functions for managing Active Directory replication, synchronization, and directory health monitoring. These tools help administrators monitor domain controller replication status, troubleshoot replication issues, and ensure proper synchronization between AD and Azure AD. Critical for maintaining directory service health and ensuring consistent data across domain environments.
+
 | Category    | Function                                                                                |
 | :---------- | :-------------------------------------------------------------------------------------- |
 | Replication | [Get-ComputerReplicationStatus](/_posts/UserAdminModule/Get-ComputerReplicationStatus/) |
@@ -627,6 +663,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 ---
 
 ## Security
+
+The Security category contains PowerShell functions for managing system security, encryption, and compliance. These tools cover BitLocker encryption management, security policy configuration, permission auditing, and various security-related administrative tasks. Essential for security administrators and IT teams responsible for maintaining system security posture and ensuring compliance with security standards.
 
 | Category | Function                                                                                        |
 | :------- | :---------------------------------------------------------------------------------------------- |
@@ -654,6 +692,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | Security | [Invoke-PasswordRoll](/_posts/UserAdminModule/Invoke-PasswordRoll/)                             |
 | Security | [Invoke-UrlScan](/_posts/UserAdminModule/Invoke-UrlScan/)                                       |
 | Security | [New-DynamicParameter](/_posts/UserAdminModule/New-DynamicParameter/)                           |
+| Security | [New-KrbtgtKeys](/_posts/UserAdminModule/New-KrbtgtKeys/)                                       |
 | Security | [New-PassPhrase](/_posts/UserAdminModule/New-PassPhrase/)                                       |
 | Security | [New-Password](/_posts/UserAdminModule/New-Password/)                                           |
 | Security | [PasswordFunctions](/_posts/UserAdminModule/PasswordFunctions/)                                 |
@@ -667,6 +706,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 ---
 
 ## Shell
+
+The Shell category provides PowerShell functions for shell productivity, utilities, and general-purpose tools. These functions enhance the PowerShell experience with features like history management, time conversions, console configuration, and various utility operations. Perfect for PowerShell users looking to improve their shell workflow and productivity.
 
 | Category | Function                                                                                              |
 | :------- | :---------------------------------------------------------------------------------------------------- |
@@ -745,6 +786,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 
 ## ShutdownCommands
 
+The ShutdownCommands category offers PowerShell functions for managing system shutdowns, restarts, and scheduled power operations. These tools enable administrators to remotely shutdown or restart computers, schedule maintenance windows, and handle power-related operations across multiple systems. Essential for IT teams managing system maintenance and power management in enterprise environments.
+
 | Category         | Function                                                                                              |
 | :--------------- | :---------------------------------------------------------------------------------------------------- |
 | ShutdownCommands | [Get-RemoteComputerScheduledShutdown](/_posts/UserAdminModule/Get-RemoteComputerScheduledShutdown/)   |
@@ -763,6 +806,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 
 ## Teams
 
+The Teams category provides PowerShell functions for managing Microsoft Teams installations and optimizing performance. These tools help administrators clear Teams cache, manage Teams folders, handle image conversions for Teams, and monitor Teams installations across systems. Essential for IT support teams managing Teams deployments and troubleshooting performance issues.
+
 | Category | Function                                                                                        |
 | :------- | :---------------------------------------------------------------------------------------------- |
 | Teams    | [Clear-TeamsCache](/_posts/UserAdminModule/Clear-TeamsCache/)                                   |
@@ -779,6 +824,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 ---
 
 ## Testing
+
+The Testing category contains PowerShell functions for system validation, connectivity testing, and diagnostic operations. These tools help administrators verify system configurations, test network connectivity, validate Active Directory replication, and perform various system health checks. Essential for IT teams conducting system audits and troubleshooting connectivity or configuration issues.
 
 | Category | Function                                                                        |
 | :------- | :------------------------------------------------------------------------------ |
@@ -825,6 +872,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 ---
 
 ## Utilities
+
+The Utilities category provides a collection of general-purpose PowerShell helper functions and utilities. These tools assist with common tasks like data conversion, error handling, file cleanup, and various administrative helper operations. Perfect for PowerShell developers and administrators who need reliable utility functions for everyday scripting tasks.
 
 | Category  | Function                                                                              |
 | :-------- | :------------------------------------------------------------------------------------ |
@@ -927,6 +976,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 
 ## Virtualization
 
+The Virtualization category offers PowerShell functions for managing virtualized environments, containers, and system monitoring. These tools enable administrators to monitor Docker containers, track system uptime, generate disk and drive space reports, and manage virtualized infrastructure. Essential for system administrators working with containerized applications and virtual machine environments.
+
 | Category       | Function                                                                          |
 | :------------- | :-------------------------------------------------------------------------------- |
 | Virtualization | [Get-DiskReport](/_posts/UserAdminModule/Get-DiskReport/)                         |
@@ -941,6 +992,7 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | Virtualization | [Get-VMInformation](/_posts/UserAdminModule/Get-VMInformation/)                   |
 | Virtualization | [Get-VMInformationPlus](/_posts/UserAdminModule/Get-VMInformationPlus/)           |
 | Virtualization | [Get-WMIHardwareOSInfo](/_posts/UserAdminModule/Get-WMIHardwareOSInfo/)           |
+| Virtualization | [VMWareHealthcheck](/_posts/UserAdminModule/VMWareHealthcheck/)                   |
 | Virtualization | [New-WindowsSandbox](/_posts/UserAdminModule/New-WindowsSandbox/)                 |
 | Virtualization | [VMWareHealthcheck](/_posts/UserAdminModule/VMWareHealthcheck/)                   |
 
@@ -949,6 +1001,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 ---
 
 ## Weather
+
+The Weather category provides PowerShell functions for retrieving weather information and forecasts. These tools integrate with weather APIs to provide current conditions and detailed weather data. Perfect for system administrators who want to incorporate weather data into their scripts or need location-based weather information for operational purposes.
 
 | Category | Function                                                        |
 | :------- | :-------------------------------------------------------------- |

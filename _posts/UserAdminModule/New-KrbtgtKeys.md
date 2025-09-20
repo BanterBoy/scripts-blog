@@ -5,7 +5,7 @@ date: 2025-09-19
 permalink: /_posts/UserAdminModule/New-KrbtgtKeys/
 categories:
   - UserAdminModule
-  - ADFunctions
+    - Security
 ---
 
 - [Description](#description)
@@ -30,7 +30,7 @@ This is a Microsoft script and is maintained at at the following GitHub Reposito
 #### OutPut
 
 <div>
-<a href="/assets/images/functions/New-KrbtgtKeys-example.png" data-lightbox="New-KrbtgtKeys" data-title="New-KrbtgtKeys"><img src="/assets/images/tools/New-KrbtgtKeys-example.png" alt="New-KrbtgtKeys" width="940" height="159"/></a>
+<a href="/assets/images/tools/New-KrbtgtKeys-example.png" data-lightbox="New-KrbtgtKeys" data-title="New-KrbtgtKeys"><img src="/assets/images/tools/New-KrbtgtKeys-example.png" alt="New-KrbtgtKeys" width="940" height="159"/></a>
 </div>
 
 ---
@@ -3861,7 +3861,7 @@ This script will enable you to: (1) perform a single reset of the krbtgt account
 
 The script is designed to be self-documenting and includes an interactive menu and screen output that will guide you through its execution. Because it requires user input to select the execution mode and confirm before any changes are made, it is safe to begin by simply executing the script and reading the guidance throughout.
 
-<script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/tools/New-KrbtgtKeys.ps1
+<script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/UserAdminModule/New-KrbtgtKeys.ps1
 
 <span style="font-size:11px;"><a href="#"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -3881,7 +3881,7 @@ This document is a supplemental guide to the interactive krbtgt reset script (Ne
 
 <small><i>New-KrbtgtKeys.ps1</i></small>
 
-<button class="btn" type="submit" onclick="window.open('/PowerShell/tools/New-KrbtgtKeys.ps1')">
+<button class="btn" type="submit" onclick="window.open('/PowerShell/UserAdminModule/New-KrbtgtKeys.ps1')">
     <i class="fa fa-cloud-download-alt">
     </i>
         Download

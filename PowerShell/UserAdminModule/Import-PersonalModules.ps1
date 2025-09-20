@@ -87,8 +87,8 @@ function Import-PersonalModules {
             "ShutdownCommands",
             "Teams",
             "Testing",
-            "Virtualization",
             "Utilities",
+            "Virtualization",
             "Weather"
         )]
         [string]$Category

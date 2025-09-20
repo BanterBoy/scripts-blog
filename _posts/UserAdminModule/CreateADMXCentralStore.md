@@ -88,7 +88,7 @@ The script has 3 variables which you will need to configure:-
 The screen shot below shows the output from the script running for the first time
 
 <div>
-<a href="/assets/images/functions/CreateADMXCentralStore-Script-Output.png" data-lightbox="CreateADMXCentralStore" data-title="CreateADMXCentralStore"><img src="/assets/images/tools/CreateADMXCentralStore-Script-Output.png" alt="CreateADMXCentralStore" width="828" height="800"/></a>
+<a href="/assets/images/tools/CreateADMXCentralStore-Script-Output.png" data-lightbox="CreateADMXCentralStore" data-title="CreateADMXCentralStore"><img src="/assets/images/tools/CreateADMXCentralStore-Script-Output.png" alt="CreateADMXCentralStore" width="828" height="800"/></a>
 </div>
 
 More information can be found on the owners website - [jhouseconsulting.com][5]{:target="\_blank"}
@@ -389,7 +389,7 @@ Write-Host -ForegroundColor green "`nFinished."
 
 <small><i>CreateADMXCentralStore.ps1</i></small>
 
-<button class="btn" type="submit" onclick="window.open('/PowerShell/tools/CreateADMXCentralStore.ps1')">
+<button class="btn" type="submit" onclick="window.open('/PowerShell/UserAdminModule/CreateADMXCentralStore.ps1')">
     <i class="fa fa-cloud-download-alt">
     </i>
         Download
