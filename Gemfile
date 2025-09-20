@@ -7,7 +7,6 @@ gem "faraday", "~> 2.0"
 gem "faraday-retry", "~> 2.0"
 
 group :jekyll_plugins do
-  gem "jekyll-algolia"
   gem "jekyll-feed"
   gem "jekyll-gist"
   gem "jekyll-json-feed"

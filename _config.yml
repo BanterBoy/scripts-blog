@@ -65,10 +65,6 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
-# The Algolia search indexer is available by including _config.algolia.yml
-# when running `bundle exec jekyll algolia`. It is intentionally excluded from
-# the default build so that GitHub Pages can install the supported plugin set.
-
 github: [metadata]
 github_username: BanterBoy
 repository: scripts-blog/BanterBoy.github.io
