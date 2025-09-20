@@ -57,16 +57,17 @@ author:
 linkedin_username: lukeleigh
 
 plugins:
+  - rouge
+  - liquid
+  - github-pages
+  - github-embed
+  - jekyll-algolia
   - jekyll-feed
   - jekyll-gist
   - jekyll-include-cache
   - jekyll-json-feed
   - jekyll-paginate
   - jekyll-sitemap
-
-# The Algolia search indexer is available by including _config.algolia.yml
-# when running `bundle exec jekyll algolia`. It is intentionally excluded from
-# the default build so that GitHub Pages can install the supported plugin set.
 
 github: [metadata]
 github_username: BanterBoy

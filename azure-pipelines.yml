@@ -1,28 +1,33 @@
-# Jekyll site
-# Build the Jekyll site with the GitHub Pages gem on Ubuntu agents.
-# Add steps that build, test, save build artifacts, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
-- master
+  branches:
+    include:
+    - master
+pr:
+  branches:
+    include:
+    - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'ubuntu-22.04'
 
 steps:
 - task: UseRubyVersion@0
-  displayName: 'Select Ruby version'
+  displayName: 'Select Ruby 3.2'
   inputs:
-    versionSpec: '>= 3.2 < 3.3'
+    versionSpec: '3.2.x'
     addToPath: true
 
 - script: |
     gem install bundler:2.4.22
-    bundle config set --local path 'vendor/bundle'
     bundle install --jobs 4 --retry 3
   displayName: 'Install Ruby gems'
+  env:
+    BUNDLE_PATH: $(Pipeline.Workspace)/bundle
 
 - script: |
     bundle exec jekyll build --future
     ls -la _site
   displayName: 'Build Jekyll site'
+  env:
+    BUNDLE_PATH: $(Pipeline.Workspace)/bundle
+
