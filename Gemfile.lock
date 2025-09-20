@@ -328,7 +328,8 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  faraday-retry
+  faraday (~> 2.13)
+  faraday-retry (~> 2.3)
   github-pages
   jekyll-algolia
   jekyll-feed
