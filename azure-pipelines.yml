@@ -35,8 +35,7 @@ steps:
     if (-not $css -or $css.Length -lt 1024) { throw "CSS missing or too small" }
     $name = $css.Name
     $html = Get-ChildItem $root -Recurse -Include *.html | Where-Object {
-      (Get-Content -Raw $_.FullName) -match [regex]::Escape($name) -or
-      (Get-Content -Raw $_.FullName) -match 'assets/main\.css'
+      Select-String -Path $_.FullName -Pattern ([regex]::Escape($name)), 'assets/main\.css' -Quiet
     } | Select-Object -First 1
     if (-not $html) { throw "No HTML references $name or assets/main.css" }
     Write-Host "✅ CSS present and referenced: $($css.FullName)"
