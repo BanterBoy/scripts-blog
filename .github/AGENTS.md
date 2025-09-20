@@ -54,7 +54,7 @@ primary deliverable, and update them only when they directly support published d
   their permalink for clarity.
 - ***Heading hierarchy:*** Begin each Markdown file with a single H1 (`# Title`). Structure subsequent content with H2/H3 levels
   and avoid skipping heading levels so generated tables of contents stay accurate.
-- ***Link hygiene:*** Use Liquid filters such as `{{ '/menu/_pages/about/' | relative_url }}` for internal links and `{{ site.url }}` for absolute references when necessary. Verify that external links include `https://` and that internal anchors resolve.
+- ***Link management:*** Use Liquid filters such as `{{ '/menu/_pages/about/' | relative_url }}` for internal links and `{{ site.url }}` for absolute references when necessary. Verify that external links include `https://` and that internal anchors resolve.
 - ***Media usage:*** Optimise images before committing them, store them under `assets/`, and provide descriptive `alt` text. Use
   Markdown figure syntax or includes for galleries to keep layout consistent.
 - ***Excerpts and summaries:*** Include a concise summary paragraph near the top of each post, and insert `<!--more-->` when you
