@@ -50,7 +50,7 @@ Scripts v2.0 gives the **UserAdminModule** a fresh coat of paint and a neatly la
 
 - **Module-first loading:** Wave goodbye to dot-sourcing; functions now ship in a proper module so imports stay predictable and portable.
 - **Helper scripts at the ready:** `Import-PersonalModules.ps1` wrangles profile imports, while `New-PSM1Module.ps1` scaffolds new function packs without rummaging through legacy snippets.
-- **Categorised muscle:** The module leans into broader, service-focused categories so you can dive straight into AD, Azure, or whichever drawer holds the tool you need.
+- **Categorized muscle:** The module leans into broader, service-focused categories so you can dive straight into AD, Azure, or whichever drawer holds the tool you need.
 
 Browse the categories below to explore the reorganised toolkit, open each function page for usage guidance, and enjoy knowing the drawers finally close without a shove.
 
