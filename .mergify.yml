@@ -9,7 +9,7 @@ pull_request_rules:
     - name: automatic merge for ImgBot pull requests
       conditions:
         - author=imgbot[bot]
-        - base=master
+        - base=prod
       actions:
         merge:
           method: merge
