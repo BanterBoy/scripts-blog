@@ -84,7 +84,7 @@ This repository also powers the public Jekyll site hosted on GitHub Pages at `ht
 
 - Include YAML front matter on any file that should be processed by Jekyll. At minimum specify `layout`, `title` and `permalink`; add `description`, `tags` or other metadata when the page requires richer SEO or categorisation.
 - Match the heading hierarchy already in use across the site: start each page with a single H1 (`# Title`) and structure subsequent sections with H2/H3 levels. Avoid skipping levels so that automatically generated tables of contents stay accurate.
-- Use relative URLs that respect the GitHub Pages build pipeline. Prefer the Liquid helper `{{ '/menu/_pages/about.html' | relative_url }}` or equivalent when linking between internal pages, and ensure asset references use `{{ '/assets/... ' | relative_url }}` so they resolve correctly in both local previews and the hosted site.
+- Use relative URLs that respect the GitHub Pages build pipeline. Prefer the Liquid helper `{{ '/menu/_pages/about.html' | relative_url }}` or equivalent when linking between internal pages, and ensure asset references use `{{ '/assets/...' | relative_url }}` so they resolve correctly in both local previews and the hosted site.
 - Validate that any cross-links to scripts, posts or documentation resolve when the site is built locally with `bundle exec jekyll build` or served via `bundle exec jekyll serve`. Fix broken anchors or outdated permalinks before opening a pull request.
 - When referencing PowerShell content from Markdown, provide context or excerpts rather than embedding entire scripts; link to the source file in the repository using GitHub-friendly URLs so that updates propagate automatically.
 
