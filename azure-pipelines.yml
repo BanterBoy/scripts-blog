@@ -16,11 +16,27 @@ steps:
     versionSpec: '>= 3.1'
     addToPath: true
 
+- task: Cache@2
+  displayName: 'Cache Ruby gems'
+  inputs:
+    key: 'bundler | "$(Agent.OS)" | Gemfile.lock'
+    restoreKeys: |
+      bundler | "$(Agent.OS)"
+    path: 'vendor/bundle'
+    cacheHitVar: BUNDLE_CACHE_RESTORED
+
 - script: |
+    if [ "$(BUNDLE_CACHE_RESTORED)" = "true" ]; then
+      echo 'Using cached gems from vendor/bundle.'
+    else
+      echo 'Cache miss – installing gems fresh.'
+    fi
     gem install bundler
     bundle config set --local path vendor/bundle
     bundle install --jobs 4 --retry 3
   displayName: 'Install Ruby gems'
+  env:
+    BUNDLE_CACHE_RESTORED: $(BUNDLE_CACHE_RESTORED)
 
 - script: bundle exec jekyll build --future
   displayName: 'Build Jekyll site'
