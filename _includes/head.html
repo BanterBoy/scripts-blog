@@ -1,85 +1,162 @@
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="cache-control" content="public, max-age=604800, immutable">
-    <meta name="keywords"
-        content="PowerShell, Scripts, Functions, Snippets, Tools, Maintenance, Information Technology, Administration, Download, Automation, Learning">
-    <meta name="description" content="{{ page.description | default: page.excerpt | default: site.description }}">
+  {% assign raw_description = page.description | default: page.excerpt | default: site.description %}
+  {% assign meta_description = raw_description | strip_html | replace: "\r\n", " " | replace: "\n", " " | replace: "\r", " " | replace: "  ", " " | strip | truncate: 160 %}
+  {% assign canonical_source = page.canonical_url | default: page.url %}
+  {% if canonical_source %}
+    {% if canonical_source contains '://' %}
+      {% assign canonical_url = canonical_source %}
+    {% else %}
+      {% assign canonical_url = canonical_source | relative_url | absolute_url %}
+    {% endif %}
+  {% endif %}
+  {% assign robots_content = page.robots | default: site.default_robots | default: "index,follow" %}
+  {% assign og_title = page.og_title | default: page.title | default: site.title %}
+  {% assign og_type = page.og_type %}
+  {% if og_type == nil %}
+    {% if page.collection == "posts" or page.layout == "post" %}
+      {% assign og_type = "article" %}
+    {% else %}
+      {% assign og_type = "website" %}
+    {% endif %}
+  {% endif %}
+  {% assign page_image = page.twitter_image | default: page.og_image | default: page.image | default: page.header.teaser | default: page.header.image | default: site.default_social_image %}
+  {% if page_image %}
+    {% if page_image contains '://' %}
+      {% assign meta_image = page_image %}
+    {% else %}
+      {% assign meta_image = page_image | relative_url | absolute_url %}
+    {% endif %}
+  {% endif %}
+  {% assign twitter_card = page.twitter_card | default: site.twitter_card %}
+  {% if twitter_card == nil %}
+    {% if meta_image %}
+      {% assign twitter_card = "summary_large_image" %}
+    {% else %}
+      {% assign twitter_card = "summary" %}
+    {% endif %}
+  {% endif %}
+  {% assign twitter_username = page.twitter_username | default: site.twitter_username %}
+  {% if twitter_username %}
+    {% if twitter_username contains '@' %}
+      {% assign twitter_handle = twitter_username %}
+    {% else %}
+      {% assign twitter_handle = '@' | append: twitter_username %}
+    {% endif %}
+  {% endif %}
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="cache-control" content="public, max-age=604800, immutable">
+  <meta name="keywords" content="PowerShell, Scripts, Functions, Snippets, Tools, Maintenance, Information Technology, Administration, Download, Automation, Learning">
+  {% if meta_description %}
+  <meta name="description" content="{{ meta_description | escape }}">
+  {% endif %}
+  {% if canonical_url %}
+  <link rel="canonical" href="{{ canonical_url | escape }}">
+  {% endif %}
+  <meta name="robots" content="{{ robots_content }}">
+  <meta property="og:title" content="{{ og_title | escape }}">
+  {% if meta_description %}
+  <meta property="og:description" content="{{ meta_description | escape }}">
+  {% endif %}
+  <meta property="og:type" content="{{ og_type }}">
+  {% if canonical_url %}
+  <meta property="og:url" content="{{ canonical_url | escape }}">
+  {% endif %}
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  {% if meta_image %}
+  <meta property="og:image" content="{{ meta_image | escape }}">
+  {% endif %}
+  <meta name="twitter:card" content="{{ twitter_card }}">
+  <meta name="twitter:title" content="{{ og_title | escape }}">
+  {% if meta_description %}
+  <meta name="twitter:description" content="{{ meta_description | escape }}">
+  {% endif %}
+  {% if canonical_url %}
+  <meta name="twitter:url" content="{{ canonical_url | escape }}">
+  {% endif %}
+  {% if twitter_handle %}
+  <meta name="twitter:site" content="{{ twitter_handle }}">
+  <meta name="twitter:creator" content="{{ twitter_handle }}">
+  {% endif %}
+  {% if meta_image %}
+  <meta name="twitter:image" content="{{ meta_image | escape }}">
+  {% endif %}
 
-    <!-- Enable responsiveness on mobile devices-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ "/assets/css/poole.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/syntax.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/hyde.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/lightbox/css/lightbox.min.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/themes.css" | relative_url }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="{{ "/assets/css/poole.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/syntax.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/hyde.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/lightbox/css/lightbox.min.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/themes.css" | relative_url }}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap">
+  <!-- Icons -->
+  <link rel="shortcut icon" href="{{ "/favicon.ico" | relative_url }}">
 
-    <!-- buttons.github.io -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ "/atom.xml" | relative_url }}">
 
-    <!-- fontawesome -->
-    <!-- <script src="https://kit.fontawesome.com/0716ac15bf.js" crossorigin="anonymous"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
-        integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- buttons.github.io -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
 
-    <!-- lightbox -->
-    <script src="{{ "/assets/css/lightbox/js/lightbox-plus-jquery.js" | relative_url }}"></script>
+  <!-- fontawesome -->
+  <!-- <script src="https://kit.fontawesome.com/0716ac15bf.js" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- js.cookie for theming -->
-    <script src="{{ "/assets/js/js.cookie.min.js" | relative_url }}"></script>
+  <!-- lightbox -->
+  <script src="{{ "/assets/css/lightbox/js/lightbox-plus-jquery.js" | relative_url }}"></script>
 
-    <!-- site -->
-    <script src="{{ "/assets/js/site.js" | relative_url }}"></script>
+  <!-- js.cookie for theming -->
+  <script src="{{ "/assets/js/js.cookie.min.js" | relative_url }}"></script>
 
-    <!-- Icons -->
-    <link rel="shortcut icon" href="{{ '/favicon.ico' | absolute_url }}">
+  <!-- site -->
+  <script src="{{ "/assets/js/site.js" | relative_url }}"></script>
 
-    <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title | escape }} &middot; {{ site.tagline | escape }}
+    {% else %}
+      {{ page.title | escape }} &middot; {{ site.title | escape }}
+    {% endif %}
+  </title>
 
-    <title>
-        {% if page.title == "Home" %}
-        {{ site.title }} &middot; {{ site.tagline }}
-        {% else %}
-        {{ page.title }} &middot; {{ site.title }}
-        {% endif %}
-    </title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3T94X6S0QF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3T94X6S0QF"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    gtag('config', 'G-3T94X6S0QF');
+  </script>
+  <!-- End Global site tag (gtag.js) - Google Analytics -->
 
-        gtag('config', 'G-3T94X6S0QF');
-    </script>
-    <!-- End Global site tag (gtag.js) - Google Analytics -->
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-W3S7GRW');
+  </script>
+  <!-- End Google Tag Manager -->
 
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-W3S7GRW');</script>
-    <!-- End Google Tag Manager -->
-
-    <!-- Microsoft Clarity Analytics -->
-    <script type="text/javascript">
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "3viwaz6tld");
-    </script>
-    <!-- End Microsoft Clarity Analytics -->
+  <!-- Microsoft Clarity Analytics -->
+  <script type="text/javascript">
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+      t = l.createElement(r);
+      t.async = 1;
+      t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "3viwaz6tld");
+  </script>
+  <!-- End Microsoft Clarity Analytics -->
 </head>
-
