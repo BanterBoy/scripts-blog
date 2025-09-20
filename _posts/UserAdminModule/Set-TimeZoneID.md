@@ -2,7 +2,7 @@
 layout: post
 title: Set-TimeZoneID.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-TimeZoneID/
+permalink: /useradminmodule/utilities/set-timezoneid/
 categories:
   - UserAdminModule
   - Utilities

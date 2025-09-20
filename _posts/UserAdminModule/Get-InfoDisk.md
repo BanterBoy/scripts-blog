@@ -2,7 +2,7 @@
 layout: post
 title: Get-InfoDisk.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-InfoDisk/
+permalink: /useradminmodule/utilities/get-infodisk/
 categories:
   - UserAdminModule
   - Utilities

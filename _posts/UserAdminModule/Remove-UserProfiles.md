@@ -2,7 +2,7 @@
 layout: post
 title: Remove-UserProfiles.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Remove-UserProfiles/
+permalink: /useradminmodule/utilities/remove-userprofiles/
 categories:
   - UserAdminModule
   - Utilities

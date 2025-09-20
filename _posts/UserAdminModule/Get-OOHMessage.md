@@ -2,7 +2,7 @@
 layout: post
 title: Get-OOHMessage.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-OOHMessage/
+permalink: /useradminmodule/exchange/get-oohmessage/
 categories:
   - UserAdminModule
   - Exchange

@@ -2,7 +2,7 @@
 layout: post
 title: Unlock-UserAccount.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Unlock-UserAccount/
+permalink: /useradminmodule/adfunctions/unlock-useraccount/
 categories:
   - UserAdminModule
   - ADFunctions

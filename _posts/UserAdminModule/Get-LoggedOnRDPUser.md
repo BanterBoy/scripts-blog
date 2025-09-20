@@ -3,7 +3,7 @@ layout: post
 title: Get-LoggedOnRDPUser.ps1
 description: "Returns currently logged-on RDP users across one or more servers."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-LoggedOnRDPUser/
+permalink: /useradminmodule/remoteconnections/get-loggedonrdpuser/
 categories:
   - UserAdminModule
   - RemoteConnections

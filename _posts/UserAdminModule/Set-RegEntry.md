@@ -2,7 +2,7 @@
 layout: post
 title: Set-RegEntry.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-RegEntry/
+permalink: /useradminmodule/utilities/set-regentry/
 categories:
   - UserAdminModule
   - Utilities

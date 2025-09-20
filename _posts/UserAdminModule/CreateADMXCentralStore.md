@@ -2,7 +2,7 @@
 layout: post
 title: CreateADMXCentralStore.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/CreateADMXCentralStore/
+permalink: /useradminmodule/adfunctions/createadmxcentralstore/
 categories:
   - UserAdminModule
   - ADFunctions

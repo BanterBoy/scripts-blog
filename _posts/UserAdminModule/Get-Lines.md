@@ -2,7 +2,7 @@
 layout: post
 title: Get-Lines.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-Lines/
+permalink: /useradminmodule/utilities/get-lines/
 categories:
   - UserAdminModule
   - Utilities

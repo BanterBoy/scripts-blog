@@ -2,7 +2,7 @@
 layout: post
 title: Get-Ntptime.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-Ntptime/
+permalink: /useradminmodule/utilities/get-ntptime/
 categories:
   - UserAdminModule
   - Utilities

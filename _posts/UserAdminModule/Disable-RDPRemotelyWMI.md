@@ -2,7 +2,7 @@
 layout: post
 title: Disable-RDPRemotelyWMI.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Disable-RDPRemotelyWMI/
+permalink: /useradminmodule/remoteconnections/disable-rdpremotelywmi/
 categories:
   - UserAdminModule
   - RemoteConnections

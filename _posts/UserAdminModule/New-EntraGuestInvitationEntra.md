@@ -2,7 +2,7 @@
 layout: post
 title: New-EntraGuestInvitationEntra.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-EntraGuestInvitationEntra/
+permalink: /useradminmodule/azure/new-entraguestinvitationentra/
 categories:
   - UserAdminModule
   - Azure

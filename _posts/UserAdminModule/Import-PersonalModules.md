@@ -2,7 +2,7 @@
 layout: post
 title: Import-PersonalModules.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Import-PersonalModules/
+permalink: /useradminmodule/modulemanagement/import-personalmodules/
 categories:
   - UserAdminModule
   - ModuleManagement

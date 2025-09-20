@@ -2,7 +2,7 @@
 layout: post
 title: Format-FileSize.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Format-FileSize/
+permalink: /useradminmodule/fileoperations/format-filesize/
 categories:
   - UserAdminModule
   - FileOperations

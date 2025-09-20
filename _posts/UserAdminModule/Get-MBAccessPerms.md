@@ -2,7 +2,7 @@
 layout: post
 title: Get-MBAccessPerms.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-MBAccessPerms/
+permalink: /useradminmodule/exchange/get-mbaccessperms/
 categories:
   - UserAdminModule
   - Exchange

@@ -2,7 +2,7 @@
 layout: post
 title: Get-MgAdmins.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-MgAdmins/
+permalink: /useradminmodule/azure/get-mgadmins/
 categories:
   - UserAdminModule
   - Azure

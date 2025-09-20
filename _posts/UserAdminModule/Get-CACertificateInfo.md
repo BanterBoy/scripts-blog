@@ -2,7 +2,7 @@
 layout: post
 title: Get-CACertificateInfo.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-CACertificateInfo/
+permalink: /useradminmodule/pkicertificatetools/get-cacertificateinfo/
 categories:
   - UserAdminModule
   - PKICertificateTools

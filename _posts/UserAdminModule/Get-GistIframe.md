@@ -2,7 +2,7 @@
 layout: post
 title: Get-GistIframe.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-GistIframe/
+permalink: /useradminmodule/jekyllblog/get-gistiframe/
 categories:
   - UserAdminModule
   - JekyllBlog

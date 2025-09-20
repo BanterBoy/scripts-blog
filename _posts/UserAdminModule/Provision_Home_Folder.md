@@ -2,7 +2,7 @@
 layout: post
 title: Provision_Home_Folder.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Provision_Home_Folder/
+permalink: /useradminmodule/adfunctions/provision-home-folder/
 categories:
   - UserAdminModule
   - ADFunctions

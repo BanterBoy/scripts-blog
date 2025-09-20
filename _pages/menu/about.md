@@ -37,7 +37,7 @@ Over the years I had accumulated a large store of PowerShell code that TBH wasn'
 
 ## Example
 
-[![Example](/assets/images/About/example1.png)](/_posts/functions/FSMOFunctions/)
+[![Example](/assets/images/About/example1.png)](/useradminmodule/adfunctions/fsmofunctions/)
 
 I plan to provide a brief overview of the script and where possible some examples for their use.
 

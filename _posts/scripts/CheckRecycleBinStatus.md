@@ -1,6 +1,7 @@
 ---
 layout: post
 title: CheckRecycleBinStatus.ps1
+permalink: /scripts/checkrecyclebinstatus/
 ---
 
 - [Description](#description)

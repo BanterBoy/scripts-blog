@@ -2,7 +2,7 @@
 layout: post
 title: Get-ServiceDetails.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ServiceDetails/
+permalink: /useradminmodule/adfunctions/get-servicedetails/
 categories:
   - UserAdminModule
   - ADFunctions

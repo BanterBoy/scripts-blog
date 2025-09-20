@@ -2,7 +2,7 @@
 layout: post
 title: DisableADAccountsMenu.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/DisableADAccountsMenu/
+permalink: /useradminmodule/adfunctions/disableadaccountsmenu/
 categories:
   - UserAdminModule
   - ADFunctions

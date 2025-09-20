@@ -2,7 +2,7 @@
 layout: post
 title: Get-CimPermsLocal.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-CimPermsLocal/
+permalink: /useradminmodule/security/get-cimpermslocal/
 categories:
   - UserAdminModule
   - Security

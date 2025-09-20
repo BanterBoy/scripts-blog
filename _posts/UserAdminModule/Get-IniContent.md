@@ -2,7 +2,7 @@
 layout: post
 title: Get-IniContent.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-IniContent/
+permalink: /useradminmodule/fileoperations/get-inicontent/
 categories:
   - UserAdminModule
   - FileOperations

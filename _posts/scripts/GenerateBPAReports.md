@@ -1,6 +1,7 @@
 ---
 layout: post
 title: GenerateBPAReports.ps1
+permalink: /scripts/generatebpareports/
 ---
 
 - [Description](#description)

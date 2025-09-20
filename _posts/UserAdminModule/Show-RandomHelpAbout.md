@@ -2,7 +2,7 @@
 layout: post
 title: Show-RandomHelpAbout.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Show-RandomHelpAbout/
+permalink: /useradminmodule/shell/show-randomhelpabout/
 categories:
   - UserAdminModule
   - Shell

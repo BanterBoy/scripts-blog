@@ -2,7 +2,7 @@
 layout: post
 title: Get-DownloadPercent.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-DownloadPercent/
+permalink: /useradminmodule/utilities/get-downloadpercent/
 categories:
   - UserAdminModule
   - Utilities

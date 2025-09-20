@@ -2,7 +2,7 @@
 layout: post
 title: Remove-CertLogDatabase.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Remove-CertLogDatabase/
+permalink: /useradminmodule/pkicertificatetools/remove-certlogdatabase/
 categories:
   - UserAdminModule
   - PKICertificateTools

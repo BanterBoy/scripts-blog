@@ -2,7 +2,7 @@
 layout: post
 title: Get-UserReplicationStatus.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-UserReplicationStatus/
+permalink: /useradminmodule/replication/get-userreplicationstatus/
 categories:
   - UserAdminModule
   - Replication

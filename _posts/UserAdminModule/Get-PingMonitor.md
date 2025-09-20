@@ -2,7 +2,7 @@
 layout: post
 title: Get-PingMonitor.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-PingMonitor/
+permalink: /useradminmodule/network/get-pingmonitor/
 categories:
   - UserAdminModule
   - Network

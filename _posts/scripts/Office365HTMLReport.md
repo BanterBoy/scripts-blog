@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Office365HTMLReport.ps1
+permalink: /scripts/office365htmlreport/
 ---
 
 - [Description](#description)

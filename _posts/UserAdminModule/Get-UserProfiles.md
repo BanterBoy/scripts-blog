@@ -2,7 +2,7 @@
 layout: post
 title: Get-UserProfiles.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-UserProfiles/
+permalink: /useradminmodule/utilities/get-userprofiles/
 categories:
   - UserAdminModule
   - Utilities

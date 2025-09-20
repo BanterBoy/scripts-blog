@@ -2,7 +2,7 @@
 layout: post
 title: Update-CalendarPermissions.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Update-CalendarPermissions/
+permalink: /useradminmodule/exchange/update-calendarpermissions/
 categories:
   - UserAdminModule
   - Exchange

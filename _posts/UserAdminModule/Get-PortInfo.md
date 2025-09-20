@@ -2,7 +2,7 @@
 layout: post
 title: Get-PortInfo.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-PortInfo/
+permalink: /useradminmodule/network/get-portinfo/
 categories:
   - UserAdminModule
   - Network

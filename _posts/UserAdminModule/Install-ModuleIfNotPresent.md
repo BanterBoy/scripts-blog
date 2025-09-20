@@ -2,7 +2,7 @@
 layout: post
 title: Install-ModuleIfNotPresent.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Install-ModuleIfNotPresent/
+permalink: /useradminmodule/shell/install-moduleifnotpresent/
 categories:
   - UserAdminModule
   - Shell

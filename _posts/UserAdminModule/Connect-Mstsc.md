@@ -2,7 +2,7 @@
 layout: post
 title: Connect-Mstsc.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Connect-Mstsc/
+permalink: /useradminmodule/remoteconnections/connect-mstsc/
 categories:
   - UserAdminModule
   - RemoteConnections

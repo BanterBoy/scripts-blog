@@ -2,7 +2,7 @@
 layout: post
 title: Validate-LDAPSBinding.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Validate-LDAPSBinding/
+permalink: /useradminmodule/utilities/validate-ldapsbinding/
 categories:
   - UserAdminModule
   - Utilities

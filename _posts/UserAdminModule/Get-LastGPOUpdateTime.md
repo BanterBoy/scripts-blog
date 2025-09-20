@@ -2,7 +2,7 @@
 layout: post
 title: Get-LastGPOUpdateTime.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-LastGPOUpdateTime/
+permalink: /useradminmodule/adfunctions/get-lastgpoupdatetime/
 categories:
   - UserAdminModule
   - ADFunctions

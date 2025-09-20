@@ -2,7 +2,7 @@
 layout: post
 title: Export-DistributionGroupProperties.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Export-DistributionGroupProperties/
+permalink: /useradminmodule/exchange/export-distributiongroupproperties/
 categories:
   - UserAdminModule
   - Exchange

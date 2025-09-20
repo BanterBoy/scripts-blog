@@ -2,7 +2,7 @@
 layout: post
 title: Reorganize-FilesByType.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Reorganize-FilesByType/
+permalink: /useradminmodule/fileoperations/reorganize-filesbytype/
 categories:
   - UserAdminModule
   - FileOperations

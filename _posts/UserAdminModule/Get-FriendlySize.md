@@ -2,7 +2,7 @@
 layout: post
 title: Get-FriendlySize.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-FriendlySize/
+permalink: /useradminmodule/shell/get-friendlysize/
 categories:
   - UserAdminModule
   - Shell

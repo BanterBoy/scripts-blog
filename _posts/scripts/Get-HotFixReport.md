@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-HotFixReport.ps1
+permalink: /scripts/get-hotfixreport/
 ---
 
 - [Description](#description)

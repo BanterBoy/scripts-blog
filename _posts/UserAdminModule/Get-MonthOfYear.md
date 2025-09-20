@@ -2,7 +2,7 @@
 layout: post
 title: Get-MonthOfYear.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-MonthOfYear/
+permalink: /useradminmodule/shell/get-monthofyear/
 categories:
   - UserAdminModule
   - Shell

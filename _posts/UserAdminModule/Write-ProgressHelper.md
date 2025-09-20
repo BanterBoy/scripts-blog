@@ -2,7 +2,7 @@
 layout: post
 title: Write-ProgressHelper.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Write-ProgressHelper/
+permalink: /useradminmodule/utilities/write-progresshelper/
 categories:
   - UserAdminModule
   - Utilities

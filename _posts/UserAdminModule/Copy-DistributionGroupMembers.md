@@ -2,7 +2,7 @@
 layout: post
 title: Copy-DistributionGroupMembers.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Copy-DistributionGroupMembers/
+permalink: /useradminmodule/exchange/copy-distributiongroupmembers/
 categories:
   - UserAdminModule
   - Exchange

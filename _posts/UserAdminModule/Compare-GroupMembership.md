@@ -2,7 +2,7 @@
 layout: post
 title: Compare-GroupMembership.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Compare-GroupMembership/
+permalink: /useradminmodule/adfunctions/compare-groupmembership/
 categories:
   - UserAdminModule
   - ADFunctions

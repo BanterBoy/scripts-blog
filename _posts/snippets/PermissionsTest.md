@@ -1,6 +1,7 @@
-﻿---
+---
 layout: post
 title: PermissionsTest.ps1
+permalink: /snippets/permissionstest/
 ---
 
 - [Description](#description)

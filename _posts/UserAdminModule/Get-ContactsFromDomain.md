@@ -2,7 +2,7 @@
 layout: post
 title: Get-ContactsFromDomain.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ContactsFromDomain/
+permalink: /useradminmodule/exchange/get-contactsfromdomain/
 categories:
   - UserAdminModule
   - Exchange

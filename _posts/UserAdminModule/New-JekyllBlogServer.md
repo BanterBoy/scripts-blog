@@ -2,7 +2,7 @@
 layout: post
 title: New-JekyllBlogServer.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-JekyllBlogServer/
+permalink: /useradminmodule/jekyllblog/new-jekyllblogserver/
 categories:
   - UserAdminModule
   - JekyllBlog

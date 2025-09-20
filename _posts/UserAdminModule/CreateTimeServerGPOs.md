@@ -2,7 +2,7 @@
 layout: post
 title: CreateTimeServerGPOs.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/CreateTimeServerGPOs/
+permalink: /useradminmodule/adfunctions/createtimeservergpos/
 categories:
   - UserAdminModule
   - ADFunctions

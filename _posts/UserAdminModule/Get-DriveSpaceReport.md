@@ -2,7 +2,7 @@
 layout: post
 title: Get-DriveSpaceReport.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-DriveSpaceReport/
+permalink: /useradminmodule/virtualization/get-drivespacereport/
 categories:
   - UserAdminModule
   - Virtualization

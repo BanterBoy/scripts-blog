@@ -2,7 +2,7 @@
 layout: post
 title: Test-ContactEmail.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-ContactEmail/
+permalink: /useradminmodule/testing/test-contactemail/
 categories:
   - UserAdminModule
   - Testing

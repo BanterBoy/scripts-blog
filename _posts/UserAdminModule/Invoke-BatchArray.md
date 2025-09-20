@@ -2,7 +2,7 @@
 layout: post
 title: Invoke-BatchArray.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Invoke-BatchArray/
+permalink: /useradminmodule/utilities/invoke-batcharray/
 categories:
   - UserAdminModule
   - Utilities

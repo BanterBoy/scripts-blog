@@ -2,7 +2,7 @@
 layout: post
 title: Unblock-AndUnzipFiles.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Unblock-AndUnzipFiles/
+permalink: /useradminmodule/fileoperations/unblock-andunzipfiles/
 categories:
   - UserAdminModule
   - FileOperations

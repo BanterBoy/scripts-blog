@@ -2,7 +2,7 @@
 layout: post
 title: Expand-NinjaOne7Zip.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Expand-NinjaOne7Zip/
+permalink: /useradminmodule/fileoperations/expand-ninjaone7zip/
 categories:
   - UserAdminModule
   - FileOperations

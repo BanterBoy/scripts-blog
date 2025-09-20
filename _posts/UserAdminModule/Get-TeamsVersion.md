@@ -2,7 +2,7 @@
 layout: post
 title: Get-TeamsVersion.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-TeamsVersion/
+permalink: /useradminmodule/teams/get-teamsversion/
 categories:
   - UserAdminModule
   - Teams

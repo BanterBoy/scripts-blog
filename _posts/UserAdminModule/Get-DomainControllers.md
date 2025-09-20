@@ -2,7 +2,7 @@
 layout: post
 title: Get-DomainControllers.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-DomainControllers/
+permalink: /useradminmodule/adfunctions/get-domaincontrollers/
 categories:
   - UserAdminModule
   - ADFunctions

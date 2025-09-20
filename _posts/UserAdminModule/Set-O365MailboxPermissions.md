@@ -2,7 +2,7 @@
 layout: post
 title: Set-O365MailboxPermissions.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-O365MailboxPermissions/
+permalink: /useradminmodule/exchange/set-o365mailboxpermissions/
 categories:
   - UserAdminModule
   - Exchange

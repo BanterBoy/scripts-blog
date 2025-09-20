@@ -2,7 +2,7 @@
 layout: post
 title: Get-Weather.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-Weather/
+permalink: /useradminmodule/weather/get-weather/
 categories:
   - UserAdminModule
   - Weather

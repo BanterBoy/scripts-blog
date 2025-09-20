@@ -2,7 +2,7 @@
 layout: post
 title: ScreenPassword.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/ScreenPassword/
+permalink: /useradminmodule/security/screenpassword/
 categories:
   - UserAdminModule
   - Security

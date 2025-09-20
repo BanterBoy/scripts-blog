@@ -2,7 +2,7 @@
 layout: post
 title: Get-Time.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-Time/
+permalink: /useradminmodule/utilities/get-time/
 categories:
   - UserAdminModule
   - Utilities

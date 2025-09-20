@@ -2,7 +2,7 @@
 layout: post
 title: Get-ErrorInfo.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ErrorInfo/
+permalink: /useradminmodule/utilities/get-errorinfo/
 categories:
   - UserAdminModule
   - Utilities

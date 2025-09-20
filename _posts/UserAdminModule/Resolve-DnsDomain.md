@@ -2,7 +2,7 @@
 layout: post
 title: Resolve-DnsDomain.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Resolve-DnsDomain/
+permalink: /useradminmodule/network/resolve-dnsdomain/
 categories:
   - UserAdminModule
   - Network

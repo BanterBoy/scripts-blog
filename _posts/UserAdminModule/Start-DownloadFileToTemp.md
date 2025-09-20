@@ -2,7 +2,7 @@
 layout: post
 title: Start-DownloadFileToTemp.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Start-DownloadFileToTemp/
+permalink: /useradminmodule/fileoperations/start-downloadfiletotemp/
 categories:
   - UserAdminModule
   - FileOperations

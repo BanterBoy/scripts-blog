@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Export-WUpdateHistory.ps1
+permalink: /scripts/export-wupdatehistory/
 ---
 
 - [Description](#description)

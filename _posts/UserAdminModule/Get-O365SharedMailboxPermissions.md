@@ -2,7 +2,7 @@
 layout: post
 title: Get-O365SharedMailboxPermissions.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-O365SharedMailboxPermissions/
+permalink: /useradminmodule/exchange/get-o365sharedmailboxpermissions/
 categories:
   - UserAdminModule
   - Exchange

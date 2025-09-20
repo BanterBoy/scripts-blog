@@ -2,7 +2,7 @@
 layout: post
 title: Get-ADExchangeServer.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ADExchangeServer/
+permalink: /useradminmodule/exchange/get-adexchangeserver/
 categories:
   - UserAdminModule
   - Exchange

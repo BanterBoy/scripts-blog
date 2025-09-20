@@ -1,6 +1,7 @@
 ---
 layout: post
 title: DiskCleanup.ps1
+permalink: /scripts/diskcleanup/
 ---
 
 - [Description](#description)

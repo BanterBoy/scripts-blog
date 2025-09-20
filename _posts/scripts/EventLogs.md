@@ -1,6 +1,7 @@
 ---
 layout: post
 title: EventLogs.ps1
+permalink: /scripts/eventlogs/
 ---
 
 - [Description](#description)

@@ -2,7 +2,7 @@
 layout: post
 title: Get-LastRebootEvent.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-LastRebootEvent/
+permalink: /useradminmodule/shell/get-lastrebootevent/
 categories:
   - UserAdminModule
   - Shell

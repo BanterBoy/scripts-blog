@@ -2,7 +2,7 @@
 layout: post
 title: Test-DomainMailRecords.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-DomainMailRecords/
+permalink: /useradminmodule/testing/test-domainmailrecords/
 categories:
   - UserAdminModule
   - Testing

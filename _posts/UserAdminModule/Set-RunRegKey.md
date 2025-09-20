@@ -2,7 +2,7 @@
 layout: post
 title: Set-RunRegKey.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-RunRegKey/
+permalink: /useradminmodule/utilities/set-runregkey/
 categories:
   - UserAdminModule
   - Utilities

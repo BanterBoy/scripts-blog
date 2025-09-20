@@ -2,7 +2,7 @@
 layout: post
 title: Get-PrimaryGroupsReport.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-PrimaryGroupsReport/
+permalink: /useradminmodule/adfunctions/get-primarygroupsreport/
 categories:
   - UserAdminModule
   - ADFunctions

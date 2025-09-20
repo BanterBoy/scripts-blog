@@ -2,7 +2,7 @@
 layout: post
 title: Get-LockoutHistory.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-LockoutHistory/
+permalink: /useradminmodule/adfunctions/get-lockouthistory/
 categories:
   - UserAdminModule
   - ADFunctions

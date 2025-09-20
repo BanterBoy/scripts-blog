@@ -2,7 +2,7 @@
 layout: post
 title: Get-GoogleSearch.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-GoogleSearch/
+permalink: /useradminmodule/shell/get-googlesearch/
 categories:
   - UserAdminModule
   - Shell

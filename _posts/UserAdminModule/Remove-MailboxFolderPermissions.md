@@ -2,7 +2,7 @@
 layout: post
 title: Remove-MailboxFolderPermissions.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Remove-MailboxFolderPermissions/
+permalink: /useradminmodule/exchange/remove-mailboxfolderpermissions/
 categories:
   - UserAdminModule
   - Exchange

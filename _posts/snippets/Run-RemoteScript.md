@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Run-RemoteScript.ps1
+permalink: /snippets/run-remotescript/
 ---
 
 - [Description](#description)

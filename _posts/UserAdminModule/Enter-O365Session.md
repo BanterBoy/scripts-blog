@@ -2,7 +2,7 @@
 layout: post
 title: Enter-O365Session.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Enter-O365Session/
+permalink: /useradminmodule/exchange/enter-o365session/
 categories:
   - UserAdminModule
   - Exchange

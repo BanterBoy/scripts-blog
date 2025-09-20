@@ -2,7 +2,7 @@
 layout: post
 title: Test-TLSConnection.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-TLSConnection/
+permalink: /useradminmodule/testing/test-tlsconnection/
 categories:
   - UserAdminModule
   - Testing

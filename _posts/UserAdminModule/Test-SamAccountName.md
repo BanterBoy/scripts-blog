@@ -2,7 +2,7 @@
 layout: post
 title: Test-SamAccountName.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-SamAccountName/
+permalink: /useradminmodule/testing/test-samaccountname/
 categories:
   - UserAdminModule
   - Testing

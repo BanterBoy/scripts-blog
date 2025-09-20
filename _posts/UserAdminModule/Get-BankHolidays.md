@@ -2,7 +2,7 @@
 layout: post
 title: Get-BankHolidays.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-BankHolidays/
+permalink: /useradminmodule/shell/get-bankholidays/
 categories:
   - UserAdminModule
   - Shell

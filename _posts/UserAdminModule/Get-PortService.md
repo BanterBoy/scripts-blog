@@ -2,7 +2,7 @@
 layout: post
 title: Get-PortService.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-PortService/
+permalink: /useradminmodule/network/get-portservice/
 categories:
   - UserAdminModule
   - Network

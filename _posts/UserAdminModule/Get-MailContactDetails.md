@@ -2,7 +2,7 @@
 layout: post
 title: Get-MailContactDetails.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-MailContactDetails/
+permalink: /useradminmodule/exchange/get-mailcontactdetails/
 categories:
   - UserAdminModule
   - Exchange

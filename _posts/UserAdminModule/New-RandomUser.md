@@ -2,7 +2,7 @@
 layout: post
 title: New-RandomUser.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-RandomUser/
+permalink: /useradminmodule/adfunctions/new-randomuser/
 categories:
   - UserAdminModule
   - ADFunctions

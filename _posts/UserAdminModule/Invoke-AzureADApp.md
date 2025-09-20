@@ -2,7 +2,7 @@
 layout: post
 title: Invoke-AzureADApp.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Invoke-AzureADApp/
+permalink: /useradminmodule/azure/invoke-azureadapp/
 categories:
   - UserAdminModule
   - Azure

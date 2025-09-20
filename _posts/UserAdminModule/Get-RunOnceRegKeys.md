@@ -2,7 +2,7 @@
 layout: post
 title: Get-RunOnceRegKeys.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-RunOnceRegKeys/
+permalink: /useradminmodule/utilities/get-runonceregkeys/
 categories:
   - UserAdminModule
   - Utilities

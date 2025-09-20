@@ -1,6 +1,7 @@
 ---
 layout: post
 title: LastAccess.ps1
+permalink: /scripts/lastaccess/
 ---
 
 - [Description](#description)

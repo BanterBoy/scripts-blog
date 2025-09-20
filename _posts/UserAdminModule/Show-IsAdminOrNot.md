@@ -2,7 +2,7 @@
 layout: post
 title: Show-IsAdminOrNot.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Show-IsAdminOrNot/
+permalink: /useradminmodule/shell/show-isadminornot/
 categories:
   - UserAdminModule
   - Shell

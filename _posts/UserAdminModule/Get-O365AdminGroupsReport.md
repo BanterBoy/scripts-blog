@@ -3,7 +3,7 @@ layout: post
 title: Get-O365AdminGroupsReport.ps1
 description: "Generates a CSV report of Office 365 administrative roles and their assigned members."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-O365AdminGroupsReport/
+permalink: /useradminmodule/azure/get-o365admingroupsreport/
 categories:
   - UserAdminModule
   - Azure

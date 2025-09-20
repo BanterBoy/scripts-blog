@@ -2,7 +2,7 @@
 layout: post
 title: remove-ADM.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/remove-ADM/
+permalink: /useradminmodule/adfunctions/remove-adm/
 categories:
   - UserAdminModule
   - ADFunctions

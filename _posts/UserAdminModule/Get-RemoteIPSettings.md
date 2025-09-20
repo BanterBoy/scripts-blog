@@ -2,7 +2,7 @@
 layout: post
 title: Get-RemoteIPSettings.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-RemoteIPSettings/
+permalink: /useradminmodule/network/get-remoteipsettings/
 categories:
   - UserAdminModule
   - Network

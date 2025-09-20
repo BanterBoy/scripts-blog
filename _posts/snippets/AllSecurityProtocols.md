@@ -1,6 +1,7 @@
-﻿---
+---
 layout: post
 title: AllSecurityProtocols.ps1
+permalink: /snippets/allsecurityprotocols/
 ---
 
 - [Description](#description)

@@ -3,7 +3,7 @@ layout: post
 title: Get-O365CalendarPermissions.ps1
 description: "Gets the calendar permissions assigned to a Microsoft 365 mailbox."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-O365CalendarPermissions/
+permalink: /useradminmodule/exchange/get-o365calendarpermissions/
 categories:
   - UserAdminModule
   - Exchange

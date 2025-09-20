@@ -2,7 +2,7 @@
 layout: post
 title: Connect-O365Session.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Connect-O365Session/
+permalink: /useradminmodule/exchange/connect-o365session/
 categories:
   - UserAdminModule
   - Exchange

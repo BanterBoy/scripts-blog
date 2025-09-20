@@ -2,7 +2,7 @@
 layout: post
 title: Get-TimeZoneID.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-TimeZoneID/
+permalink: /useradminmodule/utilities/get-timezoneid/
 categories:
   - UserAdminModule
   - Utilities

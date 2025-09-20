@@ -3,7 +3,7 @@ layout: post
 title: Set-O365CalendarPermissions.ps1
 description: "Applies or removes Microsoft 365 calendar permissions for specified users."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-O365CalendarPermissions/
+permalink: /useradminmodule/exchange/set-o365calendarpermissions/
 categories:
   - UserAdminModule
   - Exchange

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: newuserimport.ps1
+permalink: /scripts/newuserimport/
 ---
 
 - [Description](#description)

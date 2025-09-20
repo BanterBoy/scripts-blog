@@ -2,7 +2,7 @@
 layout: post
 title: Get-ComputersWithoutBitLocker.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ComputersWithoutBitLocker/
+permalink: /useradminmodule/adfunctions/get-computerswithoutbitlocker/
 categories:
   - UserAdminModule
   - ADFunctions

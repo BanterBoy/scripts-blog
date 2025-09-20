@@ -2,7 +2,7 @@
 layout: post
 title: Get-WmiADEvent.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-WmiADEvent/
+permalink: /useradminmodule/logging/get-wmiadevent/
 categories:
   - UserAdminModule
   - Logging

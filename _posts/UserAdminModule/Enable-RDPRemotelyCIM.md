@@ -2,7 +2,7 @@
 layout: post
 title: Enable-RDPRemotelyCIM.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Enable-RDPRemotelyCIM/
+permalink: /useradminmodule/remoteconnections/enable-rdpremotelycim/
 categories:
   - UserAdminModule
   - RemoteConnections

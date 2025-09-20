@@ -2,7 +2,7 @@
 layout: post
 title: Move-ADComputer.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Move-ADComputer/
+permalink: /useradminmodule/adfunctions/move-adcomputer/
 categories:
   - UserAdminModule
   - ADFunctions

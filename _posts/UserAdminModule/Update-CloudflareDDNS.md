@@ -2,7 +2,7 @@
 layout: post
 title: Update-CloudflareDDNS.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Update-CloudflareDDNS/
+permalink: /useradminmodule/network/update-cloudflareddns/
 categories:
   - UserAdminModule
   - Network

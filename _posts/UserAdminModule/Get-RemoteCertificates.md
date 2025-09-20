@@ -2,7 +2,7 @@
 layout: post
 title: Get-RemoteCertificates.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-RemoteCertificates/
+permalink: /useradminmodule/certificateutilities/get-remotecertificates/
 categories:
   - UserAdminModule
   - CertificateUtilities

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-AlternateMailboxes.ps1
+permalink: /scripts/get-alternatemailboxes/
 ---
 
 - [Description](#description)

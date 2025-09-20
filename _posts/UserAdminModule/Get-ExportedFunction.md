@@ -2,7 +2,7 @@
 layout: post
 title: Get-ExportedFunction.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ExportedFunction/
+permalink: /useradminmodule/shell/get-exportedfunction/
 categories:
   - UserAdminModule
   - Shell

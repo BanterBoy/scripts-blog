@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-NoSettingsGPO.ps1
+permalink: /scripts/get-nosettingsgpo/
 ---
 
 - [Description](#description)

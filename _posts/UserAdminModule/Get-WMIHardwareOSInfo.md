@@ -2,7 +2,7 @@
 layout: post
 title: Get-WMIHardwareOSInfo.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-WMIHardwareOSInfo/
+permalink: /useradminmodule/virtualization/get-wmihardwareosinfo/
 categories:
   - UserAdminModule
   - Virtualization

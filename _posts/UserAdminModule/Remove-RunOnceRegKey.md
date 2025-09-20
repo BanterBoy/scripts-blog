@@ -2,7 +2,7 @@
 layout: post
 title: Remove-RunOnceRegKey.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Remove-RunOnceRegKey/
+permalink: /useradminmodule/utilities/remove-runonceregkey/
 categories:
   - UserAdminModule
   - Utilities

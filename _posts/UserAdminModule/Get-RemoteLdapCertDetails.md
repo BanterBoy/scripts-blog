@@ -2,7 +2,7 @@
 layout: post
 title: Get-RemoteLdapCertDetails.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-RemoteLdapCertDetails/
+permalink: /useradminmodule/certificateutilities/get-remoteldapcertdetails/
 categories:
   - UserAdminModule
   - CertificateUtilities

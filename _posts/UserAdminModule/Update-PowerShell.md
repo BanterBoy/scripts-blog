@@ -2,7 +2,7 @@
 layout: post
 title: Update-PowerShell.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Update-PowerShell/
+permalink: /useradminmodule/shell/update-powershell/
 categories:
   - UserAdminModule
   - Shell

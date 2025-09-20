@@ -2,7 +2,7 @@
 layout: post
 title: Export-BitlockerParams.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Enable-RemoteDesktop/
+permalink: /useradminmodule/remoteconnections/enable-remotedesktop/
 categories:
   - UserAdminModule
   - RemoteConnections

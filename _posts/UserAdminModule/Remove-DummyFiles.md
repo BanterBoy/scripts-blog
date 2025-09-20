@@ -2,7 +2,7 @@
 layout: post
 title: Remove-DummyFiles.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Remove-DummyFiles/
+permalink: /useradminmodule/fileoperations/remove-dummyfiles/
 categories:
   - UserAdminModule
   - FileOperations

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ping-DNSServers.ps1
+permalink: /scripts/ping-dnsservers/
 ---
 
 - [Description](#description)

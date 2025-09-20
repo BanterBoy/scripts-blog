@@ -2,7 +2,7 @@
 layout: post
 title: Show-JekyllBlogSite.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Show-JekyllBlogSite/
+permalink: /useradminmodule/jekyllblog/show-jekyllblogsite/
 categories:
   - UserAdminModule
   - JekyllBlog

@@ -2,7 +2,7 @@
 layout: post
 title: Register-FileSystemWatcher.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Register-FileSystemWatcher/
+permalink: /useradminmodule/fileoperations/register-filesystemwatcher/
 categories:
   - UserAdminModule
   - FileOperations

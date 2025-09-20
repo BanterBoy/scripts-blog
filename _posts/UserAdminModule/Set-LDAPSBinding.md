@@ -2,7 +2,7 @@
 layout: post
 title: Set-LDAPSBinding.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-LDAPSBinding/
+permalink: /useradminmodule/security/set-ldapsbinding/
 categories:
   - UserAdminModule
   - Security

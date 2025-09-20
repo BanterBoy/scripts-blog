@@ -1,6 +1,7 @@
 ---
 layout: post
 title: SomeScriptFile.ps1
+permalink: /snippets/somescriptfile/
 ---
 
 - [Description](#description)

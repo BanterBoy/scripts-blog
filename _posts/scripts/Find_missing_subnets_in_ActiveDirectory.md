@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Find_missing_subnets_in_ActiveDirectory.ps1
+permalink: /scripts/find-missing-subnets-in-activedirectory/
 ---
 
 - [Description](#description)

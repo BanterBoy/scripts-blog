@@ -2,7 +2,7 @@
 layout: post
 title: Stop-NonRespondingProcesses.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Stop-NonRespondingProcesses/
+permalink: /useradminmodule/processserviceschedules/stop-nonrespondingprocesses/
 categories:
   - UserAdminModule
   - ProcessServiceSchedules

@@ -2,7 +2,7 @@
 layout: post
 title: New-OOHMessage.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-OOHMessage/
+permalink: /useradminmodule/exchange/new-oohmessage/
 categories:
   - UserAdminModule
   - Exchange

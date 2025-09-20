@@ -2,7 +2,7 @@
 layout: post
 title: Repair-MissingOnPremMailbox.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Repair-MissingOnPremMailbox/
+permalink: /useradminmodule/exchange/repair-missingonpremmailbox/
 categories:
   - UserAdminModule
   - Exchange

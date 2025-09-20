@@ -2,7 +2,7 @@
 layout: post
 title: Get-PublishedTemplate.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-PublishedTemplate/
+permalink: /useradminmodule/pkicertificatetools/get-publishedtemplate/
 categories:
   - UserAdminModule
   - PKICertificateTools

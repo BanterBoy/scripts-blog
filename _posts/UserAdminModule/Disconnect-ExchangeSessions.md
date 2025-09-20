@@ -2,7 +2,7 @@
 layout: post
 title: Disconnect-ExchangeSessions.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Disconnect-ExchangeSessions/
+permalink: /useradminmodule/exchange/disconnect-exchangesessions/
 categories:
   - UserAdminModule
   - Exchange

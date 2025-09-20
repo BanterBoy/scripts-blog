@@ -2,7 +2,7 @@
 layout: post
 title: Get-RDPStatusCIM.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-RDPStatusCIM/
+permalink: /useradminmodule/remoteconnections/get-rdpstatuscim/
 categories:
   - UserAdminModule
   - RemoteConnections

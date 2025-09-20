@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Delete-UnusedHomeFolders.ps1
+permalink: /scripts/delete-unusedhomefolders/
 ---
 
 - [Description](#description)

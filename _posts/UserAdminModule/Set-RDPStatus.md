@@ -2,7 +2,7 @@
 layout: post
 title: Set-RDPStatus.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-RDPStatus/
+permalink: /useradminmodule/remoteconnections/set-rdpstatus/
 categories:
   - UserAdminModule
   - RemoteConnections

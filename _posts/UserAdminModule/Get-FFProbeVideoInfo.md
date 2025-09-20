@@ -2,7 +2,7 @@
 layout: post
 title: Get-FFProbeVideoInfo.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-FFProbeVideoInfo/
+permalink: /useradminmodule/mediamanagement/get-ffprobevideoinfo/
 categories:
   - UserAdminModule
   - MediaManagement
@@ -62,7 +62,7 @@ Parses the ffprobe JSON response and returns audio stream objects instead of the
 #### Notes
 
 - Requires ffprobe from the FFmpeg suite to be accessible in the current environment.
-- When `-GetAudioStreams` is used, the function mirrors the output shape of [`Get-FFProbeAudioStreams`](/_posts/UserAdminModule/Get-FFProbeAudioStreams/), returning an object per audio track.
+- When `-GetAudioStreams` is used, the function mirrors the output shape of [`Get-FFProbeAudioStreams`](/useradminmodule/mediamanagement/get-ffprobeaudiostreams/), returning an object per audio track.
 - Omitting `-VideoFile` causes the function to enumerate every file in the specified directory, matching the behaviour of the original monolithic script.
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

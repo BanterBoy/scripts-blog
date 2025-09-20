@@ -2,7 +2,7 @@
 layout: post
 title: Get-ProcessandServicePID.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ProcessandServicePID/
+permalink: /useradminmodule/processserviceschedules/get-processandservicepid/
 categories:
   - UserAdminModule
   - ProcessServiceSchedules

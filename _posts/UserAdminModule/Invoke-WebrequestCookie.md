@@ -2,7 +2,7 @@
 layout: post
 title: Invoke-WebrequestCookie.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Invoke-WebrequestCookie/
+permalink: /useradminmodule/utilities/invoke-webrequestcookie/
 categories:
   - UserAdminModule
   - Utilities

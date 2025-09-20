@@ -2,7 +2,7 @@
 layout: post
 title: Get-RemoteTime.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-RemoteTime/
+permalink: /useradminmodule/utilities/get-remotetime/
 categories:
   - UserAdminModule
   - Utilities

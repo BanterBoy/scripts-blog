@@ -2,7 +2,7 @@
 layout: post
 title: New-AdminTerminal.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-AdminTerminal/
+permalink: /useradminmodule/shell/new-adminterminal/
 categories:
   - UserAdminModule
   - Shell

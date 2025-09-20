@@ -2,7 +2,7 @@
 layout: post
 title: Get-DiskReport.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-DiskReport/
+permalink: /useradminmodule/virtualization/get-diskreport/
 categories:
   - UserAdminModule
   - Virtualization

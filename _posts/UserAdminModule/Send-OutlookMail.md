@@ -2,7 +2,7 @@
 layout: post
 title: Send-OutlookMail.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Send-OutlookMail/
+permalink: /useradminmodule/exchange/send-outlookmail/
 categories:
   - UserAdminModule
   - Exchange

@@ -2,7 +2,7 @@
 layout: post
 title: Move-CertificateServicesDatabase.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Move-CertificateServicesDatabase/
+permalink: /useradminmodule/pkicertificatetools/move-certificateservicesdatabase/
 categories:
   - UserAdminModule
   - PKICertificateTools

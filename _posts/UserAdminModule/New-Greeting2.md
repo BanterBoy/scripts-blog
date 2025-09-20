@@ -3,7 +3,7 @@ layout: post
 title: New-Greeting2.ps1
 description: "Outputs ASCII-art greetings for each weekday using a custom class."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-Greeting2/
+permalink: /useradminmodule/shell/new-greeting2/
 categories:
   - UserAdminModule
   - Shell

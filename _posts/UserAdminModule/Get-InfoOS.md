@@ -2,7 +2,7 @@
 layout: post
 title: Get-InfoOS.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-InfoOS/
+permalink: /useradminmodule/utilities/get-infoos/
 categories:
   - UserAdminModule
   - Utilities

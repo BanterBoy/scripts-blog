@@ -2,7 +2,7 @@
 layout: post
 title: Move-FSMORolestoPDCEmulator.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Move-FSMORolestoPDCEmulator/
+permalink: /useradminmodule/adfunctions/move-fsmorolestopdcemulator/
 categories:
   - UserAdminModule
   - ADFunctions

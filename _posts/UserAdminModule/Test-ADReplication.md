@@ -2,7 +2,7 @@
 layout: post
 title: Test-ADReplication.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-ADReplication/
+permalink: /useradminmodule/testing/test-adreplication/
 categories:
   - UserAdminModule
   - Testing

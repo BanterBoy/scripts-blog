@@ -2,7 +2,7 @@
 layout: post
 title: Convert-ImageForTeams.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Convert-ImageForTeams/
+permalink: /useradminmodule/teams/convert-imageforteams/
 categories:
   - UserAdminModule
   - Teams

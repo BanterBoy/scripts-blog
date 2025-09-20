@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Detect-Keypress.ps1
+permalink: /snippets/detect-keypress/
 ---
 
 - [Description](#description)

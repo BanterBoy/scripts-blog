@@ -2,7 +2,7 @@
 layout: post
 title: Test-ServerRolePortGroup.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-ServerRolePortGroup/
+permalink: /useradminmodule/testing/test-serverroleportgroup/
 categories:
   - UserAdminModule
   - Testing

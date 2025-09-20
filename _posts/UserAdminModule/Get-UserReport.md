@@ -2,7 +2,7 @@
 layout: post
 title: Get-UserReport.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-UserReport/
+permalink: /useradminmodule/adfunctions/get-userreport/
 categories:
   - UserAdminModule
   - ADFunctions

@@ -1,6 +1,7 @@
-﻿---
+---
 layout: post
 title: Elevate-ScriptPermissions.ps1
+permalink: /snippets/elevate-scriptpermissions/
 ---
 
 - [Description](#description)

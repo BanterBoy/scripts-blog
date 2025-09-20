@@ -2,7 +2,7 @@
 layout: post
 title: PadOrTruncate.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/PadOrTruncate/
+permalink: /useradminmodule/utilities/padortruncate/
 categories:
   - UserAdminModule
   - Utilities

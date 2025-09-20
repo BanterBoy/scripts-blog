@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Export-FilePermissions.ps1
+permalink: /scripts/export-filepermissions/
 ---
 
 - [Description](#description)

@@ -2,7 +2,7 @@
 layout: post
 title: New-SecurePassword.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-SecurePassword/
+permalink: /useradminmodule/replication/new-securepassword/
 categories:
   - UserAdminModule
   - Replication

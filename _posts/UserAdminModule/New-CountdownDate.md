@@ -3,7 +3,7 @@ layout: post
 title: New-CountdownDate.ps1
 description: "Creates countdown objects that show days remaining until a specified date."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-CountdownDate/
+permalink: /useradminmodule/shell/new-countdowndate/
 categories:
   - UserAdminModule
   - Shell

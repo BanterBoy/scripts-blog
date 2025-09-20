@@ -2,7 +2,7 @@
 layout: post
 title: Remove-CAKeys.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Remove-CAKeys/
+permalink: /useradminmodule/pkicertificatetools/remove-cakeys/
 categories:
   - UserAdminModule
   - PKICertificateTools

@@ -2,7 +2,7 @@
 layout: post
 title: Get-CimNamespacePermissionsRemote.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-CimNamespacePermissionsRemote/
+permalink: /useradminmodule/security/get-cimnamespacepermissionsremote/
 categories:
   - UserAdminModule
   - Security

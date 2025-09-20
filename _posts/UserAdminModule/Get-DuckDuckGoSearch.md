@@ -2,7 +2,7 @@
 layout: post
 title: Get-DuckDuckGoSearch.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-DuckDuckGoSearch/
+permalink: /useradminmodule/shell/get-duckduckgosearch/
 categories:
   - UserAdminModule
   - Shell

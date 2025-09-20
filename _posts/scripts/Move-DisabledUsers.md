@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Move-DisabledUsers.ps1
+permalink: /scripts/move-disabledusers/
 ---
 
 - [Description](#description)

@@ -2,7 +2,7 @@
 layout: post
 title: Disable-InactiveComputer.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Disable-InactiveComputer/
+permalink: /useradminmodule/adfunctions/disable-inactivecomputer/
 categories:
   - UserAdminModule
   - ADFunctions

@@ -2,7 +2,7 @@
 layout: post
 title: Get-PublicDnsRecord.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-PublicDnsRecord/
+permalink: /useradminmodule/network/get-publicdnsrecord/
 categories:
   - UserAdminModule
   - Network

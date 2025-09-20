@@ -2,7 +2,7 @@
 layout: post
 title: Unblock-QuarantineMessage.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Unblock-QuarantineMessage/
+permalink: /useradminmodule/exchange/unblock-quarantinemessage/
 categories:
   - UserAdminModule
   - Exchange

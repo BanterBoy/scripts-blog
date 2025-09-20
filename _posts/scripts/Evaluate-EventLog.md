@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Evaluate-EventLog.ps1
+permalink: /scripts/evaluate-eventlog/
 ---
 
 - [Description](#description)

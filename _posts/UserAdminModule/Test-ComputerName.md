@@ -2,7 +2,7 @@
 layout: post
 title: Test-ComputerName.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-ComputerName/
+permalink: /useradminmodule/testing/test-computername/
 categories:
   - UserAdminModule
   - Testing

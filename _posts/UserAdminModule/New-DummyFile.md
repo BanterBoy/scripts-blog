@@ -2,7 +2,7 @@
 layout: post
 title: New-DummyFile.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-DummyFile/
+permalink: /useradminmodule/fileoperations/new-dummyfile/
 categories:
   - UserAdminModule
   - FileOperations

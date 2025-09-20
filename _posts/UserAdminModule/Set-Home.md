@@ -2,7 +2,7 @@
 layout: post
 title: Set-Home.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-Home/
+permalink: /useradminmodule/shell/set-home/
 categories:
   - UserAdminModule
   - Shell

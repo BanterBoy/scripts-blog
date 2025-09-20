@@ -2,7 +2,7 @@
 layout: post
 title: Get-PKICertificates.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-PKICertificates/
+permalink: /useradminmodule/pkicertificatetools/get-pkicertificates/
 categories:
   - UserAdminModule
   - PKICertificateTools

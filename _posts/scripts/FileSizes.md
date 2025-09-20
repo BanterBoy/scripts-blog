@@ -1,6 +1,7 @@
 ---
 layout: post
 title: FileSizes.ps1
+permalink: /scripts/filesizes/
 ---
 
 - [Description](#description)

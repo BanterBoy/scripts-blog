@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-CurrentWorldTime.ps1
+permalink: /scripts/get-currentworldtime/
 ---
 
 - [Description](#description)

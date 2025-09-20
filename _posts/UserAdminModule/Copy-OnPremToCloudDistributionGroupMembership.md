@@ -2,7 +2,7 @@
 layout: post
 title: Copy-OnPremToCloudDistributionGroupMembership.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Copy-OnPremToCloudDistributionGroupMembership/
+permalink: /useradminmodule/exchange/copy-onpremtoclouddistributiongroupmembership/
 categories:
   - UserAdminModule
   - Exchange

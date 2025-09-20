@@ -2,7 +2,7 @@
 layout: post
 title: Get-PrintSpooler.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-PrintSpooler/
+permalink: /useradminmodule/printmanagement/get-printspooler/
 categories:
   - UserAdminModule
   - PrintManagement

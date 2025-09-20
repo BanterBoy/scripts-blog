@@ -2,7 +2,7 @@
 layout: post
 title: Get-PendingUpdates.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-PendingUpdates/
+permalink: /useradminmodule/utilities/get-pendingupdates/
 categories:
   - UserAdminModule
   - Utilities

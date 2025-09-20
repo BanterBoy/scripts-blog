@@ -2,7 +2,7 @@
 layout: post
 title: Connect-toMSGraphApplicationWithCertificate.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Connect-toMSGraphApplicationWithCertificate/
+permalink: /useradminmodule/azure/connect-tomsgraphapplicationwithcertificate/
 categories:
   - UserAdminModule
   - Azure

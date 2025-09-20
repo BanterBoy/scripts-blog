@@ -2,7 +2,7 @@
 layout: post
 title: New-ScheduledTask.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-ScheduledTask/
+permalink: /useradminmodule/processserviceschedules/new-scheduledtask/
 categories:
   - UserAdminModule
   - ProcessServiceSchedules

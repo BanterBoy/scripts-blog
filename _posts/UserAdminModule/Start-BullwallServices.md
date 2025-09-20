@@ -2,7 +2,7 @@
 layout: post
 title: Start-BullwallServices.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Start-BullwallServices/
+permalink: /useradminmodule/processserviceschedules/start-bullwallservices/
 categories:
   - UserAdminModule
   - ProcessServiceSchedules

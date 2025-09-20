@@ -2,7 +2,7 @@
 layout: post
 title: Get-ContactList.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ContactList/
+permalink: /useradminmodule/exchange/get-contactlist/
 categories:
   - UserAdminModule
   - Exchange

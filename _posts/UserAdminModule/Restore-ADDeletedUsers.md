@@ -2,7 +2,7 @@
 layout: post
 title: Restore-ADDeletedUsers.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Restore-ADDeletedUsers/
+permalink: /useradminmodule/adfunctions/restore-addeletedusers/
 categories:
   - UserAdminModule
   - ADFunctions

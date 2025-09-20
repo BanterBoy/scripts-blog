@@ -2,7 +2,7 @@
 layout: post
 title: Get-LatestFiles.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-LatestFiles/
+permalink: /useradminmodule/fileoperations/get-latestfiles/
 categories:
   - UserAdminModule
   - FileOperations

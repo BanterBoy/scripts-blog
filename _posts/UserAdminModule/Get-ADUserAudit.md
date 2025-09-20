@@ -2,7 +2,7 @@
 layout: post
 title: Get-ADUserAudit.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ADUserAudit/
+permalink: /useradminmodule/adfunctions/get-aduseraudit/
 categories:
   - UserAdminModule
   - ADFunctions

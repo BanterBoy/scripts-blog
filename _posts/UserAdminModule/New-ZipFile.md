@@ -2,7 +2,7 @@
 layout: post
 title: New-ZipFile.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-ZipFile/
+permalink: /useradminmodule/fileoperations/new-zipfile/
 categories:
   - UserAdminModule
   - FileOperations

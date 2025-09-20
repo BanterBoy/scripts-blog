@@ -1,6 +1,7 @@
 ---
 layout: post
 title: New-ADAssetReportGUI.ps1
+permalink: /scripts/new-adassetreportgui/
 ---
 
 - [Description](#description)

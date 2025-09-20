@@ -2,7 +2,7 @@
 layout: post
 title: Export-BitlockerComp.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Export-BitlockerComp/
+permalink: /useradminmodule/security/export-bitlockercomp/
 categories:
   - UserAdminModule
   - Security

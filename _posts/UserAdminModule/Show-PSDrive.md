@@ -2,7 +2,7 @@
 layout: post
 title: Show-PSDrive.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Show-PSDrive/
+permalink: /useradminmodule/fileoperations/show-psdrive/
 categories:
   - UserAdminModule
   - FileOperations

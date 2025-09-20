@@ -2,7 +2,7 @@
 layout: post
 title: UncompressZip-SameDestination.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/UncompressZip-SameDestination/
+permalink: /useradminmodule/fileoperations/uncompresszip-samedestination/
 categories:
   - UserAdminModule
   - FileOperations

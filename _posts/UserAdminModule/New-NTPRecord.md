@@ -2,7 +2,7 @@
 layout: post
 title: New-NTPRecord.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-NTPRecord/
+permalink: /useradminmodule/utilities/new-ntprecord/
 categories:
   - UserAdminModule
   - Utilities

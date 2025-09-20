@@ -1,6 +1,7 @@
 ---
 layout: post
 title: New-HistoricalSearch.ps1
+permalink: /scripts/new-historicalsearch/
 ---
 
 - [Description](#description)

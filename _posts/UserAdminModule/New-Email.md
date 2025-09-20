@@ -2,7 +2,7 @@
 layout: post
 title: New-Email.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-Email/
+permalink: /useradminmodule/utilities/new-email/
 categories:
   - UserAdminModule
   - Utilities

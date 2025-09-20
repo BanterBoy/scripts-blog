@@ -1,6 +1,7 @@
 ---
 layout: post
 title: InstallPwnedPasswordDLL.ps1
+permalink: /scripts/installpwnedpassworddll/
 ---
 
 - [Description](#description)

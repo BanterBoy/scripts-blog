@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Show-OUStructure.ps1
+permalink: /scripts/show-oustructure/
 ---
 
 - [Description](#description)

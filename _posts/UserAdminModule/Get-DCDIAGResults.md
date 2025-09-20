@@ -2,7 +2,7 @@
 layout: post
 title: Get-DCDIAGResults.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-DCDIAGResults/
+permalink: /useradminmodule/replication/get-dcdiagresults/
 categories:
   - UserAdminModule
   - Replication

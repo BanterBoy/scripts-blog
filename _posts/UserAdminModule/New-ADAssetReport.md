@@ -2,7 +2,7 @@
 layout: post
 title: New-ADAssetReport.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-ADAssetReport/
+permalink: /useradminmodule/adfunctions/new-adassetreport/
 categories:
   - UserAdminModule
   - ADFunctions

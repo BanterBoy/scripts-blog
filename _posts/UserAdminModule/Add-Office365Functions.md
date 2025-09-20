@@ -2,7 +2,7 @@
 layout: post
 title: Add-Office365Functions.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Add-Office365Functions/
+permalink: /useradminmodule/exchange/add-office365functions/
 categories:
   - UserAdminModule
   - Exchange

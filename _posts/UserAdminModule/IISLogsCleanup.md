@@ -2,7 +2,7 @@
 layout: post
 title: IISLogsCleanup.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/IISLogsCleanup/
+permalink: /useradminmodule/fileoperations/logging/iislogscleanup/
 categories:
   - UserAdminModule
     - FileOperations

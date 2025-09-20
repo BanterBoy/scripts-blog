@@ -2,7 +2,7 @@
 layout: post
 title: Get-Oid.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-Oid/
+permalink: /useradminmodule/pkicertificatetools/get-oid/
 categories:
   - UserAdminModule
   - PKICertificateTools

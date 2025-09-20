@@ -2,7 +2,7 @@
 layout: post
 title: Get-AccessToken.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-AccessToken/
+permalink: /useradminmodule/azure/get-accesstoken/
 categories:
   - UserAdminModule
   - Azure

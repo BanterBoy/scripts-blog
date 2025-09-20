@@ -2,7 +2,7 @@
 layout: post
 title: Get-ServiceStatus.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ServiceStatus/
+permalink: /useradminmodule/processserviceschedules/get-servicestatus/
 categories:
   - UserAdminModule
   - ProcessServiceSchedules

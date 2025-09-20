@@ -2,7 +2,7 @@
 layout: post
 title: Set-ExtensionAttribute.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-ExtensionAttribute/
+permalink: /useradminmodule/adfunctions/set-extensionattribute/
 categories:
   - UserAdminModule
   - ADFunctions

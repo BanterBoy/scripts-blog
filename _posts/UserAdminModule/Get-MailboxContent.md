@@ -2,7 +2,7 @@
 layout: post
 title: Get-MailboxContent.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-MailboxContent/
+permalink: /useradminmodule/exchange/get-mailboxcontent/
 categories:
   - UserAdminModule
   - Exchange

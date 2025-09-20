@@ -3,7 +3,7 @@ layout: post
 title: Copy-GroupMembership.ps1
 description: "Duplicates group memberships from a source Active Directory user to another account."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Copy-GroupMembership/
+permalink: /useradminmodule/adfunctions/copy-groupmembership/
 categories:
   - UserAdminModule
   - ADFunctions

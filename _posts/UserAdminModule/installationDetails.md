@@ -2,7 +2,7 @@
 layout: post
 title: installationDetails.txt
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/installationDetails/
+permalink: /useradminmodule/shell/installationdetails/
 categories:
   - UserAdminModule
   - Shell

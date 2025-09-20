@@ -2,7 +2,7 @@
 layout: post
 title: Remove-FoldersWithoutSpecifiedFiles.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Remove-FoldersWithoutSpecifiedFiles/
+permalink: /useradminmodule/fileoperations/remove-folderswithoutspecifiedfiles/
 categories:
   - UserAdminModule
   - FileOperations

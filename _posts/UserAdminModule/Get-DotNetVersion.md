@@ -2,7 +2,7 @@
 layout: post
 title: get-DotNetVersion.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/get-DotNetVersion/
+permalink: /useradminmodule/utilities/get-dotnetversion/
 categories:
   - UserAdminModule
   - Utilities

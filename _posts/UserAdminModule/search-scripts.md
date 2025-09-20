@@ -2,7 +2,7 @@
 layout: post
 title: Search-Scripts.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/search-scripts/
+permalink: /useradminmodule/fileoperations/search-scripts/
 categories:
   - UserAdminModule
   - FileOperations

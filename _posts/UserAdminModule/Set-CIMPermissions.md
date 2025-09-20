@@ -2,7 +2,7 @@
 layout: post
 title: Set-CIMPermissions.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-CIMPermissions/
+permalink: /useradminmodule/security/set-cimpermissions/
 categories:
   - UserAdminModule
   - Security

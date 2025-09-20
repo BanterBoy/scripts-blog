@@ -2,7 +2,7 @@
 layout: post
 title: Set-ADUserPassword.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-ADUserPassword/
+permalink: /useradminmodule/adfunctions/set-aduserpassword/
 categories:
   - UserAdminModule
   - ADFunctions

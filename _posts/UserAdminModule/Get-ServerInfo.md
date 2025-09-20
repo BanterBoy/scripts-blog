@@ -2,7 +2,7 @@
 layout: post
 title: Get-ServerInfo.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ServerInfo/
+permalink: /useradminmodule/virtualization/get-serverinfo/
 categories:
   - UserAdminModule
   - Virtualization

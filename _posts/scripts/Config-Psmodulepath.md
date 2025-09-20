@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Config-Psmodulepath.ps1
+permalink: /scripts/config-psmodulepath/
 ---
 
 - [Description](#description)

@@ -2,7 +2,7 @@
 layout: post
 title: Get-CurrentUserLogon.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-CurrentUserLogon/
+permalink: /useradminmodule/adfunctions/get-currentuserlogon/
 categories:
   - UserAdminModule
   - ADFunctions

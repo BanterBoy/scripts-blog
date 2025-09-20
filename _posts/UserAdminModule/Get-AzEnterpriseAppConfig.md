@@ -2,7 +2,7 @@
 layout: post
 title: Get-AzEnterpriseAppConfig.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-AzEnterpriseAppConfig/
+permalink: /useradminmodule/azure/get-azenterpriseappconfig/
 categories:
   - UserAdminModule
   - Azure

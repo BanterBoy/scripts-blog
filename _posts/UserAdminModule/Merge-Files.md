@@ -2,7 +2,7 @@
 layout: post
 title: Merge-Files.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Merge-Files/
+permalink: /useradminmodule/fileoperations/merge-files/
 categories:
   - UserAdminModule
   - FileOperations

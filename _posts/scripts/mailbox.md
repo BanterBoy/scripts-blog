@@ -1,6 +1,7 @@
 ---
 layout: post
 title: mailbox.ps1
+permalink: /scripts/mailbox/
 ---
 
 - [Description](#description)

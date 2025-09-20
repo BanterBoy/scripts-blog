@@ -2,7 +2,7 @@
 layout: post
 title: Sync-Office365ToADDS.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Sync-Office365ToADDS/
+permalink: /useradminmodule/adfunctions/sync-office365toadds/
 categories:
   - UserAdminModule
   - ADFunctions

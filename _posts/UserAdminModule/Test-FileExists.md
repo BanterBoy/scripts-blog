@@ -2,7 +2,7 @@
 layout: post
 title: Test-FileExists.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-FileExists/
+permalink: /useradminmodule/testing/test-fileexists/
 categories:
   - UserAdminModule
   - Testing

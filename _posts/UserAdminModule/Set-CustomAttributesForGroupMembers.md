@@ -2,7 +2,7 @@
 layout: post
 title: Set-CustomAttributesForGroupMembers.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-CustomAttributesForGroupMembers/
+permalink: /useradminmodule/adfunctions/set-customattributesforgroupmembers/
 categories:
   - UserAdminModule
   - ADFunctions

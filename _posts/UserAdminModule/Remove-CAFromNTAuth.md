@@ -2,7 +2,7 @@
 layout: post
 title: Remove-CAFromNTAuth.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Remove-CAFromNTAuth/
+permalink: /useradminmodule/pkicertificatetools/remove-cafromntauth/
 categories:
   - UserAdminModule
   - PKICertificateTools

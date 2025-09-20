@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-AllComputerAccounts.ps1
+permalink: /scripts/get-allcomputeraccounts/
 ---
 
 - [Description](#description)

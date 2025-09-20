@@ -2,7 +2,7 @@
 layout: post
 title: Out-Excel.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Out-Excel/
+permalink: /useradminmodule/utilities/out-excel/
 categories:
   - UserAdminModule
   - Utilities

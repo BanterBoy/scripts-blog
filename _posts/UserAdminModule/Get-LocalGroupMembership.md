@@ -2,7 +2,7 @@
 layout: post
 title: Get-LocalGroupMembership.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-LocalGroupMembership/
+permalink: /useradminmodule/adfunctions/get-localgroupmembership/
 categories:
   - UserAdminModule
   - ADFunctions

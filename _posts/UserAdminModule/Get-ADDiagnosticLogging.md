@@ -2,7 +2,7 @@
 layout: post
 title: Get-ADDiagnosticLogging.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ADDiagnosticLogging/
+permalink: /useradminmodule/adfunctions/get-addiagnosticlogging/
 categories:
   - UserAdminModule
   - ADFunctions

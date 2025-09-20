@@ -2,7 +2,7 @@
 layout: post
 title: Set-FFMpegVideoSpeed.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-FFMpegVideoSpeed/
+permalink: /useradminmodule/mediamanagement/set-ffmpegvideospeed/
 categories:
   - UserAdminModule
   - MediaManagement

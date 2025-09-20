@@ -2,7 +2,7 @@
 layout: post
 title: Restart-Profile.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Restart-Profile/
+permalink: /useradminmodule/shell/restart-profile/
 categories:
   - UserAdminModule
   - Shell

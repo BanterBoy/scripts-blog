@@ -2,7 +2,7 @@
 layout: post
 title: Cleanup-TestFiles.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Cleanup-TestFiles/
+permalink: /useradminmodule/utilities/cleanup-testfiles/
 categories:
   - UserAdminModule
   - Utilities

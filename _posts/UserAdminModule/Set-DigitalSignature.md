@@ -2,7 +2,7 @@
 layout: post
 title: Set-DigitalSignature.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-DigitalSignature/
+permalink: /useradminmodule/certificateutilities/set-digitalsignature/
 categories:
   - UserAdminModule
   - CertificateUtilities

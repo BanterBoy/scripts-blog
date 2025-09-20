@@ -2,7 +2,7 @@
 layout: post
 title: Connect-Office365Services.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Connect-Office365Services/
+permalink: /useradminmodule/exchange/connect-office365services/
 categories:
   - UserAdminModule
   - Exchange

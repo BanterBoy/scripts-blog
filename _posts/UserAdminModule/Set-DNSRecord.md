@@ -2,7 +2,7 @@
 layout: post
 title: Set-DNSRecord.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-DNSRecord/
+permalink: /useradminmodule/utilities/set-dnsrecord/
 categories:
   - UserAdminModule
   - Utilities

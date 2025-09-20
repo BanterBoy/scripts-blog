@@ -2,7 +2,7 @@
 layout: post
 title: Get-RDPUserReport.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-RDPUserReport/
+permalink: /useradminmodule/remoteconnections/get-rdpuserreport/
 categories:
   - UserAdminModule
   - RemoteConnections

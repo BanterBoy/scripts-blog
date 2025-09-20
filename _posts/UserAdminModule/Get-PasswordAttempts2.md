@@ -2,7 +2,7 @@
 layout: post
 title: Get-PasswordAttempts2.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-PasswordAttempts2/
+permalink: /useradminmodule/security/get-passwordattempts2/
 categories:
   - UserAdminModule
   - Security

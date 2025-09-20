@@ -2,7 +2,7 @@
 layout: post
 title: Test-ProfileExists.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-ProfileExists/
+permalink: /useradminmodule/testing/test-profileexists/
 categories:
   - UserAdminModule
   - Testing

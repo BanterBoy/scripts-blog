@@ -2,7 +2,7 @@
 layout: post
 title: FSMOFunctions.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/FSMOFunctions/
+permalink: /useradminmodule/adfunctions/fsmofunctions/
 categories:
   - UserAdminModule
   - ADFunctions

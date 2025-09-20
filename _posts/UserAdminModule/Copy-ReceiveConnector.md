@@ -2,7 +2,7 @@
 layout: post
 title: Copy-ReceiveConnector.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Copy-ReceiveConnector/
+permalink: /useradminmodule/exchange/copy-receiveconnector/
 categories:
   - UserAdminModule
   - Exchange

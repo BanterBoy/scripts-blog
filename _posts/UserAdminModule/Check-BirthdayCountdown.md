@@ -2,7 +2,7 @@
 layout: post
 title: Check-BirthdayCountdown.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Check-BirthdayCountdown/
+permalink: /useradminmodule/shell/check-birthdaycountdown/
 categories:
   - UserAdminModule
   - Shell

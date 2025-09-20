@@ -2,7 +2,7 @@
 layout: post
 title: Get-OutlookAppointments.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-OutlookAppointments/
+permalink: /useradminmodule/shell/get-outlookappointments/
 categories:
   - UserAdminModule
   - Shell

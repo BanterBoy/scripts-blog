@@ -2,7 +2,7 @@
 layout: post
 title: Search-Google.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Search-Google/
+permalink: /useradminmodule/shell/search-google/
 categories:
   - UserAdminModule
   - Shell

@@ -2,7 +2,7 @@
 layout: post
 title: New-LogEvent.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-LogEvent/
+permalink: /useradminmodule/logging/new-logevent/
 categories:
   - UserAdminModule
   - Logging

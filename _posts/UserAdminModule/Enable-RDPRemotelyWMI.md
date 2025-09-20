@@ -2,7 +2,7 @@
 layout: post
 title: Enable-RDPRemotelyWMI.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Enable-RDPRemotelyWMI/
+permalink: /useradminmodule/remoteconnections/enable-rdpremotelywmi/
 categories:
   - UserAdminModule
   - RemoteConnections

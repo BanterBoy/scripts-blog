@@ -2,7 +2,7 @@
 layout: post
 title: Get-O365MailboxPermissions.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-O365MailboxPermissions/
+permalink: /useradminmodule/exchange/get-o365mailboxpermissions/
 categories:
   - UserAdminModule
   - Exchange

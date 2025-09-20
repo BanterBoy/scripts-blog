@@ -2,7 +2,7 @@
 layout: post
 title: Get-OldFiles.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-OldFiles/
+permalink: /useradminmodule/fileoperations/get-oldfiles/
 categories:
   - UserAdminModule
   - FileOperations

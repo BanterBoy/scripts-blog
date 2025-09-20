@@ -2,7 +2,7 @@
 layout: post
 title: Set-RunOnceRegKeys.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-RunOnceRegKeys/
+permalink: /useradminmodule/utilities/set-runonceregkeys/
 categories:
   - UserAdminModule
   - Utilities

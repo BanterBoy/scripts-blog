@@ -2,7 +2,7 @@
 layout: post
 title: Get-EnvPath.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-EnvPath/
+permalink: /useradminmodule/environmentmanagement/get-envpath/
 categories:
   - UserAdminModule
   - EnvironmentManagement

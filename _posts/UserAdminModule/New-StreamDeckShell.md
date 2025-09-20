@@ -2,7 +2,7 @@
 layout: post
 title: New-StreamDeckShell.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-StreamDeckShell/
+permalink: /useradminmodule/shell/new-streamdeckshell/
 categories:
   - UserAdminModule
   - Shell

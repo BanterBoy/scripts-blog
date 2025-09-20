@@ -2,7 +2,7 @@
 layout: post
 title: Install-RemoteCertificate.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Install-RemoteCertificate/
+permalink: /useradminmodule/certificateutilities/install-remotecertificate/
 categories:
   - UserAdminModule
   - CertificateUtilities

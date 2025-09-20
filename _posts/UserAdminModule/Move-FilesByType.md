@@ -2,7 +2,7 @@
 layout: post
 title: Move-FilesByType.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Move-FilesByType/
+permalink: /useradminmodule/utilities/move-filesbytype/
 categories:
   - UserAdminModule
   - Utilities

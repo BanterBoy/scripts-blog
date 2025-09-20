@@ -2,7 +2,7 @@
 layout: post
 title: Get-EmptyOUs.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-EmptyOUs/
+permalink: /useradminmodule/adfunctions/get-emptyous/
 categories:
   - UserAdminModule
   - ADFunctions

@@ -3,7 +3,7 @@ layout: post
 title: Blank-Page.ps1
 description: "Starter template for drafting new PowerShell script posts on the site."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Blank_Page/
+permalink: /useradminmodule/utilities/blank-page/
 categories:
   - UserAdminModule
   - Utilities

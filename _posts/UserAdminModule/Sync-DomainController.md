@@ -3,7 +3,7 @@ layout: post
 title: Sync-DomainController.ps1
 description: "Forces replication across domain controllers within a given domain."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Sync-DomainController/
+permalink: /useradminmodule/replication/sync-domaincontroller/
 categories:
   - UserAdminModule
   - Replication

@@ -2,7 +2,7 @@
 layout: post
 title: Get-ProductKey.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ProductKey/
+permalink: /useradminmodule/security/get-productkey/
 categories:
   - UserAdminModule
   - Security

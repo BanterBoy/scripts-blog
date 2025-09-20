@@ -2,7 +2,7 @@
 layout: post
 title: HomePowerShell_profile.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/HomePowerShell_profile/
+permalink: /useradminmodule/shell/homepowershell-profile/
 categories:
   - UserAdminModule
   - Shell

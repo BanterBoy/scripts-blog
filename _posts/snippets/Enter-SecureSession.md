@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Enter-SecureSession.ps1
+permalink: /snippets/enter-securesession/
 ---
 
 - [Description](#description)

@@ -2,7 +2,7 @@
 layout: post
 title: Get-ProfileFunctions.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ProfileFunctions/
+permalink: /useradminmodule/shell/get-profilefunctions/
 categories:
   - UserAdminModule
   - Shell

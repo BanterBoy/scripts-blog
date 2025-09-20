@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-CalendarPermissionsReport.ps1
+permalink: /scripts/get-calendarpermissionsreport/
 ---
 
 - [Description](#description)

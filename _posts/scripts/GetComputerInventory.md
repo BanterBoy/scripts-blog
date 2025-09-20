@@ -1,6 +1,7 @@
 ---
 layout: post
 title: GetComputerInventory.ps1
+permalink: /scripts/getcomputerinventory/
 ---
 
 - [Description](#description)

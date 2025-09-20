@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Worldtimeclock.ps1
+permalink: /scripts/worldtimeclock/
 ---
 
 - [Description](#description)

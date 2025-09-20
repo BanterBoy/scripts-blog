@@ -2,7 +2,7 @@
 layout: post
 title: Get-MessageTraceFiltered.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-MessageTraceFiltered/
+permalink: /useradminmodule/exchange/get-messagetracefiltered/
 categories:
   - UserAdminModule
   - Exchange

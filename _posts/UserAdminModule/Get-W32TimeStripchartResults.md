@@ -2,7 +2,7 @@
 layout: post
 title: Get-W32TimeStripchartResults.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-W32TimeStripchartResults/
+permalink: /useradminmodule/utilities/get-w32timestripchartresults/
 categories:
   - UserAdminModule
   - Utilities

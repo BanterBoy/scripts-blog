@@ -2,7 +2,7 @@
 layout: post
 title: Add-MemberToDistributionGroup.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Add-MemberToDistributionGroup/
+permalink: /useradminmodule/exchange/add-membertodistributiongroup/
 categories:
   - UserAdminModule
   - Exchange

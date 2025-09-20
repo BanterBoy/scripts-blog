@@ -2,7 +2,7 @@
 layout: post
 title: Invoke-CiscoSecureManagement.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Invoke-CiscoSecureManagement/
+permalink: /useradminmodule/security/invoke-ciscosecuremanagement/
 categories:
   - UserAdminModule
   - Security

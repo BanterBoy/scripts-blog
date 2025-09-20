@@ -1,6 +1,7 @@
 ---
 layout: post
 title: GenericHelpSnippet.ps1
+permalink: /snippets/generichelpsnippet/
 ---
 
 - [Description](#description)

@@ -2,7 +2,7 @@
 layout: post
 title: Get-RageQuitEvents.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-RageQuitEvents/
+permalink: /useradminmodule/shell/get-ragequitevents/
 categories:
   - UserAdminModule
   - Shell

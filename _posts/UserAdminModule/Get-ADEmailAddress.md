@@ -2,7 +2,7 @@
 layout: post
 title: Get-ADEmailAddress.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ADEmailAddress/
+permalink: /useradminmodule/adfunctions/get-ademailaddress/
 categories:
   - UserAdminModule
   - ADFunctions

@@ -2,7 +2,7 @@
 layout: post
 title: Update-MailContactDomain.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Update-MailContactDomain/
+permalink: /useradminmodule/exchange/update-mailcontactdomain/
 categories:
   - UserAdminModule
   - Exchange

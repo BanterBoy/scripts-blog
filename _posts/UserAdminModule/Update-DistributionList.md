@@ -2,7 +2,7 @@
 layout: post
 title: Update-DistributionList.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Update-DistributionList/
+permalink: /useradminmodule/exchange/update-distributionlist/
 categories:
   - UserAdminModule
   - Exchange

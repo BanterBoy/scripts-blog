@@ -2,7 +2,7 @@
 layout: post
 title: Initialize-EventLogging.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Initialize-EventLogging/
+permalink: /useradminmodule/logging/initialize-eventlogging/
 categories:
   - UserAdminModule
   - Logging

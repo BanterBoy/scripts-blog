@@ -2,7 +2,7 @@
 layout: post
 title: Preview-QuarantinedEmailMessage.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Preview-QuarantinedEmailMessage/
+permalink: /useradminmodule/exchange/preview-quarantinedemailmessage/
 categories:
   - UserAdminModule
   - Exchange

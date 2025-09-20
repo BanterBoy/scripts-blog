@@ -2,7 +2,7 @@
 layout: post
 title: Get-SysvolReplicationInfo.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-SysvolReplicationInfo/
+permalink: /useradminmodule/replication/get-sysvolreplicationinfo/
 categories:
   - UserAdminModule
   - Replication

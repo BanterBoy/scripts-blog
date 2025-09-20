@@ -2,7 +2,7 @@
 layout: post
 title: Add-EnvPath.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Add-EnvPath/
+permalink: /useradminmodule/environmentmanagement/add-envpath/
 categories:
   - UserAdminModule
   - EnvironmentManagement

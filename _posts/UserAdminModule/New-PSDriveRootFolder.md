@@ -2,7 +2,7 @@
 layout: post
 title: New-PSDriveRootFolder.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-PSDriveRootFolder/
+permalink: /useradminmodule/fileoperations/new-psdriverootfolder/
 categories:
   - UserAdminModule
   - FileOperations

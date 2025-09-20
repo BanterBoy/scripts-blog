@@ -2,7 +2,7 @@
 layout: post
 title: Get-WTFismyIP.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-WTFismyIP/
+permalink: /useradminmodule/network/get-wtfismyip/
 categories:
   - UserAdminModule
   - Network

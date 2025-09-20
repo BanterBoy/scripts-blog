@@ -2,7 +2,7 @@
 layout: post
 title: Convert-AzuretoOnPrem.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Convert-AzuretoOnPrem/
+permalink: /useradminmodule/azure/convert-azuretoonprem/
 categories:
   - UserAdminModule
   - Azure

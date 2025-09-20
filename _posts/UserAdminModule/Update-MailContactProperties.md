@@ -2,7 +2,7 @@
 layout: post
 title: Update-MailContactProperties.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Update-MailContactProperties/
+permalink: /useradminmodule/exchange/update-mailcontactproperties/
 categories:
   - UserAdminModule
   - Exchange

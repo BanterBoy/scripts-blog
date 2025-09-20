@@ -2,7 +2,7 @@
 layout: post
 title: Test-OpenPortsWitch.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-OpenPortsWitch/
+permalink: /useradminmodule/testing/test-openportswitch/
 categories:
   - UserAdminModule
   - Testing

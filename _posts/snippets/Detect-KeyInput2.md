@@ -1,6 +1,7 @@
-﻿---
+---
 layout: post
 title: Detect-KeyInput2.ps1
+permalink: /snippets/detect-keyinput2/
 ---
 
 - [Description](#description)

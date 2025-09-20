@@ -2,7 +2,7 @@
 layout: post
 title: Get-SSLlabsScore.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-SSLlabsScore/
+permalink: /useradminmodule/security/get-ssllabsscore/
 categories:
   - UserAdminModule
   - Security

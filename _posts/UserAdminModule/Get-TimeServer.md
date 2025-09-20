@@ -2,7 +2,7 @@
 layout: post
 title: Get-TimeServer.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-TimeServer/
+permalink: /useradminmodule/utilities/get-timeserver/
 categories:
   - UserAdminModule
   - Utilities

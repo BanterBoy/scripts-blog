@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Force-LoggedOnUsertoLogOff.ps1
+permalink: /scripts/force-loggedonusertologoff/
 ---
 
 - [Description](#description)

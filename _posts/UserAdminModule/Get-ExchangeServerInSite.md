@@ -3,7 +3,7 @@ layout: post
 title: Get-ExchangeServerInSite.ps1
 description: "Lists Exchange servers located in the current Active Directory site."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ExchangeServerInSite/
+permalink: /useradminmodule/exchange/get-exchangeserverinsite/
 categories:
   - UserAdminModule
   - Exchange

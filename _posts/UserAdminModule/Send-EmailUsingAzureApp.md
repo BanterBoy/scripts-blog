@@ -2,7 +2,7 @@
 layout: post
 title: Send-EmailUsingAzureApp.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Send-EmailUsingAzureApp/
+permalink: /useradminmodule/azure/send-emailusingazureapp/
 categories:
   - UserAdminModule
   - Azure

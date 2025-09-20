@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ExampleHTMLOutput.ps1
+permalink: /snippets/examplehtmloutput/
 ---
 
 - [Description](#description)

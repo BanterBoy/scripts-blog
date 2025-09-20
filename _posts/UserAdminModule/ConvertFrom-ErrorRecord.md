@@ -2,7 +2,7 @@
 layout: post
 title: ConvertFrom-ErrorRecord.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/ConvertFrom-ErrorRecord/
+permalink: /useradminmodule/utilities/convertfrom-errorrecord/
 categories:
   - UserAdminModule
   - Utilities

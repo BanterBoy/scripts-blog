@@ -2,7 +2,7 @@
 layout: post
 title: Get-ElevatedUsers.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ElevatedUsers/
+permalink: /useradminmodule/adfunctions/get-elevatedusers/
 categories:
   - UserAdminModule
   - ADFunctions

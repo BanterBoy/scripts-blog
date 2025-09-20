@@ -2,7 +2,7 @@
 layout: post
 title: Restore-Location.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Restore-Location/
+permalink: /useradminmodule/shell/restore-location/
 categories:
   - UserAdminModule
   - Shell

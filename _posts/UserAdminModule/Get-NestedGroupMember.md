@@ -2,7 +2,7 @@
 layout: post
 title: Get-NestedGroupMember.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-NestedGroupMember/
+permalink: /useradminmodule/adfunctions/get-nestedgroupmember/
 categories:
   - UserAdminModule
   - ADFunctions

@@ -2,7 +2,7 @@
 layout: post
 title: Get-Namespaces.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-Namespaces/
+permalink: /useradminmodule/security/get-namespaces/
 categories:
   - UserAdminModule
   - Security

@@ -2,7 +2,7 @@
 layout: post
 title: New-LocalRunOnceRegKey.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-LocalRunOnceRegKey/
+permalink: /useradminmodule/utilities/new-localrunonceregkey/
 categories:
   - UserAdminModule
   - Utilities

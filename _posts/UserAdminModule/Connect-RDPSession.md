@@ -2,7 +2,7 @@
 layout: post
 title: Connect-RDPSession.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Connect-RDPSession/
+permalink: /useradminmodule/remoteconnections/connect-rdpsession/
 categories:
   - UserAdminModule
   - RemoteConnections

@@ -2,7 +2,7 @@
 layout: post
 title: Stop-ProcessOnComputer.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Stop-ProcessOnComputer/
+permalink: /useradminmodule/processserviceschedules/stop-processoncomputer/
 categories:
   - UserAdminModule
   - ProcessServiceSchedules

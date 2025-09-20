@@ -2,7 +2,7 @@
 layout: post
 title: Get-UserMembership.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/get-usermembership/
+permalink: /useradminmodule/adfunctions/get-usermembership/
 categories:
   - UserAdminModule
   - ADFunctions

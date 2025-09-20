@@ -2,7 +2,7 @@
 layout: post
 title: Get-MullvadApiDetails.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-MullvadApiDetails/
+permalink: /useradminmodule/network/get-mullvadapidetails/
 categories:
   - UserAdminModule
   - Network

@@ -2,7 +2,7 @@
 layout: post
 title: Get-O365LastLogonTime.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-O365LastLogonTime/
+permalink: /useradminmodule/adfunctions/get-o365lastlogontime/
 categories:
   - UserAdminModule
   - ADFunctions

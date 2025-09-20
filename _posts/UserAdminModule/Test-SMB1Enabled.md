@@ -2,7 +2,7 @@
 layout: post
 title: Test-SMB1Enabled.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-SMB1Enabled/
+permalink: /useradminmodule/testing/test-smb1enabled/
 categories:
   - UserAdminModule
   - Testing

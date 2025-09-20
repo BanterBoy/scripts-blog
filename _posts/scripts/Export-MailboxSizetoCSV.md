@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Export-MailboxSizetoCSV.ps1
+permalink: /scripts/export-mailboxsizetocsv/
 ---
 
 - [Description](#description)

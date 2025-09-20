@@ -2,7 +2,7 @@
 layout: post
 title: New-CodeSigningCert.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-CodeSigningCert/
+permalink: /useradminmodule/certificateutilities/new-codesigningcert/
 categories:
   - UserAdminModule
   - CertificateUtilities

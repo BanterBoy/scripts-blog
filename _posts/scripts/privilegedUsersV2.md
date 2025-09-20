@@ -1,6 +1,7 @@
 ---
 layout: post
 title: privilegedUsersV2.ps1
+permalink: /scripts/privilegedusersv2/
 ---
 
 - [Description](#description)

@@ -2,7 +2,7 @@
 layout: post
 title: New-Greeting.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-Greeting/
+permalink: /useradminmodule/shell/new-greeting/
 categories:
   - UserAdminModule
   - Shell

@@ -2,7 +2,7 @@
 layout: post
 title: Search-RoadWorks.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Search-RoadWorks/
+permalink: /useradminmodule/utilities/search-roadworks/
 categories:
   - UserAdminModule
   - Utilities

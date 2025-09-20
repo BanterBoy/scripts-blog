@@ -2,7 +2,7 @@
 layout: post
 title: ExchangeFunctions.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/ExchangeFunctions/
+permalink: /useradminmodule/exchange/exchangefunctions/
 categories:
   - UserAdminModule
   - Exchange

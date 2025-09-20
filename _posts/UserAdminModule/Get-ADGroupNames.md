@@ -2,7 +2,7 @@
 layout: post
 title: Get-ADGroupNames.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ADGroupNames/
+permalink: /useradminmodule/adfunctions/get-adgroupnames/
 categories:
   - UserAdminModule
   - ADFunctions

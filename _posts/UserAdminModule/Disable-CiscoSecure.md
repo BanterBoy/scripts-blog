@@ -2,7 +2,7 @@
 layout: post
 title: Disable-CiscoSecure.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Disable-CiscoSecure/
+permalink: /useradminmodule/security/disable-ciscosecure/
 categories:
   - UserAdminModule
   - Security

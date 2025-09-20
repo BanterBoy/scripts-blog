@@ -2,7 +2,7 @@
 layout: post
 title: Get-RemoteScheduledTasks.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-RemoteScheduledTasks/
+permalink: /useradminmodule/processserviceschedules/get-remotescheduledtasks/
 categories:
   - UserAdminModule
   - ProcessServiceSchedules

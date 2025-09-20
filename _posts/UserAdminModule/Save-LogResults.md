@@ -2,7 +2,7 @@
 layout: post
 title: Save-LogResults.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Save-LogResults/
+permalink: /useradminmodule/utilities/save-logresults/
 categories:
   - UserAdminModule
   - Utilities

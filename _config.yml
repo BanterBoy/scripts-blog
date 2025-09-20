@@ -41,7 +41,7 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
 
 # Permalinks
-permalink: pretty
+permalink: /:categories/:title/
 paginate: 3
 
 # Setup

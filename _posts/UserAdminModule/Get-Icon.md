@@ -2,7 +2,7 @@
 layout: post
 title: Get-Icon.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-Icon/
+permalink: /useradminmodule/shell/get-icon/
 categories:
   - UserAdminModule
   - Shell

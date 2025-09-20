@@ -2,7 +2,7 @@
 layout: post
 title: Get-TopOUName.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-TopOUName/
+permalink: /useradminmodule/adfunctions/get-topouname/
 categories:
   - UserAdminModule
   - ADFunctions

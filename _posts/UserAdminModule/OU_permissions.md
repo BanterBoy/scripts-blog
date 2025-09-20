@@ -2,7 +2,7 @@
 layout: post
 title: OU_permissions.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/OU_permissions/
+permalink: /useradminmodule/adfunctions/ou-permissions/
 categories:
   - UserAdminModule
   - ADFunctions

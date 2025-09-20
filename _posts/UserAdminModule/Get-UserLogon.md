@@ -2,7 +2,7 @@
 layout: post
 title: Get-UserLogon.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-UserLogon/
+permalink: /useradminmodule/adfunctions/get-userlogon/
 categories:
   - UserAdminModule
   - ADFunctions

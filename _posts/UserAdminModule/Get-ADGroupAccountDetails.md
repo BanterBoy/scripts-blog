@@ -2,7 +2,7 @@
 layout: post
 title: Get-ADGroupAccountDetails.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ADGroupAccountDetails/
+permalink: /useradminmodule/adfunctions/get-adgroupaccountdetails/
 categories:
   - UserAdminModule
   - ADFunctions

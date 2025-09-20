@@ -2,7 +2,7 @@
 layout: post
 title: Get-MailboxPermissionsReport2.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-MailboxPermissionsReport2/
+permalink: /useradminmodule/exchange/get-mailboxpermissionsreport2/
 categories:
   - UserAdminModule
   - Exchange

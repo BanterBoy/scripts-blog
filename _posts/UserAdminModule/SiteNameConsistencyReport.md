@@ -2,7 +2,7 @@
 layout: post
 title: SiteNameConsistencyReport.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/SiteNameConsistencyReport/
+permalink: /useradminmodule/adfunctions/sitenameconsistencyreport/
 categories:
   - UserAdminModule
   - ADFunctions

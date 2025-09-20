@@ -2,7 +2,7 @@
 layout: post
 title: Find-Movies.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Find-Movies/
+permalink: /useradminmodule/mediamanagement/find-movies/
 categories:
   - UserAdminModule
   - MediaManagement

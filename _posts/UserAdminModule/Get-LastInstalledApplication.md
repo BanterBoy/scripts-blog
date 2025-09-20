@@ -2,7 +2,7 @@
 layout: post
 title: Get-LastInstalledApplication.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-LastInstalledApplication/
+permalink: /useradminmodule/utilities/get-lastinstalledapplication/
 categories:
   - UserAdminModule
   - Utilities

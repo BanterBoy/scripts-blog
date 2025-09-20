@@ -2,7 +2,7 @@
 layout: post
 title: zipArchiveTool_recursive.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/zipArchiveTool_recursive/
+permalink: /useradminmodule/fileoperations/ziparchivetool-recursive/
 categories:
   - UserAdminModule
   - FileOperations

@@ -2,7 +2,7 @@
 layout: post
 title: Get-RemoteServerPorts.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-RemoteServerPorts/
+permalink: /useradminmodule/network/get-remoteserverports/
 categories:
   - UserAdminModule
   - Network

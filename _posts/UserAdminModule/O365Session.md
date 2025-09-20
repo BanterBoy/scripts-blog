@@ -2,7 +2,7 @@
 layout: post
 title: O365Session.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/O365Session/
+permalink: /useradminmodule/exchange/o365session/
 categories:
   - UserAdminModule
   - Exchange

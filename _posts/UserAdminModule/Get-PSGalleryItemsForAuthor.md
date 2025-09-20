@@ -2,7 +2,7 @@
 layout: post
 title: Get-PSGalleryItemsForAuthor.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-PSGalleryItemsForAuthor/
+permalink: /useradminmodule/security/get-psgalleryitemsforauthor/
 categories:
   - UserAdminModule
   - Security

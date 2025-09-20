@@ -2,7 +2,7 @@
 layout: post
 title: Get-WhoIsInformation.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-WhoIsInformation/
+permalink: /useradminmodule/network/get-whoisinformation/
 categories:
   - UserAdminModule
   - Network

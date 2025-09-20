@@ -2,7 +2,7 @@
 layout: post
 title: Get-VMInfoCustom.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-VMInfoCustom/
+permalink: /useradminmodule/virtualization/get-vminfocustom/
 categories:
   - UserAdminModule
   - Virtualization

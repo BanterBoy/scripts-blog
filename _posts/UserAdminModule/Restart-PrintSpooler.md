@@ -2,7 +2,7 @@
 layout: post
 title: Restart-PrintSpooler.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Restart-PrintSpooler/
+permalink: /useradminmodule/processserviceschedules/restart-printspooler/
 categories:
   - UserAdminModule
   - ProcessServiceSchedules

@@ -2,7 +2,7 @@
 layout: post
 title: parse_NTFS.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/parse_NTFS/
+permalink: /useradminmodule/fileoperations/parse-ntfs/
 categories:
   - UserAdminModule
   - FileOperations
