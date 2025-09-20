@@ -329,6 +329,8 @@ Browse the categories below to explore the reorganised toolkit, open each functi
 | MediaManagement | Function |
 | :----------- | :-------------------------------------------------------------- |
 | Category | [Create-VLCPlaylists](/_posts/UserAdminModule/Create-VLCPlaylists/) |
+| Category | [FFMpeg-Install](/_posts/UserAdminModule/FFMpeg-Install/) |
+| Category | [FFMpegFunctions](/_posts/UserAdminModule/FFMpegFunctions/) |
 | Category | [Find-Movies](/_posts/UserAdminModule/Find-Movies/) |
 | Category | [Set-TransmissionDefaultSettings](/_posts/UserAdminModule/Set-TransmissionDefaultSettings/) |
 
