@@ -29,7 +29,7 @@ steps:
   displayName: 'List generated site contents'
 
 - powershell: |
-    $root = "$(Build.SourcesDirectory)\_site"
+    $root = "$(Build.SourcesDirectory)/_site"
     if (-not (Test-Path $root)) { throw "_site not found" }
     $css = Get-ChildItem $root -Recurse -Include *.css | Sort-Object Length -Descending | Select-Object -First 1
     if (-not $css -or $css.Length -lt 1024) { throw "CSS missing or too small" }
