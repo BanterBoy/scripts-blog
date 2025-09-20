@@ -1,6 +1,0 @@
-# Extra configuration used when building the search index with
-# `bundle exec jekyll algolia --config _config.yml,_config.algolia.yml`.
-# Keeping the plugin separate ensures GitHub Pages can build the site with
-# its supported gem set while still allowing the Algolia indexer locally.
-plugins:
-  - jekyll-algolia
