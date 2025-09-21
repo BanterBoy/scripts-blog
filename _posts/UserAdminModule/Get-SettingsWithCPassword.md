@@ -210,7 +210,7 @@ else {
 <#
 Example usage (assumes that the system drive is C)
 
-.\Get-SettingsWithCPassword.ps1 –path “C:\Windows\SYSVOL\domain” | Format-List
+.\Get-SettingsWithCPassword.ps1 –path "C:\Windows\SYSVOL\domain" | Format-List
 
 Note Be aware that you can also target any backup GPO for the path instead of the domain.
 
@@ -220,7 +220,7 @@ insert graphic
 
 For longer lists, consider saving the output to a file:
 
-.\Get-SettingsWithCPassword.ps1 –path “C:\Windows\SYSVOL\domain” | ConvertTo-Html > gpps.html
+.\Get-SettingsWithCPassword.ps1 –path "C:\Windows\SYSVOL\domain" | ConvertTo-Html > gpps.html
 #>
 ```
 
@@ -262,3 +262,4 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
+

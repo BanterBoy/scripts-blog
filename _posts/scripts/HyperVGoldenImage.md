@@ -114,8 +114,8 @@ Start-VM -Name $DCVMName
 
 # After the inital provisioning, we wait until PowerShell Direct is functional and working within the guest VM before moving on.
 # Big thanks to Ben Armstrong for the below useful Wait code
-Write-Verbose “Waiting for PowerShell Direct to start on VM [$DCVMName]” -Verbose
-while ((Invoke-Command -VMName $DCVMName -Credential $DCLocalCredential { “Test” } -ea SilentlyContinue) -ne “Test”) { Start-Sleep -Seconds 1 }
+Write-Verbose "Waiting for PowerShell Direct to start on VM [$DCVMName]" -Verbose
+while ((Invoke-Command -VMName $DCVMName -Credential $DCLocalCredential { "Test" } -ea SilentlyContinue) -ne "Test") { Start-Sleep -Seconds 1 }
 
 Write-Verbose "PowerShell Direct responding on VM [$DCVMName]. Moving On...." -Verbose
 
@@ -138,8 +138,8 @@ Write-Verbose "Rebooting VM [$DCVMName] for hostname change to take effect" -Ver
 Stop-VM -Name $DCVMName
 Start-VM -Name $DCVMName
 
-Write-Verbose “Waiting for PowerShell Direct to start on VM [$DCVMName]” -Verbose
-while ((Invoke-Command -VMName $DCVMName -Credential $DomainCredential { “Test” } -ea SilentlyContinue) -ne “Test”) { Start-Sleep -Seconds 1 }
+Write-Verbose "Waiting for PowerShell Direct to start on VM [$DCVMName]" -Verbose
+while ((Invoke-Command -VMName $DCVMName -Credential $DomainCredential { "Test" } -ea SilentlyContinue) -ne "Test") { Start-Sleep -Seconds 1 }
 
 Write-Verbose "PowerShell Direct responding on VM [$DCVMName]. Moving On...." -Verbose
 
@@ -156,8 +156,8 @@ Write-Verbose "Rebooting VM [$DCVMName] to complete installation of new AD Fores
 Stop-VM -Name $DCVMName
 Start-VM -Name $DCVMName
 
-Write-Verbose “Waiting for PowerShell Direct to start on VM [$DCVMName]” -Verbose
-while ((Invoke-Command -VMName $DCVMName -Credential $DomainCredential { “Test” } -ea SilentlyContinue) -ne “Test”) { Start-Sleep -Seconds 1 }
+Write-Verbose "Waiting for PowerShell Direct to start on VM [$DCVMName]" -Verbose
+while ((Invoke-Command -VMName $DCVMName -Credential $DomainCredential { "Test" } -ea SilentlyContinue) -ne "Test") { Start-Sleep -Seconds 1 }
 
 Write-Verbose "PowerShell Direct responding on VM [$DCVMName]. Moving On...." -Verbose
 
@@ -201,8 +201,8 @@ Start-VM -Name $FSVMName
 
 # After the inital provisioning, we wait until the PowerShell Direct is functional and working within the guest VM before moving on.
 # Big thanks to Ben Armstrong for the below useful Wait code
-Write-Verbose “Waiting for PowerShell Direct to start on VM [$FSVMName]” -Verbose
-while ((Invoke-Command -VMName $FSVMName -Credential $FSLocalCredential { “Test” } -ea SilentlyContinue) -ne “Test”) { Start-Sleep -Seconds 1 }
+Write-Verbose "Waiting for PowerShell Direct to start on VM [$FSVMName]" -Verbose
+while ((Invoke-Command -VMName $FSVMName -Credential $FSLocalCredential { "Test" } -ea SilentlyContinue) -ne "Test") { Start-Sleep -Seconds 1 }
 
 Write-Verbose "PowerShell Direct responding on VM [$FSVMName]. Moving On...." -Verbose
 
@@ -226,8 +226,8 @@ Write-Verbose "Rebooting VM [$FSVMName] for hostname change to take effect" -Ver
 Stop-VM -Name $FSVMName
 Start-VM -Name $FSVMName
 
-Write-Verbose “Waiting for PowerShell Direct to start on VM [$FSVMName]” -Verbose
-while ((Invoke-Command -VMName $FSVMName -Credential $FSLocalCredential { “Test” } -ea SilentlyContinue) -ne “Test”) { Start-Sleep -Seconds 1 }
+Write-Verbose "Waiting for PowerShell Direct to start on VM [$FSVMName]" -Verbose
+while ((Invoke-Command -VMName $FSVMName -Credential $FSLocalCredential { "Test" } -ea SilentlyContinue) -ne "Test") { Start-Sleep -Seconds 1 }
 
 Write-Verbose "PowerShell Direct responding on VM [$FSVMName]. Moving On...." -Verbose
 
@@ -244,8 +244,8 @@ Write-Verbose "Initiating Reboot of VM [$FSVMName] to complete domain join to do
 Stop-VM -Name $FSVMName
 Start-VM -Name $FSVMName
 
-Write-Verbose “Waiting for PowerShell Direct to start on VM [$FSVMName]” -Verbose
-while ((Invoke-Command -VMName $FSVMName -Credential $DomainCredential { “Test” } -ea SilentlyContinue) -ne “Test”) { Start-Sleep -Seconds 1 }
+Write-Verbose "Waiting for PowerShell Direct to start on VM [$FSVMName]" -Verbose
+while ((Invoke-Command -VMName $FSVMName -Credential $DomainCredential { "Test" } -ea SilentlyContinue) -ne "Test") { Start-Sleep -Seconds 1 }
 
 Write-Verbose "PowerShell Direct responding on VM [$FSVMName]. Moving On...." -Verbose
 
@@ -304,3 +304,4 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
+

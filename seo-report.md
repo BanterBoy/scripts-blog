@@ -16,7 +16,7 @@
 
 ## Discovery & Crawlability
 
-- `robots.txt` now follows Google’s recommended syntax and advertises `https://scripts.lukeleigh.com/sitemap.xml`.
+- `robots.txt` now follows Google's recommended syntax and advertises `https://scripts.lukeleigh.com/sitemap.xml`.
 - `jekyll-sitemap` remains enabled; CI verifies `_site/sitemap.xml` is generated and extracts 834 canonical URLs.
 - Added a reusable `build/seo-checks.rb` script that spins up a local WEBrick server to confirm all canonical URLs resolve with HTTP 200 and that no meta refresh directives ship.
 
@@ -67,7 +67,7 @@ The sitemap continues to list canonical, indexable URLs only (834 entries in the
 ## Google Search Console Recommendations
 
 1. Verify the property for `https://scripts.lukeleigh.com/` (Domain property if available).
-2. Navigate to **Index → Sitemaps** and submit `https://scripts.lukeleigh.com/sitemap.xml`. Confirm Google reports the submission as “Success”.
+2. Navigate to **Index → Sitemaps** and submit `https://scripts.lukeleigh.com/sitemap.xml`. Confirm Google reports the submission as "Success".
 3. Use **URL Inspection** on key templates:
    - `https://scripts.lukeleigh.com/`
    - `https://scripts.lukeleigh.com/menu/_pages/scripts.html`
@@ -79,3 +79,5 @@ The sitemap continues to list canonical, indexable URLs only (834 entries in the
 
 - Latest local run: 834 URLs in sitemap, 832 HTML documents scanned, 0 canonical HTTP errors, and 0 unexpected `noindex` pages (see `seo-checks.json`).
 - CI artifacts `seo-reports/seo-checks.json` and `seo-reports/lychee-report.json` retain machine-readable outputs for each build.
+
+

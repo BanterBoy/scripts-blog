@@ -3,7 +3,7 @@ layout: post
 title: Enter-O365Session.ps1
 date: 2025-09-19
 last_modified_at: "2025-09-20 00:00:00"
-permalink: /_posts/scripts/Enter-O365Session/
+permalink: /useradminmodule/exchange/enter-o365session/
 ---
 
 - [Description](#description)

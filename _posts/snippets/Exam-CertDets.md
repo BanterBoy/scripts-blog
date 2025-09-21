@@ -55,7 +55,7 @@ Examining Certificate Details
 
 All Versions
 
-If you’d like to examine and view the details of a certificate file without the need to import it into your certificate store, here is a simple example:
+If you'd like to examine and view the details of a certificate file without the need to import it into your certificate store, here is a simple example:
 #>
 
 [CmdletBinding()]
@@ -90,7 +90,7 @@ Examining Certificate Details
 
 All Versions
 
-If you’d like to examine and view the details of a certificate file without the need to import it into your certificate store, here is a simple example:
+If you'd like to examine and view the details of a certificate file without the need to import it into your certificate store, here is a simple example:
 #>
 
 # replace path with actual path to CER file
@@ -141,3 +141,4 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
+

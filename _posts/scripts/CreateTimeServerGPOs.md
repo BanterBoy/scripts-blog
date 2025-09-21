@@ -3,7 +3,7 @@ layout: post
 title: CreateTimeServerGPOs.ps1
 date: 2025-09-19
 last_modified_at: "2025-09-20 00:00:00"
-permalink: /_posts/scripts/CreateTimeServerGPOs/
+permalink: /useradminmodule/adfunctions/createtimeservergpos/
 ---
 
 - [Description](#description)

@@ -3,7 +3,7 @@ layout: post
 title: Remove-MailboxFolderPermissions.ps1
 date: 2025-09-19
 last_modified_at: "2025-09-20 00:00:00"
-permalink: /_posts/scripts/Remove-MailboxFolderPermissions/
+permalink: /useradminmodule/exchange/remove-mailboxfolderpermissions/
 ---
 
 - [Description](#description)
@@ -135,7 +135,7 @@ $mailboxfolders = @(Get-MailboxFolderStatistics $Mailbox | Where-Object { !($exc
 foreach ($mailboxfolder in $mailboxfolders) {
     $folder = $mailboxfolder.FolderPath.Replace("/", "\")
     if ($folder -match "Top of Information Store") {
-        $folder = $folder.Replace(“\Top of Information Store”, ”\”)
+        $folder = $folder.Replace("\Top of Information Store", "\")
     }
     $identity = "$($mailbox):$folder"
     Write-Host "Checking $identity for permissions for user $user"
@@ -194,4 +194,5 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
+
 

@@ -68,7 +68,7 @@ function Count-NTDS {
 
 	$NTDSSize = (Get-Item $NTDSPath).length
 	$NTDSSize = ($NTDSSize / 1MB)
-	$NTDSSize = “{0:N2}” -f $NTDSSize + " MB"
+	$NTDSSize = "{0:N2}" -f $NTDSSize + " MB"
 
 	write-output $NTDSSize
 }
@@ -83,7 +83,7 @@ function Count-SysVol {
 
 	$SysVolSize = Get-ChildItem $SysVolFolder -Recurse | Measure-Object -Property Length -Sum
 	$SysVolSize = ($SysVolSize.sum / 1MB)
-	$SysVolSize = “{0:N2}” -f $SysVolSize + " MB"
+	$SysVolSize = "{0:N2}" -f $SysVolSize + " MB"
 
 	write-output $SysVolSize
 }
@@ -710,3 +710,4 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
+

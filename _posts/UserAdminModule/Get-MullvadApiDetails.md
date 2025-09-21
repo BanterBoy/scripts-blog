@@ -21,11 +21,11 @@ permalink: /useradminmodule/network/get-mullvadapidetails/
 
 #### Purpose
 
-Queries Mullvad’s public status API.
+Queries Mullvad's public status API.
 
 #### Detailed Description
 
-Get-MullvadApiDetails sends a GET request to https://am.i.mullvad.net/<Endpoint> and returns: • connected – a user-friendly status message (e.g. “You are not connected to Mullvad. Your IP address is …”) • ip        – your current public IP address as a string • city      – the city of the exit node • country   – the country of the exit node • json      – a PSCustomObject with all fields (ip, country, city, longitude, latitude, mullvad_exit_ip, blacklisted, results, organization)
+Get-MullvadApiDetails sends a GET request to https://am.i.mullvad.net/<Endpoint> and returns: • connected – a user-friendly status message (e.g. "You are not connected to Mullvad. Your IP address is …") • ip        – your current public IP address as a string • city      – the city of the exit node • country   – the country of the exit node • json      – a PSCustomObject with all fields (ip, country, city, longitude, latitude, mullvad_exit_ip, blacklisted, results, organization)
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -87,11 +87,11 @@ No additional notes.
 ```powershell
 <#
 .SYNOPSIS
-Queries Mullvad’s public status API.
+Queries Mullvad's public status API.
 
 .DESCRIPTION
 Get-MullvadApiDetails sends a GET request to https://am.i.mullvad.net/<Endpoint> and returns:
-  • connected – a user-friendly status message (e.g. “You are not connected to Mullvad. Your IP address is …”)  
+  • connected – a user-friendly status message (e.g. "You are not connected to Mullvad. Your IP address is …")  
   • ip        – your current public IP address as a string  
   • city      – the city of the exit node  
   • country   – the country of the exit node  
@@ -213,4 +213,6 @@ You can report an issue or contribute to this site on <a href="https://github.co
             Back to UserAdminModule
     </button>
 </a>
+
+
 

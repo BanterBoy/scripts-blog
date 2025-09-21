@@ -123,7 +123,7 @@ Process {
     # Process each ComputerName
     #---------------------------------------------------------------------
 
-    if (!($PSCmdlet.MyInvocation.BoundParameters[“Verbose”].IsPresent)) {
+    if (!($PSCmdlet.MyInvocation.BoundParameters["Verbose"].IsPresent)) {
         Write-Host "Processing $ComputerName"
     }
 
@@ -149,7 +149,7 @@ Process {
     }
 
     if ($bestping -eq "Unable to connect") {
-        if (!($PSCmdlet.MyInvocation.BoundParameters[“Verbose”].IsPresent)) {
+        if (!($PSCmdlet.MyInvocation.BoundParameters["Verbose"].IsPresent)) {
             Write-Host "Unable to connect to $ComputerName"
         }
 
@@ -511,3 +511,4 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
+

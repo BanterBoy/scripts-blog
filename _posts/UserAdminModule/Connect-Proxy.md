@@ -44,7 +44,7 @@ To improve the readability of this code, it could be helpful to add comments exp
 
 ```powershell
 $Wcl = new-object System.Net.WebClient
-$Wcl.Headers.Add(“user-agent”, “PowerShell Script”)
+$Wcl.Headers.Add("user-agent", "PowerShell Script")
 $Wcl.Proxy.Credentials = [System.Net.CredentialCache]::DefaultNetworkCredentials
 ```
 
@@ -86,3 +86,4 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
+

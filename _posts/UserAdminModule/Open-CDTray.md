@@ -40,7 +40,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 	Here is a fun little function that uses WMI to eject your CD drive.
 	It does so by first asking WMI for all CD drives. It then uses the
 	explorer object model to navigate to the drive and call its context
-	menu item “Eject”:
+	menu item "Eject":
 #>
 function Open-CDTray {
     $drives = Get-WmiObject Win32_Volume -Filter "DriveType=5"
@@ -93,3 +93,4 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
+

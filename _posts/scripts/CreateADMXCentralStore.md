@@ -3,7 +3,7 @@ layout: post
 title: CreateADMXCentralStore.ps1
 date: 2025-09-19
 last_modified_at: "2025-09-20 00:00:00"
-permalink: /_posts/scripts/CreateADMXCentralStore/
+permalink: /useradminmodule/adfunctions/createadmxcentralstore/
 ---
 
 - [Description](#description)
@@ -76,8 +76,8 @@ This PowerShell script will create the ADMX Central Store for you by copying the
 The script has 3 variables which you will need to configure:-
 
 - `$MasterReferenceLocation` – This is the location where you may store your ADMX master files, or 3rd party ADMX files. If you use a relative path, the script will prepend the script path to create an absolute path.
-- `$languages` – This is an array of languages you use so that we copy across the relevant ADML files, such as “en-us” for example. Setting this to an \* (asterix) will copy the ADML files from ALL language folders.
-- `$SourceServers` – This is an array of servers and workstations that you want to use to build the ADMX Central Store. They are typically the servers and workstations that contain the latest versions of ADMX files, as well as the customised and 3rd party ones you’re currently referencing in any GPOs.
+- `$languages` – This is an array of languages you use so that we copy across the relevant ADML files, such as "en-us" for example. Setting this to an \* (asterix) will copy the ADML files from ALL language folders.
+- `$SourceServers` – This is an array of servers and workstations that you want to use to build the ADMX Central Store. They are typically the servers and workstations that contain the latest versions of ADMX files, as well as the customised and 3rd party ones you're currently referencing in any GPOs.
 
 ---
 
@@ -417,4 +417,6 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
+
+
 

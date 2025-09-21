@@ -75,7 +75,7 @@ that You agree: (i) to not use Our name, logo, or trademarks to market Your
 software product in which the Sample Code is embedded; (ii) to include a valid
 copyright notice on Your software product in which the Sample Code is embedded;
 and (iii) to indemnify, hold harmless, and defend Us and Our suppliers from and
-against any claims or lawsuits, including attorneys’ fees, that arise or result
+against any claims or lawsuits, including attorneys' fees, that arise or result
 from the use or distribution of the Sample Code.
 
 This posting is provided "AS IS" with no warranties, and confers no rights. Use
@@ -234,3 +234,4 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
+

@@ -36,7 +36,7 @@ function Start-TaskList {
     $i = 0
     foreach ($phrase in $phrases) {
         $i++
-        Write-Progress -activity “Listing Commands” -status $phrase -PercentComplete (($i / $phrases.count) * 100)
+        Write-Progress -activity "Listing Commands" -status $phrase -PercentComplete (($i / $phrases.count) * 100)
         Start-Sleep -Seconds 5
     }
 }
@@ -80,3 +80,4 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
+

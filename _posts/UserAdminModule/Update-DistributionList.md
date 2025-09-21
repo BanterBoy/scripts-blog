@@ -21,7 +21,7 @@ permalink: /useradminmodule/exchange/update-distributionlist/
 
 #### Purpose
 
-Updates a distribution group by comparing a CSV file’s email list with the current distribution group members.
+Updates a distribution group by comparing a CSV file's email list with the current distribution group members.
 
 #### Detailed Description
 
@@ -71,7 +71,7 @@ Author: Luke Leigh Date: 21/05/2025
 ```powershell
 <#
 .SYNOPSIS
-Updates a distribution group by comparing a CSV file’s email list with the current distribution group members.
+Updates a distribution group by comparing a CSV file's email list with the current distribution group members.
 
 .DESCRIPTION
 The Update-DistributionList function imports email addresses from a CSV file and compares them with the members of a specified distribution group.
@@ -202,4 +202,5 @@ You can report an issue or contribute to this site on <a href="https://github.co
             Back to UserAdminModule
     </button>
 </a>
+
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: New-dummyFile.ps1
-permalink: /_posts/scripts/New-dummyFile/
+permalink: /useradminmodule/fileoperations/new-dummyfile/
 ---
 
 - [Description](#description)
@@ -35,7 +35,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 ```powershell
 <# File System Stress Test
 All Versions
-This can be used to generate  large files for stress test purposes, you don’t have to waste time pumping data into a file to make it grow. Instead, simply set the desired file size to reserve the space on disk.
+This can be used to generate  large files for stress test purposes, you don't have to waste time pumping data into a file to make it grow. Instead, simply set the desired file size to reserve the space on disk.
 This creates a 1GB test file:
 #>
 # Create a secure string for the password
@@ -105,3 +105,4 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
+

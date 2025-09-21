@@ -25,7 +25,7 @@ Retrieves PKI certificates from one or more specified computers.
 
 #### Detailed Description
 
-This function retrieves PKI certificates from the local machine’s certificate store on one or more specified computers. Optionally, it can filter the certificates by issuer or by certificate status/type (Active, Issued, Dependencies, or Expired). In addition, the function outputs extended certificate details for enhanced PKI analysis.
+This function retrieves PKI certificates from the local machine's certificate store on one or more specified computers. Optionally, it can filter the certificates by issuer or by certificate status/type (Active, Issued, Dependencies, or Expired). In addition, the function outputs extended certificate details for enhanced PKI analysis.
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -74,7 +74,7 @@ Author: Your Name Date: Today's Date
     Retrieves PKI certificates from one or more specified computers.
 
 .DESCRIPTION
-    This function retrieves PKI certificates from the local machine’s certificate store on one or more specified computers.
+    This function retrieves PKI certificates from the local machine's certificate store on one or more specified computers.
     Optionally, it can filter the certificates by issuer or by certificate status/type (Active, Issued, Dependencies, or Expired).
     In addition, the function outputs extended certificate details for enhanced PKI analysis.
 
@@ -257,4 +257,5 @@ You can report an issue or contribute to this site on <a href="https://github.co
             Back to UserAdminModule
     </button>
 </a>
+
 
