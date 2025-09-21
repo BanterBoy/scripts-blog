@@ -61,7 +61,8 @@ jobs:
         shell: pwsh
         run: ./build/Verify-CssLink.ps1 -SiteRoot "_site" -CssHint "hyde.css"
 
-      - name: Link check with Lychee (generated site)
+
+      - name: Link check with Lychee (sitemap)
         uses: lycheeverse/lychee-action@v2.0.2
         with:
           output: lychee-report.json
@@ -69,17 +70,6 @@ jobs:
             --no-progress
             --verbose
             --format json
-            --config .lychee.toml
-            _site
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Link check with Lychee (sitemap)
-        uses: lycheeverse/lychee-action@v2.0.2
-        with:
-          args: >-
-            --no-progress
-            --verbose
             --config .lychee.toml
             --sitemap "${{ steps.compute_base.outputs.full_base }}/sitemap.xml"
         env:
