@@ -1,12 +1,9 @@
 ---
 layout: post
 title: New-CountdownDate.ps1
-description: "Creates countdown objects that show days remaining until a specified date."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/New-CountdownDate/
-categories:
-  - UserAdminModule
-  - Shell
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shell/new-countdowndate/
 ---
 
 - [Description](#description)

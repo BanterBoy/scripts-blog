@@ -1,6 +1,16 @@
 ---
 layout: post
 title: Collect-ServerInfo.ps1
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /scripts/collect-serverinfo/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Collect Server Info
+description: PowerShell script for collect server info.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

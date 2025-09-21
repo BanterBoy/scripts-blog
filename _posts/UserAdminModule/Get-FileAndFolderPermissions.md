@@ -1,12 +1,9 @@
 ---
 layout: post
 title: Get-FileAndFolderPermissions.ps1
-description: "Reports NTFS permissions for files or folders with optional recursion."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-FileAndFolderPermissions/
-categories:
-  - UserAdminModule
-  - FileOperations
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/fileoperations/get-fileandfolderpermissions/
 ---
 
 - [Description](#description)

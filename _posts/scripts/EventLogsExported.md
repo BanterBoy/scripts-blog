@@ -1,6 +1,16 @@
 ---
 layout: post
 title: EventLogsExported.ps1
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /scripts/eventlogsexported/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Event Logs Exported
+description: PowerShell script for event logs exported.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

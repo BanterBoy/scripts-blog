@@ -1,6 +1,17 @@
 ---
 layout: post
 title: ADDS_Inventory.ps1
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /scripts/adds-inventory/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Active Directory Inventory
+- Active Directory
+description: PowerShell script for active directory inventory.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

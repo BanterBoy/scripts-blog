@@ -1,6 +1,16 @@
 ---
 layout: post
 title: Export-FilePermissions.ps1
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /scripts/export-filepermissions/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- File Permissions
+description: PowerShell script for file permissions.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

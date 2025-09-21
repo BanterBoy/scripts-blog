@@ -2,10 +2,8 @@
 layout: post
 title: Get-LockedOutUser.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-LockedOutUser/
-categories:
-  - UserAdminModule
-  - ADFunctions
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/adfunctions/get-lockedoutuser/
 ---
 
 - [Description](#description)

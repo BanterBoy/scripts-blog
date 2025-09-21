@@ -2,10 +2,8 @@
 layout: post
 title: Get-ProcessStatus.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ProcessStatus/
-categories:
-  - UserAdminModule
-  - ProcessServiceSchedules
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/processserviceschedules/get-processstatus/
 ---
 
 - [Description](#description)

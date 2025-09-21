@@ -2,10 +2,8 @@
 layout: post
 title: Get-IPConfig.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-IPConfig/
-categories:
-  - UserAdminModule
-  - Network
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/network/get-ipconfig/
 ---
 
 - [Description](#description)

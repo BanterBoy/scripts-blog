@@ -1,6 +1,16 @@
 ---
 layout: post
 title: Get-WindowsUpdatesInstalled.ps1
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /scripts/get-windowsupdatesinstalled/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Windows Updates Installed
+description: PowerShell script for windows updates installed.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

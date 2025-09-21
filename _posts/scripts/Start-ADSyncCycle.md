@@ -1,6 +1,17 @@
 ---
 layout: post
 title: Start-ADSyncCycle.ps1
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /scripts/start-adsynccycle/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Active Directory Sync Cycle
+- Active Directory
+description: PowerShell script for active directory sync cycle.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

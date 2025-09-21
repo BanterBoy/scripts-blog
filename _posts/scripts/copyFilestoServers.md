@@ -1,6 +1,16 @@
 ---
 layout: post
 title: copyFilestoServers.ps1
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /scripts/copyfilestoservers/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Filesto Servers
+description: PowerShell script for filesto servers.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

@@ -1,6 +1,16 @@
 ---
 layout: post
 title: EventsToEmail.ps1
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /scripts/eventstoemail/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Events To Email
+description: PowerShell script for events to email.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

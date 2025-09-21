@@ -1,6 +1,16 @@
 ---
 layout: post
 title: Get-AlternateMailboxes.ps1
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /scripts/get-alternatemailboxes/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Alternate Mailboxes
+description: PowerShell script for alternate mailboxes.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

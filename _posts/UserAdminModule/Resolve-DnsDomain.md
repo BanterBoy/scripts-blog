@@ -2,10 +2,8 @@
 layout: post
 title: Resolve-DnsDomain.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Resolve-DnsDomain/
-categories:
-  - UserAdminModule
-  - Network
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/network/resolve-dnsdomain/
 ---
 
 - [Description](#description)

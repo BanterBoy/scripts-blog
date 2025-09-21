@@ -1,6 +1,16 @@
-﻿---
+---
 layout: post
 title: AllSecurityProtocols.ps1
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /snippets/allsecurityprotocols/
+categories:
+- Snippets
+tags:
+- PowerShell
+- Snippets
+- All Security Protocols
+description: This PowerShell script sets the security protocols for a web request and then sends a request to the BBC website to retrieve its status code. The first line...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

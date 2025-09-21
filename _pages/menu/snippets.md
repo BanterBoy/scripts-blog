@@ -22,20 +22,20 @@ permalink: /menu/_pages/snippets.html
 
 | Section  | FileName                                                                     |
 | :------- | :--------------------------------------------------------------------------- |
-| snippets | [AllSecurityProtocols.ps1](/_posts/snippets/AllSecurityProtocols/)           |
-| snippets | [Cmdlet-API-Template.ps1](/_posts/snippets/Cmdlet-API-Template/)             |
-| snippets | [Detect-KeyInput.ps1](/_posts/snippets/Detect-KeyInput/)                     |
-| snippets | [Detect-KeyInput2.ps1](/_posts/snippets/Detect-KeyInput2/)                   |
-| snippets | [Detect-Keypress.ps1](/_posts/snippets/Detect-Keypress/)                     |
-| snippets | [Elevate-ScriptPermissions.ps1](/_posts/snippets/Elevate-ScriptPermissions/) |
-| snippets | [Enter-SecureSession.ps1](/_posts/snippets/Enter-SecureSession/)             |
-| snippets | [Exam-CertDets.ps1](/_posts/snippets/Exam-CertDets/)                         |
-| snippets | [ExampleHTMLOutput.ps1](/_posts/snippets/ExampleHTMLOutput/)                 |
-| snippets | [GenericHelpSnippet.ps1](/_posts/snippets/GenericHelpSnippet/)               |
-| snippets | [InvokeHTTPS-SSL.ps1](/_posts/snippets/InvokeHTTPS-SSL/)                     |
-| snippets | [PermissionsTest.ps1](/_posts/snippets/PermissionsTest/)                     |
-| snippets | [Run-RemoteScript.ps1](/_posts/snippets/Run-RemoteScript/)                   |
-| snippets | [SomeScriptFile.ps1](/_posts/snippets/SomeScriptFile/)                       |
+| snippets | [AllSecurityProtocols.ps1](/snippets/allsecurityprotocols/)           |
+| snippets | [Cmdlet-API-Template.ps1](/snippets/cmdlet-api-template/)             |
+| snippets | [Detect-KeyInput.ps1](/snippets/detect-keyinput/)                     |
+| snippets | [Detect-KeyInput2.ps1](/snippets/detect-keyinput2/)                   |
+| snippets | [Detect-Keypress.ps1](/snippets/detect-keypress/)                     |
+| snippets | [Elevate-ScriptPermissions.ps1](/snippets/elevate-scriptpermissions/) |
+| snippets | [Enter-SecureSession.ps1](/snippets/enter-securesession/)             |
+| snippets | [Exam-CertDets.ps1](/snippets/exam-certdets/)                         |
+| snippets | [ExampleHTMLOutput.ps1](/snippets/examplehtmloutput/)                 |
+| snippets | [GenericHelpSnippet.ps1](/snippets/generichelpsnippet/)               |
+| snippets | [InvokeHTTPS-SSL.ps1](/snippets/invokehttps-ssl/)                     |
+| snippets | [PermissionsTest.ps1](/snippets/permissionstest/)                     |
+| snippets | [Run-RemoteScript.ps1](/snippets/run-remotescript/)                   |
+| snippets | [SomeScriptFile.ps1](/snippets/somescriptfile/)                       |
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

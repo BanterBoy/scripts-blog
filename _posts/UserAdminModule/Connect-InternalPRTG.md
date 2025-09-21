@@ -2,10 +2,8 @@
 layout: post
 title: Connect-InternalPRTG.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Connect-InternalPRTG/
-categories:
-  - UserAdminModule
-  - RemoteConnections
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/remoteconnections/connect-internalprtg/
 ---
 
 - [Description](#description)

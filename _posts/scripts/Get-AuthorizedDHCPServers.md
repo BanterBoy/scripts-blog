@@ -1,6 +1,17 @@
 ---
 layout: post
 title: Get-AuthorizedDHCPServers.ps1
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /scripts/get-authorizeddhcpservers/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Authorized DHCP Servers
+- DHCP
+description: PowerShell script for authorized DHCP servers.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

@@ -2,10 +2,8 @@
 layout: post
 title: Manage-AzureADApp.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Manage-AzureADApp/
-categories:
-  - UserAdminModule
-  - Azure
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/azure/manage-azureadapp/
 ---
 
 - [Description](#description)

@@ -2,10 +2,8 @@
 layout: post
 title: FFMpegFunctions.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/FFMpegFunctions/
-categories:
-  - UserAdminModule
-  - MediaManagement
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/mediamanagement/ffmpegfunctions/
 ---
 
 - [Description](#description)
@@ -61,7 +59,7 @@ Speeds up the input video by 150% and saves the accelerated copy to the path you
 
 #### Notes
 
-- Requires FFmpeg/FFprobe binaries on the system path. Install them using [`FFMpeg-Install`](/_posts/UserAdminModule/FFMpeg-Install/) before running these helpers.
+- Requires FFmpeg/FFprobe binaries on the system path. Install them using [`FFMpeg-Install`](/useradminmodule/mediamanagement/ffmpeg-install/) before running these helpers.
 - `FFMpeg-RemoveVideoFileAudioStream` writes output files to an `ASR` subdirectory and leaves the originals untouched.
 - When processing multiple directories via the pipeline, the function automatically restores the original working directory after completion.
 - `FFMpeg-SpeedThatShitUp` adjusts both video and audio streams to maintain synchronisation at the requested speed.

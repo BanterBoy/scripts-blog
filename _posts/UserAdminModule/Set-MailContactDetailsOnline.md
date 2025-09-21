@@ -2,10 +2,8 @@
 layout: post
 title: Set-MailContactDetailsOnline.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-MailContactDetailsOnline/
-categories:
-  - UserAdminModule
-  - Exchange
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/exchange/set-mailcontactdetailsonline/
 ---
 
 - [Description](#description)

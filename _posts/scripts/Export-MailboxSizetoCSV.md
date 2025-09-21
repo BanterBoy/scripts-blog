@@ -1,6 +1,17 @@
 ---
 layout: post
 title: Export-MailboxSizetoCSV.ps1
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /scripts/export-mailboxsizetocsv/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Mailbox Sizeto CSV
+- CSV
+description: PowerShell script for mailbox sizeto CSV.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

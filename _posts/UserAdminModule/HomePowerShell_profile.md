@@ -2,10 +2,8 @@
 layout: post
 title: HomePowerShell_profile.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/HomePowerShell_profile/
-categories:
-  - UserAdminModule
-  - Shell
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shell/homepowershell-profile/
 ---
 
 - [Description](#description)

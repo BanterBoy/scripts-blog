@@ -2,10 +2,8 @@
 layout: post
 title: Test-DeathstarBackUp.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-DeathstarBackUp/
-categories:
-  - UserAdminModule
-  - Testing
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/testing/test-deathstarbackup/
 ---
 
 - [Description](#description)

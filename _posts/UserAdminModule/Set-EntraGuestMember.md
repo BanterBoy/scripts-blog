@@ -2,10 +2,8 @@
 layout: post
 title: Set-EntraGuestMember.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Set-EntraGuestMember/
-categories:
-  - UserAdminModule
-  - Azure
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/azure/set-entraguestmember/
 ---
 
 - [Description](#description)

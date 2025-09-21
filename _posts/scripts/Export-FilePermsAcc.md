@@ -1,6 +1,16 @@
 ---
 layout: post
 title: Export-FilePermsAcc.ps1
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /scripts/export-filepermsacc/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- File Perms Acc
+description: PowerShell script for file perms acc.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

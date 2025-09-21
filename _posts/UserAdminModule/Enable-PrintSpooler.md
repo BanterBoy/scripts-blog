@@ -2,10 +2,8 @@
 layout: post
 title: Enable-PrintSpooler.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Enable-PrintSpooler/
-categories:
-  - UserAdminModule
-  - PrintManagement
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/printmanagement/enable-printspooler/
 ---
 
 - [Description](#description)

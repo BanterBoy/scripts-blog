@@ -1,6 +1,16 @@
 ---
 layout: post
 title: Exch_AdminAuditReport.ps1
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /scripts/exch-adminauditreport/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Exch Admin Audit Report
+description: PowerShell script for exch admin audit report.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

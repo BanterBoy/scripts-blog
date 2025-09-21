@@ -2,10 +2,8 @@
 layout: post
 title: Repair-MissingOnPremMailbox.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Repair-MissingOnPremMailbox/
-categories:
-  - UserAdminModule
-  - Exchange
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/exchange/repair-missingonpremmailbox/
 ---
 
 - [Description](#description)

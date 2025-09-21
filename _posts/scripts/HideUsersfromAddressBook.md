@@ -1,6 +1,16 @@
 ---
 layout: post
 title: HideUsersfromAddressBook.ps1
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /scripts/hideusersfromaddressbook/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Hide Usersfrom Address Book
+description: PowerShell script for hide usersfrom address book.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

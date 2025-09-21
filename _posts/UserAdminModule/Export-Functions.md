@@ -2,10 +2,8 @@
 layout: post
 title: Export-Functions.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Export-Functions/
-categories:
-  - UserAdminModule
-  - Utilities
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/utilities/export-functions/
 ---
 
 - [Description](#description)

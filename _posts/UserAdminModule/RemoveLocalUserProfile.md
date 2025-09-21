@@ -2,10 +2,8 @@
 layout: post
 title: RemoveLocalUserProfile.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/RemoveLocalUserProfile/
-categories:
-  - UserAdminModule
-  - Utilities
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/utilities/removelocaluserprofile/
 ---
 
 - [Description](#description)
