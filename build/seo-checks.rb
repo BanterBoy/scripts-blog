@@ -58,11 +58,11 @@ html_files.each do |html_path|
   content = File.read(html_path, encoding: 'UTF-8', invalid: :replace, undef: :replace, replace: '')
 
   canonical_url = nil
-  if (content =~ /<link\s[^>]*rel=(['"])canonical\1[^>]*>/i)
-    tag = Regexp.last_match(0)
-    if (tag =~ /href=(['"])(.*?)\1/i)
-      canonical_url = Regexp.last_match(2).strip
-    end
+  # Find all <link ...> tags, then check for rel="canonical" and extract href
+  link_tags = content.scan(/<link[^>]*>/i)
+  tag = link_tags.find { |t| t =~ /\brel=['"]canonical['"]/i }
+  if tag && tag =~ /\bhref=['"]([^'"]+)['"]/i
+    canonical_url = $1.strip
   end
 
   noindex_flag = false
