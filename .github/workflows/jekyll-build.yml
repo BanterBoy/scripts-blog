@@ -39,7 +39,7 @@ jobs:
             --no-progress
             --format json
             --config .lychee.toml
-            --base "file://$${{ github.workspace }}/_site"
+            --base "file:///${{ github.workspace }}/_site"
             _site
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
