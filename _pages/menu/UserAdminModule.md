@@ -411,7 +411,7 @@ The FileOperations category offers a comprehensive suite of PowerShell functions
 | FileOperations | [Save-PasswordFile](/_posts/UserAdminModule/Save-PasswordFile/)                                     |
 | FileOperations | [Search-ForFiles](/_posts/UserAdminModule/Search-ForFiles/)                                         |
 | FileOperations | [search-scripts](/_posts/UserAdminModule/search-scripts/)                                           |
-| FileOperations | [Search-Scripts](/_posts/UserAdminModule/Search-Scripts/)                                           |
+| FileOperations | [Search-Scripts](/_posts/UserAdminModule/search-scripts/)                                           |
 | FileOperations | [Show-PSDrive](/_posts/UserAdminModule/Show-PSDrive/)                                               |
 | FileOperations | [Start-DownloadFileToTemp](/_posts/UserAdminModule/Start-DownloadFileToTemp/)                       |
 | FileOperations | [Unblock-AndUnzipFiles](/_posts/UserAdminModule/Unblock-AndUnzipFiles/)                             |
@@ -853,7 +853,7 @@ The Testing category contains PowerShell functions for system validation, connec
 | Testing  | [Test-DeathstarBackUp](/_posts/UserAdminModule/Test-DeathstarBackUp/)           |
 | Testing  | [Test-DisplayName](/_posts/UserAdminModule/Test-DisplayName/)                   |
 | Testing  | [test-dnsrecord](/_posts/UserAdminModule/test-dnsrecord/)                       |
-| Testing  | [Test-DNSRecord](/_posts/UserAdminModule/Test-DNSRecord/)                       |
+| Testing  | [Test-DNSRecord](/_posts/UserAdminModule/test-dnsrecord/)                       |
 | Testing  | [Test-DnsRecordEndpoints](/_posts/UserAdminModule/Test-DnsRecordEndpoints/)     |
 | Testing  | [Test-DomainMailRecords](/_posts/UserAdminModule/Test-DomainMailRecords/)       |
 | Testing  | [Test-EmailAddress](/_posts/UserAdminModule/Test-EmailAddress/)                 |
@@ -905,7 +905,7 @@ The Utilities category provides a collection of general-purpose PowerShell helpe
 | Utilities | [Get-ChuckNorrisJoke](/_posts/UserAdminModule/Get-ChuckNorrisJoke/)                   |
 | Utilities | [Get-CPUTemperature](/_posts/UserAdminModule/Get-CPUTemperature/)                     |
 | Utilities | [get-DotNetVersion](/_posts/UserAdminModule/get-DotNetVersion/)                       |
-| Utilities | [Get-DotNetVersion](/_posts/UserAdminModule/Get-DotNetVersion/)                       |
+| Utilities | [Get-DotNetVersion](/_posts/UserAdminModule/get-DotNetVersion/)                       |
 | Utilities | [Get-DownloadPercent](/_posts/UserAdminModule/Get-DownloadPercent/)                   |
 | Utilities | [Get-ErrorInfo](/_posts/UserAdminModule/Get-ErrorInfo/)                               |
 | Utilities | [Get-InfoBadService](/_posts/UserAdminModule/Get-InfoBadService/)                     |
