@@ -38,8 +38,8 @@ jobs:
           args: >-
             --no-progress
             --format json
-            --root-dir "${{ github.workspace }}/_site"
             --config .lychee.toml
+            --base https://scripts.lukeleigh.com
             _site
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -71,4 +71,3 @@ jobs:
         with:
           name: jekyll-site
           path: _site
-
