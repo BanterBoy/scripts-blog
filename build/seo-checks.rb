@@ -66,11 +66,19 @@ html_files.each do |html_path|
   end
 
   noindex_flag = false
-  if (content =~ /<meta\s[^>]*name=(['"])robots\1[^>]*content=(['"])(.*?)\2/i)
-    robots_value = Regexp.last_match(3).downcase
-    if robots_value.include?('noindex')
-      noindex_flag = true
-      noindex_pages << rel_path
+  # Find all <meta ...> tags
+  meta_tags = content.scan(/<meta[^>]*>/i)
+  meta_tags.each do |tag|
+    # Check if this meta tag is for robots
+    if tag =~ /\bname\s*=\s*(['"])robots\1/i
+      # Extract the content attribute value
+      if tag =~ /\bcontent\s*=\s*(['"])(.*?)\1/i
+        robots_value = Regexp.last_match(2).downcase
+        if robots_value.include?('noindex')
+          noindex_flag = true
+          noindex_pages << rel_path
+        end
+      end
     end
   end
 
