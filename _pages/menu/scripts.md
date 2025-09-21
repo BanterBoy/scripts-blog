@@ -21,10 +21,14 @@ permalink: /menu/_pages/scripts.html
 - [fileManagement](#filemanagement)
 - [information](#information)
 - [installScripts](#installscripts)
-- [miscellaneous](#miscellaneous)
 - [ping](#ping)
 - [time](#time)
 - [windowsUpdates](#windowsupdates)
+- [miscellaneous](#miscellaneous)
+- [network](#network)
+- [security](#security)
+- [testing](#testing)
+- [utilities](#utilities)
 
 ---
 
@@ -75,7 +79,7 @@ permalink: /menu/_pages/scripts.html
 | activeDirectory | [Get-dhcpscope.ps1](/scripts/get-dhcpscope/)                                                           |
 | activeDirectory | [Get-DHCPServers.ps1](/scripts/get-dhcpservers/)                                                       |
 | activeDirectory | [Get-GPOLogonScriptReport.ps1](/scripts/get-gpologonscriptreport/)                                     |
-| activeDirectory | [Get-GPProcessingTime.ps1](/useradminmodule/adfunctions/get-gpprocessingtime/)                                             |
+| activeDirectory | [Get-GPProcessingTime.ps1](/scripts/get-gpprocessingtime/)                                             |
 | activeDirectory | [Get-LastLogonToCSV.ps1](/scripts/get-lastlogontocsv/)                                                 |
 | activeDirectory | [Get-NoSettingsGPO.ps1](/scripts/get-nosettingsgpo/)                                                   |
 | activeDirectory | [Get-RODCPasswordRPs.ps1](/scripts/get-rodcpasswordrps/)                                               |
@@ -222,5 +226,101 @@ permalink: /menu/_pages/scripts.html
 | miscellaneous | [Update-DynamicDNSTemplate.ps1](/scripts/update-dynamicdnstemplate/) |
 | miscellaneous | [VMWareGoldenImage.ps1](/scripts/vmwaregoldenimage/)                 |
 | miscellaneous | [Write-MatrixMessage.ps1](/scripts/write-matrixmessage/)             |
+
+---
+
+## network
+
+| Section | FileName                                                                |
+| :------ | :----------------------------------------------------------------------- |
+| network | [Get-DKIMRecord.ps1](/scripts/get-dkimrecord/) |
+| network | [Get-DMARCRecord.ps1](/scripts/get-dmarcrecord/) |
+| network | [Get-FTPFile-empty.ps1](/scripts/get-ftpfile-empty/) |
+| network | [Get-IPConfig.ps1](/scripts/get-ipconfig/) |
+| network | [Get-PingMonitor.ps1](/scripts/get-pingmonitor/) |
+| network | [Get-PortInfo.ps1](/scripts/get-portinfo/) |
+| network | [Get-PublicDnsRecord.ps1](/scripts/get-publicdnsrecord/) |
+| network | [Get-SPFRecord.ps1](/scripts/get-spfrecord/) |
+| network | [Invoke-FTPUpload.ps1](/scripts/invoke-ftpupload/) |
+| network | [network packV3.ps1](/scripts/network-packv3/) |
+| network | [Resolve-DnsDomain.ps1](/scripts/resolve-dnsdomain/) |
+| network | [Resolve-DNSList.ps1](/scripts/resolve-dnslist/) |
+| network | [Resolve-DomainDNS.ps1](/scripts/resolve-domaindns/) |
+| network | [Test-DNSPropagation.ps1](/scripts/test-dnspropagation/) |
+
+---
+
+## security
+
+| Section | FileName                                                                |
+| :------ | :----------------------------------------------------------------------- |
+| security | [Export-Bitlocker.ps1](/scripts/export-bitlocker/) |
+| security | [Export-BitlockerComp.ps1](/scripts/export-bitlockercomp/) |
+| security | [Export-BitlockerParams.ps1](/scripts/export-bitlockerparams/) |
+| security | [Get-ProductKey.ps1](/scripts/get-productkey/) |
+| security | [Get-SettingsWithCPassword.ps1](/scripts/get-settingswithcpassword/) |
+| security | [Get-SSLlabsScore.ps1](/scripts/get-ssllabsscore/) |
+| security | [Get-UnknownDevices.ps1](/scripts/get-unknowndevices/) |
+| security | [Invoke-PasswordRoll.ps1](/scripts/invoke-passwordroll/) |
+| security | [Invoke-UrlScan.ps1](/scripts/invoke-urlscan/) |
+| security | [New-PassPhrase.ps1](/scripts/new-passphrase/) |
+| security | [New-Password.ps1](/scripts/new-password/) |
+| security | [PasswordFunctions.ps1](/scripts/passwordfunctions/) |
+| security | [ScreenPassword.ps1](/scripts/screenpassword/) |
+
+---
+
+## testing
+
+| Section | FileName                                                |
+| :------ | :------------------------------------------------------ |
+| testing | [Test-ComputerName.ps1](/scripts/test-computername/) |
+| testing | [Test-EmailAddress.ps1](/scripts/test-emailaddress/) |
+| testing | [Test-OnlineFast.ps1](/scripts/test-onlinefast/) |
+| testing | [Test-ServerExists.ps1](/scripts/test-serverexists/) |
+| testing | [Test-WebSiteUp.ps1](/scripts/test-websiteup/) |
+
+---
+
+## utilities
+
+| Section   | FileName                                                                  |
+| :-------- | :------------------------------------------------------------------------- |
+| utilities | [ConvertFrom-ErrorRecord.ps1](/scripts/convertfrom-errorrecord/) |
+| utilities | [ConvertObject-ToHashTable.ps1](/scripts/convertobject-tohashtable/) |
+| utilities | [Get-2amOfThirdMondayInMonth.ps1](/scripts/get-2amofthirdmondayinmonth/) |
+| utilities | [Get-ChuckNorrisJoke.ps1](/scripts/get-chucknorrisjoke/) |
+| utilities | [Get-CPUTemperature.ps1](/scripts/get-cputemperature/) |
+| utilities | [Get-DotNetVersion.ps1](/scripts/get-dotnetversion/) |
+| utilities | [Get-ErrorInfo.ps1](/scripts/get-errorinfo/) |
+| utilities | [Get-InfoBadService.ps1](/scripts/get-infobadservice/) |
+| utilities | [Get-InfoCompSystem.ps1](/scripts/get-infocompsystem/) |
+| utilities | [Get-InfoDisk.ps1](/scripts/get-infodisk/) |
+| utilities | [Get-InfoNIC.ps1](/scripts/get-infonic/) |
+| utilities | [Get-InfoOS.ps1](/scripts/get-infoos/) |
+| utilities | [Get-InfoProc.ps1](/scripts/get-infoproc/) |
+| utilities | [Get-InstalledUpdates.ps1](/scripts/get-installedupdates/) |
+| utilities | [Get-NTPStatusFromHost.ps1](/scripts/get-ntpstatusfromhost/) |
+| utilities | [Get-Ntptime.ps1](/scripts/get-ntptime/) |
+| utilities | [Get-PatchTuesday.ps1](/scripts/get-patchtuesday/) |
+| utilities | [Get-PendingReboot.ps1](/scripts/get-pendingreboot/) |
+| utilities | [Get-PendingUpdates.ps1](/scripts/get-pendingupdates/) |
+| utilities | [Get-RebootReport.ps1](/scripts/get-rebootreport/) |
+| utilities | [Get-RemoteTime.ps1](/scripts/get-remotetime/) |
+| utilities | [Get-Resources.ps1](/scripts/get-resources/) |
+| utilities | [Get-Time.ps1](/scripts/get-time/) |
+| utilities | [Get-TimeServer.ps1](/scripts/get-timeserver/) |
+| utilities | [Get-Uptime.ps1](/scripts/get-uptime/) |
+| utilities | [Get-WeekDayInMonth.ps1](/scripts/get-weekdayinmonth/) |
+| utilities | [GetWindowsFeatures.ps1](/scripts/getwindowsfeatures/) |
+| utilities | [Invoke-CDRomDrive.ps1](/scripts/invoke-cdromdrive/) |
+| utilities | [Invoke-WebrequestCookie.ps1](/scripts/invoke-webrequestcookie/) |
+| utilities | [Open-CDTray.ps1](/scripts/open-cdtray/) |
+| utilities | [Out-Excel.ps1](/scripts/out-excel/) |
+| utilities | [ProgressBar.ps1](/scripts/progressbar/) |
+| utilities | [Remove-UserProfile.ps1](/scripts/remove-userprofile/) |
+| utilities | [RemoveLocalUserProfile.ps1](/scripts/removelocaluserprofile/) |
+| utilities | [Search-RoadWorks.ps1](/scripts/search-roadworks/) |
+| utilities | [Start-WindowsUpdate.ps1](/scripts/start-windowsupdate/) |
 
 ---
