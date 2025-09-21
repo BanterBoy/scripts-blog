@@ -8,7 +8,13 @@ max_concurrency = 20
 
 # Skip repository README because it contains development-only links.
 exclude_path = [
-  "_site/README.md"
+  "README.md",
+  "_site/README.md",
+  "./_site/PowerShell/inProgress",
+  "./_site/PowerShell/scriptNotes",
+  "./_site/PowerShell/scriptAssets",
+  "PowerShell/inProgress",
+  "PowerShell/scriptNotes"
 ]
 
 # Ignore known external targets that are prone to false positives (rate limits,
@@ -29,3 +35,4 @@ exclude = [
   "https://raw.githubusercontent.com/MicrosoftDocs/Dynamics-365-Operations/master/template.md",
   "^https://www\\.linkedin\\.com/in/"
 ]
+

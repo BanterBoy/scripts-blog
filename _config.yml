@@ -27,7 +27,9 @@ exclude:
   - "tmp/"
   - "_drafts"
   - "_sass"
-
+  - "PowerShell/inProgress"
+  - "PowerShell/scriptNotes"
+  - "PowerShell/scriptAssets"
 # Markdown Processing
 markdown: kramdown
 highlighter: rouge
@@ -94,3 +96,4 @@ repository: scripts-blog/BanterBoy.github.io
 
 # Custom vars
 version: 2.0
+

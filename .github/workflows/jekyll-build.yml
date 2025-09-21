@@ -66,16 +66,15 @@ jobs:
       - name: Link check with Lychee (_site)
         uses: lycheeverse/lychee-action@v2.0.2
         with:
+          jobSummary: false
           output: lychee-report.json
           args: >-
             --no-progress
-            --verbose
             --format json
             --config .lychee.toml
             ./_site
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Run SEO guardrail checks
         run: |
           ruby build/seo-checks.rb --site ./_site --out ./seo-checks.json
@@ -103,3 +102,4 @@ jobs:
         with:
           name: jekyll-site
           path: _site
+
