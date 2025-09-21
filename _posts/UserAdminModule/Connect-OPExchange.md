@@ -2,20 +2,10 @@
 layout: post
 title: Connect-OPExchange.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Connect-OPExchange/
-categories:
-- UserAdminModule
-- Exchange
-tags:
-- PowerShell
-- User Admin Module
-- OP Exchange
-- Exchange
-- OP
-description: Connect-OPExchange - A function to connect to Exchange Server on premise.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/exchange/connect-opexchange/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

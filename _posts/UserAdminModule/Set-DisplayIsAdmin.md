@@ -2,19 +2,10 @@
 layout: post
 title: Set-DisplayIsAdmin.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Set-DisplayIsAdmin/
-categories:
-- UserAdminModule
-- Shell
-tags:
-- PowerShell
-- User Admin Module
-- Display Is Admin
-description: Sets the console window title to display the current user's username,
-  privileges, and current path.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shell/set-displayisadmin/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

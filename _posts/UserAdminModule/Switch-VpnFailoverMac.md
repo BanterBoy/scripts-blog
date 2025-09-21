@@ -2,19 +2,10 @@
 layout: post
 title: Switch-VpnFailoverMac.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Switch-VpnFailoverMac/
-categories:
-- UserAdminModule
-- Network
-tags:
-- PowerShell
-- User Admin Module
-- Switch VPN Failover Mac
-- VPN
-description: Switches the VPN client to failover or failback.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/network/switch-vpnfailovermac/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

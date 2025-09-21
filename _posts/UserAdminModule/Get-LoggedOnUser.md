@@ -2,18 +2,10 @@
 layout: post
 title: Get-LoggedOnUser.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-LoggedOnUser/
-categories:
-- UserAdminModule
-- ADFunctions
-tags:
-- PowerShell
-- User Admin Module
-- Logged On User
-description: PowerShell script for logged on user.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/adfunctions/get-loggedonuser/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

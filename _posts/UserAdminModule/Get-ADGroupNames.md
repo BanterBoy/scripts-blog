@@ -2,19 +2,10 @@
 layout: post
 title: Get-ADGroupNames.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-ADGroupNames/
-categories:
-- UserAdminModule
-- ADFunctions
-tags:
-- PowerShell
-- User Admin Module
-- Active Directory Group Names
-- Active Directory
-description: Extracts members of an Active Directory group based on the group name.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/adfunctions/get-adgroupnames/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

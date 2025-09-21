@@ -2,19 +2,10 @@
 layout: post
 title: Export-Bitlocker.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Export-Bitlocker/
-categories:
-- UserAdminModule
-- Security
-tags:
-- PowerShell
-- User Admin Module
-- Bitlocker
-- BitLocker
-description: PowerShell script for bitlocker.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/security/export-bitlocker/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

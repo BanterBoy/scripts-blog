@@ -2,19 +2,10 @@
 layout: post
 title: FSMOFunctions.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/FSMOFunctions/
-categories:
-- UserAdminModule
-- ADFunctions
-tags:
-- PowerShell
-- User Admin Module
-- FSMO Functions
-- FSMO
-description: PowerShell script for FSMO functions.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/adfunctions/fsmofunctions/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

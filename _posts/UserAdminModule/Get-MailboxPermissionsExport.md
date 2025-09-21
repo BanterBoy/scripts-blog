@@ -2,18 +2,10 @@
 layout: post
 title: Get-MailboxPermissionsExport.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-MailboxPermissionsExport/
-categories:
-- UserAdminModule
-- Exchange
-tags:
-- PowerShell
-- User Admin Module
-- Mailbox Permissions Export
-description: PowerShell script for mailbox permissions export.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/exchange/get-mailboxpermissionsexport/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

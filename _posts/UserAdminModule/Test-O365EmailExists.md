@@ -2,18 +2,10 @@
 layout: post
 title: Test-O365EmailExists.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Test-O365EmailExists/
-categories:
-- UserAdminModule
-- Testing
-tags:
-- PowerShell
-- User Admin Module
-- O 365 Email Exists
-description: Test-O365EmailExists - A function to
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/testing/test-o365emailexists/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

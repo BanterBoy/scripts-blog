@@ -2,19 +2,10 @@
 layout: post
 title: DisableADAccountsMenu.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/DisableADAccountsMenu/
-categories:
-- UserAdminModule
-- ADFunctions
-tags:
-- PowerShell
-- User Admin Module
-- Active Directory Accounts Menu
-- Active Directory
-description: Displays a menu to disable Active Directory user accounts.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/adfunctions/disableadaccountsmenu/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

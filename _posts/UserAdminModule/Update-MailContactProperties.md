@@ -2,19 +2,10 @@
 layout: post
 title: Update-MailContactProperties.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Update-MailContactProperties/
-categories:
-- UserAdminModule
-- Exchange
-tags:
-- PowerShell
-- User Admin Module
-- Mail Contact Properties
-description: Amend Name, DisplayName, and Alias properties for MailContacts with a
-  specified domain.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/exchange/update-mailcontactproperties/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

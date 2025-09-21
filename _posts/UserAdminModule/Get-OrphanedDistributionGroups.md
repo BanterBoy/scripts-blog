@@ -2,18 +2,10 @@
 layout: post
 title: Get-OrphanedDistributionGroups.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-OrphanedDistributionGroups/
-categories:
-- UserAdminModule
-- Exchange
-tags:
-- PowerShell
-- User Admin Module
-- Orphaned Distribution Groups
-description: Retrieves distribution groups that have no valid owners.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/exchange/get-orphaneddistributiongroups/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

@@ -2,19 +2,10 @@
 layout: post
 title: Get-LapsAndBitLocker.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-LapsAndBitLocker/
-categories:
-- UserAdminModule
-- ADFunctions
-tags:
-- PowerShell
-- User Admin Module
-- Laps And Bit Locker
-description: Retrieves LAPS (Local Administrator Password Solution) and BitLocker
-  recovery information for specified computers or all computers in the domain.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/adfunctions/get-lapsandbitlocker/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

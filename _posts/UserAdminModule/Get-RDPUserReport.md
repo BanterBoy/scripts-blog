@@ -2,19 +2,10 @@
 layout: post
 title: Get-RDPUserReport.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-RDPUserReport/
-categories:
-- UserAdminModule
-- RemoteConnections
-tags:
-- PowerShell
-- User Admin Module
-- RDP User Report
-- RDP
-description: Retrieves RDP session details from specified computers.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/remoteconnections/get-rdpuserreport/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

@@ -2,19 +2,10 @@
 layout: post
 title: Invoke-FTPUpload.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Invoke-FTPUpload/
-categories:
-- UserAdminModule
-- Network
-tags:
-- PowerShell
-- User Admin Module
-- FTP Upload
-- FTP
-description: PowerShell script for FTP upload.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/network/invoke-ftpupload/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

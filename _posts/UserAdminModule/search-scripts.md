@@ -2,18 +2,10 @@
 layout: post
 title: Search-Scripts.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/search-scripts/
-categories:
-- UserAdminModule
-- FileOperations
-tags:
-- PowerShell
-- User Admin Module
-- Scripts
-description: PowerShell script for scripts.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/fileoperations/search-scripts/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

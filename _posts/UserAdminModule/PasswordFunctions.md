@@ -2,18 +2,10 @@
 layout: post
 title: PasswordFunctions.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/PasswordFunctions/
-categories:
-- UserAdminModule
-- Security
-tags:
-- PowerShell
-- User Admin Module
-- Password Functions
-description: PowerShell script for password functions.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/security/passwordfunctions/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

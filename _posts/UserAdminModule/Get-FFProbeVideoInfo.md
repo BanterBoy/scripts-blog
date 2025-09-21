@@ -2,20 +2,10 @@
 layout: post
 title: Get-FFProbeVideoInfo.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-FFProbeVideoInfo/
-categories:
-- UserAdminModule
-- MediaManagement
-tags:
-- PowerShell
-- User Admin Module
-- FF Probe Video Info
-- FF
-description: Collect ffprobe metadata for video files and optionally return the audio
-  streams as structured objects.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/mediamanagement/get-ffprobevideoinfo/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)
@@ -70,7 +60,7 @@ Parses the ffprobe JSON response and returns audio stream objects instead of the
 #### Notes
 
 - Requires ffprobe from the FFmpeg suite to be accessible in the current environment.
-- When `-GetAudioStreams` is used, the function mirrors the output shape of [`Get-FFProbeAudioStreams`](/_posts/UserAdminModule/Get-FFProbeAudioStreams/), returning an object per audio track.
+- When `-GetAudioStreams` is used, the function mirrors the output shape of [`Get-FFProbeAudioStreams`](/useradminmodule/mediamanagement/get-ffprobeaudiostreams/), returning an object per audio track.
 - Omitting `-VideoFile` causes the function to enumerate every file in the specified directory, matching the behaviour of the original monolithic script.
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

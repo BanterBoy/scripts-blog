@@ -2,19 +2,10 @@
 layout: post
 title: Sync-DomainController.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Sync-DomainController/
-categories:
-- UserAdminModule
-- Replication
-tags:
-- PowerShell
-- User Admin Module
-- Domain Controller
-description: Forces Active Directory replication for all domain controllers in a specified
-  domain.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/replication/sync-domaincontroller/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

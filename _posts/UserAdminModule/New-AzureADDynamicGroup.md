@@ -2,20 +2,10 @@
 layout: post
 title: New-AzureADDynamicGroup.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/New-AzureADDynamicGroup/
-categories:
-- UserAdminModule
-- Azure
-tags:
-- PowerShell
-- User Admin Module
-- Azure Active Directory Dynamic Group
-- Active Directory
-- Azure
-description: Creates a new Azure AD dynamic group if it does not already exist.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/azure/new-azureaddynamicgroup/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

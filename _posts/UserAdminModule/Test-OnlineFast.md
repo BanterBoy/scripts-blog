@@ -2,18 +2,10 @@
 layout: post
 title: Test-OnlineFast.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Test-OnlineFast/
-categories:
-- UserAdminModule
-- Testing
-tags:
-- PowerShell
-- User Admin Module
-- Online Fast
-description: PowerShell script for online fast.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/testing/test-onlinefast/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

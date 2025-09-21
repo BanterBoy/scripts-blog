@@ -2,18 +2,10 @@
 layout: post
 title: Show-JekyllBlogSite.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Show-JekyllBlogSite/
-categories:
-- UserAdminModule
-- JekyllBlog
-tags:
-- PowerShell
-- User Admin Module
-- Jekyll Blog Site
-description: Opens the local Jekyll blog site in the default web browser.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/jekyllblog/show-jekyllblogsite/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

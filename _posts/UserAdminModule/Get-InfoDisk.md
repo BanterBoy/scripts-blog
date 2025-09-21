@@ -2,18 +2,10 @@
 layout: post
 title: Get-InfoDisk.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-InfoDisk/
-categories:
-- UserAdminModule
-- Utilities
-tags:
-- PowerShell
-- User Admin Module
-- Info Disk
-description: PowerShell script for info disk.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/utilities/get-infodisk/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

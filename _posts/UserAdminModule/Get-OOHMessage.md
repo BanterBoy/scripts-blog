@@ -2,20 +2,10 @@
 layout: post
 title: Get-OOHMessage.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-OOHMessage/
-categories:
-- UserAdminModule
-- Exchange
-tags:
-- PowerShell
-- User Admin Module
-- OOH Message
-- OOH
-description: Retrieves the current Out of Office (OOH) settings for a mailbox in Exchange
-  Online.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/exchange/get-oohmessage/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

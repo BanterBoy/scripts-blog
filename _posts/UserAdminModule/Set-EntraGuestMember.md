@@ -2,18 +2,10 @@
 layout: post
 title: Set-EntraGuestMember.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Set-EntraGuestMember/
-categories:
-- UserAdminModule
-- Azure
-tags:
-- PowerShell
-- User Admin Module
-- Entra Guest Member
-description: Updates details for guest user accounts in Microsoft Entra ID.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/azure/set-entraguestmember/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

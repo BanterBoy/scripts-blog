@@ -2,18 +2,10 @@
 layout: post
 title: Unlock-UserAccount.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Unlock-UserAccount/
-categories:
-- UserAdminModule
-- ADFunctions
-tags:
-- PowerShell
-- User Admin Module
-- Unlock User Account
-description: PowerShell script for unlock user account.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/adfunctions/unlock-useraccount/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

@@ -2,21 +2,10 @@
 layout: post
 title: Disable-RDPRemotelyWMI.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Disable-RDPRemotelyWMI/
-categories:
-- UserAdminModule
-- RemoteConnections
-tags:
-- PowerShell
-- User Admin Module
-- RDP Remotely WMI
-- RDP
-- WMI
-description: Disable-RDPRemotelyWMI uses the classic WMI Win32_TerminalServiceSetting
-  class to switch off Remote Desktop access on one or more remote computers. Supply...
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/remoteconnections/disable-rdpremotelywmi/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

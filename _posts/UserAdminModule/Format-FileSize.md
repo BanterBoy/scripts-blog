@@ -2,18 +2,10 @@
 layout: post
 title: Format-FileSize.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Format-FileSize/
-categories:
-- UserAdminModule
-- FileOperations
-tags:
-- PowerShell
-- User Admin Module
-- Format File Size
-description: PowerShell script for format file size.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/fileoperations/format-filesize/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

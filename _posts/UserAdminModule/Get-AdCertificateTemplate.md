@@ -2,20 +2,10 @@
 layout: post
 title: Get-AdCertificateTemplate.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-AdCertificateTemplate/
-categories:
-- UserAdminModule
-- PKICertificateTools
-tags:
-- PowerShell
-- User Admin Module
-- Active Directory Certificate Template
-- Active Directory
-description: Retrieve all certificate templates from Active Directory and display
-  their names and OIDs.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/pkicertificatetools/get-adcertificatetemplate/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

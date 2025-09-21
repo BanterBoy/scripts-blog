@@ -2,19 +2,10 @@
 layout: post
 title: Get-RageQuitEvents.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-RageQuitEvents/
-categories:
-- UserAdminModule
-- Shell
-tags:
-- PowerShell
-- User Admin Module
-- Rage Quit Events
-description: Retrieves RageQuit-related event log entries from the Windows Application
-  log.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shell/get-ragequitevents/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

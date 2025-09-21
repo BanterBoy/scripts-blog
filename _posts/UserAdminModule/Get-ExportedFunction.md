@@ -2,19 +2,10 @@
 layout: post
 title: Get-ExportedFunction.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-ExportedFunction/
-categories:
-- UserAdminModule
-- Shell
-tags:
-- PowerShell
-- User Admin Module
-- Exported Function
-description: Output the commands exported by a specified Module or all currently imported
-  Modules.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shell/get-exportedfunction/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

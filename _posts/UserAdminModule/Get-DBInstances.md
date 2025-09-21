@@ -2,19 +2,10 @@
 layout: post
 title: Get-DBInstances.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-DBInstances/
-categories:
-- UserAdminModule
-- Database
-tags:
-- PowerShell
-- User Admin Module
-- DB Instances
-- DB
-description: Retrieves the SQL Server instances available on a specified computer.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/database/get-dbinstances/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

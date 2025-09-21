@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Cmdlet-API-Template.ps1
-last_modified_at: 2025-09-20 00:00:00
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /snippets/cmdlet-api-template/
 categories:
 - Snippets
 tags:
@@ -9,10 +10,10 @@ tags:
 - Snippets
 - Cmdlet API Template
 - API
-description: This PowerShell script appears to be a template for a cmdlet that performs
-  some kind of email validation. The script defines a cmdlet with a number of...
+description: This PowerShell script appears to be a template for a cmdlet that performs some kind of email validation. The script defines a cmdlet with a number of...
 image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

@@ -2,20 +2,10 @@
 layout: post
 title: Invoke-WithPsGalleryStats.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Invoke-WithPsGalleryStats/
-categories:
-- UserAdminModule
-- Utilities
-tags:
-- PowerShell
-- User Admin Module
-- With PowerShell Gallery Stats
-- PowerShell Gallery
-description: Starts a docker container using the microsoft Powershell image and installs
-  one or more modules as many times as you like.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/utilities/invoke-withpsgallerystats/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

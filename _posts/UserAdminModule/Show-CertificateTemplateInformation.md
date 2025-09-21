@@ -2,19 +2,10 @@
 layout: post
 title: Show-CertificateTemplateInformation.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Show-CertificateTemplateInformation/
-categories:
-- UserAdminModule
-- PKICertificateTools
-tags:
-- PowerShell
-- User Admin Module
-- Certificate Template Information
-description: Display information about certificates in the local computer or current
-  user certificate store.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/pkicertificatetools/show-certificatetemplateinformation/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

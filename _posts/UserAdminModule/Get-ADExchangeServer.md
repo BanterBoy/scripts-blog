@@ -2,20 +2,10 @@
 layout: post
 title: Get-ADExchangeServer.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-ADExchangeServer/
-categories:
-- UserAdminModule
-- Exchange
-tags:
-- PowerShell
-- User Admin Module
-- Active Directory Exchange Server
-- Active Directory
-- Exchange
-description: PowerShell script for active directory exchange server.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/exchange/get-adexchangeserver/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

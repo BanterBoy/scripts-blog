@@ -2,18 +2,10 @@
 layout: post
 title: Remove-ScheduledScript.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Remove-ScheduledScript/
-categories:
-- UserAdminModule
-- ProcessServiceSchedules
-tags:
-- PowerShell
-- User Admin Module
-- Scheduled Script
-description: Removes a scheduled task from specified computers.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/processserviceschedules/remove-scheduledscript/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

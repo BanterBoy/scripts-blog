@@ -2,20 +2,10 @@
 layout: post
 title: Manage-AzureADApp.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Manage-AzureADApp/
-categories:
-- UserAdminModule
-- Azure
-tags:
-- PowerShell
-- User Admin Module
-- Manage Azure Active Directory App
-- Active Directory
-- Azure
-description: Manages Azure AD application registrations.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/azure/manage-azureadapp/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

@@ -2,18 +2,10 @@
 layout: post
 title: Get-MediaDetails.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-MediaDetails/
-categories:
-- UserAdminModule
-- FileOperations
-tags:
-- PowerShell
-- User Admin Module
-- Media Details
-description: PowerShell script for media details.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/fileoperations/get-mediadetails/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

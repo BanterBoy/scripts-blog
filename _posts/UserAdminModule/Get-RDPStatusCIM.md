@@ -2,21 +2,10 @@
 layout: post
 title: Get-RDPStatusCIM.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-RDPStatusCIM/
-categories:
-- UserAdminModule
-- RemoteConnections
-tags:
-- PowerShell
-- User Admin Module
-- RDP Status CIM
-- RDP
-- CIM
-description: Get-RDPStatusCIM queries the Win32_TerminalServiceSetting CIM class to
-  report whether Remote Desktop is enabled or disabled on each target computer. The...
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/remoteconnections/get-rdpstatuscim/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

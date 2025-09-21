@@ -2,18 +2,10 @@
 layout: post
 title: Copy-History.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Copy-History/
-categories:
-- UserAdminModule
-- Shell
-tags:
-- PowerShell
-- User Admin Module
-- History
-description: PowerShell script for history.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shell/copy-history/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

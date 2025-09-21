@@ -2,19 +2,10 @@
 layout: post
 title: Set-RDPRemotely.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Set-RDPRemotely/
-categories:
-- UserAdminModule
-- RemoteConnections
-tags:
-- PowerShell
-- User Admin Module
-- RDP Remotely
-- RDP
-description: No synopsis provided.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/remoteconnections/set-rdpremotely/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

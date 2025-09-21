@@ -2,19 +2,10 @@
 layout: post
 title: Get-ipInfo.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-ipInfo/
-categories:
-- UserAdminModule
-- Network
-tags:
-- PowerShell
-- User Admin Module
-- Ip Info
-description: This CmdLet can be used to extract the IP Geo-location using the API
-  from https://ipinfo.io A Free account required) https://ipinfo.io/developers
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/network/get-ipinfo/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

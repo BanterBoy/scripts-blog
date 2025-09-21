@@ -2,18 +2,10 @@
 layout: post
 title: New-Password.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/New-Password/
-categories:
-- UserAdminModule
-- Security
-tags:
-- PowerShell
-- User Admin Module
-- Password
-description: PowerShell script for password.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/security/new-password/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

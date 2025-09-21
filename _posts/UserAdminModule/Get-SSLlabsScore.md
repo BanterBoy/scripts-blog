@@ -2,19 +2,10 @@
 layout: post
 title: Get-SSLlabsScore.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-SSLlabsScore/
-categories:
-- UserAdminModule
-- Security
-tags:
-- PowerShell
-- User Admin Module
-- SSL Labs Score
-- SSL
-description: PowerShell script for SSL Labs score.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/security/get-ssllabsscore/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

@@ -2,18 +2,10 @@
 layout: post
 title: Remove-RunOnceRegKey.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Remove-RunOnceRegKey/
-categories:
-- UserAdminModule
-- Utilities
-tags:
-- PowerShell
-- User Admin Module
-- Run Once Reg Key
-description: Removes a specified registry key from the RunOnce registry path.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/utilities/remove-runonceregkey/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

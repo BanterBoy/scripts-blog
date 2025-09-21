@@ -2,20 +2,10 @@
 layout: post
 title: Sync-ADwithAAD.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Sync-ADwithAAD/
-categories:
-- UserAdminModule
-- Replication
-tags:
-- PowerShell
-- User Admin Module
-- A Dwith AAD
-- AAD
-description: Synchronizes Active Directory (AD) with Azure Active Directory (AAD)
-  on one or more computers.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/replication/sync-adwithaad/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

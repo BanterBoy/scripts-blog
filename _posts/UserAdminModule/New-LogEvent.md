@@ -2,18 +2,10 @@
 layout: post
 title: New-LogEvent.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/New-LogEvent/
-categories:
-- UserAdminModule
-- Logging
-tags:
-- PowerShell
-- User Admin Module
-- Log Event
-description: A function to log events.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/logging/new-logevent/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

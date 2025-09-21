@@ -2,18 +2,10 @@
 layout: post
 title: Get-UptimeV1.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-UptimeV1/
-categories:
-- UserAdminModule
-- Virtualization
-tags:
-- PowerShell
-- User Admin Module
-- Uptime V 1
-description: PowerShell script for uptime V 1.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/virtualization/get-uptimev1/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

@@ -2,19 +2,10 @@
 layout: post
 title: Get-DayOfWeek.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-DayOfWeek/
-categories:
-- UserAdminModule
-- Shell
-tags:
-- PowerShell
-- User Admin Module
-- Day Of Week
-description: Returns the current day of the week, a random day, or a shuffled list
-  of all days.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shell/get-dayofweek/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

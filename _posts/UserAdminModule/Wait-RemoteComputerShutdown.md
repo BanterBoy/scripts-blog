@@ -2,19 +2,10 @@
 layout: post
 title: Wait-RemoteComputerShutdown.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Wait-RemoteComputerShutdown/
-categories:
-- UserAdminModule
-- ShutdownCommands
-tags:
-- PowerShell
-- User Admin Module
-- Wait Remote Computer Shutdown
-description: Monitors remote computers and reports when each has shut down (stops
-  responding to ping).
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shutdowncommands/wait-remotecomputershutdown/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

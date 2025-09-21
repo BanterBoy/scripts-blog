@@ -2,18 +2,10 @@
 layout: post
 title: Get-PasswordAttempts2.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-PasswordAttempts2/
-categories:
-- UserAdminModule
-- Security
-tags:
-- PowerShell
-- User Admin Module
-- Password Attempts 2
-description: Returns the number of recent failed login attempts.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/security/get-passwordattempts2/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

@@ -2,19 +2,10 @@
 layout: post
 title: Restart-ProjectComputer.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Restart-ProjectComputer/
-categories:
-- UserAdminModule
-- ShutdownCommands
-tags:
-- PowerShell
-- User Admin Module
-- Project Computer
-description: This is a PowerShell script that contains a function called Restart-ProjectComputer.
-  The function takes two parameters, $ComputerName and $Credential. The...
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shutdowncommands/restart-projectcomputer/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

@@ -2,18 +2,10 @@
 layout: post
 title: Get-Resources.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-Resources/
-categories:
-- UserAdminModule
-- Utilities
-tags:
-- PowerShell
-- User Admin Module
-- Resources
-description: PowerShell script for resources.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/utilities/get-resources/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

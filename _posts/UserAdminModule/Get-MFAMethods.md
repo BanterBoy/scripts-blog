@@ -2,19 +2,10 @@
 layout: post
 title: Get-MFAMethods.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-MFAMethods/
-categories:
-- UserAdminModule
-- Azure
-tags:
-- PowerShell
-- User Admin Module
-- MFA Methods
-- MFA
-description: Get the MFA status of the user
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/azure/get-mfamethods/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

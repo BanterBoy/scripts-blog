@@ -2,19 +2,10 @@
 layout: post
 title: Get-GroupMembers.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-GroupMembers/
-categories:
-- UserAdminModule
-- ADFunctions
-tags:
-- PowerShell
-- User Admin Module
-- Group Members
-description: This is a PowerShell script that defines a function called Get-GroupMembers.
-  The purpose of this function is to extract the members of a specified Active...
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/adfunctions/get-groupmembers/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

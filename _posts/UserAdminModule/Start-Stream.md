@@ -2,18 +2,10 @@
 layout: post
 title: Start-Stream.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Start-Stream/
-categories:
-- UserAdminModule
-- MediaManagement
-tags:
-- PowerShell
-- User Admin Module
-- Stream
-description: PowerShell script for stream.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/mediamanagement/start-stream/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

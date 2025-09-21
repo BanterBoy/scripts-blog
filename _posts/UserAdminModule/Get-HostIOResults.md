@@ -2,20 +2,10 @@
 layout: post
 title: Get-HostIOResults.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-HostIOResults/
-categories:
-- UserAdminModule
-- Network
-tags:
-- PowerShell
-- User Admin Module
-- Host IO Results
-- IO
-description: Retrieves host I/O results for a given domain name using the host.io
-  API.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/network/get-hostioresults/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

@@ -2,19 +2,10 @@
 layout: post
 title: Get-DistributionGroupsWithOwners.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-DistributionGroupsWithOwners/
-categories:
-- UserAdminModule
-- Exchange
-tags:
-- PowerShell
-- User Admin Module
-- Distribution Groups With Owners
-description: Retrieves distribution groups and their owners using Exchange Management
-  Shell.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/exchange/get-distributiongroupswithowners/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

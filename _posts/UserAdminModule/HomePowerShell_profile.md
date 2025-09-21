@@ -2,18 +2,10 @@
 layout: post
 title: HomePowerShell_profile.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/HomePowerShell_profile/
-categories:
-- UserAdminModule
-- Shell
-tags:
-- PowerShell
-- User Admin Module
-- Home Power Shell Profile
-description: PowerShell script for home power shell profile.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shell/homepowershell-profile/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

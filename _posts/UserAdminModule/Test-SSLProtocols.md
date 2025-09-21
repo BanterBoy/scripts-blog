@@ -2,21 +2,10 @@
 layout: post
 title: Test-SSLProtocols.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Test-SSLProtocols/
-categories:
-- UserAdminModule
-- Testing
-tags:
-- PowerShell
-- User Admin Module
-- SSL Protocols
-- SSL
-description: A brief description of the Test-SSLProtocols function. Tests and oututs
-  the website SSL protocols that the client is able to successfully use to connect
-  to a...
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/testing/test-sslprotocols/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

@@ -2,18 +2,10 @@
 layout: post
 title: PadOrTruncate.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/PadOrTruncate/
-categories:
-- UserAdminModule
-- Utilities
-tags:
-- PowerShell
-- User Admin Module
-- Pad Or Truncate
-description: Pad or truncate a string to a specified length.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/utilities/padortruncate/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

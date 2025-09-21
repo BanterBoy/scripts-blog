@@ -2,19 +2,10 @@
 layout: post
 title: New-KrbtgtKeys.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/New-KrbtgtKeys/
-categories:
-- UserAdminModule - Security
-- UserAdminModule
-tags:
-- PowerShell
-- User Admin Module
-- Krbtgt Keys
-description: This PoSH Script Resets The KrbTgt Password For RWDCs And RODCs In A
-  Controlled Manner
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/security/new-krbtgtkeys/
 ---
+
 - [Description](#description)
   - [Information](#information)
   - [OutPut](#output)

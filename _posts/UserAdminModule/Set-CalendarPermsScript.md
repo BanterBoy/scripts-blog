@@ -2,18 +2,10 @@
 layout: post
 title: Set-CalendarPermsScript.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Set-CalendarPermsScript/
-categories:
-- UserAdminModule
-- Exchange
-tags:
-- PowerShell
-- User Admin Module
-- Calendar Perms Script
-description: PowerShell script for calendar perms script.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/exchange/set-calendarpermsscript/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

@@ -2,18 +2,10 @@
 layout: post
 title: Invoke-RemoteComputerShutdown.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Invoke-RemoteComputerShutdown/
-categories:
-- UserAdminModule
-- ShutdownCommands
-tags:
-- PowerShell
-- User Admin Module
-- Remote Computer Shutdown
-description: Schedules a shutdown, restart, or hibernate operation on a remote computer.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shutdowncommands/invoke-remotecomputershutdown/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

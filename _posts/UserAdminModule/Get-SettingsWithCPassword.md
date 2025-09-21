@@ -2,18 +2,10 @@
 layout: post
 title: Get-SettingsWithCPassword.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-SettingsWithCPassword/
-categories:
-- UserAdminModule
-- Security
-tags:
-- PowerShell
-- User Admin Module
-- Settings With C Password
-description: PowerShell script for settings with C password.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/security/get-settingswithcpassword/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

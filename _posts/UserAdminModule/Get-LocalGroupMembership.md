@@ -2,18 +2,10 @@
 layout: post
 title: Get-LocalGroupMembership.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-LocalGroupMembership/
-categories:
-- UserAdminModule
-- ADFunctions
-tags:
-- PowerShell
-- User Admin Module
-- Local Group Membership
-description: PowerShell script for local group membership.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/adfunctions/get-localgroupmembership/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

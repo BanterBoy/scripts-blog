@@ -2,18 +2,10 @@
 layout: post
 title: Get-RemoteScheduledTasks.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-RemoteScheduledTasks/
-categories:
-- UserAdminModule
-- ProcessServiceSchedules
-tags:
-- PowerShell
-- User Admin Module
-- Remote Scheduled Tasks
-description: Export a list of scheduled tasks from a remote computer and their properties.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/processserviceschedules/get-remotescheduledtasks/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

@@ -2,19 +2,10 @@
 layout: post
 title: Test-ContactEmail.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Test-ContactEmail/
-categories:
-- UserAdminModule
-- Testing
-tags:
-- PowerShell
-- User Admin Module
-- Contact Email
-description: Checks for the existence of a mail contact in both on-premises Exchange
-  and Exchange Online.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/testing/test-contactemail/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

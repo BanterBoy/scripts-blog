@@ -2,18 +2,10 @@
 layout: post
 title: New-JekyllBlogPost.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/New-JekyllBlogPost/
-categories:
-- UserAdminModule
-- JekyllBlog
-tags:
-- PowerShell
-- User Admin Module
-- Jekyll Blog Post
-description: Creates a new Jekyll blog post or page with specified parameters.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/jekyllblog/new-jekyllblogpost/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

@@ -2,22 +2,10 @@
 layout: post
 title: Disable-RDPRemotelyCIM.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Disable-RDPRemotelyCIM/
-categories:
-- UserAdminModule
-- RemoteConnections
-tags:
-- PowerShell
-- User Admin Module
-- RDP Remotely CIM
-- RDP
-- CIM
-description: Disable-RDPRemotelyCIM calls the Terminal Services CIM class on remote
-  hosts and invokes SetAllowTSConnections to block Remote Desktop connections and
-  clear...
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/remoteconnections/disable-rdpremotelycim/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

@@ -2,19 +2,10 @@
 layout: post
 title: Initialize-EventLogging.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Initialize-EventLogging/
-categories:
-- UserAdminModule
-- Logging
-tags:
-- PowerShell
-- User Admin Module
-- Event Logging
-description: Initializes event logging by creating a new event log source if it does
-  not exist.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/logging/initialize-eventlogging/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

@@ -2,18 +2,10 @@
 layout: post
 title: Get-MgAdmins.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-MgAdmins/
-categories:
-- UserAdminModule
-- Azure
-tags:
-- PowerShell
-- User Admin Module
-- Mg Admins
-description: Get all users with an Admin role.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/azure/get-mgadmins/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

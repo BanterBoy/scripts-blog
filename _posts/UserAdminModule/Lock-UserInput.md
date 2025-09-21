@@ -2,18 +2,10 @@
 layout: post
 title: Lock-UserInput.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Lock-UserInput/
-categories:
-- UserAdminModule
-- Shell
-tags:
-- PowerShell
-- User Admin Module
-- Lock User Input
-description: PowerShell script for lock user input.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shell/lock-userinput/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

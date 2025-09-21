@@ -2,18 +2,10 @@
 layout: post
 title: Get-ScheduledTasks.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-ScheduledTasks/
-categories:
-- UserAdminModule
-- ProcessServiceSchedules
-tags:
-- PowerShell
-- User Admin Module
-- Scheduled Tasks
-description: Retrieves scheduled tasks from one or more servers.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/processserviceschedules/get-scheduledtasks/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

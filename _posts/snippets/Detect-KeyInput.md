@@ -1,18 +1,18 @@
 ---
 layout: post
 title: Detect-KeyInput.ps1
-last_modified_at: 2025-09-20 00:00:00
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /snippets/detect-keyinput/
 categories:
 - Snippets
 tags:
 - PowerShell
 - Snippets
 - Detect Key Input
-description: This PowerShell script is designed to detect which key is pressed and
-  execute a specific action based on the key pressed. The script begins by adding
-  the...
+description: This PowerShell script is designed to detect which key is pressed and execute a specific action based on the key pressed. The script begins by adding the...
 image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

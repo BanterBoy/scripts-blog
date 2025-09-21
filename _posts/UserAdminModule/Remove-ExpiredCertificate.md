@@ -2,18 +2,10 @@
 layout: post
 title: Remove-ExpiredCertificate.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Remove-ExpiredCertificate/
-categories:
-- UserAdminModule
-- PKICertificateTools
-tags:
-- PowerShell
-- User Admin Module
-- Expired Certificate
-description: Delete expired certificates from the CA server database.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/pkicertificatetools/remove-expiredcertificate/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

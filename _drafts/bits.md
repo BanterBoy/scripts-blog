@@ -41,7 +41,7 @@ Some information about the exciting thing
 
 ---
 
-#### [Test-EmailAddress.ps1](/_posts/Test-EmailAddress.md)
+#### [Test-EmailAddress.ps1](/useradminmodule/testing/test-emailaddress/)
 Brief overview of script
 
 <video width="262" height="518" controls>

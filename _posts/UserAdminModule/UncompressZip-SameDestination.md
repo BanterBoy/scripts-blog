@@ -2,18 +2,10 @@
 layout: post
 title: UncompressZip-SameDestination.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/UncompressZip-SameDestination/
-categories:
-- UserAdminModule
-- FileOperations
-tags:
-- PowerShell
-- User Admin Module
-- Uncompress Zip Same Destination
-description: PowerShell script for uncompress zip same destination.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/fileoperations/uncompresszip-samedestination/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

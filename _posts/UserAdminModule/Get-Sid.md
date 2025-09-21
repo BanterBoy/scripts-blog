@@ -2,18 +2,10 @@
 layout: post
 title: Get-Sid.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-Sid/
-categories:
-- UserAdminModule
-- PKICertificateTools
-tags:
-- PowerShell
-- User Admin Module
-- Sid
-description: Translate a security principal's Security Identifier (SID).
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/pkicertificatetools/get-sid/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

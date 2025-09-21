@@ -2,19 +2,10 @@
 layout: post
 title: FileWatcher.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/FileWatcher/
-categories:
-- UserAdminModule
-- FileOperations
-tags:
-- PowerShell
-- User Admin Module
-- File Watcher
-description: This PowerShell script sets up a file watcher to monitor a specific folder
-  and its subdirectories for any changes made to files. The script starts by...
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/fileoperations/filewatcher/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

@@ -2,20 +2,10 @@
 layout: post
 title: New-GitDrives.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/New-GitDrives/
-categories:
-- UserAdminModule
-- Shell
-tags:
-- PowerShell
-- User Admin Module
-- Git Drives
-description: New-GitDrives prompts for a root folder (via the Select-FolderLocation
-  helper) and then creates a PowerShell drive for each immediate child directory.
-  It is...
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shell/new-gitdrives/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

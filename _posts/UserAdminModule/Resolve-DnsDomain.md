@@ -2,19 +2,10 @@
 layout: post
 title: Resolve-DnsDomain.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Resolve-DnsDomain/
-categories:
-- UserAdminModule
-- Network
-tags:
-- PowerShell
-- User Admin Module
-- Resolve DNS Domain
-- DNS
-description: PowerShell script for resolve DNS domain.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/network/resolve-dnsdomain/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

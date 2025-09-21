@@ -2,18 +2,10 @@
 layout: post
 title: Get-UnknownDevices.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-UnknownDevices/
-categories:
-- UserAdminModule
-- Security
-tags:
-- PowerShell
-- User Admin Module
-- Unknown Devices
-description: PowerShell script for unknown devices.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/security/get-unknowndevices/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

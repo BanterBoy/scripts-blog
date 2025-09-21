@@ -2,20 +2,10 @@
 layout: post
 title: Clear-TeamsCache.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Clear-TeamsCache/
-categories:
-- UserAdminModule
-- Teams
-tags:
-- PowerShell
-- User Admin Module
-- Teams Cache
-- Microsoft Teams
-description: Get-UsersTeamsCacheSummary function gets a summary of the space used
-  for each user in the Teams cache.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/teams/clear-teamscache/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

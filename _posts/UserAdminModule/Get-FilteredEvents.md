@@ -2,18 +2,10 @@
 layout: post
 title: Get-FilteredEvents.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-FilteredEvents/
-categories:
-- UserAdminModule
-- Logging
-tags:
-- PowerShell
-- User Admin Module
-- Filtered Events
-description: Retrieves filtered events from specified event logs on one or more computers.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/logging/get-filteredevents/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

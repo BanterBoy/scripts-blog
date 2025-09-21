@@ -2,19 +2,10 @@
 layout: post
 title: Get-PublishedTemplate.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-PublishedTemplate/
-categories:
-- UserAdminModule
-- PKICertificateTools
-tags:
-- PowerShell
-- User Admin Module
-- Published Template
-description: Retrieve a list of certificate templates published in Active Directory
-  Certificate Services (AD CS).
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/pkicertificatetools/get-publishedtemplate/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

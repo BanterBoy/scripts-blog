@@ -2,18 +2,10 @@
 layout: post
 title: Get-DriveSpaceReport.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-DriveSpaceReport/
-categories:
-- UserAdminModule
-- Virtualization
-tags:
-- PowerShell
-- User Admin Module
-- Drive Space Report
-description: Retrieves drive space information for one or more computers.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/virtualization/get-drivespacereport/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

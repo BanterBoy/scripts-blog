@@ -2,18 +2,10 @@
 layout: post
 title: New-AdminShell.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/New-AdminShell/
-categories:
-- UserAdminModule
-- Shell
-tags:
-- PowerShell
-- User Admin Module
-- Admin Shell
-description: PowerShell script for admin shell.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shell/new-adminshell/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

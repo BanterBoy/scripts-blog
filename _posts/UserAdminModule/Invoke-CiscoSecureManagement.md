@@ -2,18 +2,10 @@
 layout: post
 title: Invoke-CiscoSecureManagement.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Invoke-CiscoSecureManagement/
-categories:
-- UserAdminModule
-- Security
-tags:
-- PowerShell
-- User Admin Module
-- Cisco Secure Management
-description: Invokes Cisco Secure Management on a remote computer.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/security/invoke-ciscosecuremanagement/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

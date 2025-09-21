@@ -2,19 +2,10 @@
 layout: post
 title: Copy-DistributionGroupMembers.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Copy-DistributionGroupMembers/
-categories:
-- UserAdminModule
-- Exchange
-tags:
-- PowerShell
-- User Admin Module
-- Distribution Group Members
-description: Copies missing members from one Distribution Group to another and optionally
-  removes extra members.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/exchange/copy-distributiongroupmembers/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

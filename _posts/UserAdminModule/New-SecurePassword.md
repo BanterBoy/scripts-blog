@@ -2,18 +2,10 @@
 layout: post
 title: New-SecurePassword.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/New-SecurePassword/
-categories:
-- UserAdminModule
-- Replication
-tags:
-- PowerShell
-- User Admin Module
-- Secure Password
-description: Generates a secure password with specified complexity requirements.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/replication/new-securepassword/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

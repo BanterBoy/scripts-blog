@@ -2,19 +2,10 @@
 layout: post
 title: Get-WeatherDetail.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-WeatherDetail/
-categories:
-- UserAdminModule
-- Weather
-tags:
-- PowerShell
-- User Admin Module
-- Weather Detail
-description: Get-WeatherDetails - Cmdlet to get the weather details for a specific
-  town and country.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/weather/get-weatherdetail/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

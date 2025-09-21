@@ -2,19 +2,10 @@
 layout: post
 title: Test-Computer.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Test-Computer/
-categories:
-- UserAdminModule
-- Testing
-tags:
-- PowerShell
-- User Admin Module
-- Computer
-description: Tests a computer and returns its current status including DNS, RDP, AD,
-  and DHCP IP address information.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/testing/test-computer/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

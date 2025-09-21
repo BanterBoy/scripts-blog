@@ -2,20 +2,10 @@
 layout: post
 title: TimeZoneFunctions.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/TimeZoneFunctions/
-categories:
-- UserAdminModule
-- Utilities
-tags:
-- PowerShell
-- User Admin Module
-- Time Zone Functions
-description: The PowerShell script that defines a function called Set-ServerTimeZone.
-  This function takes in an array of computer names as input and sets the time zone
-  of...
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/utilities/timezonefunctions/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

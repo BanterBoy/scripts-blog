@@ -2,19 +2,10 @@
 layout: post
 title: New-StreamDeckShell.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/New-StreamDeckShell/
-categories:
-- UserAdminModule
-- Shell
-tags:
-- PowerShell
-- User Admin Module
-- Stream Deck Shell
-description: Launches a new PowerShell console window suitable for Stream Deck buttons
-  while running under alternate credentials.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shell/new-streamdeckshell/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

@@ -2,20 +2,10 @@
 layout: post
 title: Set-DHCPIPAddress.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Set-DHCPIPAddress/
-categories:
-- UserAdminModule
-- Network
-tags:
-- PowerShell
-- User Admin Module
-- DHCPIP Address
-- DHCP
-- DHCPIP
-description: Configure a network adapter to use DHCP settings.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/network/set-dhcpipaddress/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

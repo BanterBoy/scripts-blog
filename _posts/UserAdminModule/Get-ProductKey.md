@@ -2,18 +2,10 @@
 layout: post
 title: Get-ProductKey.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-ProductKey/
-categories:
-- UserAdminModule
-- Security
-tags:
-- PowerShell
-- User Admin Module
-- Product Key
-description: PowerShell script for product key.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/security/get-productkey/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

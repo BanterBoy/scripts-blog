@@ -2,19 +2,10 @@
 layout: post
 title: Repair-MissingOnPremMailbox.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Repair-MissingOnPremMailbox/
-categories:
-- UserAdminModule
-- Exchange
-tags:
-- PowerShell
-- User Admin Module
-- Repair Missing On Prem Mailbox
-description: Repairs a missing on-premises mailbox by adding a proxy address and enabling
-  a remote mailbox.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/exchange/repair-missingonpremmailbox/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

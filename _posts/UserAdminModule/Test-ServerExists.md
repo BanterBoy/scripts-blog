@@ -2,18 +2,10 @@
 layout: post
 title: Test-ServerExists.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Test-ServerExists/
-categories:
-- UserAdminModule
-- Testing
-tags:
-- PowerShell
-- User Admin Module
-- Server Exists
-description: PowerShell script for server exists.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/testing/test-serverexists/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

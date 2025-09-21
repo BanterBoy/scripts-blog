@@ -2,18 +2,10 @@
 layout: post
 title: Expand-NinjaOne7Zip.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Expand-NinjaOne7Zip/
-categories:
-- UserAdminModule
-- FileOperations
-tags:
-- PowerShell
-- User Admin Module
-- Ninja One 7 Zip
-description: Extracts files from a NinjaOne Zip file using 7-Zip.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/fileoperations/expand-ninjaone7zip/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

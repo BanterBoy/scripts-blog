@@ -2,19 +2,10 @@
 layout: post
 title: Get-AzEnterpriseAppConfig.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-AzEnterpriseAppConfig/
-categories:
-- UserAdminModule
-- Azure
-tags:
-- PowerShell
-- User Admin Module
-- Az Enterprise App Config
-description: Retrieves configuration details for an enterprise application (service
-  principal) using the Microsoft.Entra module.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/azure/get-azenterpriseappconfig/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

@@ -2,18 +2,10 @@
 layout: post
 title: GetMailboxPermission.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/GetMailboxPermission/
-categories:
-- UserAdminModule
-- ADFunctions
-tags:
-- PowerShell
-- User Admin Module
-- Mailbox Permission
-description: PowerShell script for mailbox permission.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/adfunctions/getmailboxpermission/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

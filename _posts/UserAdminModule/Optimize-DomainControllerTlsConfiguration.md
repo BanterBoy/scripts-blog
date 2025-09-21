@@ -2,20 +2,10 @@
 layout: post
 title: Optimize-DomainControllerTlsConfiguration.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Optimize-DomainControllerTlsConfiguration/
-categories:
-- UserAdminModule
-- PKICertificateTools
-tags:
-- PowerShell
-- User Admin Module
-- Optimize Domain Controller Tls Configuration
-- TLS
-description: This function creates a new Group Policy Object (GPO). The policy disables
-  TLS 1.0 and 1.1 on all domain controllers where the GPO is applied. Optionally,...
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/pkicertificatetools/optimize-domaincontrollertlsconfiguration/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

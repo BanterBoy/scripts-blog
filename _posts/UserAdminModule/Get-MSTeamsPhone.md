@@ -2,21 +2,10 @@
 layout: post
 title: Get-MSTeamsPhone.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-MSTeamsPhone/
-categories:
-- UserAdminModule
-- Teams
-tags:
-- PowerShell
-- User Admin Module
-- MS Teams Phone
-- Microsoft Teams
-- MS
-description: Install-RequiredModules - Tests to see if scripts/function required modules
-  are available.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/teams/get-msteamsphone/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

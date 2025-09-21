@@ -2,20 +2,10 @@
 layout: post
 title: Test-OpenPorts.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Test-OpenPorts/
-categories:
-- UserAdminModule
-- Testing
-tags:
-- PowerShell
-- User Admin Module
-- Open Ports
-description: The Test-OpenPorts function utilises the Test-NetConnection cmdlet to
-  make it easier to test multiple ports on multiple computers. It has been created
-  with a...
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/testing/test-openports/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

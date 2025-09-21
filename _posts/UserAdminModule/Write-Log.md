@@ -2,19 +2,10 @@
 layout: post
 title: Write-Log.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Write-Log/
-categories:
-- UserAdminModule
-- Logging
-tags:
-- PowerShell
-- User Admin Module
-- Log
-description: The code is a PowerShell function called Write-Log. It is designed to
-  add logging capability to other scripts. The function writes a message to a specified...
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/logging/write-log/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

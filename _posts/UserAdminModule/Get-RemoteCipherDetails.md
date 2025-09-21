@@ -2,18 +2,10 @@
 layout: post
 title: Get-RemoteCipherDetails.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-RemoteCipherDetails/
-categories:
-- UserAdminModule
-- CertificateUtilities
-tags:
-- PowerShell
-- User Admin Module
-- Remote Cipher Details
-description: Retrieves the cipher details from the remote computers.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/certificateutilities/get-remotecipherdetails/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

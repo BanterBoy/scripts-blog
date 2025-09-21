@@ -2,18 +2,10 @@
 layout: post
 title: Script4logging.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Script4logging/
-categories:
-- UserAdminModule
-- Logging
-tags:
-- PowerShell
-- User Admin Module
-- Script 4 Logging
-description: PowerShell script for script 4 logging.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/logging/script4logging/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

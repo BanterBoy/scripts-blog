@@ -2,19 +2,10 @@
 layout: post
 title: Test-ADUserCredentials.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Test-ADUserCredentials/
-categories:
-- UserAdminModule
-- ADFunctions
-tags:
-- PowerShell
-- User Admin Module
-- Active Directory User Credentials
-- Active Directory
-description: PowerShell script for active directory user credentials.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/adfunctions/test-adusercredentials/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

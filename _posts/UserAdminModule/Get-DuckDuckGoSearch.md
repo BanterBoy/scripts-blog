@@ -2,20 +2,10 @@
 layout: post
 title: Get-DuckDuckGoSearch.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-DuckDuckGoSearch/
-categories:
-- UserAdminModule
-- Shell
-tags:
-- PowerShell
-- User Admin Module
-- Duck Duck Go Search
-description: Get-DuckDuckGoSearch mirrors the Google helper but directs the query
-  to DuckDuckGo. Whatever you pass through $args is added to the query string and
-  opened...
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shell/get-duckduckgosearch/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

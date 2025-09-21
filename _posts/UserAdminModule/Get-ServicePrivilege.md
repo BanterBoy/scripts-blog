@@ -2,18 +2,10 @@
 layout: post
 title: Get-ServicePrivilege.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-ServicePrivilege/
-categories:
-- UserAdminModule
-- ADFunctions
-tags:
-- PowerShell
-- User Admin Module
-- Service Privilege
-description: PowerShell script for service privilege.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/adfunctions/get-serviceprivilege/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

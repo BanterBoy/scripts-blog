@@ -2,19 +2,10 @@
 layout: post
 title: Connect-ExchangeServer.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Connect-ExchangeServer/
-categories:
-- UserAdminModule
-- Exchange
-tags:
-- PowerShell
-- User Admin Module
-- Exchange Server
-- Exchange
-description: Interesting stuff further down the page! 🤔
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/exchange/connect-exchangeserver/
 ---
+
 ---
 
 Interesting stuff further down the page! 🤔

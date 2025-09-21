@@ -2,18 +2,10 @@
 layout: post
 title: Get-Weather.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-Weather/
-categories:
-- UserAdminModule
-- Weather
-tags:
-- PowerShell
-- User Admin Module
-- Weather
-description: Get the weather information for a specific city.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/weather/get-weather/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

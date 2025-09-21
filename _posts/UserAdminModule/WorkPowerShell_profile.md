@@ -2,18 +2,10 @@
 layout: post
 title: WorkPowerShell_profile.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/WorkPowerShell_profile/
-categories:
-- UserAdminModule
-- Shell
-tags:
-- PowerShell
-- User Admin Module
-- Work Power Shell Profile
-description: PowerShell script for work power shell profile.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shell/workpowershell-profile/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

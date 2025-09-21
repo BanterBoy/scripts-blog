@@ -2,19 +2,10 @@
 layout: post
 title: Set-TransmissionDefaultSettings.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Set-TransmissionDefaultSettings/
-categories:
-- UserAdminModule
-- MediaManagement
-tags:
-- PowerShell
-- User Admin Module
-- Transmission Default Settings
-description: Updates transmission to use default settings= AlternativeSpeedDown =
-  10240 AlternativeSpeedEnabled = $true AlternativeSpeedTimeBegin = 480...
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/mediamanagement/set-transmissiondefaultsettings/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

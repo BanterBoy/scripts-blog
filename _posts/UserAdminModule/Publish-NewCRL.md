@@ -2,20 +2,10 @@
 layout: post
 title: Publish-NewCRL.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Publish-NewCRL/
-categories:
-- UserAdminModule
-- PKICertificateTools
-tags:
-- PowerShell
-- User Admin Module
-- Publish New CRL
-- CRL
-description: Publishes a new Certificate Revocation List (CRL) for a specified Certificate
-  Authority (CA) and optionally copies it to specified UNC paths.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/pkicertificatetools/publish-newcrl/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

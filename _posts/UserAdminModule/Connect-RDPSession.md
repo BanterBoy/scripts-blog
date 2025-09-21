@@ -2,20 +2,10 @@
 layout: post
 title: Connect-RDPSession.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Connect-RDPSession/
-categories:
-- UserAdminModule
-- RemoteConnections
-tags:
-- PowerShell
-- User Admin Module
-- RDP Session
-- RDP
-description: Connect-RDPSession starts the native Remote Desktop client (mstsc.exe)
-  for every computer name you supply. The advanced function exposes a -ComputerName...
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/remoteconnections/connect-rdpsession/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

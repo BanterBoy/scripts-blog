@@ -2,19 +2,10 @@
 layout: post
 title: Get-AdminGroupsWithComputers.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-AdminGroupsWithComputers/
-categories:
-- UserAdminModule
-- ADFunctions
-tags:
-- PowerShell
-- User Admin Module
-- Admin Groups With Computers
-description: Retrieves Active Directory groups matching a filter (default "*admin*")
-  and checks for computer accounts as members.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/adfunctions/get-admingroupswithcomputers/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

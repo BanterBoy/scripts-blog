@@ -2,20 +2,10 @@
 layout: post
 title: Get-GoogleDirections.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-GoogleDirections/
-categories:
-- UserAdminModule
-- Shell
-tags:
-- PowerShell
-- User Admin Module
-- Google Directions
-description: Get-GoogleDirections is a convenience function that opens Google Maps
-  in your default browser with driving directions between two points. Provide origin
-  and...
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shell/get-googledirections/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

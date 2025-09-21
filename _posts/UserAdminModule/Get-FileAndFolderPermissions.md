@@ -2,19 +2,10 @@
 layout: post
 title: Get-FileAndFolderPermissions.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-FileAndFolderPermissions/
-categories:
-- UserAdminModule
-- FileOperations
-tags:
-- PowerShell
-- User Admin Module
-- File And Folder Permissions
-description: Get-FileAndFolderPermissions can be used to extract file or folder permissions
-  for a given path.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/fileoperations/get-fileandfolderpermissions/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

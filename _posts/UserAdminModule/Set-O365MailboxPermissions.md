@@ -2,19 +2,10 @@
 layout: post
 title: Set-O365MailboxPermissions.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Set-O365MailboxPermissions/
-categories:
-- UserAdminModule
-- Exchange
-tags:
-- PowerShell
-- User Admin Module
-- O 365 Mailbox Permissions
-description: Sets or removes permissions for a user on an Office 365 mailbox (Exchange
-  Online).
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/exchange/set-o365mailboxpermissions/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

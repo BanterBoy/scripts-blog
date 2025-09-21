@@ -1,7 +1,8 @@
 ---
 layout: post
 title: ADChangeReport.ps1
-last_modified_at: 2025-09-20 00:00:00
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /scripts/adchangereport/
 categories:
 - Scripts
 tags:
@@ -12,6 +13,7 @@ tags:
 description: PowerShell script for active directory change report.
 image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

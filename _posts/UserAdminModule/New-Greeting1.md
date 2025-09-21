@@ -2,19 +2,10 @@
 layout: post
 title: New-Greeting1.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/New-Greeting1/
-categories:
-- UserAdminModule
-- Shell
-tags:
-- PowerShell
-- User Admin Module
-- Greeting 1
-description: This PowerShell script is called New-Greeting1.ps1 and it defines a function
-  that generates a greeting message based on the day of the week. The function...
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shell/new-greeting1/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

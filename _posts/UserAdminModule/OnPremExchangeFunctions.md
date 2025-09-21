@@ -2,19 +2,10 @@
 layout: post
 title: OnPremExchangeFunctions.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/OnPremExchangeFunctions/
-categories:
-- UserAdminModule
-- Exchange
-tags:
-- PowerShell
-- User Admin Module
-- On Prem Exchange Functions
-- Exchange
-description: PowerShell script for on prem exchange functions.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/exchange/onpremexchangefunctions/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

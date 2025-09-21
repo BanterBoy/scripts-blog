@@ -2,18 +2,10 @@
 layout: post
 title: Get-O365LastLogonTime.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-O365LastLogonTime/
-categories:
-- UserAdminModule
-- ADFunctions
-tags:
-- PowerShell
-- User Admin Module
-- O 365 Last Logon Time
-description: PowerShell script for O 365 last logon time.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/adfunctions/get-o365lastlogontime/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

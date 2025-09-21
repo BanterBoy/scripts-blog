@@ -2,20 +2,10 @@
 layout: post
 title: Get-FSMORoleOwner.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-FSMORoleOwner/
-categories:
-- UserAdminModule
-- ADFunctions
-tags:
-- PowerShell
-- User Admin Module
-- FSMO Role Owner
-- FSMO
-description: A set of functions to provide the ability to manage Active Directory
-  FSMO Roles.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/adfunctions/get-fsmoroleowner/
 ---
+
 - [Description](#description)
   - [Purpose](#purpose)
   - [Detailed Description](#detailed-description)

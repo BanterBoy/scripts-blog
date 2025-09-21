@@ -2,19 +2,10 @@
 layout: post
 title: Get-UnlinkedGPO.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-UnlinkedGPO/
-categories:
-- UserAdminModule
-- ADFunctions
-tags:
-- PowerShell
-- User Admin Module
-- Unlinked Group Policy
-- Group Policy
-description: PowerShell script for unlinked group policy.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/adfunctions/get-unlinkedgpo/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

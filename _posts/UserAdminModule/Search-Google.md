@@ -2,18 +2,10 @@
 layout: post
 title: Search-Google.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Search-Google/
-categories:
-- UserAdminModule
-- Shell
-tags:
-- PowerShell
-- User Admin Module
-- Google
-description: PowerShell script for google.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shell/search-google/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

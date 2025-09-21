@@ -2,19 +2,10 @@
 layout: post
 title: Get-FileExtension.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-FileExtension/
-categories:
-- UserAdminModule
-- FileOperations
-tags:
-- PowerShell
-- User Admin Module
-- File Extension
-description: The code is a PowerShell script that defines a function called Get-Extension.
-  This function contains a nested class called FileExtension that has two...
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/fileoperations/get-fileextension/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

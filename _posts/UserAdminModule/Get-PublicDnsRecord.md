@@ -2,19 +2,10 @@
 layout: post
 title: Get-PublicDnsRecord.ps1
 date: 2025-09-19
-last_modified_at: 2025-09-20 00:00:00
-permalink: /_posts/UserAdminModule/Get-PublicDnsRecord/
-categories:
-- UserAdminModule
-- Network
-tags:
-- PowerShell
-- User Admin Module
-- Public DNS Record
-- DNS
-description: PowerShell script for public DNS record.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/network/get-publicdnsrecord/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)
