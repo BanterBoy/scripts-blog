@@ -32,7 +32,7 @@ Please report any issues or suggestions using the link in the [Report Issues](#r
 
 #### Examples
 
-This section will, in the near future, contain one or more examples of the script/function/etc in use and a small sample of the output and will hopefully prove somewhat more useful than the current content 🤷‍♂️
+This section will, in the near future, contain one or more examples of the script/function/etc in use and a small sample of the output and will hopefully prove somewhat more useful than the current content 🤷♂️
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -1045,3 +1045,5 @@ You can report an issue or contribute to this site on <a href="https://github.co
             Back to UserAdminModule
     </button>
 </a>
+
+
