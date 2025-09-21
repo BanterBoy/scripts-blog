@@ -1,16 +1,6 @@
 ---
 layout: post
 title: Install-O365Modules.ps1
-last_modified_at: "2025-09-20 00:00:00"
-permalink: /scripts/install-o365modules/
-categories:
-- Scripts
-tags:
-- PowerShell
-- Scripts
-- O 365 Modules
-description: PowerShell script for O 365 modules.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

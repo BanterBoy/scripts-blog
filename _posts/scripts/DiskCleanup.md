@@ -1,16 +1,6 @@
 ---
 layout: post
 title: DiskCleanup.ps1
-last_modified_at: "2025-09-20 00:00:00"
-permalink: /scripts/diskcleanup/
-categories:
-- Scripts
-tags:
-- PowerShell
-- Scripts
-- Disk Cleanup
-description: PowerShell script for disk cleanup.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

@@ -1,17 +1,6 @@
 ---
 layout: post
 title: New-ADAssetReport.ps1
-last_modified_at: "2025-09-20 00:00:00"
-permalink: /scripts/new-adassetreport/
-categories:
-- Scripts
-tags:
-- PowerShell
-- Scripts
-- Active Directory Asset Report
-- Active Directory
-description: PowerShell script for active directory asset report.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

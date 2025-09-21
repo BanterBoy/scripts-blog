@@ -1,16 +1,6 @@
 ---
 layout: post
 title: Export-PrinterQueues.ps1
-last_modified_at: "2025-09-20 00:00:00"
-permalink: /scripts/export-printerqueues/
-categories:
-- Scripts
-tags:
-- PowerShell
-- Scripts
-- Printer Queues
-description: PowerShell script for printer queues.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

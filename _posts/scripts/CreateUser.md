@@ -1,16 +1,6 @@
 ---
 layout: post
 title: CreateUser.ps1
-last_modified_at: "2025-09-20 00:00:00"
-permalink: /scripts/createuser/
-categories:
-- Scripts
-tags:
-- PowerShell
-- Scripts
-- User
-description: PowerShell script for user.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

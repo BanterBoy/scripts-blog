@@ -1,17 +1,6 @@
 ---
 layout: post
 title: Export-ADUserInfo.ps1
-last_modified_at: "2025-09-20 00:00:00"
-permalink: /scripts/export-aduserinfo/
-categories:
-- Scripts
-tags:
-- PowerShell
-- Scripts
-- Active Directory User Info
-- Active Directory
-description: PowerShell script for active directory user info.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

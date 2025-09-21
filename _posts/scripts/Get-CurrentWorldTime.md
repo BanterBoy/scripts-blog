@@ -1,16 +1,6 @@
 ---
 layout: post
 title: Get-CurrentWorldTime.ps1
-last_modified_at: "2025-09-20 00:00:00"
-permalink: /scripts/get-currentworldtime/
-categories:
-- Scripts
-tags:
-- PowerShell
-- Scripts
-- Current World Time
-description: PowerShell script for current world time.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

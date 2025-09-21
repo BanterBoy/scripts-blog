@@ -1,16 +1,6 @@
 ---
 layout: post
 title: Get-HotFixReport.ps1
-last_modified_at: "2025-09-20 00:00:00"
-permalink: /scripts/get-hotfixreport/
-categories:
-- Scripts
-tags:
-- PowerShell
-- Scripts
-- Hot Fix Report
-description: PowerShell script for hot fix report.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

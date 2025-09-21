@@ -1,17 +1,6 @@
 ---
 layout: post
 title: FindOrphanedGPOs.ps1
-last_modified_at: "2025-09-20 00:00:00"
-permalink: /scripts/findorphanedgpos/
-categories:
-- Scripts
-tags:
-- PowerShell
-- Scripts
-- Orphaned GP Os
-- GP
-description: PowerShell script for orphaned GP os.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

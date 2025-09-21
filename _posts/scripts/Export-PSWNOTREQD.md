@@ -1,16 +1,6 @@
 ---
 layout: post
 title: Export-PSWNOTREQD.ps1
-last_modified_at: "2025-09-20 00:00:00"
-permalink: /scripts/export-pswnotreqd/
-categories:
-- Scripts
-tags:
-- PowerShell
-- Scripts
-- PSWNOTREQD
-description: PowerShell script for PSWNOTREQD.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)
