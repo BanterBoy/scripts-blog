@@ -2,10 +2,8 @@
 layout: post
 title: Open-CDTray.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Open-CDTray/
-categories:
-  - UserAdminModule
-  - Utilities
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/utilities/open-cdtray/
 ---
 
 - [Description](#description)

@@ -2,10 +2,8 @@
 layout: post
 title: Get-ShutdownExample.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ShutdownExample/
-categories:
-  - UserAdminModule
-  - ShutdownCommands
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shutdowncommands/get-shutdownexample/
 ---
 
 - [Description](#description)

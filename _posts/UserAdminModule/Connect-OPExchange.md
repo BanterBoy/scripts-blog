@@ -1,12 +1,9 @@
 ---
 layout: post
 title: Connect-OPExchange.ps1
-description: "Opens a remote session to on-premises Exchange servers using a randomly selected host."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Connect-OPExchange/
-categories:
-  - UserAdminModule
-  - Exchange
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/exchange/connect-opexchange/
 ---
 
 - [Description](#description)

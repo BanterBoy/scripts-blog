@@ -2,10 +2,8 @@
 layout: post
 title: Get-ProductKey.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ProductKey/
-categories:
-  - UserAdminModule
-  - Security
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/security/get-productkey/
 ---
 
 - [Description](#description)

@@ -1,13 +1,11 @@
 ---
 layout: post
 title: Get-LogonEvent.ps1
-description: "Parses Winlogon events to report recent logon and logoff activity on Windows systems."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-LogonEvent/
-categories:
-  - UserAdminModule
-  - Logging
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/logging/get-logonevent/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

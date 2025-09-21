@@ -6983,7 +6983,7 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 <!-- Place this tag where you want the button to render. -->
 
-<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=New-ADAssetReport.ps1&body=There is a problem with this function. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
+<a class="github-button" href="https://github.com/BanterBoy/scripts-blog/issues/new?title=New-ADAssetReport.ps1&body=There is a problem with this script. Please find details below." data-show-count="true" aria-label="Issue BanterBoy/scripts-blog on GitHub">Issue</a>
 
 ---
 

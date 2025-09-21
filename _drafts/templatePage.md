@@ -22,7 +22,7 @@ permalink: /menu/_pages/templatePage.html
 
 | Category  | Function                                            |
 | :-------- | :-------------------------------------------------- |
-| something | [Do-Something.ps1](/_posts/functions/Do-Something/) |
+| something | [Do-Something.ps1](/functions/do-something/) |
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

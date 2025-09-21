@@ -2,6 +2,9 @@
 layout: post
 title: New-Topic
 permalink: /content/_pages/New-Topic.html
+robots: "noindex,follow"
+sitemap: false
+published: false
 # This template provides a basic structure for Dynamics 365 articles.
 # required metadata
 ---

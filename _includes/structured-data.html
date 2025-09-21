@@ -1,0 +1,247 @@
+{% assign site_base = site.url | append: site.baseurl %}
+{% assign raw_description = page.description | default: page.excerpt | default: site.description %}
+{% assign meta_description = raw_description | strip_html | replace: "\r\n", " " | replace: "\n", " " | replace: "\r", " " | replace: "  ", " " | strip %}
+{% assign canonical_source = page.canonical_url | default: page.url %}
+{% if canonical_source %}
+  {% if canonical_source contains '://' %}
+    {% assign canonical_url = canonical_source %}
+  {% else %}
+    {% assign canonical_url = canonical_source | relative_url | absolute_url %}
+  {% endif %}
+{% else %}
+  {% assign canonical_url = site_base %}
+{% endif %}
+{% assign page_image = page.twitter_image | default: page.og_image | default: page.image | default: page.header.teaser | default: page.header.image | default: site.default_social_image %}
+{% if page_image %}
+  {% if page_image contains '://' %}
+    {% assign meta_image = page_image %}
+  {% else %}
+    {% assign meta_image = page_image | relative_url | absolute_url %}
+  {% endif %}
+{% endif %}
+
+{% assign search_target = nil %}
+{% if site.search_url %}
+  {% assign search_template = site.search_url %}
+  {% unless search_template contains '{search_term_string}' %}
+    {% assign search_template = search_template | append: '{search_term_string}' %}
+  {% endunless %}
+  {% if search_template contains '://' %}
+    {% assign search_target = search_template %}
+  {% else %}
+    {% assign first_char = search_template | slice: 0, 1 %}
+    {% unless first_char == '/' %}
+      {% assign search_template = '/' | append: search_template %}
+    {% endunless %}
+    {% capture search_target %}{{ site.url }}{{ search_template }}{% endcapture %}
+  {% endif %}
+{% endif %}
+{% if search_target == null %}
+  {% capture search_target %}{{ site.url }}{{ '/search/' | relative_url }}?q={search_term_string}{% endcapture %}
+{% endif %}
+{% assign search_target = search_target | strip %}
+
+{% assign profile_type = nil %}
+{% assign profile_name = nil %}
+{% assign profile_url = nil %}
+{% assign profile_description = nil %}
+{% assign profile_logo = nil %}
+{% assign profile_email = null %}
+{% if site.organization and site.organization.name %}
+  {% assign profile_type = 'Organization' %}
+  {% assign profile_name = site.organization.name %}
+  {% if site.organization.url %}
+    {% assign org_url = site.organization.url %}
+    {% if org_url contains '://' %}
+      {% assign profile_url = org_url %}
+    {% else %}
+      {% assign profile_url = org_url | relative_url | absolute_url %}
+    {% endif %}
+  {% else %}
+    {% assign profile_url = site_base %}
+  {% endif %}
+  {% assign profile_description = site.organization.description | default: site.description %}
+  {% assign profile_logo = site.organization.logo | default: site.default_social_image %}
+{% elsif site.author and site.author.name %}
+  {% assign profile_type = 'Person' %}
+  {% assign profile_name = site.author.name %}
+  {% if site.author.url %}
+    {% assign author_url = site.author.url %}
+    {% if author_url contains '://' %}
+      {% assign profile_url = author_url %}
+    {% else %}
+      {% assign profile_url = author_url | relative_url | absolute_url %}
+    {% endif %}
+  {% else %}
+    {% assign profile_url = site_base %}
+  {% endif %}
+  {% assign profile_description = site.author.bio | default: site.description %}
+  {% assign profile_logo = site.author.image | default: site.default_social_image %}
+  {% if site.author.email %}
+    {% assign profile_email = site.author.email %}
+  {% endif %}
+{% endif %}
+{% if profile_logo %}
+  {% if profile_logo contains '://' %}
+    {% assign profile_logo_url = profile_logo %}
+  {% else %}
+    {% assign profile_logo_url = profile_logo | relative_url | absolute_url %}
+  {% endif %}
+{% endif %}
+
+{% assign same_as_items = '' %}
+{% if site.twitter_username %}
+  {% capture twitter_handle %}{{ site.twitter_username | replace: '@', '' | strip }}{% endcapture %}
+  {% if twitter_handle != '' %}
+    {% capture same_as_items %}{{ same_as_items }}{% if same_as_items != '' %}, {% endif %}"https://twitter.com/{{ twitter_handle }}"{% endcapture %}
+  {% endif %}
+{% endif %}
+{% if site.linkedin_username %}
+  {% capture same_as_items %}{{ same_as_items }}{% if same_as_items != '' %}, {% endif %}"https://www.linkedin.com/in/{{ site.linkedin_username | strip }}"{% endcapture %}
+{% endif %}
+{% if site.github_username %}
+  {% capture same_as_items %}{{ same_as_items }}{% if same_as_items != '' %}, {% endif %}"https://github.com/{{ site.github_username | strip }}"{% endcapture %}
+{% endif %}
+
+{% if profile_type == 'Organization' %}
+  {% assign profile_id = profile_url | append: '#organization' %}
+{% elsif profile_type == 'Person' %}
+  {% assign profile_id = profile_url | append: '#person' %}
+{% endif %}
+
+{% assign is_article = false %}
+{% if page.collection == 'posts' or page.layout == 'post' %}
+  {% assign is_article = true %}
+{% endif %}
+
+{% if page.schema_type %}
+  {% assign article_type = page.schema_type %}
+{% elsif is_article %}
+  {% assign article_type = 'BlogPosting' %}
+{% endif %}
+{% assign article_headline = page.headline | default: page.title %}
+{% assign article_modified = page.last_modified_at | default: page.modified | default: page.date %}
+
+{% if site.url %}
+  {% capture website_entries %}"@context": "https://schema.org"{% endcapture %}
+  {% capture website_entries %}{{ website_entries }},
+  "@type": "WebSite"{% endcapture %}
+  {% capture website_entries %}{{ website_entries }},
+  "@id": {{ site_base | append: '#website' | jsonify }}{% endcapture %}
+  {% capture website_entries %}{{ website_entries }},
+  "url": {{ site_base | jsonify }}{% endcapture %}
+  {% capture website_entries %}{{ website_entries }},
+  "name": {{ site.title | default: site.github.repository_name | jsonify }}{% endcapture %}
+  {% if site.description %}
+    {% capture website_entries %}{{ website_entries }},
+  "description": {{ site.description | strip_html | strip_newlines | strip | jsonify }}{% endcapture %}
+  {% endif %}
+  {% capture search_entries %}"@type": "SearchAction",
+    "target": {{ search_target | jsonify }},
+    "query-input": "required name=search_term_string"{% endcapture %}
+  {% capture website_entries %}{{ website_entries }},
+  "potentialAction": {
+    {{ search_entries }}
+  }{% endcapture %}
+  <script type="application/ld+json">
+  {
+    {{ website_entries | strip }}
+  }
+  </script>
+{% endif %}
+
+{% if profile_type and profile_name and profile_url %}
+  {% capture profile_entries %}"@context": "https://schema.org"{% endcapture %}
+  {% capture profile_entries %}{{ profile_entries }},
+  "@type": {{ profile_type | jsonify }}{% endcapture %}
+  {% if profile_id %}
+    {% capture profile_entries %}{{ profile_entries }},
+  "@id": {{ profile_id | jsonify }}{% endcapture %}
+  {% endif %}
+  {% capture profile_entries %}{{ profile_entries }},
+  "name": {{ profile_name | jsonify }}{% endcapture %}
+  {% capture profile_entries %}{{ profile_entries }},
+  "url": {{ profile_url | jsonify }}{% endcapture %}
+  {% if profile_description %}
+    {% capture profile_entries %}{{ profile_entries }},
+  "description": {{ profile_description | strip_html | strip_newlines | strip | jsonify }}{% endcapture %}
+  {% endif %}
+  {% if profile_email %}
+    {% capture profile_entries %}{{ profile_entries }},
+  "email": {{ profile_email | prepend: 'mailto:' | jsonify }}{% endcapture %}
+  {% endif %}
+  {% if profile_logo_url %}
+    {% if profile_type == 'Organization' %}
+      {% capture profile_entries %}{{ profile_entries }},
+  "logo": {{ profile_logo_url | jsonify }}{% endcapture %}
+    {% else %}
+      {% capture profile_entries %}{{ profile_entries }},
+  "image": {{ profile_logo_url | jsonify }}{% endcapture %}
+    {% endif %}
+  {% endif %}
+  {% if same_as_items != '' %}
+    {% capture profile_entries %}{{ profile_entries }},
+  "sameAs": [{{ same_as_items }}]{% endcapture %}
+  {% endif %}
+  <script type="application/ld+json">
+  {
+    {{ profile_entries | strip }}
+  }
+  </script>
+{% endif %}
+
+{% if is_article and canonical_url and page.date and article_headline %}
+  {% capture article_entries %}"@context": "https://schema.org"{% endcapture %}
+  {% capture article_entries %}{{ article_entries }},
+  "@type": {{ article_type | default: 'Article' | jsonify }}{% endcapture %}
+  {% capture article_entries %}{{ article_entries }},
+  "@id": {{ canonical_url | append: '#article' | jsonify }}{% endcapture %}
+  {% capture main_entity_entries %}"@type": "WebPage",
+    "@id": {{ canonical_url | jsonify }}{% endcapture %}
+  {% capture article_entries %}{{ article_entries }},
+  "mainEntityOfPage": {
+    {{ main_entity_entries }}
+  }{% endcapture %}
+  {% capture article_entries %}{{ article_entries }},
+  "headline": {{ article_headline | strip_html | strip_newlines | strip | jsonify }}{% endcapture %}
+  {% if meta_description %}
+    {% capture article_entries %}{{ article_entries }},
+  "description": {{ meta_description | strip_newlines | strip | jsonify }}{% endcapture %}
+  {% endif %}
+  {% capture article_entries %}{{ article_entries }},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }}{% endcapture %}
+  {% if article_modified %}
+    {% capture article_entries %}{{ article_entries }},
+  "dateModified": {{ article_modified | date_to_xmlschema | jsonify }}{% endcapture %}
+  {% endif %}
+  {% if meta_image %}
+    {% capture article_entries %}{{ article_entries }},
+  "image": {{ meta_image | jsonify }}{% endcapture %}
+  {% endif %}
+  {% if page.categories %}
+    {% capture article_entries %}{{ article_entries }},
+  "articleSection": {{ page.categories | uniq | jsonify }}{% endcapture %}
+  {% endif %}
+  {% if page.tags %}
+    {% assign keyword_string = page.tags | uniq | join: ', ' %}
+    {% if keyword_string != '' %}
+      {% capture article_entries %}{{ article_entries }},
+  "keywords": {{ keyword_string | jsonify }}{% endcapture %}
+    {% endif %}
+  {% endif %}
+  {% if profile_id %}
+    {% capture article_entries %}{{ article_entries }},
+  "author": {
+    "@id": {{ profile_id | jsonify }}
+  }{% endcapture %}
+    {% capture article_entries %}{{ article_entries }},
+  "publisher": {
+    "@id": {{ profile_id | jsonify }}
+  }{% endcapture %}
+  {% endif %}
+  <script type="application/ld+json">
+  {
+    {{ article_entries | strip }}
+  }
+  </script>
+{% endif %}

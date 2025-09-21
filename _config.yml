@@ -41,13 +41,14 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
 
 # Permalinks
-permalink: pretty
+permalink: /:categories/:title/
 paginate: 3
 
 # Setup
 title: "Maintenance Scripts"
 tagline: "ITAdmin PowerShell Maintenance Scripts"
 description: "A repository of PowerShell Scripts to automate a variety of IT related maintenance tasks."
+lang: en-GB
 default_robots: "index,follow"
 default_social_image: /assets/images/powershell-banner.png
 twitter_username: luke_leighs
@@ -57,8 +58,26 @@ url: https://scripts.lukeleigh.com
 author:
   name: "Luke Leigh"
   email: me@lukeleigh.com
+  url: https://lukeleigh.com
+  bio: "PowerShell automation specialist sharing maintenance scripts and tooling."
+  image: /assets/images/hangout_profile_pic_circle.jpg
+
+organization:
+  name: "Maintenance Scripts"
+  url: https://scripts.lukeleigh.com
+  description: "PowerShell automation scripts, modules, and snippets maintained by Luke Leigh."
+  logo: /assets/images/powershell-banner.png
 
 linkedin_username: lukeleigh
+
+search_url: "https://www.google.com/search?q=site%3Ascripts.lukeleigh.com+{search_term_string}"
+
+seo:
+  noindex_allowlist:
+    - 404.html
+    - assets/KarenHome.html
+    - assets/LukeHome.html
+    - assets/MarkHome.html
 
 plugins:
   - jekyll-feed
@@ -66,6 +85,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-json-feed
   - jekyll-paginate
+  - jekyll-seo-tag
   - jekyll-sitemap
 
 github: [metadata]

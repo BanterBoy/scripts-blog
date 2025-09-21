@@ -1,12 +1,9 @@
 ---
 layout: post
 title: Test-OpenPorts.ps1
-description: "Leverages Test-NetConnection to verify common or custom TCP ports on hosts."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Test-OpenPorts/
-categories:
-  - UserAdminModule
-  - Testing
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/testing/test-openports/
 ---
 
 - [Description](#description)

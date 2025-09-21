@@ -2,10 +2,8 @@
 layout: post
 title: Install-WinGet.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Install-WinGet/
-categories:
-  - UserAdminModule
-  - Shell
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shell/install-winget/
 ---
 
 - [Description](#description)

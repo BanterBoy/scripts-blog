@@ -2,10 +2,8 @@
 layout: post
 title: Get-RDGCARequestPending.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-RDGCARequestPending/
-categories:
-  - UserAdminModule
-  - PKICertificateTools
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/pkicertificatetools/get-rdgcarequestpending/
 ---
 
 - [Description](#description)

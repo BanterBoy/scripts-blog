@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Copy-ReceiveConnector.ps1
+date: 2025-09-19
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /_posts/scripts/Copy-ReceiveConnector/
 ---
 
@@ -231,3 +233,4 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 [1]: http://ecotrust-canada.github.io/markdown-toc
 [2]: https://github.com/googlearchive/code-prettify
+

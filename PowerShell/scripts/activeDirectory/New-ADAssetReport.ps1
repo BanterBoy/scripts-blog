@@ -7,7 +7,7 @@
     	THIS CODE IS MADE AVAILABLE AS IS, WITHOUT WARRANTY OF ANY KIND. THE ENTIRE 
     	RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS CODE REMAINS WITH THE USER.
     	
-    	Version 1.6 - 01/10/2014
+    	Version 1.7 - 02/13/2014
 	
     .DESCRIPTION
         Creates HTML reports of an active direcotry forest and its domains.
@@ -75,7 +75,8 @@
                 Site Links
                 - Name
                 - Replication Interval
-                - Sites 
+                - Sites
+                - Change Notification Enabled
             * Domain Information
                 Domains
                 - Name
@@ -210,7 +211,33 @@
         Excel - This can be used to spit out all the report elements to excel, each section in its own 
                 workbook.
         Custom - You will need to supply your own mix of parameters later in the code to use this.
-	
+        
+   
+    .PARAMETER ReportType
+        Which reports will you be generating?
+        
+        Forest - Generate forest discovery report.
+        Domain - Generate per domain privileged user reports.
+        ForestAndDomain - Default value. Generate both reports.
+    
+    .PARAMETER ExportAllUsers
+	    When processing the domain information gathering, also export all users with normalized attributes to a CSV.
+        
+    .PARAMETER ExportPrivilegedUsers
+        When processing the domain information gathering, also export all privileged users with normalized attributes to a CSV.
+        
+    .PARAMETER ExportGraphvizDefinitionFiles
+        When processing the forest information gathering, also create export graphviz diagram definition files.
+        
+    .PARAMETER SaveData
+        Save data to an xml file for later report processing.
+        
+    .PARAMETER LoadData
+        Load data for report processing (skips information gathering).
+        
+    .PARAMETER DataFile
+        XML file base name used for domain and forest load/save data (without a path!). This will automatically be prefixed with domain_ or forest_.
+        
 	.PARAMETER PromptForInput
     	By default global variables are used (which can be found shortly after the parameters section). 
         If PromptForInput is set then the report variables will be prompted for at the console.
@@ -225,13 +252,30 @@
         .\Get-ADAssetReport.ps1 -PromptForInput -ReportFormat 'Excel' -Verbose
         
     .EXAMPLE
-        Generate the HTML report, prompt for report variables. Be quiet like a mouse (shhhhhh!!!).
+        Generate the HTML report, prompt for report variables.
         .\Get-ADAssetReport.ps1 -PromptForInput
+   
+    .EXAMPLE
+        Gather forest related information. Create graphviz diagram source files. Save all data collected for later report generation.
+        .\Get-ADAssetReport.ps1 -ReportType Forest -ExportGraphvizDefinitionFiles -SaveData
 
+    .EXAMPLE
+        Load previously saved xml forest data and generate the HTML report.
+        .\Get-ADAssetReport.ps1 -LoadData -ReportType Forest
+        
     .NOTES
         Author: Zachary Loeber
 
         Version History:
+        1.7 - 02/13/2014
+            - New save/load functionality! With a switch you can export all collected data
+              to xml for later report processing.
+            - Fixed domain user priveleged report to show lastlogontimestamp as 'never' in html
+              report
+            - Added change notification attribute to site link report section
+            - Small modification to Format-HTMLTable function to catch errors when processing empty tables
+            - Slight code clean up
+            - Fixed issue with domain report count of passwords set to never expire.
         1.6.1 - 01/15/2014
             - Removed superfluous skipdomainreport and skipforestreport paramenters
             - Swapped out Colorize-Table with Format-HTMLTable. This means pretty HTML
@@ -296,15 +340,39 @@
 #>
 [CmdletBinding()] 
 param ( 
-    [Parameter(HelpMessage = 'Format of report(s) to generate.')]
+    [Parameter(HelpMessage = 'Format of report(s) to generate. Defaults to HTML.')]
     [ValidateSet('HTML', 'Excel', 'Custom')]
     [String]
     $ReportFormat = 'HTML',
     
-    [Parameter(HelpMessage = 'Types of report(s) to generate.')]
+    [Parameter(HelpMessage = 'Types of report(s) to generate. Defaults to ForestAndDomain.')]
     [ValidateSet('Forest', 'Domain', 'ForestAndDomain', 'Custom')]
     [String]
     $ReportType = 'ForestAndDomain',
+    
+    [Parameter(HelpMessage = 'CSV Export of all users.(Only applies to Domain account report)')]
+    [switch]
+    $ExportAllUsers,
+    
+    [Parameter(HelpMessage = 'CSV Export of all priviledged users. (Only applies to Domain account report)')]
+    [switch]
+    $ExportPrivilegedUsers,
+    
+    [Parameter(HelpMessage = 'Export graphviz definition files for diagram generation.(Only applies to Forest report)')]
+    [switch]
+    $ExportGraphvizDefinitionFiles,
+    
+    [Parameter(HelpMessage = 'Save all gathered data.')]
+    [switch]
+    $SaveData,
+    
+    [Parameter(HelpMessage = 'Load previously saved data.')]
+    [switch]
+    $LoadData,
+    
+    [Parameter(HelpMessage = 'Data file used when saving or loading data.')]
+    [String]
+    $DataFile = 'SaveData.xml',
     
     [Parameter(HelpMessage = 'Prompt for report variables.')]
     [switch]
@@ -312,17 +380,16 @@ param (
 )
 
 #region Custom Static Variables
-
 # Forest level diagram reports can be enabled here. You can also just enable the source file
 # generation for input into dot.exe or the graphviz gui at another workstation.
-$AD_CreateDiagramSourceFiles = $false
+$AD_CreateDiagramSourceFiles = $ExportGraphvizDefinitionFiles
 $AD_CreateDiagrams = $false
 $Graphviz_Path = ''
 
 # Added this in as it can be useful to have a list of all users with their
 # AD properties sometimes (to massage for input into other scripts among other things)
-$EXPORTTOCSV_ALLUSERS = $false
-$EXPORTTOCSV_PRIVUSERS = $false
+$EXPORTTOCSV_ALLUSERS = $ExportAllUsers
+$EXPORTTOCSV_PRIVUSERS = $ExportPrivilegedUsers
 
 # Used if calling script from command line
 $Verbosity = ($PSBoundParameters['Verbose'] -eq $true)
@@ -488,6 +555,7 @@ $SchemaHashExchange =
     15137 = 'Exchange 2013 RTM'
     15254 = 'Exchange 2013 CU1'
     15281 = 'Exchange 2013 CU2'
+    15283 = 'Exchange 2013 CU3'
 }
 $SchemaHashLync = 
 @{
@@ -496,6 +564,44 @@ $SchemaHashLync =
     1008 = "OCS 2007 R2"
     1100 = "Lync Server 2010"
     1150 = "Lync Server 2013"
+}
+
+# AD DC capabilities list (http://www.ldapexplorer.com/en/manual/103010700-connection-rootdse.htm)
+# - Primarily used to determine if a DC is RODC or not (Const LDAP_CAP_ACTIVE_DIRECTORY_PARTIAL_SECRETS_OID = "1.2.840.113556.1.4.1920")
+$AD_Capabilities = @{
+    '1.2.840.113556.1.4.319'  = 'Paged results'
+    '1.2.840.113556.1.4.417'  = 'Show deleted objects'
+    '1.2.840.113556.1.4.473'  = 'Sort results'
+    '1.2.840.113556.1.4.474'  = 'Sort results response'
+    '1.2.840.113556.1.4.521'  = 'Cross domain move'
+    '1.2.840.113556.1.4.528'  = 'Server notification'
+    '1.2.840.113556.1.4.529'  = 'Extended DN'
+    '1.2.840.113556.1.4.619'  = 'Lazy commit'
+    '1.2.840.113556.1.4.800'  = 'Active Directory >= Windows 2000'
+    '1.2.840.113556.1.4.801'  = 'SD flags'
+    '1.2.840.113556.1.4.805'  = 'Tree delete'
+    '1.2.840.113556.1.4.906'  = 'Microsoft large integer'
+    '1.2.840.113556.1.4.1302' = 'Microsoft OID used with DEN Attributes'
+    '1.2.840.113556.1.4.1338' = 'Verify name'
+    '1.2.840.113556.1.4.1339' = 'Domain scope'
+    '1.2.840.113556.1.4.1340' = 'Search options'
+    '1.2.840.113556.1.4.1341' = 'RODC DCPROMO'
+    '1.2.840.113556.1.4.1413' = 'Permissive Modify'
+    '1.2.840.113556.1.4.1670' = 'Active Directory (v5.1)>= Windows 2003'
+    '1.2.840.113556.1.4.1781' = 'Microsoft LDAP fast bind extended request'
+    '1.2.840.113556.1.4.1791' = 'NTLM Signing and Sealing'
+    '1.2.840.113556.1.4.1851' = 'ADAM / AD LDS Supported'
+    '1.2.840.113556.1.4.1852' = 'Quota Control'
+    '1.2.840.113556.1.4.1880' = 'ADAM Digest'
+    # '1.2.840.113556.1.4.1852' = 'Shutdown Notify'
+    '1.2.840.113556.1.4.1920' = 'Partial Secrets'
+    '1.2.840.113556.1.4.1935' = 'Active Directory (v6.0) >= Windows 2008'
+    '1.2.840.113556.1.4.1947' = 'Force Update'
+    '1.2.840.113556.1.4.1948' = 'Range Retrieval No Error'
+    '1.2.840.113556.1.4.2026' = 'Input DN'
+    '1.2.840.113556.1.4.2064' = 'Show Recycled'
+    '1.2.840.113556.1.4.2065' = 'Show Deactivated Link'
+    '1.2.840.113556.1.4.2080' = 'Active Directory (v6.1) >= Windows 2008 R2'
 }
 
 # Forest Report comments
@@ -696,7 +802,6 @@ $ADForestReport = @{
                     @{n = 'Domain Naming Master'; e = { $_.DomainNamingMaster } },
                     @{n = 'Schema Master'; e = { $_.SchemaMaster } },
                     @{n = 'Domain Count'; e = { ($_.Domains).Count } },
-                    #                        @{n='Site Count';e={($_.Sites).Count}},
                     @{n = 'DC Server Count'; e = { $_.DomainControllersCount } },
                     @{n = 'GC Server Count'; e = { ($_.GlobalCatalogs).Count } },
                     @{n = 'Exchange Server Count'; e = { $_.ExchangeServerCount } },
@@ -713,7 +818,7 @@ $ADForestReport = @{
                     @{n = 'Domain Naming Master'; e = { $_.DomainNamingMaster } },
                     @{n = 'Schema Master'; e = { $_.SchemaMaster } },
                     @{n = 'Domain Count'; e = { ($_.Domains).Count } },
-                    #               @{n='Site Count';e={($_.Sites).Count}},
+                    @{n = 'Site Count'; e = { ($_.Sites).Count } },
                     @{n = 'DC Server Count'; e = { $_.DomainControllersCount } },
                     @{n = 'GC Server Count'; e = { ($_.GlobalCatalogs).Count } },
                     @{n = 'Exchange Server Count'; e = { $_.ExchangeServerCount } },
@@ -814,7 +919,6 @@ $ADForestReport = @{
                     'Properties'      =
                     @{n = 'Function'; e = { $_.LyncElement } },
                     @{n = 'Type'; e = { $_.LyncElementType } },
-                    #@{n='DistName';e={$_.LyncElementName}},
                     @{n = 'FQDN'; e = { $_.LyncElementFQDN } }
                 }
                 'FullDocumentation' = @{
@@ -824,7 +928,6 @@ $ADForestReport = @{
                     'Properties'      =
                     @{n = 'Function'; e = { $_.LyncElement } },
                     @{n = 'Type'; e = { $_.LyncElementType } },
-                    #@{n='DistName';e={$_.LyncElementName}},
                     @{n = 'FQDN'; e = { $_.LyncElementFQDN } }
                 }
             }
@@ -1090,7 +1193,6 @@ $ADForestReport = @{
                     'SectionOverride' = $false
                     'TableType'       = 'Horizontal'
                     'Properties'      =
-                    # @{n='Name';e={$_.DistinguishedName}},
                     @{n = 'Enabled'; e = { $_.Enabled } },
                     @{n = 'Options'; e = { $_.Options } },
                     @{n = 'From'; e = { $_.FromServer } },
@@ -1101,7 +1203,6 @@ $ADForestReport = @{
                     'SectionOverride' = $false
                     'TableType'       = 'Horizontal'
                     'Properties'      =
-                    # @{n='Name';e={$_.DistinguishedName}},
                     @{n = 'Enabled'; e = { $_.Enabled } },
                     @{n = 'Options'; e = { $_.Options } },
                     @{n = 'From'; e = { $_.FromServer } },
@@ -1126,7 +1227,8 @@ $ADForestReport = @{
                     'Properties'      =
                     @{n = 'Name'; e = { $_.Name } },
                     @{n = 'Replication Interval'; e = { $_.repInterval } },
-                    @{n = 'Sites'; e = { [string]$_.Sites -replace ' ', "`n`r" } }
+                    @{n = 'Sites'; e = { [string]$_.Sites -replace ' ', "`n`r" } },
+                    @{n = 'Change Notification Enabled'; e = { $_.ChangeNotification } }
                 }
                 'FullDocumentation' = @{
                     'ContainerType'   = 'Full'
@@ -1135,7 +1237,8 @@ $ADForestReport = @{
                     'Properties'      =
                     @{n = 'Name'; e = { $_.Name } },
                     @{n = 'Replication Interval'; e = { $_.repInterval } },
-                    @{n = 'Sites'; e = { [string]$_.Sites -replace ' ', "<br />`n`r" } }
+                    @{n = 'Sites'; e = { [string]$_.Sites -replace ' ', "<br />`n`r" } },
+                    @{n = 'Change Notification Enabled'; e = { $_.ChangeNotification } }
                 }
             }
             'PostProcessing'            = $False
@@ -1194,11 +1297,6 @@ $ADForestReport = @{
                     @{n = 'Forest Root'; e = { $_.IsForestRoot } },
                     @{n = 'RIDs Issued'; e = { $_.RIDsIssued } },
                     @{n = 'RIDs Remaining'; e = { $_.RIDsRemaining } }
-                    #@{n='Naming Master';e={$_.DomainNamingMaster}},
-                    #@{n='Schema Master';e={$_.SchemaMaster}},
-                    #@{n='PDC Emulator';e={$_.PDCEmulator}},
-                    #@{n='RID Master';e={$_.RIDMaster}},
-                    #@{n='Infra Master';e={$_.InfrastructureMaster}}
                 }
             }
         }
@@ -3808,11 +3906,16 @@ Function Format-HTMLTable {
                         if ($(Invoke-Command $ScriptBlock -ArgumentList @($colval, $ColumnValue))) {
                             $newattrib = $xml.CreateAttribute($Attr)
                             $newattrib.Value = $AttrValue
-                            if ($WholeRow) {
-                                [void]$rows.Item($i).Attributes.Append($newattrib)
+                            try {
+                                if ($WholeRow) {
+                                    [void]$rows.Item($i).Attributes.Append($newattrib)
+                                }
+                                else {
+                                    [void]$cols.Item($index).Attributes.Append($newattrib)
+                                }
                             }
-                            else {
-                                [void]$cols.Item($index).Attributes.Append($newattrib)
+                            catch {
+                                Write-Warning -Message ('Format-HTMLTable: Something weird happened! - {0}' -f $_.Exception.Message)
                             }
                         }
                     }
@@ -3900,7 +4003,7 @@ Function New-ZipFile {
                 # Push-Location so we can use Resolve-Path -Relative 
                 Push-Location (Split-Path $item)
                 # This will get the file, or all the files in the folder (recursively)
-                foreach ($file in Get-ChildItem $item -Recurse -File -Force | % FullName) {
+                foreach ($file in Get-ChildItem $item -Recurse -File -Force | ForEach-Object FullName) {
                     # Calculate the relative file path
                     $relative = (Resolve-Path $file -Relative).TrimStart(".\")
                     # Add the file to the zip
@@ -3941,12 +4044,12 @@ Function Search-AD {
     }
     try {
         (New-Object ADSISearcher -ArgumentList @(
-                $Root,
-                $LDAP,
-                $Properties
-            ) -Property @{
-                PageSize = 1000
-            }).FindAll() | ForEach-Object {
+            $Root,
+            $LDAP,
+            $Properties
+        ) -Property @{
+            PageSize = 1000
+        }).FindAll() | ForEach-Object {
             $ObjectProps = @{}
             $_.Properties.GetEnumerator() |
             Foreach-Object {
@@ -4110,9 +4213,12 @@ Function Normalize-ADUsers {
                         }
                         'lastlogontimestamp' {
                             $AttribVal = [datetime]::FromFileTime([int64]($usr.$Attrib))
-                            $LogonAge = ((get-date) - $AttribVal).days
-                            if ($LogonAge -match '12/31/1600') {
+                            if ($AttribVal -match '12/31/1600') {
                                 $LogonAge = 'Never'
+                                $AttribVal = 'Never'
+                            }
+                            else {
+                                $LogonAge = ((get-date) - $AttribVal).days
                             }
                             $UserProps.Add(
                                 'DaysSinceLastLogon',
@@ -4173,7 +4279,7 @@ Function Get-ADPrivilegedGroups {
     param
     (
         [Parameter(HelpMessage = "Domain to gather privileged group information about. If not specified, all domains in the current forest will be enumerated.",
-            Mandatory = $true,
+            Mandatory = $false,
             ValueFromPipeline = $true)]
         $Domain
     )
@@ -5145,7 +5251,7 @@ Function Get-ADForestReportInformation {
             if ([ADSI]::Exists($Path_ExchangeVer)) {
                 Write-Verbose -Message ('Get-ADForestReportInformation {0}: Exchange - {1}' -f $forest.Name, $((New-TimeSpan $verbose_timer ($verbose_timer = get-date)).totalseconds))
                 [ADSI]$SchemaPathExchange = $Path_ExchangeVer
-                $ExchangeSchema = ($SchemaPathExchange | Select rangeUpper).rangeUpper
+                $ExchangeSchema = ($SchemaPathExchange | Select-Object rangeUpper).rangeUpper
                 $ExchangeVersion = $SchemaHashExchange[$ExchangeSchema]
                 $Props_ExchOrgs = @('distinguishedName',
                     'Name')
@@ -5333,8 +5439,8 @@ Function Get-ADForestReportInformation {
                 ForestFunctionalLevel  = $forest.ForestMode
                 SchemaMaster           = $forest.SchemaRoleOwner
                 DomainNamingMaster     = $forest.NamingRoleOwner
-                Sites                  = @(($forest.Sites | Sort-Object -Property Name | Select Name))
-                Domains                = @(($forest.Domains | Sort-Object -Property Name | Select Name))
+                Sites                  = @(($forest.Sites | Sort-Object -Property Name | Select-Object Name))
+                Domains                = @(($forest.Domains | Sort-Object -Property Name | Select-Object Name))
                 DomainControllers      = $ForestDCs
                 DomainControllersCount = $ForestDCs.Count
                 GlobalCatalogs         = $ForestGCs
@@ -5451,7 +5557,7 @@ Function Get-ADForestReportInformation {
             Write-Verbose -Message ('Get-ADForestReportInformation {0}: Site Links - {1}' -f $forest.Name, $((New-TimeSpan $verbose_timer ($verbose_timer = get-date)).totalseconds))
 
             $AD_SitesLinks = @(Search-AD -Filter '(&(objectClass=siteLink))' `
-                    -Properties cn, replInterval, siteList `
+                    -Properties cn, replInterval, siteList, options `
                     -SearchRoot $Path_ADSiteLinks -DontJoinAttributeValues)
 
             Foreach ($SiteLink in $AD_SitesLinks) {
@@ -5461,9 +5567,10 @@ Function Get-ADForestReportInformation {
                     $SitesInSiteLink += [string]$SiteName
                 }
                 $SiteLinkProp = @{
-                    Name        = $SiteLink.cn
-                    repInterval = $SiteLink.replInterval
-                    Sites       = $SitesInSiteLink
+                    Name               = $SiteLink.cn
+                    repInterval        = $SiteLink.replInterval
+                    Sites              = $SitesInSiteLink
+                    ChangeNotification = ($SiteLink.options -eq 1)
                 }
                 $SiteLinks += new-object psobject -Property $SiteLinkProp
             }
@@ -5514,10 +5621,10 @@ Function Get-ADForestReportInformation {
                     [int64]$temp64val = $totalSIDS * ([math]::Pow(2, 32))
                     $RIDsIssued = [int32]($($RIDproperty) - $temp64val)
                     $RIDsRemaining = $totalSIDS - $RIDsIssued
-                    $PDCEmulator = $Dom.PdcRoleOwner | select Name
-                    $RIDMaster = $Dom.RidRoleOwner | select Name
-                    $InfrastructureMaster = $Dom.InfrastructureRoleOwner | Select Name
-                    $DomainDCs = @($Dom.DomainControllers | Select Name)
+                    $PDCEmulator = $Dom.PdcRoleOwner | Select-Object Name
+                    $RIDMaster = $Dom.RidRoleOwner | Select-Object Name
+                    $InfrastructureMaster = $Dom.InfrastructureRoleOwner | Select-Object Name
+                    $DomainDCs = @($Dom.DomainControllers | Select-Object Name)
                     $lockoutThreshold = $CurDomainDetails.lockoutThreshold
                     $pwdHistoryLength = $CurDomainDetails.pwdHistoryLength
                     $minPwdLength = $CurDomainDetails.minPwdLength
@@ -6009,6 +6116,7 @@ digraph test {
             }
             #endregion Create Diagrams
             
+            $ReportContainer['Configuration']['Assets'] = $ForestData.ForestName
             Return $ForestData.ForestName
             Write-Verbose -Message ('Get-ADForestReportInformation {0}: Finished - {1}' -f $forest.Name, $((New-TimeSpan $verbose_timer ($verbose_timer = get-date)).totalseconds))
         }
@@ -6033,7 +6141,7 @@ Function Get-ADDomainReportInformation {
             $Filter_User_Enabled = '(samAccountType=805306368)(!(userAccountControl:1.2.840.113556.1.4.803:=2))'
             $Filter_User_Disabled = '(samAccountType=805306368)(useraccountcontrol:1.2.840.113556.1.4.803:=2)'
             $Filter_User_NoPasswordReq = '(samAccountType=805306368)(UserAccountControl:1.2.840.113556.1.4.803:=32)'
-            $Filter_User_PasswordNeverExpires = '(samAccountType=805306368)(userAccountControl:1.2.840.113556.1.4.83:=65536)'
+            $Filter_User_PasswordNeverExpires = '(samAccountType=805306368)(UserAccountControl:1.2.840.113556.1.4.803:=65536)'
             $Filter_User_DialinEnabled = '(samAccountType=805306368)(msNPAllowDialin=TRUE)'
             $Filter_User_UnconstrainedDelegation = '(samAccountType=805306368)(userAccountControl:1.2.840.113556.1.4.803:=524288)'
             $Filter_User_NotTrustedForDelegation = '(samAccountType=805306368)(userAccountControl:1.2.840.113556.1.4.803:=524288)'
@@ -6220,6 +6328,7 @@ Function Get-ADDomainReportInformation {
                     Write-Warning ('Get-ADForestReportInformation: Issue with {0} Domain - {1}' -f $Dom, $_.Exception.Message)
                 }
             }
+            $ReportContainer['Configuration']['Assets'] = $Domains
             Return $Domains
         }
     }
@@ -6581,6 +6690,18 @@ Function New-SelfContainedAssetReport {
         [switch]
         $SaveReport,
         
+        [Parameter( HelpMessage = 'Save the data gathered for later processing?')]
+        [switch]
+        $SaveData,
+        
+        [Parameter( HelpMessage = 'Save the data gathered for later processing?')]
+        [string]
+        $SaveDataFile = 'DataFile.xml',
+        
+        [Parameter( HelpMessage = 'Skip information gathering?')]
+        [switch]
+        $SkipInformationGathering,
+        
         [Parameter( HelpMessage = 'Save the report as a PDF. If the PDF library is not available the default format, HTML, will be used instead.')]
         [switch]
         $SaveAsPDF,
@@ -6639,7 +6760,7 @@ Function New-SelfContainedAssetReport {
             $ReportType = $ReportContainer['Configuration']['ReportTypes'][0]
         }
         # There must be a more elegant way to do this hash sorting but this also allows
-        # us to pull a list of only the sections which are defined and need to be generated.
+        # us to pull a list of only the sections which are defined and need to be generated.d
         $SortedReports = @()
         Foreach ($Key in $ReportContainer['Sections'].Keys) {
             if ($ReportContainer['Sections'][$Key]['ReportTypes'].ContainsKey($ReportType)) {
@@ -6658,230 +6779,270 @@ Function New-SelfContainedAssetReport {
     PROCESS
     {}
     END {
-        # Information Gathering, Your custom script block must return the 
-        #   array of strings (keys) which consist of the Root elements of your
-        #   desired reports.
-        Write-Verbose -Message ('New-SelfContainedAssetReport: Invoking information gathering script...')
-        $AssetNames = 
-        @(Invoke-Command ([scriptblock]::Create($ReportContainer['Configuration']['PreProcessing'])))
-
-        # if we are to export all data to excel, then we do so per section
-        #   then per Asset
-        if ($ExportToExcel) {
-            Write-Verbose -Message ('New-SelfContainedAssetReport: Exporting to excel...')
-            # First make sure we have data to export, this shlould also weed out non-data sections meant for html
-            #  (like section breaks and such)
-            $ProcessExcelReport = $false
-            foreach ($ReportSection in $SortedReports) {
-                if ($ReportContainer['Sections'][$ReportSection.Section]['AllData'].Count -gt 0) {
-                    $ProcessExcelReport = $true
-                }
+        if ($SkipInformationGathering) {
+            $AssetNames = @($ReportContainer['Configuration']['Assets'])
+        }
+        else {
+            # Information Gathering, Your custom script block must return the 
+            #   array of strings (keys) which consist of the Root elements of your
+            #   desired reports.
+            Write-Verbose -Message ('New-SelfContainedAssetReport: Invoking information gathering script...')
+            $AssetNames = 
+            @(Invoke-Command ([scriptblock]::Create($ReportContainer['Configuration']['PreProcessing'])))
+        }
+        if ($AssetNames.Count -ge 1) {
+            if ($SaveData) {
+                $ReportContainer | Export-CliXml -Path ($ReportNamePrefix + $SaveDataFile)
             }
+            # if we are to export all data to excel, then we do so per section
+            #   then per Asset
+            if ($ExportToExcel) {
+                Write-Verbose -Message ('New-SelfContainedAssetReport: Exporting to excel...')
+                # First make sure we have data to export, this shlould also weed out non-data sections meant for html
+                #  (like section breaks and such)
+                $ProcessExcelReport = $false
+                foreach ($ReportSection in $SortedReports) {
+                    if ($ReportContainer['Sections'][$ReportSection.Section]['AllData'].Count -gt 0) {
+                        $ProcessExcelReport = $true
+                    }
+                }
 
-            #region Excel
-            if ($ProcessExcelReport) {
-                # Create the excel workbook
-                try {
-                    $Excel = New-Object -ComObject Excel.Application -ErrorAction Stop
-                    $ExcelExists = $True
-                    $Excel.visible = $True
-                    #Start-Sleep -s 1
-                    $Workbook = $Excel.Workbooks.Add()
-                    $Excel.DisplayAlerts = $false
-                }
-                catch {
-                    Write-Warning ('Issues opening excel: {0}' -f $_.Exception.Message)
-                    $ExcelExists = $False
-                }
-                if ($ExcelExists) {
-                    # going through every section, but in reverse so it shows up in the correct
-                    #  sheet in excel. 
-                    $SortedExcelReports = $SortedReports | Sort-Object Order -Descending
-                    Foreach ($ReportSection in $SortedExcelReports) {
-                        $SectionData = $ReportContainer['Sections'][$ReportSection.Section]['AllData']
-                        $SectionProperties = $ReportContainer['Sections'][$ReportSection.Section]['ReportTypes'][$ReportType]['Properties']
-                        
-                        # Gather all the asset information in the section (remember that each asset may
-                        #  be pointing to an array of psobjects)
-                        $TransformedSectionData = @()                        
-                        foreach ($asset in $SectionData.Keys) {
-                            # Get all of our calculated properties, then add in the asset name
-                            $TempProperties = $SectionData[$asset] | Select $SectionProperties
-                            $TransformedSectionData += ($TempProperties | Select @{n = 'AssetName'; e = { $asset } }, *)
-                        }
-                        if (($TransformedSectionData.Count -gt 0) -and ($TransformedSectionData -ne $null)) {
-                            $temparray1 = $TransformedSectionData | ConvertTo-MultiArray
-                            if ($temparray1 -ne $null) {    
-                                $temparray = $temparray1.Value
-                                $starta = [int][char]'a' - 1
-                                
-                                if ($temparray.GetLength(1) -gt 26) {
-                                    $col = [char]([int][math]::Floor($temparray.GetLength(1) / 26) + $starta) + [char](($temparray.GetLength(1) % 26) + $Starta)
-                                } 
-                                else {
-                                    $col = [char]($temparray.GetLength(1) + $starta)
+                #region Excel
+                if ($ProcessExcelReport) {
+                    # Create the excel workbook
+                    try {
+                        $Excel = New-Object -ComObject Excel.Application -ErrorAction Stop
+                        $ExcelExists = $True
+                        $Excel.visible = $True
+                        #Start-Sleep -s 1
+                        $Workbook = $Excel.Workbooks.Add()
+                        $Excel.DisplayAlerts = $false
+                    }
+                    catch {
+                        Write-Warning ('Issues opening excel: {0}' -f $_.Exception.Message)
+                        $ExcelExists = $False
+                    }
+                    if ($ExcelExists) {
+                        # going through every section, but in reverse so it shows up in the correct
+                        #  sheet in excel. 
+                        $SortedExcelReports = $SortedReports | Sort-Object Order -Descending
+                        Foreach ($ReportSection in $SortedExcelReports) {
+                            $SectionData = $ReportContainer['Sections'][$ReportSection.Section]['AllData']
+                            $SectionProperties = $ReportContainer['Sections'][$ReportSection.Section]['ReportTypes'][$ReportType]['Properties']
+                            
+                            # Gather all the asset information in the section (remember that each asset may
+                            #  be pointing to an array of psobjects)
+                            $TransformedSectionData = @()                        
+                            foreach ($asset in $SectionData.Keys) {
+                                # Get all of our calculated properties, then add in the asset name
+                                $TempProperties = $SectionData[$asset] | Select-Object $SectionProperties
+                                $TransformedSectionData += ($TempProperties | Select-Object @{n = 'AssetName'; e = { $asset } }, *)
+                            }
+                            if (($TransformedSectionData.Count -gt 0) -and ($null -ne $TransformedSectionData)) {
+                                $temparray1 = $TransformedSectionData | ConvertTo-MultiArray
+                                if ($null -ne $temparray1) {    
+                                    $temparray = $temparray1.Value
+                                    $starta = [int][char]'a' - 1
+                                    
+                                    if ($temparray.GetLength(1) -gt 26) {
+                                        $col = [char]([int][math]::Floor($temparray.GetLength(1) / 26) + $starta) + [char](($temparray.GetLength(1) % 26) + $Starta)
+                                    } 
+                                    else {
+                                        $col = [char]($temparray.GetLength(1) + $starta)
+                                    }
+                                    
+                                    Start-Sleep -s 1
+                                    $xlCellValue = 1
+                                    $xlEqual = 3
+                                    $BadColor = 13551615    #Light Red
+                                    $BadText = -16383844    #Dark Red
+                                    $GoodColor = 13561798    #Light Green
+                                    $GoodText = -16752384    #Dark Green
+                                    $Worksheet = $Workbook.Sheets.Add()
+                                    $Worksheet.Name = $ReportSection.Section
+                                    $Range = $Worksheet.Range("a1", "$col$($temparray.GetLength(0))")
+                                    $Range.Value2 = $temparray
+
+                                    #Format the end result (headers, autofit, et cetera)
+                                    [void]$Range.EntireColumn.AutoFit()
+                                    [void]$Range.FormatConditions.Add($xlCellValue, $xlEqual, 'TRUE')
+                                    $Range.FormatConditions.Item(1).Interior.Color = $GoodColor
+                                    $Range.FormatConditions.Item(1).Font.Color = $GoodText
+                                    [void]$Range.FormatConditions.Add($xlCellValue, $xlEqual, 'OK')
+                                    $Range.FormatConditions.Item(2).Interior.Color = $GoodColor
+                                    $Range.FormatConditions.Item(2).Font.Color = $GoodText
+                                    [void]$Range.FormatConditions.Add($xlCellValue, $xlEqual, 'FALSE')
+                                    $Range.FormatConditions.Item(3).Interior.Color = $BadColor
+                                    $Range.FormatConditions.Item(3).Font.Color = $BadText
+                                    
+                                    # Header
+                                    $range = $Workbook.ActiveSheet.Range("a1", "$($col)1")
+                                    $range.Interior.ColorIndex = 19
+                                    $range.Font.ColorIndex = 11
+                                    $range.Font.Bold = $True
+                                    $range.HorizontalAlignment = -4108
                                 }
-                                
-                                Start-Sleep -s 1
-                                $xlCellValue = 1
-                                $xlEqual = 3
-                                $BadColor = 13551615    #Light Red
-                                $BadText = -16383844    #Dark Red
-                                $GoodColor = 13561798    #Light Green
-                                $GoodText = -16752384    #Dark Green
-                                $Worksheet = $Workbook.Sheets.Add()
-                                $Worksheet.Name = $ReportSection.Section
-                                $Range = $Worksheet.Range("a1", "$col$($temparray.GetLength(0))")
-                                $Range.Value2 = $temparray
-
-                                #Format the end result (headers, autofit, et cetera)
-                                [void]$Range.EntireColumn.AutoFit()
-                                [void]$Range.FormatConditions.Add($xlCellValue, $xlEqual, 'TRUE')
-                                $Range.FormatConditions.Item(1).Interior.Color = $GoodColor
-                                $Range.FormatConditions.Item(1).Font.Color = $GoodText
-                                [void]$Range.FormatConditions.Add($xlCellValue, $xlEqual, 'OK')
-                                $Range.FormatConditions.Item(2).Interior.Color = $GoodColor
-                                $Range.FormatConditions.Item(2).Font.Color = $GoodText
-                                [void]$Range.FormatConditions.Add($xlCellValue, $xlEqual, 'FALSE')
-                                $Range.FormatConditions.Item(3).Interior.Color = $BadColor
-                                $Range.FormatConditions.Item(3).Font.Color = $BadText
-                                
-                                # Header
-                                $range = $Workbook.ActiveSheet.Range("a1", "$($col)1")
-                                $range.Interior.ColorIndex = 19
-                                $range.Font.ColorIndex = 11
-                                $range.Font.Bold = $True
-                                $range.HorizontalAlignment = -4108
                             }
                         }
+                        # Get rid of the blank default worksheets
+                        $Workbook.Worksheets.Item("Sheet1").Delete()
+                        $Workbook.Worksheets.Item("Sheet2").Delete()
+                        $Workbook.Worksheets.Item("Sheet3").Delete()
                     }
-                    # Get rid of the blank default worksheets
-                    $Workbook.Worksheets.Item("Sheet1").Delete()
-                    $Workbook.Worksheets.Item("Sheet2").Delete()
-                    $Workbook.Worksheets.Item("Sheet3").Delete()
                 }
+                #endregion Excel
             }
-            #endregion Excel
-        }
 
-        foreach ($Asset in $AssetNames) {
-            # First check if there is any data to report upon for each asset
-            $ContainsData = $false
-            $SectionCount = 0
-            Foreach ($ReportSection in $SortedReports) {
-                if ($ReportContainer['Sections'][$ReportSection.Section]['AllData'].ContainsKey($Asset)) {
-                    $ContainsData = $true
+            foreach ($Asset in $AssetNames) {
+                # First check if there is any data to report upon for each asset
+                $ContainsData = $false
+                $SectionCount = 0
+                Foreach ($ReportSection in $SortedReports) {
+                    if ($ReportContainer['Sections'][$ReportSection.Section]['AllData'].ContainsKey($Asset)) {
+                        $ContainsData = $true
+                    }
+                }
+                
+                # If we have any data then we have a report to create
+                if ($ContainsData) {
+                    $AssetReport = ''
+                    $AssetReport += $HTMLRendering['ServerBegin'][$HTMLMode] -replace '<0>', $Asset
+                    $UsedSections = 0
+                    $TotalSectionsPerRow = 0
+                    
+                    Foreach ($ReportSection in $SortedReports) {
+                        if ($ReportContainer['Sections'][$ReportSection.Section]['ReportTypes'][$ReportType]) {
+                            #region Section Calculation
+                            # Use this code to track where we are at in section usage
+                            #  and create new section groups as needed
+                            
+                            # Current section type
+                            $CurrContainer = $ReportContainer['Sections'][$ReportSection.Section]['ReportTypes'][$ReportType]['ContainerType']
+                            
+                            # Grab first two digits found in the section container div
+                            $SectionTracking = ([Regex]'\d{1}').Matches($HTMLRendering['SectionContainers'][$HTMLMode][$CurrContainer]['Head'])
+                            if (($SectionTracking[1].Value -ne $TotalSectionsPerRow) -or `
+                                ($SectionTracking[0].Value -eq $SectionTracking[1].Value) -or `
+                                (($UsedSections + [int]$SectionTracking[0].Value) -gt $TotalSectionsPerRow) -and `
+                                (!$ReportContainer['Sections'][$ReportSection.Section]['ReportTypes'][$ReportType]['SectionOverride'])) {
+                                $NewGroup = $true
+                            }
+                            else {
+                                $NewGroup = $false
+                                $UsedSections += [int]$SectionTracking[0].Value
+                            }
+                            
+                            if ($NewGroup) {
+                                if ($UsedSections -ne 0) {
+                                    $AssetReport += $HTMLRendering['SectionContainerGroup'][$HTMLMode]['Tail']
+                                }
+                                $AssetReport += $HTMLRendering['SectionContainerGroup'][$HTMLMode]['Head']
+                                $UsedSections = [int]$SectionTracking[0].Value
+                                $TotalSectionsPerRow = [int]$SectionTracking[1].Value
+                            }
+                            #endregion Section Calculation
+                            $AssetReport += Create-ReportSection  -Rpt $ReportContainer `
+                                -Asset $Asset `
+                                -Section $ReportSection.Section `
+                                -TableTitle $ReportContainer['Sections'][$ReportSection.Section]['Title']
+                        }
+                    }
+                    
+                    $AssetReport += $HTMLRendering['SectionContainerGroup'][$HTMLMode]['Tail']
+                    $AssetReport += $HTMLRendering['ServerEnd'][$HTMLMode]
+                    $AssetReports += $AssetReport
+                    
+                }
+                # If we are creating per-asset reports then create one now, otherwise keep going
+                if (($OutputMethod -eq 'IndividualReport') -and ($AssetReports -ne '')) {
+                    $ReportOutputSplat.Report = ($HTMLRendering['Header'][$HTMLMode] -replace '<0>', $Asset) + 
+                    $AssetReports + 
+                    $HTMLRendering['Footer'][$HTMLMode]
+                    $ReportOutputSplat.ReportName = $ReportNamePrefix + $Asset + '.html'
+                    $ReportOutputSplat.ReportPath = $ReportLocation
+            
+                    $FinishedReportPath = New-ReportOutput @ReportOutputSplat
+                    if ($FinishedReportPath -ne $false) {
+                        $FinishedReportPaths += $FinishedReportPath
+                    }
+                    $AssetReports = ''
                 }
             }
             
-            # If we have any data then we have a report to create
-            if ($ContainsData) {
-                $AssetReport = ''
-                $AssetReport += $HTMLRendering['ServerBegin'][$HTMLMode] -replace '<0>', $Asset
-                $UsedSections = 0
-                $TotalSectionsPerRow = 0
-                
-                Foreach ($ReportSection in $SortedReports) {
-                    if ($ReportContainer['Sections'][$ReportSection.Section]['ReportTypes'][$ReportType]) {
-                        #region Section Calculation
-                        # Use this code to track where we are at in section usage
-                        #  and create new section groups as needed
-                        
-                        # Current section type
-                        $CurrContainer = $ReportContainer['Sections'][$ReportSection.Section]['ReportTypes'][$ReportType]['ContainerType']
-                        
-                        # Grab first two digits found in the section container div
-                        $SectionTracking = ([Regex]'\d{1}').Matches($HTMLRendering['SectionContainers'][$HTMLMode][$CurrContainer]['Head'])
-                        if (($SectionTracking[1].Value -ne $TotalSectionsPerRow) -or `
-                            ($SectionTracking[0].Value -eq $SectionTracking[1].Value) -or `
-                            (($UsedSections + [int]$SectionTracking[0].Value) -gt $TotalSectionsPerRow) -and `
-                            (!$ReportContainer['Sections'][$ReportSection.Section]['ReportTypes'][$ReportType]['SectionOverride'])) {
-                            $NewGroup = $true
-                        }
-                        else {
-                            $NewGroup = $false
-                            $UsedSections += [int]$SectionTracking[0].Value
-                        }
-                        
-                        if ($NewGroup) {
-                            if ($UsedSections -ne 0) {
-                                $AssetReport += $HTMLRendering['SectionContainerGroup'][$HTMLMode]['Tail']
-                            }
-                            $AssetReport += $HTMLRendering['SectionContainerGroup'][$HTMLMode]['Head']
-                            $UsedSections = [int]$SectionTracking[0].Value
-                            $TotalSectionsPerRow = [int]$SectionTracking[1].Value
-                        }
-                        #endregion Section Calculation
-                        $AssetReport += Create-ReportSection  -Rpt $ReportContainer `
-                            -Asset $Asset `
-                            -Section $ReportSection.Section `
-                            -TableTitle $ReportContainer['Sections'][$ReportSection.Section]['Title']
-                    }
-                }
-                
-                $AssetReport += $HTMLRendering['SectionContainerGroup'][$HTMLMode]['Tail']
-                $AssetReport += $HTMLRendering['ServerEnd'][$HTMLMode]
-                $AssetReports += $AssetReport
-                
-            }
-            # If we are creating per-asset reports then create one now, otherwise keep going
-            if (($OutputMethod -eq 'IndividualReport') -and ($AssetReports -ne '')) {
-                $ReportOutputSplat.Report = ($HTMLRendering['Header'][$HTMLMode] -replace '<0>', $Asset) + 
+            # If one big report is getting sent/saved do so now
+            if (($OutputMethod -eq 'OneBigReport') -and ($AssetReports -ne '')) {
+                $FullReport = ($HTMLRendering['Header'][$HTMLMode] -replace '<0>', $Asset) + 
                 $AssetReports + 
                 $HTMLRendering['Footer'][$HTMLMode]
-                $ReportOutputSplat.ReportName = $ReportNamePrefix + $Asset + '.html'
+                $ReportOutputSplat.ReportName = $ReportName
                 $ReportOutputSplat.ReportPath = $ReportLocation
-        
+                $ReportOutputSplat.Report = ($HTMLRendering['Header'][$HTMLMode] -replace '<0>', 'Multiple Systems') + 
+                $AssetReports + 
+                $HTMLRendering['Footer'][$HTMLMode]
                 $FinishedReportPath = New-ReportOutput @ReportOutputSplat
                 if ($FinishedReportPath -ne $false) {
                     $FinishedReportPaths += $FinishedReportPath
                 }
-                $AssetReports = ''
-            }
-        }
-        
-        # If one big report is getting sent/saved do so now
-        if (($OutputMethod -eq 'OneBigReport') -and ($AssetReports -ne '')) {
-            $FullReport = ($HTMLRendering['Header'][$HTMLMode] -replace '<0>', $Asset) + 
-            $AssetReports + 
-            $HTMLRendering['Footer'][$HTMLMode]
-            $ReportOutputSplat.ReportName = $ReportName
-            $ReportOutputSplat.ReportPath = $ReportLocation
-            $ReportOutputSplat.Report = ($HTMLRendering['Header'][$HTMLMode] -replace '<0>', 'Multiple Systems') + 
-            $AssetReports + 
-            $HTMLRendering['Footer'][$HTMLMode]
-            $FinishedReportPath = New-ReportOutput @ReportOutputSplat
-            if ($FinishedReportPath -ne $false) {
-                $FinishedReportPaths += $FinishedReportPath
-            }
-        }
-        
-        if ($ZipReport) {
-            $ZipReportName = "$($ReportOutputSplat.ReportName).zip"
-            $FinishedReportPaths | Add-Zip $ZipReportName
-            $FinishedReportPaths | Remove-Item
-            $FinishedReportPaths = @($ZipReportName)
-        }
-        if ($SendMail) {
-            $ReportDeliverySplat = @{
-                'EmailSender'    = $EmailSender
-                'EmailRecipient' = $EmailRecipient
-                'EmailSubject'   = $EmailSubject
-                'EmailRelay'     = $EmailRelay
-                'SendMail'       = $SendMail
-                'ForceAnonymous' = $ForceAnonymous
             }
             
-            if ($ZipReport -or ($FinishedReportPaths.Count -gt 1))
-            {}
-            New-ReportDelivery @ReportDeliverySplat
+            if ($ZipReport) {
+                $ZipReportName = "$($ReportOutputSplat.ReportName).zip"
+                $FinishedReportPaths | Add-Zip $ZipReportName
+                $FinishedReportPaths | Remove-Item
+                $FinishedReportPaths = @($ZipReportName)
+            }
+            if ($SendMail) {
+                $ReportDeliverySplat = @{
+                    'EmailSender'    = $EmailSender
+                    'EmailRecipient' = $EmailRecipient
+                    'EmailSubject'   = $EmailSubject
+                    'EmailRelay'     = $EmailRelay
+                    'SendMail'       = $SendMail
+                    'ForceAnonymous' = $ForceAnonymous
+                }
+                
+                if ($ZipReport -or ($FinishedReportPaths.Count -gt 1))
+                {}
+                New-ReportDelivery @ReportDeliverySplat
+            }
         }
     }
+}
+
+Function Load-AssetDataFile ($FileToLoad) {
+    $ReportStructure = Import-Clixml -Path $FileToLoad
+    # Export/Import XMLCLI isn't going to deal with our embedded scriptblocks (named expressions)
+    # so we manually convert them back to scriptblocks like the rockstars we are...
+    Foreach ($Key in $ReportStructure['Sections'].Keys) {
+        if ($ReportStructure['Sections'][$Key]['Type'] -eq 'Section') {
+            # if not a section break
+            Foreach ($ReportTypeKey in $ReportStructure['Sections'][$Key]['ReportTypes'].Keys) {
+                $ReportStructure['Sections'][$Key]['ReportTypes'][$ReportTypeKey]['Properties'] | 
+                ForEach-Object {
+                    $_['e'] = [Scriptblock]::Create($_['e'])
+                }
+            }
+        }
+    }
+    Return $ReportStructure
 }
 #endregion Functions - Asset Report Project
 
 #region Main
 $reportsplat = @{}
+if ($LoadData) {
+    if (Test-Path ("forest_" + $DataFile)) {
+        $ADForestReport = Load-AssetDataFile "forest_$DataFile"
+    }
+    if (Test-Path ("domain_" + $DataFile)) {
+        $ADDomainReport = Load-AssetDataFile "domain_$DataFile"
+    }
+    $reportsplat.SkipInformationGathering = $true
+}
+elseif ($SaveData) {
+    $reportsplat.SaveData = $true
+    $reportsplat.SaveDataFile = $DataFile
+}
 
 if ($Verbosity) {
     $reportsplat.Verbose = $true

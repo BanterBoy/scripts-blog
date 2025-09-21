@@ -370,3 +370,7 @@ vendor
 
 # Bundler lockfile is generated dynamically
 Gemfile.lock
+
+# SEO automation artifacts
+seo-checks.json
+lychee-report.json

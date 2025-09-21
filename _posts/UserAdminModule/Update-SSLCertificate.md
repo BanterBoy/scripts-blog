@@ -2,10 +2,8 @@
 layout: post
 title: Update-SSLCertificate.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Update-SSLCertificate/
-categories:
-  - UserAdminModule
-  - Security
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/security/update-sslcertificate/
 ---
 
 - [Description](#description)

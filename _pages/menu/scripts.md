@@ -1,6 +1,8 @@
 ---
 layout: page
-title: scripts
+title: "PowerShell Scripts | Maintenance Scripts"
+nav_title: Scripts
+heading: PowerShell Scripts Library
 description: "Directory of complete PowerShell scripts covering Active Directory, Exchange, and more."
 permalink: /menu/_pages/scripts.html
 ---
@@ -237,7 +239,7 @@ permalink: /menu/_pages/scripts.html
 | security | [Export-BitlockerParams.ps1](/_posts/scripts/Export-BitlockerParams/) |
 | security | [Invoke-UrlScan.ps1](/_posts/scripts/Invoke-UrlScan/) |
 | security | [New-PassPhrase.ps1](/_posts/scripts/New-PassPhrase/) |
-
+| security | [New-KrbtgtKeys.ps1](/scripts/security/new-krbtgtkeys/) |
 ---
 
 ## time
@@ -284,3 +286,4 @@ permalink: /menu/_pages/scripts.html
 | miscellaneous | [Write-MatrixMessage.ps1](/_posts/scripts/Write-MatrixMessage/)             |
 
 ---
+

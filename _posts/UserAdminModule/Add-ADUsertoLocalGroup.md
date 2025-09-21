@@ -2,10 +2,8 @@
 layout: post
 title: Add-ADUsertoLocalGroup.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Add-ADUsertoLocalGroup/
-categories:
-  - UserAdminModule
-  - ADFunctions
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/adfunctions/add-adusertolocalgroup/
 ---
 
 ---
@@ -47,7 +45,7 @@ This section can of course be copied in part or full. You can download the entir
 ```powershell
 function Add-ADUsertoLocalGroup {
     [CmdletBinding(DefaultParameterSetName = 'Default',
-        HelpURI = 'https://scripts.lukeleigh.com/_posts/UserAdminModule/Add-ADUsertoLocalGroup/')]
+        HelpURI = 'https://scripts.lukeleigh.com/useradminmodule/adfunctions/add-adusertolocalgroup/')]
     param (
         [string[]]$ComputerName,
         [string[]]$UserName,

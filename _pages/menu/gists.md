@@ -1,6 +1,8 @@
 ---
 layout: page
-title: gists
+title: "GitHub Gists | Maintenance Scripts"
+nav_title: Gists
+heading: GitHub Gists Showcase
 description: "Embedded GitHub Gists highlighting smaller PowerShell utilities and experiments."
 permalink: /menu/_pages/gists.html
 ---

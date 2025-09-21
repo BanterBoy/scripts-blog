@@ -2,10 +2,8 @@
 layout: post
 title: Copy-History.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Copy-History/
-categories:
-  - UserAdminModule
-  - Shell
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shell/copy-history/
 ---
 
 - [Description](#description)

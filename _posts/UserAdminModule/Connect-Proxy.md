@@ -1,13 +1,11 @@
 ---
 layout: post
 title: Connect-Proxy.ps1
-description: "Shows how to create a proxy-aware WebClient for authenticated downloads and API calls."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Connect-Proxy/
-categories:
-  - UserAdminModule
-  - Network
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/network/connect-proxy/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

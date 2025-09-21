@@ -1,6 +1,16 @@
-﻿---
+---
 layout: post
 title: Detect-KeyInput2.ps1
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /snippets/detect-keyinput2/
+categories:
+- Snippets
+tags:
+- PowerShell
+- Snippets
+- Detect Key Input 2
+description: This PowerShell script demonstrates how to detect if a specific key is pressed on the keyboard. The script starts by adding two .NET assemblies, WindowsBase...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

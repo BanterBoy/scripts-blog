@@ -30,6 +30,42 @@ jobs:
         shell: pwsh
         run: ./build/Verify-CssLink.ps1 -SiteRoot "_site" -CssHint "hyde.css"
 
+      - name: Check generated site links
+        # Originally: lycheeverse/lychee-action@v2.0.2
+        uses: lycheeverse/lychee-action@v2.0.2
+        with:
+          args: >-
+            --no-progress
+            --format json
+            --output ./lychee-report.json
+            --root-dir "${{ github.workspace }}/_site"
+            --config .lychee.toml
+            _site
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run SEO guardrail checks
+        run: |
+          ruby build/seo-checks.rb --site ./_site --out ./seo-checks.json
+        env:
+          CI: "true"
+          SEO_SOFT_FAIL_WARNINGS: "false"
+          SEO_SITEMAP_OPTIONAL: "false"
+
+      - name: Upload seo-checks.json
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-checks
+          path: seo-checks.json
+
+      - name: Upload lychee report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lychee-report
+          path: lychee-report.json
+
       - name: Upload built site artifact
         uses: actions/upload-artifact@v4
         with:

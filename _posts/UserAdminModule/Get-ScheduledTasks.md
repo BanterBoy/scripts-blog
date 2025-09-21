@@ -1,12 +1,9 @@
 ---
 layout: post
 title: Get-ScheduledTasks.ps1
-description: "Enumerates scheduled tasks on remote servers with filtering support."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Get-ScheduledTasks/
-categories:
-  - UserAdminModule
-  - ProcessServiceSchedules
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/processserviceschedules/get-scheduledtasks/
 ---
 
 - [Description](#description)

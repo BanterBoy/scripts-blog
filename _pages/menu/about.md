@@ -1,6 +1,8 @@
 ---
 layout: page
-title: about
+title: "About Luke Leigh | Maintenance Scripts"
+nav_title: About
+heading: About Maintenance Scripts
 description: "Background on Luke Leigh and the goals of the PowerShell script catalogue."
 permalink: /menu/_pages/about.html
 ---
@@ -37,7 +39,7 @@ Over the years I had accumulated a large store of PowerShell code that TBH wasn'
 
 ## Example
 
-[![Example](/assets/images/About/example1.png)](/_posts/functions/FSMOFunctions/)
+[![Example](/assets/images/About/example1.png)](/useradminmodule/adfunctions/fsmofunctions/)
 
 I plan to provide a brief overview of the script and where possible some examples for their use.
 

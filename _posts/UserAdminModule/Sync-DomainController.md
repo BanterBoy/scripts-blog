@@ -1,12 +1,9 @@
 ---
 layout: post
 title: Sync-DomainController.ps1
-description: "Forces replication across domain controllers within a given domain."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Sync-DomainController/
-categories:
-  - UserAdminModule
-  - Replication
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/replication/sync-domaincontroller/
 ---
 
 - [Description](#description)

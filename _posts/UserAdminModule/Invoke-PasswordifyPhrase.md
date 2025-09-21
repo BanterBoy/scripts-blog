@@ -2,10 +2,8 @@
 layout: post
 title: Invoke-PasswordifyPhrase.ps1
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Invoke-PasswordifyPhrase/
-categories:
-  - UserAdminModule
-  - Security
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/security/invoke-passwordifyphrase/
 ---
 
 - [Description](#description)

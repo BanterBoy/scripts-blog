@@ -1,12 +1,9 @@
 ---
 layout: post
 title: Enable-RDPRemotely.ps1
-description: "Enables Remote Desktop access on remote computers across mixed PowerShell versions."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Enable-RDPRemotely/
-categories:
-  - UserAdminModule
-  - RemoteConnections
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/remoteconnections/enable-rdpremotely/
 ---
 
 - [Description](#description)

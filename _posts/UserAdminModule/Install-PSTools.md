@@ -1,12 +1,9 @@
 ---
 layout: post
 title: Install-PSTools.ps1
-description: "Downloads, installs, or removes the Sysinternals PSTools suite."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Install-PSTools/
-categories:
-  - UserAdminModule
-  - Shell
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shell/install-pstools/
 ---
 
 - [Description](#description)

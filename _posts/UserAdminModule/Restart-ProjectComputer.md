@@ -1,13 +1,11 @@
 ---
 layout: post
 title: Restart-ProjectComputer.ps1
-description: "Forcibly restarts project computers and waits for them to come back online."
 date: 2025-09-19
-permalink: /_posts/UserAdminModule/Restart-ProjectComputer/
-categories:
-  - UserAdminModule
-  - ShutdownCommands
+last_modified_at: "2025-09-20 00:00:00"
+permalink: /useradminmodule/shutdowncommands/restart-projectcomputer/
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

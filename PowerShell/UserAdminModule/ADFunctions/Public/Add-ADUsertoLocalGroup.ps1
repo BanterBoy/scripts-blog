@@ -1,6 +1,6 @@
 function Add-ADUsertoLocalGroup {
     [CmdletBinding(DefaultParameterSetName = 'Default',
-        HelpURI = 'https://scripts.lukeleigh.com/_posts/functions/Add-ADUsertoLocalGroup/')]
+        HelpURI = 'https://scripts.lukeleigh.com/useradminmodule/adfunctions/add-adusertolocalgroup/')]
     param (
         [string[]]$ComputerName,
         [string[]]$UserName,
