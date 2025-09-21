@@ -149,7 +149,6 @@ def canonical_local_path(site_dir, uri, site_url)
   return nil unless path
 
   normalized = path.empty? ? '/' : path
-  normalized = '/' if normalized == ''
   normalized = normalized.split('?').first
   normalized = '/' if normalized.nil? || normalized.empty?
   normalized = normalized.sub(%r{^/}, '')
