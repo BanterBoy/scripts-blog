@@ -31,8 +31,8 @@ jobs:
         run: ./build/Verify-CssLink.ps1 -SiteRoot "_site" -CssHint "hyde.css"
 
       - name: Check generated site links
-        # Originally: lycheeverse/lychee-action@v1
-        uses: lycheeverse/lychee-action@v1
+        # Originally: lycheeverse/lychee-action@v2.0.2
+        uses: lycheeverse/lychee-action@v2.0.2
         with:
           args: >-
             --no-progress
