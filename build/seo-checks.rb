@@ -289,7 +289,7 @@ html_files.each do |html_path|
 
     if tag =~ /\bcontent\s*=\s*(['"])(.*?)\1/i
       robots_value = Regexp.last_match(2).downcase
-      if robots_value.include?('noindex') || robots_value.include?('none')
+      if robots_value.split(',').map(&:strip).any? { |directive| %w[noindex none].include?(directive) }
         noindex_flag = true
         noindex_pages_set.add(rel_path)
       end
