@@ -26,43 +26,44 @@ jobs:
       - name: Build site
         run: bundle exec jekyll build --trace --future
 
-      - name: Compute site base URL
+      - name: Compute FULL_BASE from _config.yml
         id: compute_base
+        shell: bash
         run: |
-          ruby <<'RUBY'
-          require 'yaml'
-
-          config = YAML.load_file('_config.yml') || {}
-          site_url = config['url'].to_s.strip
-          baseurl = config['baseurl'].to_s.strip
-
-          if site_url.empty?
-            warn '::error::Could not determine site url from _config.yml'
+          SITE_URL=$(ruby -ryaml -e 'c=YAML.load_file("_config.yml") || {}; puts c["url"].to_s')
+          BASEURL=$(ruby -ryaml -e 'c=YAML.load_file("_config.yml") || {}; puts c["baseurl"].to_s')
+          SITE_URL=${SITE_URL%/}
+          if [[ "$BASEURL" == "/" ]]; then
+            BASEURL=""
+          fi
+          if [[ -n "$BASEURL" && ${BASEURL:0:1} != / ]]; then
+            BASEURL="/$BASEURL"
+          fi
+          FULL_BASE="${SITE_URL}${BASEURL}"
+          if [[ -z "$FULL_BASE" ]]; then
+            echo '::error::Computed full_base is empty'
             exit 1
-          end
+          fi
+          echo "full_base=$FULL_BASE" >> "$GITHUB_OUTPUT"
+          echo "::notice::full_base=$FULL_BASE"
 
-          site_url = site_url.sub(%r{/\z}, '')
-
-          baseurl = '' if baseurl.empty? || baseurl == '/'
-          baseurl = "/#{baseurl}" unless baseurl.empty? || baseurl.start_with?('/')
-
-          full_base = "#{site_url}#{baseurl}"
-
-          File.open(ENV.fetch('GITHUB_OUTPUT'), 'a') do |f|
-            f.puts "site_url=#{site_url}"
-            f.puts "site_baseurl=#{baseurl}"
-            f.puts "full_base=#{full_base}"
-          end
-
-          puts "::notice::full_base=#{full_base}"
-          RUBY
+      - name: Inject FULL_BASE into .lychee.toml
+        shell: bash
+        env:
+          FULL_BASE: ${{ steps.compute_base.outputs.full_base }}
+        run: |
+          if [[ -z "$FULL_BASE" ]]; then
+            echo '::error::full_base output is empty'
+            exit 1
+          fi
+          sed -i.bak 's|base_url = "__FULL_BASE__"|base_url = '"'"'$FULL_BASE'"'"'|' .lychee.toml
+          rm .lychee.toml.bak
 
       - name: Verify generated CSS is referenced
         shell: pwsh
         run: ./build/Verify-CssLink.ps1 -SiteRoot "_site" -CssHint "hyde.css"
 
-
-      - name: Link check with Lychee (sitemap)
+      - name: Link check with Lychee (_site)
         uses: lycheeverse/lychee-action@v2.0.2
         with:
           output: lychee-report.json
@@ -71,7 +72,7 @@ jobs:
             --verbose
             --format json
             --config .lychee.toml
-            --sitemap "${{ steps.compute_base.outputs.full_base }}/sitemap.xml"
+            ./_site
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
