@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-ADSchemaReport.ps1
+permalink: /_posts/scripts/Get-ADSchemaReport/
 ---
 
 - [Description](#description)

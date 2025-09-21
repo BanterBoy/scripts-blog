@@ -1,6 +1,7 @@
 ---
 layout: post
 title: O365UserLicenseReport.ps1
+permalink: /_posts/scripts/O365UserLicenseReport/
 ---
 
 - [Description](#description)

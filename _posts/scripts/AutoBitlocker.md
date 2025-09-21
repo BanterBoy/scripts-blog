@@ -1,6 +1,7 @@
 ---
 layout: post
 title: AutoBitlocker.ps1
+permalink: /_posts/scripts/AutoBitlocker/
 ---
 
 - [Description](#description)

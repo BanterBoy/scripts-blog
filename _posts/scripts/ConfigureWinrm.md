@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ConfigureWinrm.ps1
+permalink: /_posts/scripts/ConfigureWinrm/
 ---
 
 - [Description](#description)

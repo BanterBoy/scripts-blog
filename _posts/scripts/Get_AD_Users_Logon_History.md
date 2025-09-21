@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get_AD_Users_Logon_History.ps1
+permalink: /_posts/scripts/Get_AD_Users_Logon_History/
 ---
 
 - [Description](#description)

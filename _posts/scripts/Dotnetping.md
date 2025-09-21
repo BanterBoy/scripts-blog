@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Dotnetping.ps1
+permalink: /_posts/scripts/Dotnetping/
 ---
 
 - [Description](#description)

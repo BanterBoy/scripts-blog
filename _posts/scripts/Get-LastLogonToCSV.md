@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-LastLogonToCSV.ps1
+permalink: /_posts/scripts/Get-LastLogonToCSV/
 ---
 
 - [Description](#description)

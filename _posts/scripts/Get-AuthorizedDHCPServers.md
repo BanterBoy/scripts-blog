@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-AuthorizedDHCPServers.ps1
+permalink: /_posts/scripts/Get-AuthorizedDHCPServers/
 ---
 
 - [Description](#description)

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: dhcp_inventory.ps1
+permalink: /_posts/scripts/dhcp_inventory/
 ---
 
 - [Description](#description)

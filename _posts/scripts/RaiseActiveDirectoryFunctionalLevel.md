@@ -1,6 +1,7 @@
 ---
 layout: post
 title: RaiseActiveDirectoryFunctionalLevel.ps1
+permalink: /_posts/scripts/RaiseActiveDirectoryFunctionalLevel/
 ---
 
 - [Description](#description)

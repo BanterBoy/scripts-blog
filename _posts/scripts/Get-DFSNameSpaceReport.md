@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-DFSNameSpaceReport.ps1
+permalink: /_posts/scripts/Get-DFSNameSpaceReport/
 ---
 
 - [Description](#description)

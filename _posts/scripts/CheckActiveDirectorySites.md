@@ -1,6 +1,7 @@
 ---
 layout: post
 title: CheckActiveDirectorySites.ps1
+permalink: /_posts/scripts/CheckActiveDirectorySites/
 ---
 
 - [Description](#description)

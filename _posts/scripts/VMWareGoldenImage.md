@@ -1,6 +1,7 @@
 ---
 layout: post
 title: VMWareGoldenImage.ps1
+permalink: /_posts/scripts/VMWareGoldenImage/
 ---
 
 - [Description](#description)

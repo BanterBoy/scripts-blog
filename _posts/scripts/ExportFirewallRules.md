@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ExportFirewallRules.ps1
+permalink: /_posts/scripts/ExportFirewallRules/
 ---
 
 - [Description](#description)

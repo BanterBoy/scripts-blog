@@ -1,6 +1,7 @@
 ---
 layout: post
 title: HyperVGoldenImage.ps1
+permalink: /_posts/scripts/HyperVGoldenImage/
 ---
 
 - [Description](#description)

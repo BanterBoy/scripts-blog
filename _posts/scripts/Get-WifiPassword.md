@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-WifiPassword.ps1
+permalink: /_posts/scripts/Get-WifiPassword/
 ---
 
 - [Description](#description)

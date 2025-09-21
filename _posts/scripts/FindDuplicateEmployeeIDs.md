@@ -1,6 +1,7 @@
 ---
 layout: post
 title: FindDuplicateEmployeeIDs.ps1
+permalink: /_posts/scripts/FindDuplicateEmployeeIDs/
 ---
 
 - [Description](#description)

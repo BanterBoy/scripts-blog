@@ -1,6 +1,7 @@
 ---
 layout: post
 title: HideUsersfromAddressBook.ps1
+permalink: /_posts/scripts/HideUsersfromAddressBook/
 ---
 
 - [Description](#description)

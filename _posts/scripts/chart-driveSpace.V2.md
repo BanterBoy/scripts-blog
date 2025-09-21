@@ -1,6 +1,7 @@
 ---
 layout: post
 title: chart-driveSpace.V2.ps1
+permalink: /_posts/scripts/chart-driveSpace.V2/
 ---
 
 - [Description](#description)

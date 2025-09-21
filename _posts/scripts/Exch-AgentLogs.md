@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Exch-AgentLogs.ps1
+permalink: /_posts/scripts/Exch-AgentLogs/
 ---
 
 - [Description](#description)

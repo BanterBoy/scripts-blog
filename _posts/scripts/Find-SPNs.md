@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Find-SPNs.ps1
+permalink: /_posts/scripts/Find-SPNs/
 ---
 
 - [Description](#description)

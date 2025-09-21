@@ -1,6 +1,7 @@
 ---
 layout: post
 title: EventTest.ps1
+permalink: /_posts/scripts/EventTest/
 ---
 
 - [Description](#description)

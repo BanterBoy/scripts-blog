@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-ADCount.ps1
+permalink: /_posts/scripts/Get-ADCount/
 ---
 
 - [Description](#description)

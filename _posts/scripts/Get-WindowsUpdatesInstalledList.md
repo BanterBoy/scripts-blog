@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-WindowsUpdatesInstalledList.ps1
+permalink: /_posts/scripts/Get-WindowsUpdatesInstalledList/
 ---
 
 - [Description](#description)

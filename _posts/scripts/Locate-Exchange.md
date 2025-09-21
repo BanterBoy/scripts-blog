@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Locate-Exchange.ps1
+permalink: /_posts/scripts/Locate-Exchange/
 ---
 
 - [Description](#description)

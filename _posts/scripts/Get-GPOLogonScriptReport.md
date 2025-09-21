@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-GPOLogonScriptReport.ps1
+permalink: /_posts/scripts/Get-GPOLogonScriptReport/
 ---
 
 - [Description](#description)
