@@ -1,6 +1,8 @@
 ---
 layout: page
-title: about
+title: "About Luke Leigh | Maintenance Scripts"
+nav_title: About
+heading: About Maintenance Scripts
 description: "Background on Luke Leigh and the goals of the PowerShell script catalogue."
 permalink: /menu/_pages/about.html
 ---

@@ -1,6 +1,8 @@
 ---
 layout: page
-title: modules
+title: "PowerShell Modules | Maintenance Scripts"
+nav_title: Modules
+heading: PowerShell Modules
 description: "Summary of published PowerShell modules with links to the PowerShell Gallery."
 permalink: /menu/_pages/modules.html
 ---

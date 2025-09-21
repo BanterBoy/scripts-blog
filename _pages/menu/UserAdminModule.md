@@ -1,6 +1,8 @@
 ---
 layout: page
-title: UserAdminModule
+title: "User Admin Module | Maintenance Scripts"
+nav_title: User Admin Module
+heading: User Admin Module Overview
 description: "Scripts v2.0 overview for the UserAdminModule—now helper-driven, categorized, and blissfully free of dot-sourcing."
 permalink: /menu/_pages/UserAdminModule.html
 ---
