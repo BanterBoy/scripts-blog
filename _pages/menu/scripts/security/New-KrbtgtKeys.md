@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: single
 title: New-KrbtgtKeys.ps1
-date: 2025-09-19
-last_modified_at: "2025-09-20 00:00:00"
-permalink: /useradminmodule/security/new-krbtgtkeys/
+permalink: /scripts/security/new-krbtgtkeys/
+redirect_from:
+  - /useradminmodule/security/new-krbtgtkeys/
 ---
 
 - [Description](#description)
@@ -3859,7 +3859,7 @@ This script will enable you to: (1) perform a single reset of the krbtgt account
 
 The script is designed to be self-documenting and includes an interactive menu and screen output that will guide you through its execution. Because it requires user input to select the execution mode and confirm before any changes are made, it is safe to begin by simply executing the script and reading the guidance throughout.
 
-<script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/PowerShell/UserAdminModule/New-KrbtgtKeys.ps1
+<script src="https://gist-it.appspot.com/github.com/BanterBoy/scripts-blog/blob/master/scripts/security/New-KrbtgtKeys.ps1"></script>
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
@@ -3868,6 +3868,12 @@ The script is designed to be self-documenting and includes an interactive menu a
 #### Download
 
 This document is a supplemental guide to the interactive krbtgt reset script (New-KrbtgtKeys.ps1). This guide describes the operating modes of the script and how to execute each of them.
+
+You can execute the script from the repository root with:
+
+```powershell
+./scripts/security/New-KrbtgtKeys.ps1
+```
 
 <small><i>Guide to Running New-CtmADKrbtgtKeys.docx</i></small>
 
@@ -3879,7 +3885,7 @@ This document is a supplemental guide to the interactive krbtgt reset script (Ne
 
 <small><i>New-KrbtgtKeys.ps1</i></small>
 
-<button class="btn" type="submit" onclick="window.open('/PowerShell/UserAdminModule/New-KrbtgtKeys.ps1')">
+<button class="btn" type="submit" onclick="window.open('/scripts/security/New-KrbtgtKeys.ps1')">
     <i class="fa fa-cloud-download-alt">
     </i>
         Download
@@ -3898,11 +3904,11 @@ You can report an issue or contribute to this site on <a href="https://github.co
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
-<a href="/menu/_pages/UserAdminModule.html">
+<a href="/menu/_pages/scripts.html">
     <button class="btn">
         <i class='fas fa-reply'>
         </i>
-            Back to UserAdminModule
+            Back to Scripts
     </button>
 </a>
 
