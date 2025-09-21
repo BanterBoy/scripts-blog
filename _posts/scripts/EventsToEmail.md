@@ -1,6 +1,7 @@
 ---
 layout: post
 title: EventsToEmail.ps1
+permalink: /_posts/scripts/EventsToEmail/
 ---
 
 - [Description](#description)

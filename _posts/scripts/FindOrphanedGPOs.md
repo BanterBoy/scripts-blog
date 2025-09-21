@@ -1,6 +1,7 @@
 ---
 layout: post
 title: FindOrphanedGPOs.ps1
+permalink: /_posts/scripts/FindOrphanedGPOs/
 ---
 
 - [Description](#description)

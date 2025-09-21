@@ -1,6 +1,7 @@
 ---
 layout: post
 title: CheckProtectedFromAccidentalDeletion.ps1
+permalink: /_posts/scripts/CheckProtectedFromAccidentalDeletion/
 ---
 
 - [Description](#description)

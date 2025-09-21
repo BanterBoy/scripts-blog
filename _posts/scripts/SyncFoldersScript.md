@@ -1,6 +1,7 @@
 ---
 layout: post
 title: SyncFoldersScript.ps1
+permalink: /_posts/scripts/SyncFoldersScript/
 ---
 
 - [Description](#description)

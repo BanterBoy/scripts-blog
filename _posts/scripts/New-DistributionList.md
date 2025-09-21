@@ -1,6 +1,7 @@
 ---
 layout: post
 title: New-DistributionList.ps1
+permalink: /_posts/scripts/New-DistributionList/
 ---
 
 - [Description](#description)

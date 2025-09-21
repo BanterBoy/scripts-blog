@@ -1,6 +1,7 @@
 ---
 layout: post
 title: diskmonitor.ps1
+permalink: /_posts/scripts/diskmonitor/
 ---
 
 - [Description](#description)

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: CheckW32TimeSource.ps1
+permalink: /_posts/scripts/CheckW32TimeSource/
 ---
 
 - [Description](#description)

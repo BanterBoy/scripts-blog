@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-DiskSpace.ps1
+permalink: /_posts/scripts/Get-DiskSpace/
 ---
 
 - [Description](#description)

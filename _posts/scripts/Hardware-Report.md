@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hardware-Report.ps1
+permalink: /_posts/scripts/Hardware-Report/
 ---
 
 - [Description](#description)

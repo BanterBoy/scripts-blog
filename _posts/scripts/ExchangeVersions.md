@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ExchangeVersions.ps1
+permalink: /_posts/scripts/ExchangeVersions/
 ---
 
 - [Description](#description)

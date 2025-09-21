@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ADChangeReport.ps1
+permalink: /_posts/scripts/ADChangeReport/
 ---
 
 - [Description](#description)

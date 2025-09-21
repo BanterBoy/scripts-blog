@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Audit-ADTrusts.ps1
+permalink: /_posts/scripts/Audit-ADTrusts/
 ---
 
 - [Description](#description)

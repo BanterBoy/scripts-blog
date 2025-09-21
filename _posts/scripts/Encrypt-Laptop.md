@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Encrypt-Laptop.ps1
+permalink: /_posts/scripts/Encrypt-Laptop/
 ---
 
 - [Description](#description)

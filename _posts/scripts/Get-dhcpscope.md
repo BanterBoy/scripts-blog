@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-dhcpscope.ps1
+permalink: /_posts/scripts/Get-dhcpscope/
 ---
 
 - [Description](#description)

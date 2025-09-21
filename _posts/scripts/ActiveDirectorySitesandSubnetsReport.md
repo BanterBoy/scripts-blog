@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ActiveDirectorySitesandSubnetsReport.ps1
+permalink: /_posts/scripts/ActiveDirectorySitesandSubnetsReport/
 ---
 
 - [Description](#description)

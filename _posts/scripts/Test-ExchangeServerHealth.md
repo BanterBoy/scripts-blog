@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Test-ExchangeServerHealth.ps1
+permalink: /_posts/scripts/Test-ExchangeServerHealth/
 ---
 
 - [Description](#description)

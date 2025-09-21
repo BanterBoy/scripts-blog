@@ -1,6 +1,7 @@
 ---
 layout: post
 title: EventLogsExported.ps1
+permalink: /_posts/scripts/EventLogsExported/
 ---
 
 - [Description](#description)

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: DataDriveSizes.ps1
+permalink: /_posts/scripts/DataDriveSizes/
 ---
 
 - [Description](#description)

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Find-InactiveUsers.ps1
+permalink: /_posts/scripts/Find-InactiveUsers/
 ---
 
 - [Description](#description)

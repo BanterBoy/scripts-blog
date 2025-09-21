@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Find-DuplicateFiles.ps1
+permalink: /_posts/scripts/Find-DuplicateFiles/
 ---
 
 - [Description](#description)

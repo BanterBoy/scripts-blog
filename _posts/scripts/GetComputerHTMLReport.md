@@ -1,6 +1,7 @@
 ---
 layout: post
 title: GetComputerHTMLReport.ps1
+permalink: /_posts/scripts/GetComputerHTMLReport/
 ---
 
 - [Description](#description)

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Exch_AdminAuditReport.ps1
+permalink: /_posts/scripts/Exch_AdminAuditReport/
 ---
 
 - [Description](#description)

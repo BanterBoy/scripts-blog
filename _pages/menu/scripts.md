@@ -23,14 +23,11 @@ permalink: /menu/_pages/scripts.html
 - [fileManagement](#filemanagement)
 - [information](#information)
 - [installScripts](#installscripts)
+- [miscellaneous](#miscellaneous)
 - [ping](#ping)
+- [security](#security)
 - [time](#time)
 - [windowsUpdates](#windowsupdates)
-- [miscellaneous](#miscellaneous)
-- [network](#network)
-- [security](#security)
-- [testing](#testing)
-- [utilities](#utilities)
 
 ---
 
@@ -38,64 +35,80 @@ permalink: /menu/_pages/scripts.html
 
 | Section         | FileName                                                                                                      |
 | :-------------- | :------------------------------------------------------------------------------------------------------------ |
-| activeDirectory | [Active_Directory_Information.ps1](/_posts/scripts/Active_Directory_Information/) |
-| activeDirectory | [ActiveDirectoryDocument.ps1](/_posts/scripts/ActiveDirectoryDocument/) |
-| activeDirectory | [ActiveDirectorySitesandSubnetsReport.ps1](/_posts/scripts/ActiveDirectorySitesandSubnetsReport/) |
-| activeDirectory | [ActiveDirectorySitesLinksReport.ps1](/_posts/scripts/ActiveDirectorySitesLinksReport/) |
-| activeDirectory | [Ad_Report_Generator_Community.ps1](/_posts/scripts/Ad_Report_Generator_Community/) |
+| activeDirectory | [Active_Directory_Information.ps1](/_posts/scripts/Active_Directory_Information/)                             |
+| activeDirectory | [ActiveDirectoryDocument.ps1](/_posts/scripts/ActiveDirectoryDocument/)                                       |
+| activeDirectory | [ActiveDirectorySitesandSubnetsReport.ps1](/_posts/scripts/ActiveDirectorySitesandSubnetsReport/)             |
+| activeDirectory | [ActiveDirectorySitesLinksReport.ps1](/_posts/scripts/ActiveDirectorySitesLinksReport/)                       |
 | activeDirectory | [AD-Find_missing_subnets_in_ActiveDirectory.ps1](/_posts/scripts/AD-Find_missing_subnets_in_ActiveDirectory/) |
-| activeDirectory | [AD-Reporting.ps1](/_posts/scripts/AD-Reporting/) |
-| activeDirectory | [ADACLScan1.3.3.ps1](/_posts/scripts/ADACLScan1.3.3/) |
-| activeDirectory | [ADChangeReport.ps1](/_posts/scripts/ADChangeReport/) |
-| activeDirectory | [ADDS_Inventory.ps1](/_posts/scripts/ADDS_Inventory/) |
-| activeDirectory | [Audit-ADSubnets.ps1](/_posts/scripts/Audit-ADSubnets/) |
-| activeDirectory | [Audit-ADTrusts.ps1](/_posts/scripts/Audit-ADTrusts/) |
-| activeDirectory | [CheckActiveDirectorySites.ps1](/_posts/scripts/CheckActiveDirectorySites/) |
-| activeDirectory | [CheckProtectedFromAccidentalDeletion.ps1](/_posts/scripts/CheckProtectedFromAccidentalDeletion/) |
-| activeDirectory | [CheckRecycleBinStatus.ps1](/_posts/scripts/CheckRecycleBinStatus/) |
-| activeDirectory | [CheckW32TimeSource.ps1](/_posts/scripts/CheckW32TimeSource/) |
-| activeDirectory | [CircularNestedGroups.ps1](/_posts/scripts/CircularNestedGroups/) |
-| activeDirectory | [Cleanup-AdminSDHolder.ps1](/_posts/scripts/Cleanup-AdminSDHolder/) |
-| activeDirectory | [CreateUser.ps1](/_posts/scripts/CreateUser/) |
-| activeDirectory | [dhcp_inventory.ps1](/_posts/scripts/dhcp_inventory/) |
-| activeDirectory | [Export-ADUserInfo.ps1](/_posts/scripts/Export-ADUserInfo/) |
-| activeDirectory | [Export-PSWNOTREQD.ps1](/_posts/scripts/Export-PSWNOTREQD/) |
-| activeDirectory | [Find_missing_subnets_in_ActiveDirectory.ps1](/_posts/scripts/Find_missing_subnets_in_ActiveDirectory/) |
-| activeDirectory | [Find-InactiveUsers.ps1](/_posts/scripts/Find-InactiveUsers/) |
-| activeDirectory | [Find-SPNs.ps1](/_posts/scripts/Find-SPNs/) |
-| activeDirectory | [FindDHCPServers.ps1](/_posts/scripts/FindDHCPServers/) |
-| activeDirectory | [FindDNSServersAndLocalZones.ps1](/_posts/scripts/FindDNSServersAndLocalZones/) |
-| activeDirectory | [FindDuplicateEmployeeIDs.ps1](/_posts/scripts/FindDuplicateEmployeeIDs/) |
-| activeDirectory | [FindOrphanedGPOs.ps1](/_posts/scripts/FindOrphanedGPOs/) |
-| activeDirectory | [Force-LoggedOnUsertoLogOff.ps1](/_posts/scripts/Force-LoggedOnUsertoLogOff/) |
-| activeDirectory | [GenerateBPAReports.ps1](/_posts/scripts/GenerateBPAReports/) |
-| activeDirectory | [Get_AD_Users_Logon_History.ps1](/_posts/scripts/Get_AD_Users_Logon_History/) |
-| activeDirectory | [Get-ADCount.ps1](/_posts/scripts/Get-ADCount/) |
-| activeDirectory | [Get-ADGroupNesting.ps1](/_posts/scripts/Get-ADGroupNesting/) |
-| activeDirectory | [Get-ADSchemaReport.ps1](/_posts/scripts/Get-ADSchemaReport/) |
-| activeDirectory | [Get-AllComputerAccounts.ps1](/_posts/scripts/Get-AllComputerAccounts/) |
-| activeDirectory | [Get-AlternateMailboxes.ps1](/_posts/scripts/Get-AlternateMailboxes/) |
-| activeDirectory | [Get-AuthorizedDHCPServers.ps1](/_posts/scripts/Get-AuthorizedDHCPServers/) |
-| activeDirectory | [Get-CalendarPermissionsReport.ps1](/_posts/scripts/Get-CalendarPermissionsReport/) |
-| activeDirectory | [Get-DFSNameSpaceReport.ps1](/_posts/scripts/Get-DFSNameSpaceReport/) |
-| activeDirectory | [Get-dhcpscope.ps1](/_posts/scripts/Get-dhcpscope/) |
-| activeDirectory | [Get-DHCPServers.ps1](/_posts/scripts/Get-DHCPServers/) |
-| activeDirectory | [Get-GPOLogonScriptReport.ps1](/_posts/scripts/Get-GPOLogonScriptReport/) |
-| activeDirectory | [Get-GPProcessingTime.ps1](/useradminmodule/adfunctions/get-gpprocessingtime/) |
-| activeDirectory | [Get-LastLogonToCSV.ps1](/_posts/scripts/Get-LastLogonToCSV/) |
-| activeDirectory | [Get-NoSettingsGPO.ps1](/_posts/scripts/Get-NoSettingsGPO/) |
-| activeDirectory | [Get-RODCPasswordRPs.ps1](/_posts/scripts/Get-RODCPasswordRPs/) |
-| activeDirectory | [gPLink_Report.ps1](/_posts/scripts/gPLink_Report/) |
-| activeDirectory | [Move-DisabledUsers.ps1](/_posts/scripts/Move-DisabledUsers/) |
-| activeDirectory | [New-ADAssetReport.ps1](/_posts/scripts/New-ADAssetReport/) |
-| activeDirectory | [New-ADAssetReportGUI.ps1](/_posts/scripts/New-ADAssetReportGUI/) |
-| activeDirectory | [New-Computer.ps1](/_posts/scripts/New-Computer/) |
-| activeDirectory | [newuserimport.ps1](/_posts/scripts/newuserimport/) |
-| activeDirectory | [OU_permissions.ps1](/_posts/scripts/OU_permissions/) |
-| activeDirectory | [privilegedUsersV2.ps1](/_posts/scripts/privilegedUsersV2/) |
-| activeDirectory | [RaiseActiveDirectoryFunctionalLevel.ps1](/_posts/scripts/RaiseActiveDirectoryFunctionalLevel/) |
-| activeDirectory | [Show-OUStructure.ps1](/_posts/scripts/Show-OUStructure/) |
-| activeDirectory | [Start-ADSyncCycle.ps1](/_posts/scripts/Start-ADSyncCycle/) |
+| activeDirectory | [AD-Reporting.ps1](/_posts/scripts/AD-Reporting/)                                                             |
+| activeDirectory | [Ad_Report_Generator_Community.ps1](/_posts/scripts/Ad_Report_Generator_Community/)                           |
+| activeDirectory | [ADACLScan1.3.3.ps1](/_posts/scripts/ADACLScan1.3.3/)                                                         |
+| activeDirectory | [ADChangeReport.ps1](/_posts/scripts/ADChangeReport/)                                                         |
+| activeDirectory | [ADDS_Inventory.ps1](/_posts/scripts/ADDS_Inventory/)                                                         |
+| activeDirectory | [Audit-ADSubnets.ps1](/_posts/scripts/Audit-ADSubnets/)                                                       |
+| activeDirectory | [Audit-ADTrusts.ps1](/_posts/scripts/Audit-ADTrusts/)                                                         |
+| activeDirectory | [CheckActiveDirectorySites.ps1](/_posts/scripts/CheckActiveDirectorySites/)                                   |
+| activeDirectory | [CheckProtectedFromAccidentalDeletion.ps1](/_posts/scripts/CheckProtectedFromAccidentalDeletion/)             |
+| activeDirectory | [CheckRecycleBinStatus.ps1](/_posts/scripts/CheckRecycleBinStatus/)                                           |
+| activeDirectory | [CheckW32TimeSource.ps1](/_posts/scripts/CheckW32TimeSource/)                                                 |
+| activeDirectory | [CircularNestedGroups.ps1](/_posts/scripts/CircularNestedGroups/)                                             |
+| activeDirectory | [Cleanup-AdminSDHolder.ps1](/_posts/scripts/Cleanup-AdminSDHolder/)                                           |
+| activeDirectory | [CreateADMXCentralStore.ps1](/_posts/scripts/CreateADMXCentralStore/) |
+| activeDirectory | [CreateTimeServerGPOs.ps1](/_posts/scripts/CreateTimeServerGPOs/) |
+| activeDirectory | [CreateUser.ps1](/_posts/scripts/CreateUser/)                                                                 |
+| activeDirectory | [dhcp_inventory.ps1](/_posts/scripts/dhcp_inventory/)                                                         |
+| activeDirectory | [Export-ADUserInfo.ps1](/_posts/scripts/Export-ADUserInfo/)                                                   |
+| activeDirectory | [Export-PSWNOTREQD.ps1](/_posts/scripts/Export-PSWNOTREQD/)                                                   |
+| activeDirectory | [Find-InactiveUsers.ps1](/_posts/scripts/Find-InactiveUsers/)                                                 |
+| activeDirectory | [Find-SPNs.ps1](/_posts/scripts/Find-SPNs/)                                                                   |
+| activeDirectory | [Find_missing_subnets_in_ActiveDirectory.ps1](/_posts/scripts/Find_missing_subnets_in_ActiveDirectory/)       |
+| activeDirectory | [FindDHCPServers.ps1](/_posts/scripts/FindDHCPServers/)                                                       |
+| activeDirectory | [FindDNSServersAndLocalZones.ps1](/_posts/scripts/FindDNSServersAndLocalZones/)                               |
+| activeDirectory | [FindDuplicateEmployeeIDs.ps1](/_posts/scripts/FindDuplicateEmployeeIDs/)                                     |
+| activeDirectory | [FindOrphanedGPOs.ps1](/_posts/scripts/FindOrphanedGPOs/)                                                     |
+| activeDirectory | [Force-LoggedOnUsertoLogOff.ps1](/_posts/scripts/Force-LoggedOnUsertoLogOff/)                                 |
+| activeDirectory | [GenerateBPAReports.ps1](/_posts/scripts/GenerateBPAReports/)                                                 |
+| activeDirectory | [Get-ADCount.ps1](/_posts/scripts/Get-ADCount/)                                                               |
+| activeDirectory | [Get-ADGroupNesting.ps1](/_posts/scripts/Get-ADGroupNesting/)                                                 |
+| activeDirectory | [Get-ADSchemaReport.ps1](/_posts/scripts/Get-ADSchemaReport/)                                                 |
+| activeDirectory | [Get-AllComputerAccounts.ps1](/_posts/scripts/Get-AllComputerAccounts/)                                       |
+| activeDirectory | [Get-AlternateMailboxes.ps1](/_posts/scripts/Get-AlternateMailboxes/)                                         |
+| activeDirectory | [Get-AuthorizedDHCPServers.ps1](/_posts/scripts/Get-AuthorizedDHCPServers/)                                   |
+| activeDirectory | [Get-CalendarPermissionsReport.ps1](/_posts/scripts/Get-CalendarPermissionsReport/)                           |
+| activeDirectory | [Get-DFSNameSpaceReport.ps1](/_posts/scripts/Get-DFSNameSpaceReport/)                                         |
+| activeDirectory | [Get-dhcpscope.ps1](/_posts/scripts/Get-dhcpscope/)                                                           |
+| activeDirectory | [Get-DHCPServers.ps1](/_posts/scripts/Get-DHCPServers/)                                                       |
+| activeDirectory | [Get-GPOLogonScriptReport.ps1](/_posts/scripts/Get-GPOLogonScriptReport/)                                     |
+| activeDirectory | [Get-GPProcessingTime.ps1](/_posts/UserAdminModule/Get-GPProcessingTime/)                                             |
+| activeDirectory | [Get-LastLogonToCSV.ps1](/_posts/scripts/Get-LastLogonToCSV/)                                                 |
+| activeDirectory | [Get-LockedOutUser.ps1](/_posts/scripts/Get-LockedOutUser/) |
+| activeDirectory | [Get-NoSettingsGPO.ps1](/_posts/scripts/Get-NoSettingsGPO/)                                                   |
+| activeDirectory | [Get-PrimaryGroupsReport.ps1](/_posts/scripts/Get-PrimaryGroupsReport/) |
+| activeDirectory | [Get-RODCPasswordRPs.ps1](/_posts/scripts/Get-RODCPasswordRPs/)                                               |
+| activeDirectory | [Get-UserAccountControlReport.ps1](/_posts/scripts/Get-UserAccountControlReport/) |
+| activeDirectory | [get-usermembership.ps1](/_posts/scripts/get-usermembership/) |
+| activeDirectory | [Get-UserReport.ps1](/_posts/scripts/Get-UserReport/) |
+| activeDirectory | [Get_AD_Users_Logon_History.ps1](/_posts/scripts/Get_AD_Users_Logon_History/)                                 |
+| activeDirectory | [GetUserLoggedOnto.ps1](/_posts/scripts/GetUserLoggedOnto/) |
+| activeDirectory | [gPLink_Report.ps1](/_posts/scripts/gPLink_Report/)                                                           |
+| activeDirectory | [Move-DisabledUsers.ps1](/_posts/scripts/Move-DisabledUsers/)                                                 |
+| activeDirectory | [MoveOU.ps1](/_posts/scripts/MoveOU/) |
+| activeDirectory | [New-ADAssetReport.ps1](/_posts/scripts/New-ADAssetReport/)                                                   |
+| activeDirectory | [New-ADAssetReportGUI.ps1](/_posts/scripts/New-ADAssetReportGUI/)                                             |
+| activeDirectory | [New-Computer.ps1](/_posts/scripts/New-Computer/)                                                             |
+| activeDirectory | [New-EncryptedUser.ps1](/_posts/scripts/New-EncryptedUser/) |
+| activeDirectory | [New-KrbtgtKeys.ps1](/_posts/scripts/New-KrbtgtKeys/) |
+| activeDirectory | [newuserimport.ps1](/_posts/scripts/newuserimport/)                                                           |
+| activeDirectory | [OU_permissions.ps1](/_posts/scripts/OU_permissions/)                                                         |
+| activeDirectory | [privilegedUsersV2.ps1](/_posts/scripts/privilegedUsersV2/)                                                   |
+| activeDirectory | [Query-UserAccountControl.ps1](/_posts/scripts/Query-UserAccountControl/) |
+| activeDirectory | [RaiseActiveDirectoryFunctionalLevel.ps1](/_posts/scripts/RaiseActiveDirectoryFunctionalLevel/)               |
+| activeDirectory | [Reset-UsersPassword.ps1](/_posts/scripts/Reset-UsersPassword/) |
+| activeDirectory | [Search-GPO.ps1](/_posts/scripts/Search-GPO/) |
+| activeDirectory | [Search-GPOsForStringOrig.ps1](/_posts/scripts/Search-GPOsForStringOrig/) |
+| activeDirectory | [Search-KerbDelegatedAccounts.ps1](/_posts/scripts/Search-KerbDelegatedAccounts/) |
+| activeDirectory | [Show-OUStructure.ps1](/_posts/scripts/Show-OUStructure/)                                                     |
+| activeDirectory | [Start-ADSyncCycle.ps1](/_posts/scripts/Start-ADSyncCycle/)                                                   |
 
 ---
 
@@ -104,10 +117,10 @@ permalink: /menu/_pages/scripts.html
 | Section   | FileName                                                    |
 | :-------- | :---------------------------------------------------------- |
 | EventLogs | [Evaluate-EventLog.ps1](/_posts/scripts/Evaluate-EventLog/) |
-| EventLogs | [EventLogs.ps1](/_posts/scripts/EventLogs/) |
+| EventLogs | [EventLogs.ps1](/_posts/scripts/EventLogs/)                 |
 | EventLogs | [EventLogsExported.ps1](/_posts/scripts/EventLogsExported/) |
-| EventLogs | [EventsToEmail.ps1](/_posts/scripts/EventsToEmail/) |
-| EventLogs | [EventTest.ps1](/_posts/scripts/EventTest/) |
+| EventLogs | [EventsToEmail.ps1](/_posts/scripts/EventsToEmail/)         |
+| EventLogs | [EventTest.ps1](/_posts/scripts/EventTest/)                 |
 
 ---
 
@@ -115,17 +128,34 @@ permalink: /menu/_pages/scripts.html
 
 | Section  | FileName                                                                          |
 | :------- | :-------------------------------------------------------------------------------- |
-| Exchange | [Exch_AdminAuditReport.ps1](/_posts/scripts/Exch_AdminAuditReport/) |
-| Exchange | [Exch-AgentLogs.ps1](/_posts/scripts/Exch-AgentLogs/) |
-| Exchange | [ExchangeVersions.ps1](/_posts/scripts/ExchangeVersions/) |
-| Exchange | [Export-MailboxSizetoCSV.ps1](/_posts/scripts/Export-MailboxSizetoCSV/) |
+| Exchange | [Copy-ReceiveConnector.ps1](/_posts/scripts/Copy-ReceiveConnector/) |
+| Exchange | [Enter-O365Session.ps1](/_posts/scripts/Enter-O365Session/) |
+| Exchange | [Exch-AgentLogs.ps1](/_posts/scripts/Exch-AgentLogs/)                             |
+| Exchange | [Exch_AdminAuditReport.ps1](/_posts/scripts/Exch_AdminAuditReport/)               |
+| Exchange | [ExchangeVersions.ps1](/_posts/scripts/ExchangeVersions/)                         |
+| Exchange | [Export-CalendarPermissions.ps1](/_posts/scripts/Export-CalendarPermissions/) |
+| Exchange | [Export-MailboxSizetoCSV.ps1](/_posts/scripts/Export-MailboxSizetoCSV/)           |
+| Exchange | [Get-MailboxAccessPerms.ps1](/_posts/scripts/Get-MailboxAccessPerms/) |
+| Exchange | [Get-MailboxPermissions.ps1](/_posts/scripts/Get-MailboxPermissions/) |
+| Exchange | [Get-MailboxPermissionsExport.ps1](/_posts/scripts/Get-MailboxPermissionsExport/) |
+| Exchange | [Get-MailboxPermissionsReport.ps1](/_posts/scripts/Get-MailboxPermissionsReport/) |
+| Exchange | [Get-MailboxPermissionsReport2.ps1](/_posts/scripts/Get-MailboxPermissionsReport2/) |
 | Exchange | [Get-MailboxPermissionsScript.ps1](/_posts/scripts/Get-MailboxPermissionsScript/) |
-| Exchange | [HideUsersfromAddressBook.ps1](/_posts/scripts/HideUsersfromAddressBook/) |
-| Exchange | [Locate-Exchange.ps1](/_posts/scripts/Locate-Exchange/) |
-| Exchange | [mailbox.ps1](/_posts/scripts/mailbox/) |
-| Exchange | [New-DistributionList.ps1](/_posts/scripts/New-DistributionList/) |
-| Exchange | [New-HistoricalSearch.ps1](/_posts/scripts/New-HistoricalSearch/) |
-| Exchange | [Test-ExchangeServerHealth.ps1](/_posts/scripts/Test-ExchangeServerHealth/) |
+| Exchange | [Get-MailboxReport.ps1](/_posts/scripts/Get-MailboxReport/) |
+| Exchange | [Get-MailboxStatistics.ps1](/_posts/scripts/Get-MailboxStatistics/) |
+| Exchange | [Get-MBAccessPerms.ps1](/_posts/scripts/Get-MBAccessPerms/) |
+| Exchange | [HideUsersfromAddressBook.ps1](/_posts/scripts/HideUsersfromAddressBook/)         |
+| Exchange | [Locate-Exchange.ps1](/_posts/scripts/Locate-Exchange/)                           |
+| Exchange | [mailbox.ps1](/_posts/scripts/mailbox/)                                           |
+| Exchange | [New-DistributionList.ps1](/_posts/scripts/New-DistributionList/)                 |
+| Exchange | [New-HistoricalSearch.ps1](/_posts/scripts/New-HistoricalSearch/)                 |
+| Exchange | [PasswordChangeNotification.ps1](/_posts/scripts/PasswordChangeNotification/) |
+| Exchange | [PasswordReminderAlso.ps1](/_posts/scripts/PasswordReminderAlso/) |
+| Exchange | [Remove-MailboxFolderPermissions.ps1](/_posts/scripts/Remove-MailboxFolderPermissions/) |
+| Exchange | [Remove-UsersfromGAL.ps1](/_posts/scripts/Remove-UsersfromGAL/) |
+| Exchange | [Set-AutoDiscover.ps1](/_posts/scripts/Set-AutoDiscover/) |
+| Exchange | [Set-DefaultReceiveConnector.ps1](/_posts/scripts/Set-DefaultReceiveConnector/) |
+| Exchange | [Test-ExchangeServerHealth.ps1](/_posts/scripts/Test-ExchangeServerHealth/)       |
 
 ---
 
@@ -133,19 +163,25 @@ permalink: /menu/_pages/scripts.html
 
 | Section        | FileName                                                                  |
 | :------------- | :------------------------------------------------------------------------ |
-| fileManagement | [Compare-Folder.ps1](/_posts/scripts/Compare-Folder/) |
-| fileManagement | [copyFilestoServers.ps1](/_posts/scripts/copyFilestoServers/) |
-| fileManagement | [DataDriveSizes.ps1](/_posts/scripts/DataDriveSizes/) |
+| fileManagement | [Compare-Folder.ps1](/_posts/scripts/Compare-Folder/)                     |
+| fileManagement | [copyFilestoServers.ps1](/_posts/scripts/copyFilestoServers/)             |
+| fileManagement | [DataDriveSizes.ps1](/_posts/scripts/DataDriveSizes/)                     |
 | fileManagement | [Delete-UnusedHomeFolders.ps1](/_posts/scripts/Delete-UnusedHomeFolders/) |
-| fileManagement | [Export-FilePermissions.ps1](/_posts/scripts/Export-FilePermissions/) |
-| fileManagement | [Export-FilePermsAcc.ps1](/_posts/scripts/Export-FilePermsAcc/) |
-| fileManagement | [FileSizes.ps1](/_posts/scripts/FileSizes/) |
-| fileManagement | [Find-DuplicateFiles.ps1](/_posts/scripts/Find-DuplicateFiles/) |
-| fileManagement | [Find-MissingFiles.ps1](/_posts/scripts/Find-MissingFiles/) |
-| fileManagement | [Get-FileDownload.ps1](/_posts/scripts/Get-FileDownload/) |
-| fileManagement | [LastAccess.ps1](/_posts/scripts/LastAccess/) |
-| fileManagement | [New-dummyFile.ps1](/_posts/scripts/New-dummyFile/) |
-| fileManagement | [SyncFoldersScript.ps1](/_posts/scripts/SyncFoldersScript/) |
+| fileManagement | [Export-FilePermissions.ps1](/_posts/scripts/Export-FilePermissions/)     |
+| fileManagement | [Export-FilePermsAcc.ps1](/_posts/scripts/Export-FilePermsAcc/)           |
+| fileManagement | [FileSizes.ps1](/_posts/scripts/FileSizes/)                               |
+| fileManagement | [Find-DuplicateFiles.ps1](/_posts/scripts/Find-DuplicateFiles/)           |
+| fileManagement | [Find-MissingFiles.ps1](/_posts/scripts/Find-MissingFiles/)               |
+| fileManagement | [Get-FileDownload.ps1](/_posts/scripts/Get-FileDownload/)                 |
+| fileManagement | [Get-FileOwner.ps1](/_posts/scripts/Get-FileOwner/) |
+| fileManagement | [IISLogsCleanup.ps1](/_posts/scripts/IISLogsCleanup/) |
+| fileManagement | [LastAccess.ps1](/_posts/scripts/LastAccess/)                             |
+| fileManagement | [New-dummyFile.ps1](/_posts/scripts/New-dummyFile/)                       |
+| fileManagement | [New-FileArchive.ps1](/_posts/scripts/New-FileArchive/) |
+| fileManagement | [Remove-UserProfile.ps1](/_posts/scripts/Remove-UserProfile/) |
+| fileManagement | [RemoveLocalUserProfile.ps1](/_posts/scripts/RemoveLocalUserProfile/) |
+| fileManagement | [SyncFoldersScript.ps1](/_posts/scripts/SyncFoldersScript/)               |
+| fileManagement | [UncompressZip-SameDestination.ps1](/_posts/scripts/UncompressZip-SameDestination/) |
 
 ---
 
@@ -153,18 +189,21 @@ permalink: /menu/_pages/scripts.html
 
 | Section     | FileName                                                            |
 | :---------- | :------------------------------------------------------------------ |
-| information | [Collect-ServerInfo.ps1](/_posts/scripts/Collect-ServerInfo/) |
-| information | [Export-PrinterQueues.ps1](/_posts/scripts/Export-PrinterQueues/) |
-| information | [ExportFirewallRules.ps1](/_posts/scripts/ExportFirewallRules/) |
-| information | [Get-DiskSpace.ps1](/_posts/scripts/Get-DiskSpace/) |
-| information | [Get-ReportDownload.ps1](/_posts/scripts/Get-ReportDownload/) |
-| information | [Get-WifiPassword.ps1](/_posts/scripts/Get-WifiPassword/) |
+| information | [Collect-ServerInfo.ps1](/_posts/scripts/Collect-ServerInfo/)       |
+| information | [Export-PrinterQueues.ps1](/_posts/scripts/Export-PrinterQueues/)   |
+| information | [ExportFirewallRules.ps1](/_posts/scripts/ExportFirewallRules/)     |
+| information | [Get-DiskSpace.ps1](/_posts/scripts/Get-DiskSpace/)                 |
+| information | [Get-IPConfig.ps1](/_posts/scripts/Get-IPConfig/) |
+| information | [Get-ReportDownload.ps1](/_posts/scripts/Get-ReportDownload/)       |
+| information | [Get-WifiPassword.ps1](/_posts/scripts/Get-WifiPassword/)           |
 | information | [GetComputerHTMLReport.ps1](/_posts/scripts/GetComputerHTMLReport/) |
-| information | [GetComputerInventory.ps1](/_posts/scripts/GetComputerInventory/) |
-| information | [Hardware-Report.ps1](/_posts/scripts/Hardware-Report/) |
-| information | [html-report.ps1](/_posts/scripts/html-report/) |
+| information | [GetComputerInventory.ps1](/_posts/scripts/GetComputerInventory/)   |
+| information | [GetWindowsFeatures.ps1](/_posts/scripts/GetWindowsFeatures/) |
+| information | [Hardware-Report.ps1](/_posts/scripts/Hardware-Report/)             |
+| information | [html-report.ps1](/_posts/scripts/html-report/)                     |
 | information | [O365UserLicenseReport.ps1](/_posts/scripts/O365UserLicenseReport/) |
-| information | [Office365HTMLReport.ps1](/_posts/scripts/Office365HTMLReport/) |
+| information | [Office365HTMLReport.ps1](/_posts/scripts/Office365HTMLReport/)     |
+| information | [Resolve-DNSList.ps1](/_posts/scripts/Resolve-DNSList/) |
 
 ---
 
@@ -172,10 +211,10 @@ permalink: /menu/_pages/scripts.html
 
 | Section        | FileName                                                                |
 | :------------- | :---------------------------------------------------------------------- |
-| installScripts | [Install-O365Modules.ps1](/_posts/scripts/Install-O365Modules/) |
-| installScripts | [Install-PoshBot.ps1](/_posts/scripts/Install-PoshBot/) |
-| installScripts | [Install-RSATonline.ps1](/_posts/scripts/Install-RSATonline/) |
-| installScripts | [InstallADDocsModules.ps1](/_posts/scripts/InstallADDocsModules/) |
+| installScripts | [Install-O365Modules.ps1](/_posts/scripts/Install-O365Modules/)         |
+| installScripts | [Install-PoshBot.ps1](/_posts/scripts/Install-PoshBot/)                 |
+| installScripts | [Install-RSATonline.ps1](/_posts/scripts/Install-RSATonline/)           |
+| installScripts | [InstallADDocsModules.ps1](/_posts/scripts/InstallADDocsModules/)       |
 | installScripts | [InstallPwnedPasswordDLL.ps1](/_posts/scripts/InstallPwnedPasswordDLL/) |
 
 ---
@@ -184,19 +223,32 @@ permalink: /menu/_pages/scripts.html
 
 | Section | FileName                                                  |
 | :------ | :-------------------------------------------------------- |
-| ping    | [Dotnetping.ps1](/_posts/scripts/Dotnetping/) |
-| ping    | [Ping-DNSServers.ps1](/_posts/scripts/Ping-DNSServers/) |
+| ping    | [Dotnetping.ps1](/_posts/scripts/Dotnetping/)             |
+| ping    | [Get-PingMonitor.ps1](/_posts/scripts/Get-PingMonitor/) |
+| ping    | [Ping-DNSServers.ps1](/_posts/scripts/Ping-DNSServers/)   |
 | ping    | [PingAllComputers.ps1](/_posts/scripts/PingAllComputers/) |
 
+---
+
+## security
+
+| Section | FileName |
+| :------ | :------- |
+| security | [Export-Bitlocker.ps1](/_posts/scripts/Export-Bitlocker/) |
+| security | [Export-BitlockerComp.ps1](/_posts/scripts/Export-BitlockerComp/) |
+| security | [Export-BitlockerParams.ps1](/_posts/scripts/Export-BitlockerParams/) |
+| security | [Invoke-UrlScan.ps1](/_posts/scripts/Invoke-UrlScan/) |
+| security | [New-PassPhrase.ps1](/_posts/scripts/New-PassPhrase/) |
+| security | [New-KrbtgtKeys.ps1](/scripts/security/new-krbtgtkeys/) |
 ---
 
 ## time
 
 | Section | FileName                                                                |
 | :------ | :---------------------------------------------------------------------- |
-| time    | [Get-CurrentWorldTime.ps1](/_posts/scripts/Get-CurrentWorldTime/) |
+| time    | [Get-CurrentWorldTime.ps1](/_posts/scripts/Get-CurrentWorldTime/)       |
 | time    | [Get-TimeZoneInformation.ps1](/_posts/scripts/Get-TimeZoneInformation/) |
-| time    | [Worldtimeclock.ps1](/_posts/scripts/Worldtimeclock/) |
+| time    | [Worldtimeclock.ps1](/_posts/scripts/Worldtimeclock/)                   |
 
 ---
 
@@ -204,10 +256,10 @@ permalink: /menu/_pages/scripts.html
 
 | Section        | FileName                                                                                |
 | :------------- | :-------------------------------------------------------------------------------------- |
-| windowsUpdates | [Export-WindowsUpdates.ps1](/_posts/scripts/Export-WindowsUpdates/) |
-| windowsUpdates | [Export-WUpdateHistory.ps1](/_posts/scripts/Export-WUpdateHistory/) |
-| windowsUpdates | [Get-HotFixReport.ps1](/_posts/scripts/Get-HotFixReport/) |
-| windowsUpdates | [Get-WindowsUpdatesInstalled.ps1](/_posts/scripts/Get-WindowsUpdatesInstalled/) |
+| windowsUpdates | [Export-WindowsUpdates.ps1](/_posts/scripts/Export-WindowsUpdates/)                     |
+| windowsUpdates | [Export-WUpdateHistory.ps1](/_posts/scripts/Export-WUpdateHistory/)                     |
+| windowsUpdates | [Get-HotFixReport.ps1](/_posts/scripts/Get-HotFixReport/)                               |
+| windowsUpdates | [Get-WindowsUpdatesInstalled.ps1](/_posts/scripts/Get-WindowsUpdatesInstalled/)         |
 | windowsUpdates | [Get-WindowsUpdatesInstalledList.ps1](/_posts/scripts/Get-WindowsUpdatesInstalledList/) |
 
 ---
@@ -216,114 +268,22 @@ permalink: /menu/_pages/scripts.html
 
 | Section       | FileName                                                                    |
 | :------------ | :-------------------------------------------------------------------------- |
-| miscellaneous | [AutoBitlocker.ps1](/_posts/scripts/AutoBitlocker/) |
-| miscellaneous | [chart-driveSpace.V2.ps1](/_posts/scripts/chart-driveSpace.V2/) |
-| miscellaneous | [Config-Psmodulepath.ps1](/_posts/scripts/Config-Psmodulepath/) |
-| miscellaneous | [ConfigureWinrm.ps1](/_posts/scripts/ConfigureWinrm/) |
-| miscellaneous | [DiskCleanup.ps1](/_posts/scripts/DiskCleanup/) |
-| miscellaneous | [diskmonitor.ps1](/_posts/scripts/diskmonitor/) |
-| miscellaneous | [Blank-Page.ps1](/useradminmodule/utilities/blank-page/) |
-| miscellaneous | [HyperVGoldenImage.ps1](/_posts/scripts/HyperVGoldenImage/) |
-| miscellaneous | [Stop-FailedServiceScript.ps1](/_posts/scripts/Stop-FailedServiceScript/) |
+| miscellaneous | [AutoBitlocker.ps1](/_posts/scripts/AutoBitlocker/)                         |
+| miscellaneous | [Blank-Page.ps1](/_posts/scripts/Encrypt-Laptop/)                           |
+| miscellaneous | [chart-driveSpace.V2.ps1](/_posts/scripts/chart-driveSpace.V2/)             |
+| miscellaneous | [Config-Psmodulepath.ps1](/_posts/scripts/Config-Psmodulepath/)             |
+| miscellaneous | [ConfigureWinrm.ps1](/_posts/scripts/ConfigureWinrm/)                       |
+| miscellaneous | [DiskCleanup.ps1](/_posts/scripts/DiskCleanup/)                             |
+| miscellaneous | [diskmonitor.ps1](/_posts/scripts/diskmonitor/)                             |
+| miscellaneous | [HyperVGoldenImage.ps1](/_posts/scripts/HyperVGoldenImage/)                 |
+| miscellaneous | [Invoke-FTPUpload.ps1](/_posts/scripts/Invoke-FTPUpload/) |
+| miscellaneous | [Invoke-WebrequestCookie.ps1](/_posts/scripts/Invoke-WebrequestCookie/) |
+| miscellaneous | [Stop-FailedServiceScript.ps1](/_posts/scripts/Stop-FailedServiceScript/)   |
+| miscellaneous | [Test-EmailAddress.ps1](/_posts/scripts/Test-EmailAddress/) |
 | miscellaneous | [Update-DynamicDNSTemplate.ps1](/_posts/scripts/Update-DynamicDNSTemplate/) |
-| miscellaneous | [VMWareGoldenImage.ps1](/_posts/scripts/VMWareGoldenImage/) |
-| miscellaneous | [Write-MatrixMessage.ps1](/_posts/scripts/Write-MatrixMessage/) |
+| miscellaneous | [VMWareGoldenImage.ps1](/_posts/scripts/VMWareGoldenImage/)                 |
+| miscellaneous | [VMWareHealthcheck.ps1](/_posts/scripts/VMWareHealthcheck/) |
+| miscellaneous | [Write-MatrixMessage.ps1](/_posts/scripts/Write-MatrixMessage/)             |
 
 ---
 
-## network
-
-| Section | FileName                                                                |
-| :------ | :----------------------------------------------------------------------- |
-| network | [Get-DKIMRecord.ps1](/useradminmodule/network/get-dkimrecord/) |
-| network | [Get-DMARCRecord.ps1](/useradminmodule/network/get-dmarcrecord/) |
-| network | [Get-FTPFile-empty.ps1](/useradminmodule/network/get-ftpfile-empty/) |
-| network | [Get-IPConfig.ps1](/useradminmodule/network/get-ipconfig/) |
-| network | [Get-PingMonitor.ps1](/useradminmodule/network/get-pingmonitor/) |
-| network | [Get-PortInfo.ps1](/useradminmodule/network/get-portinfo/) |
-| network | [Get-PublicDnsRecord.ps1](/useradminmodule/network/get-publicdnsrecord/) |
-| network | [Get-SPFRecord.ps1](/useradminmodule/network/get-spfrecord/) |
-| network | [Invoke-FTPUpload.ps1](/useradminmodule/network/invoke-ftpupload/) |
-| network | [network packV3.ps1](/PowerShell/UserAdminModule/Network/Public/network%20packV3.ps1) |
-| network | [Resolve-DnsDomain.ps1](/useradminmodule/network/resolve-dnsdomain/) |
-| network | [Resolve-DNSList.ps1](/useradminmodule/network/resolve-dnslist/) |
-| network | [Resolve-DomainDNS.ps1](/useradminmodule/network/resolve-domaindns/) |
-| network | [Test-DNSPropagation.ps1](/useradminmodule/network/test-dnspropagation/) |
-
----
-
-## security
-
-| Section | FileName                                                                |
-| :------ | :----------------------------------------------------------------------- |
-| security | [Export-Bitlocker.ps1](/useradminmodule/security/export-bitlocker/) |
-| security | [Export-BitlockerComp.ps1](/useradminmodule/security/export-bitlockercomp/) |
-| security | [Export-BitlockerParams.ps1](/useradminmodule/security/export-bitlockerparams/) |
-| security | [Get-ProductKey.ps1](/useradminmodule/security/get-productkey/) |
-| security | [Get-SettingsWithCPassword.ps1](/useradminmodule/security/get-settingswithcpassword/) |
-| security | [Get-SSLlabsScore.ps1](/useradminmodule/security/get-ssllabsscore/) |
-| security | [Get-UnknownDevices.ps1](/useradminmodule/security/get-unknowndevices/) |
-| security | [Invoke-PasswordRoll.ps1](/useradminmodule/security/invoke-passwordroll/) |
-| security | [Invoke-UrlScan.ps1](/useradminmodule/security/invoke-urlscan/) |
-| security | [New-KrbtgtKeys.ps1](/scripts/security/new-krbtgtkeys/) |
-| security | [New-PassPhrase.ps1](/useradminmodule/security/new-passphrase/) |
-| security | [New-Password.ps1](/useradminmodule/security/new-password/) |
-| security | [PasswordFunctions.ps1](/useradminmodule/security/passwordfunctions/) |
-| security | [ScreenPassword.ps1](/useradminmodule/security/screenpassword/) |
-
----
-
-## testing
-
-| Section | FileName                                                |
-| :------ | :------------------------------------------------------ |
-| testing | [Test-ComputerName.ps1](/useradminmodule/testing/test-computername/) |
-| testing | [Test-EmailAddress.ps1](/useradminmodule/testing/test-emailaddress/) |
-| testing | [Test-OnlineFast.ps1](/useradminmodule/testing/test-onlinefast/) |
-| testing | [Test-ServerExists.ps1](/useradminmodule/testing/test-serverexists/) |
-| testing | [Test-WebSiteUp.ps1](/useradminmodule/testing/test-websiteup/) |
-
----
-
-## utilities
-
-| Section   | FileName                                                                  |
-| :-------- | :------------------------------------------------------------------------- |
-| utilities | [ConvertFrom-ErrorRecord.ps1](/useradminmodule/utilities/convertfrom-errorrecord/) |
-| utilities | [ConvertObject-ToHashTable.ps1](/useradminmodule/utilities/convertobject-tohashtable/) |
-| utilities | [Get-2amOfThirdMondayInMonth.ps1](/useradminmodule/utilities/get-2amofthirdmondayinmonth/) |
-| utilities | [Get-ChuckNorrisJoke.ps1](/useradminmodule/utilities/get-chucknorrisjoke/) |
-| utilities | [Get-CPUTemperature.ps1](/useradminmodule/utilities/get-cputemperature/) |
-| utilities | [Get-DotNetVersion.ps1](/useradminmodule/utilities/get-dotnetversion/) |
-| utilities | [Get-ErrorInfo.ps1](/useradminmodule/utilities/get-errorinfo/) |
-| utilities | [Get-InfoBadService.ps1](/useradminmodule/utilities/get-infobadservice/) |
-| utilities | [Get-InfoCompSystem.ps1](/useradminmodule/utilities/get-infocompsystem/) |
-| utilities | [Get-InfoDisk.ps1](/useradminmodule/utilities/get-infodisk/) |
-| utilities | [Get-InfoNIC.ps1](/useradminmodule/utilities/get-infonic/) |
-| utilities | [Get-InfoOS.ps1](/useradminmodule/utilities/get-infoos/) |
-| utilities | [Get-InfoProc.ps1](/useradminmodule/utilities/get-infoproc/) |
-| utilities | [Get-InstalledUpdates.ps1](/useradminmodule/utilities/get-installedupdates/) |
-| utilities | [Get-NTPStatusFromHost.ps1](/useradminmodule/utilities/get-ntpstatusfromhost/) |
-| utilities | [Get-Ntptime.ps1](/useradminmodule/utilities/get-ntptime/) |
-| utilities | [Get-PatchTuesday.ps1](/useradminmodule/utilities/get-patchtuesday/) |
-| utilities | [Get-PendingReboot.ps1](/useradminmodule/utilities/get-pendingreboot/) |
-| utilities | [Get-PendingUpdates.ps1](/useradminmodule/utilities/get-pendingupdates/) |
-| utilities | [Get-RebootReport.ps1](/useradminmodule/utilities/get-rebootreport/) |
-| utilities | [Get-RemoteTime.ps1](/useradminmodule/utilities/get-remotetime/) |
-| utilities | [Get-Resources.ps1](/useradminmodule/utilities/get-resources/) |
-| utilities | [Get-Time.ps1](/useradminmodule/utilities/get-time/) |
-| utilities | [Get-TimeServer.ps1](/useradminmodule/utilities/get-timeserver/) |
-| utilities | [Get-Uptime.ps1](/useradminmodule/virtualization/get-uptime/) |
-| utilities | [Get-WeekDayInMonth.ps1](/useradminmodule/utilities/get-weekdayinmonth/) |
-| utilities | [GetWindowsFeatures.ps1](/useradminmodule/utilities/getwindowsfeatures/) |
-| utilities | [Invoke-CDRomDrive.ps1](/useradminmodule/utilities/invoke-cdromdrive/) |
-| utilities | [Invoke-WebrequestCookie.ps1](/useradminmodule/utilities/invoke-webrequestcookie/) |
-| utilities | [Open-CDTray.ps1](/useradminmodule/utilities/open-cdtray/) |
-| utilities | [Out-Excel.ps1](/useradminmodule/utilities/out-excel/) |
-| utilities | [ProgressBar.ps1](/useradminmodule/utilities/progressbar/) |
-| utilities | [Remove-UserProfile.ps1](/useradminmodule/utilities/remove-userprofile/) |
-| utilities | [RemoveLocalUserProfile.ps1](/useradminmodule/utilities/removelocaluserprofile/) |
-| utilities | [Search-RoadWorks.ps1](/useradminmodule/utilities/search-roadworks/) |
-| utilities | [Start-WindowsUpdate.ps1](/useradminmodule/utilities/start-windowsupdate/) |
-
----

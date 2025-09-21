@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Cleanup-AdminSDHolder.ps1
+permalink: /_posts/scripts/Cleanup-AdminSDHolder/
 ---
 
 - [Description](#description)

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ADACLScan1.3.3.ps1
+permalink: /_posts/scripts/ADACLScan1.3.3/
 ---
 
 - [Description](#description)

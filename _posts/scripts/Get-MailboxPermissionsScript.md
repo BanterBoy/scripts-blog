@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get-MailboxPermissionsScript.ps1
+permalink: /_posts/scripts/Get-MailboxPermissionsScript/
 ---
 
 - [Description](#description)

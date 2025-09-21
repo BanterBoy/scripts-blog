@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Update-DynamicDNSTemplate.ps1
+permalink: /_posts/scripts/Update-DynamicDNSTemplate/
 ---
 
 - [Description](#description)

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Find-MissingFiles.ps1
+permalink: /_posts/scripts/Find-MissingFiles/
 ---
 
 - [Description](#description)

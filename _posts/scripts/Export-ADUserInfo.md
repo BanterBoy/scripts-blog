@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Export-ADUserInfo.ps1
+permalink: /_posts/scripts/Export-ADUserInfo/
 ---
 
 - [Description](#description)

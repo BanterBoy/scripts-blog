@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ActiveDirectorySitesLinksReport.ps1
+permalink: /_posts/scripts/ActiveDirectorySitesLinksReport/
 ---
 
 - [Description](#description)

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Start-ADSyncCycle.ps1
+permalink: /_posts/scripts/Start-ADSyncCycle/
 ---
 
 - [Description](#description)
