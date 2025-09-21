@@ -569,11 +569,6 @@
     "subfolder": "Public",
     "path": "PowerShell/UserAdminModule/Exchange/Public/Connect-O365Session.ps1"
   },
-  "Connect-Office365Services": {
-    "category": "Shell",
-    "subfolder": "Configuration/personalProfiles",
-    "path": "PowerShell/UserAdminModule/Shell/Configuration/personalProfiles/Connect-Office365Services.ps1"
-  },
   "Copy-ReceiveConnector": {
     "category": "Exchange",
     "subfolder": "Public",
@@ -854,11 +849,6 @@
     "subfolder": "Public",
     "path": "PowerShell/UserAdminModule/Weather/Public/Get-TempHumidData.ps1"
   },
-  "Microsoft.PowerShell_profile": {
-    "category": "Shell",
-    "subfolder": "Configuration/General",
-    "path": "PowerShell/UserAdminModule/Shell/Configuration/General/Microsoft.PowerShell_profile.ps1"
-  },
   "New-AdminTerminal": {
     "category": "Shell",
     "subfolder": "Public",
@@ -894,25 +884,10 @@
     "subfolder": "Public",
     "path": "PowerShell/UserAdminModule/FileOperations/Public/parse_NTFS.ps1"
   },
-  "Microsoft.PowerShell_profile_Example": {
-    "category": "Shell",
-    "subfolder": "Configuration/Examples",
-    "path": "PowerShell/UserAdminModule/Shell/Configuration/Examples/Microsoft.PowerShell_profile_Example.ps1"
-  },
   "Restart-PowershellProfile": {
     "category": "Shell",
     "subfolder": "Public",
     "path": "PowerShell/UserAdminModule/Shell/Public/Restart-PowershellProfile.ps1"
-  },
-  "HomePowerShell_profile": {
-    "category": "Shell",
-    "subfolder": "Configuration/personalProfiles",
-    "path": "PowerShell/UserAdminModule/Shell/Configuration/personalProfiles/HomePowerShell_profile.ps1"
-  },
-  "WorkPowerShell_profile": {
-    "category": "Shell",
-    "subfolder": "Configuration/personalProfiles",
-    "path": "PowerShell/UserAdminModule/Shell/Configuration/personalProfiles/WorkPowerShell_profile.ps1"
   },
   "Get-2amOfThirdMondayInMonth": {
     "category": "Utilities",
