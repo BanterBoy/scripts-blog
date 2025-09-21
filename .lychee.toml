@@ -1,0 +1,24 @@
+# Configuration for lychee link checking
+# Skip repository README because it contains development-only links.
+exclude_path = [
+  "_site/README.md"
+]
+
+# Ignore known external targets that are prone to false positives (rate limits,
+# auth-gated endpoints, or legacy resources that intentionally remain offline).
+exclude = [
+  "^https://github\\.com/BanterBoy/scripts-blog/issues/new",
+  "https://outlook.office365.com/powershell-liveid/",
+  "https://blog.moneysavingexpert.com/2020/04/martin-lewis--working-from-home-due-to-coronavirus--claim-p6-wk-/",
+  "http://www.holidaywebservice.com/HolidayService_v2/HolidayService2.asmx",
+  "http://www.tablesgenerator.com/markdown_tables",
+  "https://www.lyquidity.com/devblog/\\?p=95",
+  "https://support.microsoft.com/en-gb/help/262680/a-list-of-the-simple-network-time-protocol-sntp-time-servers-that-are-available-on-the-internet",
+  "https://alexvoropaev.jimdo.com/my-articles/exchange/repair-exchange-db-after-dirty-shutdown/",
+  "https://social.technet.microsoft.com/Forums/en-US/6c3d6278-0fa2-46b0-a19e-6fd652db972c/root-hints-defaulting-to-ipv6-only\\?forum=winserveripamdhcpdns",
+  "http://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/techpaper/Timekeeping-In-VirtualMachines.pdf",
+  "http://blogs.msdn.com/b/adpowershell/archive/2009/09/22/how-to-find-extended-rights-that-apply-to-a-schema-class-object.aspx",
+  "https://github.com/MicrosoftDocs/Dynamics-365-Operations/edit/master/template.md",
+  "https://raw.githubusercontent.com/MicrosoftDocs/Dynamics-365-Operations/master/template.md",
+  "^https://www\\.linkedin\\.com/in/"
+]
