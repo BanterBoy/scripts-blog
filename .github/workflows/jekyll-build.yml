@@ -24,23 +24,64 @@ jobs:
           bundler-cache: true
 
       - name: Build site
-        run: bundle exec jekyll build --future
+        run: bundle exec jekyll build --trace --future
+
+      - name: Compute site base URL
+        id: compute_base
+        run: |
+          ruby <<'RUBY'
+          require 'yaml'
+
+          config = YAML.load_file('_config.yml') || {}
+          site_url = config['url'].to_s.strip
+          baseurl = config['baseurl'].to_s.strip
+
+          if site_url.empty?
+            warn '::error::Could not determine site url from _config.yml'
+            exit 1
+          end
+
+          site_url = site_url.sub(%r{/\z}, '')
+
+          baseurl = '' if baseurl.empty? || baseurl == '/'
+          baseurl = "/#{baseurl}" unless baseurl.empty? || baseurl.start_with?('/')
+
+          full_base = "#{site_url}#{baseurl}"
+
+          File.open(ENV.fetch('GITHUB_OUTPUT'), 'a') do |f|
+            f.puts "site_url=#{site_url}"
+            f.puts "site_baseurl=#{baseurl}"
+            f.puts "full_base=#{full_base}"
+          end
+
+          puts "::notice::full_base=#{full_base}"
+          RUBY
 
       - name: Verify generated CSS is referenced
         shell: pwsh
         run: ./build/Verify-CssLink.ps1 -SiteRoot "_site" -CssHint "hyde.css"
 
-      - name: Check generated site links
-        # Originally: lycheeverse/lychee-action@v2.0.2
+      - name: Link check with Lychee (generated site)
         uses: lycheeverse/lychee-action@v2.0.2
         with:
           output: lychee-report.json
           args: >-
             --no-progress
+            --verbose
             --format json
             --config .lychee.toml
-            --base "file:///${{ github.workspace }}/_site"
             _site
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Link check with Lychee (sitemap)
+        uses: lycheeverse/lychee-action@v2.0.2
+        with:
+          args: >-
+            --no-progress
+            --verbose
+            --config .lychee.toml
+            --sitemap "${{ steps.compute_base.outputs.full_base }}/sitemap.xml"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

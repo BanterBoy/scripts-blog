@@ -1,4 +1,11 @@
 # Configuration for lychee link checking
+scheme = ["http", "https"]
+base_url = "https://scripts.lukeleigh.com"
+accept = [200, 206, 429]
+retry_wait_time = 3
+retries = 3
+max_concurrency = 20
+
 # Skip repository README because it contains development-only links.
 exclude_path = [
   "_site/README.md"
