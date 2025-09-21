@@ -1,16 +1,6 @@
 ---
 layout: post
 title: gPLink_Report.ps1
-last_modified_at: "2025-09-20 00:00:00"
-permalink: /scripts/gplink-report/
-categories:
-- Scripts
-tags:
-- PowerShell
-- Scripts
-- G P Link Report
-description: PowerShell script for G P link report.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

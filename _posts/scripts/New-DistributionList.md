@@ -1,16 +1,6 @@
 ---
 layout: post
 title: New-DistributionList.ps1
-last_modified_at: "2025-09-20 00:00:00"
-permalink: /scripts/new-distributionlist/
-categories:
-- Scripts
-tags:
-- PowerShell
-- Scripts
-- Distribution List
-description: PowerShell script for distribution list.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

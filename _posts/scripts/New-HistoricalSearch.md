@@ -1,16 +1,6 @@
 ---
 layout: post
 title: New-HistoricalSearch.ps1
-last_modified_at: "2025-09-20 00:00:00"
-permalink: /scripts/new-historicalsearch/
-categories:
-- Scripts
-tags:
-- PowerShell
-- Scripts
-- Historical Search
-description: PowerShell script for historical search.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

@@ -1,16 +1,6 @@
 ---
 layout: post
 title: Evaluate-EventLog.ps1
-last_modified_at: "2025-09-20 00:00:00"
-permalink: /scripts/evaluate-eventlog/
-categories:
-- Scripts
-tags:
-- PowerShell
-- Scripts
-- Evaluate Event Log
-description: PowerShell script for evaluate event log.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

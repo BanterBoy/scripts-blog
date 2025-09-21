@@ -1,16 +1,6 @@
 ---
 layout: post
 title: Compare-Folder.ps1
-last_modified_at: "2025-09-20 00:00:00"
-permalink: /scripts/compare-folder/
-categories:
-- Scripts
-tags:
-- PowerShell
-- Scripts
-- Compare Folder
-description: PowerShell script for compare folder.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

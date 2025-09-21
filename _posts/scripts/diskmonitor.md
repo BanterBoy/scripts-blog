@@ -1,16 +1,6 @@
 ---
 layout: post
 title: diskmonitor.ps1
-last_modified_at: "2025-09-20 00:00:00"
-permalink: /scripts/diskmonitor/
-categories:
-- Scripts
-tags:
-- PowerShell
-- Scripts
-- Diskmonitor
-description: PowerShell script for diskmonitor.
-image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)
