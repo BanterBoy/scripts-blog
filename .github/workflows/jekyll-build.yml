@@ -56,9 +56,9 @@ jobs:
           CI: "true"
           FULL_BASE: ${{ steps.compute_base.outputs.full_base }}
         run: |
-          bundle exec htmlproofer ./_site \
-            --config .htmlproofer.yml \
-            --url-swap "^/":"${FULL_BASE}/"
+          bundle exec htmlproofer \
+            --swap-urls "^/\:${FULL_BASE}/" \
+            ./_site
 
       - name: Run SEO guardrail checks
         run: |
