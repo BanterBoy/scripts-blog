@@ -93,8 +93,6 @@ The ADFunctions category contains a comprehensive collection of PowerShell tools
 | ADFunctions | [Compare-GroupMembership](/_posts/UserAdminModule/Compare-GroupMembership/)                                 |
 | ADFunctions | [Copy-AdGroupMemberShip](/_posts/UserAdminModule/Copy-AdGroupMemberShip/)                                   |
 | ADFunctions | [Copy-GroupMembership](/_posts/UserAdminModule/Copy-GroupMembership/)                                       |
-| ADFunctions | [CreateADMXCentralStore](/_posts/UserAdminModule/CreateADMXCentralStore/)                                   |
-| ADFunctions | [CreateTimeServerGPOs](/_posts/UserAdminModule/CreateTimeServerGPOs/)                                       |
 | ADFunctions | [Disable-InactiveComputer](/_posts/UserAdminModule/Disable-InactiveComputer/)                               |
 | ADFunctions | [DisableADAccountsMenu](/_posts/UserAdminModule/DisableADAccountsMenu/)                                     |
 | ADFunctions | [Find-localAdmins](/_posts/UserAdminModule/Find-localAdmins/)                                               |
@@ -134,7 +132,6 @@ The ADFunctions category contains a comprehensive collection of PowerShell tools
 | ADFunctions | [Get-LapsAndBitLocker](/_posts/UserAdminModule/Get-LapsAndBitLocker/)                                       |
 | ADFunctions | [Get-LastGPOUpdateTime](/_posts/UserAdminModule/Get-LastGPOUpdateTime/)                                     |
 | ADFunctions | [Get-LocalGroupMembership](/_posts/UserAdminModule/Get-LocalGroupMembership/)                               |
-| ADFunctions | [Get-LockedOutUser](/_posts/UserAdminModule/Get-LockedOutUser/)                                             |
 | ADFunctions | [Get-LockoutHistory](/_posts/UserAdminModule/Get-LockoutHistory/)                                           |
 | ADFunctions | [Get-LoggedOnUser](/_posts/UserAdminModule/Get-LoggedOnUser/)                                               |
 | ADFunctions | [Get-LogonEvents](/_posts/UserAdminModule/Get-LogonEvents/)                                                 |
@@ -142,7 +139,6 @@ The ADFunctions category contains a comprehensive collection of PowerShell tools
 | ADFunctions | [Get-NestedGroupMember](/_posts/UserAdminModule/Get-NestedGroupMember/)                                     |
 | ADFunctions | [Get-O365LastLogonTime](/_posts/UserAdminModule/Get-O365LastLogonTime/)                                     |
 | ADFunctions | [Get-OUDelegations](/_posts/UserAdminModule/Get-OUDelegations/)                                             |
-| ADFunctions | [Get-PrimaryGroupsReport](/_posts/UserAdminModule/Get-PrimaryGroupsReport/)                                 |
 | ADFunctions | [Get-RemoteServiceAccount](/_posts/UserAdminModule/Get-RemoteServiceAccount/)                               |
 | ADFunctions | [Get-ServiceDetails](/_posts/UserAdminModule/Get-ServiceDetails/)                                           |
 | ADFunctions | [Get-ServiceLogonAccount](/_posts/UserAdminModule/Get-ServiceLogonAccount/)                                 |
@@ -151,38 +147,24 @@ The ADFunctions category contains a comprehensive collection of PowerShell tools
 | ADFunctions | [Get-TokenSizeReport](/_posts/UserAdminModule/Get-TokenSizeReport/)                                         |
 | ADFunctions | [Get-TopOUName](/_posts/UserAdminModule/Get-TopOUName/)                                                     |
 | ADFunctions | [Get-UnlinkedGPO](/_posts/UserAdminModule/Get-UnlinkedGPO/)                                                 |
-| ADFunctions | [Get-UserAccountControlReport](/_posts/UserAdminModule/Get-UserAccountControlReport/)                       |
 | ADFunctions | [Get-UserLogon](/_posts/UserAdminModule/Get-UserLogon/)                                                     |
 | ADFunctions | [Get-UserLogonEvents](/_posts/UserAdminModule/Get-UserLogonEvents/)                                         |
-| ADFunctions | [get-usermembership](/_posts/UserAdminModule/get-usermembership/)                                           |
-| ADFunctions | [Get-UserReport](/_posts/UserAdminModule/Get-UserReport/)                                                   |
 | ADFunctions | [Get-UsersGroupMemberShips](/_posts/UserAdminModule/Get-UsersGroupMemberShips/)                             |
 | ADFunctions | [Get-UserSupportedEncryptionTypes](/_posts/UserAdminModule/Get-UserSupportedEncryptionTypes/)               |
 | ADFunctions | [GetMailboxPermission](/_posts/UserAdminModule/GetMailboxPermission/)                                       |
-| ADFunctions | [GetUserLoggedOnto](/_posts/UserAdminModule/GetUserLoggedOnto/)                                             |
 | ADFunctions | [Lock-UserAccount](/_posts/UserAdminModule/Lock-UserAccount/)                                               |
 | ADFunctions | [Move-ADComputer](/_posts/UserAdminModule/Move-ADComputer/)                                                 |
 | ADFunctions | [Move-FSMORolestoPDCEmulator](/_posts/UserAdminModule/Move-FSMORolestoPDCEmulator/)                         |
-| ADFunctions | [MoveOU](/_posts/UserAdminModule/MoveOU/)                                                                   |
-| ADFunctions | [New-ADAssetReport](/_posts/UserAdminModule/New-ADAssetReport/)                                             |
-| ADFunctions | [New-EncryptedUser](/_posts/UserAdminModule/New-EncryptedUser/)                                             |
 | ADFunctions | [New-FakeADUser](/_posts/UserAdminModule/New-FakeADUser/)                                                   |
 | ADFunctions | [New-FakeADUserDetails](/_posts/UserAdminModule/New-FakeADUserDetails/)                                     |
 | ADFunctions | [New-FakeUserDetails](/_posts/UserAdminModule/New-FakeUserDetails/)                                         |
-| ADFunctions | [New-KrbtgtKeys](/_posts/UserAdminModule/New-KrbtgtKeys/)                                                   |
 | ADFunctions | [New-RandomUser](/_posts/UserAdminModule/New-RandomUser/)                                                   |
-| ADFunctions | [OU_permissions](/_posts/UserAdminModule/OU_permissions/)                                                   |
 | ADFunctions | [Provision_Home_Folder](/_posts/UserAdminModule/Provision_Home_Folder/)                                     |
-| ADFunctions | [Query-UserAccountControl](/_posts/UserAdminModule/Query-UserAccountControl/)                               |
 | ADFunctions | [remove-ADM](/_posts/UserAdminModule/remove-ADM/)                                                           |
 | ADFunctions | [Remove-AdminSDHolder](/_posts/UserAdminModule/Remove-AdminSDHolder/)                                       |
-| ADFunctions | [Reset-UsersPassword](/_posts/UserAdminModule/Reset-UsersPassword/)                                         |
 | ADFunctions | [Restore-ADDeletedUsers](/_posts/UserAdminModule/Restore-ADDeletedUsers/)                                   |
-| ADFunctions | [Search-GPO](/_posts/UserAdminModule/Search-GPO/)                                                           |
 | ADFunctions | [Search-GPOforString](/_posts/UserAdminModule/Search-GPOforString/)                                         |
 | ADFunctions | [Search-GPOsForString](/_posts/UserAdminModule/Search-GPOsForString/)                                       |
-| ADFunctions | [Search-GPOsForStringOrig](/_posts/UserAdminModule/Search-GPOsForStringOrig/)                               |
-| ADFunctions | [Search-KerbDelegatedAccounts](/_posts/UserAdminModule/Search-KerbDelegatedAccounts/)                       |
 | ADFunctions | [Set-ADDiagnosticConfiguration](/_posts/UserAdminModule/Set-ADDiagnosticConfiguration/)                     |
 | ADFunctions | [Set-ADUserPassword](/_posts/UserAdminModule/Set-ADUserPassword/)                                           |
 | ADFunctions | [Set-CustomAttributesForGroupMembers](/_posts/UserAdminModule/Set-CustomAttributesForGroupMembers/)         |
@@ -290,12 +272,9 @@ The Exchange category provides comprehensive PowerShell functions for managing M
 | Exchange | [Copy-DistributionGroupMembers](/_posts/UserAdminModule/Copy-DistributionGroupMembers/)                                 |
 | Exchange | [Copy-DistributionGroupMembership](/_posts/UserAdminModule/Copy-DistributionGroupMembership/)                           |
 | Exchange | [Copy-OnPremToCloudDistributionGroupMembership](/_posts/UserAdminModule/Copy-OnPremToCloudDistributionGroupMembership/) |
-| Exchange | [Copy-ReceiveConnector](/_posts/UserAdminModule/Copy-ReceiveConnector/)                                                 |
 | Exchange | [Disconnect-ExchangeSessions](/_posts/UserAdminModule/Disconnect-ExchangeSessions/)                                     |
-| Exchange | [Enter-O365Session](/_posts/UserAdminModule/Enter-O365Session/)                                                         |
 | Exchange | [ExchangeConnector](/_posts/UserAdminModule/ExchangeConnector/)                                                         |
 | Exchange | [ExchangeFunctions](/_posts/UserAdminModule/ExchangeFunctions/)                                                         |
-| Exchange | [Export-CalendarPermissions](/_posts/UserAdminModule/Export-CalendarPermissions/)                                       |
 | Exchange | [Export-DistributionGroupProperties](/_posts/UserAdminModule/Export-DistributionGroupProperties/)                       |
 | Exchange | [Export-ExchangeContactData](/_posts/UserAdminModule/Export-ExchangeContactData/)                                       |
 | Exchange | [Get-ADExchangeServer](/_posts/UserAdminModule/Get-ADExchangeServer/)                                                   |
@@ -309,16 +288,8 @@ The Exchange category provides comprehensive PowerShell functions for managing M
 | Exchange | [Get-ExchangeVersion](/_posts/UserAdminModule/Get-ExchangeVersion/)                                                     |
 | Exchange | [Get-FilteredContacts](/_posts/UserAdminModule/Get-FilteredContacts/)                                                   |
 | Exchange | [Get-FilteredMailboxes](/_posts/UserAdminModule/Get-FilteredMailboxes/)                                                 |
-| Exchange | [Get-MailboxAccessPerms](/_posts/UserAdminModule/Get-MailboxAccessPerms/)                                               |
 | Exchange | [Get-MailboxContent](/_posts/UserAdminModule/Get-MailboxContent/)                                                       |
-| Exchange | [Get-MailboxPermissions](/_posts/UserAdminModule/Get-MailboxPermissions/)                                               |
-| Exchange | [Get-MailboxPermissionsExport](/_posts/UserAdminModule/Get-MailboxPermissionsExport/)                                   |
-| Exchange | [Get-MailboxPermissionsReport](/_posts/UserAdminModule/Get-MailboxPermissionsReport/)                                   |
-| Exchange | [Get-MailboxPermissionsReport2](/_posts/UserAdminModule/Get-MailboxPermissionsReport2/)                                 |
-| Exchange | [Get-MailboxReport](/_posts/UserAdminModule/Get-MailboxReport/)                                                         |
-| Exchange | [Get-MailboxStatistics](/_posts/UserAdminModule/Get-MailboxStatistics/)                                                 |
 | Exchange | [Get-MailContactDetails](/_posts/UserAdminModule/Get-MailContactDetails/)                                               |
-| Exchange | [Get-MBAccessPerms](/_posts/UserAdminModule/Get-MBAccessPerms/)                                                         |
 | Exchange | [Get-MessageTraceFiltered](/_posts/UserAdminModule/Get-MessageTraceFiltered/)                                           |
 | Exchange | [Get-O365CalendarPermissions](/_posts/UserAdminModule/Get-O365CalendarPermissions/)                                     |
 | Exchange | [Get-O365MailboxPermissions](/_posts/UserAdminModule/Get-O365MailboxPermissions/)                                       |
@@ -334,17 +305,11 @@ The Exchange category provides comprehensive PowerShell functions for managing M
 | Exchange | [New-OOHMessage](/_posts/UserAdminModule/New-OOHMessage/)                                                               |
 | Exchange | [O365Session](/_posts/UserAdminModule/O365Session/)                                                                     |
 | Exchange | [OnPremExchangeFunctions](/_posts/UserAdminModule/OnPremExchangeFunctions/)                                             |
-| Exchange | [PasswordChangeNotification](/_posts/UserAdminModule/PasswordChangeNotification/)                                       |
-| Exchange | [PasswordReminderAlso](/_posts/UserAdminModule/PasswordReminderAlso/)                                                   |
 | Exchange | [Preview-QuarantinedEmailMessage](/_posts/UserAdminModule/Preview-QuarantinedEmailMessage/)                             |
-| Exchange | [Remove-MailboxFolderPermissions](/_posts/UserAdminModule/Remove-MailboxFolderPermissions/)                             |
-| Exchange | [Remove-UsersfromGAL](/_posts/UserAdminModule/Remove-UsersfromGAL/)                                                     |
 | Exchange | [Repair-MissingOnPremMailbox](/_posts/UserAdminModule/Repair-MissingOnPremMailbox/)                                     |
 | Exchange | [Restart-ExchangeServices](/_posts/UserAdminModule/Restart-ExchangeServices/)                                           |
 | Exchange | [Send-OutlookMail](/_posts/UserAdminModule/Send-OutlookMail/)                                                           |
-| Exchange | [Set-AutoDiscover](/_posts/UserAdminModule/Set-AutoDiscover/)                                                           |
 | Exchange | [Set-CalendarPermsScript](/_posts/UserAdminModule/Set-CalendarPermsScript/)                                             |
-| Exchange | [Set-DefaultReceiveConnector](/_posts/UserAdminModule/Set-DefaultReceiveConnector/)                                     |
 | Exchange | [Set-DistributionGroupProperties](/_posts/UserAdminModule/Set-DistributionGroupProperties/)                             |
 | Exchange | [Set-MailContactDetails](/_posts/UserAdminModule/Set-MailContactDetails/)                                               |
 | Exchange | [Set-MailContactDetailsOnline](/_posts/UserAdminModule/Set-MailContactDetailsOnline/)                                   |
@@ -376,24 +341,20 @@ The FileOperations category offers a comprehensive suite of PowerShell functions
 | FileOperations | [createRandomFilesFunctions](/_posts/UserAdminModule/createRandomFilesFunctions/)                   |
 | FileOperations | [Expand-NinjaOne7Zip](/_posts/UserAdminModule/Expand-NinjaOne7Zip/)                                 |
 | FileOperations | [Expand-NinjaOneZip](/_posts/UserAdminModule/Expand-NinjaOneZip/)                                   |
-| FileOperations | [IISLogsCleanup](/_posts/UserAdminModule/IISLogsCleanup/)                                           |
 | FileOperations | [FileWatcher](/_posts/UserAdminModule/FileWatcher/)                                                 |
 | FileOperations | [Format-FileSize](/_posts/UserAdminModule/Format-FileSize/)                                         |
 | FileOperations | [Get-FileAndFolderPermissions](/_posts/UserAdminModule/Get-FileAndFolderPermissions/)               |
 | FileOperations | [Get-FileExtension](/_posts/UserAdminModule/Get-FileExtension/)                                     |
-| FileOperations | [Get-FileOwner](/_posts/UserAdminModule/Get-FileOwner/)                                             |
 | FileOperations | [Get-IniContent](/_posts/UserAdminModule/Get-IniContent/)                                           |
 | FileOperations | [Get-LatestFiles](/_posts/UserAdminModule/Get-LatestFiles/)                                         |
 | FileOperations | [Get-MediaDetails](/_posts/UserAdminModule/Get-MediaDetails/)                                       |
 | FileOperations | [Get-NeglectedFiles](/_posts/UserAdminModule/Get-NeglectedFiles/)                                   |
 | FileOperations | [Get-OldFiles](/_posts/UserAdminModule/Get-OldFiles/)                                               |
 | FileOperations | [Get-PathPermissions](/_posts/UserAdminModule/Get-PathPermissions/)                                 |
-| FileOperations | [IISLogsCleanup](/_posts/UserAdminModule/IISLogsCleanup/)                                           |
 | FileOperations | [Invoke-RemoteZipExpansion](/_posts/UserAdminModule/Invoke-RemoteZipExpansion/)                     |
 | FileOperations | [Merge-Files](/_posts/UserAdminModule/Merge-Files/)                                                 |
 | FileOperations | [New-DummyFile](/_posts/UserAdminModule/New-DummyFile/)                                             |
 | FileOperations | [New-DummyFiles](/_posts/UserAdminModule/New-DummyFiles/)                                           |
-| FileOperations | [New-FileArchive](/_posts/UserAdminModule/New-FileArchive/)                                         |
 | FileOperations | [New-FileofSize](/_posts/UserAdminModule/New-FileofSize/)                                           |
 | FileOperations | [New-FileReport](/_posts/UserAdminModule/New-FileReport/)                                           |
 | FileOperations | [New-FolderCompare](/_posts/UserAdminModule/New-FolderCompare/)                                     |
@@ -415,7 +376,6 @@ The FileOperations category offers a comprehensive suite of PowerShell functions
 | FileOperations | [Show-PSDrive](/_posts/UserAdminModule/Show-PSDrive/)                                               |
 | FileOperations | [Start-DownloadFileToTemp](/_posts/UserAdminModule/Start-DownloadFileToTemp/)                       |
 | FileOperations | [Unblock-AndUnzipFiles](/_posts/UserAdminModule/Unblock-AndUnzipFiles/)                             |
-| FileOperations | [UncompressZip-SameDestination](/_posts/UserAdminModule/UncompressZip-SameDestination/)             |
 | FileOperations | [zipArchiveTool_recursive](/_posts/UserAdminModule/zipArchiveTool_recursive/)                       |
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
@@ -454,7 +414,6 @@ The Logging category contains PowerShell functions for comprehensive event log m
 | Logging  | [Get-SystemEvent](/_posts/UserAdminModule/Get-SystemEvent/)                 |
 | Logging  | [Get-WmiADEvent](/_posts/UserAdminModule/Get-WmiADEvent/)                   |
 | Logging  | [Initialize-EventLogging](/_posts/UserAdminModule/Initialize-EventLogging/) |
-| Logging  | [IISLogsCleanup](/_posts/UserAdminModule/IISLogsCleanup/)                   |
 | Logging  | [Log-Event](/_posts/UserAdminModule/Log-Event/)                             |
 | Logging  | [New-LogEvent](/_posts/UserAdminModule/New-LogEvent/)                       |
 | Logging  | [Script4logging](/_posts/UserAdminModule/Script4logging/)                   |
@@ -498,10 +457,8 @@ The Network category offers a comprehensive set of PowerShell functions for netw
 | Network  | [Get-DMARCRecord](/_posts/UserAdminModule/Get-DMARCRecord/)             |
 | Network  | [Get-FTPFile-empty](/_posts/UserAdminModule/Get-FTPFile-empty/)         |
 | Network  | [Get-HostIOResults](/_posts/UserAdminModule/Get-HostIOResults/)         |
-| Network  | [Get-IPConfig](/_posts/UserAdminModule/Get-IPConfig/)                   |
 | Network  | [Get-ipInfo](/_posts/UserAdminModule/Get-ipInfo/)                       |
 | Network  | [Get-MullvadApiDetails](/_posts/UserAdminModule/Get-MullvadApiDetails/) |
-| Network  | [Get-PingMonitor](/_posts/UserAdminModule/Get-PingMonitor/)             |
 | Network  | [Get-PortInfo](/_posts/UserAdminModule/Get-PortInfo/)                   |
 | Network  | [Get-PortService](/_posts/UserAdminModule/Get-PortService/)             |
 | Network  | [Get-PublicDnsRecord](/_posts/UserAdminModule/Get-PublicDnsRecord/)     |
@@ -511,9 +468,7 @@ The Network category offers a comprehensive set of PowerShell functions for netw
 | Network  | [Get-SPFRecord](/_posts/UserAdminModule/Get-SPFRecord/)                 |
 | Network  | [Get-WhoIsInformation](/_posts/UserAdminModule/Get-WhoIsInformation/)   |
 | Network  | [Get-WTFismyIP](/_posts/UserAdminModule/Get-WTFismyIP/)                 |
-| Network  | [Invoke-FTPUpload](/_posts/UserAdminModule/Invoke-FTPUpload/)           |
 | Network  | [Resolve-DnsDomain](/_posts/UserAdminModule/Resolve-DnsDomain/)         |
-| Network  | [Resolve-DNSList](/_posts/UserAdminModule/Resolve-DNSList/)             |
 | Network  | [Resolve-DomainDNS](/_posts/UserAdminModule/Resolve-DomainDNS/)         |
 | Network  | [Send-MagicPacket](/_posts/UserAdminModule/Send-MagicPacket/)           |
 | Network  | [Set-DHCPIPAddress](/_posts/UserAdminModule/Set-DHCPIPAddress/)         |
@@ -678,9 +633,6 @@ The Security category contains PowerShell functions for managing system security
 | :------- | :---------------------------------------------------------------------------------------------- |
 | Security | [Disable-CiscoSecure](/_posts/UserAdminModule/Disable-CiscoSecure/)                             |
 | Security | [Enable-CiscoSecure](/_posts/UserAdminModule/Enable-CiscoSecure/)                               |
-| Security | [Export-Bitlocker](/_posts/UserAdminModule/Export-Bitlocker/)                                   |
-| Security | [Export-BitlockerComp](/_posts/UserAdminModule/Export-BitlockerComp/)                           |
-| Security | [Export-BitlockerParams](/_posts/UserAdminModule/Export-BitlockerParams/)                       |
 | Security | [Get-CimNamespacePermissions](/_posts/UserAdminModule/Get-CimNamespacePermissions/)             |
 | Security | [Get-CimNamespacePermissionsRemote](/_posts/UserAdminModule/Get-CimNamespacePermissionsRemote/) |
 | Security | [Get-CimPermsLocal](/_posts/UserAdminModule/Get-CimPermsLocal/)                                 |
@@ -698,10 +650,7 @@ The Security category contains PowerShell functions for managing system security
 | Security | [Invoke-CiscoSecureManagement](/_posts/UserAdminModule/Invoke-CiscoSecureManagement/)           |
 | Security | [Invoke-PasswordifyPhrase](/_posts/UserAdminModule/Invoke-PasswordifyPhrase/)                   |
 | Security | [Invoke-PasswordRoll](/_posts/UserAdminModule/Invoke-PasswordRoll/)                             |
-| Security | [Invoke-UrlScan](/_posts/UserAdminModule/Invoke-UrlScan/)                                       |
 | Security | [New-DynamicParameter](/_posts/UserAdminModule/New-DynamicParameter/)                           |
-| Security | [New-KrbtgtKeys](/_posts/UserAdminModule/New-KrbtgtKeys/)                                       |
-| Security | [New-PassPhrase](/_posts/UserAdminModule/New-PassPhrase/)                                       |
 | Security | [New-Password](/_posts/UserAdminModule/New-Password/)                                           |
 | Security | [PasswordFunctions](/_posts/UserAdminModule/PasswordFunctions/)                                 |
 | Security | [ScreenPassword](/_posts/UserAdminModule/ScreenPassword/)                                       |
@@ -856,7 +805,6 @@ The Testing category contains PowerShell functions for system validation, connec
 | Testing  | [Test-DNSRecord](/_posts/UserAdminModule/Test-DNSRecord/)                       |
 | Testing  | [Test-DnsRecordEndpoints](/_posts/UserAdminModule/Test-DnsRecordEndpoints/)     |
 | Testing  | [Test-DomainMailRecords](/_posts/UserAdminModule/Test-DomainMailRecords/)       |
-| Testing  | [Test-EmailAddress](/_posts/UserAdminModule/Test-EmailAddress/)                 |
 | Testing  | [Test-ExchangeConnection](/_posts/UserAdminModule/Test-ExchangeConnection/)     |
 | Testing  | [Test-ExchangeDNSRR](/_posts/UserAdminModule/Test-ExchangeDNSRR/)               |
 | Testing  | [Test-FileExists](/_posts/UserAdminModule/Test-FileExists/)                     |
@@ -947,11 +895,9 @@ The Utilities category provides a collection of general-purpose PowerShell helpe
 | Utilities | [Get-W32TimeSource](/_posts/UserAdminModule/Get-W32TimeSource/)                       |
 | Utilities | [Get-W32TimeStripchartResults](/_posts/UserAdminModule/Get-W32TimeStripchartResults/) |
 | Utilities | [Get-WeekDayInMonth](/_posts/UserAdminModule/Get-WeekDayInMonth/)                     |
-| Utilities | [GetWindowsFeatures](/_posts/UserAdminModule/GetWindowsFeatures/)                     |
 | Utilities | [Import-CSVCustom](/_posts/UserAdminModule/Import-CSVCustom/)                         |
 | Utilities | [Invoke-BatchArray](/_posts/UserAdminModule/Invoke-BatchArray/)                       |
 | Utilities | [Invoke-CDRomDrive](/_posts/UserAdminModule/Invoke-CDRomDrive/)                       |
-| Utilities | [Invoke-WebrequestCookie](/_posts/UserAdminModule/Invoke-WebrequestCookie/)           |
 | Utilities | [Invoke-WithPsGalleryStats](/_posts/UserAdminModule/Invoke-WithPsGalleryStats/)       |
 | Utilities | [Measure-Lines](/_posts/UserAdminModule/Measure-Lines/)                               |
 | Utilities | [Move-FilesByType](/_posts/UserAdminModule/Move-FilesByType/)                         |
@@ -967,9 +913,7 @@ The Utilities category provides a collection of general-purpose PowerShell helpe
 | Utilities | [Remove-NTPRecord](/_posts/UserAdminModule/Remove-NTPRecord/)                         |
 | Utilities | [Remove-RunOnceRegKey](/_posts/UserAdminModule/Remove-RunOnceRegKey/)                 |
 | Utilities | [Remove-RunRegKey](/_posts/UserAdminModule/Remove-RunRegKey/)                         |
-| Utilities | [Remove-UserProfile](/_posts/UserAdminModule/Remove-UserProfile/)                     |
 | Utilities | [Remove-UserProfiles](/_posts/UserAdminModule/Remove-UserProfiles/)                   |
-| Utilities | [RemoveLocalUserProfile](/_posts/UserAdminModule/RemoveLocalUserProfile/)             |
 | Utilities | [Save-LogResults](/_posts/UserAdminModule/Save-LogResults/)                           |
 | Utilities | [Search-RoadWorks](/_posts/UserAdminModule/Search-RoadWorks/)                         |
 | Utilities | [Set-DNSRecord](/_posts/UserAdminModule/Set-DNSRecord/)                               |
@@ -1008,9 +952,7 @@ The Virtualization category offers PowerShell functions for managing virtualized
 | Virtualization | [Get-VMInformation](/_posts/UserAdminModule/Get-VMInformation/)                   |
 | Virtualization | [Get-VMInformationPlus](/_posts/UserAdminModule/Get-VMInformationPlus/)           |
 | Virtualization | [Get-WMIHardwareOSInfo](/_posts/UserAdminModule/Get-WMIHardwareOSInfo/)           |
-| Virtualization | [VMWareHealthcheck](/_posts/UserAdminModule/VMWareHealthcheck/)                   |
 | Virtualization | [New-WindowsSandbox](/_posts/UserAdminModule/New-WindowsSandbox/)                 |
-| Virtualization | [VMWareHealthcheck](/_posts/UserAdminModule/VMWareHealthcheck/)                   |
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 
