@@ -4,7 +4,7 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+- prod
 
 pool:
   vmImage: 'ubuntu-latest'
@@ -79,3 +79,4 @@ steps:
     PathtoPublish: '_site'
     ArtifactName: 'jekyll-site'
     publishLocation: 'Container'
+
