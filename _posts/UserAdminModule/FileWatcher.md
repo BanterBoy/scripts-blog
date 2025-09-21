@@ -1,13 +1,11 @@
 ---
 layout: post
 title: FileWatcher.ps1
-description: "Monitors folders with FileSystemWatcher and logs file changes to a text file."
 date: 2025-09-19
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /useradminmodule/fileoperations/filewatcher/
-categories:
-  - UserAdminModule
-  - FileOperations
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

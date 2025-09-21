@@ -1,12 +1,9 @@
 ---
 layout: post
 title: Get-ExchangeServerInSite.ps1
-description: "Lists Exchange servers located in the current Active Directory site."
 date: 2025-09-19
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /useradminmodule/exchange/get-exchangeserverinsite/
-categories:
-  - UserAdminModule
-  - Exchange
 ---
 
 - [Description](#description)

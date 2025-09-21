@@ -1,7 +1,16 @@
 ---
 layout: post
 title: Worldtimeclock.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /scripts/worldtimeclock/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Worldtimeclock
+description: PowerShell script for worldtimeclock.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

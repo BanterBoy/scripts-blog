@@ -1,13 +1,11 @@
 ---
 layout: post
 title: TimeZoneFunctions.ps1
-description: "Provides functions to get or set server time zones across multiple computers."
 date: 2025-09-19
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /useradminmodule/utilities/timezonefunctions/
-categories:
-  - UserAdminModule
-  - Utilities
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

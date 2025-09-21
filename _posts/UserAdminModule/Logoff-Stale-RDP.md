@@ -1,13 +1,11 @@
 ---
 layout: post
 title: Logoff-Stale-RDP.ps1
-description: "Logs off disconnected or stale Remote Desktop sessions across target servers."
 date: 2025-09-19
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /useradminmodule/remoteconnections/logoff-stale-rdp/
-categories:
-  - UserAdminModule
-  - RemoteConnections
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

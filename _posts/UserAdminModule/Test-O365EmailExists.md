@@ -1,12 +1,9 @@
 ---
 layout: post
 title: Test-O365EmailExists.ps1
-description: "Checks whether an Office 365 mailbox exists and returns identity details."
 date: 2025-09-19
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /useradminmodule/testing/test-o365emailexists/
-categories:
-  - UserAdminModule
-  - Testing
 ---
 
 - [Description](#description)

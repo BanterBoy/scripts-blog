@@ -1,7 +1,17 @@
 ---
 layout: post
 title: FindDHCPServers.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /scripts/finddhcpservers/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- DHCP Servers
+- DHCP
+description: PowerShell script for DHCP servers.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

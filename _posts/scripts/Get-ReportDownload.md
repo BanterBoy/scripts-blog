@@ -1,7 +1,16 @@
 ---
 layout: post
 title: Get-ReportDownload.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /scripts/get-reportdownload/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Report Download
+description: PowerShell script for report download.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

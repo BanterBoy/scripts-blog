@@ -1,7 +1,16 @@
 ---
 layout: post
 title: Move-DisabledUsers.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /scripts/move-disabledusers/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Move Disabled Users
+description: PowerShell script for move disabled users.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

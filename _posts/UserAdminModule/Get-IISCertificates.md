@@ -1,13 +1,11 @@
 ---
 layout: post
 title: Get-IISCertificates.ps1
-description: "Inventories IIS HTTPS bindings and the SSL certificates assigned to each site."
 date: 2025-09-19
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /useradminmodule/certificateutilities/get-iiscertificates/
-categories:
-  - UserAdminModule
-  - CertificateUtilities
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

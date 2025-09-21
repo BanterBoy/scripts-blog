@@ -2,10 +2,8 @@
 layout: post
 title: Get-TempHumidData.ps1
 date: 2025-09-19
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /useradminmodule/weather/get-temphumiddata/
-categories:
-  - UserAdminModule
-  - Weather
 ---
 
 - [Description](#description)

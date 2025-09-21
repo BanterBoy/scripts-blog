@@ -1,12 +1,9 @@
 ---
 layout: post
 title: Copy-FilestoRemote.ps1
-description: "Copies local files to remote systems over PowerShell remoting with optional credentials."
 date: 2025-09-19
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /useradminmodule/fileoperations/copy-filestoremote/
-categories:
-  - UserAdminModule
-  - FileOperations
 ---
 
 - [Description](#description)

@@ -1,13 +1,11 @@
 ---
 layout: post
 title: Get-GroupMembers.ps1
-description: "Collects detailed membership information for Active Directory groups."
 date: 2025-09-19
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /useradminmodule/adfunctions/get-groupmembers/
-categories:
-  - UserAdminModule
-  - ADFunctions
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

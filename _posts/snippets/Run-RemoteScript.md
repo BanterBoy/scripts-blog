@@ -1,7 +1,16 @@
 ---
 layout: post
 title: Run-RemoteScript.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /snippets/run-remotescript/
+categories:
+- Snippets
+tags:
+- PowerShell
+- Snippets
+- Run Remote Script
+description: This PowerShell script is designed to run a remote script on a specified server. The script prompts the user to enter their username and password, which are...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

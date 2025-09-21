@@ -1,7 +1,16 @@
 ---
 layout: post
 title: Get-AllComputerAccounts.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /scripts/get-allcomputeraccounts/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- All Computer Accounts
+description: PowerShell script for all computer accounts.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

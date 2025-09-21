@@ -2,10 +2,8 @@
 layout: post
 title: Connect-RDPSession.ps1
 date: 2025-09-19
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /useradminmodule/remoteconnections/connect-rdpsession/
-categories:
-  - UserAdminModule
-  - RemoteConnections
 ---
 
 - [Description](#description)

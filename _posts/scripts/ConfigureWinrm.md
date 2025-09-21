@@ -1,7 +1,16 @@
 ---
 layout: post
 title: ConfigureWinrm.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /scripts/configurewinrm/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Winrm
+description: PowerShell script for winrm.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

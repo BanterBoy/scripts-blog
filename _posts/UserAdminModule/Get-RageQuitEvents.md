@@ -2,10 +2,8 @@
 layout: post
 title: Get-RageQuitEvents.ps1
 date: 2025-09-19
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /useradminmodule/shell/get-ragequitevents/
-categories:
-  - UserAdminModule
-  - Shell
 ---
 
 - [Description](#description)

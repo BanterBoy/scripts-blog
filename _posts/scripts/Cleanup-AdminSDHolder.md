@@ -1,7 +1,17 @@
 ---
 layout: post
 title: Cleanup-AdminSDHolder.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /scripts/cleanup-adminsdholder/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Admin SD Holder
+- SD
+description: PowerShell script for admin SD holder.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

@@ -1,7 +1,17 @@
 ---
 layout: post
 title: OU_permissions.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /scripts/ou-permissions/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- OU Permissions
+- OU
+description: PowerShell script for OU permissions.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

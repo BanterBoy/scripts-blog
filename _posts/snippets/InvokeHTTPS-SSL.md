@@ -1,7 +1,18 @@
 ---
 layout: post
 title: InvokeHTTPS-SSL.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /snippets/invokehttps-ssl/
+categories:
+- Snippets
+tags:
+- PowerShell
+- Snippets
+- HTTPS SSL
+- SSL
+- HTTPS
+description: This code is a PowerShell script that sets up the necessary security protocols to use an HTTPS URL. The first line is a comment that explains the purpose of...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

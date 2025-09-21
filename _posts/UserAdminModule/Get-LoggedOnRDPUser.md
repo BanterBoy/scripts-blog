@@ -1,12 +1,9 @@
 ---
 layout: post
 title: Get-LoggedOnRDPUser.ps1
-description: "Returns currently logged-on RDP users across one or more servers."
 date: 2025-09-19
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /useradminmodule/remoteconnections/get-loggedonrdpuser/
-categories:
-  - UserAdminModule
-  - RemoteConnections
 ---
 
 - [Description](#description)

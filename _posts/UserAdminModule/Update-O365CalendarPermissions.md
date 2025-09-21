@@ -1,12 +1,9 @@
 ---
 layout: post
 title: Update-O365CalendarPermissions.ps1
-description: "Updates existing Microsoft 365 calendar permissions with new roles or removes access."
 date: 2025-09-19
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /useradminmodule/exchange/update-o365calendarpermissions/
-categories:
-  - UserAdminModule
-  - Exchange
 ---
 
 - [Description](#description)

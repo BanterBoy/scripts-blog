@@ -1,12 +1,9 @@
 ---
 layout: post
 title: Get-MSTeamsPhone.ps1
-description: "Retrieves Microsoft Teams phone assignment details for a given user."
 date: 2025-09-19
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /useradminmodule/teams/get-msteamsphone/
-categories:
-  - UserAdminModule
-  - Teams
 ---
 
 - [Description](#description)

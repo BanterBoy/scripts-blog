@@ -1,7 +1,17 @@
 ---
 layout: post
 title: VMWareGoldenImage.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /scripts/vmwaregoldenimage/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- VM Ware Golden Image
+- VM
+description: PowerShell script for VM ware golden image.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

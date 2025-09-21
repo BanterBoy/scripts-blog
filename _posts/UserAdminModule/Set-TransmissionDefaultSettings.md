@@ -2,10 +2,8 @@
 layout: post
 title: Set-TransmissionDefaultSettings.ps1
 date: 2025-09-19
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /useradminmodule/mediamanagement/set-transmissiondefaultsettings/
-categories:
-  - UserAdminModule
-  - MediaManagement
 ---
 
 - [Description](#description)

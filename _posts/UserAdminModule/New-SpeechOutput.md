@@ -1,13 +1,11 @@
 ---
 layout: post
 title: New-SpeechOutput.ps1
-description: "Uses System.Speech to speak supplied text aloud from PowerShell."
 date: 2025-09-19
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /useradminmodule/mediamanagement/new-speechoutput/
-categories:
-  - UserAdminModule
-  - MediaManagement
 ---
+
 - [Description](#description)
   - [Script](#script)
   - [Download](#download)

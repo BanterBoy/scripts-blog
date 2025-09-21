@@ -1,7 +1,17 @@
 ---
 layout: post
 title: Locate-Exchange.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /scripts/locate-exchange/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Locate Exchange
+- Exchange
+description: PowerShell script for locate exchange.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

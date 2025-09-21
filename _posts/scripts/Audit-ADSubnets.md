@@ -1,7 +1,17 @@
 ---
 layout: post
 title: Audit-ADSubnets.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /scripts/audit-adsubnets/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Active Directory Subnets
+- Active Directory
+description: PowerShell script for active directory subnets.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

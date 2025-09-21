@@ -2,10 +2,8 @@
 layout: post
 title: Format-FileSize.ps1
 date: 2025-09-19
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /useradminmodule/fileoperations/format-filesize/
-categories:
-  - UserAdminModule
-  - FileOperations
 ---
 
 - [Description](#description)

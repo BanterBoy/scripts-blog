@@ -1,7 +1,16 @@
 ---
 layout: post
 title: CheckProtectedFromAccidentalDeletion.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /scripts/checkprotectedfromaccidentaldeletion/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Protected From Accidental Deletion
+description: PowerShell script for protected from accidental deletion.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

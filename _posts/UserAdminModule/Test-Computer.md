@@ -1,12 +1,9 @@
 ---
 layout: post
 title: Test-Computer.ps1
-description: "Runs connectivity and service checks to summarize a computer's health."
 date: 2025-09-19
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /useradminmodule/testing/test-computer/
-categories:
-  - UserAdminModule
-  - Testing
 ---
 
 - [Description](#description)

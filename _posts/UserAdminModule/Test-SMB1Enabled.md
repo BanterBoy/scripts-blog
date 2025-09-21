@@ -2,10 +2,8 @@
 layout: post
 title: Test-SMB1Enabled.ps1
 date: 2025-09-19
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /useradminmodule/testing/test-smb1enabled/
-categories:
-  - UserAdminModule
-  - Testing
 ---
 
 - [Description](#description)

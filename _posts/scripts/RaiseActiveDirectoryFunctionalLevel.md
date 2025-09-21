@@ -1,7 +1,17 @@
 ---
 layout: post
 title: RaiseActiveDirectoryFunctionalLevel.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /scripts/raiseactivedirectoryfunctionallevel/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Active Directory Functional Level
+- Active Directory
+description: PowerShell script for active directory functional level.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

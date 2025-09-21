@@ -1,7 +1,17 @@
 ---
 layout: post
 title: AD-Find_missing_subnets_in_ActiveDirectory.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /scripts/ad-find-missing-subnets-in-activedirectory/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Active Directory Find Missing Subnets In Active Directory
+- Active Directory
+description: PowerShell script for active directory find missing subnets in active directory.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

@@ -1,7 +1,16 @@
 ---
 layout: post
 title: Get-FileDownload.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /scripts/get-filedownload/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- File Download
+description: PowerShell script for file download.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

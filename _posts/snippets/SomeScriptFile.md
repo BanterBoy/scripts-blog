@@ -1,7 +1,16 @@
 ---
 layout: post
 title: SomeScriptFile.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /snippets/somescriptfile/
+categories:
+- Snippets
+tags:
+- PowerShell
+- Snippets
+- Some Script File
+description: 'This PowerShell script creates a scheduled task to restart a computer daily at three different times: midday, quarter past midday, and half past midday. The...'
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

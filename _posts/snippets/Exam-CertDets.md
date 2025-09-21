@@ -1,7 +1,16 @@
 ---
 layout: post
 title: Exam-CertDets.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /snippets/exam-certdets/
+categories:
+- Snippets
+tags:
+- PowerShell
+- Snippets
+- Exam Cert Dets
+description: This PowerShell script is designed to allow the user to view the details of a certificate file without the need to import it into their certificate store....
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

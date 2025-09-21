@@ -2,10 +2,8 @@
 layout: post
 title: Provision_Home_Folder.ps1
 date: 2025-09-19
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /useradminmodule/adfunctions/provision-home-folder/
-categories:
-  - UserAdminModule
-  - ADFunctions
 ---
 
 - [Description](#description)

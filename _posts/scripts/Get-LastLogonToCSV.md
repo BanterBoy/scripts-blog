@@ -1,7 +1,17 @@
 ---
 layout: post
 title: Get-LastLogonToCSV.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /scripts/get-lastlogontocsv/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Last Logon To CSV
+- CSV
+description: PowerShell script for last logon to CSV.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

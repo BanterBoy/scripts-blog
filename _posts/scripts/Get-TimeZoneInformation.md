@@ -1,7 +1,16 @@
 ---
 layout: post
 title: Get-TimeZoneInformation.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /scripts/get-timezoneinformation/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Time Zone Information
+description: PowerShell script for time zone information.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

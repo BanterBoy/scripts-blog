@@ -1,7 +1,16 @@
 ---
 layout: post
 title: New-dummyFile.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /scripts/new-dummyfile/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Dummy File
+description: PowerShell script for dummy file.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

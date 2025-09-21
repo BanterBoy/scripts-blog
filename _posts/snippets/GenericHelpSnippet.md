@@ -1,7 +1,16 @@
 ---
 layout: post
 title: GenericHelpSnippet.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /snippets/generichelpsnippet/
+categories:
+- Snippets
+tags:
+- PowerShell
+- Snippets
+- Generic Help Snippet
+description: The code is a PowerShell script that contains a comment-based help snippet. This snippet is used to provide help documentation for a PowerShell function or...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

@@ -1,7 +1,16 @@
 ---
 layout: post
 title: Install-PoshBot.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /scripts/install-poshbot/
+categories:
+- Scripts
+tags:
+- PowerShell
+- Scripts
+- Posh Bot
+description: PowerShell script for posh bot.
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)

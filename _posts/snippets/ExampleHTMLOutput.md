@@ -1,7 +1,17 @@
 ---
 layout: post
 title: ExampleHTMLOutput.ps1
+last_modified_at: "2025-09-20 00:00:00"
 permalink: /snippets/examplehtmloutput/
+categories:
+- Snippets
+tags:
+- PowerShell
+- Snippets
+- Example HTML Output
+- HTML
+description: This PowerShell script generates an HTML report of the status of Windows services. The script starts by defining a CSS style for the HTML document. The style...
+image: '{{ site.url }}/assets/images/PowerShell_5.0_icon.png'
 ---
 
 - [Description](#description)
