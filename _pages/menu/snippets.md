@@ -1,6 +1,8 @@
 ---
 layout: page
-title: snippets
+title: "PowerShell Snippets | Maintenance Scripts"
+nav_title: Snippets
+heading: PowerShell Snippets Index
 description: "Quick PowerShell snippets for frequent administrative tasks."
 permalink: /menu/_pages/snippets.html
 ---

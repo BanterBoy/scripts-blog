@@ -1,6 +1,8 @@
 ---
 layout: page
-title: scripts
+title: "PowerShell Scripts | Maintenance Scripts"
+nav_title: Scripts
+heading: PowerShell Scripts Library
 description: "Directory of complete PowerShell scripts covering Active Directory, Exchange, and more."
 permalink: /menu/_pages/scripts.html
 ---
