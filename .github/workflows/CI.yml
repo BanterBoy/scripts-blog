@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [prod]
+  pull_request:
+    branches: [prod]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build --trace
+
+      - name: HTML Proofer
+        env:
+          FULL_BASE: https://scripts.lukeleigh.com
+        run: |
+          bundle exec htmlproofer \
+            --swap-urls "^/\:${FULL_BASE}/" \
+            ./_site
