@@ -171,7 +171,6 @@ The ADFunctions category contains a comprehensive collection of PowerShell tools
 | ADFunctions | [New-FakeADUser](/useradminmodule/adfunctions/new-fakeaduser/)                                                   |
 | ADFunctions | [New-FakeADUserDetails](/useradminmodule/adfunctions/new-fakeaduserdetails/)                                     |
 | ADFunctions | [New-FakeUserDetails](/useradminmodule/adfunctions/new-fakeuserdetails/)                                         |
-| ADFunctions | [New-KrbtgtKeys](/useradminmodule/security/new-krbtgtkeys/)                                                   |
 | ADFunctions | [New-RandomUser](/useradminmodule/adfunctions/new-randomuser/)                                                   |
 | ADFunctions | [OU_permissions](/useradminmodule/adfunctions/ou-permissions/)                                                   |
 | ADFunctions | [Provision_Home_Folder](/useradminmodule/adfunctions/provision-home-folder/)                                     |
@@ -680,7 +679,6 @@ The Security category contains PowerShell functions for managing system security
 | Security | [Invoke-CiscoSecureManagement](/useradminmodule/security/invoke-ciscosecuremanagement/)           |
 | Security | [Invoke-PasswordifyPhrase](/useradminmodule/security/invoke-passwordifyphrase/)                   |
 | Security | [New-DynamicParameter](/useradminmodule/security/new-dynamicparameter/)                           |
-| Security | [New-KrbtgtKeys](/useradminmodule/security/new-krbtgtkeys/)                                       |
 | Security | [Set-CIMPermissions](/useradminmodule/security/set-cimpermissions/)                               |
 | Security | [Set-LDAPSBinding](/useradminmodule/security/set-ldapsbinding/)                                   |
 | Security | [Update-SSLCertificate](/useradminmodule/security/update-sslcertificate/)                         |
