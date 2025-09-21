@@ -464,7 +464,17 @@ non_200_canonicals = non_200_canonical_entries
 missing_sitemap = missing_sitemap_entries
 unexpected_noindex_list = unexpected_noindex_set.to_a.sort
 
-warning_entries.uniq!
+# Deduplicate warning_entries by message content
+seen_messages = Set.new
+warning_entries.select! do |entry|
+  msg = entry['message'] || entry[:message]
+  if seen_messages.include?(msg)
+    false
+  else
+    seen_messages.add(msg)
+    true
+  end
+end
 
 counts = {
   warnings: warning_entries.length,
