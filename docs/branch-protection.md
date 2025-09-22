@@ -29,7 +29,7 @@ Setting `REVIEW_COUNT` to `1` requires at least one approving review (handy when
 
 ## Adjusting the policy
 
-* **Add more status checks** — create additional jobs in the CI workflow and add their contexts to the script/command (`-F required_status_checks.contexts[]="$STATUS_CONTEXT"` can be repeated).
+* **Add more status checks** — create additional jobs in the CI workflow and rerun the script with `STATUS_CONTEXT="workflow / job" ./scripts/apply_branch_protection.sh`. For multiple required checks, edit the script to list each context in the JSON payload before applying.
 * **Disable linear history** — rerun the script with `-F required_linear_history=false` (temporary) or remove the flag and use the GitHub UI to toggle it off.
 * **Allow force pushes temporarily** — similar approach: rerun the command with `-F allow_force_pushes=true` and revert afterwards.
 * **Rollback entirely** — use the GitHub UI (`Settings > Branches > prod > Disable`) or call `gh api -X DELETE repos/$REPO/branches/$BRANCH/protection` if you must remove protection.
