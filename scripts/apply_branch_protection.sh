@@ -38,7 +38,18 @@ gh api \
 set +x
 
 echo "[INFO] Fetching applied settings..."
-gh api -H "Accept: application/vnd.github+json" "repos/$REPO/branches/$BRANCH/protection" | jq . || echo "[WARN] jq not installed; raw output above if any."
-
+API_OUTPUT="$(gh api -H "Accept: application/vnd.github+json" "repos/$REPO/branches/$BRANCH/protection" 2>&1)"
+API_STATUS=$?
+if [ $API_STATUS -ne 0 ]; then
+  echo "[ERROR] Failed to fetch branch protection settings:"
+  echo "$API_OUTPUT"
+else
+  if command -v jq >/dev/null 2>&1; then
+    echo "$API_OUTPUT" | jq .
+  else
+    echo "[WARN] jq not installed; raw output below:"
+    echo "$API_OUTPUT"
+  fi
+fi
 echo "[SUCCESS] Branch protection applied."
 echo "To require a self-review next time run: REVIEW_COUNT=1 ./scripts/apply_branch_protection.sh"
