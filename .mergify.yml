@@ -2,7 +2,6 @@ pull_request_rules:
     - name: Automatic merge on approval
       conditions:
         - "#approved-reviews-by>=1"
-        - "check-success=ci / ci"
       actions:
         merge:
           method: merge

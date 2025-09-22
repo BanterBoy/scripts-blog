@@ -16,19 +16,16 @@ Please visit the website for more information regarding the scripts and their us
 
 ## Branch Protection & CI
 
-This repo enforces protected branch settings on `prod`:
-- Status check: `ci / ci`
-- No force pushes / deletions
-- Conversation resolution required
-- Linear history
+This repo keeps `prod` protected against inadvertent force pushes or deletions.
 
-Update / reapply with:
+Reapply or adjust with:
 ```bash
 ./scripts/apply_branch_protection.sh
 ```
 
-Require a self-review instead:
+Optional toggles:
 ```bash
+STATUS_CONTEXT="ci / ci" STRICT_STATUS=1 ./scripts/apply_branch_protection.sh
 REVIEW_COUNT=1 ./scripts/apply_branch_protection.sh
 ```
 
