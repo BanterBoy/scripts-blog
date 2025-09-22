@@ -1,13 +1,12 @@
-name: CI
+name: ci
 
 on:
   push:
     branches: [prod]
   pull_request:
-    branches: [prod]
 
 jobs:
-  test:
+  ci:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -18,6 +17,12 @@ jobs:
         with:
           ruby-version: '3.1'
           bundler-cache: true
+
+      - name: Environment info
+        run: |
+          echo "Running on $(uname -a)"
+          echo "Repo: $GITHUB_REPOSITORY"
+          echo "Branch/Ref: $GITHUB_REF"
 
       - name: Build site
         run: bundle exec jekyll build --trace

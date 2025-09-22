@@ -13,3 +13,23 @@ Site contains GitHub Pages - https://scripts.lukeleigh.com/
 Please visit the website for more information regarding the scripts and their uses.
 
 ![Alt](https://repobeats.axiom.co/api/embed/71ccb878b85d8aca704a9aa03e0af34e5bb13e31.svg "Repobeats analytics image")
+
+## Branch Protection & CI
+
+This repo enforces protected branch settings on `prod`:
+- Status check: `ci`
+- No force pushes / deletions
+- Conversation resolution required
+- Linear history
+
+Update / reapply with:
+```bash
+./scripts/apply_branch_protection.sh
+```
+
+Require a self-review instead:
+```bash
+REVIEW_COUNT=1 ./scripts/apply_branch_protection.sh
+```
+
+See [docs/branch-protection.md](docs/branch-protection.md) for the full policy and tuning tips.

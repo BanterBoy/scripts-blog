@@ -1,0 +1,5 @@
+# CODEOWNERS
+# For now this repository is solo-maintained; all files owned by @BanterBoy.
+# When collaborators join, add path-specific owners below.
+* @BanterBoy
+
