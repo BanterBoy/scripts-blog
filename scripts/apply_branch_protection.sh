@@ -1,9 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO="BanterBoy/scripts-blog"
+# Repository name can be set via environment variable REPO or as the first script argument.
+REPO="${REPO:-${1:-}}"
 BRANCH="prod"
 
+if [[ -z "$REPO" ]]; then
+  echo "[ERROR] Repository name not set. Set REPO env var or pass as first argument (e.g. REPO=owner/repo ./scripts/apply_branch_protection.sh or ./scripts/apply_branch_protection.sh owner/repo)"
+  exit 1
+fi
 REVIEW_COUNT="${REVIEW_COUNT:-0}"   # Set to 1 externally if you want to force a self-review PR workflow.
 
 echo "[INFO] Applying branch protection to $REPO:$BRANCH"
