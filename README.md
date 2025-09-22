@@ -17,7 +17,7 @@ Please visit the website for more information regarding the scripts and their us
 ## Branch Protection & CI
 
 This repo enforces protected branch settings on `prod`:
-- Status check: `ci`
+- Status check: `ci / ci`
 - No force pushes / deletions
 - Conversation resolution required
 - Linear history

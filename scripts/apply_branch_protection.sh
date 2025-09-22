@@ -20,6 +20,9 @@ if ! gh auth status >/dev/null 2>&1; then
 fi
 
 echo "[INFO] Using required_approving_review_count=$REVIEW_COUNT"
+STATUS_CONTEXT="${STATUS_CONTEXT:-ci / ci}"
+STATUS_CONTEXT="$STATUS_CONTEXT"
+echo "[INFO] Requiring status check context: $STATUS_CONTEXT"
 
 set -x
 gh api \
@@ -27,7 +30,7 @@ gh api \
   -H "Accept: application/vnd.github+json" \
   "repos/$REPO/branches/$BRANCH/protection" \
   -F required_status_checks.strict=true \
-  -F required_status_checks.contexts[]="ci" \
+  -F required_status_checks.contexts[]="$STATUS_CONTEXT" \
   -F enforce_admins=true \
   -F required_pull_request_reviews.dismiss_stale_reviews=true \
   -F required_pull_request_reviews.required_approving_review_count="$REVIEW_COUNT" \

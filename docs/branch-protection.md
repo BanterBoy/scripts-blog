@@ -4,7 +4,7 @@ This repository uses GitHub branch protection to keep the `prod` branch healthy 
 
 ## Default safeguards
 
-* **Status checks (`ci`)** — the workflow in [`.github/workflows/ci.yml`](../.github/workflows/ci.yml) must succeed before merges; the `strict` flag makes sure the branch is up to date with the latest successful run.
+* **Status checks (`ci / ci`)** — the workflow in [`.github/workflows/ci.yml`](../.github/workflows/ci.yml) must succeed before merges; the `strict` flag makes sure the branch is up to date with the latest successful run.
 * **Enforce for admins** — even administrators must respect the protections, preventing accidental bypasses.
 * **No force pushes / deletions** — keeps history intact and avoids accidental branch loss.
 * **Conversation resolution required** — every review thread must be marked resolved before merging to avoid losing feedback.
@@ -29,7 +29,7 @@ Setting `REVIEW_COUNT` to `1` requires at least one approving review (handy when
 
 ## Adjusting the policy
 
-* **Add more status checks** — create additional jobs in the CI workflow and add their contexts to the script/command (`-F required_status_checks.contexts[]="ci"` can be repeated).
+* **Add more status checks** — create additional jobs in the CI workflow and add their contexts to the script/command (`-F required_status_checks.contexts[]="$STATUS_CONTEXT"` can be repeated).
 * **Disable linear history** — rerun the script with `-F required_linear_history=false` (temporary) or remove the flag and use the GitHub UI to toggle it off.
 * **Allow force pushes temporarily** — similar approach: rerun the command with `-F allow_force_pushes=true` and revert afterwards.
 * **Rollback entirely** — use the GitHub UI (`Settings > Branches > prod > Disable`) or call `gh api -X DELETE repos/$REPO/branches/$BRANCH/protection` if you must remove protection.
