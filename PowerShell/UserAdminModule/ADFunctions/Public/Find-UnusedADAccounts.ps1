@@ -37,6 +37,7 @@
     This function requires the Active Directory module to be installed.
 
 #>
+#requires -PSEdition Desktop
 
 function Find-UnusedADAccounts {
     

@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Get-Cert {
   param (
     [string]$filter,

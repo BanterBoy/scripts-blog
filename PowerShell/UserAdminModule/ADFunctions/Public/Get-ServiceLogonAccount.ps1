@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Get-ServiceLogonAccount {
 	<#
 		$Servers = Get-ADComputer -Filter { OperatingSystem -Like '*Windows Server*' } | Select-Object Name

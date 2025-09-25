@@ -36,6 +36,7 @@ This function requires the Active Directory module to be installed. If the modul
 https://docs.microsoft.com/en-us/powershell/module/addsadministration/get-adobject
 
 #>
+#requires -PSEdition Desktop
 
 function Get-ADObjectAddress {
     [CmdletBinding(

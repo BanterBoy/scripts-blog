@@ -27,6 +27,7 @@
     Author: Your Name
     Date:   Today's date
 #>
+#requires -PSEdition Desktop
 function Get-ADGroupNames {
     [CmdletBinding(DefaultParameterSetName = 'Default',
         PositionalBinding = $true,

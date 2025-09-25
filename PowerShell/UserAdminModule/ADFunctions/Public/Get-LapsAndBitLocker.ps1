@@ -50,6 +50,7 @@ Returns a custom object with the following properties:
 .LINK
 https://learn.microsoft.com/en-us/powershell/module/activedirectory/
 #>
+#requires -PSEdition Desktop
 
 function Get-LapsAndBitLocker {
     [CmdletBinding()]

@@ -1,5 +1,6 @@
 # PowerShell function to list users in Authoritative Groups in Active Directory
 # http://jeffwouters.nl/index.php/2013/11/powershell-function-to-list-users-in-authorative-groups-in-active-directory/
+#requires -PSEdition Desktop
 
 # Import the Modules
 Import-Module ActiveDirectory

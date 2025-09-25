@@ -21,6 +21,7 @@
     Version: 1.2
 
 #>
+#requires -PSEdition Desktop
 
 function Move-ADComputer {
     [CmdletBinding(SupportsShouldProcess = $true)]

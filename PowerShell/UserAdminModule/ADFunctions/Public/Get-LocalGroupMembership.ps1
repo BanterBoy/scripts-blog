@@ -17,6 +17,7 @@
 #                ComputerName Parameter now accept multiple computers
 #
 # ############################################################################# 
+#requires -PSEdition Desktop
 
 Function Get-LocalGroupMembership {
     <#

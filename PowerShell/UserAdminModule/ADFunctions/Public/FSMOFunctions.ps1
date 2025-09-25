@@ -110,6 +110,7 @@
     https://github.com/BanterBoy/scripts-blog
 
 #>
+#requires -PSEdition Desktop
 
 #Requires -Module ActiveDirectory
 #Requires -RunAsAdministrator

@@ -1,4 +1,5 @@
 # Import-Module GroupPolicy -SkipEditionCheck
+#requires -PSEdition Desktop
 
 function Search-GPOsForString {
     <#

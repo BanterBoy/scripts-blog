@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 Import-Module ActiveDirectory
 
 # Windows Server 2008 and above

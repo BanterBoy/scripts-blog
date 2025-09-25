@@ -5,6 +5,7 @@
     .EXAMPLE
     Get-ADDeletedUsers -domainprefix example -domainsuffix local
 #>
+#requires -PSEdition Desktop
 
 Function Get-ADDeletedUsers {
     [CmdletBinding()]

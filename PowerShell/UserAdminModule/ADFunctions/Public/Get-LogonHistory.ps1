@@ -26,6 +26,7 @@ System.Management.Automation.PSObject
 Author: Your Name
 Date:   Current Date
 #>
+#requires -PSEdition Desktop
 
 function Get-LogonHistory {
     Param (

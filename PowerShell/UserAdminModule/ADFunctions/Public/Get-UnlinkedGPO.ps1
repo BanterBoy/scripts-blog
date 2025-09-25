@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 import-module grouppolicy
 
 function IsNotLinked($xmldata) {

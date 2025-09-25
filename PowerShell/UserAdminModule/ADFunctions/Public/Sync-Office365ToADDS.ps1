@@ -117,6 +117,7 @@
 		Sync-Office365ToADDS -SyncUsers -PaswordForAllUsers "Temp123" "OU=Users,OU=Chicago,DC=lazyadmin,DC=com"
 		
 #>
+#requires -PSEdition Desktop
 function Sync-Office365ToADDS {
 	[CmdletBinding()]
 	Param (

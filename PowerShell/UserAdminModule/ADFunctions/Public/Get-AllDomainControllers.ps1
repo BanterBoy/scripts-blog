@@ -25,6 +25,7 @@ Author: Your Name
 Date: Current Date
 Version: 1.0
 #>
+#requires -PSEdition Desktop
 
 Function Get-AllDomainControllers {
     Get-ADDomainController -Filter * -Server (Get-ADDomain).DNSRoot | Select-Object Hostname,Site,OperatingSystem

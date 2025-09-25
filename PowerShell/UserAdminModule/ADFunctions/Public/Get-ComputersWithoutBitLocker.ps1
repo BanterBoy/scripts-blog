@@ -45,6 +45,7 @@
         - Notes: Additional information (e.g., "No BitLocker recovery information found").
 
 #>
+#requires -PSEdition Desktop
 
 function Get-ComputersWithoutBitLocker {
     [CmdletBinding()]

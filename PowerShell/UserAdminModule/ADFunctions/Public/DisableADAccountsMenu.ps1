@@ -1,4 +1,5 @@
 #requires -Modules PSMenu
+#requires -PSEdition Desktop
 
 <#
 .SYNOPSIS
