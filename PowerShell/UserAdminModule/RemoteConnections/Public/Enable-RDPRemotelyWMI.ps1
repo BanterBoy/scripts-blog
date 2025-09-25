@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Enable-RDPRemotelyWMI {
     # You can enable RDP on a remote host by simply running the below two lines.
     [CmdletBinding()]

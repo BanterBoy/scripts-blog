@@ -30,6 +30,7 @@
     Website: http://scripts.lukeleigh.com/
     Version: 1.0
 #>
+#requires -PSEdition Desktop
 function Get-LoggedOnRDPUser {
 
     [CmdletBinding(DefaultParameterSetName = 'Default',

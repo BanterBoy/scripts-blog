@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Disable-RDPRemotelyCIM {
     # You can also disable it using the below method.
     [CmdletBinding()]

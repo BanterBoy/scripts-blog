@@ -1,4 +1,5 @@
 # Function: Set-RDPStatus
+#requires -PSEdition Desktop
 Function Set-RDPStatus {
     <#
     .SYNOPSIS

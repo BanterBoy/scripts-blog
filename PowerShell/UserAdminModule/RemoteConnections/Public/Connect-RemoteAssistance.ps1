@@ -19,6 +19,7 @@ Connects to the remote computer named "skywalker" using Remote Assistance.
 
 #>
 
+#requires -PSEdition Desktop
 function Connect-RemoteAssistance {
     [CmdletBinding()]
     param (

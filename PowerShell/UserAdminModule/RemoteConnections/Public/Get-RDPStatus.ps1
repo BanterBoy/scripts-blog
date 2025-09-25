@@ -1,4 +1,5 @@
 # Function: Get-RDPStatus
+#requires -PSEdition Desktop
 Function Get-RDPStatus {
     <#
     .SYNOPSIS

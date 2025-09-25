@@ -72,6 +72,7 @@ class PortService {
     }
 }
 
+#requires -PSEdition Desktop
 function Get-PortService {
     [CmdletBinding()]
     param(

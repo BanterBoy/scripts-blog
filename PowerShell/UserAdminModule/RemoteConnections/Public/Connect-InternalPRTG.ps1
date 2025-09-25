@@ -22,6 +22,7 @@ Get-ADComputer -Filter { Name -like '*PRTG*' } | Connect-InternalPRTG
 Retrieves the computer names that match the filter '*PRTG*' from Active Directory and connects to each PRTG server using the current user's credentials.
 
 #>
+#requires -PSEdition Desktop
 function Connect-InternalPRTG {
     [CmdletBinding()]
     param (

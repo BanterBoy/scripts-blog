@@ -27,6 +27,7 @@ This function requires the Active Directory module and administrative privileges
 https://github.com/your-repo/Get-ServerIPInfo.ps1
 #>
 
+#requires -PSEdition Desktop
 function Get-ServerIPInfo {
     $ServerList = (Get-ADComputer -Filter 'operatingsystem -like "*server*" -and enabled -eq "true"').Name
     $test = Test-Connection -ComputerName $ServerList -Count 1 -ErrorAction SilentlyContinue

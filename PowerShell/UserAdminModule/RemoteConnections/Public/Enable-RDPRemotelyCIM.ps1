@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Enable-RDPRemotelyCIM {
     # You can enable RDP on a remote host by simply running the below two lines.
     [CmdletBinding()]

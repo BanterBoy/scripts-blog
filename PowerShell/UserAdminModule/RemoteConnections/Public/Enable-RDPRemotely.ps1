@@ -27,6 +27,7 @@ Author: Your Name
 Date: Today's Date
 Version: 1.0
 #>
+#requires -PSEdition Desktop
 function Enable-RDPRemotely {
     [CmdletBinding(DefaultParameterSetName = 'Default',
         ConfirmImpact = 'Medium',
