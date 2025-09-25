@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Start-TaskList {
     $PSDefaultParameterValues['Write-Progress:Activity'] = $phrase
     $phrases = Get-Content -Path C:\GitRepos\TextFiles\prankphrases.txt

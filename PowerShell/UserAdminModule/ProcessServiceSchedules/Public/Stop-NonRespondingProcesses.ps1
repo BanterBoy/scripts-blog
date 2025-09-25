@@ -17,6 +17,7 @@
     Author: Your Name
     Date: 2024-06-30
 #>
+#requires -PSEdition Desktop
 
 function Stop-NonRespondingProcesses {
     [CmdletBinding()]

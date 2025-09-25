@@ -37,6 +37,7 @@ Date: Today's Date
 .LINK
 https://docs.microsoft.com/en-us/powershell/module/scheduledtasks/unregister-scheduledtask?view=windowsserver2019-ps
 #>
+#requires -PSEdition Desktop
 function Remove-ScheduledScript {
     [CmdletBinding(SupportsShouldProcess = $true)]
     param (

@@ -50,6 +50,7 @@ Creates a new scheduled task named "EnrollDCCertificate" that runs the script "C
 .NOTES
 This function requires administrative privileges to register the scheduled task with the Windows Task Scheduler.
 #>
+#requires -PSEdition Desktop
 function New-ScheduledScript {
     [CmdletBinding()]
     param (

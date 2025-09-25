@@ -71,6 +71,7 @@
 
     Retrieves and formats the status of services with display names matching the pattern "*Cisco*" on the specified computers.
 #>
+#requires -PSEdition Desktop
 
 function Get-ServiceStatus {
     [CmdletBinding(DefaultParameterSetName = 'Default')]

@@ -18,6 +18,7 @@ Start-Outlook -UseOldVersion
 Starts the old version of Microsoft Outlook.
 
 #>
+#requires -PSEdition Desktop
 function Start-Outlook {
     param (
         [Parameter(Mandatory = $false, HelpMessage = "Use this switch to start the old version of Outlook.")]

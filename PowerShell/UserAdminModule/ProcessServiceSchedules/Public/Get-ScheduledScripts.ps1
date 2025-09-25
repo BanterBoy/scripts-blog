@@ -64,6 +64,7 @@
     [Link to any related documentation or resources]
 
 #>
+#requires -PSEdition Desktop
 function Get-ScheduledScripts {
     [CmdletBinding()]
     param (
