@@ -25,6 +25,7 @@
 .INPUTS
     [string]GroupName
 #>
+#requires -PSEdition Desktop
 function Get-GroupMembers {
     [CmdletBinding(DefaultParameterSetName = 'Default',
         PositionalBinding = $true,
