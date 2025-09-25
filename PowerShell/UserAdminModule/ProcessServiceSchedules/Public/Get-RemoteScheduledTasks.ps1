@@ -23,6 +23,7 @@ Author: Your Name
 Date: Today's Date
 Version: 1.0
 #>
+#requires -PSEdition Desktop
 
 function Get-RemoteScheduledTasks {
     [CmdletBinding( DefaultParameterSetName = 'ComputerName', SupportsShouldProcess = $true, ConfirmImpact = 'Medium')]

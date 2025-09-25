@@ -39,6 +39,7 @@
     Author: Your Name
     Date: Current Date
 #>
+#requires -PSEdition Desktop
 
 function Get-ProcessStatus {
     [CmdletBinding()]

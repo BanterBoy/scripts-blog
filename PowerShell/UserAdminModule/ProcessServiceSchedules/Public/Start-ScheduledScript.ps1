@@ -14,6 +14,7 @@ Start-ScheduledScript -TaskName "MyTask"
 This example starts the scheduled task named "MyTask".
 
 #>
+#requires -PSEdition Desktop
 function Start-ScheduledScript {
     [CmdletBinding(SupportsShouldProcess = $true)]
     param (

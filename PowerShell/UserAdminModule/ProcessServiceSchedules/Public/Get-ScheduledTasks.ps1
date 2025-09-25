@@ -61,6 +61,7 @@
 .LINK
     http://scripts.lukeleigh.com/
 #>
+#requires -PSEdition Desktop
 function Get-ScheduledTasks {
     [CmdletBinding()]        
     param (

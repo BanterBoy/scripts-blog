@@ -46,6 +46,7 @@ Write-Output "Q: Press 'Q' to quit."
 
 BEGIN {
     # [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+#requires -PSEdition Desktop
     function New-Entry {
         $NewEvent = [PSCustomObject]@{
             LogName   = 'System'

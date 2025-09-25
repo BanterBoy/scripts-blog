@@ -24,6 +24,7 @@
     Date:   Current Date
 
 #>
+#requires -PSEdition Desktop
 function Stop-ScheduledScript {
     [CmdletBinding(SupportsShouldProcess = $true)]
     param (

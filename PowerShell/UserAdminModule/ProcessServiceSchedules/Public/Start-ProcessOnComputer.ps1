@@ -21,6 +21,7 @@ Start-ProcessOnComputer -ComputerName "Server01" -Name "notepad.exe"
 
 Starts the notepad.exe process on the computer named Server01.
 #>
+#requires -PSEdition Desktop
 function Start-ProcessOnComputer {
     [CmdletBinding(SupportsShouldProcess = $true, ConfirmImpact = 'High')]
     param (

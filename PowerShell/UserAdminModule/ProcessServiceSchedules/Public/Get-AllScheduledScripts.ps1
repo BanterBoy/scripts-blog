@@ -27,6 +27,7 @@
     [Link to any related documentation or resources]
 
 #>
+#requires -PSEdition Desktop
 function Get-AllScheduledScripts {
     Get-ScheduledTask | Where-Object { $_.Actions.Execute -eq 'powershell.exe' } | ForEach-Object {
         $task = $_

@@ -32,6 +32,7 @@ Stop-ProcessOnComputer -ComputerName "Server1" -Name "Notepad" -Force
 
 This example forcefully stops the Notepad process on Server1.
 #>
+#requires -PSEdition Desktop
 function Stop-ProcessOnComputer {
     [CmdletBinding(SupportsShouldProcess = $true, DefaultParameterSetName = 'Default')]
     param (
