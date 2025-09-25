@@ -59,6 +59,7 @@
     Author: Your Name
     Date:   Current Date
 #>
+#requires -PSEdition Desktop
 function Invoke-CiscoSecureManagement {
     [CmdletBinding(SupportsShouldProcess = $true)]
     param (

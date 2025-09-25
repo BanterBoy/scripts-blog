@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Test-ExchangeConnection {
     $sessions = Get-PSSession
     $connections = Get-ConnectionInformation

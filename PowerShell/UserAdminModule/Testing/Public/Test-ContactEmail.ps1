@@ -18,6 +18,7 @@
     HelpUri: http://scripts.lukeleigh.com/
 #>
 
+#requires -PSEdition Desktop
 function Test-ContactEmail {
     [CmdletBinding(
         DefaultParameterSetName = 'Default',

@@ -17,6 +17,7 @@
     Date: 2024-06-30
 #>
 
+#requires -PSEdition Desktop
 function Test-UserExists {
     [CmdletBinding()]
     param(

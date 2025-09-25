@@ -13,6 +13,7 @@
    Enable-CiscoSecure -ComputerName "Computer1", "Computer2", "Computer3"
    This command enables Cisco Secure on the computers named Computer1, Computer2, and Computer3.
 #>
+#requires -PSEdition Desktop
 function Enable-CiscoSecure {
     [CmdletBinding()]
     param (

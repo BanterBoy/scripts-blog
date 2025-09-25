@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Test-LDAPConnection {
     param (
         [Parameter(Mandatory=$true)]

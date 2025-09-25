@@ -29,6 +29,7 @@ Test-ComputerName -ComputerName server01,server02
 Description:
 Will perform the ping, RDP, DNS and AD checks for server01 and server02
 #>
+#requires -PSEdition Desktop
 Function Test-ComputerName {
     param (
         [CmdletBinding()]

@@ -27,6 +27,7 @@
     Date: Today's Date
 #>
 
+#requires -PSEdition Desktop
 function Test-DomainMailRecords {
     [CmdletBinding()]
     param (

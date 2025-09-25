@@ -29,6 +29,7 @@
     $testResults | Format-List
 #>
 
+#requires -PSEdition Desktop
 function Test-RemoteTimeSettings {
     [CmdletBinding()]
     param (

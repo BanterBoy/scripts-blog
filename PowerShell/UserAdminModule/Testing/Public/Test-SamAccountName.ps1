@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Test-SamAccountName {
     param(
         [Parameter(Mandatory = $true)]

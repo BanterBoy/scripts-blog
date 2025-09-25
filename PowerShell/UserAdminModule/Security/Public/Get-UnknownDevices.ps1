@@ -36,6 +36,7 @@ VendorID DeviceID DevMgrName                         LikelyName
    start http://www.Foxdeploy.com
    start http://deploymentresearch.com/Research/Post/306/Back-to-basics-Finding-Lenovo-drivers-and-certify-hardware-control-freak-style
 #>
+#requires -PSEdition Desktop
 Function Get-UnknownDevices{
 [CmdletBinding()]
 Param([ValidateScript({test-path (Split-Path $path)})]$Export,

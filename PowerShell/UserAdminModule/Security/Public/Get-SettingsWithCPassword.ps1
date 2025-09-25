@@ -57,6 +57,7 @@ if (-not (Get-Module -name "GroupPolicy")) {
 else {
     $isGPModuleAvailable = $true
 }
+#requires -PSEdition Desktop
 Function Enum-SettingsWithCpassword ( [string]$sysvolLocation ) {
     # GPMC tree paths
     $commonPath = " -> Preferences -> Control Panel Settings -> "
