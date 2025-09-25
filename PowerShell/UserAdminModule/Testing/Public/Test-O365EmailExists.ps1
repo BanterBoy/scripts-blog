@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Test-O365EmailExists {
     <#
 	.SYNOPSIS

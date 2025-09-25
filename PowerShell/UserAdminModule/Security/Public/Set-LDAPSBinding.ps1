@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Set-LDAPSBinding {
     param (
         [Parameter(Mandatory=$true)]

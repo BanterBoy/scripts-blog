@@ -1,4 +1,5 @@
-﻿function Test-Computer {
+﻿#requires -PSEdition Desktop
+function Test-Computer {
     <#
     .SYNOPSIS
     Tests a computer and returns its current status including DNS, RDP, AD, and DHCP IP address information.

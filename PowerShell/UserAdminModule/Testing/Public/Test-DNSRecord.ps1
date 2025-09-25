@@ -157,6 +157,7 @@
     Where-Object - https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/where-object
 
 #>
+#requires -PSEdition Desktop
 function Test-DNSRecord {
     [CmdletBinding()]
 

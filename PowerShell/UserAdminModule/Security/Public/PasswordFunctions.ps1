@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Save-Password {
 <# Example
 

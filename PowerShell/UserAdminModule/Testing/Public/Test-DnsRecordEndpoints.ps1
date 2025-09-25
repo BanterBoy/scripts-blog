@@ -23,6 +23,7 @@
     Date: 2024-06-30
 #>
 
+#requires -PSEdition Desktop
 function Test-DnsRecordEndpoints {
     [CmdletBinding()]
     param (

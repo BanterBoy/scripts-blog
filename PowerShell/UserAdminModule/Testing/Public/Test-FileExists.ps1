@@ -29,6 +29,7 @@ System.Boolean
 Author: Unknown
 Date: Unknown
 #>
+#requires -PSEdition Desktop
 function Test-FileExists {
     [CmdletBinding(
         DefaultParameterSetName = 'Default',

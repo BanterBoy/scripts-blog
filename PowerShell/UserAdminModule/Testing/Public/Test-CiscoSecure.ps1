@@ -13,6 +13,7 @@
    Test-CiscoSecure -ComputerName "Computer1", "Computer2", "Computer3"
    This command checks the status of Cisco Secure Endpoint on the computers named Computer1, Computer2, and Computer3.
 #>
+#requires -PSEdition Desktop
 function Test-CiscoSecure {
     [CmdletBinding()]
     param (

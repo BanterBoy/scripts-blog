@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 Function Test-ServerExists {
     param (
         [CmdletBinding()]

@@ -120,6 +120,7 @@
         https://scripts.lukeleigh.com
 #>
 
+#requires -PSEdition Desktop
 function Test-OpenPortsWitch {
     
     [CmdletBinding(DefaultParameterSetName = 'Default',

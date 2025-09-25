@@ -53,6 +53,7 @@
     Date:   Current Date
 #>
 
+#requires -PSEdition Desktop
 function Test-ifContactExists {
     [CmdletBinding(SupportsShouldProcess = $true, ConfirmImpact = 'Medium')]
     Param(

@@ -4,6 +4,7 @@
 # Import PoShLog
 Import-Module PoShLog
 
+#requires -PSEdition Desktop
 function Test-ADReplication {
     <#
     .SYNOPSIS

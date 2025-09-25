@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function ScreenPassword($instance) {
     if (!($instance.screensaversecure)) { return $instance.name }
     <additional statements>

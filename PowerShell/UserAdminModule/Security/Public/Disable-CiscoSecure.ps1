@@ -16,6 +16,7 @@
    $Password = Read-Host "Enter your password" -AsSecureString
    Disable-CiscoSecure -Password $Password -ComputerName "Server01", "Server02"
 #>
+#requires -PSEdition Desktop
 function Disable-CiscoSecure {
     [CmdletBinding()]
     param (

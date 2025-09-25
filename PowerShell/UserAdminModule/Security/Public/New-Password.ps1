@@ -31,6 +31,7 @@ repeat	1-128	9	Indicates how many passwords to generate.
 
 #>
 
+#requires -PSEdition Desktop
 function New-Password {
     [CmdletBinding()]
     $Alphas = Invoke-RestMethod -Uri "https://passwordwolf.com/api/?length=8&upper=on&lower=on&numbers=off&special=off&repeat=1"
