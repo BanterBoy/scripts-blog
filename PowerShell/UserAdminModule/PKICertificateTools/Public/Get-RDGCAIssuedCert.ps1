@@ -46,6 +46,8 @@
 .NOTES
     Requires the PSPKI module to be installed and network access to the target CAs.
 #>
+#requires -Version 7.0
+#requires -PSEdition Core
 function Get-RDGCAIssuedCert {
     [CmdletBinding(DefaultParameterSetName = 'All')]
     [OutputType([PSCustomObject])]
