@@ -45,6 +45,8 @@ Author: Your Name
 Date: Current Date
 Version: 1.0
 #>
+#requires -PSEdition Desktop
+
 function Get-W32TimeSource {
     [CmdletBinding()]
     param (
