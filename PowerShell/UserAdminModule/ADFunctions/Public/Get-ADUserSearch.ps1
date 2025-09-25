@@ -63,6 +63,7 @@
     https://link-to-your-documentation
 
 #>
+#requires -PSEdition Desktop
 
 function Get-ADUserSearch {
     [CmdletBinding(

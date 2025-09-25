@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Add-ADUsertoLocalGroup {
     [CmdletBinding(DefaultParameterSetName = 'Default',
         HelpURI = 'https://scripts.lukeleigh.com/useradminmodule/adfunctions/add-adusertolocalgroup/')]

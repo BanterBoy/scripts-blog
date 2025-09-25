@@ -15,6 +15,7 @@ function Get-LoggedOnUser {
 }
 
 #>
+#requires -PSEdition Desktop
 function Get-LoggedOnUser {
     [CmdletBinding()]
     param

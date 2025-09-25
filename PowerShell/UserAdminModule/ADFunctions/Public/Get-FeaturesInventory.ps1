@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 Function Get-FeaturesInventory {
 	<#
 		.SYNOPSIS

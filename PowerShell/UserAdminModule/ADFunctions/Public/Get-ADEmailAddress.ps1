@@ -31,6 +31,7 @@ Version: 1.0
 https://link-to-documentation
 
 #>
+#requires -PSEdition Desktop
 function Get-ADEmailAddress {
     [CmdletBinding(
         SupportsShouldProcess = $true,

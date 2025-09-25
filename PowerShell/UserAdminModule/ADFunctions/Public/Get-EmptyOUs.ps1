@@ -27,6 +27,7 @@
 .NOTES
     This function requires the Active Directory module to be installed. It should be run with appropriate permissions to manage OUs in Active Directory.
 #>
+#requires -PSEdition Desktop
 
 function Get-EmptyOUs {
     [CmdletBinding()]

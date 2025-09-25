@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Get-PasswordLastSetDate {
     [CmdletBinding(SupportsShouldProcess = $false)]
     param (

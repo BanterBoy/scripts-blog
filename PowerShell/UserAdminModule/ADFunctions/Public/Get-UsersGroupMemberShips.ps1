@@ -4,6 +4,7 @@
   - http://blogs.technet.com/b/heyscriptingguy/archive/2009/10/08/hey-scripting-guy-october-8-2009.aspx
 
 #>
+#requires -PSEdition Desktop
 
 #-------------------------------------------------------------
 

@@ -24,6 +24,7 @@ This function requires the Active Directory module to be installed. Make sure yo
 .LINK
 Get-ADUser
 #>
+#requires -PSEdition Desktop
 
 function Get-ADUserExchangeDN {
     [CmdletBinding()]

@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Get-ServiceDetails {
     [cmdletbinding(DefaultParameterSetName = 'default')]
 

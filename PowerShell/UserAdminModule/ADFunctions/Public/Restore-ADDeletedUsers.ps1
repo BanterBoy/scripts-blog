@@ -11,6 +11,7 @@
     .EXAMPLE
     Restore-ADDeletedUsers -Usertorestore ATest
 #>
+#requires -PSEdition Desktop
 
 Function Restore-ADDeletedUsers {
     [CmdletBinding()]

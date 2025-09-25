@@ -6,6 +6,7 @@
         Where-Object { $_.DisplayName -like "backup exec*" }
     }
 #>
+#requires -PSEdition Desktop
 
 function Get-ServiceLogonAccount {
     [cmdletbinding()]            

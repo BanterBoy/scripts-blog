@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Set-ExtensionAttribute {
     [CmdletBinding(SupportsShouldProcess)]
     param (

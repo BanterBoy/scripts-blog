@@ -42,6 +42,7 @@ http://scripts.lukeleigh.com/
 The help URI for more information about the Get-UserLogonEvents function.
 
 #>
+#requires -PSEdition Desktop
 function Get-UserLogonEvents {
     [CmdletBinding(DefaultParameterSetName = 'Default',
         ConfirmImpact = 'Medium',

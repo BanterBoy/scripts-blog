@@ -6,6 +6,7 @@ Notes         : Find all members in the group specified
                 If any member in that group is another group call this function again
                 otherwise, output the non-group object
 #>
+#requires -PSEdition Desktop
 
 function Get-NestedGroupMember {
     [CmdletBinding()]

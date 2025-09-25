@@ -25,6 +25,7 @@
     Author: Your Name
     Date: Today's Date
 #>
+#requires -PSEdition Desktop
 
 Function Disable-InactiveComputer {
     [CmdletBinding(SupportsShouldProcess = $true)]

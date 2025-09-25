@@ -1,4 +1,5 @@
 #Accept input paramenters
+#requires -PSEdition Desktop
 param(
     [switch]$FullAccess,
     [switch]$SendAs,

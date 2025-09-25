@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Get-ADUserSearch2 {
     [CmdletBinding(
         SupportsShouldProcess = $true,

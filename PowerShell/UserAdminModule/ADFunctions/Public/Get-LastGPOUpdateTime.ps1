@@ -28,6 +28,7 @@ Author: Your Name
 Date: Today's Date
 Version: 1.0
 #>
+#requires -PSEdition Desktop
 function Get-LastGPOUpdateTime {
     [CmdletBinding()]
     param (

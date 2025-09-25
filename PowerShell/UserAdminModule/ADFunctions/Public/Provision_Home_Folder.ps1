@@ -14,6 +14,7 @@
   Modified by Jeremy@jhouseconsulting.com 24th April 2014
 
 #>
+#requires -PSEdition Desktop
 
 #-------------------------------------------------------------
 param([String]$Username, [String]$HomeDrive, [String]$HomeDirectory)

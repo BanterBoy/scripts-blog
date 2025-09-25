@@ -21,6 +21,7 @@
 .NOTES
     Requires ActiveDirectory module and appropriate permissions.
 #>
+#requires -PSEdition Desktop
 function Set-CustomAttributesForGroupMembers {
     [CmdletBinding(SupportsShouldProcess=$true)]
     param (

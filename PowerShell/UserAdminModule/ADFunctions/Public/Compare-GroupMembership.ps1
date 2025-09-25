@@ -20,6 +20,7 @@
         Author: Your Name
         Date:   Today's Date
 #>
+#requires -PSEdition Desktop
 
 function Compare-GroupMembership {
     [CmdletBinding()]

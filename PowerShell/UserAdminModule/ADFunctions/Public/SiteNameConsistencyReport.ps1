@@ -10,6 +10,7 @@
   https://github.com/joethemongoose/PowerCLI/blob/master/Export-VMs-With-SiteCode.ps1
 
 #>
+#requires -PSEdition Desktop
 
 #-------------------------------------------------------------
 # Get the script path

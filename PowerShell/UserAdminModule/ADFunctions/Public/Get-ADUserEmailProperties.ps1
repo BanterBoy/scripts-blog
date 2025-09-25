@@ -30,6 +30,7 @@ https://docs.microsoft.com/en-us/powershell/module/activedirectory/get-aduser
 https://docs.microsoft.com/en-us/powershell/module/exchange/get-mailbox
 
 #>
+#requires -PSEdition Desktop
 
 function Get-ADUserEmailProperties {
     [CmdletBinding()]

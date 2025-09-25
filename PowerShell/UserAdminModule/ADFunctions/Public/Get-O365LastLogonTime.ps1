@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Get-O365LastLogonTime {
 
     [CmdletBinding()]

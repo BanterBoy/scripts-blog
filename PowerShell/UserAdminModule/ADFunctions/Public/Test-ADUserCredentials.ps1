@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Test-ADUserCredentials {
     [CmdletBinding()]
     param (

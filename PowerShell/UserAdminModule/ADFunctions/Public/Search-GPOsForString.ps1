@@ -7,6 +7,7 @@
 # Comment: Simple search for GPOs within a domain 
 # that match a given string 
 ######################################################## 
+#requires -PSEdition Desktop
 
 function Search-GPOsForString {
     [CmdletBinding()]

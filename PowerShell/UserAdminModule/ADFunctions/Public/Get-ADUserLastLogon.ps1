@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 Import-Module ActiveDirectory
 
 function Get-ADUserLastLogon([string]$userName) {

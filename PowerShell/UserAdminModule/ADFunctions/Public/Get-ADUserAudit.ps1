@@ -1,5 +1,6 @@
 #requires -version 5.1
 #requires -module ActiveDirectory
+#requires -PSEdition Desktop
 
 #you might need to increase the size of the Security eventlog
 # limit-eventlog -LogName security -ComputerName dom2,dom1 -MaximumSize 1024MB

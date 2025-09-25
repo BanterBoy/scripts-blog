@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 enum GpResultOutputMode {
     Summary      # Displays summary data (/R)
     Verbose      # Displays detailed settings with precedence 1 (/V)

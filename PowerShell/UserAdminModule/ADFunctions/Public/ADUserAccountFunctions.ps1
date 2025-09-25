@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Set-ADUserPassword {
 	
 	Set-ADAccountPassword -Identity $User.text -NewPassword (ConvertTo-SecureString -AsPlainText $Password.text -Force)

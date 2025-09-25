@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Move-FSMORolestoPDCEmulator {
     <#
     .SYNOPSIS

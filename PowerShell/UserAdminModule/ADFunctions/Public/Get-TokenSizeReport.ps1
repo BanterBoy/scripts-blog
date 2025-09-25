@@ -101,6 +101,7 @@
   - Work out how to report on cross-forest/domain group memberships as neither tokenGroups or
     GetAuthorizationGroups() can achieve this.
 #>
+#requires -PSEdition Desktop
 
 #-------------------------------------------------------------
 
