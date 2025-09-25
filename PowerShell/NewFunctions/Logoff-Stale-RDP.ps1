@@ -14,6 +14,7 @@
    PS > .\Logoff-DisconnectedSession.ps1
 #>
 
+#requires -PSEdition Desktop
 function Test-LogFilePath([string]$LogFilePath) {
    if (!(Test-Path -Path $LogFilePath)) { New-Item $LogFilePath -ItemType directory >> $null }
 }

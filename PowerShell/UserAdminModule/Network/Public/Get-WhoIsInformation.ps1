@@ -21,6 +21,7 @@ Author: Your Name
 Date:   Current Date
 #>
 # Define a function to get WHOIS information for a list of domain names
+#requires -PSEdition Desktop
 function Get-WhoIsInformation {
     # Use CmdletBinding to enable advanced function features
     [CmdletBinding()]

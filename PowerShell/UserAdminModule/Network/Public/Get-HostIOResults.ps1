@@ -19,6 +19,7 @@
 .NOTES
     This function requires an active internet connection to access the host.io API.
 #>
+#requires -PSEdition Desktop
 function Get-HostIOResults {
     [CmdletBinding()]
 

@@ -1,4 +1,5 @@
 # Function: Get-RDPUserReport
+#requires -PSEdition Desktop
 Function Get-RDPUserReport {
     <#
     .SYNOPSIS

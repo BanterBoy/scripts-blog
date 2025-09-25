@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Set-RDPRemotely {
     [CmdletBinding(DefaultParameterSetName = 'Default',
         ConfirmImpact = 'Medium',

@@ -55,6 +55,7 @@ results         : {}
 organization    : Virgin Media
 #>
 
+#requires -PSEdition Desktop
 function Get-MullvadApiDetails {
     [CmdletBinding()]
     param (

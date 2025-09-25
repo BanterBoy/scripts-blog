@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Disable-RDPRemotelyWMI {
     # You can also disable it using the below method.
     [CmdletBinding()]

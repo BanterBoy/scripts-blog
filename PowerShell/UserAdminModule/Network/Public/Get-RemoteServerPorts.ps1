@@ -31,6 +31,7 @@
     Get-RemoteServerPorts -ComputerName "EXCHANGE01" -Credential (Get-Credential)
 #>
 
+#requires -PSEdition Desktop
 function Get-RemoteServerPorts {
     [CmdletBinding()]
     param (

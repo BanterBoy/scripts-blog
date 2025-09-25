@@ -29,6 +29,7 @@
 .RELEASENOTES
 
 #>
+#requires -PSEdition Desktop
 function Connect-Mstsc {
 <#   
 .SYNOPSIS   

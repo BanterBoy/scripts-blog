@@ -28,6 +28,7 @@ Disables RDP on the computers 'Server01' and 'Server02'.
 Disables RDP on the computers 'Desktop01' and 'Desktop02' using pipeline input.
 
 #>
+#requires -PSEdition Desktop
 function Disable-RDPRemotely {
     [CmdletBinding(DefaultParameterSetName = 'Default',
         ConfirmImpact = 'Medium',

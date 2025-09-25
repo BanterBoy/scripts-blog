@@ -11,6 +11,7 @@
     This function is as remote as it gets—bringing your network details right to your console!
 #>
 
+#requires -PSEdition Desktop
 function Get-RemoteIPSettings {
     [CmdletBinding()]
     param(

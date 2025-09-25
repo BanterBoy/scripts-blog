@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Get-RDPStatusCIM {
     # Do you care to check if it is currently enabled or disabled before acting? Use the below code.
     [CmdletBinding()]
