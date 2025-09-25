@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function ProcessingAnimation($scriptBlock) {
     $cursorTop = [Console]::CursorTop
     

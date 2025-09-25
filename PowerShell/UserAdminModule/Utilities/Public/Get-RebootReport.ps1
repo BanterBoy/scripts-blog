@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Get-RebootReport {
     [cmdletbinding(DefaultParameterSetName = 'default')]
 

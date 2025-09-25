@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Get-2amOfThirdMondayInMonth ($Date) {
     #get the number of the current month
     $thisMonth = $date.Month
