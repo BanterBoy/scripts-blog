@@ -1,3 +1,5 @@
+#requires -PSEdition Desktop
+
 function Select-FolderLocation {
     <#
     .SYNOPSIS

@@ -1,3 +1,5 @@
+#requires -PSEdition Desktop
+
 function Select-FolderLocation {
     [Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") | Out-Null
     [System.Windows.Forms.Application]::EnableVisualStyles()
