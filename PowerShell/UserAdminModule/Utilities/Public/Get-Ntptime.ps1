@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 Function Get-NtpTime ( [String]$NTPServer ) {
     # Build NTP request packet. We'll reuse this variable for the response packet
     $NTPData = New-Object byte[] 48  # Array of 48 bytes set to zero

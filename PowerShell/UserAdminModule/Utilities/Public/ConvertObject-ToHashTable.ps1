@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function ConvertObject-ToHashTable {
     param
     (

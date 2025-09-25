@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Get-InstalledUpdates {
     [cmdletbinding()]            
     $Session = New-Object -ComObject "Microsoft.Update.Session"

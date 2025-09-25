@@ -1,3 +1,4 @@
+#requires -PSEdition Desktop
 function Get-NTPStatusFromHost {  
     Param(
         [Parameter(Mandatory = $true,

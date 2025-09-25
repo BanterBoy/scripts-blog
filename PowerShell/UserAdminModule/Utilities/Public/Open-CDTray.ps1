@@ -5,6 +5,7 @@
 	explorer object model to navigate to the drive and call its context
 	menu item “Eject”:
 #>
+#requires -PSEdition Desktop
 function Open-CDTray {
     $drives = Get-WmiObject Win32_Volume -Filter "DriveType=5"
     if ($null -eq $drives) {

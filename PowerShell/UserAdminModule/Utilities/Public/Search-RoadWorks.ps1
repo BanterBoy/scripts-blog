@@ -1,4 +1,5 @@
 # http://api.hatrafficinfo.dft.gov.uk/Mtf.aspx?road=M5
+#requires -PSEdition Desktop
 
 function Search-RoadWorks {
 	param(
