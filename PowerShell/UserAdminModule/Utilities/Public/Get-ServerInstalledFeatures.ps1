@@ -31,6 +31,7 @@
 .LINK
     Get-WindowsFeature
 #>
+#requires -PSEdition Desktop
 
 function Get-ServerInstalledFeatures {
     [CmdletBinding(SupportsShouldProcess = $true)]

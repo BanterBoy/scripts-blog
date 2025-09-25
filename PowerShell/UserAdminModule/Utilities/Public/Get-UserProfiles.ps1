@@ -35,6 +35,7 @@ This function requires administrative privileges on the remote server.
 https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_functions_advanced_parameters
 
 #>
+#requires -PSEdition Desktop
 
 function Get-UserProfiles {
     [CmdletBinding(SupportsShouldProcess = $true, ConfirmImpact = 'High')]

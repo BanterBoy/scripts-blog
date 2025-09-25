@@ -51,6 +51,7 @@ A custom PSObject representing the W32Time configuration with the following prop
 Author: Your Name
 Date:   Current Date
 #>
+#requires -PSEdition Desktop
 
 function Get-W32TimeConfiguration {
     [CmdletBinding()]

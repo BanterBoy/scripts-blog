@@ -23,6 +23,8 @@
     Author: Your Name
     Date:   Current Date
 #>
+#requires -PSEdition Desktop
+
 function Get-W32TimeStripchartResults {
     [CmdletBinding()]
     param (

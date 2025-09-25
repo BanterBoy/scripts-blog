@@ -27,6 +27,7 @@ This function requires administrative privileges to retrieve the service status 
 .LINK
 Get-Service
 #>
+#requires -PSEdition Desktop
 
 function Get-W32TimeServiceStatus {
     [CmdletBinding()]
