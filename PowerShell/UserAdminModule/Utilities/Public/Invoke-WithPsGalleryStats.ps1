@@ -32,6 +32,8 @@
     .EXAMPLE
     Fuck-WithPsGalleryStats -ModuleNames @('Transmission', 'JsonToPowershellClass') -DownloadCount 99 -MinIntervalSeconds 10 -MaxIntervalSeconds 120
 #>
+#requires -Version 7.0
+#requires -PSEdition Core
 function Invoke-WithPsGalleryStats {
     [CmdletBinding()]
     param (
