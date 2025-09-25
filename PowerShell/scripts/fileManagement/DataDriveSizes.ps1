@@ -1,3 +1,5 @@
+#requires -PSEdition Desktop
+
 function Get-FriendlySize {
     param($Bytes)
     $sizes = 'Bytes,KB,MB,GB,TB,PB,EB,ZB' -split ','
