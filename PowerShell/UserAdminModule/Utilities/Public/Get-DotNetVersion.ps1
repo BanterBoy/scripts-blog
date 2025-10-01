@@ -52,6 +52,7 @@ $NETVERSION_47 = 460798
 $NETVERSION_471 = 461308
 
 $NetVersionTags = @('452', '46', '461', '462', '47', '471', '472')
+#requires -PSEdition Desktop
 
 Function Get-NetVersionText( $NetVersion = 0) {
     $NETversions = @{
