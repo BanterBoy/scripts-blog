@@ -62,7 +62,7 @@ Name: Get-VMInformation Author: theSysadminChannel Version: 1.0 DateCreated: 201
 {% raw %}
 <!-- BEGIN: FUNCTION CODE -->
 ```powershell
-# CoPilot Attempt to get VM information from vCenter
+# Copilot Attempt to get VM information from vCenter
 
 <#
 .SYNOPSIS
