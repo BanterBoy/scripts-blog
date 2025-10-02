@@ -71,6 +71,32 @@ No additional notes.
 <!-- BEGIN: FUNCTION CODE -->
 ```powershell
 #requires -PSEdition Desktop
+
+class PortService {
+    [string]$ServiceName
+    [int]$PortNumber
+    [string]$Description
+    [string]$Reference
+
+    PortService([string]$serviceName, [int]$portNumber, [string]$description, [string]$reference) {
+        $this.ServiceName = $serviceName
+        $this.PortNumber = $portNumber
+        $this.Description = $description
+        $this.Reference = $reference
+    }
+
+    [bool]MatchPortNumber([string]$query) {
+        return ($this.PortNumber -eq $query)
+    }
+
+    [bool]MatchServiceName([string]$query) {
+        return ($this.ServiceName -like "*$query*")
+    }
+
+    [bool]MatchDescription([string]$query) {
+        return ($this.Description -like "*$query*")
+    }
+}
 function Get-PortService {
     [CmdletBinding()]
     param(
