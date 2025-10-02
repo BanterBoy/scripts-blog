@@ -70,6 +70,7 @@ Parses the ffprobe JSON response and returns audio stream objects instead of the
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -117,9 +118,9 @@ function Get-FFProbeVideoInfo {
             $json = ffprobe -v quiet -print_format json -show_streams $filePath 2>$null
             if ($LASTEXITCODE -eq 0) {
                 $data = $json | ConvertFrom-Json
-                $audioStreams = $data.streams | Where-Object { $_.codec_type -eq 'audio' } |
-                Select-Object index, codec_name,
-                @{Name = 'Language'; Expression = { $_.tags.language } },
+                $audioStreams = $data.streams | Where-Object { $_.codec_type -eq 'audio' } | 
+                Select-Object index, codec_name, 
+                @{Name = 'Language'; Expression = { $_.tags.language } }, 
                 @{Name = 'File'; Expression = { $filePath } }
                 return $audioStreams
             }
@@ -137,9 +138,9 @@ function Get-FFProbeVideoInfo {
                 $json = ffprobe -v quiet -print_format json -show_streams $_.FullName 2>$null
                 if ($LASTEXITCODE -eq 0) {
                     $data = $json | ConvertFrom-Json
-                    $audioStreams = $data.streams | Where-Object { $_.codec_type -eq 'audio' } |
-                    Select-Object index, codec_name,
-                    @{Name = 'Language'; Expression = { $_.tags.language } },
+                    $audioStreams = $data.streams | Where-Object { $_.codec_type -eq 'audio' } | 
+                    Select-Object index, codec_name, 
+                    @{Name = 'Language'; Expression = { $_.tags.language } }, 
                     @{Name = 'File'; Expression = { $_.FullName } }
                     $audioStreams
                 }
@@ -156,6 +157,8 @@ function Get-FFProbeVideoInfo {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

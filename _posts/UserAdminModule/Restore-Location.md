@@ -52,10 +52,8 @@ Uses a script-scoped stack to manage location history.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-# Store the previous locations in a script-scoped stack
-$script:locationStack = [System.Collections.Generic.Stack[string]]::new()
-
 function Restore-Location {
     <#
     .SYNOPSIS
@@ -99,6 +97,8 @@ function Restore-Location {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

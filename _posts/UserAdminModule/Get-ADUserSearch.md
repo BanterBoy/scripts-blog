@@ -92,6 +92,7 @@ Author: Your Name Date: Today's Date Version: 1.0
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -158,6 +159,7 @@ Author: Your Name Date: Today's Date Version: 1.0
     https://link-to-your-documentation
 
 #>
+#requires -PSEdition Desktop
 
 function Get-ADUserSearch {
     [CmdletBinding(
@@ -347,10 +349,9 @@ function Get-ADUserSearch {
         Write-Verbose "Completed Get-ADUserSearch function"
     }
 }
-
-# Update-FormatData -PrependPath "$PSScriptRoot\Get-ADUserSearch.UserDetails.Format.ps1xml"
-# Update-FormatData -PrependPath "$PSScriptRoot\Get-ADUserSearch.PasswordDetails.Format.ps1xml"
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

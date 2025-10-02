@@ -52,49 +52,8 @@ This function requires the Active Directory module and Exchange module to be ins
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-<#
-.SYNOPSIS
-Retrieves email properties of an Active Directory user.
-
-.DESCRIPTION
-The Get-ADUserEmailProperties function retrieves the email properties of an Active Directory user, including proxy addresses, legacyExchangeDN, mail, mailNickName, targetAddress, and enabled status. It also retrieves mailbox details from both on-premises Exchange and Exchange Online.
-
-.PARAMETER Identity
-Specifies the user identity. This can be a distinguished name, GUID, security identifier (SID), or SAM account name.
-
-.EXAMPLE
-$userDetails = Get-ADUserEmailProperties -Identity "becky.galea"
-$userDetails | Format-Table -AutoSize
-
-This example retrieves the email properties of the user with the SAM account name "becky.galea" and displays the details in a formatted table.
-
-.INPUTS
-[string]
-The Identity parameter accepts a string value representing the user identity.
-
-.OUTPUTS
-[PSCustomObject]
-The function returns a custom object containing the user's email properties.
-
-.NOTES
-This function requires the Active Directory module and Exchange module to be installed.
-
-.LINK
-https://docs.microsoft.com/en-us/powershell/module/activedirectory/get-aduser
-https://docs.microsoft.com/en-us/powershell/module/exchange/get-mailbox
-
-#>
-
-function Get-ADUserEmailProperties {
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory=$true, Position=0, ValueFromPipeline=$true, ValueFromPipelineByPropertyName=$true, HelpMessage="Specifies the user identity. This can be a distinguished name, GUID, security identifier (SID), or SAM account name.")]
-        [string]$Identity
-    )
-
-    # Rest of the code...
-}
 function Get-ADUserEmailProperties {
     [CmdletBinding()]
     param (
@@ -165,11 +124,9 @@ function Get-ADUserEmailProperties {
     # Output the summary object
     return [PSCustomObject]$summary
 }
-
-# Usage example:
-# $userDetails = Get-ADUserEmailProperties -Identity "becky.galea"
-# $userDetails | Format-Table -AutoSize
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -52,6 +52,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -97,6 +98,7 @@ http://scripts.lukeleigh.com/
 The help URI for more information about the Get-UserLogonEvents function.
 
 #>
+#requires -PSEdition Desktop
 function Get-UserLogonEvents {
     [CmdletBinding(DefaultParameterSetName = 'Default',
         ConfirmImpact = 'Medium',
@@ -221,10 +223,9 @@ function Get-UserLogonEvents {
 
     return $allEvents
 }
-
-# Usage Example
-# Get-UserLogonEvents -ComputerName "RDGLONALDSAP001" -LogName "Security" -StartTime (Get-Date).AddDays(-1) -EndTime (Get-Date) -MessageFilter "An account was successfully logged on" | ft -AutoSize -Property SecurityID, AccountName, AccountDomain, LogonID, LogonType, SourceNetworkAddress, SubjectSecurityID, SubjectAccountName, SubjectAccountDomain
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -34,6 +34,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
     .SYNOPSIS
@@ -42,6 +43,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
     .EXAMPLE
     Get-ADDeletedUsers -domainprefix example -domainsuffix local
 #>
+#requires -PSEdition Desktop
 
 Function Get-ADDeletedUsers {
     [CmdletBinding()]
@@ -55,6 +57,8 @@ Function Get-ADDeletedUsers {
     Where-Object { $_.ObjectClass -ne 'container' -and $_.ObjectClass -eq 'user' }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

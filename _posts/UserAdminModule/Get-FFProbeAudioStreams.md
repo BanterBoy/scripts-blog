@@ -70,6 +70,7 @@ Filters the returned streams to locate the English-language track before taking 
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -102,13 +103,13 @@ function Get-FFProbeAudioStreams {
                 Write-Error "ffprobe failed to analyze $VideoFile"
                 return
             }
-
+            
             $data = $json | ConvertFrom-Json
-            $audioStreams = $data.streams | Where-Object { $_.codec_type -eq 'audio' } |
-            Select-Object index, codec_name,
-            @{Name = 'Language'; Expression = { $_.tags.language } },
+            $audioStreams = $data.streams | Where-Object { $_.codec_type -eq 'audio' } | 
+            Select-Object index, codec_name, 
+            @{Name = 'Language'; Expression = { $_.tags.language } }, 
             @{Name = 'File'; Expression = { $VideoFile } }
-
+            
             return $audioStreams
         }
         catch {
@@ -117,6 +118,8 @@ function Get-FFProbeAudioStreams {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

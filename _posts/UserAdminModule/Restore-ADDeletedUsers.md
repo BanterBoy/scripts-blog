@@ -34,6 +34,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
     .SYNOPSIS
@@ -48,6 +49,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
     .EXAMPLE
     Restore-ADDeletedUsers -Usertorestore ATest
 #>
+#requires -PSEdition Desktop
 
 Function Restore-ADDeletedUsers {
     [CmdletBinding()]
@@ -58,6 +60,8 @@ Function Restore-ADDeletedUsers {
     Restore-ADObject -Credential $PSCredential -Confirm:$false -Identity $usertorestore
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

@@ -50,9 +50,9 @@ Additional information about the function.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-function Get-ServerTimeZone
-{
+function Get-ServerTimeZone {
 	<#
 	.SYNOPSIS
 		A brief description of the Get-ServerTimeZone function.
@@ -74,35 +74,51 @@ function Get-ServerTimeZone
 #>
 	
 	[CmdletBinding(DefaultParameterSetName = 'Default',
-				   HelpUri = 'https://github.com/BanterBoy')]
+		supportsShouldProcess = $true,
+		HelpUri = 'https://github.com/BanterBoy'
+	)]
 	[OutputType([string])]
 	param
 	(
 		[Parameter(ParameterSetName = 'Default',
-				   Mandatory = $true,
-				   ValueFromPipeline = $true,
-				   ValueFromPipelineByPropertyName = $true,
-				   HelpMessage = 'Enter computer name or pipe input')]
+			Mandatory = $false,
+			ValueFromPipeline = $true,
+			ValueFromPipelineByPropertyName = $true,
+			HelpMessage = 'Enter computer name or pipe input'
+		)]
 		[Alias('cn')]
-		[string[]]$ComputerName
+		[string[]]$ComputerName = $env:COMPUTERNAME,
+		[Parameter(ParameterSetName = 'Default',
+			Mandatory = $false,
+			ValueFromPipeline = $true,
+			ValueFromPipelineByPropertyName = $true,
+			HelpMessage = 'Enter computer name or pipe input'
+		)]
+		[Alias('cred')]
+		[ValidateNotNull()]
+		[System.Management.Automation.PSCredential]
+		[System.Management.Automation.Credential()]
+		$Credential
 	)
-	BEGIN
-	{
+	BEGIN {
 	}
-	PROCESS
-	{
+	PROCESS {
+		if ($PSCmdlet.ShouldProcess("$Computer", "Retrieving Time Zone information...")) {
+			
+		}
 		foreach ($Computer in $ComputerName)
 		{
-			Invoke-Command -ComputerName $Computer -ScriptBlock {
+			Invoke-Command -ComputerName $Computer -Credential $Credential -ScriptBlock {
 				Get-TimeZone
 			}
 		}
 	}
-	END
-	{
+	END {
 	}
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

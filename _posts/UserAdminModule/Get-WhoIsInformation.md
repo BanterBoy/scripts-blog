@@ -52,6 +52,7 @@ Author: Your Name Date:   Current Date
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -76,6 +77,7 @@ Author: Your Name
 Date:   Current Date
 #>
 # Define a function to get WHOIS information for a list of domain names
+#requires -PSEdition Desktop
 function Get-WhoIsInformation {
     # Use CmdletBinding to enable advanced function features
     [CmdletBinding()]
@@ -134,6 +136,8 @@ function Get-WhoIsInformation {
     $whoIsInfo | Format-Table
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -34,7 +34,9 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Get-TimeServer {
     <#
         .Synopsis
@@ -54,7 +56,7 @@ function Get-TimeServer {
         Written by Jeff Wouters.
     #>
     [CmdletBinding()]
-    param (
+    param ( 
         [parameter(mandatory = $true, position = 0)]
         [alias("computer")]
         [array]$ComputerName
@@ -69,7 +71,7 @@ function Get-TimeServer {
             $Output | Add-Member -MemberType 'NoteProperty' -Name 'ComputerName' -Value $Computer
             $Output | Add-Member -MemberType 'NoteProperty' -Name 'TimeServer' -Value "WMI Error"
             $Output | Add-Member -MemberType 'NoteProperty' -Name 'Type' -Value "WMI Error"
-            if ($TestConnection) {
+            if ($TestConnection) {				
                 try {
                     $reg = [wmiclass]"\\$Computer\root\default:StdRegprov"
                     $key = "SYSTEM\CurrentControlSet\Services\W32Time\Parameters"
@@ -79,7 +81,7 @@ function Get-TimeServer {
                     $Output.TimeServer = $ServerVar[0]
                     $typevalue = "Type"
                     $type = $reg.GetStringValue($HKLM, $key, $typevalue)
-                    $Output.Type = $Type.sValue
+                    $Output.Type = $Type.sValue				
                     $Output
                 }
                 catch {
@@ -90,8 +92,9 @@ function Get-TimeServer {
         }
     }
 }
-Get-TimeServer -ComputerName $Server.Name
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

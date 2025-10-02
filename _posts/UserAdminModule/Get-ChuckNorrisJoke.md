@@ -34,127 +34,80 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-<#
+#requires -PSEdition Desktop
+function Get-ChuckNorrisJoke {
+    <#
+        .SYNOPSIS
+        Retrieves a random Chuck Norris joke from the public Chuck Norris API.
 
-    .SYNOPSIS
-    Short function to find recently saved files.
+        .DESCRIPTION
+        The Get-ChuckNorrisJoke function queries the Chuck Norris API (https://api.chucknorris.io) and returns the
+        details of a random joke. Use the ListCategories switch to retrieve the available joke categories or
+        the Category parameter to request a joke from a specific category.
 
-    .DESCRIPTION
-    Short function that can be used to find/locate recently saved files.
+        .PARAMETER Category
+        Optional category filter applied to the API request. Use -ListCategories to view available categories.
 
-    Searches are performed by passing the parameters to Get-Childitem which will then
-    recursively search through your specified file path and then perform a sort to output
-    the most recently amended files at the top of the list.
+        .PARAMETER ListCategories
+        Returns the available joke categories without requesting a joke.
 
-    Outputs inlcude the Directory,Filename and LastWriteTime
+        .EXAMPLE
+        Get-ChuckNorrisJoke
 
-    .EXAMPLE
-    -DaysPast 7 -Path 'C:\GitRepos\AdminToolkit\PowerShell' -FileType *.*
+        Retrieves a random joke and returns a custom object containing the joke text and metadata.
 
-    Recursively scans the folder 'C:\GitRepos\AdminToolkit\PowerShell' looking for all files that have been
-    amended in the last 7 days
+        .EXAMPLE
+        Get-ChuckNorrisJoke -Category dev
 
-    .INPUTS
-    DaysPast [int]
-    Path [string]
-    FileType [string]
+        Retrieves a random joke from the "dev" category.
 
+        .EXAMPLE
+        Get-ChuckNorrisJoke -ListCategories
 
-    .OUTPUTS
-    Directory                                  Name                LastWriteTime
-    ---------                                  ----                -------------
-    C:\GitRepos\AdminToolkit\PowerShell\CmdLet Get-LatestFiles.ps1 02/02/2020 15:30:35
-
-    .NOTES
-    Author:     Luke Leigh
-    Website:    https://admintoolkit.lukeleigh.com/
-    LinkedIn:   https://www.linkedin.com/in/lukeleigh/
-    GitHub:     https://github.com/BanterBoy/
-    GitHubGist: https://gist.github.com/BanterBoy
-
-    .LINK
-    https://github.com/BanterBoy/adminToolkit/wiki
-
+        Returns the available categories published by the API.
     #>
+    [CmdletBinding(DefaultParameterSetName = 'Random')]
+    param(
+        [Parameter(ParameterSetName = 'Random')]
+        [ValidateNotNullOrEmpty()]
+        [string]$Category,
 
-[CmdletBinding(HelpURI = 'https://github.com/BanterBoy/adminToolkit/wiki',
-    SupportsShouldProcess = $true)]
-param (
-    [Parameter(
-        Mandatory = $True,
-        HelpMessage = "Please enter the number of days.")]
-    [Alias('Days')]
-    [int32]$DaysPast,
-    [Parameter(
-        Mandatory = $True,
-        HelpMessage = "Please enter search file path.")]
-    [Alias('FilePath')]
-    [string]$Path,
-    [Parameter(
-        Mandatory = $True,
-        HelpMessage = "Please enter file extension.")]
-    [Alias('File')]
-    [string]$FileType
-)
-
-enum Category {
-    animal
-    career
-    celebrity
-    dev
-    explicit
-    fashion
-    food
-    history
-    money
-    movie
-    music
-    political
-    religion
-    science
-    sport
-    travel
-}
-
-BEGIN {
-    [CmdletBinding()]
-    param (
-        [Parameter()]
-        [string]
-        $Start = (Get-Date).AddDays(-$DaysPast)
+        [Parameter(ParameterSetName = 'Categories')]
+        [switch]$ListCategories
     )
-}
 
-PROCESS {
-    $Files = Get-ChildItem -Path "$Path" -Filter "$FileType" -Recurse | Where-Object { $_.LastWriteTime -ge "$Start" }
-    foreach ($File in $Files) {
-        $FileInfo = Select-Object -InputObject $File -Property Directory, Name, LastWriteTime
-        try {
-            $properties = @{
-                Name          = $FileInfo.Name
-                Directory     = $FileInfo.Directory
-                LastWriteTime = $FileInfo.LastWriteTime
-            }
-        }
-        catch {
-            $properties = @{
-                Name          = $FileInfo.Name
-                Directory     = $FileInfo.Directory
-                LastWriteTime = $FileInfo.LastWriteTime
-            }
-        }
-        finally {
-            $obj = New-Object -TypeName PSObject -Property $properties
-            Write-Output $obj
-        }
+    $baseUri = 'https://api.chucknorris.io/jokes'
+
+    if ($PSCmdlet.ParameterSetName -eq 'Categories') {
+        return Invoke-RestMethod -Uri "$baseUri/categories" -Method Get -ErrorAction Stop | Sort-Object
+    }
+
+    $uri = "$baseUri/random"
+    if ($Category) {
+        $uri = "$uri?category=$Category"
+    }
+
+    try {
+        $response = Invoke-RestMethod -Uri $uri -Method Get -ErrorAction Stop
+    }
+    catch {
+        throw "Failed to retrieve joke from API: $($_.Exception.Message)"
+    }
+
+    [PSCustomObject]@{
+        Id         = $response.id
+        Joke       = $response.value
+        Url        = $response.url
+        Categories = $response.categories
+        CreatedAt  = if ($response.created_at) { Get-Date $response.created_at } else { $null }
+        UpdatedAt  = if ($response.updated_at) { Get-Date $response.updated_at } else { $null }
     }
 }
-
-END {
-
-}
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

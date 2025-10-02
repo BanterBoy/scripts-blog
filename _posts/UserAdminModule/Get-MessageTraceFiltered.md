@@ -92,6 +92,7 @@ Author: Luke Leigh Date: [Today's Date] Version: 1.3
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -219,15 +220,9 @@ function Get-MessageTraceFiltered {
         return $traceResults
     }
 }
-
-# Example usage:
-# Get-MessageTraceFiltered -StartDate (Get-Date).AddDays(-10) -EndDate (Get-Date) -RecipientAddress 'it@raildeliverygroup.com' -Subject "*available*"
-# Get-MessageTraceFiltered -SenderAddress 'user@example.com' -Status @('Pending')
-# Get-MessageTraceFiltered -MessageId 'CA+123456789'
-# Get-MessageTraceFiltered -StartDate (Get-Date).AddDays(-30) -EndDate (Get-Date) -SenderAddress 'admin@example.com' -RecipientAddress 'user@example.com' -Status @('Delivered', 'Failed')
-# Get-MessageTraceFiltered -StartDate (Get-Date).AddDays(-7) -EndDate (Get-Date) -Subject "*meeting*" -Status @('Delivered')
-# Get-MessageTraceFiltered -Status @('None')
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

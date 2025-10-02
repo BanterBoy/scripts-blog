@@ -52,6 +52,7 @@ Author: Your Name Date: 2024-06-30
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -75,6 +76,7 @@ Author: Your Name Date: 2024-06-30
     Author: Your Name
     Date: 2024-06-30
 #>
+#requires -PSEdition Desktop
 
 function Stop-FailedService {
     [CmdletBinding()]
@@ -119,10 +121,9 @@ function Stop-FailedService {
     # Verbose output indicating the end of the function
     Write-Verbose "Stop-FailedService function completed."
 }
-
-# Example call to the function with verbose output
-# Stop-FailedService -ComputerName "Server1", "Server2" -ProcessName "notepad" -Verbose
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

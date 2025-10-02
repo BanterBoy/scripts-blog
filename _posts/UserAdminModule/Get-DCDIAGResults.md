@@ -52,63 +52,8 @@ Author: Your Name Date:   Current Date
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-<#
-.SYNOPSIS
-    Collects diagnostic results for domain controllers using various tools.
-
-.DESCRIPTION
-    The Get-DCDiagResults function collects diagnostic results for domain controllers using various tools such as DCDiag, DSQuery, RepAdmin, and ADReplication. It generates reports for each domain controller and saves them to the specified output directory.
-
-.PARAMETER Domain
-    Specifies the domain for which to collect diagnostic results.
-
-.PARAMETER OutputDirectory
-    Specifies the directory where the diagnostic reports will be saved.
-
-.PARAMETER All
-    Indicates whether to collect diagnostic results for all domain controllers in the domain. If not specified, only the current domain controller will be processed.
-
-.PARAMETER DCDiag
-    Indicates whether to run DCDiag tool for each domain controller.
-
-.PARAMETER DSQuery
-    Indicates whether to run DSQuery tool for each domain controller.
-
-.PARAMETER RepAdmin
-    Indicates whether to run RepAdmin tool for each domain controller.
-
-.PARAMETER ADReplication
-    Indicates whether to run ADReplication tool for each domain controller.
-
-.EXAMPLE
-    Get-DCDiagResults -Domain "contoso.com" -OutputDirectory "C:\Reports" -All
-
-    This example collects diagnostic results for all domain controllers in the "contoso.com" domain and saves the reports to the "C:\Reports" directory.
-
-.NOTES
-    Author: Your Name
-    Date:   Current Date
-#>
-
-function Get-DCDiagResults {
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory=$true)]
-        [string]$Domain,
-
-        [Parameter(Mandatory=$true)]
-        [string]$OutputDirectory,
-
-        [switch]$All,
-        [switch]$DCDiag,
-        [switch]$DSQuery,
-        [switch]$RepAdmin,
-        [switch]$ADReplication
-    )
-
-    # Rest of the code...
-}
 function Get-DCDiagResults {
     [CmdletBinding()]
     param (
@@ -212,6 +157,8 @@ function Get-DCDiagResults {
     Write-Progress -Activity "Processing complete" -Status "All tasks completed" -Completed
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

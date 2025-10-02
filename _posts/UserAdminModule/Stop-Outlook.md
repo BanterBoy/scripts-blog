@@ -52,6 +52,7 @@ Author: Your Name Date: 2024-06-30
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -95,10 +96,9 @@ function Stop-Outlook {
 	# Verbose output indicating the end of the function
 	Write-Verbose "Stop-Outlook function completed."
 }
-
-# Example call to the function with verbose output
-# Stop-Outlook -Verbose
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

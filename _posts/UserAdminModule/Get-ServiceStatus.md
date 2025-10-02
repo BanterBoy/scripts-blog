@@ -68,6 +68,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -142,6 +143,7 @@ No additional notes.
 
     Retrieves and formats the status of services with display names matching the pattern "*Cisco*" on the specified computers.
 #>
+#requires -PSEdition Desktop
 
 function Get-ServiceStatus {
     [CmdletBinding(DefaultParameterSetName = 'Default')]
@@ -341,12 +343,9 @@ function Get-ServiceStatus {
         $results
     }
 }
-
-Update-FormatData -PrependPath "$PSScriptRoot\GetServiceStatus.Format.ps1xml"
-
-# Example Usage
-# Get-ServiceStatus -ComputerName "VARONIS-IDU" -DisplayName "*Varon*" -SearchByDisplayName
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

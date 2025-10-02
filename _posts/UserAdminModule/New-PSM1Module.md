@@ -70,6 +70,7 @@ Author: [Your Name] Date: April 3, 2025 Requires: PowerShell 5.0 or later
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 
@@ -199,10 +200,9 @@ Export-ModuleMember -Function $Public.Basename
 
     Write-Verbose "Created psm1 file: $psm1FilePath"
 }
-
-# Example usage:
-# New-PSM1Module -folderPath "C:\GitRepos\RDGScripts\UserAdminModule\Everything\Shell"
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

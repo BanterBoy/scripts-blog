@@ -30,11 +30,14 @@ This is handy when working in the console and you need to jump into a web search
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Get-GoogleSearch {
     Start-Process "https://www.google.co.uk/search?q=$args"
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

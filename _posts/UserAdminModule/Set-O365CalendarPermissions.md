@@ -52,6 +52,7 @@ Author: Luke Leigh Last Edit: 2025-09-04
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Set-O365CalendarPermissions {
 
@@ -191,6 +192,8 @@ function Set-O365CalendarPermissions {
 
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

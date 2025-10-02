@@ -52,6 +52,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -68,6 +69,7 @@ No additional notes.
    Test-CiscoSecure -ComputerName "Computer1", "Computer2", "Computer3"
    This command checks the status of Cisco Secure Endpoint on the computers named Computer1, Computer2, and Computer3.
 #>
+#requires -PSEdition Desktop
 function Test-CiscoSecure {
     [CmdletBinding()]
     param (
@@ -109,6 +111,8 @@ function Test-CiscoSecure {
     Write-Progress -Activity "Checking Cisco Secure Endpoint" -Completed
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

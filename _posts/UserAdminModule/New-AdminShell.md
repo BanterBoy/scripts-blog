@@ -34,27 +34,10 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-function Test-IsAdmin {
-	<#
-	.Synopsis
-	Tests if the user is an administrator
-
-	.Description
-	Returns true if a user is an administrator, false if the user is not an administrator
-
-	.Example
-	Test-IsAdmin
-
-	#>
-
-	$identity = [Security.Principal.WindowsIdentity]::GetCurrent()
-	$principal = New-Object Security.Principal.WindowsPrincipal $identity
-	$principal.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
-
-}
 function New-AdminShell {
-	<#
+    <#
 	.Synopsis
 	Starts an Elevated PowerShell Console.
 
@@ -67,20 +50,17 @@ function New-AdminShell {
 
 	#>
 
-	$Process = Get-Process | Where-Object { $_.Id -eq "$($PID)" }
-	if (Test-IsAdmin = $True) {
-		Write-Warning -Message "Admin Shell already running!"
+    $Process = Get-Process | Where-Object { $_.Id -eq "$($PID)" }
+	if ($Process.Name -eq "PowerShell") {
+		Start-Process -FilePath "PowerShell.exe" -Verb runas -PassThru
 	}
-	else {
-		if ($Process.Name -eq "powershell") {
-			Start-Process -FilePath "powershell.exe" -Verb runas -PassThru
-		}
-		if ($Process.Name -eq "pwsh") {
-			Start-Process -FilePath "pwsh.exe" -Verb runas -PassThru
-		}
+	if ($Process.Name -eq "pwsh") {
+		Start-Process -FilePath "pwsh.exe" -Verb runas -PassThru
 	}
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

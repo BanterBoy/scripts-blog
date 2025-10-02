@@ -29,18 +29,21 @@ When prompted, choose the base directory whose immediate child folders you want 
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function New-PSDrives {
-        $PSRootFolder = Select-FolderLocation
-        $PSDrivePaths = Get-ChildItem -Path "$PSRootFolder\"
-        foreach ($item in $PSDrivePaths) {
-                $paths = Test-Path -Path $item.FullName
-                if (($paths) = $true) {
-                        New-PSDrive -Name $item.Name -PSProvider "FileSystem" -Root $item.FullName
-                }
-        }
+	$PSRootFolder = Select-FolderLocation
+	$PSDrivePaths = Get-ChildItem -Path "$PSRootFolder\"
+	foreach ($item in $PSDrivePaths) {
+		$paths = Test-Path -Path $item.FullName
+		if (($paths) = $true) {
+			New-PSDrive -Name $item.Name -PSProvider "FileSystem" -Root $item.FullName
+		}
+	}
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

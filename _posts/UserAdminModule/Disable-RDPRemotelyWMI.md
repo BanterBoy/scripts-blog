@@ -30,7 +30,9 @@ Choose the CIM variant when PowerShell Remoting and the WSMan stack are availabl
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Disable-RDPRemotelyWMI {
     # You can also disable it using the below method.
     [CmdletBinding()]
@@ -45,6 +47,8 @@ function Disable-RDPRemotelyWMI {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

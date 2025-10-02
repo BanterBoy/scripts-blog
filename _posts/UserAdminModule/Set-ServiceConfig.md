@@ -60,7 +60,9 @@ Author: Luke Leigh Last Edit: 2024-06-30
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Set-ServiceConfig {
     <#
     .SYNOPSIS
@@ -216,6 +218,8 @@ function Set-ServiceConfig {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

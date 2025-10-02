@@ -29,6 +29,7 @@ The function expects helper variables (such as `$path`) to exist in scope; ensur
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function New-ModulePSM1 {
 
@@ -54,6 +55,8 @@ function New-ModulePSM1 {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

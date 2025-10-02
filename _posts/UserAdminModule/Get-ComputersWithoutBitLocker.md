@@ -70,6 +70,7 @@ This function requires the Active Directory module to be installed and imported.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -118,6 +119,7 @@ This function requires the Active Directory module to be installed and imported.
         - Notes: Additional information (e.g., "No BitLocker recovery information found").
 
 #>
+#requires -PSEdition Desktop
 
 function Get-ComputersWithoutBitLocker {
     [CmdletBinding()]
@@ -182,6 +184,8 @@ function Get-ComputersWithoutBitLocker {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

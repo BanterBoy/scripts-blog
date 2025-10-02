@@ -46,27 +46,8 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-<#
-This is a copy of:
-
-CommandType Name       Version Source
------------ ----       ------- ------
-Cmdlet      Import-Csv 3.1.0.0 Microsoft.PowerShell.Utility
-
-Created: 17 May 2021
-Author : Jeff Hicks 
-
-Learn more about PowerShell: https://jdhitsolutions.com/blog/essential-powershell-resources/
-
-#>
-
-<#
-I am using a namespace to make defining a List[] object easier later
-in the script.
-#>
-Using Namespace System.Collections.Generic
-
 Function Import-CSVCustom {
 
     #TODO - Add comment-based help
@@ -173,8 +154,10 @@ Function Import-CSVCustom {
         Write-Verbose "[END    ] Ending $($MyInvocation.Mycommand)"
     } #end
 
-} #end Import-CsvCustom
+}
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -46,6 +46,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Get-RemoteLdapCertDetails {
     param (
@@ -85,15 +86,9 @@ function Get-RemoteLdapCertDetails {
     $certDetailsList = Invoke-Command -ComputerName $ComputerName -ScriptBlock $scriptBlock -Credential $Credential
     return $certDetailsList
 }
-
-# Example usage
-# $computerName = "RemoteServerFQDN"
-# $credential = Get-Credential
-# $certDetailsList = Get-RemoteLdapCertDetails -ComputerName $computerName -Credential $credential
-
-# Display the retrieved certificate details
-# $certDetailsList | Format-List
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

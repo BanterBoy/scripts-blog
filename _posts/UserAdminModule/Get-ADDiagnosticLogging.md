@@ -46,7 +46,9 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Get-ADDiagnosticLogging {
     param (
         [Parameter(Mandatory = $true)]
@@ -132,41 +134,9 @@ function Get-ADDiagnosticLogging {
 
     Invoke-Command -ComputerName $ComputerName -ScriptBlock $scriptBlock -ArgumentList $InstanceType, $LoggingLevels, $LDSInstanceName
 }
-
-# Example usage:
-# $InstanceType = "DomainController"
-# $ComputerName = Get-AllDomainControllers | Select-Object -First 1 -ExpandProperty Name
-# $LoggingLevels = @(
-#     "Knowledge Consistency Checker (KCC)",
-#     "Security Events",
-#     "ExDS Interface Events",
-#     "MAPI Interface Events",
-#     "Replication Events",
-#     "Garbage Collection",
-#     "Internal Configuration",
-#     "Directory Access",
-#     "Internal Processing",
-#     "Performance Counters",
-#     "Initialization/Termination",
-#     "Service Control",
-#     "Name Resolution",
-#     "Backup",
-#     "Field Engineering",
-#     "LDAP Interface Events",
-#     "Setup",
-#     "Global Catalog",
-#     "Inter-site Messaging",
-#     "Group Caching",
-#     "Linked-Value Replication",
-#     "DS RPC Client",
-#     "DS RPC Server",
-#     "DS Schema",
-#     "Transformation Engine",
-#     "Claims-Based Access Control",
-#     "PDC Password Update Notifications"
-# )
-# $ComputerName |ForEach-Object -Process { Get-ADDiagnosticLogging -InstanceType $InstanceType -LoggingLevels $LoggingLevels -ComputerName $_ }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

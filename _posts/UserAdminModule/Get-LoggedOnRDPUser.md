@@ -60,6 +60,7 @@ Author: Your Name Website: http://scripts.lukeleigh.com/ Version: 1.0
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -93,6 +94,7 @@ Author: Your Name Website: http://scripts.lukeleigh.com/ Version: 1.0
     Website: http://scripts.lukeleigh.com/
     Version: 1.0
 #>
+#requires -PSEdition Desktop
 function Get-LoggedOnRDPUser {
 
     [CmdletBinding(DefaultParameterSetName = 'Default',
@@ -166,6 +168,8 @@ function Get-LoggedOnRDPUser {
 
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

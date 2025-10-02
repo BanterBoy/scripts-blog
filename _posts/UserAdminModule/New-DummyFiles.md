@@ -62,6 +62,7 @@ The function includes a progress bar to indicate the progress of file creation. 
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -159,28 +160,28 @@ function New-DummyFiles {
                         "2021-01-01 08:15:12 DEBUG: Debugging info: Found the lost sock under the bed.",
                         "2021-01-01 08:20:00 WARN: Warning: Low disk space. Time to clean out those cat videos.",
                         "2021-01-01 08:25:35 INFO: Application restarted",
-                        "2021-01-01 08:30:05 ERROR: Another error occurred. This one's on us.",
+                        "2021-01-01 08:30:05 ERROR: Another error occurred. This one’s on us.",
                         "2021-01-01 08:35:50 INFO: Application running smoothly. Pigs have not yet flown.",
                         "2021-01-01 08:40:30 DEBUG: More debugging info: The cake is a lie.",
                         "2021-01-01 08:45:00 WARN: Another warning message. Beware of the dog. And the cat. And the goldfish.",
                         "2021-01-01 08:50:15 INFO: Routine operation completed. High-fives all around!",
                         "2021-01-01 08:55:25 DEBUG: Continuing debug: Found Waldo. He was in the database.",
-                        "2021-01-01 09:00:40 ERROR: Yet another error. It's like whack-a-mole with bugs.",
+                        "2021-01-01 09:00:40 ERROR: Yet another error. It’s like whack-a-mole with bugs.",
                         "2021-01-01 09:05:50 INFO: Routine task completed. Time for a coffee break.",
                         "2021-01-01 09:10:30 WARN: Routine warning. Remember, no capes!",
-                        "2021-01-01 09:15:20 DEBUG: Debugging more info: Discovered the meaning of life. It's 42.",
+                        "2021-01-01 09:15:20 DEBUG: Debugging more info: Discovered the meaning of life. It’s 42.",
                         "2021-01-01 09:20:45 INFO: Task successful. Achievement unlocked!",
                         "2021-01-01 09:25:50 ERROR: Application crash. We blame the gremlins.",
                         "2021-01-01 09:30:15 WARN: Recovery warning: Brace for impact.",
                         "2021-01-01 09:35:00 INFO: Recovery successful. Whew!",
                         "2021-01-01 09:40:35 DEBUG: Debugging final issue: Located Jimmy Hoffa.",
-                        "2021-01-01 09:45:50 INFO: Application closed. Don't forget to tip your server.",
+                        "2021-01-01 09:45:50 INFO: Application closed. Don’t forget to tip your server.",
                         "2021-01-01 10:00:00 INFO: Morning meeting started. Time to pretend we know what we're doing.",
                         "2021-01-01 10:15:23 INFO: Morning meeting ended. Everyone is now a little more confused.",
                         "2021-01-01 10:30:45 DEBUG: Started investigating random crashes. Suspecting the printer again.",
                         "2021-01-01 10:45:12 WARN: Printer is out of paper. Again.",
                         "2021-01-01 11:00:00 INFO: Paper refilled. Printer is happy. For now.",
-                        "2021-01-01 11:15:35 DEBUG: New bug discovered. It's a feature.",
+                        "2021-01-01 11:15:35 DEBUG: New bug discovered. It’s a feature.",
                         "2021-01-01 11:30:05 ERROR: Application crashed because of an unexpected null value. Thanks, null.",
                         "2021-01-01 11:45:50 INFO: Restarted the application. Fingers crossed.",
                         "2021-01-01 12:00:30 DEBUG: All systems go. Knock on wood.",
@@ -429,10 +430,9 @@ function New-DummyFiles {
         Write-Error "An error occurred: $_"
     }
 }
-
-# Example usage
-# New-DummyFiles -baseDirectory "C:\Path\To\Your\Directory" -numFiles 100
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

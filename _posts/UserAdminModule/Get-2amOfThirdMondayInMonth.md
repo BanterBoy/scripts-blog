@@ -34,7 +34,9 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Get-2amOfThirdMondayInMonth ($Date) {
     #get the number of the current month
     $thisMonth = $date.Month
@@ -65,14 +67,9 @@ function Get-2amOfThirdMondayInMonth ($Date) {
     #add two hours to read 2 am
     $thirdMonday.AddHours(2)
 }
-
-<# test
-$startDate = (Get-Date).AddYears(1)
-1..20 | foreach {
-Get-2amOfThirdMondayInMonth $startDate.AddMonths($_)
-}
-#>
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

@@ -34,6 +34,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Get-DMARCRecord {
     <#
@@ -55,22 +56,24 @@ function Get-DMARCRecord {
             ValueFromPipeline = $true)]
         [string]
         $DomainName,
-
+        
         # Specify a DNS server to query.
         [string]
         $Server
     )
-    process {
+    process {    
         $params = @{
             Name        = "_dmarc.$DomainName"
             ErrorAction = "SilentlyContinue"
         }
         if ($Server) { $params.Add("Server", $Server) }
-        $dnsTxt = Resolve-DnsName @params -Type  TXT | Where-Object Type -eq TXT
-        $dnsTxt | Select-Object @{Name = "DMARC"; Expression = { "$DomainName`:$s" } }, @{Name = "Record"; Expression = { $_.Strings } }
-    }
+        $dnsTxt = Resolve-DnsName @params -Type  TXT | Where-Object Type -eq TXT  
+        $dnsTxt | Select-Object @{Name = "DMARC"; Expression = { "$DomainName`:$s" } }, @{Name = "Record"; Expression = { $_.Strings } }    
+    }    
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

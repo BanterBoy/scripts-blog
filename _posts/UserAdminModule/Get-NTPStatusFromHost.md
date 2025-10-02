@@ -34,8 +34,10 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-function Get-NTPStatusFromHost {
+#requires -PSEdition Desktop
+function Get-NTPStatusFromHost {  
     Param(
         [Parameter(Mandatory = $true,
             ValueFromPipeline = $true,
@@ -46,26 +48,12 @@ function Get-NTPStatusFromHost {
     )
     Process {
         Write-Output "NTP Source for $ComputerName"
-        w32tm /query /computer:$ComputerName /source
-    }
-}
-
-$ADQuery = Get-ADComputer -Filter { Name -like '*' } -Properties *
-$ServerList = $ADQuery |
-Sort-Object -Property Name |
-Select-Object Name, OperatingSystem, DistinguishedName |
-Where-Object { ( $_.OperatingSystem -like 'Windows Server*' ) -and ( $_.DistinguishedName -like '*Server*' ) }
-
-foreach ( $Server in $ServerList ) {
-    $TestServer = Test-ComputerAvailability -Servers $Server.Name
-    if ($TestServer.Pingable -eq $true) {
-        Get-NTPStatusFromHost -ComputerName $Server.Name
-    }
-    else {
-        Write-Warning -Message "$($Server.Name) is Unavailable"
+        w32tm /query /computer:$ComputerName /source           
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

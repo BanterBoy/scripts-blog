@@ -46,6 +46,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Validate-LDAPSBinding {
     param (
@@ -105,11 +106,9 @@ function Validate-LDAPSBinding {
     $validationResult = Invoke-Command -ComputerName $DomainControllerFQDN -ScriptBlock $scriptBlock -ArgumentList $DomainControllerFQDN, $CertThumbprint -Credential $Credential -Verbose
     return $validationResult
 }
-
-# Example usage of the function:
-# $validationResult = Validate-LDAPSBinding -DomainControllerFQDN "RDGDC01.rdg.co.uk" -CertThumbprint "9f580f463113ea7615847821ad3775d690c640d2" -Credential (Get-Credential) -Verbose
-# $validationResult | Format-List
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

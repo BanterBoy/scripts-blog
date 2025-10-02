@@ -88,7 +88,9 @@ Author  : Luke's Automation Helper (ChatGPT) Requires: ActiveDirectory module (R
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Get-AdminGroupsWithComputers {
 <#
 .SYNOPSIS
@@ -254,6 +256,8 @@ function Get-AdminGroupsWithComputers {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

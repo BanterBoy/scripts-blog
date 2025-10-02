@@ -34,43 +34,47 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-function Get-PatchTuesday {
+#requires -PSEdition Desktop
+function Get-PatchTuesday { 
 
-    <#
+    <#  
 
-  .SYNOPSIS
-    Get the Patch Tuesday of a month
-  .PARAMETER month
+  .SYNOPSIS   
+    Get the Patch Tuesday of a month 
+  .PARAMETER month 
    The month to check
-  .PARAMETER year
+  .PARAMETER year 
    The year to check
-  .EXAMPLE
+  .EXAMPLE  
    Get-PatchTue -month 6 -year 2015
-  .EXAMPLE
+  .EXAMPLE  
    Get-PatchTue June 2015
 
-   #>
-
+   #> 
+ 
     [CmdletBinding()]
     param (
         [Parameter()]
         [string]
-        $month = (Get-Date).month,
+        $month = (Get-Date).month, 
 
         [string]
         $year = (Get-Date).year
-    )
+    ) 
 
     $firstdayofmonth = [datetime] ([string]$month + "/1/" + [string]$year)
     (0..30 | ForEach-Object {
-            $firstdayofmonth.adddays($_)
+            $firstdayofmonth.adddays($_) 
         } | Where-Object {
             $_.dayofweek -like "Tue*"
         }
     )[1]
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

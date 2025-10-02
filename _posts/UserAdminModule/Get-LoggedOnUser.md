@@ -34,6 +34,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 Get-WmiObject –ComputerName IGULAMNABY –Class Win32_ComputerSystem | Select-Object UserName
@@ -52,6 +53,7 @@ function Get-LoggedOnUser {
 }
 
 #>
+#requires -PSEdition Desktop
 function Get-LoggedOnUser {
     [CmdletBinding()]
     param
@@ -69,6 +71,8 @@ function Get-LoggedOnUser {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

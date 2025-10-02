@@ -68,6 +68,7 @@ Author:  Brian Wilhite Email:   bwilhite1@carolina.rr.com Date:    11/04/2011 Up
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 Function Get-DSTInfo {
     <#
@@ -351,8 +352,10 @@ Function Get-DSTInfo {
         #Resetting ErrorActionPref
         $ErrorActionPreference = $TempErrAct
     }
-}#End function Get-DSTInfo
+}
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

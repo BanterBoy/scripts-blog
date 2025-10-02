@@ -60,6 +60,7 @@ Author: Luke Leigh Last Edit: 2025-09-04
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Set-O365MailboxPermissions {
     <#
@@ -222,10 +223,9 @@ function Set-O365MailboxPermissions {
         Write-Verbose "Ending Set-O365MailboxPermissions function"
     }
 }
-
-# Example usage:
-# Import-Csv -Path 'path_to_your_csv_file.csv' | Set-O365MailboxPermissions -Verbose
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

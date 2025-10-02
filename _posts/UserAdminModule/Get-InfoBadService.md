@@ -34,7 +34,9 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Get-InfoBadService {
     [CmdletBinding()]
     param(
@@ -42,7 +44,7 @@ function Get-InfoBadService {
         [string]
         $ComputerName
     )
-
+    
     $svcs = Get-WmiObject -class Win32_Service -ComputerName $ComputerName -Filter "StartMode='Auto' AND State<>'Running'"
     foreach ($svc in $svcs) {
         $props = @{'ServiceName' = $svc.name;
@@ -53,6 +55,8 @@ function Get-InfoBadService {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

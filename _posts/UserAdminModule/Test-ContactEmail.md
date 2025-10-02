@@ -52,6 +52,7 @@ Author: Your Name Date: 2024-06-30 HelpUri: http://scripts.lukeleigh.com/
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -73,6 +74,7 @@ Author: Your Name Date: 2024-06-30 HelpUri: http://scripts.lukeleigh.com/
     HelpUri: http://scripts.lukeleigh.com/
 #>
 
+#requires -PSEdition Desktop
 function Test-ContactEmail {
     [CmdletBinding(
         DefaultParameterSetName = 'Default',
@@ -163,10 +165,9 @@ function Test-ContactEmail {
         Write-Verbose "Test-ContactEmail function completed."
     }
 }
-
-# Example call to the function with verbose output
-# Test-ContactEmail -EmailAddress "user@example.com" -Verbose
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -52,6 +52,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -89,9 +90,9 @@ function Export-DistributionGroupProperties {
     # Return the properties as a PSObject
     return $properties
 }
-
-# $groupProperties = Export-DistributionGroupProperties -GroupIdentity "Rars Comms"
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

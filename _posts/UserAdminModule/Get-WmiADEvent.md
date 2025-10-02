@@ -60,6 +60,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -106,15 +107,9 @@ Function Get-WmiADEvent {
         }
     }
 }
-  
-# Sample usage
-
-# $query="Select * from __InstanceCreationEvent Within 10 where TargetInstance ISA 'DS_USER'"
-# $query="Select * from __InstanceCreationEvent Within 10 where TargetInstance ISA 'DS_GROUP'"
-# $query="Select * from __InstanceModificationEvent Within 10 where TargetInstance ISA 'DS_USER'"
-# $query="Select * from __InstanceModificationEvent Within 10 where TargetInstance ISA 'DS_COMPUTER'"
-# Get-WmiADEvent $query
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -52,6 +52,7 @@ This function requires the Active Directory module and administrative privileges
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -82,6 +83,7 @@ This function requires the Active Directory module and administrative privileges
 https://github.com/your-repo/Get-ServerIPInfo.ps1
 #>
 
+#requires -PSEdition Desktop
 function Get-ServerIPInfo {
     $ServerList = (Get-ADComputer -Filter 'operatingsystem -like "*server*" -and enabled -eq "true"').Name
     $test = Test-Connection -ComputerName $ServerList -Count 1 -ErrorAction SilentlyContinue
@@ -104,6 +106,8 @@ function Get-ServerIPInfo {
     $result
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

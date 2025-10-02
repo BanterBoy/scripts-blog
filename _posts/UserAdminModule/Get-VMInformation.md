@@ -60,101 +60,105 @@ Name: Get-VMInformation Author: theSysadminChannel Version: 1.0 DateCreated: 201
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-Function Get-VMInformation {
-    <#
-    .SYNOPSIS
-    Get information from a VM object. Properties include Name, PowerState, vCenterServer, Datacenter, Cluster, VMHost, Datastore, Folder, GuestOS, NetworkName, IPAddress, MacAddress, VMTools
+# CoPilot Attempt to get VM information from vCenter
 
-    .DESCRIPTION
-    This function retrieves information from a VM object. It returns a custom object with properties such as Name, PowerState, vCenterServer, Datacenter, Cluster, VMHost, Datastore, Folder, GuestOS, NetworkName, IPAddress, MacAddress, and VMTools.
+<#
+.SYNOPSIS
+Retrieves information about virtual machines from a vCenter server.
 
-    .PARAMETER Name
-    Specifies the name of the VM. This parameter is used when the function is called with the -Name parameter.
+.DESCRIPTION
+The Get-VMInformation function retrieves information about virtual machines from a vCenter server. It accepts the vCenter server name and an optional virtual machine name as parameters. If a virtual machine name is provided, it retrieves information for that specific virtual machine. If no virtual machine name is provided, it retrieves information for all virtual machines on the vCenter server.
 
-    .PARAMETER InputObject
-    Specifies the VM object. This parameter is used when the function is called with pipeline input.
+.PARAMETER vCenter
+The name of the vCenter server.
 
-    .EXAMPLE
-    Get-VMInformation -Name "VM1"
-    Retrieves information for the VM with the name "VM1".
+.PARAMETER Name
+The name of the virtual machine. This parameter is optional. If not provided, information for all virtual machines on the vCenter server will be retrieved.
 
-    .EXAMPLE
-    Get-VM | Get-VMInformation
-    Retrieves information for all VMs in the pipeline.
+.EXAMPLE
+Get-VMInformation -vCenter "vCenterServer" -Name "VM1"
+Retrieves information for the virtual machine named "VM1" from the "vCenterServer".
 
-    .NOTES   
-    Name: Get-VMInformation
-    Author: theSysadminChannel
-    Version: 1.0
-    DateCreated: 2019-Apr-29
+.EXAMPLE
+Get-VMInformation -vCenter "vCenterServer"
+Retrieves information for all virtual machines from the "vCenterServer".
 
-    .LINK
-    https://thesysadminchannel.com/get-vminformation-using-powershell-and-powercli
-    Link to the blog post explaining the usage of the function.
+.INPUTS
+None. You cannot pipe objects to this function.
 
-    #>
+.OUTPUTS
+System.Management.Automation.PSCustomObject. The function outputs a custom object containing information about the virtual machines.
+
+.NOTES
+This function requires the VMware PowerCLI module to be installed.
+
+.LINK
+https://github.com/username/repo
+
+#>
+
+function Get-VMInformation {
     [CmdletBinding()]
-     
-    param(
-        [Parameter(
-            Position = 0,
-            ParameterSetName = "NonPipeline"
-        )]
-        [string[]]  $Name,
+    param (
+        [Parameter(Mandatory = $true, Position = 0)]
+        [string]$vCenter,
 
-        [Parameter(
-            Position = 1,
-            ValueFromPipeline = $true,
-            ValueFromPipelineByPropertyName = $true,
-            ParameterSetName = "Pipeline"
-        )]
-        [PSObject[]]  $InputObject
-     
+        [Parameter(Mandatory = $false, Position = 1)]
+        [string]$Name
     )
 
-    BEGIN {
-        if (-not $Global:DefaultVIServer) {
-            Write-Error "Unable to continue.  Please connect to a vCenter Server." -ErrorAction Stop
-        }
-     
-        #Verifying the object is a VM
-        if ($PSBoundParameters.ContainsKey("Name")) {
-            $InputObject = Get-VM $Name
-        }
-     
-        $i = 1
-        $Count = $InputObject.Count
-    }
-     
+    BEGIN {}
+
     PROCESS {
-        if (($null -eq $InputObject.VMHost) -and ($null -eq $InputObject.MemoryGB)) {
-            Write-Error "Invalid data type. A virtual machine object was not found" -ErrorAction Stop
-        }
-     
-        foreach ($Object in $InputObject) {
+        $VMs = Get-VM -Server $vCenter -Name $Name
+
+        $Count = $VMs.Count
+        $i = 1
+
+        foreach ($Object in $VMs) {
             try {
-                $vCenter = $Object.Uid -replace ".+@"; $vCenter = $vCenter -replace ":.+"
-                [PSCustomObject]@{
-                    Name        = $Object.Name
-                    PowerState  = $Object.PowerState
-                    vCenter     = $vCenter
-                    Datacenter  = $Object.VMHost | Get-Datacenter | Select-Object -ExpandProperty Name
-                    Cluster     = $Object.VMhost | Get-Cluster | Select-Object -ExpandProperty Name
-                    VMHost      = $Object.VMhost
-                    Datastore   = ($Object | Get-Datastore | Select-Object -ExpandProperty Name) -join ', '
-                    FolderName  = $Object.Folder
-                    GuestOS     = $Object.ExtensionData.Config.GuestFullName
-                    NetworkName = ($Object | Get-NetworkAdapter | Select-Object -ExpandProperty NetworkName) -join ', '
-                    IPAddress   = ($Object.ExtensionData.Summary.Guest.IPAddress) -join ', '
-                    MacAddress  = ($Object | Get-NetworkAdapter | Select-Object -ExpandProperty MacAddress) -join ', '
-                    VMTools     = $Object.ExtensionData.Guest.ToolsVersionStatus2
+                $CPUUsage = ($Object | Get-Stat -Stat cpu.usage.average -Start (Get-Date).AddMinutes(-5) -IntervalMins 5 | Measure-Object -Property Value -Average).Average
+                $MemoryUsage = ($Object | Get-Stat -Stat mem.usage.average -Start (Get-Date).AddMinutes(-5) -IntervalMins 5 | Measure-Object -Property Value -Average).Average
+                $DiskUsage = ($Object | Get-HardDisk | Measure-Object -Property CapacityGB -Sum).Sum
+                $DiskCapacity = ($Object | Get-HardDisk | Measure-Object -Property CapacityGB -Sum).Sum
+                $SnapshotCount = ($Object | Get-Snapshot | Measure-Object).Count
+                $ResourcePool = ($Object | Get-ResourcePool | Select-Object -ExpandProperty Name) -join ', '
+                $CustomAttributes = ($Object | Get-CustomAttribute | Select-Object -Property Name, Value) -join ', '
+                $AlarmStatus = ($Object | Get-AlarmActionTriggeredEvent | Select-Object -Property CreatedTime, Alarm, FullFormattedMessage) -join ', '
+                $PerformanceMetrics = @{
+                    CPUUsage     = $CPUUsage
+                    MemoryUsage  = $MemoryUsage
+                    DiskUsage    = $DiskUsage
+                    DiskCapacity = $DiskCapacity
                 }
-     
+
+                $VMInfo = @{
+                    Name               = $Object.Name
+                    PowerState         = $Object.PowerState
+                    vCenter            = $vCenter
+                    Datacenter         = $Object.VMHost | Get-Datacenter | Select-Object -ExpandProperty Name
+                    Cluster            = $Object.VMhost | Get-Cluster | Select-Object -ExpandProperty Name
+                    VMHost             = $Object.VMhost
+                    Datastore          = ($Object | Get-Datastore | Select-Object -ExpandProperty Name) -join ', '
+                    FolderName         = $Object.Folder
+                    GuestOS            = $Object.ExtensionData.Config.GuestFullName
+                    NetworkName        = ($Object | Get-NetworkAdapter | Select-Object -ExpandProperty NetworkName) -join ', '
+                    IPAddress          = ($Object.ExtensionData.Summary.Guest.IPAddress) -join ', '
+                    MacAddress         = ($Object | Get-NetworkAdapter | Select-Object -ExpandProperty MacAddress) -join ', '
+                    VMTools            = $Object.ExtensionData.Guest.ToolsVersionStatus2
+                    SnapshotCount      = $SnapshotCount
+                    ResourcePool       = $ResourcePool
+                    CustomAttributes   = $CustomAttributes
+                    AlarmStatus        = $AlarmStatus
+                    PerformanceMetrics = $PerformanceMetrics
+                }
+
+                Write-Output $VMInfo
             }
             catch {
                 Write-Error $_.Exception.Message
-     
             }
             finally {
                 if ($PSBoundParameters.ContainsKey("Name")) {
@@ -169,10 +173,12 @@ Function Get-VMInformation {
             }
         }
     }
-     
+
     END {}
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

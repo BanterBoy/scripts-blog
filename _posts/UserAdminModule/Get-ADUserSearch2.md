@@ -46,7 +46,9 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Get-ADUserSearch2 {
     [CmdletBinding(
         SupportsShouldProcess = $true,
@@ -265,10 +267,9 @@ if (-not $PasswordDetailsOnly) {
         Write-Verbose "Completed Get-ADUserSearch function"
     }
 }
-
-Update-FormatData -PrependPath "$PSScriptRoot\Get-ADUserSearch.UserDetails2.Format.ps1xml"
-Update-FormatData -PrependPath "$PSScriptRoot\Get-ADUserSearch.PasswordDetails.Format.ps1xml"
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

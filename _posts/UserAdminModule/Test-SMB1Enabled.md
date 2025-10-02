@@ -46,7 +46,9 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Test-SMB1Enabled {
     if (Get-SMBServerConfiguration | Where-Object -FilterScript { $_.EnableSMB1Protocol -eq $true }) {
         Write-Warning -Message "SMB1 is Enabled"
@@ -56,6 +58,8 @@ function Test-SMB1Enabled {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -52,6 +52,7 @@ Author: Luke Leigh Last Edit: 2024-06-30
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Set-DistributionGroupProperties {
     <#
@@ -127,10 +128,9 @@ function Set-DistributionGroupProperties {
         Write-Verbose "Ending Set-DistributionGroupProperties function"
     }
 }
-
-# Example usage:
-# Import-Csv -Path 'path_to_your_csv_file.csv' | Set-DistributionGroupProperties -Verbose
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

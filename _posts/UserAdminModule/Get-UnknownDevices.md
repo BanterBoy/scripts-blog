@@ -34,6 +34,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .Synopsis
@@ -47,15 +48,15 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
    In regular mode, emits PowerShell objects, containing a VendorID, DeviceId, DevMgrName and LikelyName properties
    In -Export mode, creates a import.csv file which can be copied and uses on a remote machine to resolve drivers (as web access is needed)
 .EXAMPLE
-    .\Get-UnknownDevices.ps1
+    .\Get-UnknownDevices.ps1 
 
-VendorID DeviceID DevMgrName                                                                LikelyName
--------- -------- ----------                                                                ----------
+VendorID DeviceID DevMgrName                                                                LikelyName                                                         
+-------- -------- ----------                                                                ----------                                                         
 8086     1E2D     Intel(R) 7 Series/C216 Chipset Family USB Enhanced Host Controller - 1E2D Intel(R) 7 Series/C216 Chipset Family USB Enhanced Host Controll...
 8086     1E26     Intel(R) 7 Series/C216 Chipset Family USB Enhanced Host Controller - 1E26 Intel(R) 7 Series/C216 Chipset Family USB Enhanced Host Controll...
-1B21     1042     ASMedia USB 3.0 eXtensible Host Controller - 0.96 (Microsoft)             Asmedia ASM104x USB 3.0 Host Controller...
-8086     1E31     Intel(R) USB 3.0 eXtensible Host Controller - 1.0 (Microsoft)
-1B21     1042     ASMedia USB 3.0 eXtensible Host Controller - 0.96 (Microsoft)             Asmedia ASM104x USB 3.0 Host Controller...
+1B21     1042     ASMedia USB 3.0 eXtensible Host Controller - 0.96 (Microsoft)             Asmedia ASM104x USB 3.0 Host Controller...                         
+8086     1E31     Intel(R) USB 3.0 eXtensible Host Controller - 1.0 (Microsoft)                                                                                
+1B21     1042     ASMedia USB 3.0 eXtensible Host Controller - 0.96 (Microsoft)             Asmedia ASM104x USB 3.0 Host Controller...                         
 
 In this case, the cmdlet was run without any parameters which returns a list of any missing drivers and the likely source file, according to the PCIDatabase
 .EXAMPLE
@@ -65,14 +66,15 @@ In this case, the cmdlet was run without any parameters which returns a list of 
 .EXAMPLE
     .\Get-UnknownDevices.ps1 -Import C:\temp\DriverExport.csv
 
-VendorID DeviceID DevMgrName                         LikelyName
--------- -------- ----------                         ----------
+VendorID DeviceID DevMgrName                         LikelyName                       
+-------- -------- ----------                         ----------                       
 1186     4300     DGE-530T Gigabit Ethernet Adapter. Used on DGE-528T Gigabit adapt...
 .LINK
    Copy and paste any of the links below for more information about this cmdlet
    start http://www.Foxdeploy.com
    start http://deploymentresearch.com/Research/Post/306/Back-to-basics-Finding-Lenovo-drivers-and-certify-hardware-control-freak-style
 #>
+#requires -PSEdition Desktop
 Function Get-UnknownDevices{
 [CmdletBinding()]
 Param([ValidateScript({test-path (Split-Path $path)})]$Export,
@@ -81,17 +83,17 @@ Param([ValidateScript({test-path (Split-Path $path)})]$Export,
       [switch]$test)
 begin {
         $i = 0
-
+        
         if ($Import){
             $devices = Import-Csv $import
             }
             else {
-
+            
             if ($Test){
                 #For Testing, pull all devices
                 $devices = Get-WmiObject Win32_PNPEntity | Where-Object{$_.ConfigManagerErrorCode -eq 0} | Select Name, DeviceID
                 #For testing, I'm purposefully pulling Ethernet drivers
-                $unknown_Dev = $devices | where Name -like "*int*"
+                $unknown_Dev = $devices | where Name -like "*int*"                
                 }
                 else{
                     #if not running in -Test
@@ -102,18 +104,18 @@ begin {
                 }
         }
 
+        
 
-
-
+        
 
         if ($Export){
-            $unknown_Dev | export-csv $Export
+            $unknown_Dev | export-csv $Export 
             Write-host "Export file created at $Export, please copy to a machine with web access, and rerun this tool, using the -Import flag"
             BREAK
             }
-
-
-
+        
+        
+        
 
         $unknown_Dev | % {$i++}
         $count = $i
@@ -122,7 +124,7 @@ begin {
         If ($VerbosePreference -eq 'Continue'){
             $unknown_Dev | Format-Table}
 
-
+            
         $FoldersToImport = new-object System.Collections.ArrayList
 }
 
@@ -158,13 +160,13 @@ process{
             $url = "http://www.pcidatabase.com/search.php?device_search_str=$deviceID&device_search=Search"
             try {$res = Invoke-WebRequest $url -UserAgent InternetExplorer}
          catch [System.NotSupportedException]{Write-warning "You need to launch Internet Explorer once before running this";return}
-
-            $matches = ($res.ParsedHtml.getElementsByTagName('p') | select -expand innerHtml).Split()[1]
+         
+            $matches = ($res.ParsedHtml.getElementsByTagName('p') | select -expand innerHtml).Split()[1] 
             Write-Verbose "Found $matches matches"
 
             $htmlCells = $res.ParsedHtml.getElementsByTagName('tr')  | select -skip 4 -Property *html*
             Write-Debug "test `$htmlCells for the right values $htmlCells"
-
+            
             #
             $matchingDev = ($htmlCells.InnerHtml | Select-String -Pattern $vendorID | select -expand Line).ToString().Split("`n")
             if ($matchingDev.count -ge 1){
@@ -179,33 +181,9 @@ end{
     $FoldersToImport | select -Unique
 }
 }
-
-<#
-To do :
-
-Add parameter sets, where -CAB forces the user to specify a Cab path
-
-add support for unzipping actual cabs files
-
-rewrite help docs
-
-#>
-
-
-<#
-#experiemental weird stuff below
-
-#Finds infs with matching device IDs
-get-childitem $cabpath -recurse -include "*.inf" | select-string -pattern $deviceID -list| select Path
-
-#need to filter to include only those with matching $vendorId too
-$path = get-childitem $cabpath -recurse -include "*.inf" | select-string -pattern "ControlFlags" | gci | select-string $deviceID -list| gci | select-string -pattern $VendorID -list | Tee-Object -Variable Driver |  % {split-path $_.Path -Parent }
-
-#drivers / folders
-
-"The drivers for the device $($device.Name) appear to be $($driver.Filename -join ',') which are found in this dir: $path"
-#>
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

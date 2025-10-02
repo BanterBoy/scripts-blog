@@ -34,12 +34,14 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Get-ActiveDirectoryTombstonePeriod {
   <#
-
+  
     This function will get the Active Directory Tombstone Period.
-
+  
     Notes:
     - The tombstonelifetime period will default to 60 days if missing.
     - From Windows Server 2003 with Service Pack 1 (SP1), the default tombstonelifetime value is set
@@ -54,11 +56,11 @@ function Get-ActiveDirectoryTombstonePeriod {
       to adjust the value to what is appropriate for the Company's backup and recovery strategy.
       However, the value should at least be present to remove any confusion for future assessments and
       any functionality that may leverage the attribute in the future.
-
+  
     References:
     - http://blog.joeware.net/2006/07/21/476/
     - http://blog.joeware.net/2006/07/23/484/
-
+  
   #>
 
   [CmdletBinding()]
@@ -70,19 +72,21 @@ function Get-ActiveDirectoryTombstonePeriod {
   begin {
     Import-Module ActiveDirectory
   }
-
+  
   process {
     if ($Days -eq "" -OR $null -eq $Days) {
       $Days = "missing so will default to 60"
     }
   }
-
+  
   end {
     Write-Host -ForegroundColor green "The Active Directory Tombstone Period is $Days days."
   }
 
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

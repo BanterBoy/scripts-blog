@@ -60,6 +60,7 @@ This function requires the Active Directory module to be installed. If the modul
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -99,6 +100,7 @@ This function requires the Active Directory module to be installed. If the modul
 https://docs.microsoft.com/en-us/powershell/module/addsadministration/get-adobject
 
 #>
+#requires -PSEdition Desktop
 
 function Get-ADObjectAddress {
     [CmdletBinding(
@@ -129,9 +131,9 @@ function Get-ADObjectAddress {
         }
     }
 }
-
-# function to search all attributes of an AD User or Contact object for an email address and return the object properties if found
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

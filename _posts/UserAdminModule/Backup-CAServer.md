@@ -82,6 +82,7 @@ BEST PRACTICES
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
     .SYNOPSIS
@@ -142,26 +143,10 @@ function Backup-CAServer {
         Write-CAActivityLog -Message "ERROR: Failed to back up the CA server. Error: $_"
         throw
     }
-} {
-    [CmdletBinding()]
-    param ([string]$BackupPath = "C:\CA-Backup")
-    try {
-        # Ensure the backup directory exists
-        if (-not (Test-Path $BackupPath)) {
-            New-Item -Path $BackupPath -ItemType Directory -Force
-        }
-
-        # Perform the CA database and key backup
-        certutil -backupdb $BackupPath
-        certutil -backupkey $BackupPath
-        Write-CAActivityLog -Message "CA backup completed successfully. Database and keys backed up to: $BackupPath" -LogPath "C:\CA-Logs\backup.log"
-    }
-    catch {
-        Write-CAActivityLog -Message "ERROR: Failed to back up the CA server. Error: $_"
-        throw
-    }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

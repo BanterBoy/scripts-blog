@@ -50,6 +50,7 @@ Additional information about the function.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Set-TimeZoneID {
 	<#
@@ -136,6 +137,8 @@ function Set-TimeZoneID {
 	}
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

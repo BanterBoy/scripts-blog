@@ -46,7 +46,9 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Set-LDAPSBinding {
     param (
         [Parameter(Mandatory=$true)]
@@ -92,10 +94,9 @@ function Set-LDAPSBinding {
 
     Invoke-Command -ComputerName $DomainControllerFQDN -ScriptBlock $scriptBlock -ArgumentList $DomainControllerFQDN, $CertThumbprint -Credential $Credential -Verbose
 }
-
-# Example usage of the function:
-# Set-LDAPSBinding -DomainControllerFQDN "RDGDC01.rdg.co.uk" -CertThumbprint "9f580f463113ea7615847821ad3775d690c640d2" -Credential (Get-Credential) -Verbose
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

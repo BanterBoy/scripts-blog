@@ -34,17 +34,23 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
     .SYNOPSIS
 
+
     .DESCRIPTION
+
 
     .EXAMPLE
 
+
     .INPUTS
 
+
     .OUTPUTS
+
 
     .NOTES
     Author:     Luke Leigh
@@ -54,15 +60,21 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
     GitHubGist: https://gist.github.com/BanterBoy
 
     .LINK
+
+
 #>
+
 function New-QotD {
     [CmdletBinding()]
+
     $Uri = @{
         "QuoteOfTheDay" = "http://quotes.rest/qod"
     }
+
     $QuoteOfTheDay = Invoke-RestMethod -Method GET -Uri $Uri.QuoteOfTheDay -Headers @{
         'Content-Type' = 'application/json'
     }
+
     foreach ( $item in $QuoteOfTheDay ) {
         try {
         $QuoteOfTheDayProperties = $item | Select-Object -Property *
@@ -100,6 +112,8 @@ function New-QotD {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

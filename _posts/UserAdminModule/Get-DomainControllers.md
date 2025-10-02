@@ -34,7 +34,9 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Get-DomainControllers {
     [CmdletBinding()]
     Param(
@@ -47,11 +49,11 @@ function Get-DomainControllers {
         [String]
         $ComputerName
     )
-
+    
     begin {
-
+        
     }
-
+    
     process {
         try {
             Get-ADDomainController -Filter { Name -like $ComputerName } | Select-Object Name, operatingsystem, HostName, site, IsGlobalCatalog, IsReadOnly, IPv4Address -ErrorAction SilentlyContinue
@@ -61,13 +63,15 @@ function Get-DomainControllers {
             $theError.Exception
         }
     }
-
+    
     end {
-
+        
     }
 
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

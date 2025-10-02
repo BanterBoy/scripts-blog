@@ -68,6 +68,7 @@ Author: Luke Leigh Version: 1.1 Source: https://www.gov.uk/bank-holidays.json
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
     .SYNOPSIS
@@ -191,35 +192,9 @@ function Get-BankHolidays {
         }
     }
 }
-
-class Event {
-    [string] $title
-    [string] $date
-    [string] $notes
-    [bool] $bunting
-}
-
-class EnglandAndWales {
-    [string] $division
-    [Event[]] $events
-}
-
-class Scotland {
-    [string] $division
-    [Event[]] $events
-}
-
-class NorthernIreland {
-    [string] $division
-    [Event[]] $events
-}
-
-class BankHolidays {
-    [EnglandAndWales] $englandAndWales
-    [Scotland] $scotland
-    [NorthernIreland] $northernIreland
-}
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

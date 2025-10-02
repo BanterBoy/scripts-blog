@@ -60,8 +60,8 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-
 <#
 .SYNOPSIS
 Starts Microsoft Outlook.
@@ -81,6 +81,7 @@ Start-Outlook -UseOldVersion
 Starts the old version of Microsoft Outlook.
 
 #>
+#requires -PSEdition Desktop
 function Start-Outlook {
     param (
         [Parameter(Mandatory = $false, HelpMessage = "Use this switch to start the old version of Outlook.")]
@@ -92,6 +93,8 @@ function Start-Outlook {
     Write-Verbose -Message "Outlook has been started."
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

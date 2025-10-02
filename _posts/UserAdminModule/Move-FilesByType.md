@@ -52,6 +52,7 @@ Author: Your Name Date:   Current Date
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -104,10 +105,9 @@ function Move-FilesByType {
         Move-Item -Path $file.FullName -Destination $targetFilePath
     }
 }
-
-# Example Usage:
-# Move-FilesByType -baseDirectory "C:\Path\To\Your\Files"
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -29,24 +29,27 @@ Run this from a non-elevated console to quickly open an admin terminal without n
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function New-AdminTerminal {
     <#
-        .Synopsis
-        Starts an Elevated Microsoft Terminal.
+	.Synopsis
+	Starts an Elevated Microsoft Terminal.
 
-        .Description
-        Opens a new Microsoft Terminal Elevated as Administrator. If the user is already running an elevated
-        Microsoft Terminal, a message is displayed in the console session.
+	.Description
+	Opens a new Microsoft Terminal Elevated as Administrator. If the user is already running an elevated
+	Microsoft Terminal, a message is displayed in the console session.
 
-        .Example
-        New-AdminShell
+	.Example
+	New-AdminShell
 
-        #>
+	#>
 
-        Start-Process "wt.exe" -ArgumentList "-p pwsh" -Verb runas -PassThru
+	Start-Process "wt.exe" -ArgumentList "-p pwsh" -Verb runas -PassThru
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

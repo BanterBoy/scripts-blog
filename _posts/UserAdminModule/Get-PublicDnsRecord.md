@@ -34,6 +34,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 Function Get-PublicDnsRecord {
     <#
@@ -67,7 +68,7 @@ Function Get-PublicDnsRecord {
         [String[]]$DnsRecordType
     )
 
-    DynamicParam {
+    DynamicParam {        
         $AttribColl = New-Object -TypeName System.Collections.ObjectModel.Collection[System.Attribute]
         $ParamAttrib = New-Object -TypeName System.Management.Automation.ParameterAttribute
         $ParamAttrib.Mandatory = $false
@@ -90,7 +91,7 @@ Function Get-PublicDnsRecord {
         ForEach ($Record in $DnsRecordType) {
             Try {
                 $WebUrl = 'http://www.dns-lg.com/{0}/{1}/{2}' -f $Node, $DomainName, $Record
-
+                
                 Write-Verbose -Message "Constructed URL for query is $WebUrl."
 
                 $WebData = Invoke-WebRequest -Uri $WebUrl -ErrorAction Stop | Select-Object -ExpandProperty Content | ConvertFrom-Json | Select-Object -ExpandProperty answer
@@ -117,6 +118,8 @@ Function Get-PublicDnsRecord {
     End {}
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

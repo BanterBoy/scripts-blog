@@ -60,63 +60,8 @@ Author: Your Name Date:   Current Date
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-<#
-.SYNOPSIS
-	Installs or uninstalls PSTools.
-
-.DESCRIPTION
-	This script contains two functions: Install-PSTools and Uninstall-PSTools.
-	Install-PSTools downloads and installs PSTools if it is not already installed.
-	Uninstall-PSTools removes PSTools from the system.
-
-.PARAMETER Uninstall
-	Specifies whether to uninstall PSTools. If this switch is provided, the script will call the Uninstall-PSTools function.
-
-.INPUTS
-	None.
-
-.OUTPUTS
-	None.
-
-.EXAMPLE
-	Install-PSTools
-	Installs PSTools if it is not already installed.
-
-.EXAMPLE
-	Install-PSTools -Uninstall
-	Uninstalls PSTools from the system.
-
-.NOTES
-	Author: Your Name
-	Date:   Current Date
-#>
-
-function Uninstall-PSTools {
-	[CmdletBinding(SupportsShouldProcess = $true)]
-	param()
-
-	if ($PSCmdlet.ShouldProcess('PSTools', 'Uninstall')) {
-		Write-Verbose "Checking if PSTools is installed..."
-		if (!(Test-Path 'C:\Program Files\Sysinternals\PsExec.exe')) {
-			Write-Verbose "PSTools is not installed."
-			return
-		}
-
-		try {
-			Write-Verbose "Removing PSTools from 'C:\Program Files\Sysinternals\'..."
-			Remove-Item -Path 'C:\Program Files\Sysinternals\' -Recurse -Force -ErrorAction Stop
-
-			Write-Verbose "Removing 'C:\Program Files\Sysinternals\' from system and user 'Path'..."
-			Remove-EnvPath -Path 'C:\Program Files\Sysinternals\' -Container 'Machine'
-			Remove-EnvPath -Path 'C:\Program Files\Sysinternals\' -Container 'User'
-		}
-		catch {
-			Write-Error "An error occurred: $_"
-		}
-	}
-}
-
 function Install-PSTools {
 	[CmdletBinding(SupportsShouldProcess = $true)]
 	param(
@@ -179,6 +124,8 @@ function Install-PSTools {
 	}
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

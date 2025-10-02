@@ -52,6 +52,7 @@ Author: Your Name Date: 2024-06-30
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -140,10 +141,9 @@ function New-SecurePassword {
 
     end {}
 }
-
-# Example call to the function with verbose output
-# New-SecurePassword -length 16 -minUpperCase 2 -minLowerCase 2 -minDigits 2 -minSpecialChars 2 -Verbose
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

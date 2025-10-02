@@ -42,7 +42,9 @@ This section will, in the near future, contain one or more examples of the scrip
 
 This section can of course be copied in part or full. You can download the entire script by clicking the button in the download section.
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Add-ADUsertoLocalGroup {
     [CmdletBinding(DefaultParameterSetName = 'Default',
         HelpURI = 'https://scripts.lukeleigh.com/useradminmodule/adfunctions/add-adusertolocalgroup/')]
@@ -56,9 +58,9 @@ function Add-ADUsertoLocalGroup {
     ([ADSI]"WinNT://$ComputerName/$LocalGroupName,group").Add("WinNT://$domainName/$UserName")
 
 }
-
-# Write-Host "User $domainName\$userName is now member of local group $localGroupName on $computerName."
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

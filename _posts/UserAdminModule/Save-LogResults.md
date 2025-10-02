@@ -52,6 +52,7 @@ Author: John Doe Date: 01/01/2022
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Save-LogResults {
 
@@ -127,10 +128,9 @@ function Save-LogResults {
         Write-Verbose -Message "Finished logging results to $Report"
     }
 }
-
-# Example Usage:
-# Save-LogResults -OldFiles $OldFiles -ReportPath "C:\Reports" -Summary "Script completed successfully." -Verbose
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

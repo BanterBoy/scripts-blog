@@ -62,6 +62,7 @@ Author: Luke's Automation Helper (ChatGPT) Requires: Exchange Management Shell
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -170,6 +171,8 @@ Run this function in an Exchange Management Shell session or load the Exchange m
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

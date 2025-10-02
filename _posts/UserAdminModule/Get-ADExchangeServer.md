@@ -34,16 +34,17 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 Function Get-ADExchangeServer {
     [CmdletBinding()]
     Param(
         [Parameter(Position = 0)]
         [Management.Automation.PSCredential]$credential,
-
+  
         [Parameter(Position = 1)]
         [String]$server,
-
+  
         [Parameter(Position = 2)]
         [String]$siteName
     )
@@ -68,7 +69,7 @@ Function Get-ADExchangeServer {
             }
             Write-Output $roleList
         }
-
+  
         $adParameters = @{
             ErrorAction = 'Stop';
         }
@@ -90,7 +91,7 @@ Function Get-ADExchangeServer {
             }
             $rootDse = Get-ADRootDse @adParameters
             $adParameters.Add('SearchBase', $rootDse.ConfigurationNamingContext)
-
+  
             if ($PSBoundParameters.ContainsKey('siteName')) {
                 Write-Verbose "Getting Site: $siteName"
                 $site = Get-ADObject @adParameters `
@@ -102,14 +103,14 @@ Function Get-ADExchangeServer {
                 $filter = "$filter -and msExchServerSite -eq '$($site.DistinguishedName)'"
             }
             $adParameters.Add('Filter', $filter)
-
+  
             $exchServers = Get-ADObject @adParameters `
                 -Properties $adExchProperties
-
+  
             foreach ($exServer in $exchServers) {
                 $roles = ConvertToExchangeRole -roles $exServer.msExchCurrentServerRoles
-
-                $fqdn = ($exServer.networkAddress |
+  
+                $fqdn = ($exServer.networkAddress | 
                     Where-Object { $_ -like 'ncacn_ip_tcp:*' }).Split(':')[1]
                 New-Object -TypeName PSObject -Property @{
                     Name              = $exServer.Name;
@@ -127,88 +128,9 @@ Function Get-ADExchangeServer {
     }
     End {}
 }
-
-Function Connect-ExchangeServer {
-    [CmdletBinding(DefaultParameterSetName = 'enumerate')]
-    Param(
-        [Parameter(Position = 0, Mandatory = $true, ParameterSetName = 'name')]
-        [String]$name,
-
-        [Parameter(Position = 0, ParameterSetName = 'Enumerate')]
-        [Bool]$enumerate = $true,
-
-        [Parameter(Position = 1)]
-        [Management.Automation.PSCredential]$credential,
-
-        [Parameter(Position = 2)]
-        [String]$domainController,
-
-
-        [Parameter(Position = 3, ParameterSetName = 'Enumerate')]
-        [String]$siteName
-    )
-    Begin {
-        $adParameters = @{
-            ErrorAction = 'Stop';
-        }
-    }
-    Process {
-        if ($PSBoundParameters.ContainsKey('credential')) {
-            $adParameters.Add('credential', $credential)
-        }
-        if ($PSBoundParameters.ContainsKey('domainController')) {
-            $adParameters.Add('server', $domainController)
-        }
-        if ($PSBoundParameters.ContainsKey('siteName')) {
-            $adParameters.Add('siteName', $siteName)
-        }
-        Try {
-            if ($enumerate) {
-                Write-Verbose "Getting list of Exchange Servers"
-                $exchServers = Get-ADExchangeServer @adParameters
-            }
-            else {
-                $exchServers = New-Object -TypeName PSObject -Property @{
-                    DnsHostName = $name;
-                }
-            }
-            $winrmParameters = @{
-                'ErrorAction' = 'Stop';
-            }
-
-            $snParameters = @{
-                'ErrorAction'       = 'Stop';
-                'ConfigurationName' = 'Microsoft.Exchange';
-            }
-            if ($adParameters.credential) {
-                $snParameters.Add('Credential', $adParameters.Credential)
-            }
-            foreach ($exServer in $exchServers) {
-                Try {
-                    Write-Verbose "Testing WinRm: $($exServer.DnsHostName)"
-                    $winrm = Test-WSMan @winrmParameters `
-                        -ComputerName $exServer.DnsHostName
-                    if ($winrm) {
-                        Write-Verbose "Connecting to: $($exServer.DnsHostName)"
-                        $exSn = New-PSSession @snParameters `
-                            -ConnectionUri "http://$($exServer.DnsHostName)/powershell"
-                    }
-                    return $exSn
-                }
-                Catch {
-                    $errMsg = "Server: $($exServer.DnsHostName)] $($_.Exception.Message)"
-                    Write-Error -Message $errMsg
-                    continue
-                }
-            }
-        }
-        Catch {
-            Write-Error $_
-        }
-    }
-    End {}
-}
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

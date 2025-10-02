@@ -34,14 +34,16 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <# Ejecting CD Drive
 	All Versions of PowerShell
 	Here is a fun little function that uses WMI to eject your CD drive.
 	It does so by first asking WMI for all CD drives. It then uses the
 	explorer object model to navigate to the drive and call its context
-	menu item "Eject":
+	menu item “Eject”:
 #>
+#requires -PSEdition Desktop
 function Open-CDTray {
     $drives = Get-WmiObject Win32_Volume -Filter "DriveType=5"
     if ($null -eq $drives) {
@@ -52,8 +54,9 @@ function Open-CDTray {
         (New-Object -ComObject Shell.Application).Namespace(17).ParseName($_.Name).InvokeVerb("Eject")
     }
 }
-Open-CDTray
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

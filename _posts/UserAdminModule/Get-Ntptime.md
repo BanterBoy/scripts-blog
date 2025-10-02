@@ -34,7 +34,9 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 Function Get-NtpTime ( [String]$NTPServer ) {
     # Build NTP request packet. We'll reuse this variable for the response packet
     $NTPData = New-Object byte[] 48  # Array of 48 bytes set to zero
@@ -61,6 +63,8 @@ Function Get-NtpTime ( [String]$NTPServer ) {
     ( [datetime]'1/1/1900' ).AddSeconds( $Seconds ).ToLocalTime()
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

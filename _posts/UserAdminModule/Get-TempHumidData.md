@@ -31,6 +31,7 @@ Ensure `Set-ConsoleConfig` is available in your session and that the network sha
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 Function Get-TempHumidData {
     Set-ConsoleConfig -WindowHeight 2 -WindowWidth 45
@@ -39,11 +40,9 @@ Function Get-TempHumidData {
     Clear-Host
     Get-TempHumidData
 }
-
-Function Restore-Console {
-    Set-ConsoleConfig -WindowHeight 40 -WindowWidth 150
-}
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

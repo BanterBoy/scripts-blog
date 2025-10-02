@@ -52,6 +52,7 @@ Author: Your Name Date: 2024-06-30
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -72,6 +73,7 @@ Author: Your Name Date: 2024-06-30
     Date: 2024-06-30
 #>
 
+#requires -PSEdition Desktop
 function Test-DisplayName {
     [CmdletBinding()]
     param(
@@ -105,10 +107,9 @@ function Test-DisplayName {
         Write-Verbose "Test-DisplayName function completed."
     }
 }
-
-# Example call to the function with verbose output
-# Test-DisplayName -DisplayName "John Doe" -Verbose
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

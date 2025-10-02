@@ -30,7 +30,9 @@ Use the output to determine whether to call the enable or disable helpers before
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Get-RDPStatusCIM {
     # Do you care to check if it is currently enabled or disabled before acting? Use the below code.
     [CmdletBinding()]
@@ -47,9 +49,11 @@ function Get-RDPStatusCIM {
         if ($tsobj.AllowTSConnections -eq '0') {
             Write-Output "RDP Disabled"
         }
-    }
+    } 
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

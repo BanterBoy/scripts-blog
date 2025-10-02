@@ -30,7 +30,9 @@ Combine this diagnostic with the enable/disable functions to keep legacy systems
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Get-RDPStatusWMI {
     # Do you care to check if it is currently enabled or disabled before acting? Use the below code.
     [CmdletBinding()]
@@ -47,9 +49,11 @@ function Get-RDPStatusWMI {
         if ($tsobj.AllowTSConnections -eq '0') {
             Write-Output "RDP Disabled"
         }
-    }
+    } 
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

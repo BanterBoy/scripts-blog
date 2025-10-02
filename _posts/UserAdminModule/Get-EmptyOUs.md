@@ -60,48 +60,8 @@ This function requires the Active Directory module to be installed. It should be
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-<#
-.SYNOPSIS
-    Retrieves and optionally removes empty Active Directory Organizational Units (OUs).
-
-.DESCRIPTION
-    The Get-EmptyOUs function retrieves all organizational units (OUs) in Active Directory and checks if they are empty.
-    It can optionally remove the empty OUs if specified.
-
-.PARAMETER RemoveOUs
-    Specifies whether to remove the empty OUs. If set to $true, the empty OUs will be removed. If set to $false, the empty OUs will be listed but not removed. Default is $false.
-
-.PARAMETER OUsToKeep
-    Specifies an array of distinguished names (DNs) of OUs to exclude from removal. These OUs will be skipped even if they are empty.
-
-.OUTPUTS
-    If RemoveOUs is set to $false, the function outputs the distinguished names (DNs) of the empty OUs.
-    If RemoveOUs is set to $true, the function outputs the total number of empty OUs removed and the total number of empty OUs found.
-
-.EXAMPLE
-    Get-EmptyOUs -RemoveOUs $false
-    Retrieves and lists the distinguished names (DNs) of the empty OUs without removing them.
-
-.EXAMPLE
-    Get-EmptyOUs -RemoveOUs $true -OUsToKeep "OU=TestOU,DC=example,DC=com"
-    Retrieves and removes the empty OUs, excluding the OU with the specified distinguished name.
-
-.NOTES
-    This function requires the Active Directory module to be installed. It should be run with appropriate permissions to manage OUs in Active Directory.
-#>
-
-function Get-EmptyOUs {
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory = $false)]
-        [bool]$RemoveOUs = $false,
-        [Parameter(Mandatory = $false)]
-        [string[]]$OUsToKeep = @()
-    )
-
-    # Rest of the code...
-}
 function Get-EmptyOUs {
     
     [CmdletBinding()]
@@ -172,6 +132,8 @@ function Get-EmptyOUs {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

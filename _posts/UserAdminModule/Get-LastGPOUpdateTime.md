@@ -60,6 +60,7 @@ Author: Your Name Date: Today's Date Version: 1.0
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -91,6 +92,7 @@ Author: Your Name
 Date: Today's Date
 Version: 1.0
 #>
+#requires -PSEdition Desktop
 function Get-LastGPOUpdateTime {
     [CmdletBinding()]
     param (
@@ -133,6 +135,8 @@ function Get-LastGPOUpdateTime {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

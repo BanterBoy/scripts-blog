@@ -68,6 +68,7 @@ This function requires administrative privileges to register the scheduled task 
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -121,6 +122,7 @@ Creates a new scheduled task named "EnrollDCCertificate" that runs the script "C
 .NOTES
 This function requires administrative privileges to register the scheduled task with the Windows Task Scheduler.
 #>
+#requires -PSEdition Desktop
 function New-ScheduledScript {
     [CmdletBinding()]
     param (
@@ -265,6 +267,8 @@ function New-ScheduledScript {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

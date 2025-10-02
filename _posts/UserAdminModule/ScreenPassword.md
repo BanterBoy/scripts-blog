@@ -34,14 +34,16 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function ScreenPassword($instance) {
     if (!($instance.screensaversecure)) { return $instance.name }
     <additional statements>
 }
-
-foreach ($a in @(get-wmiobject win32_desktop)) { ScreenPassword($a) }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

@@ -62,6 +62,7 @@ Retrieves users with duplicate Exchange distinguished names (DNs) without removi
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -201,15 +202,9 @@ function Get-DuplicateExchangeDN {
         RemovedEntries  = $removedEntries
     }
 }
-
-# Usage example:
-# $result = Get-DuplicateExchangeDN
-# $result.DetailedEntries | Format-List
-
-# To remove duplicates and get details of removed entries
-# $result = Get-DuplicateExchangeDN -RemoveDuplicate -Verbose
-# $result.RemovedEntries | Format-Table -AutoSize
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -52,6 +52,7 @@ Author: Your Name Date: June 30, 2024
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -127,6 +128,8 @@ function Export-Functions {
     Write-Output "Exported $($functionAsts.Count) functions to $OutputDirectory"
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

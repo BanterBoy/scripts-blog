@@ -34,16 +34,18 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-#########################################################
-#
-# Name: Search-GPOsForString.ps1
-# Author: Tony Murray
-# Version: 1.0
-# Date: 13/07/2016
-# Comment: Simple search for GPOs within a domain
-# that match a given string
-########################################################
+######################################################### 
+# 
+# Name: Search-GPOsForString.ps1 
+# Author: Tony Murray 
+# Version: 1.0 
+# Date: 13/07/2016 
+# Comment: Simple search for GPOs within a domain 
+# that match a given string 
+######################################################## 
+#requires -PSEdition Desktop
 
 function Search-GPOsForString {
     [CmdletBinding()]
@@ -51,21 +53,23 @@ function Search-GPOsForString {
         [string]$SearchText
     )
 
-    $DomainName = $env:USERDNSDOMAIN
+    $DomainName = $env:USERDNSDOMAIN 
     Import-Module GroupPolicy
-    $allGposInDomain = Get-GPO -All -Domain $DomainName
+    $allGposInDomain = Get-GPO -All -Domain $DomainName 
 
-    foreach ($gpo in $allGposInDomain) {
-        $report = Get-GPOReport -Guid $gpo.Id -ReportType Xml
-        if ($report -match ([regex]::Escape("$SearchText")) ) {
+    foreach ($gpo in $allGposInDomain) { 
+        $report = Get-GPOReport -Guid $gpo.Id -ReportType Xml 
+        if ($report -match ([regex]::Escape("$SearchText")) ) { 
             Write-Warning "Match found in: $($gpo.DisplayName)"
-        }
-        else {
-            # Write-Warning "No match in: $($gpo.DisplayName)"
+        } 
+        else { 
+            # Write-Warning "No match in: $($gpo.DisplayName)" 
         }
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

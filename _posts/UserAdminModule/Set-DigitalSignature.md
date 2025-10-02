@@ -52,6 +52,7 @@ Author: Luke Leigh Last Edit: 2024-06-30
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Set-DigitalSignature {
 
@@ -135,10 +136,9 @@ function Set-DigitalSignature {
         Write-Verbose "Digital signature process completed."
     }
 }
-
-# Example usage:
-# Set-DigitalSignature -Path "C:\Users\Administrator\Desktop\UnsignedScript.ps1" -Verbose
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

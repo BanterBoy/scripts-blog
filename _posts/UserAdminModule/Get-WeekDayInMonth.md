@@ -34,7 +34,9 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 Function Get-WeekDayInMonth ([int]$Month, [int]$year, [int]$WeekNumber, [int]$WeekDay) {
     $FirstDayOfMonth = Get-Date -Year $year -Month $Month -Day 1 -Hour 0 -Minute 0 -Second 0
 
@@ -51,7 +53,7 @@ Function Get-WeekDayInMonth ([int]$Month, [int]$year, [int]$WeekNumber, [int]$We
         $DaysToAdd = $Difference
     }
     $FirstWeekDayofMonth = $FirstDayOfMonth.AddDays($DaysToAdd)
-
+    
     Remove-Variable DaysToAdd
     #Add Weeks
     $DaysToAdd = ($WeekNumber - 1) * 7
@@ -62,6 +64,8 @@ Function Get-WeekDayInMonth ([int]$Month, [int]$year, [int]$WeekNumber, [int]$We
     $TheDay
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

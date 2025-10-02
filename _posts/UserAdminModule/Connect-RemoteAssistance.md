@@ -52,6 +52,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 # Description: Connect to a remote computer using Remote Assistance
 # $Computer = "skywalker"
@@ -74,6 +75,7 @@ Connects to the remote computer named "skywalker" using Remote Assistance.
 
 #>
 
+#requires -PSEdition Desktop
 function Connect-RemoteAssistance {
     [CmdletBinding()]
     param (
@@ -85,6 +87,8 @@ function Connect-RemoteAssistance {
 
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

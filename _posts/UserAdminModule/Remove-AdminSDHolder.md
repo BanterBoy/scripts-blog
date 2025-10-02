@@ -34,9 +34,11 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Remove-AdminSDHolder {
-
+    
     [CmdletBinding(
         SupportsShouldProcess = $true,
         PositionalBinding = $true,
@@ -55,16 +57,18 @@ function Remove-AdminSDHolder {
     BEGIN { }
 
     PROCESS {
-        Set-ADUser $SamAccountName -Remove @{adminCount = 1 }
+        Set-ADUser $SamAccountName -remove @{adminCount = 1 }
         $user = Get-ADUser $SamAccountName -properties ntsecuritydescriptor
         $user.ntsecuritydescriptor.SetAccessRuleProtection($false, $true)
-        Set-ADUser $SamAccountName -Replace @{ntsecuritydescriptor = $user.ntsecuritydescriptor }
+        Set-ADUser $SamAccountName -replace @{ntsecuritydescriptor = $user.ntsecuritydescriptor }
     }
 
     END { }
 
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

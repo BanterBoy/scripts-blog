@@ -34,26 +34,27 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-<#
+<#	
 	.NOTES
 	===========================================================================
 	 Created on:   	11/15/2018 11:56 AM
 	 Created by:   	Bradley Wyatt
-	 Filename:      Sync-Office365ToADDS.ps1
+	 Filename:      Sync-Office365ToADDS.ps1	
 	===========================================================================
 	.REQUIREMENTS
 		MSONLINE Module (Install-Module MSOnline)
 			*Will install it automatically if not present
 	.DESCRIPTION
-		The PowerShell function will connect to your Office 365 / AzureAD and can re-create your Users, Groups, and Contacts in Active Directory.
+		The PowerShell function will connect to your Office 365 / AzureAD and can re-create your Users, Groups, and Contacts in Active Directory. 
 		This is extremly helpful if you are looking to change your identity source from Office 365 (AzureAD) to Active Directory and then have Active Directory sync up to Office 365.
 
 		This will also re-create Distribution, Security, and Mail-Enabled Security Groups and also populate the membership and owner (managed by). Distribution and Mail-Enabled security groups will SMTP match when you configure AADConnect.
 
 		Attributes:
-		If Azure AD finds an object where the attribute values are the same for an object coming from Connect (Active Directory) and that it is already present in Azure AD, then the object in Azure AD is taken over by Connect.
-		The previously cloud-managed object is flagged as on-premises managed. All attributes in Azure AD with a value in on-premises AD are overwritten with the on-premises value. The exception is when an attribute has a NULL value on-premises.
+		If Azure AD finds an object where the attribute values are the same for an object coming from Connect (Active Directory) and that it is already present in Azure AD, then the object in Azure AD is taken over by Connect. 
+		The previously cloud-managed object is flagged as on-premises managed. All attributes in Azure AD with a value in on-premises AD are overwritten with the on-premises value. The exception is when an attribute has a NULL value on-premises. 
 		In this case, the value in Azure AD remains, but you can still only change it on-premises to something else.
 
 		USER ATTRIBUTES IT WILL COPY OVER
@@ -62,7 +63,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 		- Display Name
 		- User Principal Name
 		- Email Address
-		- Proxy Addresses
+		- Proxy Addresses 
 			- SMTP
 			- SPO
 			- SIP
@@ -75,7 +76,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 		MAIL CONTACT ATTRIBUTES IT WILL COPY OVER
 		- Display Name
-		- External Email
+		- External Email 
 		- Proxy Addresses
 		- First Name
 		- Last Name
@@ -83,7 +84,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 		DISTRIBUTION GROUP ATTRIBUTES IT WILL COPY OVER
 		- Name
 		- Display Name
-		- Primary SmtpAddress
+		- Primary SmtpAddress 
 		- Proxyaddresses
 		- Description
 		- Members
@@ -92,7 +93,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 		MAIL-ENABLED SECURITY GROUP ATTRIBUTES IT WILL COPY OVER
 		- Name
 		- Display Name
-		- Primary SmtpAddress
+		- Primary SmtpAddress 
 		- Description
 		- Members
 		- Group Owner (Managed By)
@@ -100,7 +101,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 		SECURITY GROUP ATTRIBUTES IT WILL COPY OVER
 		- Name
 		- Display Name
-		- Primary SmtpAddress
+		- Primary SmtpAddress 
 		- Description
 		- Members
 		- Group Owner (Managed By)
@@ -152,8 +153,9 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 	.EXAMPLE
 		Sync-Office365ToADDS -SyncUsers -PaswordForAllUsers "Temp123" "OU=Users,OU=Chicago,DC=lazyadmin,DC=com"
-
+		
 #>
+#requires -PSEdition Desktop
 function Sync-Office365ToADDS {
 	[CmdletBinding()]
 	Param (
@@ -173,40 +175,40 @@ function Sync-Office365ToADDS {
 		[switch]$SyncSecurityGroups,
 		[string]$SecurityGroupsOU
 	)
-
+	
 	function Connect-O365 {
 		$UserCredential = Get-Credential
 		$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://ps.outlook.com/powershell/" -Credential $UserCredential -Authentication Basic -AllowRedirection
 		Import-PSSession $Session
 		Connect-MsolService -Credential $UserCredential
 	}
-
+	
 	If (($SyncUsers -eq $True) -and (($PasswordForAllUsers).Length -lt 1)) {
 		Do {
 			$PasswordForAllUsers = Read-Host -Prompt "Please enter a password that will be set for all users synced from Office 365. This password will be converted to secure.string"
-
+			
 		}
 		Until (($PasswordForAllUsers).Length -gt 0)
 	}
-
+	
 	Write-Host "Checking to see if already connected to AzureAD"
 	$AzureConnect = Get-AzureADTenantDetail -ErrorAction SilentlyContinue
 	If ($null -eq $AzureConnect) {
-
+		
 		Write-Host "Checking to see if AzureAD Module is present" -ForegroundColor Green
 		$AzureADCheck = get-module -ListAvailable | Where-object { $_.name -like "*azuread*" }
 		If ($Null -eq $AzureADCheck) {
 			Write-Warning "AzureAd module is not present, attempting to install it"
 			Install-Module AzureAd -Force
-
+			
 		}
 		Write-Host "Importing AzureAd Module"
 		Import-Module AzureAd
-
+		
 		Write-Host "Connecting to AzureAd"
 		Connect-AzureAD
 	}
-
+	
 	$MSOnlineConnect = Get-MsolCompanyInformation -ErrorAction SilentlyContinue
 	If ($null -eq $MSOnlineConnect) {
 		Write-Host "Checking to see if MSOnline Module is present" -ForegroundColor Green
@@ -214,20 +216,20 @@ function Sync-Office365ToADDS {
 		If ($Null -eq $MSOnlineCheck) {
 			Write-Warning "MSOnline module is not present, attempting to install it"
 			Install-Module Msonline -Force
-
+			
 		}
 		Write-Host "Importing MSOnline Module"
 		Import-Module MSOnline
-
+		
 		Write-Host "Connecting to MSOnline" -ForegroundColor DarkMagenta
 		Connect-O365
-
+		
 	}
-
+	
 	Write-Host "###############################" -ForegroundColor Green
 	Write-Host "#         DOMAINS             #" -ForegroundColor Green
 	Write-Host "###############################" -ForegroundColor Green
-
+	
 	#Get all domains in Office 365 tenant, do not grab the onmicrosoft domain. Add all the Domains as valid UPN suffixes in AD
 	$Domains = Get-MsolDomain | Where-Object { $_.Name -notlike "*.onmicrosoft.com*" } | Select-Object -ExpandProperty Name
 	foreach ($Domain in $Domains) {
@@ -239,15 +241,15 @@ function Sync-Office365ToADDS {
 		Write-Host "###############################" -ForegroundColor Green
 		Write-Host "#          USERS              #" -ForegroundColor Green
 		Write-Host "###############################" -ForegroundColor Green
-
+		
 		$Password = ConvertTo-SecureString $Passwordforallusers -AsPlainText -Force
-
+		
 		#Get all of the Office 365 Users
 		#Conditional to remove the account AADConnect will use. You will see this account synced if Office 365 was previously synced to Office 365. This account will be created automatically when you use express settings in the AADConnect wizard
 		$Users = Get-Msoluser -All | Where-Object { $_.DisplayName -notlike "On-Premises Directory Synchronization Service Account" }
 		foreach ($User in $Users) {
 			Write-Host "Working on the user, '$($User.DisplayName)'" -ForegroundColor Green
-
+			
 			Write-Host "Storing the user in a var"
 			$ADUser = Get-ADUser -Filter * | Where-Object { $_.Name -eq $user.DisplayName } -ErrorAction SilentlyContinue
 			Write-Host "Checking to see if $($user.displayname) is already present in Active Directory"
@@ -255,12 +257,12 @@ function Sync-Office365ToADDS {
 				write-host "$($user.displayname) is present in Active Directory, Skipping!"
 			}
 			Else {
-
+				
 				write-host "$($user.displayname) is not present in Active Directory"
-
-
+				
+				
 				Write-Host "Working on $($User.DisplayName)..." -ForegroundColor Yellow
-
+				
 				#Var for priamry e-mail address
 				$PrimEMail = Get-MSOLUser -UserPrincipalName $user.UserPrincipalName | Select-Object -ExpandProperty ProxyAddresses | Where-Object { $_ -cmatch '^SMTP:' }
 				#Var for all the alias e-mail addresses
@@ -311,7 +313,7 @@ function Sync-Office365ToADDS {
 					Write-Host "Adding the SIP address, '$SIP' for user, '$($User.DisplayName)'"
 					$ADUser | Set-ADUser -Add @{ Proxyaddresses = "$SIP" }
 				}
-
+				
 				#Set the primary e-mail address
 				Write-Host "Adding the primary email address $PrimEMail for $($User.DisplayName)"
 				$ADUser | Set-ADUser -Add @{ Proxyaddresses = "$PrimEMail" }
@@ -360,9 +362,9 @@ function Sync-Office365ToADDS {
 				write-host "$($MailContact.displayname) is present in Active Directory, Skipping!"
 			}
 			Else {
-
+				
 				Write-Host "$($MailContact.displayname) not found in Active Directory, creating..."
-
+				
 				Write-Host "Creating mail contact, '$($Mailcontact.DisplayName)'" -ForegroundColor Yellow
 				New-ADObject -name $mailcontact.displayname -DisplayName $mailcontact.displayname -type contact -OtherAttributes @{ 'mail' = $mailcontactexternalemail; 'givenName' = $Mailcontactfirstname; 'sn' = $Mailcontactlastname; 'Proxyaddresses' = $mailcontactexternalemail }
 			}
@@ -412,7 +414,7 @@ function Sync-Office365ToADDS {
 				}
 				Else {
 					New-ADGroup -Name $Group.DisplayName -SamAccountName $GroupSAMAccountName -GroupCategory "Distribution" -GroupScope Global -DisplayName $Group.DisplayName -OtherAttributes @{ 'mail' = $group.PrimarySmtpAddress } -Description $Group.Description
-
+					
 				}
 			}
 			Write-Host "Getting members for Distribution group, '$($Group.DisplayName)'"
@@ -423,7 +425,7 @@ function Sync-Office365ToADDS {
 			Else {
 				foreach ($Member in $Members) {
 					Write-Host "Adding $($Member.Name) to the group, '$($Group.Name)'"
-
+					
 					$AddMember = Get-ADObject -Filter * | Where-Object { $_.Name -eq $member.DisplayName }
 					If ($null -eq $AddMember) {
 						Write-Warning "$($Member.Name) was not found in Active Directory and could not be added as a member to $($Group.DisplayName)"
@@ -614,6 +616,8 @@ function Sync-Office365ToADDS {
 	}
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

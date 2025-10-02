@@ -80,6 +80,7 @@ Retrieves all BitLocker recovery information in the domain.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -133,6 +134,7 @@ Returns a custom object with the following properties:
 .LINK
 https://learn.microsoft.com/en-us/powershell/module/activedirectory/
 #>
+#requires -PSEdition Desktop
 
 function Get-LapsAndBitLocker {
     [CmdletBinding()]
@@ -224,6 +226,8 @@ function Get-LapsAndBitLocker {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
