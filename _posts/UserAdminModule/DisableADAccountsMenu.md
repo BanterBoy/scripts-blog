@@ -91,26 +91,26 @@ function DisableADAccountsMenu {
     Import-Module PSMenu
 
     # Define the actions
-    function Disable-KurtisMarsden {
-        Disable-ADAccount -Identity kurtismarsden.admin
-        Write-Output "Account kurtismarsden.admin has been disabled."
+    function Disable-JohnSmith {
+        Disable-ADAccount -Identity JohnSmith.admin
+        Write-Output "Account JohnSmith.admin has been disabled."
     }
 
-    function Disable-JamieBeale {
-        Disable-ADAccount -Identity jamiebeale.admin
-        Write-Output "Account jamiebeale.admin has been disabled."
+    function Disable-JackDaniels {
+        Disable-ADAccount -Identity JackDaniels.admin
+        Write-Output "Account JackDaniels.admin has been disabled."
     }
 
-    function Disable-LukeLeigh {
-        Disable-ADAccount -Identity lukeleigh.admin
-        Write-Output "Account lukeleigh.admin has been disabled."
+    function Disable-GeoffGeoffries {
+        Disable-ADAccount -Identity GeoffGeoffries.admin
+        Write-Output "Account GeoffGeoffries.admin has been disabled."
     }
 
     # Create the menu items
     $menuItems = @(
-        "Disable Kurtis Marsden Account",
-        "Disable Jamie Beale Account",
-        "Disable Luke Leigh Account",
+        "Disable John Smith Account",
+        "Disable Jack Daniels Account",
+        "Disable Geoff Geoffries Account",
         $(Get-MenuSeparator),
         "Exit"
     )
@@ -120,9 +120,9 @@ function DisableADAccountsMenu {
 
     # Use the correct comparison operator and check the value of $Menu
     switch ($Menu) {
-        0 { Disable-KurtisMarsden }
-        1 { Disable-JamieBeale }
-        2 { Disable-LukeLeigh }
+        0 { Disable-JohnSmith }
+        1 { Disable-JackDaniels }
+        2 { Disable-GeoffGeoffries }
         default { Write-Output "Nothing Selected" }
     }
 }
