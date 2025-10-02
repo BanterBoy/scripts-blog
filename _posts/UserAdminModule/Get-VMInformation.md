@@ -112,7 +112,11 @@ function Get-VMInformation {
     BEGIN {}
 
     PROCESS {
-        $VMs = Get-VM -Server $vCenter -Name $Name
+        if ([string]::IsNullOrEmpty($Name)) {
+            $VMs = Get-VM -Server $vCenter
+        } else {
+            $VMs = Get-VM -Server $vCenter -Name $Name
+        }
 
         $Count = $VMs.Count
         $i = 1
