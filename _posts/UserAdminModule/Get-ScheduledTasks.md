@@ -98,6 +98,7 @@ Retrieves all scheduled tasks run as "SYSTEM" from Server1.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -162,6 +163,7 @@ Retrieves all scheduled tasks run as "SYSTEM" from Server1.
 .LINK
     http://scripts.lukeleigh.com/
 #>
+#requires -PSEdition Desktop
 function Get-ScheduledTasks {
     [CmdletBinding()]        
     param (
@@ -263,6 +265,8 @@ function Get-ScheduledTasks {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

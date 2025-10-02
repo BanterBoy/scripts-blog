@@ -60,13 +60,9 @@ Author: Your Name Date: 2024-06-30
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-# Ensure PoShLog is installed
-# Install-Module -Name PoShLog -Scope CurrentUser
-
-# Import PoShLog
-Import-Module PoShLog
-
+#requires -PSEdition Desktop
 function Test-ADReplication {
     <#
     .SYNOPSIS
@@ -264,10 +260,9 @@ function Test-ADReplication {
     Write-Output "Test completed in $($elapsed.Minutes) minutes and $($elapsed.Seconds) seconds."
     Write-Verbose "DC server sync test completed."
 }
-
-# Example call to the function with verbose output
-# Test-ADReplication -ComputerName "RDGLONALDIDC001" -ReplicaName "RDGLONPUDIDC001" -LogFilePath "C:\Logs\ADReplication.log" -Verbose
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

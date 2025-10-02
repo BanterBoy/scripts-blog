@@ -34,7 +34,9 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 Function Test-ADUserHighPrivilegeGroupMembership {
 
     ##########################################################################################################
@@ -67,21 +69,21 @@ Function Test-ADUserHighPrivilegeGroupMembership {
    Uses the distinguished name for the user Ian Farr to list any high privilege group memberships.
 
 .NOTES
-    THIS CODE-SAMPLE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED
-    OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR
+    THIS CODE-SAMPLE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED 
+    OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR 
     FITNESS FOR A PARTICULAR PURPOSE.
 
-    This sample is not supported under any Microsoft standard support program or service.
+    This sample is not supported under any Microsoft standard support program or service. 
     The script is provided AS IS without warranty of any kind. Microsoft further disclaims all
     implied warranties including, without limitation, any implied warranties of merchantability
     or of fitness for a particular purpose. The entire risk arising out of the use or performance
     of the sample and documentation remains with you. In no event shall Microsoft, its authors,
-    or anyone else involved in the creation, production, or delivery of the script be liable for
-    any damages whatsoever (including, without limitation, damages for loss of business profits,
-    business interruption, loss of business information, or other pecuniary loss) arising out of
-    the use of or inability to use the sample or documentation, even if Microsoft has been advised
-    of the possibility of such damages, rising out of the use of or inability to use the sample script,
-    even if Microsoft has been advised of the possibility of such damages.
+    or anyone else involved in the creation, production, or delivery of the script be liable for 
+    any damages whatsoever (including, without limitation, damages for loss of business profits, 
+    business interruption, loss of business information, or other pecuniary loss) arising out of 
+    the use of or inability to use the sample or documentation, even if Microsoft has been advised 
+    of the possibility of such damages, rising out of the use of or inability to use the sample script, 
+    even if Microsoft has been advised of the possibility of such damages. 
 
 #>
     ##########################################################################################################
@@ -95,11 +97,11 @@ Function Test-ADUserHighPrivilegeGroupMembership {
         #The target user account
         [parameter(Mandatory, Position = 1,
             ValueFromPipeline)]
-        [ValidateScript( { Get-ADUser -Identity $_ })]
+        [ValidateScript( { Get-ADUser -Identity $_ })] 
         $User
     )
 
-
+    
     #Process each value supplied by the pipeline
     Process {
 
@@ -112,10 +114,10 @@ Function Test-ADUserHighPrivilegeGroupMembership {
 
         #Evaluate each entry
         Switch -Wildcard ($Groups) {
-
+            
             #Search for membership of Account Operators
             "CN=Account Operators,CN=BuiltIn*" {
-
+                
                 #Capture membership in a custom object and add to an array
                 [Array]$Privs += [PSCustomObject]@{
 
@@ -129,7 +131,7 @@ Function Test-ADUserHighPrivilegeGroupMembership {
 
             #Search for membership of Administrators
             "CN=Administrators,CN=BuiltIn*" {
-
+                
                 #Capture membership in a custom object and add to an array
                 [Array]$Privs += [PSCustomObject]@{
 
@@ -137,13 +139,13 @@ Function Test-ADUserHighPrivilegeGroupMembership {
                     MemberOf = $Switch.Current
 
                 }   #End of $Privs
-
+           
             }   #End of "CN=Administrators,CN=BuiltIn*"
 
 
             #Search for membership of Backup Operators
             "CN=Backup Operators,CN=BuiltIn*" {
-
+                
                 #Capture membership in a custom object and add to an array
                 [Array]$Privs += [PSCustomObject]@{
 
@@ -151,13 +153,13 @@ Function Test-ADUserHighPrivilegeGroupMembership {
                     MemberOf = $Switch.Current
 
                 }   #End of $Privs
-
+           
             }   #End of "CN=Backup Operators,CN=BuiltIn*"
 
 
             #Search for membership of Cert Publishers
             "CN=Cert Publishers,CN=Users*" {
-
+                
                 #Capture membership in a custom object and add to an array
                 [Array]$Privs += [PSCustomObject]@{
 
@@ -165,13 +167,13 @@ Function Test-ADUserHighPrivilegeGroupMembership {
                     MemberOf = $Switch.Current
 
                 }   #End of $Privs
-
+           
             }   #End of "CN=Cert Publishers,CN=Users*"
 
 
             #Search for membership of Domain Admins
             "CN=Domain Admins,CN=Users*" {
-
+                
                 #Capture membership in a custom object and add to an array
                 [Array]$Privs += [PSCustomObject]@{
 
@@ -179,13 +181,13 @@ Function Test-ADUserHighPrivilegeGroupMembership {
                     MemberOf = $Switch.Current
 
                 }   #End of $Privs
-
+           
             }   #End of "CN=Domain Admins,CN=Users*"
 
 
             #Search for membership of Enterprise Admins
             "CN=Enterprise Admins,CN=Users*" {
-
+                
                 #Capture membership in a custom object and add to an array
                 [Array]$Privs += [PSCustomObject]@{
 
@@ -193,14 +195,14 @@ Function Test-ADUserHighPrivilegeGroupMembership {
                     MemberOf = $Switch.Current
 
                 }   #End of $Privs
-
-
-            }   #End of "CN=Enterprise Admins,CN=Users*"
+           
+           
+            }   #End of "CN=Enterprise Admins,CN=Users*" 
 
 
             #Search for membership of
             "CN=Print Operators,CN=BuiltIn*" {
-
+                
                 #Capture membership in a custom object and add to an array
                 [Array]$Privs += [PSCustomObject]@{
 
@@ -208,14 +210,14 @@ Function Test-ADUserHighPrivilegeGroupMembership {
                     MemberOf = $Switch.Current
 
                 }   #End of $Privs
-
-
+           
+           
             }   #End of "CN=Print Operators,CN=BuiltIn*"
 
 
             #Search for membership of Schema Admins
             "CN=Schema Admins,CN=Users*" {
-
+                
                 #Capture membership in a custom object and add to an array
                 [Array]$Privs += [PSCustomObject]@{
 
@@ -223,8 +225,8 @@ Function Test-ADUserHighPrivilegeGroupMembership {
                     MemberOf = $Switch.Current
 
                 }   #End of $Privs
-
-
+           
+           
             }   #End of "CN=Schema Admins,CN=Users*"
 
 
@@ -238,8 +240,8 @@ Function Test-ADUserHighPrivilegeGroupMembership {
                     MemberOf = $Switch.Current
 
                 }   #End of $Privs
-
-
+           
+           
             }   #End of "CN=Server Operators,CN=BuiltIn*"
 
 
@@ -248,7 +250,7 @@ Function Test-ADUserHighPrivilegeGroupMembership {
 
         #Return any high privilege group memberships
         If ($Privs) {
-
+            
             #Return the contents of $Privs
             $Privs
 
@@ -259,8 +261,10 @@ Function Test-ADUserHighPrivilegeGroupMembership {
     }   #End of Process block
 
 
-}   #End of Function Test-ADUserHighPrivilegeGroupMembership
+}
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

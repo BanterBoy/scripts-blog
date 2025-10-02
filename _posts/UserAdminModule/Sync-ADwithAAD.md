@@ -60,6 +60,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -190,11 +191,9 @@ function Sync-ADwithAAD {
         Write-Verbose -Message "Ending Sync-ADwithAAD" -Verbose
     }
 }
-
-# Example of how to call the function with enhanced logging
-# $creds = Get-Credential
-# Sync-ADwithAAD -ComputerName "TATOOINE" -Credential $creds -Verbose
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

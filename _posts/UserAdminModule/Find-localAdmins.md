@@ -34,7 +34,9 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Find-localAdmins {
 
 	<#
@@ -42,7 +44,7 @@ function Find-localAdmins {
 		List users in specified local group
 	.DESCRIPTION
 		Created: March 17, 2011 Jeff Patton
-		This script searches ActiveDirectory for computers. It then queries each computer for the list of users who
+		This script searches ActiveDirectory for computers. It then queries each computer for the list of users who 
 		are in the local Administrators group.
 	.PARAMETER ADSPath
 		The LDAP URI of the container you wish to pull computers from.
@@ -63,7 +65,7 @@ function Find-localAdmins {
 		[string]$ADSPath,
 		[Parameter(Mandatory = $true)]
 		[string]$GroupName
-	)
+	) 
 	Begin {
 		$ScriptName = $MyInvocation.MyCommand.ToString()
 		$LogName = "Application"
@@ -73,7 +75,7 @@ function Find-localAdmins {
 		New-EventLog -Source $ScriptName -LogName $LogName -ErrorAction SilentlyContinue
 
 		$Message = "Script: " + $ScriptPath + "`nScript User: " + $Username + "`nStarted: " + (Get-Date).toString()
-		Write-EventLog -LogName $LogName -Source $ScriptName -EventID "100" -EntryType "Information" -Message $Message
+		Write-EventLog -LogName $LogName -Source $ScriptName -EventID "100" -EntryType "Information" -Message $Message 
 
 		#	Dotsource in the AD functions
 		. .\includes\ActiveDirectoryManagement.ps1
@@ -94,10 +96,12 @@ function Find-localAdmins {
 	}
 	End {
 		$Message = "Script: " + $ScriptPath + "`nScript User: " + $Username + "`nFinished: " + (Get-Date).toString()
-		Write-EventLog -LogName $LogName -Source $ScriptName -EventID "100" -EntryType "Information" -Message $Message
+		Write-EventLog -LogName $LogName -Source $ScriptName -EventID "100" -EntryType "Information" -Message $Message 
 	}
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

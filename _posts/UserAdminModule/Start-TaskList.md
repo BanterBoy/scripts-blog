@@ -29,18 +29,22 @@ Ensure the text file exists at the specified path or modify the script to point 
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Start-TaskList {
     $PSDefaultParameterValues['Write-Progress:Activity'] = $phrase
     $phrases = Get-Content -Path C:\GitRepos\TextFiles\prankphrases.txt
     $i = 0
     foreach ($phrase in $phrases) {
         $i++
-        Write-Progress -activity "Listing Commands" -status $phrase -PercentComplete (($i / $phrases.count) * 100)
+        Write-Progress -activity “Listing Commands” -status $phrase -PercentComplete (($i / $phrases.count) * 100)
         Start-Sleep -Seconds 5
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

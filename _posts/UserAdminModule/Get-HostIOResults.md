@@ -52,6 +52,7 @@ This function requires an active internet connection to access the host.io API.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -74,6 +75,7 @@ This function requires an active internet connection to access the host.io API.
 .NOTES
     This function requires an active internet connection to access the host.io API.
 #>
+#requires -PSEdition Desktop
 function Get-HostIOResults {
     [CmdletBinding()]
 
@@ -120,6 +122,8 @@ function Get-HostIOResults {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -84,14 +84,15 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
-Queries Mullvad's public status API.
+Queries Mullvad’s public status API.
 
 .DESCRIPTION
 Get-MullvadApiDetails sends a GET request to https://am.i.mullvad.net/<Endpoint> and returns:
-  • connected – a user-friendly status message (e.g. "You are not connected to Mullvad. Your IP address is …")  
+  • connected – a user-friendly status message (e.g. “You are not connected to Mullvad. Your IP address is …”)  
   • ip        – your current public IP address as a string  
   • city      – the city of the exit node  
   • country   – the country of the exit node  
@@ -142,6 +143,7 @@ results         : {}
 organization    : Virgin Media
 #>
 
+#requires -PSEdition Desktop
 function Get-MullvadApiDetails {
     [CmdletBinding()]
     param (
@@ -178,6 +180,8 @@ function Get-MullvadApiDetails {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -34,33 +34,34 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Start-Stream {
     param(
         $countdownTime = 5
     )
     $loading = @('Waiting for Windos to hit enter',
-        'Warming up processors',
-        'Downloading the internet',
-        'Trying common passwords',
-        'Commencing infinite loop',
-        'Injecting double negatives',
-        'Breeding bits',
-        'Capturing escaped bits',
-        'Dreaming of a faster computer',
-        'Calculating gravitational constant',
-        'Adding Hidden Agendas',
-        'Adjusting Bell Curves',
-        'Aligning Covariance Matrices',
-        'Attempting to Lock Back-Buffer',
-        'Building Data Trees',
-        'Calculating Inverse Probability Matrices',
-        'Calculating Llama Expectoration Trajectory',
-        'Compounding Inert Tessellations',
-        'Concatenating Sub-Contractors',
-        'Containing Existential Buffer',
-        'Deciding What Message to Display Next',
-        'Increasing Accuracy of RCI Simulators',
+        'Warming up processors', 
+        'Downloading the internet', 
+        'Trying common passwords', 
+        'Commencing infinite loop', 
+        'Injecting double negatives', 
+        'Breeding bits', 
+        'Capturing escaped bits', 
+        'Dreaming of a faster computer', 
+        'Calculating gravitational constant', 
+        'Adding Hidden Agendas', 
+        'Adjusting Bell Curves', 
+        'Aligning Covariance Matrices', 
+        'Attempting to Lock Back-Buffer', 
+        'Building Data Trees', 
+        'Calculating Inverse Probability Matrices', 
+        'Calculating Llama Expectoration Trajectory', 
+        'Compounding Inert Tessellations', 
+        'Concatenating Sub-Contractors', 
+        'Containing Existential Buffer', 
+        'Deciding What Message to Display Next', 
+        'Increasing Accuracy of RCI Simulators', 
         'Perturbing Matrices')
 
     $startTime = Get-Date
@@ -103,6 +104,8 @@ function Start-Stream {
     } Until ($now -ge $endTime)
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

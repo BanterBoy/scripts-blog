@@ -52,6 +52,7 @@ Author: [Author Name] Date: [Date]
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Remove-Files {
     <#
@@ -108,10 +109,9 @@ function Remove-Files {
         Write-Verbose -Message "File removal process completed."
     }
 }
-
-# Example Usage:
-# Remove-Files -Files "C:\temp\file1.txt", "C:\temp\file2.txt" -Verbose
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

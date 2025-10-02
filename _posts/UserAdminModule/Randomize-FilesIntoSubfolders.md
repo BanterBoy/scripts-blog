@@ -52,6 +52,7 @@ Author: Your Name Date: 2024-06-30
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Randomize-FilesIntoSubfolders {
     <#
@@ -127,10 +128,9 @@ function Randomize-FilesIntoSubfolders {
         Write-Verbose "Moved file '$($file.Name)' to folder '$randomFolderPath'."
     }
 }
-
-# Example Usage:
-# Randomize-FilesIntoSubfolders -baseDirectory "C:\Path\To\Your\Files" -numFolders 5 -Verbose
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

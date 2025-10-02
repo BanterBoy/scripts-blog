@@ -52,6 +52,7 @@ Author: Your Name Date: 30/06/2024
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Show-JekyllBlogSite {
 	<#
@@ -106,10 +107,9 @@ function Show-JekyllBlogSite {
 		Write-Verbose "Completed Show-JekyllBlogSite function"
 	}
 }
-
-# Example usage:
-# Show-JekyllBlogSite -Verbose
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

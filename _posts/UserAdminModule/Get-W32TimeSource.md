@@ -60,6 +60,7 @@ Author: Your Name Date: Current Date Version: 1.0
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -108,6 +109,8 @@ Author: Your Name
 Date: Current Date
 Version: 1.0
 #>
+#requires -PSEdition Desktop
+
 function Get-W32TimeSource {
     [CmdletBinding()]
     param (
@@ -159,6 +162,8 @@ function Get-W32TimeSource {
     return $outputObject
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

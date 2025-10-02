@@ -52,8 +52,10 @@ This function requires the PSMenu module to be imported.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 #requires -Modules PSMenu
+#requires -PSEdition Desktop
 
 <#
 .SYNOPSIS
@@ -124,10 +126,9 @@ function DisableADAccountsMenu {
         default { Write-Output "Nothing Selected" }
     }
 }
-
-# Call the function to display the menu
-# DisableADAccountsMenu
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -52,6 +52,7 @@ Author: Your Name Date: 2024-06-30
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -72,6 +73,7 @@ Author: Your Name Date: 2024-06-30
     Author: Your Name
     Date: 2024-06-30
 #>
+#requires -PSEdition Desktop
 
 function Stop-NonRespondingProcesses {
     [CmdletBinding()]
@@ -135,10 +137,9 @@ function Stop-NonRespondingProcesses {
     # Verbose output indicating the end of the function
     Write-Verbose "Stop-NonRespondingProcesses function completed."
 }
-
-# Example call to the function with verbose output
-# Stop-NonRespondingProcesses -Verbose
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

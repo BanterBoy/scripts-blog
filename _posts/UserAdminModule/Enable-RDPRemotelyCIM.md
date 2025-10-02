@@ -30,7 +30,9 @@ Run the script from an elevated session that has network access and appropriate 
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Enable-RDPRemotelyCIM {
     # You can enable RDP on a remote host by simply running the below two lines.
     [CmdletBinding()]
@@ -47,6 +49,8 @@ function Enable-RDPRemotelyCIM {
 
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

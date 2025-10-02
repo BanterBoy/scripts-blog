@@ -34,7 +34,9 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Get-ServiceLogonAccount {
 	<#
 		$Servers = Get-ADComputer -Filter { OperatingSystem -Like '*Windows Server*' } | Select-Object Name
@@ -44,23 +46,25 @@ function Get-ServiceLogonAccount {
 			Where-Object { $_.DisplayName -like "backup exec*" }
 		}
 	#>
-    [cmdletbinding()]
+    [cmdletbinding()]            
 
     param (
         [string]$ComputerName,
         [string]$LogonAccount
     )
     if ($logonAccount) {
-        Get-CimInstance -Class Win32_Service -ComputerName $ComputerName |
+        Get-CimInstance -Class Win32_Service -ComputerName $ComputerName |          
         Where-Object { $_.StartName -like $LogonAccount } |
         Select-Object DisplayName, StartName, State
     }
-    else {
-        Get-CimInstance -Class Win32_Service -ComputerName $ComputerName |
+    else {            
+        Get-CimInstance -Class Win32_Service -ComputerName $ComputerName |          
         Select-Object DisplayName, StartName, State
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

@@ -34,18 +34,22 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Start-WindowsUpdate {
     <#
     Windows Update
     The wuauclt.exe /detectnow command has been removed and is no longer supported (Windows 2016)
     To trigger a scan for updates, do the following:
     #>
-
+    
     $AutoUpdates = New-Object -ComObject "Microsoft.Update.AutoUpdate"
     $AutoUpdates.DetectNow()
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

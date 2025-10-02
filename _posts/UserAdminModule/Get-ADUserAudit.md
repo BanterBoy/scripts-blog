@@ -46,9 +46,11 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 #requires -version 5.1
 #requires -module ActiveDirectory
+#requires -PSEdition Desktop
 
 #you might need to increase the size of the Security eventlog
 # limit-eventlog -LogName security -ComputerName dom2,dom1 -MaximumSize 1024MB
@@ -159,12 +161,10 @@ Function Get-ADUserAudit {
             }
         }
     }
-} #close function
-
-Update-TypeData -TypeName ADAuditTrail -MemberType ScriptProperty -MemberName TargetCount -Value { $($this.targets).count } -Force
-#the format file should be in the same folder as this file.
-Update-FormatData -AppendPath $psscriptroot\Get-ADUserAudit.format.ps1xml
+}
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

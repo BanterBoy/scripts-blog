@@ -46,6 +46,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Get-UserReplicationStatus {
     param (
@@ -138,16 +139,9 @@ function Get-UserReplicationStatus {
     # Return the results
     return $results
 }
-
-# Example usage:
-# Exclude domain controllers with "NYC" in their name:
-# $userStatus = Get-UserReplicationStatus -UserName "lucy.barrick" -ExcludeDomainControllers "NYC"
-# $userStatus | Format-Table -AutoSize
-
-# Usage with password details and exclusions:
-# $userStatus = Get-UserReplicationStatus -UserName "lucy.barrick" -ShowPasswordDetails -ExcludeDomainControllers "NYC", "LON"
-# $userStatus | Format-Table -AutoSize
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

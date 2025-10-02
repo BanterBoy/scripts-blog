@@ -60,6 +60,7 @@ Author: Luke Leigh/Github Copilot Date: 2023-09-20
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function New-PowerOutage {
 
@@ -167,6 +168,8 @@ function New-PowerOutage {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

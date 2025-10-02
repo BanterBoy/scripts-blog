@@ -50,6 +50,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -147,10 +148,9 @@ function Get-MailboxContent {
         $result
     }
 }
-
-# Example usage (uncomment the following line to use the function directly):
-# Get-MailboxContent -Mailbox "user@example.com" -SenderAddress "sender@example.com" -Subject "Project Update" -StartReceivedDate "2024-01-01" -EndReceivedDate "2024-01-31" -Verbose
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

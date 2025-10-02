@@ -46,85 +46,8 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-function Set-Example {
-	[CmdletBinding()]
-	param (
-		[Parameter(Mandatory)]
-		[ValidateScript({ Test-Path -Path $_ })]
-		[string]$Path,
-		[Parameter(Mandatory)]
-		[string]$Identity
-	)
-	DynamicParam {
-		$ParamOptions = @(
-		@{
-			Name = 'Right'
-			ParameterAttributes = @(
-			@{
-				Mandatory = $true
-				# ParameterSetName = 'a'
-				# Position = 0
-				# ValueFromPipeline = $true
-				# ValueFromPipelinyByPropertyName = $true
-			}
-			)
-			ValidateSetOptions = ([System.Security.AccessControl.FileSystemRights]).DeclaredMembers | Where-Object { $_.IsStatic } | Select-Object -ExpandProperty name
-		},
-		@{
-			Name = 'InheritanceFlags'
-			ParameterAttributes = @(
-			@{
-				Mandatory = $true
-			}
-			)
-			ValidateSetOptions = ([System.Security.AccessControl.InheritanceFlags]).DeclaredMembers | Where-Object { $_.IsStatic } | Select-Object -ExpandProperty name
-		},
-		@{
-			Name = 'PropagationFlags'
-			ParameterAttributes = @(
-			@{
-				Mandatory = $true
-			}
-			)
-			ValidateSetOptions = ([System.Security.AccessControl.PropagationFlags]).DeclaredMembers | Where-Object { $_.IsStatic } | Select-Object -ExpandProperty name
-		},
-		@{
-			Name = 'Type'
-			ParameterAttributes = @(
-			@{
-				Mandatory = $true
-			}
-			)
-			ValidateSetOptions = ([System.Security.AccessControl.AccessControlType]).DeclaredMembers | Where-Object { $_.IsStatic } | Select-Object -ExpandProperty name
-		}
-		)
-		$RuntimeParamDic = New-Object System.Management.Automation.RuntimeDefinedParameterDictionary
-		foreach ($Param in $ParamOptions) {
-			$RuntimeParam = New-DynamicParameter @Param
-			$RuntimeParamDic.Add($Param.Name, $RuntimeParam)
-		}
-		
-		return $RuntimeParamDic
-	}
-	
-	begin {
-		$PsBoundParameters.GetEnumerator() | ForEach-Object { New-Variable -Name $_.Key -Value $_.Value -ea 'SilentlyContinue' }
-	}
-	
-	process {
-		try {
-			$Acl = Get-Acl $Path
-			#$Ar = New-Object System.Security.AccessControl.FileSystemAccessRule('Everyone', 'FullControl', 'ContainerInherit,ObjectInherit', 'NoPropagateInherit', 'Allow')
-			$Ar = New-Object System.Security.AccessControl.FileSystemAccessRule($Identity, $Right, $InheritanceFlags, $PropagationFlags, $Type)
-			$Acl.SetAccessRule($Ar)
-			Set-Acl $Path $Acl
-		} catch {
-			Write-Error $_.Exception.Message
-		}
-	}
-}
-
 function New-DynamicParameter
 {
 	[CmdletBinding()]
@@ -185,6 +108,8 @@ function New-DynamicParameter
 	
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -52,7 +52,9 @@ Author: Your Name Date: 2024-06-30
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Set-ADUserPassword {
 	<#
     .SYNOPSIS
@@ -139,11 +141,9 @@ function Set-ADUserPassword {
 		Write-Verbose "Completed setting password for AD user."
 	}
 }
-
-# Example usage:
-# $NewPassword = ConvertTo-SecureString "NewPassword123!" -AsPlainText -Force
-# Set-ADUserPassword -SamAccountName 'jdoe' -Password $NewPassword -ChangePasswordAtLogon
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

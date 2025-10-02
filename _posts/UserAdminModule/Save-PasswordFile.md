@@ -60,6 +60,7 @@ Author: Luke Leigh Date: [Today's Date]
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Save-PasswordFile {
 	<#
@@ -139,11 +140,9 @@ function Save-PasswordFile {
 		Write-Verbose -Message "Completed Save-PasswordFile function"
 	}
 }
-
-# Example Usage:
-# Save-PasswordFile -Label UserName -Verbose
-# Save-PasswordFile -Label Password -Path Select -Verbose
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

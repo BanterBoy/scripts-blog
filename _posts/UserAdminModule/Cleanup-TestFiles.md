@@ -46,6 +46,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Cleanup-TestFiles {
     [CmdletBinding(SupportsShouldProcess=$true, ConfirmImpact='Medium')]
@@ -89,11 +90,9 @@ function Cleanup-TestFiles {
         }
     }
 }
-
-# Example usage
-# $logFiles = Get-ChildItem -Path "C:\Temp\TrainingGround" -Filter "CopyLog-*.json" | Select-Object -ExpandProperty FullName
-# Cleanup-TestFiles -LogFiles $logFiles -Verbose -WhatIf
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

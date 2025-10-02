@@ -50,64 +50,25 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-function Set-TitleisAdmin {
-  <#
-  .SYNOPSIS
-  Sets the console window title to display the current user's username, privileges, and current path.
-  
-  .DESCRIPTION
-  This function sets the console window title to display the current user's username, followed by their privileges (either "Admin Privileges" or "User Privileges"), and the current path.
-  
-  .PARAMETER None
-  This function does not accept any parameters.
-  
-  .EXAMPLE
-  Set-TitleisAdmin
-  #>
-  $Username = whoami.exe /upn
-  $CurrentPath = $PWD.Path
+function Set-DisplayIsAdmin {
+    <#
+        .SYNOPSIS
+        Updates the console window title to indicate if the session has administrative privileges.
 
-  if (Test-IsAdmin) {
-    $host.UI.RawUI.WindowTitle = "$($Username) - Admin Privileges - Path: $($CurrentPath)"
-  }	
-  else {
-    $host.UI.RawUI.WindowTitle = "$($Username) - User Privileges - Path: $($CurrentPath)"
-  }	
-}
+        .DESCRIPTION
+        This is a thin wrapper around Set-TitleisAdmin (exported by Set-PromptisAdmin.ps1) to maintain backward
+        compatibility with scripts that reference Set-DisplayIsAdmin directly.
+    #>
+    [CmdletBinding()]
+    param()
 
-function Set-PromptisAdmin {
-  <#
-  .SYNOPSIS
-  Sets the PowerShell prompt to display whether the current session is running as an administrator or not.
-  
-  .DESCRIPTION
-  This function sets the PowerShell prompt to display "(Admin)" if the current session is running as an administrator, or "(User)" if it is not.
-  
-  .PARAMETER None
-  This function has no parameters.
-  
-  .EXAMPLE
-  Set-PromptisAdmin
-  This example sets the PowerShell prompt to display whether the current session is running as an administrator or not.
-  
-  .NOTES
-  This function requires the Test-IsAdmin and Set-TitleisAdmin functions to be defined.
-  #>
-  if (Test-IsAdmin) {
-    function global:prompt {
-      Set-TitleisAdmin
-      "(Admin) $PWD> "
-    }
-  }	
-  else {
-    function global:prompt {
-      Set-TitleisAdmin
-      "(User) $PWD> "
-    }
-  }	
+    Set-TitleisAdmin
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

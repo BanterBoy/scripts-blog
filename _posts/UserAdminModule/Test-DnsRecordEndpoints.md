@@ -52,6 +52,7 @@ Author: Your Name Date: 2024-06-30
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -78,6 +79,7 @@ Author: Your Name Date: 2024-06-30
     Date: 2024-06-30
 #>
 
+#requires -PSEdition Desktop
 function Test-DnsRecordEndpoints {
     [CmdletBinding()]
     param (
@@ -245,14 +247,9 @@ function Test-DnsRecordEndpoints {
 
     return $results
 }
-
-<# Example usage
-$RootDomain = "raildeliverygroup.com"
-$dnsRecords = Convert-DnsZoneFile -FilePath "C:\GitRepos\Output\DNSMigration\GoDaddyDomains\raildeliverygroup.com.txt"
-$results = Test-DnsRecordEndpoints -DnsRecords $dnsRecords -RootDomain $RootDomain
-$results | Format-Table -AutoSize
-#>
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

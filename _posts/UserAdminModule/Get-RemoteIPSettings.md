@@ -50,6 +50,7 @@ Ensure that PowerShell remoting is enabled on the target computers. This functio
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -64,6 +65,7 @@ Ensure that PowerShell remoting is enabled on the target computers. This functio
     This function is as remote as it gets—bringing your network details right to your console!
 #>
 
+#requires -PSEdition Desktop
 function Get-RemoteIPSettings {
     [CmdletBinding()]
     param(
@@ -113,6 +115,8 @@ function Get-RemoteIPSettings {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

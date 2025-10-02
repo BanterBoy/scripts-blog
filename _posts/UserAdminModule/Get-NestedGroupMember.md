@@ -34,6 +34,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 Script Name   : Get-NestedGroupMember.ps1
@@ -43,20 +44,21 @@ Notes         : Find all members in the group specified
                 If any member in that group is another group call this function again
                 otherwise, output the non-group object
 #>
+#requires -PSEdition Desktop
 
 function Get-NestedGroupMember {
     [CmdletBinding()]
-    param
+    param 
     (
-        [Parameter(Mandatory)]
+        [Parameter(Mandatory)] 
         [string]
-        $Group
+        $Group 
     )
-
-    $members = Get-ADGroupMember -Identity $Group
-
+  
+    $members = Get-ADGroupMember -Identity $Group 
+  
     foreach ($member in $members) {
-
+  
         if ($member.objectClass -eq 'group') {
             Get-NestedGroupMember -Group $member.Name
         }
@@ -67,6 +69,8 @@ function Get-NestedGroupMember {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

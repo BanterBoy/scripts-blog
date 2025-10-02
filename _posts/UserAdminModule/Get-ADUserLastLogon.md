@@ -34,9 +34,8 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-Import-Module ActiveDirectory
-
 function Get-ADUserLastLogon([string]$userName) {
     $dcs = Get-ADDomainController -Filter { Name -like "*" }
     $time = 0
@@ -50,9 +49,9 @@ function Get-ADUserLastLogon([string]$userName) {
     $dt = [DateTime]::FromFileTime($time)
     Write-Host $username "last logged on at:" $dt "on" $hostname
 }
-
-# Example = Get-ADUserLastLogon -UserName Administrator
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

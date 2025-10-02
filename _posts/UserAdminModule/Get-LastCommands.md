@@ -34,6 +34,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Get-LastCommands {
     [CmdletBinding()]
@@ -45,6 +46,8 @@ function Get-LastCommands {
     Get-History | Select-Object -Last $Number | Format-Table -Property CommandLine -AutoSize -Wrap
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

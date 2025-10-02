@@ -60,6 +60,7 @@ Author: Unknown Date: Unknown
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -92,6 +93,7 @@ System.Boolean
 Author: Unknown
 Date: Unknown
 #>
+#requires -PSEdition Desktop
 function Test-FileExists {
     [CmdletBinding(
         DefaultParameterSetName = 'Default',
@@ -133,6 +135,8 @@ function Test-FileExists {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

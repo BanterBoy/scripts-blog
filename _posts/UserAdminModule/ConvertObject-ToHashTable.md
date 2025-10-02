@@ -34,7 +34,9 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function ConvertObject-ToHashTable {
     param
     (
@@ -54,15 +56,9 @@ function ConvertObject-ToHashTable {
         }
     }
 }
-
-<#
-systeminfo.exe /FO CSV | ConvertFrom-Csv | ConvertObject-ToHashTable | Out-GridView
-
-Get-ComputerInfo | ConvertObject-ToHashTable | Out-GridView
-
-Get-WmiObject -Class Win32_BIOS | ConvertObject-ToHashTable | Out-GridView
-#>
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

@@ -60,6 +60,7 @@ This function requires administrative privileges on the remote server.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -98,6 +99,7 @@ This function requires administrative privileges on the remote server.
 https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_functions_advanced_parameters
 
 #>
+#requires -PSEdition Desktop
 
 function Get-UserProfiles {
     [CmdletBinding(SupportsShouldProcess = $true, ConfirmImpact = 'High')]
@@ -150,6 +152,8 @@ function Get-UserProfiles {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

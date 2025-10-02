@@ -46,6 +46,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Get-ADCertificates {
     [CmdletBinding()]
@@ -151,24 +152,9 @@ function Get-ADCertificates {
     # Output all the collected certificate details.
     return $allResults
 }
-
-<# 
-    Example usage:
-
-    # Retrieve all certificate details on the local computer:
-    Get-ADCertificates
-
-    # Retrieve certificate details from remote computers using credentials:
-    $cred = Get-Credential
-    Get-ADCertificates -Credential $cred -ComputerName "Server01", "Server02"
-
-    # Retrieve certificate details with validity dates filtered:
-    Get-ADCertificates -ValidAfter (Get-Date "2023-01-01") -ValidBefore (Get-Date "2025-12-31")
-
-    # Filter the output for certificates issued by a particular CA:
-    Get-ADCertificates | Where-Object { $_.Issuer -like "*YourCAName*" }
-#>
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

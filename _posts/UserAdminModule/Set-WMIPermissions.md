@@ -46,7 +46,9 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Set-WMIPermissions {
     [CmdletBinding()]
     param (
@@ -124,10 +126,9 @@ function Set-WMIPermissions {
         Write-Error "Failed to set permissions for namespace $Namespace on computer {$ComputerName}: $_"
     }
 }
-
-# Example usage:
-# Set-WMIPermissions -User "DOMAIN\User" -Permissions "RemoteEnable", "Subscribe" -Namespace "root" -ComputerName "EXCHANGE01"
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

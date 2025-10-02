@@ -34,7 +34,9 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Get-ProcessandServicePID {
     $ServicePids = (Get-Wmiobject win32_service).ProcessId | Sort-Object -Unique
     $ProcessPids = (Get-Process).Id | Sort-Object -Unique
@@ -42,6 +44,8 @@ function Get-ProcessandServicePID {
     Get-Process -Id $Pids | Select-Object Id, Name
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

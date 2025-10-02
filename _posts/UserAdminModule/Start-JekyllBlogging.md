@@ -52,6 +52,7 @@ Author: Your Name Date: 2024-06-30
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -105,16 +106,9 @@ function Start-JekyllBlogging {
 	# Verbose output indicating the end of the function
 	Write-Verbose "Jekyll Blogging function completed."
 }
-
-# Define the New-JekyllBlogServer function for demonstration purposes
-function New-JekyllBlogServer {
-	Write-Host "Starting Jekyll blog server..."
-	# Add your Jekyll blog server start commands here
-}
-
-# Example call to the function
-# Start-JekyllBlogging -Verbose
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

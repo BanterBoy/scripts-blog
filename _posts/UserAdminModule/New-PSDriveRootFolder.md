@@ -52,6 +52,7 @@ Ensure you have the necessary permissions to create PS Drives for the specified 
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function New-PSDriveRootFolder {
 	<#
@@ -127,6 +128,8 @@ function New-PSDriveRootFolder {
 	}
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

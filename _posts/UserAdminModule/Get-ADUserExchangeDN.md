@@ -52,43 +52,8 @@ This function requires the Active Directory module to be installed. Make sure yo
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-<#
-.SYNOPSIS
-Retrieves the Exchange DN (Distinguished Name) and other details of an Active Directory user.
-
-.DESCRIPTION
-The Get-ADUserExchangeDN function retrieves the Exchange DN, legacyExchangeDN, mail, EmailAddress, and other details of an Active Directory user. It uses the Get-ADUser cmdlet to retrieve the user details from Active Directory.
-
-.PARAMETER Identity
-Specifies the identity of the user. This can be the user's SamAccountName, UserPrincipalName, DistinguishedName, or any other attribute that uniquely identifies the user.
-
-.EXAMPLE
-Get-ADUserExchangeDN -Identity "john.doe"
-Retrieves the Exchange DN and other details of the user with the SamAccountName "john.doe".
-
-.INPUTS
-None. You cannot pipe objects to this function.
-
-.OUTPUTS
-System.Management.Automation.PSCustomObject. The function returns a custom object that contains the user details, including the Exchange DN, legacyExchangeDN, mail, EmailAddress, and proxy addresses.
-
-.NOTES
-This function requires the Active Directory module to be installed. Make sure you have the necessary permissions to retrieve user details from Active Directory.
-
-.LINK
-Get-ADUser
-#>
-
-function Get-ADUserExchangeDN {
-    [CmdletBinding()]
-    param (
-        [Parameter(Mandatory = $true, Position = 0)]
-        [string]$Identity
-    )
-    
-    # Function code goes here...
-}
 function Get-ADUserExchangeDN {
     [CmdletBinding()]
     param (
@@ -151,6 +116,8 @@ function Get-ADUserExchangeDN {
     return [PSCustomObject]$summary
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -46,6 +46,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#PSScriptInfo
 
@@ -78,6 +79,7 @@ No additional notes.
 .RELEASENOTES
 
 #>
+#requires -PSEdition Desktop
 function Connect-Mstsc {
 <#   
 .SYNOPSIS   
@@ -271,6 +273,8 @@ An remote desktop session to server01 will be created using the credentials of c
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -52,6 +52,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -68,6 +69,7 @@ No additional notes.
    Enable-CiscoSecure -ComputerName "Computer1", "Computer2", "Computer3"
    This command enables Cisco Secure on the computers named Computer1, Computer2, and Computer3.
 #>
+#requires -PSEdition Desktop
 function Enable-CiscoSecure {
     [CmdletBinding()]
     param (
@@ -103,6 +105,8 @@ function Enable-CiscoSecure {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

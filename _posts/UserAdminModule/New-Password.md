@@ -34,38 +34,42 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <# API Usage
-    It is possible to pass settings into the generator to set the initial values of the complexity settings.
 
-    This is done simply by adding values into the URL.
+It is possible to pass settings into the generator to set the initial values of the complexity settings.
 
-    For instance, if you wish to have the initial passwords be numbers only that is just numbers between 6 and 9 and you want to make it 8 characters long and create 5 of these passwords you can use this URL for those results.
+This is done simply by adding values into the URL.
 
-    https://passwordwolf.com/api/?length=10&upper=off&lower=off&special=off&exclude=012345&repeat=5
+For instance, if you wish to have the initial passwords be numbers only that is just numbers between 6 and 9 and you want to make it 8 characters long and create 5 of these passwords you can use this URL for those results.
 
-    The output from this request is returned simply in JSON data.
+https://passwordwolf.com/api/?length=10&upper=off&lower=off&special=off&exclude=012345&repeat=5
 
-    If a value is omitted the default is used. The returned password will also be displayed phonetically.
+The output from this request is returned simply in JSON data.
 
-    Variable	Possible Values	Default	Description
-    upper	off	on	Turns the upper case characters on or off.
-    lower	off	on	Turns the lower case characters on or off.
-    numbers	off	on	Turns numbers on or off.
-    special	off	on	Turns special characters on or off.
-    length	1-128	15	Set the password length.
-    exclude	[string]	?!<>li1I0OB8`	Indicates which characters to exclude.
-    repeat	1-128	9	Indicates how many passwords to generate.
+If a value is omitted the default is used. The returned password will also be displayed phonetically.
 
-    $upper
-    $lower
-    $numbers
-    $special
-    $length
-    [string]$exclude		?!<>li1I0OB8`	Indicates which characters to exclude.
-    repeat	1-128	9	Indicates how many passwords to generate.
+Variable	Possible Values	Default	Description
+upper	off	on	Turns the upper case characters on or off.
+lower	off	on	Turns the lower case characters on or off.
+numbers	off	on	Turns numbers on or off.
+special	off	on	Turns special characters on or off.
+length	1-128	15	Set the password length.
+exclude	[string]	?!<>li1I0OB8`	Indicates which characters to exclude.
+repeat	1-128	9	Indicates how many passwords to generate.
+
+$upper
+$lower
+$numbers
+$special
+$length
+[string]$exclude		?!<>li1I0OB8`	Indicates which characters to exclude.
+repeat	1-128	9	Indicates how many passwords to generate.
+
 #>
 
+#requires -PSEdition Desktop
 function New-Password {
     [CmdletBinding()]
     $Alphas = Invoke-RestMethod -Uri "https://passwordwolf.com/api/?length=8&upper=on&lower=on&numbers=off&special=off&repeat=1"
@@ -75,6 +79,8 @@ function New-Password {
     $password
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

@@ -62,6 +62,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
     .SYNOPSIS
@@ -97,6 +98,8 @@ No additional notes.
     .EXAMPLE
     Fuck-WithPsGalleryStats -ModuleNames @('Transmission', 'JsonToPowershellClass') -DownloadCount 99 -MinIntervalSeconds 10 -MaxIntervalSeconds 120
 #>
+#requires -Version 7.0
+#requires -PSEdition Core
 function Invoke-WithPsGalleryStats {
     [CmdletBinding()]
     param (
@@ -253,6 +256,8 @@ function Invoke-WithPsGalleryStats {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

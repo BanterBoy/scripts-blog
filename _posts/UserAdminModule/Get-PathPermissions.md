@@ -34,16 +34,17 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Get-PathPermissions {
-
+ 
     param (
         [Parameter(
             Mandatory = $true)]
         [System.String]
         ${Path}
     )
-
+ 
     begin {
         $root = Get-Item $Path
         ($root | Get-Acl).Access | Add-Member -MemberType NoteProperty -Name "Path" -Value $($root.fullname).ToString() -PassThru
@@ -57,6 +58,8 @@ function Get-PathPermissions {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

@@ -52,6 +52,7 @@ Author: Luke Leigh Date: 2023-10-29 Version: 1.0.0
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 # function Repair-MissingOnPremMailbox {
 #     param (
@@ -119,6 +120,8 @@ function Repair-MissingOnPremMailbox {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -46,6 +46,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Set-MailContactDetails {
     param (
@@ -161,37 +162,9 @@ function Set-MailContactDetails {
 
     Write-Output "Mail contact details created/updated successfully for $($ContactDetails.EmailAddress)."
 }
-
-# # Example usage
-# $mailContactObject = New-Object -TypeName PSObject -Property @{
-#     Identity = "jeff.jefferty@example.com"
-#     Name = "Jeff Jefferty"
-#     Alias = "JeffJefferty"
-#     FirstName = "Jeff"
-#     LastName = "Jefferty"
-#     Title = "Chief Clown"
-#     Department = "Clowns"
-#     Company = "Clown Enterprises"
-#     StreetAddress = "1 Jefferty Road"
-#     City = "Jeff Ville"
-#     StateOrProvince = "Jefferton"
-#     PostalCode = "CL0 WN1"
-#     CountryOrRegion = "GB"
-#     Phone = "+44 12 1234 1234"
-#     MobilePhone = "+44 1234 123456"
-#     ExternalEmailAddress = "jeff.jefferty@example.com"
-#     EmailAddress = "jeff.jefferty@example.com"
-#     DisplayName = "Jeff Jefferty" # Ensure DisplayName is set
-#     AssistantName = "Assistant Name"
-#     Initials = "JJ"
-#     Office = "Office 101"
-#     TelephoneAssistant = "+44 12 3456 7890"
-#     WebPage = "https://example.com"
-#     Notes = "Notes about Jeff Jefferty"
-# }
-
-# Set-MailContactDetails -ContactDetails $mailContactObject -UpdateExisting -Verbose
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

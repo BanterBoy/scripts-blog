@@ -40,7 +40,9 @@ This section will, in the near future, contain one or more examples of the scrip
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function ConvertFrom-ErrorRecord {
     [CmdletBinding(DefaultParameterSetName = "ErrorRecord")]
     param
@@ -77,6 +79,8 @@ function ConvertFrom-ErrorRecord {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

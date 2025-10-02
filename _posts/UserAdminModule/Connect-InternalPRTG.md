@@ -60,6 +60,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -85,6 +86,7 @@ Get-ADComputer -Filter { Name -like '*PRTG*' } | Connect-InternalPRTG
 Retrieves the computer names that match the filter '*PRTG*' from Active Directory and connects to each PRTG server using the current user's credentials.
 
 #>
+#requires -PSEdition Desktop
 function Connect-InternalPRTG {
     [CmdletBinding()]
     param (
@@ -136,6 +138,8 @@ function Connect-InternalPRTG {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

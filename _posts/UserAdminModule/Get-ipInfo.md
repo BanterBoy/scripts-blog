@@ -52,7 +52,9 @@ Author:     Luke Leigh Website:    https://blog.lukeleigh.com/ LinkedIn:   https
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Get-ipInfo {
 
     <#
@@ -201,6 +203,8 @@ function Get-ipInfo {
     END {}
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

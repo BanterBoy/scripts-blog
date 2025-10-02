@@ -52,10 +52,8 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-# Store the previous locations in a script-scoped stack
-$script:locationStack = [System.Collections.Generic.Stack[string]]::new()
-
 function Get-LocationStack {
     <#
     .SYNOPSIS
@@ -80,6 +78,8 @@ function Get-LocationStack {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

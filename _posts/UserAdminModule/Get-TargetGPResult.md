@@ -76,15 +76,14 @@ Author: Your Name Date:   2025-08-20 Requires: gpresult.exe, cmdkey.exe (for cre
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 enum GpResultOutputMode {
-    Summary      # Displays summary data (/R)
-    Verbose      # Displays detailed settings with precedence 1 (/V)
-    SuperVerbose # Displays all settings with precedence 1 and higher (/Z)
-    HtmlReport   # Exports report to HTML file (/H)
-    XmlReport    # Exports report to XML file (/X)
+    Summary
+    HtmlReport
+    Verbose
+    XmlReport
 }
-
 function Get-TargetGPResult {
     <#
     .SYNOPSIS
@@ -303,6 +302,8 @@ function Get-TargetGPResult {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -54,6 +54,7 @@ Run the function from an elevated PowerShell session to install FFmpeg via Choco
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 #Requires -PSEdition Core
 
@@ -72,6 +73,8 @@ function FFMpeg-Install {
     choco install ffmpeg -y
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -68,10 +68,11 @@ Author: Luke Leigh Date: 21/05/2025
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
-Updates a distribution group by comparing a CSV file's email list with the current distribution group members.
+Updates a distribution group by comparing a CSV file’s email list with the current distribution group members.
 
 .DESCRIPTION
 The Update-DistributionList function imports email addresses from a CSV file and compares them with the members of a specified distribution group.
@@ -167,6 +168,8 @@ function Update-DistributionList {
     Write-Verbose "Logs exported to CSV files"
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

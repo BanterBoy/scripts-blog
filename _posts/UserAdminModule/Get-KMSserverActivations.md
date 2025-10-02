@@ -50,6 +50,7 @@ Additional information about the function.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Get-KMSserverActivations {
 	<#
@@ -228,9 +229,9 @@ function Get-KMSserverActivations {
 	END {
 	}
 }
-
-# "HOTH", "KAMINO", "DANTOOINE" | ForEach-Object -Process { Get-KMSserverActivations -ComputerName $_ -First 1 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

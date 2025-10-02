@@ -60,6 +60,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -185,11 +186,9 @@ function Update-MailContactProperties {
         }
     }
 }
-
-# Example usage:
-# Update-MailContactProperties -DomainName "c2crail.net" -OldString "(c2rail)" -NewString "(C2C)"
-# Update-MailContactProperties -DomainName "c2crail.net" -OldString "(c2rail)" -NewString "(C2C)" -AddTag
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

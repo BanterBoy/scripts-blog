@@ -54,6 +54,7 @@ This example retrieves all Exchange servers within the current Active Directory 
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 # https://raw.githubusercontent.com/mikepfeiffer/PowerShell/master/Get-ExchangeServerInSite.ps1
 
@@ -110,6 +111,8 @@ function Get-ExchangeServerInSite {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

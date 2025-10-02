@@ -68,81 +68,35 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-<#
-.SYNOPSIS
-    Retrieves port service information based on a search query.
-
-.DESCRIPTION
-    The Get-PortService function retrieves port service information based on a search query. The search query can be performed on the port number, service name, or description. The function reads the port service data from a JSON file located in the same directory as the script.
-
-.PARAMETER Query
-    The search query to use for retrieving port service information.
-
-.PARAMETER SearchField
-    The field to search for the query. Valid values are 'PortNumber', 'ServiceName', and 'Description'. The default value is 'ServiceName'.
-
-.PARAMETER SearchAllFields
-    If specified, the search query will be performed on all fields.
-
-.OUTPUTS
-    Returns an array of PortService objects that match the search query.
-
-.EXAMPLE
-    Get-PortService -Query '80'
-
-    Retrieves port service information for port number 80.
-
-.EXAMPLE
-    Get-PortService -Query 'http' -SearchField 'Description'
-
-    Retrieves port service information for services with 'http' in the description.
-
-.EXAMPLE
-    Get-PortService -Query 'ftp' -SearchAllFields
-
-    Retrieves port service information for services with 'ftp' in any field.
-#>
+#requires -PSEdition Desktop
 
 class PortService {
     [string]$ServiceName
-    [string]$PortNumber
+    [int]$PortNumber
     [string]$Description
     [string]$Reference
 
-    PortService([string]$ServiceName, [string]$PortNumber, [string]$Description, [string]$Reference) {
-        $this.ServiceName = $ServiceName
-        $this.PortNumber = $PortNumber
-        $this.Description = $Description
-        $this.Reference = $Reference
+    PortService([string]$serviceName, [int]$portNumber, [string]$description, [string]$reference) {
+        $this.ServiceName = $serviceName
+        $this.PortNumber = $portNumber
+        $this.Description = $description
+        $this.Reference = $reference
     }
 
-    [bool] MatchPortNumber([string]$PortNumber) {
-        if ($this.PortNumber -eq $PortNumber) {
-            return $true
-        }
-        return $false
+    [bool]MatchPortNumber([string]$query) {
+        return ($this.PortNumber -eq $query)
     }
 
-    [bool] MatchServiceName([string]$ServiceName) {
-        if ($this.ServiceName -eq $ServiceName) {
-            return $true
-        }
-        return $false
+    [bool]MatchServiceName([string]$query) {
+        return ($this.ServiceName -like "*$query*")
     }
 
-    [bool] MatchDescription($query) {
-        if ($this.Description -like "*$query*") {
-            return $true
-        }
-        return $false
-    }
-
-    [string] ToString() {
-        return "ServiceName: $($this.ServiceName), PortNumber: $($this.PortNumber), Description: $($this.Description), Reference: $($this.Reference)"
+    [bool]MatchDescription([string]$query) {
+        return ($this.Description -like "*$query*")
     }
 }
-
 function Get-PortService {
     [CmdletBinding()]
     param(
@@ -190,6 +144,8 @@ function Get-PortService {
     return $portServices
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

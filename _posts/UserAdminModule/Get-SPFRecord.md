@@ -34,18 +34,19 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Get-SPFRecord {
-    <#
-    .Synopsis
-    Get SPF Record for a domain.
-    .DESCRIPTION
-    This function uses Resolve-DNSName to get the SPF Record for a given domain. Objects with a DomainName property,
-    such as returned by Get-AcceptedDomain, can be piped to this function.
-    .EXAMPLE
-    Get-AcceptedDomain | Get-SPFRecord
-
-    This example gets SPF records for all domains returned by Get-AcceptedDomain.
+    <# 
+    .Synopsis 
+    Get SPF Record for a domain. 
+    .DESCRIPTION 
+    This function uses Resolve-DNSName to get the SPF Record for a given domain. Objects with a DomainName property, 
+    such as returned by Get-AcceptedDomain, can be piped to this function. 
+    .EXAMPLE 
+    Get-AcceptedDomain | Get-SPFRecord 
+ 
+    This example gets SPF records for all domains returned by Get-AcceptedDomain. 
     #>
     [CmdletBinding(HelpUri = 'https://ntsystems.it/PowerShell/TAK/Get-SPFRecord/')]
     param (
@@ -55,7 +56,7 @@ function Get-SPFRecord {
             ValueFromPipeline = $true)]
         [string]
         $DomainName,
-
+        
         # Specify the Domain name for the query.
         [string]
         $Server
@@ -77,6 +78,8 @@ function Get-SPFRecord {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

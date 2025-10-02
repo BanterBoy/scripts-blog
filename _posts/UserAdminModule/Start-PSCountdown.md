@@ -34,6 +34,7 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 #requires -version 4.0
 
@@ -223,11 +224,10 @@ Random - randomly cycle through a list of console colors
         }
     } #end
 
-} #end function
-
-#define an optional alias
-Set-Alias -Name spc -Value Start-PSCountdown
+}
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

@@ -66,6 +66,7 @@ Author: Your Name Date:   Current Date
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -122,6 +123,7 @@ Author: Your Name Date:   Current Date
     Date:   Current Date
 #>
 
+#requires -PSEdition Desktop
 function Test-ifContactExists {
     [CmdletBinding(SupportsShouldProcess = $true, ConfirmImpact = 'Medium')]
     Param(
@@ -178,6 +180,8 @@ function Test-ifContactExists {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

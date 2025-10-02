@@ -60,6 +60,7 @@ Author: Your Name Date: Today's Date
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -100,6 +101,7 @@ Date: Today's Date
 .LINK
 https://docs.microsoft.com/en-us/powershell/module/scheduledtasks/unregister-scheduledtask?view=windowsserver2019-ps
 #>
+#requires -PSEdition Desktop
 function Remove-ScheduledScript {
     [CmdletBinding(SupportsShouldProcess = $true)]
     param (
@@ -153,6 +155,8 @@ function Remove-ScheduledScript {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

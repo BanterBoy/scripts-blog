@@ -68,6 +68,7 @@ Author: Luke Leigh Date: April 3, 2025 Version: 1.1 This function uses the `Get-
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -127,6 +128,8 @@ function Get-DayOfWeek {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

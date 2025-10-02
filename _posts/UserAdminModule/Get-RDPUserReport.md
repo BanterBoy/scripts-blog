@@ -56,8 +56,10 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 # Function: Get-RDPUserReport
+#requires -PSEdition Desktop
 Function Get-RDPUserReport {
     <#
     .SYNOPSIS
@@ -137,6 +139,8 @@ Function Get-RDPUserReport {
     return $Sessions
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

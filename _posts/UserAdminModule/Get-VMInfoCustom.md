@@ -52,6 +52,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -77,6 +78,8 @@ function Get-VMInfoCustom {
     Get-View -ViewType VirtualMachine -Filter @{"Name" = "$($ServerName)" } | Select-Object -property Name, @{N = "PowerState"; E = { $_.Runtime.PowerState } }, @{N = "NumCpu"; E = { $_.Config.Hardware.NumCPU } }, @{N = "MemoryMB"; E = { $_.Config.Hardware.MemoryMB } }, @{N = "GuestOS"; E = { $_.Config.GuestFullName } }, @{N = "IPAddress"; E = { ($_.Guest.Net | Where-Object { $_.DeviceConfigId -eq 4000 }).IpAddress } }, @{N = "Datastore"; E = { (Get-View -Id $_.Datastore).Name } }, @{N = "Network"; E = { (Get-View -Id $_.Network).Name } }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

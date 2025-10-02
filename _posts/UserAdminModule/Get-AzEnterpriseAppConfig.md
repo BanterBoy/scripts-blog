@@ -60,6 +60,7 @@ Requires Microsoft.Entra PowerShell module 1.0.10 or later, Microsoft.Graph.Auth
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 function Get-AzEnterpriseAppConfig {
     <#
@@ -449,6 +450,8 @@ function Get-AzEnterpriseAppConfig {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -52,6 +52,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -71,6 +72,7 @@ No additional notes.
    $Password = Read-Host "Enter your password" -AsSecureString
    Disable-CiscoSecure -Password $Password -ComputerName "Server01", "Server02"
 #>
+#requires -PSEdition Desktop
 function Disable-CiscoSecure {
     [CmdletBinding()]
     param (
@@ -111,6 +113,8 @@ function Disable-CiscoSecure {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

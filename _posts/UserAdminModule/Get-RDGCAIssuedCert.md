@@ -84,6 +84,7 @@ Requires the PSPKI module to be installed and network access to the target CAs.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -133,6 +134,8 @@ Requires the PSPKI module to be installed and network access to the target CAs.
 .NOTES
     Requires the PSPKI module to be installed and network access to the target CAs.
 #>
+#requires -Version 7.0
+#requires -PSEdition Core
 function Get-RDGCAIssuedCert {
     [CmdletBinding(DefaultParameterSetName = 'All')]
     [OutputType([PSCustomObject])]
@@ -219,6 +222,8 @@ function Get-RDGCAIssuedCert {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

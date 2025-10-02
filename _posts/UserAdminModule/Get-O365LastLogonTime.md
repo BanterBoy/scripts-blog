@@ -34,7 +34,9 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 function Get-O365LastLogonTime {
 
     [CmdletBinding()]
@@ -43,10 +45,10 @@ function Get-O365LastLogonTime {
         [string]
         $Identity
     )
-    $Result = @()
+    $Result = @() 
     $mailboxes = Get-Mailbox -ResultSize Unlimited | Where-Object { $_ -like $Identity }
     $totalmbx = $mailboxes.Count
-    $i = 1
+    $i = 1 
     $mailboxes | ForEach-Object {
         $i++
         $mbx = $_
@@ -55,20 +57,22 @@ function Get-O365LastLogonTime {
             $lt = "Never Logged In"
         }
         else {
-            $lt = $mbs.LastLogonTime
+            $lt = $mbs.LastLogonTime 
         }
-
+ 
         Write-Progress -activity "Processing $mbx" -status "$i out of $totalmbx completed"
-
-        $Result += New-Object PSObject -property @{
+ 
+        $Result += New-Object PSObject -property @{ 
             Name              = $mbx.DisplayName
             UserPrincipalName = $mbx.UserPrincipalName
-            LastLogonTime     = $lt
+            LastLogonTime     = $lt 
         }
     }
     $Result
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

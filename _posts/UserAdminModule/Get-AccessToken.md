@@ -50,67 +50,8 @@ This function requires the Microsoft.IdentityModel.Clients.ActiveDirectory assem
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-<#
-.SYNOPSIS
-  Retrieves an access token for a specified resource using Azure Active Directory App-Only authentication.
-
-.DESCRIPTION
-  The Get-AccessToken function retrieves an access token for a specified resource using Azure Active Directory App-Only authentication. 
-  It requires the TenantId, ClientId, CertificatePath, CertificatePassword, and ResourceUri parameters to be provided.
-
-.PARAMETER TenantId
-  Specifies the Azure Active Directory tenant ID. This parameter is mandatory.
-
-.PARAMETER ClientId
-  Specifies the Azure Active Directory application client ID. This parameter is mandatory.
-
-.PARAMETER CertificatePath
-  Specifies the path to the certificate file used for authentication. This parameter is mandatory.
-
-.PARAMETER CertificatePassword
-  Specifies the password for the certificate file used for authentication. This parameter is mandatory.
-
-.PARAMETER ResourceUri
-  Specifies the URI of the resource for which the access token is requested. This parameter is mandatory.
-
-.EXAMPLE
-  Get-AccessToken -TenantId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -ClientId "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" -CertificatePath "C:\Certificates\MyCertificate.pfx" -CertificatePassword "MyPassword" -ResourceUri "https://api.example.com"
-
-.NOTES
-  This function requires the Microsoft.IdentityModel.Clients.ActiveDirectory assembly to be loaded.
-  The certificate used for authentication must be stored in the LocalMachine certificate store.
-#>
-function Get-AccessToken() {
-  Param(
-    [Parameter(Mandatory = $true)]
-    [ValidateNotNullOrEmpty()]
-    [String]
-    $TenantId,
-    
-    [Parameter(Mandatory = $true)]
-    [ValidateNotNullOrEmpty()]
-    [String]
-    $ClientId,
-    
-    [Parameter(Mandatory = $true)]
-    [ValidateNotNullOrEmpty()]
-    [String]
-    $CertificatePath,
-    
-    [Parameter(Mandatory = $true)]
-    [ValidateNotNullOrEmpty()]
-    [String]
-    $CertificatePassword,
-    
-    [Parameter(Mandatory = $true)]
-    [ValidateNotNullOrEmpty()]
-    [String]
-    $ResourceUri
-  )
-  
-  # Rest of the code...
-}
 <#
 .DESCRIPTION 
 .PARAMETER
@@ -209,6 +150,8 @@ function Get-AccessToken() {
   #endregion
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

@@ -50,32 +50,8 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
-function Set-TitleisAdmin {
-  <#
-  .SYNOPSIS
-  Sets the console window title to display the current user's username, privileges, and current path.
-  
-  .DESCRIPTION
-  This function sets the console window title to display the current user's username, followed by their privileges (either "Admin Privileges" or "User Privileges"), and the current path.
-  
-  .PARAMETER None
-  This function does not accept any parameters.
-  
-  .EXAMPLE
-  Set-TitleisAdmin
-  #>
-  $Username = whoami.exe /upn
-  $CurrentPath = $PWD.Path
-
-  if (Test-IsAdmin) {
-    $host.UI.RawUI.WindowTitle = "$($Username) - Admin Privileges - Path: $($CurrentPath)"
-  }	
-  else {
-    $host.UI.RawUI.WindowTitle = "$($Username) - User Privileges - Path: $($CurrentPath)"
-  }	
-}
-
 function Set-PromptisAdmin {
   <#
   .SYNOPSIS
@@ -108,6 +84,8 @@ function Set-PromptisAdmin {
   }	
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

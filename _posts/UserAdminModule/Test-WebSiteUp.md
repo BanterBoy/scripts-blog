@@ -34,28 +34,30 @@ I'm powered by AI, so surprises and mistakes are possible. Make sure to verify a
 
 #### Script
 
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
+#requires -PSEdition Desktop
 Function Test-WebsiteUp {
 <#
 	.SYNOPSIS
 		Test-Website can be used to test if a website is responding.
-
+	
 	.DESCRIPTION
 		Test-Website can be used to test if a website is responding.
-
+	
 	.PARAMETER webAddress
 		Enter the website address (URL) of the site that you want to test.
-
+	
 	.EXAMPLE
 				PS C:\> Test-WebsiteUp -webAddress 'Value1'
-
+	
 	.OUTPUTS
 		object
-
+	
 	.NOTES
 		Additional information about the function.
 #>
-
+	
 	[CmdletBinding(DefaultParameterSetName = 'Default',
 				   PositionalBinding = $true,
 				   SupportsShouldProcess = $true)]
@@ -71,12 +73,12 @@ Function Test-WebsiteUp {
 		[Alias('url')]
 		[string]$webAddress
 	)
-
+	
 	Begin {
 		$Protocol = [System.Net.SecurityProtocolType]'Tls12,Tls13'
 		[System.Net.ServicePointManager]::SecurityProtocol = $Protocol
 	}
-
+	
 	Process {
 		If ($PSCmdlet.ShouldProcess("$webAddress", "Getting the website status")) {
 			Try {
@@ -106,7 +108,7 @@ Function Test-WebsiteUp {
 				$obj = New-Object -TypeName PSObject -Property $properties
 				Write-Output $obj
 			}
-
+			
 		}
 	}
 	End {
@@ -114,6 +116,8 @@ Function Test-WebsiteUp {
 	}
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
 

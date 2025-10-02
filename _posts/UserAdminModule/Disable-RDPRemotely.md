@@ -64,6 +64,7 @@ Disables RDP on the computers 'Desktop01' and 'Desktop02' using pipeline input.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 <#
 .SYNOPSIS
@@ -95,6 +96,7 @@ Disables RDP on the computers 'Server01' and 'Server02'.
 Disables RDP on the computers 'Desktop01' and 'Desktop02' using pipeline input.
 
 #>
+#requires -PSEdition Desktop
 function Disable-RDPRemotely {
     [CmdletBinding(DefaultParameterSetName = 'Default',
         ConfirmImpact = 'Medium',
@@ -127,6 +129,8 @@ function Disable-RDPRemotely {
     }
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>

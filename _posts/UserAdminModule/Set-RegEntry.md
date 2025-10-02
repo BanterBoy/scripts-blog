@@ -46,6 +46,7 @@ No additional notes.
 #### Script
 
 {% raw %}
+<!-- BEGIN: FUNCTION CODE -->
 ```powershell
 # RegWriteBruteForce: Because efficiency beats beauty. The function below reliably writes to the registry, locally or on remote machines.
 # Example: RegWriteBruteForce -ComputerName $Computer -KeyName 'HKLM\Software\HappyAdmin' -ValueName $FunFactor -Value 'high' -DataType REG_SZ
@@ -114,6 +115,8 @@ function Set-RegEntry {
     return $(if ($process.ExitCode -eq 0) { $true } else { $false }) # return true if successful
 }
 ```
+
+<!-- END: FUNCTION CODE -->
 {% endraw %}
 
 <span style="font-size:11px;"><a href="#top"><i class="fas fa-caret-up" aria-hidden="true" style="color: white; margin-right:5px;"></i>Back to Top</a></span>
