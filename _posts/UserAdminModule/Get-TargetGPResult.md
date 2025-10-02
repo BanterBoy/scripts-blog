@@ -78,6 +78,12 @@ Author: Your Name Date:   2025-08-20 Requires: gpresult.exe, cmdkey.exe (for cre
 {% raw %}
 <!-- BEGIN: FUNCTION CODE -->
 ```powershell
+enum GpResultOutputMode {
+    Summary
+    HtmlReport
+    Verbose
+    XmlReport
+}
 function Get-TargetGPResult {
     <#
     .SYNOPSIS
