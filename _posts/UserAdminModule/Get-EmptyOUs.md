@@ -62,6 +62,30 @@ This function requires the Active Directory module to be installed. It should be
 {% raw %}
 <!-- BEGIN: FUNCTION CODE -->
 ```powershell
+<#
+.SYNOPSIS
+Retrieves and optionally removes empty Active Directory Organizational Units (OUs).
+
+.DESCRIPTION
+The Get-EmptyOUs function retrieves all organizational units (OUs) in Active Directory and checks if they are empty. It can optionally remove the empty OUs if specified.
+
+.PARAMETER RemoveOUs
+Indicates whether to remove the empty OUs. If $true, empty OUs will be removed. If $false, only a list of empty OUs will be returned.
+
+.PARAMETER OUsToKeep
+An array of distinguished names (DNs) of OUs to exclude from removal, even if they are empty.
+
+.EXAMPLE
+Get-EmptyOUs -RemoveOUs $false
+Retrieves and lists the distinguished names (DNs) of the empty OUs without removing them.
+
+.EXAMPLE
+Get-EmptyOUs -RemoveOUs $true -OUsToKeep "OU=TestOU,DC=example,DC=com"
+Retrieves and removes the empty OUs, excluding the OU with the specified distinguished name.
+
+.NOTES
+This function requires the Active Directory module to be installed. It should be run with appropriate permissions to manage OUs in Active Directory.
+#>
 function Get-EmptyOUs {
     
     [CmdletBinding()]
