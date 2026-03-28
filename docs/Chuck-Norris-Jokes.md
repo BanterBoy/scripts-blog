@@ -317,5 +317,3 @@ Q: Why is Chuck Norris never late?
 A: Time waits for Chuck Norris, and Chuck Norris arrives when he feels like it.
 
 </details>
-
-</section>
