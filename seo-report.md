@@ -1,3 +1,11 @@
+---
+layout: page
+title: "SEO Report"
+nav_title: "SEO Report"
+heading: "SEO Report"
+permalink: /menu/_pages/seo-report/
+---
+
 **Date:** 2025-09-21
 
 ## Checklist Summary

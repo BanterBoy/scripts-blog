@@ -1,3 +1,11 @@
+---
+layout: page
+title: "Chuck Norris Jokes"
+nav_title: "Chuck Norris Jokes"
+heading: "Chuck Norris Jokes"
+permalink: /menu/_pages/chuck-norris-jokes/
+---
+
 A curated list of hilarious Chuck Norris jokes, formatted for readability.
 
 ## Classic Chuck Norris One-Liners

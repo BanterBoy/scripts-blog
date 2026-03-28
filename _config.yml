@@ -13,6 +13,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 include:
   - "_pages"
   - "_posts"
+  - "docs"
 
 exclude:
   - "_site"
