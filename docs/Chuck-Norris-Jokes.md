@@ -1,5 +1,3 @@
-# Chuck Norris Jokes Collection
-
 A curated list of hilarious Chuck Norris jokes, formatted for readability.
 
 ## Classic Chuck Norris One-Liners

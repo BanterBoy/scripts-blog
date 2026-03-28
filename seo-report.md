@@ -1,5 +1,3 @@
-# SEO Report
-
 **Date:** 2025-09-21
 
 ## Checklist Summary
