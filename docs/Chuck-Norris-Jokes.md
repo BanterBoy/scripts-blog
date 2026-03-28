@@ -284,36 +284,15 @@ A curated list of hilarious Chuck Norris jokes, formatted for readability.
 <details markdown="1">
 <summary>Show/hide FAQ</summary>
 
-Q: Why doesn’t Chuck Norris need a FAQ?
-
-A: Because Chuck Norris already knows everything, and the universe just asks Chuck Norris for answers.
-
-Q: How does Chuck Norris fix a computer?
-
-A: Chuck Norris stares at it until it fixes itself—because even tech fears Chuck Norris.
-
-Q: What happens if Chuck Norris forgets something?
-
-A: Nothing forgets Chuck Norris; the information comes back begging Chuck Norris to remember it.
-
-Q: Can Chuck Norris lose a game?
-
-A: No, because Chuck Norris invented winning, and losing runs away when Chuck Norris plays.
-
-Q: Why doesn’t Chuck Norris sleep?
-
-A: Sleep is too scared to interrupt Chuck Norris, so Chuck Norris stays awake forever.
-
-Q: How fast can Chuck Norris run?
-
-A: Chuck Norris doesn’t run—he moves so fast time chases Chuck Norris instead.
-
-Q: Does Chuck Norris ever get sick?
-
-A: No, germs apologize to Chuck Norris and leave, because Chuck Norris is invincible.
-
-Q: Why is Chuck Norris never late?
-
-A: Time waits for Chuck Norris, and Chuck Norris arrives when he feels like it.
+| Question                                        | Answer                                                                                              |
+| ----------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| Why doesn’t Chuck Norris need a FAQ?            | Because Chuck Norris already knows everything, and the universe just asks Chuck Norris for answers. |
+| How does Chuck Norris fix a computer?           | Chuck Norris stares at it until it fixes itself—because even tech fears Chuck Norris.               |
+| What happens if Chuck Norris forgets something? | Nothing forgets Chuck Norris; the information comes back begging Chuck Norris to remember it.       |
+| Can Chuck Norris lose a game?                   | No, because Chuck Norris invented winning, and losing runs away when Chuck Norris plays.            |
+| Why doesn’t Chuck Norris sleep?                 | Sleep is too scared to interrupt Chuck Norris, so Chuck Norris stays awake forever.                 |
+| How fast can Chuck Norris run?                  | Chuck Norris doesn’t run—he moves so fast time chases Chuck Norris instead.                         |
+| Does Chuck Norris ever get sick?                | No, germs apologize to Chuck Norris and leave, because Chuck Norris is invincible.                  |
+| Why is Chuck Norris never late?                 | Time waits for Chuck Norris, and Chuck Norris arrives when he feels like it.                        |
 
 </details>
