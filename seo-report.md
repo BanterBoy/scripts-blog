@@ -79,5 +79,3 @@ The sitemap continues to list canonical, indexable URLs only (834 entries in the
 
 - Latest local run: 834 URLs in sitemap, 832 HTML documents scanned, 0 canonical HTTP errors, and 0 unexpected `noindex` pages (see `seo-checks.json`).
 - CI artifacts `seo-reports/seo-checks.json` and `seo-reports/lychee-report.json` retain machine-readable outputs for each build.
-
-
