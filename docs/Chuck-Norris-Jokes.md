@@ -16,7 +16,7 @@ A curated list of hilarious Chuck Norris jokes, formatted for readability.
 - Time waits for no man—except Chuck Norris.
 - Chuck Norris’s tears cure cancer, but he’s never cried.
 - Chuck Norris can slam a revolving door.
-- chuck noris jokes doesn’t wear a watch; he decides what time it is.
+- Chuck Norris jokes doesn’t wear a watch; he decides what time it is.
 - Chuck Norris can delete the recycle bin.
 - Chuck Norris beat the sun in a staring contest.
 - Chuck Norris’s calendar goes straight from March 31st to April 2nd—no one fools him.
@@ -68,7 +68,7 @@ A curated list of hilarious Chuck Norris jokes, formatted for readability.
 - Chuck Norris can smell rain before the clouds do.
 - Chuck Norris’s heartbeat powers the electric grid.
 - Chuck Norris doesn’t dream; reality adjusts overnight.
-- chuck norris joke can see through walls—and time.
+- Chuck Norris joke can see through walls—and time.
 - Chuck Norris’s voice can shatter diamonds.
 - Chuck Norris doesn’t need sunscreen; the sun protects itself.
 - Chuck Norris can outrun his own reflection.
