@@ -277,6 +277,7 @@ table {
 td {
     columns: 2;
     padding: .5rem;
+    white-space: normal;
 }
 
 th {
@@ -285,10 +286,22 @@ th {
     padding: .5rem;
 }
 
-column {
-    max-width: 20rem;
-    min-width: 3rem;
-    padding: 3px;
+/* override for Chuck Norris FAQ table to stay two-column on all themes */
+.chuck-norris-faq td,
+.chuck-norris-faq th {
+    columns: 1;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.chuck-norris-faq tbody tr td:first-child,
+.chuck-norris-faq thead tr th:first-child {
+    width: 30%;
+}
+
+.chuck-norris-faq tbody tr td:nth-child(2),
+.chuck-norris-faq thead tr th:nth-child(2) {
+    width: 70%;
 }
 
 tbody tr:nth-child(odd) td,
@@ -296,20 +309,25 @@ tbody tr:nth-child(odd) th {
     background-color: #f9f9f9;
 }
 
+/* This theme supports up to 2 columns by default. Extra width rules for a
+   third column are unnecessary for standard markdown tables and can cause
+   layout issues in dark mode with overflow text split into pseudo columns. */
+
 tbody tr td:nth-child(2),
 thead tr th:nth-child(2) {
-    width: 40%;
+    width: auto;
 }
 
 tbody tr td:first-child,
 thead tr th:first-child {
-    width: 30%;
+    width: auto;
 }
 
-tbody tr td:nth-child(3),
+/* Remove explicit 3rd-column width rule to prevent accidental 3-column layout */
+/* tbody tr td:nth-child(3),
 thead tr th:nth-child(3) {
     width: 30%;
-}
+} */
 
 .fixed-layout {
     table-layout: fixed;
