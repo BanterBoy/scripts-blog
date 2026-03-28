@@ -8,7 +8,24 @@ permalink: /menu/_pages/chuck-norris-jokes/
 
 A curated list of hilarious Chuck Norris jokes, formatted for readability.
 
+<section class="chuck-jokes">
+
+## Contents
+
+- Accessibility: Use keyboard focus on each section title and press Enter/Space to toggle show/hide.
+
+<ul class="toc">
+<li>[Classic Chuck Norris One-Liners](#classic-chuck-norris-one-liners)</li>
+<li>[Chuck Norris Memes](#chuck-norris-memes)</li>
+<li>[Additional Legends](#additional-legends)</li>
+<li>[Chuck Norris Punchlines](#chuck-norris-punchlines)</li>
+<li>[FAQ](#faq)</li>
+</ul>
+
 ## Classic Chuck Norris One-Liners
+
+<details>
+<summary>Show/hide Classic Chuck Norris One-Liners</summary>
 
 - Chuck Norris doesn’t do push-ups; he pushes the Earth down.
 - When Chuck Norris jokes enters a room, the Wi-Fi signal gets stronger.
@@ -35,7 +52,12 @@ A curated list of hilarious Chuck Norris jokes, formatted for readability.
 - Chuck Norris’s shadow moves faster than light.
 - Chuck Norris can make onions cry.
 
+</details>
+
 ## Chuck Norris Memes
+
+<details>
+<summary>Show/hide Chuck Norris Memes</summary>
 
 - Chuck Norris doesn’t need a meme; he is the meme.
 - When Chuck Norris memes trend, the internet doubles in size.
@@ -113,6 +135,14 @@ A curated list of hilarious Chuck Norris jokes, formatted for readability.
 - Chuck Norris doesn’t surf; waves carry him.
 - Chuck Norris can split atoms with his bare hands.
 - Chuck Norris doesn’t need a calculator; math bends to him.
+
+</details>
+
+## Additional Legends
+
+<details>
+<summary>Show/hide Additional Legends</summary>
+
 - Chuck Norris can outwit fate.
 - Chuck Norris’s best joke is reality.
 - Chuck Norris threw a grenade and killed 50 people—then it exploded.
@@ -190,9 +220,13 @@ A curated list of hilarious Chuck Norris jokes, formatted for readability.
 - Chuck Norris’s book has no typos; words obey.
 - Chuck Norris wrote a joke; reality adjusted.
 - Chuck Norris’s book doesn’t need readers; it commands.
-- Chuck Norris’s joke book is the final word.
+
+</details>
 
 ## Chuck Norris Punchlines
+
+<details>
+<summary>Show/hide Chuck Norris Punchlines</summary>
 
 - Chuck Norris punched a wall; now it’s a window.
 - Chuck Norris’s punchline knocks out gravity.
@@ -249,28 +283,45 @@ A curated list of hilarious Chuck Norris jokes, formatted for readability.
 - Chuck Norris’s legend punched through time.
 - Chuck Norris is the legend legends fear.
 
+</details>
+
 ## FAQ
 
+<details>
+<summary>Show/hide FAQ</summary>
+
 Q: Why doesn’t Chuck Norris need a FAQ?
+
 A: Because Chuck Norris already knows everything, and the universe just asks Chuck Norris for answers.
 
 Q: How does Chuck Norris fix a computer?
+
 A: Chuck Norris stares at it until it fixes itself—because even tech fears Chuck Norris.
 
 Q: What happens if Chuck Norris forgets something?
+
 A: Nothing forgets Chuck Norris; the information comes back begging Chuck Norris to remember it.
 
 Q: Can Chuck Norris lose a game?
+
 A: No, because Chuck Norris invented winning, and losing runs away when Chuck Norris plays.
 
 Q: Why doesn’t Chuck Norris sleep?
+
 A: Sleep is too scared to interrupt Chuck Norris, so Chuck Norris stays awake forever.
 
 Q: How fast can Chuck Norris run?
+
 A: Chuck Norris doesn’t run—he moves so fast time chases Chuck Norris instead.
 
 Q: Does Chuck Norris ever get sick?
+
 A: No, germs apologize to Chuck Norris and leave, because Chuck Norris is invincible.
 
 Q: Why is Chuck Norris never late?
+
 A: Time waits for Chuck Norris, and Chuck Norris arrives when he feels like it.
+
+</details>
+
+</section>

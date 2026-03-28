@@ -218,6 +218,30 @@ a.sidebar-nav-item:focus {
   background-color: RoyalBlue;
 }
 
+/* Chuck Norris jokes page collapsible style */
+.chuck-jokes details {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  background: #fff;
+}
+.chuck-jokes summary {
+  font-weight: 700;
+  cursor: pointer;
+}
+.chuck-jokes details[open] {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.chuck-jokes .toc {
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+.chuck-jokes .toc li {
+  margin: 0.25rem 0;
+}
+
 /*
  * Themes
  *
