@@ -296,14 +296,19 @@ tbody tr:nth-child(odd) th {
     background-color: #f9f9f9;
 }
 
+tbody tr td:nth-child(2),
+thead tr th:nth-child(2) {
+    width: 40%;
+}
+
 tbody tr td:first-child,
 thead tr th:first-child {
     width: 30%;
 }
 
-tbody tr td:nth-child(2),
-thead tr th:nth-child(2) {
-    width: 70%;
+tbody tr td:nth-child(3),
+thead tr th:nth-child(3) {
+    width: 30%;
 }
 
 .fixed-layout {
