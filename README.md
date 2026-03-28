@@ -1,7 +1,5 @@
 [![Better Uptime Badge](https://betteruptime.com/status-badges/v1/monitor/f6d2.svg)](https://betteruptime.com/?utm_source=status_badge)
 
-[![Build Status](https://dev.azure.com/luke-leigh/github-repo/_apis/build/status/BanterBoy.scripts-blog?branchName=prod)](https://dev.azure.com/luke-leigh/github-repo/_build/latest?definitionId=2&branchName=prod)
-
 [![pages-build-deployment](https://github.com/BanterBoy/scripts-blog/actions/workflows/pages/pages-build-deployment/badge.svg?branch=prod)](https://github.com/BanterBoy/scripts-blog/actions/workflows/pages/pages-build-deployment)
 
 # Maintenance Scripts
