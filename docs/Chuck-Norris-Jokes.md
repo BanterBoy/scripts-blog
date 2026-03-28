@@ -8,23 +8,17 @@ permalink: /menu/_pages/chuck-norris-jokes/
 
 A curated list of hilarious Chuck Norris jokes, formatted for readability.
 
-<section class="chuck-jokes">
-
 ## Contents
 
-- Accessibility: Use keyboard focus on each section title and press Enter/Space to toggle show/hide.
-
-<ul class="toc">
-<li>[Classic Chuck Norris One-Liners](#classic-chuck-norris-one-liners)</li>
-<li>[Chuck Norris Memes](#chuck-norris-memes)</li>
-<li>[Additional Legends](#additional-legends)</li>
-<li>[Chuck Norris Punchlines](#chuck-norris-punchlines)</li>
-<li>[FAQ](#faq)</li>
-</ul>
+- [Classic Chuck Norris One-Liners](#classic-chuck-norris-one-liners)
+- [Chuck Norris Memes](#chuck-norris-memes)
+- [Additional Legends](#additional-legends)
+- [Chuck Norris Punchlines](#chuck-norris-punchlines)
+- [FAQ](#faq)
 
 ## Classic Chuck Norris One-Liners
 
-<details>
+<details markdown="1">
 <summary>Show/hide Classic Chuck Norris One-Liners</summary>
 
 - Chuck Norris doesn’t do push-ups; he pushes the Earth down.
@@ -56,7 +50,7 @@ A curated list of hilarious Chuck Norris jokes, formatted for readability.
 
 ## Chuck Norris Memes
 
-<details>
+<details markdown="1">
 <summary>Show/hide Chuck Norris Memes</summary>
 
 - Chuck Norris doesn’t need a meme; he is the meme.
@@ -140,7 +134,7 @@ A curated list of hilarious Chuck Norris jokes, formatted for readability.
 
 ## Additional Legends
 
-<details>
+<details markdown="1">
 <summary>Show/hide Additional Legends</summary>
 
 - Chuck Norris can outwit fate.
@@ -225,7 +219,7 @@ A curated list of hilarious Chuck Norris jokes, formatted for readability.
 
 ## Chuck Norris Punchlines
 
-<details>
+<details markdown="1">
 <summary>Show/hide Chuck Norris Punchlines</summary>
 
 - Chuck Norris punched a wall; now it’s a window.
@@ -287,7 +281,7 @@ A curated list of hilarious Chuck Norris jokes, formatted for readability.
 
 ## FAQ
 
-<details>
+<details markdown="1">
 <summary>Show/hide FAQ</summary>
 
 Q: Why doesn’t Chuck Norris need a FAQ?
