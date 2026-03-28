@@ -4,15 +4,15 @@
 
 ## Checklist Summary
 
-| Item                  | Before                                                        | After                                                                   | Notes                                                                              |
-| --------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| Robots.txt            | Allowed all crawling without sitemap guarantee                | Explicitly allows crawling, references sitemap                          | Updated `robots.txt` to match Google guidance.                                     |
-| Sitemap               | Plugin enabled but unchecked                                  | `jekyll-sitemap` confirmed and validated in CI                          | `seo-checks.rb` fails build if sitemap missing.                                    |
-| Titles & Descriptions | Several navigation pages used lowercase titles shared with H1 | Descriptive titles with separate navigation labels and headings         | Added `nav_title`/`heading` to avoid nav regressions while improving SEO titles.   |
-| Canonical Tags        | Managed by `jekyll-seo-tag` without verification              | Local HTTP validation for every canonical URL                           | `build/seo-checks.rb` serves `_site` locally and checks for HTTP 200.              |
-| Status Codes          | Manual spot checks only                                       | Automated crawl of built site                                           | CI runs Lychee plus canonical validation and records results in `seo-checks.json`. |
-| Structured Data       | WebSite markup emitted but missing organization context       | WebSite + Organization + BlogPosting JSON-LD with accurate profile data | Added organization metadata and live search target URL.                            |
-| Performance Hints     | No resource preloads or asset sizing                          | Preload hero CSS/image, logo sized, lazy loading applied                | Reduces layout shift and speeds first render.                                      |
+| Item                  | Change Summary                                                                                                              | Notes                                                                              |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Robots.txt            | Allowed all crawling without sitemap guarantee → Explicitly allows crawling, references sitemap                             | Updated `robots.txt` to match Google guidance.                                     |
+| Sitemap               | Plugin enabled but unchecked → `jekyll-sitemap` confirmed and validated in CI                                               | `seo-checks.rb` fails build if sitemap missing.                                    |
+| Titles & Descriptions | Several navigation pages used lowercase titles shared with H1 → Descriptive titles with separate navigation labels/headings | Added `nav_title`/`heading` to avoid nav regressions while improving SEO titles.   |
+| Canonical Tags        | Managed by `jekyll-seo-tag` without verification → Local HTTP validation for every canonical URL                            | `build/seo-checks.rb` serves `_site` locally and checks for HTTP 200.              |
+| Status Codes          | Manual spot checks only → Automated crawl of built site                                                                     | CI runs Lychee plus canonical validation and records results in `seo-checks.json`. |
+| Structured Data       | WebSite markup emitted but missing organization context → WebSite + Organization + BlogPosting JSON-LD with profile data    | Added organization metadata and live search target URL.                            |
+| Performance Hints     | No resource preloads or asset sizing → Preload hero CSS/image, logo sized, lazy loading applied                             | Reduces layout shift and speeds first render.                                      |
 
 ## Discovery & Crawlability
 
