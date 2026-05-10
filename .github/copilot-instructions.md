@@ -89,6 +89,10 @@ permalink: /_posts/scripts/ScriptName/
 |-------|----------|-------------|
 | `brand-voice` | `.github/skills/brand-voice/SKILL.md` | Writing or reviewing any site content |
 | `github-management` | `.github/skills/github-management/SKILL.md` | PRs, branches, GitHub workflow |
+| `powershell-cmdlet` | `.github/skills/powershell-cmdlet/SKILL.md` | Writing or reviewing any PowerShell function, cmdlet, or module |
+| `systematic-debugging` | `.agents/skills/systematic-debugging/SKILL.md` | Any build failure, CI error, broken link, or unexpected Jekyll behaviour |
+| `verification-before-completion` | `.agents/skills/verification-before-completion/SKILL.md` | Before marking any task complete — run the build, check the output |
+| `github-actions-docs` | `.agents/skills/github-actions-docs/SKILL.md` | Editing or creating GitHub Actions workflow files in `.github/workflows/` |
 
 ---
 

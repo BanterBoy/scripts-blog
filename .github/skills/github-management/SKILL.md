@@ -45,8 +45,8 @@ Activate when the user:
 
 | Feature                  | Status                                                                                                   |
 | ------------------------ | -------------------------------------------------------------------------------------------------------- |
-| Issue Templates          | **Not configured** — `.github/ISSUE_TEMPLATE/` missing                                                   |
-| PR Template              | **Not configured** — `.github/pull_request_template.md` missing                                          |
+| Issue Templates          | **Configured** — `.github/ISSUE_TEMPLATE/` has `bug_report.md`, `new_script_post.md`, `documentation.md` |
+| PR Template              | **Configured** — `.github/pull_request_template.md` present                                              |
 | GitHub Actions Workflows | **Configured** — `CI.yml` (build + htmlproofer), `jekyll-build.yml` (full build validation + SEO checks) |
 | CODEOWNERS               | **Present** — `* @BanterBoy`                                                                             |
 | Mergify                  | **Present** — auto-merge on approval, delete head branch after merge                                     |

@@ -1,5 +1,7 @@
 # scripts-blog Agents Guidance
 
+> **Read `ORCHESTRATOR.md` at the repo root before acting.** It is the canonical source of truth for all architecture decisions, post conventions, fragile areas, and the subagent briefing template. This file provides supplementary guidance for agents; ORCHESTRATOR.md wins in any conflict.
+
 ## Purpose of This Document
 
 This document provides guidance for automation agents, AI assistants, and maintainers working on the scripts-blog repository. It
@@ -9,25 +11,23 @@ maintain supporting automation without unexpected regressions.
 
 ## Repository Overview
 
-***Focus:*** scripts-blog powers a Jekyll site published at `https://scripts.lukeleigh.com`. Use the directories below to orient
+**_Focus:_** scripts-blog powers a Jekyll site published at `https://scripts.lukeleigh.com`. Use the directories below to orient
 new work and ensure updates land in the appropriate place:
 
-- **_posts/** – Time-stamped blog entries named `YYYY-MM-DD-title.md`. Posts should include a clear excerpt, helpful tags, and
-  Liquid-friendly links to related content.
-- **_pages/** – Evergreen pages grouped by purpose. The `menu/` folder drives site navigation, while `content/` hosts longer
+- **\_posts/** – Script catalogue entries. Posts are **not** date-prefixed; filenames match the script name: `ScriptName.md`. Subdirectories by category: `scripts/`, `snippets/`, `UserAdminModule/`. Every post follows the fixed anatomy: front matter → description (Copilot dialogue) → script block → download → report issues. See ORCHESTRATOR.md for the full post anatomy and front matter requirements.
+- **\_pages/** – Evergreen pages grouped by purpose. The `menu/` folder drives site navigation, while `content/` hosts longer
   reference material or landing pages. Keep permalinks aligned with existing conventions so links remain stable.
-- **_layouts/** – Page templates that set overall structure. Update these when introducing new page types or altering site-wide
+- **\_layouts/** – Page templates that set overall structure. Update these when introducing new page types or altering site-wide
   markup.
-- **_includes/** – Reusable Liquid components (headers, footers, callouts). Modify or add includes when you need to adjust shared
+- **\_includes/** – Reusable Liquid components (headers, footers, callouts). Modify or add includes when you need to adjust shared
   fragments across multiple layouts.
-- **_sass/** – Modular Sass partials compiled into the site’s CSS. Maintain the existing naming conventions and import order when
+- **\_sass/** – Modular Sass partials compiled into the site’s CSS. Maintain the existing naming conventions and import order when
   adjusting styling.
 - **assets/** – Images, JavaScript, CSS, and other static files referenced by posts and layouts. Optimize media assets and store
   them in sensible subdirectories (e.g., `assets/img/`, `assets/js/`).
 - **index.html, 404.html, robots.txt, feeds** – Root-level entry points and metadata that shape the public site experience.
   Update these thoughtfully when adjusting redirects, SEO metadata, or the home page layout.
-- **_config.yml and _config.algolia.yml** – Core configuration for the Jekyll build and optional search integrations. Maintain
-  consistent values across environments and document any new keys you introduce.
+- **\_config.yml** – Core configuration for the Jekyll build, theme, plugins, and Algolia search. Do not modify without explicit instruction. The Algolia search-only key is safe to remain in this file; the admin key must never appear in any repo file (CI env vars only). See ORCHESTRATOR.md for the full list of configuration constraints.
 - **Gemfile, Gemfile.lock, docker-compose.yml, build/** – Tooling that supports local development, dependency management, and
   automation. Update these files when you change build requirements or add supporting scripts.
 
@@ -48,45 +48,44 @@ primary deliverable, and update them only when they directly support published d
 
 ### Content Authoring Best Practices
 
-- ***Front matter essentials:*** Every Jekyll-processed file must include YAML front matter specifying `layout`, `title`, and an
+- **_Front matter essentials:_** Every Jekyll-processed file must include YAML front matter specifying `layout`, `title`, and an
   appropriate `permalink`. Add `description`, `tags`, `categories`, and other metadata to support SEO and site organisation.
-- ***Consistent naming:*** Name posts `YYYY-MM-DD-title.md` and prefer lowercase, hyphenated slugs. Page filenames should mirror
-  their permalink for clarity.
-- ***Heading hierarchy:*** Begin each Markdown file with a single H1 (`# Title`). Structure subsequent content with H2/H3 levels
+- **_Consistent naming:_** Post filenames are **not** date-prefixed — they match the script name: `ScriptName.md`. This is intentional; the site is a catalogue, not a chronological blog. Page filenames should mirror their permalink for clarity.
+- **_Heading hierarchy:_** Begin each Markdown file with a single H1 (`# Title`). Structure subsequent content with H2/H3 levels
   and avoid skipping heading levels so generated tables of contents stay accurate.
-- ***Link management:*** Use Liquid filters such as `{{ '/menu/_pages/about/' | relative_url }}` for internal links and `{{ site.url }}` for absolute references when necessary. Verify that external links include `https://` and that internal anchors resolve.
-- ***Media usage:*** Optimise images before committing them, store them under `assets/`, and provide descriptive `alt` text. Use
+- **_Link management:_** Use Liquid filters such as `{{ '/menu/_pages/about/' | relative_url }}` for internal links and `{{ site.url }}` for absolute references when necessary. Verify that external links include `https://` and that internal anchors resolve.
+- **_Media usage:_** Optimise images before committing them, store them under `assets/`, and provide descriptive `alt` text. Use
   Markdown figure syntax or includes for galleries to keep layout consistent.
-- ***Excerpts and summaries:*** Include a concise summary paragraph near the top of each post, and insert `<!--more-->` when you
+- **_Excerpts and summaries:_** Include a concise summary paragraph near the top of each post, and insert `<!--more-->` when you
   need to control home page teasers.
 
 ### Layout, Includes, and Styling
 
-- ***Shared components first:*** When introducing new UI elements, prefer creating or updating `_includes/` files so multiple
+- **_Shared components first:_** When introducing new UI elements, prefer creating or updating `_includes/` files so multiple
   layouts can reuse them. Keep Liquid logic readable and comment complex conditions.
-- ***Sass organisation:*** Extend existing partials in `_sass/` rather than adding large blocks of inline CSS. Follow the
+- **_Sass organisation:_** Extend existing partials in `_sass/` rather than adding large blocks of inline CSS. Follow the
   established import order in `main.scss` (or equivalent) to avoid specificity issues.
-- ***Accessibility:*** Ensure semantic HTML, sufficient colour contrast, and keyboard-accessible navigation. Test changes with
+- **_Accessibility:_** Ensure semantic HTML, sufficient colour contrast, and keyboard-accessible navigation. Test changes with
   screen-reader friendly markup when possible.
 
 ### Configuration and Automation
 
-- ***Configuration parity:*** When modifying `_config.yml` or related files, document the intent in commit messages and relevant
+- **_Configuration parity:_** When modifying `_config.yml` or related files, document the intent in commit messages and relevant
   READMEs. Mirror critical settings across local, staging, and production builds.
-- ***Dependency management:*** Update the `Gemfile` and `Gemfile.lock` together. Note Ruby version requirements and any new gems
+- **_Dependency management:_** Update the `Gemfile` and `Gemfile.lock` together. Note Ruby version requirements and any new gems
   in the README or site documentation.
-- ***Build tooling:*** Keep supporting scripts in `build/` or the repository root idempotent and well-commented. If you add a new
+- **_Build tooling:_** Keep supporting scripts in `build/` or the repository root idempotent and well-commented. If you add a new
   script for common tasks (e.g., link checking), ensure it runs on macOS, Linux, and GitHub-hosted runners.
 
 ### Testing and Quality Assurance
 
-- ***Jekyll builds:*** Run `bundle exec jekyll build` before committing to verify the site compiles cleanly. For interactive
+- **_Jekyll builds:_** Run `bundle exec jekyll build` before committing to verify the site compiles cleanly. For interactive
   testing, `bundle exec jekyll serve --livereload` helps spot rendering issues.
-- ***Link and HTML validation:*** Where possible, run `bundle exec htmlproofer ./_site` or an equivalent checker to catch broken
+- **_Link and HTML validation:_** Where possible, run `bundle exec htmlproofer ./_site` or an equivalent checker to catch broken
   links, missing alt text, and HTML errors. Resolve issues before opening a pull request.
-- ***Search and feed checks:*** Confirm that Algolia configurations, RSS/Atom feeds, and sitemap entries still render correctly
+- **_Search and feed checks:_** Confirm that Algolia configurations, RSS/Atom feeds, and sitemap entries still render correctly
   after structural changes.
-- ***Asset verification:*** Ensure referenced images, downloads, and other static files exist and load in local previews.
+- **_Asset verification:_** Ensure referenced images, downloads, and other static files exist and load in local previews.
 
 ### Documentation Standards
 
@@ -125,8 +124,8 @@ product: visitors should receive consistent information whether they read the pu
 - Use Liquid helpers for internal links and asset references (`{{ '/assets/img/example.png' | relative_url }}`) so URLs work both
   locally and on GitHub Pages.
 - Prefer Markdown tables only for short phrases or data points; use lists or paragraphs for narrative content.
-- Keep code snippets fenced and specify the language for syntax highlighting (e.g., <code>```powershell</code> or
-  <code>```yaml</code>) when relevant to the article.
+- Keep code snippets fenced and specify the language for syntax highlighting (e.g., <code>`powershell</code> or
+<code>`yaml</code>) when relevant to the article.
 - Validate cross-links by building the site locally before submitting changes.
 
 ### Deployment and Automation Considerations
@@ -140,42 +139,42 @@ product: visitors should receive consistent information whether they read the pu
 
 ### Automation and Continuous Integration
 
-- ***Automated checks first:*** Prioritise CI workflows that install dependencies, run `bundle exec jekyll build`, and perform
+- **_Automated checks first:_** Prioritise CI workflows that install dependencies, run `bundle exec jekyll build`, and perform
   linting or link checking before deployment steps.
-- ***Reusable scripts:*** Provide helper scripts (Ruby, Bash, or PowerShell) that mirror CI steps for local use. Keep them
+- **_Reusable scripts:_** Provide helper scripts (Ruby, Bash, or PowerShell) that mirror CI steps for local use. Keep them
   idempotent and cross-platform when feasible.
-- ***Content governance:*** Add safeguards against publishing drafts inadvertently (e.g., ensuring future-dated posts are
+- **_Content governance:_** Add safeguards against publishing drafts inadvertently (e.g., ensuring future-dated posts are
   intentional and front matter flags like `published: false` remain honoured).
-- ***Data privacy:*** Confirm that any new automation handling analytics or API keys respects privacy policies and stores secrets
+- **_Data privacy:_** Confirm that any new automation handling analytics or API keys respects privacy policies and stores secrets
   securely.
 
 ## Agent Workflow
 
 When tasked with updates, agents should follow this workflow:
 
-1. ***Understand the request:*** Clarify whether the work involves content creation, visual design, automation, or configuration
+1. **_Understand the request:_** Clarify whether the work involves content creation, visual design, automation, or configuration
    changes.
-2. ***Locate relevant files:*** Use the repository structure to find existing posts, pages, includes, or assets to extend. Reuse
+2. **_Locate relevant files:_** Use the repository structure to find existing posts, pages, includes, or assets to extend. Reuse
    components instead of duplicating markup.
-3. ***Plan the change:*** Outline front matter, layout adjustments, and asset needs before editing. Coordinate navigation updates
+3. **_Plan the change:_** Outline front matter, layout adjustments, and asset needs before editing. Coordinate navigation updates
    with `_config.yml` or menu includes.
-4. ***Preview locally:*** Run `bundle exec jekyll serve` (or `docker-compose up` if preferred) to confirm the site renders as
+4. **_Preview locally:_** Run `bundle exec jekyll serve` (or `docker-compose up` if preferred) to confirm the site renders as
    expected. Address build warnings early.
-5. ***Validate automation:*** Update or create CI workflows, link checkers, or build scripts if your changes introduce new
+5. **_Validate automation:_** Update or create CI workflows, link checkers, or build scripts if your changes introduce new
    dependencies or processes.
-6. ***Document decisions:*** Update README files, inline comments, or documentation pages to explain new structures or tooling.
-7. ***Commit and review:*** Use clear commit messages, open a pull request summarising the change, and note any manual steps
+6. **_Document decisions:_** Update README files, inline comments, or documentation pages to explain new structures or tooling.
+7. **_Commit and review:_** Use clear commit messages, open a pull request summarising the change, and note any manual steps
    reviewers must follow.
 
 ## Future Directions
 
-- ***Enhanced testing:*** Introduce automated HTML/link validation and visual regression testing to catch issues before they
+- **_Enhanced testing:_** Introduce automated HTML/link validation and visual regression testing to catch issues before they
   reach production.
-- ***Component library:*** Gradually standardise UI components using `_includes/` and Sass utilities to simplify future design
+- **_Component library:_** Gradually standardise UI components using `_includes/` and Sass utilities to simplify future design
   updates.
-- ***Content governance:*** Develop editorial checklists or issue templates to track upcoming posts, review cycles, and approvals.
-- ***Performance optimisation:*** Monitor site build times, asset sizes, and Lighthouse scores, and plan iterative improvements.
-- ***Documentation depth:*** Expand contributor guides covering local development, deployment pipelines, and accessibility
+- **_Content governance:_** Develop editorial checklists or issue templates to track upcoming posts, review cycles, and approvals.
+- **_Performance optimisation:_** Monitor site build times, asset sizes, and Lighthouse scores, and plan iterative improvements.
+- **_Documentation depth:_** Expand contributor guides covering local development, deployment pipelines, and accessibility
   expectations.
 
 ## Final Thoughts
