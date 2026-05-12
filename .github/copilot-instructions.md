@@ -2,7 +2,7 @@
 
 You are the **A.I. Blogger** orchestrator for `BanterBoy/scripts-blog`.
 
-Before doing anything in this repo, read `ORCHESTRATOR.md` at the repo root. It is the source of truth for architecture, conventions, all decisions made, and the subagent briefing template. Never act without it.
+Before doing anything in this repo, read `ORCHESTRATOR.md` at the repo root. It is the source of truth for architecture, conventions, all decisions made, and the subagent briefing template. Never make architectural or content decisions — including post structure, config changes, or subagent briefings — without consulting it first. Single-file edits limited strictly to typo fixes or front matter field corrections (e.g. fixing a misspelled title or a malformed permalink) may proceed without re-reading it; any edit that touches structure, content, or configuration requires a prior read.
 
 ---
 
@@ -19,6 +19,15 @@ You orchestrate. You do not implement changes directly unless they are trivial s
 ---
 
 ## Non-Negotiable Conventions
+
+> **Priority order — apply in this sequence:**
+>
+> 1. **Post anatomy** — every post must follow the exact section order (front matter → description → Copilot dialogue → script block → download → report issues)
+> 2. **Brand voice** — British English, self-deprecating, personal context first (full spec: `.github/skills/brand-voice/SKILL.md`)
+> 3. **Jekyll/Liquid constraints** — remote theme pin, Algolia key placement, branch targets
+> 4. **File/path conventions** — subdirectories, filename format, permalink pattern
+>
+> **Conflict resolution:** If two conventions appear to conflict, the higher-numbered rule yields to the lower-numbered one. For example, if brand voice (2) would produce phrasing that breaks post anatomy (1), post anatomy wins. If a Jekyll constraint (3) conflicts with a file/path convention (4), the Jekyll constraint wins.
 
 ### Post Files
 
@@ -99,6 +108,8 @@ permalink: /_posts/scripts/ScriptName/
 ## Subagent Briefing Template
 
 When spawning a subagent, always include all of:
+
+> **Reviewing subagent output:** After the subagent returns, verify its output against the VERIFICATION field before accepting it. If the output is incomplete, missing required sections, or violates any convention, do not accept it — provide specific feedback identifying each violation and request a targeted revision. Only accept output that fully satisfies VERIFICATION.
 
 ```
 

@@ -1,12 +1,13 @@
 ---
 name: powershell-cmdlet
-description: 'Write advanced PowerShell cmdlets and functions following Microsoft best practices and PowerShell documentation. Use when: creating a new cmdlet or function, adding CmdletBinding, designing parameters with validation attributes, adding pipeline support, implementing ShouldProcess for destructive operations, writing comment-based help, structuring Begin/Process/End blocks, typing outputs with OutputType, applying approved Verb-Noun naming, handling errors with ThrowTerminatingError, running PSScriptAnalyzer to lint and fix rule violations, designing module exports, or performing a best-practice review of an existing PowerShell function.'
+description: "Write advanced PowerShell cmdlets and functions following Microsoft best practices and PowerShell documentation. Use when: creating a new cmdlet or function, adding CmdletBinding, designing parameters with validation attributes, adding pipeline support, implementing ShouldProcess for destructive operations, writing comment-based help, structuring Begin/Process/End blocks, typing outputs with OutputType, applying approved Verb-Noun naming, handling errors with ThrowTerminatingError, running PSScriptAnalyzer to lint and fix rule violations, designing module exports, or performing a best-practice review of an existing PowerShell function."
 argument-hint: 'Describe what the cmdlet should do — e.g., "Get filtered users from Active Directory"'
 ---
 
 # PowerShell Cmdlet Author
 
 ## When to Use
+
 - Writing a new PowerShell function or cmdlet from scratch
 - Upgrading a basic function to advanced cmdlet quality
 - Adding `CmdletBinding`, pipeline support, or parameter validation to existing code
@@ -19,15 +20,15 @@ argument-hint: 'Describe what the cmdlet should do — e.g., "Get filtered users
 
 Gather answers before touching a keyboard. Ask the user if any are unclear:
 
-| # | Question | Why It Matters |
-|---|----------|---------------|
-| 1 | What action does this perform? | Determines the approved verb |
-| 2 | What object does it operate on? | Determines the noun |
-| 3 | What inputs does it accept? | Parameter design |
-| 4 | Should it accept pipeline input? | Begin/Process/End and ValueFromPipeline |
-| 5 | What does it return? | OutputType declaration |
-| 6 | Does it modify, delete, create, or send data? | SupportsShouldProcess requirement |
-| 7 | Standalone function or module export? | Module manifest / Export-ModuleMember |
+| #   | Question                                      | Why It Matters                          |
+| --- | --------------------------------------------- | --------------------------------------- |
+| 1   | What action does this perform?                | Determines the approved verb            |
+| 2   | What object does it operate on?               | Determines the noun                     |
+| 3   | What inputs does it accept?                   | Parameter design                        |
+| 4   | Should it accept pipeline input?              | Begin/Process/End and ValueFromPipeline |
+| 5   | What does it return?                          | OutputType declaration                  |
+| 6   | Does it modify, delete, create, or send data? | SupportsShouldProcess requirement       |
+| 7   | Standalone function or module export?         | Module manifest / Export-ModuleMember   |
 
 ---
 
@@ -38,11 +39,11 @@ Gather answers before touching a keyboard. Ask the user if any are unclear:
 - Format: `ApprovedVerb-SingularPascalNoun` → `Get-TakUser`, `Invoke-CertSync`, `Remove-StaleSession`
 - Validate the verb: `Get-Verb <verb>` must return a result. Never invent verbs.
 - Noun must be **singular** and **PascalCase**: `User` not `Users`, `CertFile` not `certfiles`
-- See [Approved Verbs](./references/approved-verbs.md) for the full grouped list
+- See [Approved Verbs for PowerShell Commands](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands) for the full grouped list
 
 ### Step 2 — Scaffold from the Template
 
-Use [advanced-cmdlet-template.ps1](./assets/advanced-cmdlet-template.ps1) as the starting point.
+Use the scaffold described in Step 3 (comment-based help) through Step 8 as the starting point.
 Replace all `# TODO` placeholders before submitting.
 
 ### Step 3 — Write Comment-Based Help First
@@ -50,6 +51,7 @@ Replace all `# TODO` placeholders before submitting.
 Write the help block **before** the implementation. It forces clarity on inputs and outputs.
 
 Required sections:
+
 ```powershell
 <#
 .SYNOPSIS
@@ -95,7 +97,7 @@ Apply these rules to **every** parameter:
   - `[ValidateRange(1, 100)]` — numeric bounds
   - `[ValidatePattern('^[A-Z]{3}$')]` — regex
   - `[ValidateScript({ Test-Path $_ })]` — arbitrary logic
-- `[SecureString]` for any password/secret — **never** `[string]`
+- `[SecureString]` for any sensitive credential — user passwords, API keys, connection string secrets, and certificate passphrases — **never** `[string]`
 - If multiple parameter sets: declare `DefaultParameterSetName` in `[CmdletBinding()]`
 
 ### Step 5 — Implement Error Handling
@@ -122,7 +124,7 @@ catch {
 }
 ```
 
-See [Best Practices → Error Handling](./references/best-practices.md#error-handling) for the full pattern.
+See [Strongly Encouraged Development Guidelines](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/strongly-encouraged-development-guidelines) for the full error handling pattern.
 
 ### Step 6 — Structure Begin / Process / End
 
@@ -182,32 +184,38 @@ Use the specific .NET type when possible. Use `[PSCustomObject]` for ad-hoc stru
 Run PSScriptAnalyzer against the finished cmdlet and resolve all findings before delivery.
 
 **Install (once):**
+
 ```powershell
 Install-Module -Name PSScriptAnalyzer -Scope CurrentUser -Force
 ```
 
 **Run against a file:**
+
 ```powershell
 Invoke-ScriptAnalyzer -Path .\My-Cmdlet.ps1 -Severity Error, Warning
 ```
 
 **Run against a script block in memory:**
+
 ```powershell
 $code = Get-Content .\My-Cmdlet.ps1 -Raw
 Invoke-ScriptAnalyzer -ScriptDefinition $code -Severity Error, Warning
 ```
 
 **Enforce all rules (strictest — use for module publishing):**
+
 ```powershell
 Invoke-ScriptAnalyzer -Path .\My-Cmdlet.ps1 -IncludeDefaultRules
 ```
 
 **Resolution rules:**
+
 - **Error** severity → must fix before delivery, no exceptions
 - **Warning** severity → must fix or explicitly justify suppression
 - **Information** severity → fix when practical; may suppress with rationale
 
 **Suppressing a rule inline (only when justified):**
+
 ```powershell
 [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute(
     'PSAvoidUsingWriteHost', '',
@@ -216,7 +224,7 @@ Invoke-ScriptAnalyzer -Path .\My-Cmdlet.ps1 -IncludeDefaultRules
 param()
 ```
 
-See [PSScriptAnalyzer Rules Reference](./references/psscriptanalyzer-rules.md) for the full rule list, common violations, and fix patterns.
+See the [PSScriptAnalyzer Rules Reference](https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/rules/readme) for the full rule list, common violations, and fix patterns.
 
 ---
 
@@ -224,29 +232,44 @@ See [PSScriptAnalyzer Rules Reference](./references/psscriptanalyzer-rules.md) f
 
 Confirm every item before the cmdlet is considered complete:
 
+**Naming**
+
 - [ ] Verb is in the approved list — `Get-Verb <verb>` returns a result
 - [ ] Noun is **singular** PascalCase
+
+**Binding & Types**
+
 - [ ] `[CmdletBinding()]` is present
 - [ ] `[OutputType()]` is declared
 - [ ] Every parameter has `[Parameter()]` and at least one validation attribute
-- [ ] No plain-text password parameters (`[SecureString]` only)
+- [ ] No plain-text credential parameters — user passwords, API keys, and secrets use `[SecureString]`
+
+**Help**
+
 - [ ] Comment-based help: `.SYNOPSIS`, `.DESCRIPTION`, all `.PARAMETER` blocks, 2+ `.EXAMPLE` blocks
+
+**Error Handling**
+
 - [ ] Destructive operations gated by `$PSCmdlet.ShouldProcess()`
 - [ ] All external/risky calls inside `try/catch`
+
+**Code Style**
+
 - [ ] No aliases used internally (`Write-Output` not `echo`, `ForEach-Object` not `%`)
 - [ ] `begin`/`process`/`end` blocks if pipeline input is used
 - [ ] No undeclared positional parameters beyond position 0
 - [ ] Module export via `FunctionsToExport` in manifest or `Export-ModuleMember` in `.psm1`
+
+**Analysis**
+
 - [ ] `Invoke-ScriptAnalyzer` run — zero Error findings, all Warning findings resolved or suppressed with justification
 
 ---
 
 ## References
 
-- [Microsoft PowerShell Best Practices](./references/best-practices.md)
-- [Approved Verbs Reference](./references/approved-verbs.md)
-- [PSScriptAnalyzer Rules Reference](./references/psscriptanalyzer-rules.md)
-- [Advanced Cmdlet Template](./assets/advanced-cmdlet-template.ps1)
 - [Official Cmdlet Development Guidelines](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/cmdlet-development-guidelines)
 - [Strongly Encouraged Development Guidelines](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/strongly-encouraged-development-guidelines)
+- [Approved Verbs for PowerShell Commands](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands)
 - [PSScriptAnalyzer Documentation](https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/overview)
+- [PSScriptAnalyzer Rules Reference](https://learn.microsoft.com/en-us/powershell/utility-modules/psscriptanalyzer/rules/readme)

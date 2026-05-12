@@ -7,7 +7,7 @@ GitHub Actions questions are easy to answer from stale memory. Use this skill to
 
 ## When to Use
 
-Use this skill when the request is about:
+Use this skill when the request is about GitHub Actions specifically — not general GitHub repository operations, CodeQL, or Dependabot (see exclusions below):
 
 - GitHub Actions concepts, terminology, or product boundaries
 - Workflow YAML, triggers, jobs, matrices, concurrency, variables, contexts, or expressions
@@ -29,18 +29,16 @@ Do not use this skill for:
 
 ### 1. Classify the request
 
-Decide which bucket the question belongs to before searching:
+Group the question into one of four areas before searching:
 
-- Getting started or tutorials
-- Workflow authoring and syntax
-- Runners and execution environment
-- Security and supply chain
-- Deployments and environments
-- Custom actions and publishing
-- Monitoring, logs, and troubleshooting
-- Migration
+| Area                    | Covers                                                                                                       |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------ |
+| **Authoring**           | Workflow YAML, syntax, triggers, jobs, matrices, expressions, variables, contexts                            |
+| **Infrastructure**      | GitHub-hosted runners, larger runners, self-hosted runners, Actions Runner Controller                        |
+| **Security & Delivery** | Secrets, OIDC, `GITHUB_TOKEN`, attestations, environments, deployment protection, custom actions, publishing |
+| **Operations**          | Artifacts, caches, reusable workflows, monitoring, logs, troubleshooting, migration from other CI systems    |
 
-If you need a quick starting point, load `references/topic-map.md` and jump to the closest section.
+If the request spans multiple areas, classify it by its primary question. If genuinely ambiguous, default to **Authoring** and broaden the search in step 2.
 
 ### 2. Search official GitHub docs first
 

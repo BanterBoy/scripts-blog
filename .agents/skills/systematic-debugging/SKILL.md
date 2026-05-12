@@ -24,6 +24,7 @@ If you haven't completed Phase 1, you cannot propose fixes.
 ## When to Use
 
 Use for ANY technical issue:
+
 - Test failures
 - Bugs in production
 - Unexpected behavior
@@ -32,6 +33,7 @@ Use for ANY technical issue:
 - Integration issues
 
 **Use this ESPECIALLY when:**
+
 - Under time pressure (emergencies make guessing tempting)
 - "Just one quick fix" seems obvious
 - You've already tried multiple fixes
@@ -39,6 +41,7 @@ Use for ANY technical issue:
 - You don't fully understand the issue
 
 **Don't skip when:**
+
 - Issue seems simple (simple bugs have root causes too)
 - You're in a hurry (rushing guarantees rework)
 - Manager wants it fixed NOW (systematic is faster than thrashing)
@@ -71,22 +74,24 @@ You MUST complete each phase before proceeding to the next.
 
 4. **Gather Evidence in Multi-Component Systems**
 
-   **WHEN system has multiple components (CI → build → signing, API → service → database):**
+   **WHEN system has multiple components (CI → build → signing, API → service → database), follow these steps in order:**
 
-   **BEFORE proposing fixes, add diagnostic instrumentation:**
-   ```
-   For EACH component boundary:
-     - Log what data enters component
-     - Log what data exits component
-     - Verify environment/config propagation
-     - Check state at each layer
+   **Step 1 — Identify boundaries.** List every component and the boundaries between them.
 
-   Run once to gather evidence showing WHERE it breaks
-   THEN analyze evidence to identify failing component
-   THEN investigate that specific component
-   ```
+   **Step 2 — Instrument each boundary.** For each boundary, add logging that captures:
+   - What data enters the component
+   - What data exits the component
+   - Whether environment/config propagated correctly
+   - State at that layer
 
-   **Example (multi-layer system):**
+   **Step 3 — Run once to gather evidence.** Execute the system end-to-end to collect output showing where it breaks.
+
+   **Step 4 — Identify the failing component.** Analyse the evidence to pinpoint which boundary fails.
+
+   **Step 5 — Investigate that component only.** Narrow all further investigation to the confirmed failing layer.
+
+   **Example instrumentation (multi-layer system):**
+
    ```bash
    # Layer 1: Workflow
    echo "=== Secrets available in workflow: ==="
@@ -193,10 +198,10 @@ You MUST complete each phase before proceeding to the next.
    - STOP
    - Count: How many fixes have you tried?
    - If < 3: Return to Phase 1, re-analyze with new information
-   - **If ≥ 3: STOP and question the architecture (step 5 below)**
+   - **If three or more fully implemented fixes addressing the identified root cause fail: STOP and question the architecture (step 5 below)**
    - DON'T attempt Fix #4 without architectural discussion
 
-5. **If 3+ Fixes Failed: Question Architecture**
+5. **If Three or More Fully Implemented Fixes Failed: Question Architecture**
 
    **Pattern indicating architectural problem:**
    - Each fix reveals new shared state/coupling/problem in different place
@@ -212,28 +217,38 @@ You MUST complete each phase before proceeding to the next.
 
    This is NOT a failed hypothesis - this is a wrong architecture.
 
-## Red Flags - STOP and Follow Process
+## Red Flags — STOP and Follow Process
 
-If you catch yourself thinking:
+If you catch yourself in any of these categories, stop immediately and return to Phase 1:
+
+**Guessing fixes without understanding**
+
 - "Quick fix for now, investigate later"
 - "Just try changing X and see if it works"
-- "Add multiple changes, run tests"
-- "Skip the test, I'll manually verify"
 - "It's probably X, let me fix that"
 - "I don't fully understand but this might work"
-- "Pattern says X but I'll adapt it differently"
 - "Here are the main problems: [lists fixes without investigation]"
 - Proposing solutions before tracing data flow
+
+**Skipping or shortcutting process steps**
+
+- "Add multiple changes, run tests"
+- "Skip the test, I'll manually verify"
+- "Pattern says X but I'll adapt it differently"
+
+**Repeated failing attempts**
+
 - **"One more fix attempt" (when already tried 2+)**
-- **Each fix reveals new problem in different place**
+- **Each fix reveals a new problem in a different place**
 
 **ALL of these mean: STOP. Return to Phase 1.**
 
-**If 3+ fixes failed:** Question the architecture (see Phase 4.5)
+**If three or more fully implemented fixes failed:** Question the architecture (see Phase 4.5)
 
 ## your human partner's Signals You're Doing It Wrong
 
 **Watch for these redirections:**
+
 - "Is that not happening?" - You assumed without verifying
 - "Will it show us...?" - You should have added evidence gathering
 - "Stop guessing" - You're proposing fixes without understanding
@@ -244,25 +259,25 @@ If you catch yourself thinking:
 
 ## Common Rationalizations
 
-| Excuse | Reality |
-|--------|---------|
-| "Issue is simple, don't need process" | Simple issues have root causes too. Process is fast for simple bugs. |
-| "Emergency, no time for process" | Systematic debugging is FASTER than guess-and-check thrashing. |
-| "Just try this first, then investigate" | First fix sets the pattern. Do it right from the start. |
-| "I'll write test after confirming fix works" | Untested fixes don't stick. Test first proves it. |
-| "Multiple fixes at once saves time" | Can't isolate what worked. Causes new bugs. |
-| "Reference too long, I'll adapt the pattern" | Partial understanding guarantees bugs. Read it completely. |
-| "I see the problem, let me fix it" | Seeing symptoms ≠ understanding root cause. |
-| "One more fix attempt" (after 2+ failures) | 3+ failures = architectural problem. Question pattern, don't fix again. |
+| Excuse                                       | Reality                                                                 |
+| -------------------------------------------- | ----------------------------------------------------------------------- |
+| "Issue is simple, don't need process"        | Simple issues have root causes too. Process is fast for simple bugs.    |
+| "Emergency, no time for process"             | Systematic debugging is FASTER than guess-and-check thrashing.          |
+| "Just try this first, then investigate"      | First fix sets the pattern. Do it right from the start.                 |
+| "I'll write test after confirming fix works" | Untested fixes don't stick. Test first proves it.                       |
+| "Multiple fixes at once saves time"          | Can't isolate what worked. Causes new bugs.                             |
+| "Reference too long, I'll adapt the pattern" | Partial understanding guarantees bugs. Read it completely.              |
+| "I see the problem, let me fix it"           | Seeing symptoms ≠ understanding root cause.                             |
+| "One more fix attempt" (after 2+ failures)   | 3+ failures = architectural problem. Question pattern, don't fix again. |
 
 ## Quick Reference
 
-| Phase | Key Activities | Success Criteria |
-|-------|---------------|------------------|
-| **1. Root Cause** | Read errors, reproduce, check changes, gather evidence | Understand WHAT and WHY |
-| **2. Pattern** | Find working examples, compare | Identify differences |
-| **3. Hypothesis** | Form theory, test minimally | Confirmed or new hypothesis |
-| **4. Implementation** | Create test, fix, verify | Bug resolved, tests pass |
+| Phase                 | Key Activities                                         | Success Criteria            |
+| --------------------- | ------------------------------------------------------ | --------------------------- |
+| **1. Root Cause**     | Read errors, reproduce, check changes, gather evidence | Understand WHAT and WHY     |
+| **2. Pattern**        | Find working examples, compare                         | Identify differences        |
+| **3. Hypothesis**     | Form theory, test minimally                            | Confirmed or new hypothesis |
+| **4. Implementation** | Create test, fix, verify                               | Bug resolved, tests pass    |
 
 ## When Process Reveals "No Root Cause"
 
@@ -284,12 +299,14 @@ These techniques are part of systematic debugging and available in this director
 - **`condition-based-waiting.md`** - Replace arbitrary timeouts with condition polling
 
 **Related skills:**
+
 - **superpowers:test-driven-development** - For creating failing test case (Phase 4, Step 1)
 - **superpowers:verification-before-completion** - Verify fix worked before claiming success
 
 ## Real-World Impact
 
 From debugging sessions:
+
 - Systematic approach: 15-30 minutes to fix
 - Random fixes approach: 2-3 hours of thrashing
 - First-time fix rate: 95% vs 40%

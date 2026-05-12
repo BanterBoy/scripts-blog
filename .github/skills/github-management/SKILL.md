@@ -26,7 +26,7 @@ Activate when the user:
 - Needs to **create or review pull requests** (templates, checklists, descriptions)
 - Asks about **releases**, changelogs, tagging, or release notes
 - Wants to **configure repository settings** (branch protection, labels, collaborators)
-- Mentions "GitHub", "wiki", "issue template", "PR template", "release", "changelog", or "repo settings" in context of scripts-blog
+- Mentions "GitHub", "wiki", "issue template", "PR template", "release", "changelog", or "repo settings" explicitly in relation to the BanterBoy/scripts-blog repository (either by name or because the workspace is scripts-blog)
 - Asks to audit or improve the repository's GitHub configuration
 
 ## Repository Context
@@ -70,6 +70,8 @@ This skill uses the following tools depending on the task:
 | **Terminal**         | `run_in_terminal`                                                                                                 | Git commands, `gh` CLI operations, bundle commands  |
 
 > **Note:** The `gh` CLI may not be installed. For operations requiring `gh` (creating releases, managing settings via CLI), provide the commands and prompt the user to install it first: `winget install --id GitHub.cli`
+>
+> **If `gh` CLI is unavailable**, provide the equivalent manual steps using the GitHub web UI or the VS Code GitHub Pull Requests extension (e.g., create releases via GitHub.com → Releases → Draft a new release, manage labels via github.com/{owner}/{repo}/labels). Always offer the manual alternative alongside `gh` commands.
 
 ---
 
@@ -284,16 +286,17 @@ What should it say or contain?
 
 ### Triage Workflow
 
-When triaging issues, apply this decision tree:
+When triaging issues, classify the issue using the table below, then apply the listed label(s) and action:
 
-1. **Is it a duplicate?** → Label `duplicate`, reference original, close
-2. **Is it a broken page or site feature?** → Label `bug`, assess impact:
-   - **Site won't build / broken navigation** → also label `help wanted`
-   - **Cosmetic or single post** → label as-is
-3. **Is it a new post request?** → Label `enhancement`
-4. **Is it a content/docs fix?** → Label `documentation`
-5. **Needs more info?** → Label `question`, ask for specifics
-6. **Won't address?** → Label `wontfix`, explain why, close
+| Condition                                | Label(s)             | Action                            |
+| ---------------------------------------- | -------------------- | --------------------------------- |
+| Already reported elsewhere               | `duplicate`          | Reference original issue; close   |
+| Site won't build or navigation is broken | `bug`, `help wanted` | Prioritise; note impact           |
+| Cosmetic or single-post breakage         | `bug`                | Label and assign                  |
+| New script post request                  | `enhancement`        | Label and assign                  |
+| Content or docs fix                      | `documentation`      | Label and assign                  |
+| Needs more information                   | `question`           | Ask for specifics; await response |
+| Out of scope or will not fix             | `wontfix`            | Explain rationale; close          |
 
 ### Label Reference
 
@@ -377,7 +380,9 @@ Closes #{issue_number}
 
 ### PR Review Checklist
 
-When reviewing a PR, check these items in order:
+When reviewing a PR, check items in each category before moving to the next:
+
+**Content & Structure**
 
 1. **Post Filename** — Not date-prefixed; named after the script (`ScriptName.md`)
 2. **Front Matter** — Contains `layout`, `title`, and `permalink` at minimum
@@ -385,10 +390,10 @@ When reviewing a PR, check these items in order:
 4. **Post Anatomy** — Correct order: front matter → TOC → description → Copilot dialogue → script block → download → report issues
 5. **Brand Voice** — British English; personal context before technical detail; no overselling
 6. **PowerShell Code** — Fenced with ` ```powershell `; content is accurate
-7. **Config Safety** — `remote_theme` pin unchanged; no Algolia admin key; personal assets untouched
-8. **`_config.yml`** — Not modified unless explicitly instructed
-9. **`_drafts/`** — No draft content accidentally published
-10. **Build** — CI passes (Jekyll build + htmlproofer + SEO checks)
+
+**Config & Safety** 7. **Config Safety** — `remote_theme` pin unchanged; no Algolia admin key; personal assets untouched 8. **`_config.yml`** — Not modified unless explicitly instructed 9. **`_drafts/`** — No draft content accidentally published
+
+**Build** 10. **Build** — CI passes (Jekyll build + htmlproofer + SEO checks)
 
 ---
 
